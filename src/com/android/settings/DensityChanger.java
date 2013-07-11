@@ -94,7 +94,7 @@ public class DensityChanger extends SettingsPreferenceFragment implements
         if (preference == mReboot) {
             PowerManager pm = (PowerManager) getActivity()
                     .getSystemService(Context.POWER_SERVICE);
-            pm.reboot("Resetting density");
+            pm.reboot(null);
             return true;
 
         } else if (preference == mClearMarketData) {
@@ -105,7 +105,7 @@ public class DensityChanger extends SettingsPreferenceFragment implements
         } else if (preference == mRebootClearData) {
             PowerManager pm = (PowerManager) getActivity()
                     .getSystemService(Context.POWER_SERVICE);
-            pm.reboot("Clear market data");
+            pm.reboot(null);
             return true;
 
         } else if (preference == mOpenMarket) {
@@ -182,7 +182,7 @@ public class DensityChanger extends SettingsPreferenceFragment implements
                                 setLcdDensity(newDensityValue);
                                 PowerManager pm = (PowerManager) getActivity()
                                         .getSystemService(Context.POWER_SERVICE);
-                                pm.reboot("Resetting density");
+                                pm.reboot(null);
                             }
                         })
                         .setNegativeButton(getResources().getString(R.string.cancel),

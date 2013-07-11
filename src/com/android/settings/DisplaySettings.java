@@ -178,7 +178,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
 
         // Start the wake-up category handling
-        boolean removeWakeupCategory = true;
         PreferenceCategory wakeupCategory = (PreferenceCategory)
                     findPreference(KEY_WAKEUP_CATEGORY);
         // Home button wake
@@ -189,7 +188,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } else {
                 mHomeWake.setChecked(Settings.System.getInt(resolver,
                         Settings.System.HOME_WAKE_SCREEN, 1) == 1);
-                removeWakeupCategory = false;
             }
         }
 
@@ -202,7 +200,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } else {
                 mVolumeWake.setChecked(Settings.System.getInt(resolver,
                         Settings.System.VOLUME_WAKE_SCREEN, 0) == 1);
-                removeWakeupCategory = false;
             }
         }
 
