@@ -13,7 +13,7 @@
     <string name="default_string">Standard</string>
 
     <!-- temasek spare parts -->
-    <string name="temasek_settings_title">Temasek Ersatzteile</string>
+    <string name="temasek_settings_title">Temasek Erweiterungen</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Auswahl Farbe</string>
@@ -22,7 +22,7 @@
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
+    <string name="set">Setzen</string>
 
     <!-- Status bar -->
     <string name="status_bar_title">Statusleiste</string>
@@ -150,8 +150,8 @@
     <string name="additional_options_title">Zusatzoptionen</string>
     <string name="shortcut_action_app">Eigene App</string>
     <string name="shortcut_action_home">Home</string>
-    <string name="shortcut_action_back">Back</string>
-    <string name="shortcut_action_recent">Recents</string>
+    <string name="shortcut_action_back">Zurück</string>
+    <string name="shortcut_action_recent">Vor kurzem geöffnet</string>
     <string name="shortcut_action_lastapp">Letzte App</string>
     <string name="shortcut_action_search">Suche</string>
     <string name="shortcut_action_screenshot">Bildschirmfoto</string>
@@ -277,7 +277,7 @@
     <string name="battery_text_color">Textfarbe Prozentanzeige</string>
     <string name="battery_bolt_color">Farbe Ladeblitz</string>
     <string name="battery_text_charging_color">Farbe Prozentanzeige beim laden</string>
-    <string name="battery_style_reset_message">Alle Batteriefarbe zurücksetzen?</string>
+    <string name="battery_style_reset_message">Aussehen der Batterie zurücksetzen?</string>
    
     <!-- Animation Controls -->
     <string name="title_animation_controls">Eigene System Animationen</string>
