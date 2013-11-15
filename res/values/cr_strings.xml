@@ -3,21 +3,21 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, temasek version -->
-    <string name="temasek_version_title">Temasek unofficial version</string>
+    <string name="temasek_version_title">Temasek versão extra-oficial</string>
     <string name="temasek_version_default">V2</string>
 
     <!-- General strings -->
-    <string name="reset">Reset</string>
-    <string name="enabled">Enabled</string>
-    <string name="disabled">Disabled</string>
-    <string name="default_string">Default</string>
+    <string name="reset">Resetar</string>
+    <string name="enabled">Ativado</string>
+    <string name="disabled">Desativado</string>
+    <string name="default_string">Padrão</string>
 
     <!-- temasek spare parts -->
-    <string name="temasek_settings_title">Temasek spare parts</string>
+    <string name="temasek_settings_title">Customizar Temasek</string>
 
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="dialog_color_picker">Painel de cores</string>
+    <string name="press_color_to_apply">Clique na cor para escolher</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
@@ -25,152 +25,152 @@
     <string name="set">Set</string>
 
     <!-- Status bar -->
-    <string name="status_bar_title">Status bar</string>
-    <string name="status_bar_style_title">Status bar options</string>
-    <string name="status_bar_general_title">General</string>
+    <string name="status_bar_title">Barra de Status</string>
+    <string name="status_bar_style_title">Opções da barra de status</string>
+    <string name="status_bar_general_title">Geral</string>
 
     <!-- Status bar | Clock -->
-    <string name="status_bar_clock">Clock and date</string>
-    <string name="status_bar_clock_title">Clock and date style</string>
-    <string name="clock_title_enable">Alignment</string>
-    <string name="clock_enabled">Enabled</string>
-    <string name="clock_disabled">Disabled</string>
-    <string name="clock_color_title">Color</string>
-    <string name="status_bar_clock_style_reset">Reset color</string>
-    <string name="status_bar_show_clock_title">Show clock and date</string>
+    <string name="status_bar_clock">Relógio e data</string>
+    <string name="status_bar_clock_title">Estilo de relógio e data</string>
+    <string name="clock_title_enable">Alinhamento</string>
+    <string name="clock_enabled">Ativado</string>
+    <string name="clock_disabled">Desativado</string>
+    <string name="clock_color_title">Cor</string>
+    <string name="status_bar_clock_style_reset">Resetar cor</string>
+    <string name="status_bar_show_clock_title">Mostrar relógio e data</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="enable_clock_weekday">Day of the week</string>
-    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
-    <string name="right_clock">Right clock</string>
-    <string name="center_clock">Center clock</string>
-    <string name="dont_show">Don\'t show</string>
-    <string name="clock_date_display">Date</string>
+    <string name="status_bar_am_pm_info">Relógio de 24h ativado</string>
+    <string name="enable_clock_weekday">Dia da semana</string>
+    <string name="enable_clock_weekday_summary">Abreviar dia da semana before the time</string>
+    <string name="right_clock">Relógio a direta</string>
+    <string name="center_clock">Relógio centralizado</string>
+    <string name="dont_show">Ocultar</string>
+    <string name="clock_date_display">Data</string>
     <string name="clock_date_display_summary">Display custom date before the clock</string>
-    <string name="clock_date_style">Date style</string>
-    <string name="clock_date_format">Date format</string>
-    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_style">Estilo de data</string>
+    <string name="clock_date_format">Formato de data</string>
+    <string name="clock_date_string_edittext_title">Deverá ficar assim MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="am_pm_clock_normal">Normal font size</string>
-    <string name="am_pm_clock_small">Small font size</string>
-    <string name="am_pm_clock_none">Don\'t show</string>
-    <string name="clock_date_display_none">Don\'t show</string>
-    <string name="clock_date_display_small">Small font size</string>
-    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="am_pm_clock_normal">Fonte normal</string>
+    <string name="am_pm_clock_small">Fonte prquena</string>
+    <string name="am_pm_clock_none">Ocultar</string>
+    <string name="clock_date_display_none">Ocultar</string>
+    <string name="clock_date_display_small">Fonte pequena</string>
+    <string name="clock_date_display_normal">Fonte normal</string>
     <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Lowercase</string>
-    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_style_lowercase">Minuscula</string>
+    <string name="clock_date_style_uppercase">Maiuscula</string>
     <string name="clock_date_format_custom">Custom java format</string>
-    <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
+    <string name="status_bar_clock_style_reset_message">Restaurar cor do relógio?</string>
 
     <!-- Notification Drawer Settings -->
-    <string name="notification_drawer_title">Notification drawer</string>
-    <string name="notification_drawer_style_title">Notification drawer options</string>
-    <string name="notification_style_summary">Change your notification drawer style</string>
-    <string name="notification_drawer_background">Background and transparency</string> 
+    <string name="notification_drawer_title">Barra de Notificação</string>
+    <string name="notification_drawer_style_title">Opções da Barra de Notificação</string>
+    <string name="notification_style_summary">Customizar Barra de Notificação</string>
+    <string name="notification_drawer_background">Plano de fundo e transparencia</string> 
 
     <!-- Notification drawer background -->
-    <string name="notification_wallpaper_title">Notification drawer background</string>
-    <string name="notification_wallpaper_landscape_title">Different landscape background</string>
-    <string name="notification_background_color_fill">Color fill</string>
-    <string name="notification_background_custom_image">Custom image</string>
-    <string name="notification_background_default_wallpaper">Default background</string>
-    <string name="notification_drawer_custom_background_dialog_title">Choose color</string>
-    <string name="notif_wallpaper_alpha_title">Notification background transparency</string> 
+    <string name="notification_wallpaper_title">Plano de fundo da barra de notificação</string>
+    <string name="notification_wallpaper_landscape_title">Plano de fundo diferente</string>
+    <string name="notification_background_color_fill">Cor de fundo</string>
+    <string name="notification_background_custom_image">Personalizar imagem de fundo</string>
+    <string name="notification_background_default_wallpaper">Plano de fundo padrão</string>
+    <string name="notification_drawer_custom_background_dialog_title">Escolha a cor</string>
+    <string name="notif_wallpaper_alpha_title">Transparencia do plano de fundo</string> 
     <string name="notif_alpha_title">Notification row transparency</string>
 
     <!-- Advanced low battery indicator options -->  
-    <string name="lights_and_warnings_title">Lights and warnings</string>
-    <string name="lights_and_warnings_style_title">Lights and warnings options</string>
-    <string name="pref_low_battery_warning_policy_title">Low battery warning</string>
-    <string name="pref_low_battery_warning_policy_dialog_title">Indicate low battery warning with</string>
-    <string name="low_battery_warning_policy_popup_sound">Pop-up and sound</string>
-    <string name="low_battery_warning_policy_notif_sound">Notification and sound</string>
-    <string name="low_battery_warning_policy_popup">Pop-up dialog only</string>
-    <string name="low_battery_warning_policy_notif">Notification only</string>
-    <string name="low_battery_warning_policy_sound">Sound only</string>
-    <string name="low_battery_warning_policy_disabled">Disabled</string> 
+    <string name="lights_and_warnings_title">Luzes e Avisos</string>
+    <string name="lights_and_warnings_style_title">Opções de Luzes e Avisos</string>
+    <string name="pref_low_battery_warning_policy_title">Aviso de bateria fraca</string>
+    <string name="pref_low_battery_warning_policy_dialog_title">Aviso de bateria fraca com</string>
+    <string name="low_battery_warning_policy_popup_sound">Janela de dialogo e Som</string>
+    <string name="low_battery_warning_policy_notif_sound">Notificação e som</string>
+    <string name="low_battery_warning_policy_popup">Apenas janela de dialogo</string>
+    <string name="low_battery_warning_policy_notif">Apenas notificação</string>
+    <string name="low_battery_warning_policy_sound">Apenas som</string>
+    <string name="low_battery_warning_policy_disabled">Desativar</string> 
 
     <!-- Screen-On Notification Light -->
-    <string name="screen_on_notification_led_title">Screen-On Notification Light</string>
-    <string name="screen_on_notification_led_summary">Enable Notification Light even when screen is on</string> 
+    <string name="screen_on_notification_led_title">LED de notificação</string>
+    <string name="screen_on_notification_led_summary">Ativar LED mesmo com a tela ligada</string> 
 
     <!-- Alternate default app picker -->
-    <string name="general_settings_title">General settings</string>
-    <string name="general_settings_style_title">General options</string>
+    <string name="general_settings_title">Configurações gerais</string>
+    <string name="general_settings_style_title">Opções gerais</string>
     <string name="display_short">Display</string>
     <string name="misc_short">Misc</string>
     <string name="alt_resolver">Use Alt Default App Grid</string>
     <string name="alt_resolver_summary">Use Alternate Default App Picker</string>
 
     <!-- Network stats stats -->
-    <string name="status_bar_network_cat">Network traffic meter</string>
-    <string name="status_bar_network_header">Network traffic meter</string>
-    <string name="status_bar_network_title">Network traffic</string>
-    <string name="status_bar_show_network_stats_title">Show network speeds</string>
-    <string name="status_bar_network_stats_update_title">Update frequency</string>
+    <string name="status_bar_network_cat">Monitor de trafego de dados</string>
+    <string name="status_bar_network_header">Monitor de trafego de dados</string>
+    <string name="status_bar_network_title">Trafego de dados</string>
+    <string name="status_bar_show_network_stats_title">Exibir velocidade dos dados</string>
+    <string name="status_bar_network_stats_update_title">Taxa de atualização</string>
 
     <!-- Network stats custm colors -->
-    <string name="status_bar_network_usage_color_style">Color style</string>
-    <string name="status_bar_network_usage_color_reset">Reset color</string>
-    <string name="status_bar_network_usage_color_reset_message">Reset network stats color to default?</string>
+    <string name="status_bar_network_usage_color_style">Cor de exibição</string>
+    <string name="status_bar_network_usage_color_reset">Restaurar cor padrão</string>
+    <string name="status_bar_network_usage_color_reset_message">Deseja restaurar a cor padrão?</string>
 
     <!-- Network stats hide if there's no traffic -->
-    <string name="hide_network_speed">Hide when there is no traffic</string>
-    <string name="hide_network_speed_summary">Hide network stats indicator when there is no traffic</string>
+    <string name="hide_network_speed">Ocultar quando não há trafego</string>
+    <string name="hide_network_speed_summary">Ocultar icone quando não houver trafego</string>
 
     <!-- Display : Animation options -->
-    <string name="screen_and_animations_title">Screen and animations</string>
-    <string name="display_category_animation_options_title">Screen and animation options</string>
+    <string name="screen_and_animations_title">Tela e animação</string>
+    <string name="display_category_animation_options_title">Opções de tela e animação</string>
     <string name="system_power_crt_mode_title">CRT animation </string>
     <string name="system_power_crt_mode_dialog_title">CRT animation</string>
-    <string name="system_power_crt_mode_off">Don\'t show</string>
+    <string name="system_power_crt_mode_off">Ocultar</string>
     <string name="system_power_crt_mode_horizontal">Collapse horizontal</string>
     <string name="system_power_crt_mode_vertical">Collapse vertical</string>
     <string name="system_power_crt_mode_both">Collapse orientation dependent</string>
     <string name="system_power_crt_mode_scale">Scale down</string>
 
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
-    <string name="show_cpu_info">Show CPU info</string>
+    <string name="show_cpu_info">Exibir uso da CPU</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+    <string name="show_cpu_info_summary">Janela sobreposta aos apps mostrando o uso</string>
 
     <!-- Status bar brightness control -->
-    <string name="status_bar_toggle_brightness">Brightness control</string>
-    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across status bar</string>
-    <string name="status_bar_toggle_info">Automatic brightness is enabled</string>
+    <string name="status_bar_toggle_brightness">Controle de brilho</string>
+    <string name="status_bar_toggle_brightness_summary">Ajustar brilho deslizando pela barra de status</string>
+    <string name="status_bar_toggle_info">Brilho automatico ativado</string>
 
     <!-- TRDS Settings -->
-    <string name="trds_settings_title">Dark UI (TRDS)</string>
+    <string name="trds_settings_title">Modo escuro</string>
 
     <!-- Restart SystemUI -->
-    <string name="restart_systemui">Restart SystemUI</string>
+    <string name="restart_systemui">Restaurar SystemUI</string>
 
     <!-- Button shorcut actions -->
-    <string name="additional_options_title">Additional options</string>
+    <string name="additional_options_title">Opções adicionais</string>
     <string name="shortcut_action_app">Custom app</string>
     <string name="shortcut_action_home">Home</string>
-    <string name="shortcut_action_back">Back</string>
-    <string name="shortcut_action_recent">Recents</string>
-    <string name="shortcut_action_lastapp">Last app</string>
-    <string name="shortcut_action_search">Search</string>
+    <string name="shortcut_action_back">Voltar</string>
+    <string name="shortcut_action_recent">Recentes</string>
+    <string name="shortcut_action_lastapp">Ultimo app</string>
+    <string name="shortcut_action_search">Pesquisa</string>
     <string name="shortcut_action_screenshot">Screenshot</string>
     <string name="shortcut_action_menu">Menu</string>
     <string name="shortcut_action_ime">Open IME Switcher</string>
     <string name="shortcut_action_kill">Kill app</string>
     <string name="shortcut_action_power">Screen Off</string>
-    <string name="shortcut_action_notifications">Notifications</string>
+    <string name="shortcut_action_notifications">Notificações</string>
     <string name="shortcut_action_qs">Quicksettings panel</string>
     <string name="shortcut_action_none">None</string>
     <string name="shortcut_action_power_menu">Power menu</string>
     <string name="shortcut_action_torch">Torch</string>
     <string name="shortcut_action_longpress">Longpress:</string>
     <string name="shortcut_action_select_action_longpress">Choose longpress action:</string>
-    <string name="shortcut_action_select_action">Choose action:</string>
-    <string name="shortcut_action_select_action_newbutton">Choose new button:</string>
+    <string name="shortcut_action_select_action">Escolher ação:</string>
+    <string name="shortcut_action_select_action_newbutton">Escoler novo botão:</string>
     <string name="shortcut_action_reset">Reset</string>
     <string name="shortcut_action_add">Add</string>
-    <string name="shortcut_action_reset_message">Reset all entries to default?</string>
+    <string name="shortcut_action_reset_message">Restaurar todas as config. p/ padrão?</string>
     <string name="shortcut_action_max">Maximum entries size has been reached</string>
     <string name="shortcut_action_warning">Warning</string>
     <string name="shortcut_action_warning_message">It is not possible to delete last entry</string>
@@ -178,22 +178,22 @@
     <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
     <string name="shortcut_duplicate_entry">The chosen action cannot be added twice</string>
 
-    <string name="shortcut_action_help_shortcut">shortcut</string>
-    <string name="shortcut_action_help_button">button</string>
+    <string name="shortcut_action_help_shortcut">Atalho</string>
+    <string name="shortcut_action_help_button">Botão</string>
     <string name="shortcut_action_help_icon">, while selecting the icon will bring up customization options</string>
     <string name="shortcut_action_help_main">To add a %1$s, select the Add icon.  Once a %1$s is added, selecting the row will change the target%2$s\n\nTo remove a %1$s, swipe the row horizontally left or right.  Re-order a %1$s in the list by vertically dragging the anchor on the left.\n\nTo clear or reset to defaults, select the Reset icon.</string>
     <string name="shortcut_action_help_delete_last_entry">Removing every %1$s in the list will disable the feature entirely.</string>
-    <string name="shortcut_action_help">Help</string>
+    <string name="shortcut_action_help">Ajuda</string>
 
     <string name="icon_picker_type">Select icon type:</string>
-    <string name="icon_default">Default</string>
-    <string name="icon_presets">System icons</string>
-    <string name="icon_custom">Gallery</string>
-    <string name="shortcuts_icon_picker_alarm">Alarm</string>
+    <string name="icon_default">Padrão</string>
+    <string name="icon_presets">Icones do sistema</string>
+    <string name="icon_custom">Galeria</string>
+    <string name="shortcuts_icon_picker_alarm">Alarme</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
-    <string name="shortcuts_icon_picker_battery">Battery</string>
-    <string name="shortcuts_icon_picker_browser">Browser</string>
-    <string name="shortcuts_icon_picker_calendar">Calendar</string>
+    <string name="shortcuts_icon_picker_battery">Bateria</string>
+    <string name="shortcuts_icon_picker_browser">Navegador</string>
+    <string name="shortcuts_icon_picker_calendar">Calendario</string>
     <string name="shortcuts_icon_picker_camera">Camera</string>
     <string name="shortcuts_icon_picker_cloud">Cloud</string>
     <string name="shortcuts_icon_picker_contact">Contact</string>
@@ -209,7 +209,7 @@
     <string name="shortcuts_icon_picker_file_browser">File Browser</string>
     <string name="shortcuts_icon_picker_file_browser2">File Browser Alternate</string>
     <string name="shortcuts_icon_picker_fitness">Fitness</string>
-    <string name="shortcuts_icon_picker_gallery">Gallery</string>
+    <string name="shortcuts_icon_picker_gallery">Galeria</string>
     <string name="shortcuts_icon_picker_gears">Gears</string>
     <string name="shortcuts_icon_picker_google_small">Google</string>
     <string name="shortcuts_icon_picker_gplus">Google Plus</string>
@@ -242,45 +242,45 @@
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Unlock</string>
 
-    <string name="icon_color_mode_all_icons">All icons</string>
-    <string name="icon_color_mode_system_icons">System icons</string>
+    <string name="icon_color_mode_all_icons">Todos os icones</string>
+    <string name="icon_color_mode_system_icons">Icones do sistema</string>
     <string name="icon_color_mode_system_custom_icons">System and custom icons</string>
-    <string name="icon_picker_choose_icon_title">Choose icon</string>
-    <string name="group_applications">Applications</string>
-    <string name="select_custom_app_title">Select custom application</string>
-    <string name="shortcuts_color_title">Shortcut icon color</string>
+    <string name="icon_picker_choose_icon_title">Escolher icone</string>
+    <string name="group_applications">Aplicativo</string>
+    <string name="select_custom_app_title">Selecione o aplicativo</string>
+    <string name="shortcuts_color_title">Cor do icone de atalho</string>
     <string name="shortcuts_color_summary">Colorize the shortcut icons</string>
     <string name="shortcuts_color_mode_title">Icon color mode</string>
     <string name="shortcuts_color_mode_summary">Change the shorcuts icon color mode</string>
 
     <!-- Notification drawer settings  -->
-    <string name="notification_drawer_title">Notification drawer</string>
+    <string name="notification_drawer_title">Barra de notificação</string>
     <string name="notification_hide_carrier_title">Hide carrier label</string>
-    <string name="notification_shortcuts_settings_title">Shortcuts</string>
-    <string name="notification_shortcuts_settings_summary">Show shortcuts in the notification drawer</string>
+    <string name="notification_shortcuts_settings_title">Atalhos</string>
+    <string name="notification_shortcuts_settings_summary">Mostrar atalhos na barra de notificação</string>
 
     <!-- StatusBar Battery Settings -->
-    <string name="battery_icon_title">Battery icon</string>
-    <string name="battery_status_icon">Icon</string>
-    <string name="battery_status_percentage">Percentage</string>
-    <string name="battery_status_icon_percentage">Icon with percentage</string>
-    <string name="battery_status_circle">Circle</string>
-    <string name="battery_status_circle_percentage">Circle with percentage</string>
-    <string name="battery_status_dotted_circle_percentage">Dotted Circle with percentage</string>
-    <string name="battery_status_dotted_circle">Dotted Circle</string>
-    <string name="battery_color_title">Battery color</string>
-    <string name="circle_battery_animation_speed">Circle animation speed</string>
-    <string name="circle_battery_animation_speed_none">None</string>
-    <string name="circle_battery_animation_speed_slow">Slow</string>
+    <string name="battery_icon_title">Icone da bateria</string>
+    <string name="battery_status_icon">icone</string>
+    <string name="battery_status_percentage">Porcentagem</string>
+    <string name="battery_status_icon_percentage">Icone com porcentagem</string>
+    <string name="battery_status_circle">Circulo</string>
+    <string name="battery_status_circle_percentage">Circulo com porcentagem</string>
+    <string name="battery_status_dotted_circle_percentage">Circulo pontilhado com porcentagem</string>
+    <string name="battery_status_dotted_circle">Circulo pontilhado</string>
+    <string name="battery_color_title">Cor da bateria</string>
+    <string name="circle_battery_animation_speed">Velocidade de animação da bateria</string>
+    <string name="circle_battery_animation_speed_none">Nenhuma</string>
+    <string name="circle_battery_animation_speed_slow">Lento</string>
     <string name="circle_battery_animation_speed_stock">Normal</string>
-    <string name="circle_battery_animation_speed_fast">Fast</string>
-    <string name="battery_text_color">Percentage text color</string>
+    <string name="circle_battery_animation_speed_fast">Rápido</string>
+    <string name="battery_text_color">Cor da porcentagem</string>
     <string name="battery_bolt_color">Bolt charging color</string>
     <string name="battery_text_charging_color">Percentage text charging color</string>
-    <string name="battery_style_reset_message">Reset all battery colors?</string>
+    <string name="battery_style_reset_message">Restaurar todas as cores?</string>
    
     <!-- Animation Controls -->  
-    <string name="title_animation_controls">Custom System Animations</string>  
+    <string name="title_animation_controls">Personalizar animações do sistema</string>  
     <string name="activity_open_title">Activity Open Animation</string>  
     <string name="activity_close_title">Activity Close Animation</string>  
     <string name="task_open_title">Task Open Animation</string>  
