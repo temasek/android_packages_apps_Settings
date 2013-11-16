@@ -295,4 +295,74 @@
     <string name="animation_duration_default">Default</string>
     <string name="header_summary_animation">@null</string>
 
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Indicador de batería alrededor del anillo de desbloqueo</string>
+ 
+    <!-- Lockscreen maximized widgets -->
+    <string name="security_maximize_widgets_title">Maximizar widgets de la pantalla de bloqueo</string>
+ 
+    <!-- Navigation ring -->
+    <string name="shortcut_action_ring_vib">Sonar/Vibrar</string>
+    <string name="shortcut_action_ring_silent">Sonar/Silenciar</string>
+    <string name="shortcut_action_ring_vib_silent">Sonar/Vibrar/Silenciar</string>
+ 
+    <!-- Navigation settings -->
+    <string name="navigation_settings_options_title">Opciones de navegación</string>
+    <string name="navigation_settings_title">Navegación</string>
+ 
+    <!-- Navigation bar -->
+    <string name="navigation_bar_size_42_dp_default">42 dp (predeterminado)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (predeterminado)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (inhabilitada)</string>
+    <string name="navigation_menu_right">Derecho</string>
+    <string name="navigation_menu_left">Izquierdo</string>
+    <string name="navigation_menu_both">Ambos</string>
+    <string name="navigation_menu_default_jb_behavior">Mostrar a pedido (predeterminado)</string>
+    <string name="navigation_menu_never_show">Nunca mostrar</string>
+    <string name="navigation_menu_always_show">Mostrar siempre</string>
+    <string name="navigation_bar">Barra de navegación</string>
+    <string name="navbar_button_cat">Botones</string>
+    <string name="title_pref_menu_location">Ubicación del menú</string>
+    <string name="summary_pref_menu_location">Modifica la ubicación de los botones del menu</string>
+    <string name="title_pref_menu_display">Visibilidad del menú</string>
+    <string name="summary_pref_menu_display">Modifica los tiempos y visibilidad del menú</string>
+    <string name="navbar_enable_bar">Habilitar barra de navegación</string>
+    <string name="navbar_enable_bar_summary">Activa los botones virtuales</string>
+    <string name="navigation_bar_height_title">Altura de la barra de navegación</string>
+    <string name="navigation_bar_height_summary">Se aplica al modo retrato.</string>
+    <string name="navigation_bar_height_landscape_title">Altura de la barra de navegación</string>
+    <string name="navigation_bar_height_landscape_summary">Se aplica al modo paisaje.</string>
+    <string name="navigation_bar_width_title">Ancho de la barra de navegación</string>
+    <string name="navigation_bar_width_summary">Se aplica cuándo la barra está de lado.</string>
+    <string name="navbar_can_move">Mostrar horizontal en modo paisaje</string>
+    <string name="navbar_can_move_summary">Muestra la barra de navegación acorde a la orientación</string>
+    <string name="navbar_style_dimen_title">Dimensiones</string>
+    <string name="navbar_button_title">Botones</string>
+    <string name="navbar_targets_title">Accesos rápidos</string>
+    <string name="navbar_cat">Barra de navegación</string>
+    <string name="navbar_dimensions_reset_message">Restaurar dimensiones predeterminadas?</string>
+    <string name="navbar_button_style_reset_message">Restaurar configuración predeterminada?</string>
+ 
+    <!-- Navigation bar button style -->
+    <string name="nav_bar_button_style">Apariencia</string>
+    <string name="nav_bar_button_style_summary">Modifica el estilo de los botones de la barra</string>
+    <string name="button_transparency_title">Transparencia de los botones</string>
+    <string name="navigation_bar_icon_tint_title">Color de los botones</string>
+    <string name="nav_button_color_mode_title">Modo color</string>
+    <string name="nav_button_color_mode_dialog_title">Colorear</string>
+    <string name="nav_button_color_mode_summary">Modifica el color de los botones</string>
+    <string name="navigation_bar_glow_tint_title">Color del resplandor</string>
+ 
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Botones físicos</string>
+    <string name="key_menu_enabled">Botón Menú habilitado</string>
+    <string name="key_back_enabled">Botón Atrás habilitado</string>
+    <string name="key_home_enabled">Botón Escritorio habilitado</string>
+
 </resources>
