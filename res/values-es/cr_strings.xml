@@ -298,9 +298,6 @@
     <!-- Lockscreen battery ring -->
     <string name="battery_around_lockscreen_ring">Indicador de batería alrededor del anillo de desbloqueo</string>
  
-    <!-- Lockscreen maximized widgets -->
-    <string name="security_maximize_widgets_title">Maximizar widgets de la pantalla de bloqueo</string>
- 
     <!-- Navigation ring -->
     <string name="shortcut_action_ring_vib">Sonar/Vibrar</string>
     <string name="shortcut_action_ring_silent">Sonar/Silenciar</string>
