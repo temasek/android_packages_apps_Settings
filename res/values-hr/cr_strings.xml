@@ -6,10 +6,10 @@
     <string name="temasek_version_title">Temasek neslužbena verzija</string>
 
     <!-- General strings -->
-    <string name="reset">Ponovno postavi</string>
+    <string name="reset">Vrati početno</string>
     <string name="enabled">Omogućeno</string>
     <string name="disabled">Onemogućeno</string>
-    <string name="default_string">Postavljeno</string>
+    <string name="default_string">Početno</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek rezervni dijelovi</string>
@@ -25,7 +25,7 @@
 
     <!-- Status bar -->
     <string name="status_bar_title">Statusna traka</string>
-    <string name="status_bar_style_title">Način statusne trake</string>
+    <string name="status_bar_style_title">Mogućnosti statusne trake</string>
     <string name="status_bar_general_title">Opće</string>
 
     <!-- Status bar | Clock -->
@@ -35,7 +35,7 @@
     <string name="clock_enabled">Omogućeno</string>
     <string name="clock_disabled">Onemogućeno</string>
     <string name="clock_color_title">Boja</string>
-    <string name="status_bar_clock_style_reset">Ponovno podesi boju</string>
+    <string name="status_bar_clock_style_reset">Početne postavke boje</string>
     <string name="status_bar_show_clock_title">Prikaži sat i datum</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">24 satni prikaz omogućen</string>
@@ -46,10 +46,10 @@
     <string name="dont_show">Ne prikazuj</string>
     <string name="clock_date_display">Datum</string>
     <string name="clock_date_display_summary">Prikaži prilagođeni datum prije sata</string>
-    <string name="clock_date_style">Način datuma</string>
-    <string name="clock_date_format">Oblik datuma</string>
+    <string name="clock_date_style">Način prikaza datuma</string>
+    <string name="clock_date_format">Oblik prikaza datuma</string>
     <string name="clock_date_string_edittext_title">Mora biti u obliku npr. MM/dd/yy</string>
-    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="clock_date_string_edittext_summary">Unesi niz</string>
     <string name="am_pm_clock_normal">Normalna veličina slova</string>
     <string name="am_pm_clock_small">Mala veličina slova</string>
     <string name="am_pm_clock_none">Ne prikazuj</string>
@@ -60,20 +60,20 @@
     <string name="clock_date_style_lowercase">malim slovima</string>
     <string name="clock_date_style_uppercase">velikim slovima</string>
     <string name="clock_date_format_custom">Prilagođeni java oblik</string>
-    <string name="status_bar_clock_style_reset_message">Ponovno podesi boju sata?</string>
+    <string name="status_bar_clock_style_reset_message">Početna postava boje sata?</string>
 
     <!-- Notification Drawer Settings -->
-    <string name="notification_drawer_title">Traka s obavijestima</string>
-    <string name="notification_drawer_style_title">Opcije trake s obavijestima</string>
-    <string name="notification_style_summary">Promjenite način trake s obavijestima</string>
+    <string name="notification_drawer_title">Ploča s obavijestima</string>
+    <string name="notification_drawer_style_title">Mogućnosti Ploče s obavijestima</string>
+    <string name="notification_style_summary">Promjenite svoje postavke ploče s obavijestima</string>
     <string name="notification_drawer_background">Pozadina i prozirnost</string> 
 
     <!-- Notification drawer background -->
-    <string name="notification_wallpaper_title">Pozadina trake s obavijestima</string>
+    <string name="notification_wallpaper_title">Pozadina ploče s obavijestima</string>
     <string name="notification_wallpaper_landscape_title">Različita pejsažna pozadina</string>
     <string name="notification_background_color_fill">Boja popunjavanja</string>
     <string name="notification_background_custom_image">Prilagođena slika</string>
-    <string name="notification_background_default_wallpaper">Postavljena pozadina</string>
+    <string name="notification_background_default_wallpaper">Početna postava pozadine</string>
     <string name="notification_drawer_custom_background_dialog_title">Odaberi boju</string>
     <string name="notif_wallpaper_alpha_title">Prozirnost pozadine obavijesti</string> 
     <string name="notif_alpha_title">Prozirnost retka obavijesti</string>
@@ -111,12 +111,12 @@
 
     <!-- Network stats custm colors -->
     <string name="status_bar_network_usage_color_style">Odabir boja</string>
-    <string name="status_bar_network_usage_color_reset">Ponovno postavi boje</string>
-    <string name="status_bar_network_usage_color_reset_message">Vrati boje na postavljene vrijednosti?</string>
+    <string name="status_bar_network_usage_color_reset">Početne postavke boje</string>
+    <string name="status_bar_network_usage_color_reset_message">Vrati boje na početne vrijednosti?</string>
 
     <!-- Network stats hide if there's no traffic -->
     <string name="hide_network_speed">Sakrij kad nema prometa</string>
-    <string name="hide_network_speed_summary">Sakrij mjerač mrežnog prometa kad prometa nema</string>
+    <string name="hide_network_speed_summary">Sakrij mjerač mrežnog prometa kad nema prometa</string>
 
     <!-- Display : Animation options -->
     <string name="screen_and_animations_title">Ekran i animacije</string>
@@ -130,9 +130,9 @@
     <string name="system_power_crt_mode_scale">Proporcionalno smanji</string>
 
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
-    <string name="show_cpu_info">Prikaži CPU info</string>
+    <string name="show_cpu_info">Prikaži informacije procesora</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-    <string name="show_cpu_info_summary">Sloj ekrana prikazuje trenutni CPU info</string>
+    <string name="show_cpu_info_summary">Sloj ekrana prikazuje trenutne informacije procesora</string>
 
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">Upravljanje svjetlinom</string>
@@ -148,7 +148,7 @@
     <!-- Button shorcut actions -->
     <string name="additional_options_title">Dodatne mogućnosti</string>
     <string name="shortcut_action_app">Prilagođena aplikacija</string>
-    <string name="shortcut_action_home">Početno</string>
+    <string name="shortcut_action_home">Početna</string>
     <string name="shortcut_action_back">Natrag</string>
     <string name="shortcut_action_recent">Nedavno</string>
     <string name="shortcut_action_lastapp">Posljednja aplikacija</string>
@@ -169,7 +169,7 @@
     <string name="shortcut_action_select_action_newbutton">Odaberi novi gumb:</string>
     <string name="shortcut_action_reset">Ponovno postavi</string>
     <string name="shortcut_action_add">Dodaj</string>
-    <string name="shortcut_action_reset_message">Ponovno postavi sve vrijednosti na postavljene?</string>
+    <string name="shortcut_action_reset_message">Vrati početne postavke?</string>
     <string name="shortcut_action_max">Dosegnut maksimalan broj odrednica</string>
     <string name="shortcut_action_warning">Upozorenje</string>
     <string name="shortcut_action_warning_message">Nije moguće ukloniti zadnju odrednicu</string>
@@ -276,7 +276,7 @@
     <string name="battery_text_color">Boja teksta s postotkom</string>
     <string name="battery_bolt_color">Boja munje prilikom punjenja</string>
     <string name="battery_text_charging_color">Boja postotka prilikom punjenja</string>
-    <string name="battery_style_reset_message">Ponovno postavi sve boje baterije?</string>
+    <string name="battery_style_reset_message">Početne postavke boje baterije?</string>
    
     <!-- Animation Controls -->  
     <string name="title_animation_controls">Prilagođene animacije</string>  
