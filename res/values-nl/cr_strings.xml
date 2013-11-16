@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, temasek version -->
+    <string name="temasek_version_title">Temasek unofficial version</string>
+
+    <!-- General strings -->
+    <string name="reset">Opnieuw instellen</string>
+    <string name="enabled">Aan</string>
+    <string name="disabled">Uit</string>
+    <string name="default_string">Standaard</string>
+
+    <!-- temasek spare parts -->
+    <string name="temasek_settings_title">Geavanceerde instellingen</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Kleurenkiezer</string>
+    <string name="press_color_to_apply">Tik op een onderstaande kleur om deze toe te passen</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+
+    <!-- Status bar -->
+    <string name="status_bar_title">Statusbar</string>
+    <string name="status_bar_style_title">Statusbar instellingen</string>
+    <string name="status_bar_general_title">Algemeen</string>
+
+    <!-- Status bar | Clock -->
+    <string name="status_bar_clock">Klok en datum</string>
+    <string name="status_bar_clock_title">Uiterlijk klok en datum</string>
+    <string name="clock_title_enable">Uitlijning</string>
+    <string name="clock_enabled">Aan</string>
+    <string name="clock_disabled">Uit</string>
+    <string name="clock_color_title">Kleur</string>
+    <string name="status_bar_clock_style_reset">Kleur opnieuw instellen</string>
+    <string name="status_bar_show_clock_title">Toon klok en datum</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-uurs klok is in gebruik</string>
+    <string name="enable_clock_weekday">Dag van de week</string>
+    <string name="enable_clock_weekday_summary">Toon afkorting van de dag naast de klok</string>
+    <string name="right_clock">Klok rechts</string>
+    <string name="center_clock">Klok in het midden</string>
+    <string name="dont_show">Niet tonen</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_display_summary">Toon aangepaste datum naast klok</string>
+    <string name="clock_date_style">Uiterlijk datum</string>
+    <string name="clock_date_format">Datumnotatie</string>
+    <string name="clock_date_string_edittext_title">Moet in datumnotatie: MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Voer tekst in</string>
+    <string name="am_pm_clock_normal">Normaal</string>
+    <string name="am_pm_clock_small">Klein</string>
+    <string name="am_pm_clock_none">Niet tonen</string>
+    <string name="clock_date_display_none">Niet tonen</string>
+    <string name="clock_date_display_small">Klein</string>
+    <string name="clock_date_display_normal">Normaal</string>
+    <string name="clock_date_style_normal">Normaal</string>
+    <string name="clock_date_style_lowercase">Kleine letters</string>
+    <string name="clock_date_style_uppercase">Hoofdletters</string>
+    <string name="clock_date_format_custom">Aangepast</string>
+    <string name="status_bar_clock_style_reset_message">Kleur van klok opnieuw instellen?</string>
+
+    <!-- Notification Drawer Settings -->
+    <string name="notification_drawer_title">Meldingenvenster</string>
+    <string name="notification_drawer_style_title">Meldingenvenster instellingen</string>
+    <string name="notification_style_summary">Verander het uiterlijk van het meldingenvenster</string>
+    <string name="notification_drawer_background">Achtergrond en transparantie</string> 
+
+    <!-- Notification drawer background -->
+    <string name="notification_wallpaper_title">Achtergrond meldingenvenster</string>
+    <string name="notification_wallpaper_landscape_title">Andere liggende achtergrond</string>
+    <string name="notification_background_color_fill">Kleur vullen</string>
+    <string name="notification_background_custom_image">Aangepaste afbeelding</string>
+    <string name="notification_background_default_wallpaper">Standaardachtergrond</string>
+    <string name="notification_drawer_custom_background_dialog_title">Kies kleur</string>
+    <string name="notif_wallpaper_alpha_title">Meldingenvenster transparantie</string> 
+    <string name="notif_alpha_title">Meldingenrij transparantie</string>
+
+    <!-- Advanced low battery indicator options -->  
+    <string name="lights_and_warnings_title">Waarschuwingen</string>
+    <string name="lights_and_warnings_style_title">Waarschuwingen instellingen</string>
+    <string name="pref_low_battery_warning_policy_title">Waarschuwing bij laag batterijpercentage</string>
+    <string name="pref_low_battery_warning_policy_dialog_title">Bij laag percentage geef weer</string>
+    <string name="low_battery_warning_policy_popup_sound">Pop-up en geluid</string>
+    <string name="low_battery_warning_policy_notif_sound">Melding en geluid</string>
+    <string name="low_battery_warning_policy_popup">Alleen een pop-up</string>
+    <string name="low_battery_warning_policy_notif">Alleen een melding</string>
+    <string name="low_battery_warning_policy_sound">Alleen geluid</string>
+    <string name="low_battery_warning_policy_disabled">Niets</string> 
+
+    <!-- Screen-On Notification Light -->
+    <string name="screen_on_notification_led_title">LED aan bij ingeschakeld scherm</string>
+    <string name="screen_on_notification_led_summary">Toon LED-indicator zelfs wanneer het scherm ingeschakeld is</string> 
+
+    <!-- Alternate default app picker -->
+    <string name="general_settings_title">Algemene instellingen</string>
+    <string name="general_settings_style_title">Algemeen</string>
+    <string name="display_short">Scherm</string>
+    <string name="misc_short">Divers</string>
+    <string name="alt_resolver">Alt. standaard appl. raster</string>
+    <string name="alt_resolver_summary">Gebruik alternatieve standaard applicatieraster</string>
+
+    <!-- Network stats stats -->
+    <string name="status_bar_network_cat">Netwerkverkeer-meter</string>
+    <string name="status_bar_network_header">Netwerkverkeer-meter</string>
+    <string name="status_bar_network_title">Netwerkverkeer</string>
+    <string name="status_bar_show_network_stats_title">Toon netwerk snelheid</string>
+    <string name="status_bar_network_stats_update_title">Frequentie bijwerken</string>
+
+    <!-- Network stats custm colors -->
+    <string name="status_bar_network_usage_color_style">Kleur</string>
+    <string name="status_bar_network_usage_color_reset">Kleur opnieuw instellen</string>
+    <string name="status_bar_network_usage_color_reset_message">Kleur opnieuw instellen?</string>
+
+    <!-- Network stats hide if there's no traffic -->
+    <string name="hide_network_speed">Toon niet bij geen verkeer</string>
+    <string name="hide_network_speed_summary">De netwerkverkeer-meter wordt niet getoond als er geen verkeer is</string>
+
+    <!-- Display : Animation options -->
+    <string name="screen_and_animations_title">Scherm en animaties</string>
+    <string name="display_category_animation_options_title">Scherm en animatie instellingen</string>
+    <string name="system_power_crt_mode_title">Beeldbuis animatie</string>
+    <string name="system_power_crt_mode_dialog_title">Beeldbuis animatie</string>
+    <string name="system_power_crt_mode_off">Niet tonen</string>
+    <string name="system_power_crt_mode_horizontal">Horizontaal instorten</string>
+    <string name="system_power_crt_mode_vertical">Verticaal instorten</string>
+    <string name="system_power_crt_mode_both">Instorten orientatieafhankelijk</string>
+    <string name="system_power_crt_mode_scale">Minimaliseren</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Toon CPU info</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Scherm overlapping toont actuele CPU info</string>
+
+    <!-- Status bar brightness control -->
+    <string name="status_bar_toggle_brightness">Helderheid veranderen</string>
+    <string name="status_bar_toggle_brightness_summary">Verander de helderheid door over de statusbar te vegen</string>
+    <string name="status_bar_toggle_info">Auto. helderheid is in gebruik</string>
+
+    <!-- TRDS Settings -->
+    <string name="trds_settings_title">Donkere GUI</string>
+
+    <!-- Restart SystemUI -->
+    <string name="restart_systemui">SystemUI herstarten</string>
+
+    <!-- Button shorcut actions -->
+    <string name="additional_options_title">Overige opties</string>
+    <string name="shortcut_action_app">Aangepaste appl.</string>
+    <string name="shortcut_action_home">Home</string>
+    <string name="shortcut_action_back">Terug</string>
+    <string name="shortcut_action_recent">Recente appl.</string>
+    <string name="shortcut_action_lastapp">Laatste appl.</string>
+    <string name="shortcut_action_search">Zoeken</string>
+    <string name="shortcut_action_screenshot">Schermafdruk</string>
+    <string name="shortcut_action_menu">Menu</string>
+    <string name="shortcut_action_ime">Open IME-schakelaar</string>
+    <string name="shortcut_action_kill">Stop applicatie</string>
+    <string name="shortcut_action_power">Scherm uit</string>
+    <string name="shortcut_action_notifications">Meldingen</string>
+    <string name="shortcut_action_qs">Snelle instellingen paneel</string>
+    <string name="shortcut_action_none">Niets</string>
+    <string name="shortcut_action_power_menu">Aan/uit-menu</string>
+    <string name="shortcut_action_torch">Zaklamp</string>
+    <string name="shortcut_action_longpress">Lang indrukken:</string>
+    <string name="shortcut_action_select_action_longpress">Kies activiteit bij lang indrukken:</string>
+    <string name="shortcut_action_select_action">Kies activiteit:</string>
+    <string name="shortcut_action_select_action_newbutton">Kies nieuw knop:</string>
+    <string name="shortcut_action_reset">Opnieuw instellen</string>
+    <string name="shortcut_action_add">Toevoegen</string>
+    <string name="shortcut_action_reset_message">Alles opnieuw instellen?</string>
+    <string name="shortcut_action_max">Maximaal aantal is bereikt</string>
+    <string name="shortcut_action_warning">Waarschuwing</string>
+    <string name="shortcut_action_warning_message">Laatste aanpassing kan niet gewist worden</string>
+    <string name="shortcut_action_disable_message">Uitgeschakeld\nVoeg toe om in dit in te schakelen</string>
+    <string name="shortcut_image_not_valid">Ongeldig icoon, de gekozen app wordt waarschijnlijk niet ondersteund</string>
+    <string name="shortcut_duplicate_entry">De gekozen activiteit kan niet tweemaal worden toegevoegd</string>
+
+    <string name="shortcut_action_help_shortcut">snelkoppeling</string>
+    <string name="shortcut_action_help_button">knop</string>
+    <string name="shortcut_action_help_icon">, terwijl het icoon geselecteerd wordt, zal aanpassingsopties tonen</string>
+    <string name="shortcut_action_help_main">Om een %1$s toe te voegen, selecteer je het Toevoegen icoon. Als een %1$s toegevoegd is, zal het doel veranderen als je de rij selecteert%2$s\n\nOm een %1$s te wissen, veeg je link/rechts over de rij.  Herorden een %1$s in de lijst door de knop links verticaal te vegen.\n\nOm de standaardinstellingen te herstellen, selecteer je Opnieuw instellen.</string>
+    <string name="shortcut_action_help_delete_last_entry">Door %1$s in de lijst te wissen, wordt de functie volledig uitgeschakeld.</string>
+    <string name="shortcut_action_help">Help</string>
+
+    <string name="icon_picker_type">Selecteer icoon-type:</string>
+    <string name="icon_default">Standaard</string>
+    <string name="icon_presets">Systeemiconen</string>
+    <string name="icon_custom">Galerij</string>
+    <string name="shortcuts_icon_picker_alarm">Alarm</string>
+    <string name="shortcuts_icon_picker_andy">Andy</string>
+    <string name="shortcuts_icon_picker_battery">Batterij</string>
+    <string name="shortcuts_icon_picker_browser">Browser</string>
+    <string name="shortcuts_icon_picker_calendar">Kalender</string>
+    <string name="shortcuts_icon_picker_camera">Camera</string>
+    <string name="shortcuts_icon_picker_cloud">Cloud</string>
+    <string name="shortcuts_icon_picker_contact">Contact</string>
+    <string name="shortcuts_icon_picker_directdial">Direct bellen</string>
+    <string name="shortcuts_icon_picker_directmessage">Direct bericht</string>
+    <string name="shortcuts_icon_picker_drive">Drive</string>
+    <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+    <string name="shortcuts_icon_picker_email">E-mail</string>
+    <string name="shortcuts_icon_picker_email2">E-mail alt.</string>
+    <string name="shortcuts_icon_picker_evernote">Evernote</string>
+    <string name="shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="shortcuts_icon_picker_favorite">Favoriet</string>
+    <string name="shortcuts_icon_picker_file_browser">Bestandsbeheer</string>
+    <string name="shortcuts_icon_picker_file_browser2">Bestandsbeheer alt.</string>
+    <string name="shortcuts_icon_picker_fitness">Fitness</string>
+    <string name="shortcuts_icon_picker_gallery">Galerij</string>
+    <string name="shortcuts_icon_picker_gears">Gears</string>
+    <string name="shortcuts_icon_picker_google_small">Google</string>
+    <string name="shortcuts_icon_picker_gplus">Google Plus</string>
+    <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
+    <string name="shortcuts_icon_picker_help">Help</string>
+    <string name="shortcuts_icon_picker_joystick">Joystick</string>
+    <string name="shortcuts_icon_picker_key">Accounts</string>
+    <string name="shortcuts_icon_picker_laptop">Laptop</string>
+    <string name="shortcuts_icon_picker_notes">Notities</string>
+    <string name="shortcuts_icon_picker_luggage">Reizen</string>
+    <string name="shortcuts_icon_picker_maps">Maps</string>
+    <string name="shortcuts_icon_picker_market">Store</string>
+    <string name="shortcuts_icon_picker_movie">Films</string>
+    <string name="shortcuts_icon_picker_music">Muziek</string>
+    <string name="shortcuts_icon_picker_nav">Navigatie</string>
+    <string name="shortcuts_icon_picker_phone">Telefoon</string>
+    <string name="shortcuts_icon_picker_package">Pakket</string>
+    <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+    <string name="shortcuts_icon_picker_play">Play</string>
+    <string name="shortcuts_icon_picker_pocket">Pocket</string>
+    <string name="shortcuts_icon_picker_quicksettings">Snelle instellingen</string>
+    <string name="shortcuts_icon_picker_rss">RSS Feed</string>
+    <string name="shortcuts_icon_picker_sdcard">SD-kaart</string>
+    <string name="shortcuts_icon_picker_search">Zoeken</string>
+    <string name="shortcuts_icon_picker_sms">SMS</string>
+    <string name="shortcuts_icon_picker_tasks">Taken</string>
+    <string name="shortcuts_icon_picker_terminal">Terminal</string>
+    <string name="shortcuts_icon_picker_transit">Transit</string>
+    <string name="shortcuts_icon_picker_tv">TV</string>
+    <string name="shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="shortcuts_icon_picker_unlock">Ontgrendelen</string>
+
+    <string name="icon_color_mode_all_icons">Alle iconen</string>
+    <string name="icon_color_mode_system_icons">Systeemiconen</string>
+    <string name="icon_color_mode_system_custom_icons">Systeem en aangepaste iconen</string>
+    <string name="icon_picker_choose_icon_title">Kies icoon</string>
+    <string name="group_applications">Applicaties</string>
+    <string name="select_custom_app_title">Kies aangepaste applicaties</string>
+    <string name="shortcuts_color_title">Icoonkleur snelkoppelingen</string>
+    <string name="shortcuts_color_summary">Snelkoppingsiconen kleuren</string>
+    <string name="shortcuts_color_mode_title">Icoon kleurmodus</string>
+    <string name="shortcuts_color_mode_summary">Verander de kleurmodus van de snelkoppelingsiconen</string>
+
+    <!-- Notification drawer settings  -->
+    <string name="notification_drawer_title">Meldingenvenster</string>
+    <string name="notification_hide_carrier_title">Verberg provider</string>
+    <string name="notification_shortcuts_settings_title">Snelkoppelingen</string>
+    <string name="notification_shortcuts_settings_summary">Toon snelkoppelingen in het meldingenvenster</string>
+
+    <!-- StatusBar Battery Settings -->
+    <string name="battery_icon_title">Batterij icoon</string>
+    <string name="battery_status_icon">Icoon</string>
+    <string name="battery_status_percentage">Percentage</string>
+    <string name="battery_status_icon_percentage">Icoon met percentage</string>
+    <string name="battery_status_circle">Cirkel</string>
+    <string name="battery_status_circle_percentage">Cirkel met percentage</string>
+    <string name="battery_status_dotted_circle_percentage">Cirkel (gestipt) met percentage</string>
+    <string name="battery_status_dotted_circle">Cirkel (gestipt)</string>
+    <string name="battery_color_title">Batterij kleur</string>
+    <string name="circle_battery_animation_speed">Cirkel animatie snelheid</string>
+    <string name="circle_battery_animation_speed_none">Niet</string>
+    <string name="circle_battery_animation_speed_slow">Langzaam</string>
+    <string name="circle_battery_animation_speed_stock">Normaal</string>
+    <string name="circle_battery_animation_speed_fast">Snel</string>
+    <string name="battery_text_color">Percentage kleur</string>
+    <string name="battery_bolt_color">Bliksemicoon kleur (opladen)</string>
+    <string name="battery_text_charging_color">Percentage tekstkleur tijdens opladen</string>
+    <string name="battery_style_reset_message">Alle kleuren opnieuw instellen?</string>
+   
+    <!-- Animation Controls -->  
+    <string name="title_animation_controls">Aangepaste systeemanimaties</string>  
+    <string name="activity_open_title">Activiteit Openen Animatie</string>  
+    <string name="activity_close_title">Activiteit Sluiten Animatie</string>  
+    <string name="task_open_title">Taak Openen Animatie</string>  
+    <string name="task_close_title">Task Sluiten Animatie</string>  
+    <string name="task_move_to_front_title">Naar voren brengen Animatie</string>  
+    <string name="task_move_to_back_title">Naar achter brengen Animatie</string>  
+    <string name="wallpaper_open_title">Wallpaper Openen Animatie</string>  
+    <string name="wallpaper_close_title">Wallpaper Sluiten Animatie</string>  
+    <string name="wallpaper_intra_open_title">Wallpaper Intra Openen Animatie</string>  
+    <string name="wallpaper_intra_close_title">Wallpaper Intra Sluiten Animatie</string>  
+    <string name="animation_duration_title">Animatie duratie</string>  
+    <string name="title_animation_no_override">App-aanpassingen voorkomen</string>  
+    <string name="summary_animation_no_override">Voorkom dat apps de instellingen aanpassen</string>  
+    <string name="animation_duration_default">Standaard</string>
+    <string name="header_summary_animation">@null</string>
+
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Toon batterijlading in ontgrendelring</string>
+
+    <!-- Lockscreen maximized widgets -->
+    <string name="security_maximize_widgets_title">Maximaliseer widgets op ontgrendelscherm</string>
+
+</resources>
