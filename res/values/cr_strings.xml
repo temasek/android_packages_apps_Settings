@@ -301,9 +301,6 @@
     <!-- Lockscreen battery ring -->
     <string name="battery_around_lockscreen_ring">Battery around unlock ring</string>
 
-    <!-- Lockscreen maximized widgets -->
-    <string name="security_maximize_widgets_title">Maximize lockscreen widgets</string>
-
     <!-- Navigation ring -->
     <string name="shortcut_action_ring_vib">Ring/Vib</string>
     <string name="shortcut_action_ring_silent">Ring/Silent</string>

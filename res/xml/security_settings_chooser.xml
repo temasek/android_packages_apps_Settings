@@ -31,10 +31,6 @@
             android:title="@string/security_enable_widgets_title"/>
 
         <CheckBoxPreference
-            android:key="lockscreen_maximize_widgets"
-            android:title="@string/security_maximize_widgets_title"/>
-
-        <CheckBoxPreference
             android:key="battery_around_lockscreen_ring"
             android:title="@string/battery_around_lockscreen_ring"
             android:defaultValue="true" />

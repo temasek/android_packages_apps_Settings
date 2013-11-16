@@ -93,7 +93,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
 
     // Omni Additions
     private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
-    private static final String LOCKSCREEN_MAXIMIZE_WIDGETS = "lockscreen_maximize_widgets";
 
     private PackageManager mPM;
     private DevicePolicyManager mDPM;
@@ -129,7 +128,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
 
     // Omni Additions
     private CheckBoxPreference mLockRingBattery;
-    private CheckBoxPreference mMaximizeKeyguardWidgets;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -229,12 +227,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
         if (mLockRingBattery != null) {
             mLockRingBattery.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, 0) == 1);
-        }
-
-        mMaximizeKeyguardWidgets = (CheckBoxPreference) root.findPreference(LOCKSCREEN_MAXIMIZE_WIDGETS);
-        if (mMaximizeKeyguardWidgets != null) {
-            mMaximizeKeyguardWidgets.setChecked(Settings.System.getInt(getContentResolver(),
-                    Settings.System.LOCKSCREEN_MAXIMIZE_WIDGETS, 0) == 1);
         }
 
         // biometric weak liveliness
@@ -609,9 +601,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
         } else if (preference == mLockRingBattery) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, isToggled(preference) ? 1 : 0);
-        } else if (preference == mMaximizeKeyguardWidgets) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.LOCKSCREEN_MAXIMIZE_WIDGETS, isToggled(preference) ? 1 : 0);
         } else if (preference == mShowPassword) {
             Settings.System.putInt(getContentResolver(), Settings.System.TEXT_SHOW_PASSWORD,
                     mShowPassword.isChecked() ? 1 : 0);
