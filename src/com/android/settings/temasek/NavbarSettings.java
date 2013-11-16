@@ -41,6 +41,9 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     private static final String PREF_RING = "navbar_targets_settings";
     private static final String PREF_STYLE_DIMEN = "navbar_style_dimen_settings";
     private static final String PREF_NAVIGATION_BAR_CAN_MOVE = "navbar_can_move";
+    private static final String KEY_MENU_ENABLED = "key_menu_enabled";
+    private static final String KEY_BACK_ENABLED = "key_back_enabled";
+    private static final String KEY_HOME_ENABLED = "key_home_enabled";
 
     private int mNavBarMenuDisplayValue;
 
@@ -51,6 +54,9 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     PreferenceScreen mButtonPreference;
     PreferenceScreen mRingPreference;
     PreferenceScreen mStyleDimenPreference;
+    private CheckBoxPreference mMenuKeyEnabled;
+    private CheckBoxPreference mBackKeyEnabled;
+    private CheckBoxPreference mHomeKeyEnabled;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,6 +66,10 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.navbar_settings);
 
         PreferenceScreen prefs = getPreferenceScreen();
+
+        mMenuKeyEnabled = (CheckBoxPreference) findPreference(KEY_MENU_ENABLED);
+        mBackKeyEnabled = (CheckBoxPreference) findPreference(KEY_BACK_ENABLED);
+        mHomeKeyEnabled = (CheckBoxPreference) findPreference(KEY_HOME_ENABLED);
 
         mMenuDisplayLocation = (ListPreference) findPreference(PREF_MENU_LOCATION);
         mMenuDisplayLocation.setValue(Settings.System.getInt(getActivity()
@@ -93,6 +103,12 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         mNavigationBarCanMove.setOnPreferenceChangeListener(this);
 
         updateNavbarPreferences(enableNavigationBar);
+
+        if (mEnableNavigationBar.isChecked()) {
+            enableKeysPrefs();
+        } else {
+            resetKeys();
+        }
     }
 
     private void updateNavbarPreferences(boolean show) {
@@ -103,6 +119,30 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         mNavigationBarCanMove.setEnabled(show);
         mMenuDisplayLocation.setEnabled(show
             && mNavBarMenuDisplayValue != 1);
+    }
+
+    public void enableKeysPrefs() {
+        mMenuKeyEnabled.setEnabled(true);
+        mBackKeyEnabled.setEnabled(true);
+        mHomeKeyEnabled.setEnabled(true);
+        mMenuKeyEnabled.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.KEY_MENU_ENABLED, 1) == 1));
+        mBackKeyEnabled.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.KEY_BACK_ENABLED, 1) == 1));
+        mHomeKeyEnabled.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.KEY_HOME_ENABLED, 1) == 1));
+    }
+
+    public void resetKeys() {
+        mMenuKeyEnabled.setEnabled(false);
+        mBackKeyEnabled.setEnabled(false);
+        mHomeKeyEnabled.setEnabled(false);
+        mMenuKeyEnabled.setChecked(true);
+        mBackKeyEnabled.setChecked(true);
+        mHomeKeyEnabled.setChecked(true);
+        Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.KEY_MENU_ENABLED, 1);
+        Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.KEY_BACK_ENABLED, 1);
+        Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.KEY_HOME_ENABLED, 1);
     }
 
     @Override
@@ -130,6 +170,38 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             return true;
         }
         return false;
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        boolean value;
+        if (preference == mEnableNavigationBar) {
+            value = mEnableNavigationBar.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_SHOW, value ? 1 : 0);
+            if (value) {
+                enableKeysPrefs();
+            } else {
+                resetKeys();
+            }
+            return true;
+        } else if (preference == mMenuKeyEnabled) {
+            value = mMenuKeyEnabled.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.KEY_MENU_ENABLED, value ? 1 : 0);
+            return true;
+        } else if (preference == mBackKeyEnabled) {
+            value = mBackKeyEnabled.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.KEY_BACK_ENABLED, value ? 1 : 0);
+            return true;
+        } else if (preference == mHomeKeyEnabled) {
+            value = mHomeKeyEnabled.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.KEY_HOME_ENABLED, value ? 1 : 0);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     @Override
