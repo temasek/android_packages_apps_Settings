@@ -4,41 +4,44 @@
 
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
+    <!-- Do NOT Translate this -->
+    <string name="temasek_version_default">V3</string>
 
     <!-- General strings -->
     <string name="reset">Opnieuw instellen</string>
-    <string name="enabled">Aan</string>
-    <string name="disabled">Uit</string>
+    <string name="enabled">Ingeschakeld</string>
+    <string name="disabled">Uitgeschakeld</string>
     <string name="default_string">Standaard</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Geavanceerde instellingen</string>
 
-    <!-- Color Picker -->
+     <!-- Color Picker -->
     <string name="dialog_color_picker">Kleurenkiezer</string>
     <string name="press_color_to_apply">Tik op een onderstaande kleur om deze toe te passen</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
+    <string name="set">Pas toe</string>
 
     <!-- Status bar -->
     <string name="status_bar_title">Statusbar</string>
     <string name="status_bar_style_title">Statusbar instellingen</string>
     <string name="status_bar_general_title">Algemeen</string>
 
+
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Klok en datum</string>
     <string name="status_bar_clock_title">Uiterlijk klok en datum</string>
     <string name="clock_title_enable">Uitlijning</string>
-    <string name="clock_enabled">Aan</string>
-    <string name="clock_disabled">Uit</string>
+    <string name="clock_enabled">Ingeschakeld</string>
+    <string name="clock_disabled">Uitgeschakeld</string>
     <string name="clock_color_title">Kleur</string>
     <string name="status_bar_clock_style_reset">Kleur opnieuw instellen</string>
     <string name="status_bar_show_clock_title">Toon klok en datum</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-uurs klok is in gebruik</string>
+    <string name="status_bar_am_pm_info">24-uurs klok ingeschakeld</string>
     <string name="enable_clock_weekday">Dag van de week</string>
     <string name="enable_clock_weekday_summary">Toon afkorting van de dag naast de klok</string>
     <string name="right_clock">Klok rechts</string>
@@ -91,7 +94,7 @@
     <string name="low_battery_warning_policy_disabled">Niets</string> 
 
     <!-- Screen-On Notification Light -->
-    <string name="screen_on_notification_led_title">LED aan bij ingeschakeld scherm</string>
+    <string name="screen_on_notification_led_title">LED actief bij ingeschakeld scherm</string>
     <string name="screen_on_notification_led_summary">Toon LED-indicator zelfs wanneer het scherm ingeschakeld is</string> 
 
     <!-- Alternate default app picker -->
@@ -100,7 +103,7 @@
     <string name="display_short">Scherm</string>
     <string name="misc_short">Divers</string>
     <string name="alt_resolver">Alt. standaard appl. raster</string>
-    <string name="alt_resolver_summary">Gebruik alternatieve standaard applicatieraster</string>
+    <string name="alt_resolver_summary">Gebruik een alternatief standaard applicatieraster</string>
 
     <!-- Network stats stats -->
     <string name="status_bar_network_cat">Netwerkverkeer-meter</string>
@@ -121,7 +124,7 @@
     <!-- Display : Animation options -->
     <string name="screen_and_animations_title">Scherm en animaties</string>
     <string name="display_category_animation_options_title">Scherm en animatie instellingen</string>
-    <string name="system_power_crt_mode_title">Beeldbuis animatie</string>
+    <string name="system_power_crt_mode_title">Beeldbuis (CRT) animatie</string>
     <string name="system_power_crt_mode_dialog_title">Beeldbuis animatie</string>
     <string name="system_power_crt_mode_off">Niet tonen</string>
     <string name="system_power_crt_mode_horizontal">Horizontaal instorten</string>
@@ -137,21 +140,21 @@
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">Helderheid veranderen</string>
     <string name="status_bar_toggle_brightness_summary">Verander de helderheid door over de statusbar te vegen</string>
-    <string name="status_bar_toggle_info">Auto. helderheid is in gebruik</string>
+    <string name="status_bar_toggle_info">Auto. helderheid is ingeschakeld</string>
 
     <!-- TRDS Settings -->
-    <string name="trds_settings_title">Donkere GUI</string>
+    <string name="trds_settings_title">Donkere UI (TRDS)</string>
 
     <!-- Restart SystemUI -->
     <string name="restart_systemui">SystemUI herstarten</string>
 
     <!-- Button shorcut actions -->
     <string name="additional_options_title">Overige opties</string>
-    <string name="shortcut_action_app">Aangepaste appl.</string>
+    <string name="shortcut_action_app">Aangepaste applicaties</string>
     <string name="shortcut_action_home">Home</string>
     <string name="shortcut_action_back">Terug</string>
-    <string name="shortcut_action_recent">Recente appl.</string>
-    <string name="shortcut_action_lastapp">Laatste appl.</string>
+    <string name="shortcut_action_recent">Recente applicaties</string>
+    <string name="shortcut_action_lastapp">Laatste applicaties</string>
     <string name="shortcut_action_search">Zoeken</string>
     <string name="shortcut_action_screenshot">Schermafdruk</string>
     <string name="shortcut_action_menu">Menu</string>
@@ -160,27 +163,27 @@
     <string name="shortcut_action_power">Scherm uit</string>
     <string name="shortcut_action_notifications">Meldingen</string>
     <string name="shortcut_action_qs">Snelle instellingen paneel</string>
-    <string name="shortcut_action_none">Niets</string>
+    <string name="shortcut_action_none">Doe niets</string>
     <string name="shortcut_action_power_menu">Aan/uit-menu</string>
     <string name="shortcut_action_torch">Zaklamp</string>
     <string name="shortcut_action_longpress">Lang indrukken:</string>
     <string name="shortcut_action_select_action_longpress">Kies activiteit bij lang indrukken:</string>
     <string name="shortcut_action_select_action">Kies activiteit:</string>
-    <string name="shortcut_action_select_action_newbutton">Kies nieuw knop:</string>
+    <string name="shortcut_action_select_action_newbutton">Kies nieuwe knop:</string>
     <string name="shortcut_action_reset">Opnieuw instellen</string>
     <string name="shortcut_action_add">Toevoegen</string>
     <string name="shortcut_action_reset_message">Alles opnieuw instellen?</string>
-    <string name="shortcut_action_max">Maximaal aantal is bereikt</string>
+    <string name="shortcut_action_max">Maximumaantal is bereikt</string>
     <string name="shortcut_action_warning">Waarschuwing</string>
-    <string name="shortcut_action_warning_message">Laatste aanpassing kan niet gewist worden</string>
+    <string name="shortcut_action_warning_message">Laatste aanpassing kan niet worden gewist</string>
     <string name="shortcut_action_disable_message">Uitgeschakeld\nVoeg toe om in dit in te schakelen</string>
     <string name="shortcut_image_not_valid">Ongeldig icoon, de gekozen app wordt waarschijnlijk niet ondersteund</string>
-    <string name="shortcut_duplicate_entry">De gekozen activiteit kan niet tweemaal worden toegevoegd</string>
+    <string name="shortcut_duplicate_entry">Je kunt dit niet twee keer toevoegen</string>
 
     <string name="shortcut_action_help_shortcut">snelkoppeling</string>
     <string name="shortcut_action_help_button">knop</string>
     <string name="shortcut_action_help_icon">, terwijl het icoon geselecteerd wordt, zal aanpassingsopties tonen</string>
-    <string name="shortcut_action_help_main">Om een %1$s toe te voegen, selecteer je het Toevoegen icoon. Als een %1$s toegevoegd is, zal het doel veranderen als je de rij selecteert%2$s\n\nOm een %1$s te wissen, veeg je link/rechts over de rij.  Herorden een %1$s in de lijst door de knop links verticaal te vegen.\n\nOm de standaardinstellingen te herstellen, selecteer je Opnieuw instellen.</string>
+    <string name="shortcut_action_help_main">Om een %1$s toe te voegen, selecteer je het Toevoegen icoon. Als een %1$s toegevoegd is, zal het doel veranderen als je de rij selecteert%2$s\n\nOm een %1$s te wissen, veeg je link/rechts over de rij.  Herorden een %1$s in de lijst door de knop links verticaal te slepen.\n\nOm de standaardinstellingen te herstellen, selecteer je Opnieuw instellen.</string>
     <string name="shortcut_action_help_delete_last_entry">Door %1$s in de lijst te wissen, wordt de functie volledig uitgeschakeld.</string>
     <string name="shortcut_action_help">Help</string>
 
@@ -254,7 +257,7 @@
 
     <!-- Notification drawer settings  -->
     <string name="notification_drawer_title">Meldingenvenster</string>
-    <string name="notification_hide_carrier_title">Verberg provider</string>
+    <string name="notification_hide_carrier_title">Verberg naam provider</string>
     <string name="notification_shortcuts_settings_title">Snelkoppelingen</string>
     <string name="notification_shortcuts_settings_summary">Toon snelkoppelingen in het meldingenvenster</string>
 
@@ -269,13 +272,13 @@
     <string name="battery_status_dotted_circle">Cirkel (gestipt)</string>
     <string name="battery_color_title">Batterij kleur</string>
     <string name="circle_battery_animation_speed">Cirkel animatie snelheid</string>
-    <string name="circle_battery_animation_speed_none">Niet</string>
+    <string name="circle_battery_animation_speed_none">Geen</string>
     <string name="circle_battery_animation_speed_slow">Langzaam</string>
     <string name="circle_battery_animation_speed_stock">Normaal</string>
     <string name="circle_battery_animation_speed_fast">Snel</string>
     <string name="battery_text_color">Percentage kleur</string>
-    <string name="battery_bolt_color">Bliksemicoon kleur (opladen)</string>
-    <string name="battery_text_charging_color">Percentage tekstkleur tijdens opladen</string>
+    <string name="battery_bolt_color">Oplaadindicator kleur</string>
+    <string name="battery_text_charging_color">Percentage kleur tijdens opladen</string>
     <string name="battery_style_reset_message">Alle kleuren opnieuw instellen?</string>
    
     <!-- Animation Controls -->  
@@ -299,7 +302,68 @@
     <!-- Lockscreen battery ring -->
     <string name="battery_around_lockscreen_ring">Toon batterijlading in ontgrendelring</string>
 
-    <!-- Lockscreen maximized widgets -->
-    <string name="security_maximize_widgets_title">Maximaliseer widgets op ontgrendelscherm</string>
+    <!-- Navigation ring -->
+    <string name="shortcut_action_ring_vib">Ring/Tril</string>
+    <string name="shortcut_action_ring_silent">Ring/Stil</string>
+    <string name="shortcut_action_ring_vib_silent">Ring/Tril/Stil</string>
+
+    <!-- Navigation settings -->
+    <string name="navigation_settings_options_title">Navigatie instellingen</string>
+    <string name="navigation_settings_title">Navigatie</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_size_42_dp_default">42 dp (standaard)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (standaard)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (uitgeschakeld)</string>
+    <string name="navigation_menu_right">Rechts</string>
+    <string name="navigation_menu_left">Links</string>
+    <string name="navigation_menu_both">Beide</string>
+    <string name="navigation_menu_default_jb_behavior">Tonen bij aanvraag (standaard)</string>
+    <string name="navigation_menu_never_show">Nooit tonen</string>
+    <string name="navigation_menu_always_show">Altijd tonen</string>
+    <string name="navigation_bar">Navigatiebalk</string>
+    <string name="navbar_button_cat">Navigatiebalk knoppen</string>
+    <string name="title_pref_menu_location">Menulocatie</string>
+    <string name="summary_pref_menu_location">Waar wil je de menuknoppen tonen?</string>
+    <string name="title_pref_menu_display">Menu zichtbaarheid</string>
+    <string name="summary_pref_menu_display">Hoe en wanneer wil je de menuknoppen tonen?</string>
+    <string name="navbar_enable_bar">Schakel navigatiebalk in</string>
+    <string name="navbar_enable_bar_summary">Hiermee schakel je de navigatiebalk in</string>
+    <string name="navigation_bar_height_title">Navigatiebalk hoogte staand</string>
+    <string name="navigation_bar_height_summary">Navigatiebalk hoogte in staande schermorientatie</string>
+    <string name="navigation_bar_height_landscape_title">Navigatiebalk hoogte liggend</string>
+    <string name="navigation_bar_height_landscape_summary">Navigatiebalk hoogte in liggende schermorientatie.</string>
+    <string name="navigation_bar_width_title">Navigatiebalk breedte</string>
+    <string name="navigation_bar_width_summary">Navigatiebalk hoogte als deze langs een zijkant wordt weergegeven</string>
+    <string name="navbar_can_move">Toon liggend</string>
+    <string name="navbar_can_move_summary">Toont navigatiebalk liggend onderaan het scherm</string>
+    <string name="navbar_style_dimen_title">Afmetingen</string>
+    <string name="navbar_button_title">Knoppen</string>
+    <string name="navbar_targets_title">Ring doelen</string>
+    <string name="navbar_cat">Navigatiebalk</string>
+    <string name="navbar_dimensions_reset_message">Alle afmetingen opnieuw instellen?</string>
+    <string name="navbar_button_style_reset_message">Alle veranderingen opnieuw instellen?</string>
+
+    <!-- Navigation bar button style -->
+    <string name="nav_bar_button_style">Uiterlijk knoppen</string>
+    <string name="nav_bar_button_style_summary">Verander het uiterlijk van de knoppen</string>
+    <string name="button_transparency_title">Knop transparantie</string>
+    <string name="navigation_bar_icon_tint_title">Knopkleur</string>
+    <string name="nav_button_color_mode_title">Kleurmodus</string>
+    <string name="nav_button_color_mode_dialog_title">Kleuren</string>
+    <string name="nav_button_color_mode_summary">Verander de navigatiebalk knoppen kleurmodus</string>
+    <string name="navigation_bar_glow_tint_title">Kleur van de gloed</string>
+
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Capacitieve knoppen</string>
+    <string name="key_menu_enabled">Menuknop ingeschakeld</string>
+    <string name="key_back_enabled">Terugknop ingeschakeld</string>
+    <string name="key_home_enabled">Homeknop ingeschakeld</string>
 
 </resources>
