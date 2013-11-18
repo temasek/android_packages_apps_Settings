@@ -79,16 +79,16 @@
     <string name="notif_alpha_title">Notification row transparency</string>
 
     <!-- Advanced low battery indicator options -->
-    <string name="lights_and_warnings_title">Luces y avisos</string>
-    <string name="lights_and_warnings_style_title">Configuración de luces y avisos</string>
+    <string name="lights_and_warnings_title">Leds y alertas</string>
+    <string name="lights_and_warnings_style_title">Configuración de leds y alertas</string>
     <string name="pref_low_battery_warning_policy_title">Alerta de batería baja</string>
     <string name="pref_low_battery_warning_policy_dialog_title">Indicar batería baja con</string>
-    <string name="low_battery_warning_policy_popup_sound">Ventana y sonido</string>
+    <string name="low_battery_warning_policy_popup_sound">Pop-up y sonido</string>
     <string name="low_battery_warning_policy_notif_sound">Notificación y sonido</string>
-    <string name="low_battery_warning_policy_popup">Ventana de diálogo</string>
-    <string name="low_battery_warning_policy_notification">Notificación</string>
+    <string name="low_battery_warning_policy_popup">Pop-up</string>
+    <string name="low_battery_warning_policy_notif">Solo notificación</string>
     <string name="low_battery_warning_policy_sound">Sonido</string>
-    <string name="low_battery_warning_policy_disabled">Desactivado</string>
+    <string name="low_battery_warning_policy_disabled">Desactivada</string>
 
     <!-- Screen-On Notification Light -->
     <string name="screen_on_notification_led_title">Notificación en pantalla encendida</string>
@@ -100,7 +100,7 @@
     <string name="display_short">Pantalla</string>
     <string name="misc_short">Miscelaneos</string>
     <string name="alt_resolver">Selector de aplicaciones alternativo</string>
-    <string name="alt_resolver_summary">Usar selector de aplicaciones con interfáz básica</string>
+    <string name="alt_resolver_summary">Usar selector de aplicaciones alternativo</string>
 
     <!-- Network stats stats -->
     <string name="status_bar_network_cat">Medidor de tráfico de datos</string>
@@ -181,7 +181,7 @@
     <string name="shortcut_action_help_shortcut">acceso directo</string>
     <string name="shortcut_action_help_button">botón</string>
     <string name="shortcut_action_help_icon">,mientras selecciona el icono, aparecerán opciones de personalización</string>
-    <string name="shortcut_action_help_main">Para agregar un botón, presiona el icono Añadir (+).Puedes modificar su función tocando sobre él o agregar una acción a su pulsación prolongada.\n\nPara eliminar un botón desliza horizontalmente.\n\nPara reordenar desliza verticalmente.\n\nPara volver a los valores predeterminados presiona el botón Restaurar.
+    <string name="shortcut_action_help_main">Para agregar un botón, presiona el icono Añadir (+). Puedes modificar su función tocando sobre él o agregar una acción a su pulsación prolongada.\n\nPara eliminar un botón desliza horizontalmente.\n\nPara reordenar desliza verticalmente.\n\nPara volver a los valores predeterminados presiona el botón Restaurar.
    </string>
    <string name="shortcut_action_help_delete_last_entry">Eliminar todos los %1$s de la lista desactivará la función.</string>
     <string name="shortcut_action_help">Ayuda</string>
@@ -359,8 +359,14 @@
  
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Botones físicos</string>
-    <string name="key_menu_enabled">Botón Menú habilitado</string>
-    <string name="key_back_enabled">Botón Atrás habilitado</string>
-    <string name="key_home_enabled">Botón Escritorio habilitado</string>
+    <string name="key_menu_enabled">Habilitar botón Menú</string>
+    <string name="key_back_enabled">Habilitar botón Atrás</string>
+    <string name="key_home_enabled">Habilitar botón Escritorio</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">Comportamiento del escáner de medios al iniciar</string>
+    <string name="media_scanner_on_boot_enabled">Escaneo automático</string>
+    <string name="media_scanner_on_boot_ask">Preguntar antes de escanear</string>
+    <string name="media_scanner_on_boot_disabled">No escanear</string>
 
 </resources>
