@@ -4,6 +4,8 @@
 
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Temasek neslužbena verzija</string>
+	<!-- Do NOT Translate this -->
+    <string name="temasek_version_default">V4</string>
 
     <!-- General strings -->
     <string name="reset">Vrati početno</string>
@@ -12,7 +14,7 @@
     <string name="default_string">Početno</string>
 
     <!-- temasek spare parts -->
-    <string name="temasek_settings_title">Temasek rezervni dijelovi</string>
+    <string name="temasek_settings_title">Temasek dodatne postavke</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Odabir boja</string>
@@ -64,7 +66,7 @@
 
     <!-- Notification Drawer Settings -->
     <string name="notification_drawer_title">Ploča s obavijestima</string>
-    <string name="notification_drawer_style_title">Mogućnosti Ploče s obavijestima</string>
+    <string name="notification_drawer_style_title">Mogućnosti ploče s obavijestima</string>
     <string name="notification_style_summary">Promjenite svoje postavke ploče s obavijestima</string>
     <string name="notification_drawer_background">Pozadina i prozirnost</string> 
 
@@ -166,7 +168,7 @@
     <string name="shortcut_action_longpress">Dugo pritiskanje:</string>
     <string name="shortcut_action_select_action_longpress">Odaberi radnju za dugo pritiskanje:</string>
     <string name="shortcut_action_select_action">Odaberi radnju:</string>
-    <string name="shortcut_action_select_action_newbutton">Odaberi novi gumb:</string>
+    <string name="shortcut_action_select_action_newbutton">Odaberi novu tipku:</string>
     <string name="shortcut_action_reset">Ponovno postavi</string>
     <string name="shortcut_action_add">Dodaj</string>
     <string name="shortcut_action_reset_message">Vrati početne postavke?</string>
@@ -178,7 +180,7 @@
     <string name="shortcut_duplicate_entry">Odabrana radnja ne može biti dodana dvaput</string>
 
     <string name="shortcut_action_help_shortcut">prečac</string>
-    <string name="shortcut_action_help_button">gumb</string>
+    <string name="shortcut_action_help_button">tipka</string>
     <string name="shortcut_action_help_icon">, dok će odabir ikone prikazati mogućnosti prilagodbe</string>
     <string name="shortcut_action_help_main">Da bi dodali %1$s, odaberite Dodaj ikonu.  Jednom kad je %1$s dodana, izbor retka će promjeniti cilj%2$s\n\nDa bi uklonili %1$s, prevucite redak vodoravno lijevo ili desno.  Za preslagivanje %1$s na popisu vucite okomito držeći simbol s lijeve strane.\n\nZa brisanje ili postavljanje na postavljene vrijednosti odaberite ikonu za postavljanje.</string>
     <string name="shortcut_action_help_delete_last_entry">Brisanje svake %1$s na popisu će potpuno onemogućiti značajku.</string>
@@ -295,5 +297,78 @@
     <string name="summary_animation_no_override">Onemogući aplikacijama zaobilaženje prijelaza.</string>  
     <string name="animation_duration_default">Postavljeno</string>
     <string name="header_summary_animation">@null</string>
+	
+	<!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Baterija oko prstena za otključavanje</string>
+
+    <!-- Navigation ring -->
+    <string name="shortcut_action_ring_vib">Zvono/Vibra</string>
+    <string name="shortcut_action_ring_silent">Zvono/Stišano</string>
+    <string name="shortcut_action_ring_vib_silent">Zvono/Vibra/Stišano</string>
+
+    <!-- Navigation settings -->
+    <string name="navigation_settings_options_title">Mogućnosti navigacije</string>
+    <string name="navigation_settings_title">Navigacija</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_size_42_dp_default">42 dp (početno)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (početno)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (isključeno)</string>
+    <string name="navigation_menu_right">Desno</string>
+    <string name="navigation_menu_left">Lijevo</string>
+    <string name="navigation_menu_both">Oboje</string>
+    <string name="navigation_menu_default_jb_behavior">Pokaži na zahtjev (početno)</string>
+    <string name="navigation_menu_never_show">Nikad ne prikazuj</string>
+    <string name="navigation_menu_always_show">Uvijek prikazuj</string>
+    <string name="navigation_bar">Navigacijska traka</string>
+    <string name="navbar_button_cat">Tipke na navigacijskoj traci</string>
+    <string name="title_pref_menu_location">Smještaj izbornika</string>
+    <string name="summary_pref_menu_location">Gdje želite da se pojavljuju tipke izbornika?</string>
+    <string name="title_pref_menu_display">Vidljivost izbornika</string>
+    <string name="summary_pref_menu_display">Kako i kada želite da se pojavljuju tipke izbornika?</string>
+    <string name="navbar_enable_bar">Omogući navigacijsku traku</string>
+    <string name="navbar_enable_bar_summary">Omogući navigacijsku traku</string>
+    <string name="navigation_bar_height_title">Visina navigacijske trake</string>
+    <string name="navigation_bar_height_summary">Visina navigacijske trake u portretnom prikazu.</string>
+    <string name="navigation_bar_height_landscape_title">Visina navigacijske trake u pejsažnom prikazu</string>
+    <string name="navigation_bar_height_landscape_summary">Visina navigacijske trake u pejsažnom prikazu.</string>
+    <string name="navigation_bar_width_title">Širina navigacijske trake</string>
+    <string name="navigation_bar_width_summary">Visina navigacijske trake ako je traka sa strane.</string>
+    <string name="navbar_can_move">Prikaži pejsažno</string>
+    <string name="navbar_can_move_summary">Prikaži navigacijsku traku u pejsažnom načinu na dnu ekrana</string>
+    <string name="navbar_style_dimen_title">Dimenzije</string>
+    <string name="navbar_button_title">Tipke</string>
+    <string name="navbar_targets_title">Radnje na prstenu</string>
+    <string name="navbar_cat">Navigacijska traka</string>
+    <string name="navbar_dimensions_reset_message">Vrati sve vrijednosti dimenzija na početne?</string>
+    <string name="navbar_button_style_reset_message">Vrati sve mogućnosti tipki na početne?</string>
+
+    <!-- Navigation bar button style -->
+    <string name="nav_bar_button_style">Mogućnosti tipki</string>
+    <string name="nav_bar_button_style_summary">Promjenite izgled tipki na navigacijskoj traci</string>
+    <string name="button_transparency_title">Prozirnost tipki</string>
+    <string name="navigation_bar_icon_tint_title">Boja tipki</string>
+    <string name="nav_button_color_mode_title">Način boje</string>
+    <string name="nav_button_color_mode_dialog_title">Obojenost</string>
+    <string name="nav_button_color_mode_summary">Promjenite način boje tipki na navigacijskoj traci</string>
+    <string name="navigation_bar_glow_tint_title">Boja isijavanja tipki</string>
+
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Fizičke tipke</string>
+    <string name="key_menu_enabled">Tipka za opcije omogućena</string>
+    <string name="key_back_enabled">Tipka za povratak omogućena</string>
+    <string name="key_home_enabled">Tipka za početni zaslon omogućena</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">Ponašanje skenera multimedijalnih datoteka pri pokretanju</string>
+    <string name="media_scanner_on_boot_enabled">Skeniraj multimedijalne datoteke</string>
+    <string name="media_scanner_on_boot_ask">Pitaj za skeniranje (obavijest)</string>
+    <string name="media_scanner_on_boot_disabled">Ne skeniraj multimedijalne datoteke</string>
 
 </resources>
