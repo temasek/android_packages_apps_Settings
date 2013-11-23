@@ -39,7 +39,14 @@
         <PreferenceScreen
             android:key="network_usage_stats"
             android:fragment="com.android.settings.temasek.NetworkUsageStats"
-            android:title="@string/status_bar_network_cat" /> 
+            android:title="@string/status_bar_network_cat" />
+
+        <!-- Status Bar Activity Indicators -->
+        <CheckBoxPreference
+            android:key="status_bar_network_activity"
+            android:title="@string/show_activity_indicators_on_status_bar_title"
+            android:summary="@string/show_activity_indicators_on_status_bar_summary"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
