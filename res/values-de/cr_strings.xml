@@ -16,7 +16,7 @@
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Auswahl Farbe</string>
-    <string name="press_color_to_apply">Zum übernehmen unten auf eine Farbe drücken.</string>
+    <string name="press_color_to_apply">Zum übernehmen unten auf eine Farbe tippen.</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
@@ -147,6 +147,12 @@
 
     <!-- Button shorcut actions -->
     <string name="additional_options_title">Zusatzoptionen</string>
+    <string name="reset_message">Alle Einträge zurücksetzen?</string>
+    <string name="style_title">Aussehen</string>
+    <string name="shortcut_action_airplane">Flugzeugmodus</string>
+    <string name="shortcut_action_power_off">Ausschalten</string>
+    <string name="shortcut_action_reboot">Neustart</string>
+    <string name="shortcut_action_sound">Sound</string>
     <string name="shortcut_action_app">Eigene App</string>
     <string name="shortcut_action_home">Home</string>
     <string name="shortcut_action_back">Zurück</string>
@@ -179,8 +185,8 @@
 
     <string name="shortcut_action_help_shortcut">Verknüpfung</string>
     <string name="shortcut_action_help_button">Taste</string>
-    <string name="shortcut_action_help_icon">, Während der Auswahl werden Anpassungsoptionen angezeigt</string>
-    <string name="shortcut_action_help_main">To add a %1$s, select the Add icon. Once a %1$s is added, selecting the row will change the target%2$s\n\nTo remove a %1$s, swipe the row horizontally left or right. Re-order a %1$s in the list by vertically dragging the anchor on the left.\n\nTo clear or reset to defaults, select the Reset icon.</string>
+    <string name="shortcut_action_help_icon">, Während der Auswahl werden Anpassungsoptionen angezeigt.</string>
+    <string name="shortcut_action_help_main">Um eine %1$s hinzuzufügen, wähle das hinzufügen Icon. Ist eine %1$s einmal hinzugefügt, verändert das selektieren der Zeile das Ziel%2$s\n\nUm eine %1$s zu entfernen, wische horizontal von links nach rechts über die Zeile. Sortiere eine %1$s in der Liste durch vertikales ziehen am Ankersybol links.\n\nZum löschen oder zurücksetzen auf Standard wähle das Reset Icon.</string>
     <string name="shortcut_action_help_delete_last_entry">Entfernen aller %1$s in der Liste wird das Feature komplett deaktivieren.</string>
     <string name="shortcut_action_help">Hilfe</string>
 
@@ -249,12 +255,13 @@
     <string name="select_custom_app_title">Eigene Anwendung auswählen</string>
     <string name="shortcuts_color_title">Farbe Verknüpfungs-Icon</string>
     <string name="shortcuts_color_summary">Farbe der Verknüpfungs-Icons wählen</string>
-    <string name="shortcuts_color_mode_title">Icon Farbmodus</string>
+    <string name="shortcuts_color_mode_title">Farb-Modus Icon</string>
     <string name="shortcuts_color_mode_summary">Ändere den Farb-Modus der Verknüpfungs-Icons</string>
 
     <!-- Notification drawer settings -->
     <string name="notification_drawer_title">Benachrichtigungsfeld</string>
     <string name="notification_hide_carrier_title">Verstecke Netzbetreiber</string>
+    <string name="notification_hide_carrier_summary">Verstecke Netzbetreiber und Wi-Fi Namen im Benachrichtigungsfeld</string>
     <string name="notification_shortcuts_settings_title">Verknüpfungen</string>
     <string name="notification_shortcuts_settings_summary">Zeige Verknüpfungen im Benachrichtigungsfeld</string>
 
@@ -264,9 +271,9 @@
     <string name="battery_status_percentage">Prozentanzeige</string>
     <string name="battery_status_icon_percentage">Icon mit Prozentanzeige</string>
     <string name="battery_status_circle">Kreis</string>
-    <string name="battery_status_circle_percentage">Circle mit Prozentanzeige</string>
-    <string name="battery_status_dotted_circle_percentage">Gepunkteter Kreis mit Prozentanzeige</string>
-    <string name="battery_status_dotted_circle">Gepunkteter Kreis</string>
+    <string name="battery_status_circle_percentage">Kreis mit Prozentanzeige</string>
+    <string name="battery_status_dotted_circle_percentage">Kreis gepunktet mit Prozentanzeige</string>
+    <string name="battery_status_dotted_circle">Kreis gepunktet</string>
     <string name="battery_color_title">Farbe Batterie</string>
     <string name="circle_battery_animation_speed">Geschwindigkeit Kreisanimation</string>
     <string name="circle_battery_animation_speed_none">Keine</string>
@@ -295,5 +302,98 @@
     <string name="summary_animation_no_override">Beuge Überlagerung von Übergängen der Apps vor.</string>
     <string name="animation_duration_default">Standard</string>
     <string name="header_summary_animation">@null</string>
+    
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Batterie um Entsperr-Ring</string>
+
+    <!-- Navigation ring -->
+    <string name="shortcut_action_ring_vib">Klingeln/Vibrieren</string>
+    <string name="shortcut_action_ring_silent">Klingeln/Stumm</string>
+    <string name="shortcut_action_ring_vib_silent">Klingeln/Vibrieren/Stumm</string>
+
+    <!-- Navigation settings -->
+    <string name="navigation_settings_options_title">Optionen Softkeys</string>
+    <string name="navigation_settings_title">Softkeys</string>
+    <string name="power_menu_title">Neustartmenü</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_size_42_dp_default">42 dp (Standard)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (Standard)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (off)</string>
+    <string name="navigation_menu_right">Rechts</string>
+    <string name="navigation_menu_left">Links</string>
+    <string name="navigation_menu_both">Beides</string>
+    <string name="navigation_menu_default_jb_behavior">Bei Bedarf anzeigen (Standard)</string>
+    <string name="navigation_menu_never_show">Niemals anzeigen</string>
+    <string name="navigation_menu_always_show">Immer anzeigen</string>
+    <string name="navigation_bar">Softkeyleiste</string>
+    <string name="navbar_button_cat">Tasten Softkeyleiste</string>
+    <string name="title_pref_menu_location">Position Menü</string>
+    <string name="summary_pref_menu_location">Wo möchten sie die Menütasten angezeigt bekommen?</string>
+    <string name="title_pref_menu_display">Sichtbarkeit Menü</string>
+    <string name="summary_pref_menu_display">Wie und wann sollen die Menütasten angezeigt werden?</string>
+    <string name="navbar_enable_bar">Softkeyleiste aktivieren</string>
+    <string name="navbar_enable_bar_summary">Aktiviert die Softkeyleiste</string>
+    <string name="navigation_bar_height_title">Höhe Softkeyleiste</string>
+    <string name="navigation_bar_height_summary">Höhe Softkeyleiste im Portrait-Modus.</string>
+    <string name="navigation_bar_height_landscape_title">Höhe Softkeyleiste im Landscape-Modus.</string>
+    <string name="navigation_bar_height_landscape_summary">Höhe der Softkeyleiste im Landscape-Modus.</string>
+    <string name="navigation_bar_width_title">Breite der Softkeyleiste</string>
+    <string name="navigation_bar_width_summary">Breite der Softkeyleiste wenn die Leiste an der Seite angezeigt wird.</string>
+    <string name="navbar_can_move">Anzeige Landscape</string>
+    <string name="navbar_can_move_summary">Zeigt Softkeyleiste im Landscape-Modus unten an.</string>
+    <string name="navbar_style_dimen_title">Dimensionen</string>
+    <string name="navbar_button_title">Tasten</string>
+    <string name="navbar_targets_title">Ziele Ring</string>
+    <string name="navbar_cat">Softkeyleiste</string>
+    <string name="navbar_dimensions_reset_message">Alle Dimensionen auf Standard zurücksetzen?</string>
+
+    <!-- Navigation bar button style -->
+    <string name="nav_bar_button_style_summary">Farbe der Softkeyleiste ändern</string>
+    <string name="button_transparency_title">Transparenz Tasten</string>
+    <string name="nav_button_color_mode_summary">Farbmodus der Softkeyleiste ändern</string>
+    <string name="navigation_bar_glow_tint_title">Farbe Glühen</string>
+
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Hardware Tasten</string>
+    <string name="key_menu_enabled">Aktiviere Taste Menü</string>
+    <string name="key_back_enabled">Aktiviere Taste Zurück</string>
+    <string name="key_home_enabled">Aktiviere Taste Home</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">Verhalten MediaScanner beim booten</string>
+    <string name="media_scanner_on_boot_enabled">Medien scannen</string>
+    <string name="media_scanner_on_boot_ask">Nachfragen (Benachrichtigung)</string>
+    <string name="media_scanner_on_boot_disabled">Medien nicht scannen</string>
+
+    <!-- Power menu -->
+    <string name="power_menu_style_summary">Farbe Neustartmenü ändern</string>
+
+    <!-- Recents Ram Bar -->
+    <string name="ram_bar">Recents RAM-Leiste</string>
+    <string name="ram_bar_note_title">Hinweis</string>
+    <string name="ram_bar_note_summary">Diese RAM-Leiste zeigt die momentane Android-Speicherauslastung (RAM) an. Bitte beachten! Apps im Cache zu halten hilft dem Gerät diese schneller öffen zu können. Für weitere Erklärungen über die Funktionsweise der Android-Speicherverwaltung benutzen sie das Hilfe-Menü.</string>
+    <string name="ram_bar_mode_title">Modus Recents RAM-Leiste</string>
+    <string name="ram_bar_mode_dialog_title">Recents RAM-Leiste anzeigen</string>
+    <string name="ram_bar_none">Keine</string>
+    <string name="ram_bar_apps">Nur Apps</string>
+    <string name="ram_bar_cache">Apps und Cache</string>
+    <string name="ram_bar_other">Apps, Cache und Sonstige</string>
+    <string name="ram_bar_style_cat">Style Recents RAM-Leiste</string>
+    <string name="ram_bar_color_app_mem_color">Farbe RAM Apps</string>
+    <string name="ram_bar_color_cache_mem_color">Farbe RAM Cache</string>
+    <string name="ram_bar_color_total_mem_color">Farbe RAM Sonstige</string>
+    <string name="ram_bar_color_enabled">Eingeschaltet</string>
+    <string name="ram_bar_color_disabled">Ausgeschaltet</string>
+    <string name="ram_bar_button_help">Hilfe</string>
+    <string name="ram_bar_button_reset">Farben zurücksetzen</string>
+    <string name="ram_bar_reset">Zurücksetzen</string>
+    <string name="ram_bar_reset_message">Aussehen der RAM-Leiste zurücksetzen?</string>        
 
 </resources>

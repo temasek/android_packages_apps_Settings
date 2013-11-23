@@ -176,7 +176,7 @@
     <string name="shortcut_action_warning">Aviso</string>
     <string name="shortcut_action_warning_message">No es posible borrar la última entrada</string>
     <string name="shortcut_action_disable_message">Inhabilitado\nAñade una entrada para habilitar esta función</string>
-    <string name="shortcut_image_not_valid">La aplicación elegida no posee un icono válido o no admite recorte de la imagen. Utilice otra aplicación</string>
+    <string name="shortcut_image_not_valid">La aplicación elegida no posee un icono válido o no admite recorte de imagen. Seleccione otra aplicación</string>
     <string name="shortcut_duplicate_entry">La accion seleccionada no puede añadirse dos veces</string>
     <string name="shortcut_action_help_shortcut">acceso directo</string>
     <string name="shortcut_action_help_button">botón</string>
@@ -209,7 +209,7 @@
     <string name="shortcuts_icon_picker_file_browser">Explorador de archivos</string>
     <string name="shortcuts_icon_picker_file_browser2">Explorador de archivos alternativo</string>
     <string name="shortcuts_icon_picker_fitness">Fitness</string>
-    <string name="shortcuts_icon_picker_gallery">Gallery</string>
+    <string name="shortcuts_icon_picker_gallery">Galería</string>
     <string name="shortcuts_icon_picker_gears">Gears</string>
     <string name="shortcuts_icon_picker_google_small">Google</string>
     <string name="shortcuts_icon_picker_gplus">Google Plus</string>
@@ -247,16 +247,16 @@
     <string name="icon_picker_choose_icon_title">Elegir icono</string>
     <string name="group_applications">Aplicaciones</string>
     <string name="select_custom_app_title">Selección personalizada</string>
-    <string name="shortcuts_color_title">Color de accesos directos</string>
+    <string name="shortcuts_color_title">Color de los accesos directos</string>
     <string name="shortcuts_color_summary">Colorea los iconos de los accesos directos</string>
-    <string name="shortcuts_color_mode_title">Color del estado de los accesos directos</string>
-    <string name="shortcuts_color_mode_summary">Cambia el color del estado de accesos directos</string>
+    <string name="shortcuts_color_mode_title">Colorear</string>
+    <string name="shortcuts_color_mode_summary">Aplicar color a:</string>
 
     <!-- Notification drawer settings -->
     <string name="notification_drawer_title">Panel de notificaciones</string>
     <string name="notification_hide_carrier_title">Ocultar nombre de operadora</string>
     <string name="notification_shortcuts_settings_title">Accesos directos</string>
-    <string name="notification_shortcuts_settings_summary">Mostrar accesos directos en el panel de notificaciones</string>
+    <string name="notification_shortcuts_settings_summary">Accesos rápidos en el panel de notificaciones</string>
 
     <!-- StatusBar Battery Settings -->
     <string name="battery_icon_title">Estilo de batería</string>
@@ -279,7 +279,7 @@
     <string name="battery_style_reset_message">Restaurar colores predeterminados?</string>
 
     <!-- Animation Controls -->
-    <string name="title_animation_controls">Control de animaciones personalizadas</string>
+    <string name="title_animation_controls">Control de animaciones</string>
     <string name="activity_open_title">Activity Open Animation</string>
     <string name="activity_close_title">Activity Close Animation</string>
     <string name="task_open_title">Task Open Animation</string>
@@ -297,7 +297,7 @@
     <string name="header_summary_animation">@null</string>
 
     <!-- Lockscreen battery ring -->
-    <string name="battery_around_lockscreen_ring">Indicador de batería alrededor del anillo de desbloqueo</string>
+    <string name="battery_around_lockscreen_ring">Indicador de batería sobre el anillo de desbloqueo</string>
  
     <!-- Navigation ring -->
     <string name="shortcut_action_ring_vib">Sonar/Vibrar</string>

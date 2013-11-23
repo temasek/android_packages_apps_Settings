@@ -15,7 +15,7 @@
     <string name="temasek_settings_title">Opções Extra Temasek</string>
 
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Seletor de Cores</string>
+    <string name="dialog_color_picker">Seleção de Cores</string>
     <string name="press_color_to_apply">Selecione a cor abaixo para aplicar</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
@@ -143,7 +143,7 @@
     <string name="trds_settings_title">Interface escura (TRDS)</string>
 
     <!-- Restart SystemUI -->
-    <string name="restart_systemui">Reinciar interface de sistema</string>
+    <string name="restart_systemui">Reiniciar interface de sistema</string>
 
     <!-- Button shorcut actions -->
     <string name="additional_options_title">Opções adicionais</string>

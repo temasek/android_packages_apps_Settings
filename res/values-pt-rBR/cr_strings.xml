@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, temasek version -->
+    <string name="temasek_version_title">Temasek unofficial version</string>
+
+    <!-- General strings -->
+    <string name="reset">Reestabelecer</string>
+    <string name="enabled">Habilitado</string>
+    <string name="disabled">Desabilitado</string>
+    <string name="default_string">Padrão</string>
+
+    <!-- temasek spare parts -->
+    <string name="temasek_settings_title">Temasek spare parts</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Seletor de Cores</string>
+    <string name="press_color_to_apply">Selecione uma cor abaixo para aplicá-la</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Aplicar</string>
+
+    <!-- Status bar -->
+    <string name="status_bar_title">Barra de status</string>
+    <string name="status_bar_style_title">Opções da barra de status</string>
+    <string name="status_bar_general_title">Geral</string>
+
+    <!-- Status bar | Clock -->
+    <string name="status_bar_clock">Relógio e data</string>
+    <string name="status_bar_clock_title">Estilo do relógio e data</string>
+    <string name="clock_title_enable">Alinhamento</string>
+    <string name="clock_enabled">Habilitado</string>
+    <string name="clock_disabled">Desabilitado</string>
+    <string name="clock_color_title">Cor</string>
+    <string name="status_bar_clock_style_reset">Restabelecer cor</string>
+    <string name="status_bar_show_clock_title">Mostrar relógio e data</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">Formato de 24 horas está habilitado</string>
+    <string name="enable_clock_weekday">Dia da semana</string>
+    <string name="enable_clock_weekday_summary">Dia da semana abreviado a esquerda relógio</string>
+    <string name="right_clock">Relógio a direita</string>
+    <string name="center_clock">Relógio ao centro</string>
+    <string name="dont_show">Não mostrar</string>
+    <string name="clock_date_display">Data</string>
+    <string name="clock_date_display_summary">Mostrar data personalizada a esquerda do relógio</string>
+    <string name="clock_date_style">Estilo da data</string>
+    <string name="clock_date_format">Formato da data</string>
+    <string name="clock_date_string_edittext_title">Deve estar em um formato válido. Ex: MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Digite o texto</string>
+    <string name="am_pm_clock_normal">Tamanho da fonte normal</string>
+    <string name="am_pm_clock_small">Tamanho da fonte pequena</string>
+    <string name="am_pm_clock_none">Não mostrar</string>
+    <string name="clock_date_display_none">Não mostrar</string>
+    <string name="clock_date_display_small">Tamanho da fonte pequena</string>
+    <string name="clock_date_display_normal">Tamanho da fonte normal</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Caixa baixa</string>
+    <string name="clock_date_style_uppercase">Caixa alta</string>
+    <string name="clock_date_format_custom">Formato java personalizado</string>
+    <string name="status_bar_clock_style_reset_message">Reestabelecer cor do relógio?</string>
+
+    <!-- Notification Drawer Settings -->
+    <string name="notification_drawer_title">Gaveta de notificações</string>
+    <string name="notification_drawer_style_title">Opções da gaveta de notificações</string>
+    <string name="notification_style_summary">Mudar o estilo da gaveta de notificações</string>
+    <string name="notification_drawer_background">Fundo e transparência</string> 
+
+    <!-- Notification drawer background -->
+    <string name="notification_wallpaper_title">Fundo da gaveta de notificações</string>
+    <string name="notification_wallpaper_landscape_title">Fundo diferente em modo paisagem</string>
+    <string name="notification_background_color_fill">Preenchimento de cor</string>
+    <string name="notification_background_custom_image">Imagem personalizada</string>
+    <string name="notification_background_default_wallpaper">Fundo padrão</string>
+    <string name="notification_drawer_custom_background_dialog_title">Escolha a cor</string>
+    <string name="notif_wallpaper_alpha_title">Transparência de fundo da notificação</string> 
+    <string name="notif_alpha_title">Transparência da linha de notificação</string>
+
+    <!-- Advanced low battery indicator options -->  
+    <string name="lights_and_warnings_title">Luzes e avisos</string>
+    <string name="lights_and_warnings_style_title">Opções para luzes e avisos</string>
+    <string name="pref_low_battery_warning_policy_title">Aviso de bateria baixa</string>
+    <string name="pref_low_battery_warning_policy_dialog_title">Indicar aviso de bateria baixa com</string>
+    <string name="low_battery_warning_policy_popup_sound">Pop-up e som</string>
+    <string name="low_battery_warning_policy_notif_sound">NOtificação e som</string>
+    <string name="low_battery_warning_policy_popup">Somente Pop-up</string>
+    <string name="low_battery_warning_policy_notif">Somente notificação</string>
+    <string name="low_battery_warning_policy_sound">Somente som</string>
+    <string name="low_battery_warning_policy_disabled">Desabilitado</string> 
+
+    <!-- Screen-On Notification Light -->
+    <string name="screen_on_notification_led_title">LED de notificação com a tela ligada</string>
+    <string name="screen_on_notification_led_summary">Habilitar LED de notificação mesmo que a tela esteja ligada</string> 
+
+    <!-- Alternate default app picker -->
+    <string name="general_settings_title">Configurações gerais</string>
+    <string name="general_settings_style_title">Opções gerais</string>
+    <string name="display_short">Tela</string>
+    <string name="misc_short">Miscelânea</string>
+    <string name="alt_resolver">Usar grade de aplicativos alternativa</string>
+    <string name="alt_resolver_summary">Habilita uma grade de aplicativos alternativa</string>
+
+    <!-- Network stats stats -->
+    <string name="status_bar_network_cat">Medidor de tráfego de rede</string>
+    <string name="status_bar_network_header">Medidor de tráfego de rede</string>
+    <string name="status_bar_network_title">Tráfego de rede</string>
+    <string name="status_bar_show_network_stats_title">Mostrar velocidade da rede</string>
+    <string name="status_bar_network_stats_update_title">Frequência de atualização</string>
+
+    <!-- Network stats custm colors -->
+    <string name="status_bar_network_usage_color_style">Cor</string>
+    <string name="status_bar_network_usage_color_reset">Reestabelecer cor</string>
+    <string name="status_bar_network_usage_color_reset_message">Reestabelecer a cor do medidor de tráfego?</string>
+
+    <!-- Network stats hide if there's no traffic -->
+    <string name="hide_network_speed">Esconder quando não houver tráfego</string>
+    <string name="hide_network_speed_summary">Esconder indicadores de tráfego de rede quando não ouver tráfego</string>
+
+    <!-- Display : Animation options -->
+    <string name="screen_and_animations_title">Tela e animações</string>
+    <string name="display_category_animation_options_title">Opções de tela e animações</string>
+    <string name="system_power_crt_mode_title">Monitor CRT</string>
+    <string name="system_power_crt_mode_dialog_title">Animação de monitor CRT ao desligar a tela</string>
+    <string name="system_power_crt_mode_off">Não mostrar</string>
+    <string name="system_power_crt_mode_horizontal">Sentido horizontal</string>
+    <string name="system_power_crt_mode_vertical">Sentido vertical</string>
+    <string name="system_power_crt_mode_both">Baseado na orientação do aparelho</string>
+    <string name="system_power_crt_mode_scale">Diminuir gradualmente</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Mostrar inf. da CPU</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Sobrepor a tela com informações da CPU</string>
+
+    <!-- Status bar brightness control -->
+    <string name="status_bar_toggle_brightness">Controle de brilho</string>
+    <string name="status_bar_toggle_brightness_summary">Ajustar brilho deslizando o dedo pela barra de status</string>
+    <string name="status_bar_toggle_info">Brilho automático habilitado</string>
+
+    <!-- TRDS Settings -->
+    <string name="trds_settings_title">Interface Escura</string>
+
+    <!-- Restart SystemUI -->
+    <string name="restart_systemui">Reiniciar Interface</string>
+
+    <!-- Button shorcut actions -->
+    <string name="additional_options_title">Opções adicionais</string>
+    <string name="reset_message">Reestabelecer todos os atalhos ao seu padrão?</string>
+    <string name="style_title">Estilo</string>
+    <string name="shortcut_action_airplane">Modo avião</string>
+    <string name="shortcut_action_power_off">Desligar</string>
+    <string name="shortcut_action_reboot">Reiniciar</string>
+    <string name="shortcut_action_sound">Som</string>
+    <string name="shortcut_action_app">Aplicativo personalizado</string>
+    <string name="shortcut_action_home">Início</string>
+    <string name="shortcut_action_back">Voltar</string>
+    <string name="shortcut_action_recent">Recentes</string>
+    <string name="shortcut_action_lastapp">Ultimo aplicativo</string>
+    <string name="shortcut_action_search">Busca</string>
+    <string name="shortcut_action_screenshot">Captura de tela</string>
+    <string name="shortcut_action_menu">Menu</string>
+    <string name="shortcut_action_ime">Abrir alterador de IME</string>
+    <string name="shortcut_action_kill">Matar aplicativo</string>
+    <string name="shortcut_action_power">Desligar tela</string>
+    <string name="shortcut_action_notifications">Notificações</string>
+    <string name="shortcut_action_qs">Painel de opções rápidas</string>
+    <string name="shortcut_action_none">Nenhum</string>
+    <string name="shortcut_action_power_menu">Menu de energia</string>
+    <string name="shortcut_action_torch">Lanterna</string>
+    <string name="shortcut_action_longpress">Clique longo:</string>
+    <string name="shortcut_action_select_action_longpress">Escolha a ação de clique longo:</string>
+    <string name="shortcut_action_select_action">Escolha a ação:</string>
+    <string name="shortcut_action_select_action_newbutton">Escolher nova ação:</string>
+    <string name="shortcut_action_reset">Reestabelecer</string>
+    <string name="shortcut_action_add">Adicionar</string>
+    <string name="shortcut_action_reset_message">Reestabelecer todos os atalhos ao seu padrão?</string>
+    <string name="shortcut_action_max">O número máximo de atalhos foi alcançado</string>
+    <string name="shortcut_action_warning">Warning</string>
+    <string name="shortcut_action_warning_message">Mão é possível remover o ultimo atalho</string>
+    <string name="shortcut_action_disable_message">Desabilitado\nAdiciona um atalho para habilitar este recurso</string>
+    <string name="shortcut_image_not_valid">O aplicativo escolhido não possui um ícone válido ou não suporta o recorte de imagens. Use outro aplicativo.</string>
+    <string name="shortcut_duplicate_entry">A ação escolida não pode ser adicionada duas vezes</string>
+
+    <string name="shortcut_action_help_shortcut">atalho</string>
+    <string name="shortcut_action_help_button">botão</string>
+    <string name="shortcut_action_help_icon">, enquanto o ícone estiver selecionado mostre as opções de personalização</string>
+    <string name="shortcut_action_help_main">Para adicionar um %1$s, selecione Adicionar ícone.  Uma vez que %1$s foi adicionado, selecionar uma linha alterará %2$s\n\nPara remover um %1$s, arraste a linha para a direita ou esquerda.  Reordene um %1$s na lista arrastando a alça a esquerda.\n\nPara retornar aos padrões, selecione o icone Reestabelecer.</string>
+    <string name="shortcut_action_help_delete_last_entry">Removing every %1$s in the list will disable the feature entirely.</string>
+    <string name="shortcut_action_help">Ajuda</string>
+
+    <string name="icon_picker_type">Selecionar tipo do ícone:</string>
+    <string name="icon_default">Padrão</string>
+    <string name="icon_presets">Icones de sistema</string>
+    <string name="icon_custom">Galeria</string>
+    <string name="shortcuts_icon_picker_alarm">Alarme</string>
+    <string name="shortcuts_icon_picker_andy">Andy</string>
+    <string name="shortcuts_icon_picker_battery">Bateria</string>
+    <string name="shortcuts_icon_picker_browser">Navegador</string>
+    <string name="shortcuts_icon_picker_calendar">Calendário</string>
+    <string name="shortcuts_icon_picker_camera">Câmera</string>
+    <string name="shortcuts_icon_picker_cloud">Nuvem</string>
+    <string name="shortcuts_icon_picker_contact">Contato</string>
+    <string name="shortcuts_icon_picker_directdial">Ligar para</string>
+    <string name="shortcuts_icon_picker_directmessage">Enviar mensagem para</string>
+    <string name="shortcuts_icon_picker_drive">Drive</string>
+    <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+    <string name="shortcuts_icon_picker_email">E-mail</string>
+    <string name="shortcuts_icon_picker_email2">E-mail alternativo</string>
+    <string name="shortcuts_icon_picker_evernote">Evernote</string>
+    <string name="shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="shortcuts_icon_picker_favorite">Favorite</string>
+    <string name="shortcuts_icon_picker_file_browser">Gerenciador de arquivos</string>
+    <string name="shortcuts_icon_picker_file_browser2">Gerenciador de arquivos alternativo</string>
+    <string name="shortcuts_icon_picker_fitness">Fitness</string>
+    <string name="shortcuts_icon_picker_gallery">Galeria</string>
+    <string name="shortcuts_icon_picker_gears">Engrenagens</string>
+    <string name="shortcuts_icon_picker_google_small">Google</string>
+    <string name="shortcuts_icon_picker_gplus">Google Plus</string>
+    <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
+    <string name="shortcuts_icon_picker_help">Ajuda</string>
+    <string name="shortcuts_icon_picker_joystick">Controle</string>
+    <string name="shortcuts_icon_picker_key">Chaves/Conta</string>
+    <string name="shortcuts_icon_picker_laptop">Notebook</string>
+    <string name="shortcuts_icon_picker_notes">Notas</string>
+    <string name="shortcuts_icon_picker_luggage">Viagem</string>
+    <string name="shortcuts_icon_picker_maps">Mapas</string>
+    <string name="shortcuts_icon_picker_market">Market</string>
+    <string name="shortcuts_icon_picker_movie">Filmes</string>
+    <string name="shortcuts_icon_picker_music">Música</string>
+    <string name="shortcuts_icon_picker_nav">Navegador</string>
+    <string name="shortcuts_icon_picker_phone">Discador</string>
+    <string name="shortcuts_icon_picker_package">Pacote</string>
+    <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+    <string name="shortcuts_icon_picker_play">Play</string>
+    <string name="shortcuts_icon_picker_pocket">Pocket</string>
+    <string name="shortcuts_icon_picker_quicksettings">Configurações rápidas</string>
+    <string name="shortcuts_icon_picker_rss">Feed RSS</string>
+    <string name="shortcuts_icon_picker_sdcard">Cartão SD</string>
+    <string name="shortcuts_icon_picker_search">Busca</string>
+    <string name="shortcuts_icon_picker_sms">SMS</string>
+    <string name="shortcuts_icon_picker_tasks">Tarefas</string>
+    <string name="shortcuts_icon_picker_terminal">Terminal</string>
+    <string name="shortcuts_icon_picker_transit">Transito</string>
+    <string name="shortcuts_icon_picker_tv">TV</string>
+    <string name="shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="shortcuts_icon_picker_unlock">Destravar</string>
+
+    <string name="icon_color_mode_all_icons">Todos os ícones</string>
+    <string name="icon_color_mode_system_icons">ícones de sistema</string>
+    <string name="icon_color_mode_system_custom_icons">Ícones personalizadose de sistema</string>
+    <string name="icon_picker_choose_icon_title">Escolha um ícone</string>
+    <string name="group_applications">Aplicativos</string>
+    <string name="select_custom_app_title">Selecionar aplicativo personalizado</string>
+    <string name="shortcuts_text_color_title">Cor do texto</string>
+    <string name="shortcuts_color_title">Cor do ícone</string>
+    <string name="shortcuts_color_mode_title">Modo de cor do ícone</string>
+    <string name="shortcuts_color_mode_summary">Mudar o modo de cor dos ícones de atalho</string>
+
+    <!-- Notification drawer settings  -->
+    <string name="notification_drawer_title">Gaveta de notificações</string>
+    <string name="notification_hide_carrier_title">Esconder nome da operadora</string>
+    <string name="notification_hide_carrier_summary">Esconder nomes da operadora e da rede Wi-Fi na gaveta de notificações</string>
+    <string name="notification_shortcuts_settings_title">Atalhos</string>
+    <string name="notification_shortcuts_settings_summary">Mostrar atalhos na gaveta de notificações</string>
+
+    <!-- StatusBar Battery Settings -->
+    <string name="battery_icon_title">Ícone da bateria</string>
+    <string name="battery_status_icon">Ícone</string>
+    <string name="battery_status_percentage">Porcentagem</string>
+    <string name="battery_status_icon_percentage">Ícone com porcentagem</string>
+    <string name="battery_status_circle">Círculo</string>
+    <string name="battery_status_circle_percentage">Círculo com porcentagem</string>
+    <string name="battery_status_dotted_circle_percentage">Círculo pontilhado com porcentagem</string>
+    <string name="battery_status_dotted_circle">Círculo com porcentagem</string>
+    <string name="battery_color_title">Cor da bateria</string>
+    <string name="circle_battery_animation_speed">Velocidade da animação do círculo</string>
+    <string name="circle_battery_animation_speed_none">Nenhuma</string>
+    <string name="circle_battery_animation_speed_slow">Lento</string>
+    <string name="circle_battery_animation_speed_stock">Normal</string>
+    <string name="circle_battery_animation_speed_fast">Rápido</string>
+    <string name="battery_text_color">Cor da porcentagem</string>
+    <string name="battery_bolt_color">Cor do raío enquanto carregando</string>
+    <string name="battery_text_charging_color">Cor da porcentagem enquanto carregando</string>
+    <string name="battery_style_reset_message">Reestabelecer todas as cores?</string>
+   
+    <!-- Animation Controls -->  
+    <string name="title_animation_controls">Animações de sistema personalizadas</string>  
+    <string name="activity_open_title">Animação de Abrir Atividade</string>  
+    <string name="activity_close_title">Animação de Fechar Atividade</string>  
+    <string name="task_open_title">Animação de Abrir Tarefa</string>  
+    <string name="task_close_title">Animação de Fechar Tarefa</string>  
+    <string name="task_move_to_front_title">Animação de Mover para Frente</string>  
+    <string name="task_move_to_back_title">Animação de Mover para Trás</string>  
+    <string name="wallpaper_open_title">Animação de Abrir Papel de Parede</string>  
+    <string name="wallpaper_close_title">Animação de Fechar Papel de Parede</string>  
+    <string name="wallpaper_intra_open_title">Animação Interna de Abrir Papel de Parede</string>  
+    <string name="wallpaper_intra_close_title">Animação Interna de Fechar Papel de Parede</string>  
+    <string name="animation_duration_title">Duração da Animação</string>  
+    <string name="title_animation_no_override">Prevenir sobreposição dos aplicativos</string>  
+    <string name="summary_animation_no_override">Prevenir aplicativos de sobrepor as transições.</string>  
+    <string name="animation_duration_default">Padrão</string>
+    <string name="header_summary_animation">@null</string>
+
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Nível de bateria ao redor do anel de destravamento</string>
+
+    <!-- Navigation ring -->
+    <string name="shortcut_action_ring_vib">Tocar/Vibrar</string>
+    <string name="shortcut_action_ring_silent">Tocar/Silencioso</string>
+    <string name="shortcut_action_ring_vib_silent">Tocar/Vibrar/Silencioso</string>
+
+    <!-- Navigation settings -->
+    <string name="navigation_settings_options_title">Opções de navegação</string>
+    <string name="navigation_settings_title">Navegação</string>
+    <string name="power_menu_title">Menu global</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_size_42_dp_default">42 dp (padrão)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (padrão)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (desligado)</string>
+    <string name="navigation_menu_right">Direita</string>
+    <string name="navigation_menu_left">Esquerda</string>
+    <string name="navigation_menu_both">Ambos</string>
+    <string name="navigation_menu_default_jb_behavior">Mostrar quando solicitado (padrão)</string>
+    <string name="navigation_menu_never_show">Nunca mostrar</string>
+    <string name="navigation_menu_always_show">Sempre mostrar</string>
+    <string name="navigation_bar">Barra de navegação</string>
+    <string name="navbar_button_cat">Botões da barra de navegação</string>
+    <string name="title_pref_menu_location">Local do menu</string>
+    <string name="summary_pref_menu_location">Aonde você quer que os botões de menu apareçam?</string>
+    <string name="title_pref_menu_display">Visibilidade do menu</string>
+    <string name="summary_pref_menu_display">Como e quando você quer que os botões de menu apareçam?</string>
+    <string name="navbar_enable_bar">Habilitar barra de navegação</string>
+    <string name="navbar_enable_bar_summary">Habilita a barra de navegação</string>
+    <string name="navigation_bar_height_title">Altura da barra de navegação</string>
+    <string name="navigation_bar_height_summary">Altura da barra de navegação em modo retrato.</string>
+    <string name="navigation_bar_height_landscape_title">Altura da barra de navegação em modo paisagem</string>
+    <string name="navigation_bar_height_landscape_summary">Altura da barra de navegação em modo paisagem.</string>
+    <string name="navigation_bar_width_title">Largura da barra de navegação</string>
+    <string name="navigation_bar_width_summary">Altura da barra de navegação se a barraNavigation bar height if the bar é lateral.</string>
+    <string name="navbar_can_move">Mostrar paisagem</string>
+    <string name="navbar_can_move_summary">Mostrar barra de navegação em modo paisagem na parte de baixo</string>
+    <string name="navbar_style_dimen_title">Dimensões</string>
+    <string name="navbar_button_title">Botões</string>
+    <string name="navbar_targets_title">Anéis de alvo</string>
+    <string name="navbar_cat">Barra de navegação</string>
+    <string name="navbar_dimensions_reset_message">Reestabelecer todas as dimensões aos valores padrão?</string>
+
+    <!-- Navigation bar button style -->
+    <string name="nav_bar_button_style_summary">Mudar a cor dos botões da barra de navegação</string>
+    <string name="button_transparency_title">Transparência dos botões</string>
+    <string name="nav_button_color_mode_summary">Mudar o modo de cor dos botões da barra de navegação</string>
+    <string name="navigation_bar_glow_tint_title">Cor do brilho</string>
+
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Botões físicos</string>
+    <string name="key_menu_enabled">Tecla Menu Habilitada</string>
+    <string name="key_back_enabled">Tecla Voltar Habilitada</string>
+    <string name="key_home_enabled">Tecla Início Habilitada</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">Comportamento do MediaScanner ao ligar o aparelho</string>
+    <string name="media_scanner_on_boot_enabled">Indexar arquivos</string>
+    <string name="media_scanner_on_boot_ask">Pedir para indexar (notificação)</string>
+    <string name="media_scanner_on_boot_disabled">Não indexar arquivos</string>
+
+    <!-- Power menu -->
+    <string name="power_menu_style_summary">Mudar globalmente a cor do menu</string>
+
+    <!-- Recents Ram Bar -->
+    <string name="ram_bar">Barra de RAM</string>
+    <string name="ram_bar_note_title">Nota</string>
+    <string name="ram_bar_note_summary">Essa barra de RAM mostra a quantidade atual de memória RAM utilizada. Note que aplicativos em cachê ajudam seu aparelho a abrí-los mais rápido. Para maiores explicações sobre como o android gerencia a memória RAM, verifique o menu de ajuda.</string>
+    <string name="ram_bar_mode_title">Modo da barra de RAM</string>
+    <string name="ram_bar_mode_dialog_title">Mostrar na barra de RAM</string>
+    <string name="ram_bar_none">Nada</string>
+    <string name="ram_bar_apps">Aplicativos</string>
+    <string name="ram_bar_cache">Aplicativos e cachê</string>
+    <string name="ram_bar_other">Aplicativos, cachê e outros</string>
+    <string name="ram_bar_style_cat">Estilo da barra de RAM</string>
+    <string name="ram_bar_color_app_mem_color">Cor da seção Aplicativos</string>
+    <string name="ram_bar_color_cache_mem_color">Cor da seção Cachê</string>
+    <string name="ram_bar_color_total_mem_color">Cor da seção Outrosr</string>
+    <string name="ram_bar_color_enabled">Habilitado</string>
+    <string name="ram_bar_color_disabled">Desabilitado</string>
+    <string name="ram_bar_button_help">Ajuda</string>
+    <string name="ram_bar_button_reset">Reestabelecer cores</string>
+    <string name="ram_bar_reset">Reestabelecer</string>
+    <string name="ram_bar_reset_message">Reestabelecer estilo da barra de RAM ao padrão?</string>	 
+
+</resources>

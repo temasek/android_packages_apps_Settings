@@ -441,6 +441,7 @@
         <item>@string/shortcut_action_kill</item>
         <item>@string/shortcut_action_lastapp</item>
         <item>@string/shortcut_action_notifications</item>
+        <item>@string/shortcut_action_menu_big</item>
         <item>@string/shortcut_action_ime</item>
         <item>@string/shortcut_action_power_menu</item>
         <item>@string/shortcut_action_qs</item>
@@ -459,6 +460,7 @@
         <item>**kill**</item>
         <item>**lastapp**</item>
         <item>**notifications**</item>
+        <item>**menu_big**</item>
         <item>**ime**</item>
         <item>**power_menu**</item>
         <item>**quicksettings**</item>
@@ -550,6 +552,23 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
-    </string-array> 
+    </string-array>
+
+    <!-- Clear Recents position -->
+    <string-array name="clear_recents_position_entries">
+        <item>@string/clear_recents_position_disabled</item>
+        <item>@string/clear_recents_position_bottom_right</item>
+        <item>@string/clear_recents_position_bottom_left</item>
+        <item>@string/clear_recents_position_top_right</item>
+        <item>@string/clear_recents_position_top_left</item>
+    </string-array>
+
+    <string-array name="clear_recents_position_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 
 </resources>

@@ -265,13 +265,32 @@
         <item>@string/auto_brightness_sensitivity_veryhigh</item>
     </string-array>
 
-    <integer-array name="auto_brightness_sensitivity_values">
+    <integer-array name="auto_brightness_sensitivity_values" translatable="false">
         <item>150</item>
         <item>125</item>
         <item>100</item>
         <item>50</item>
         <item>25</item>
     </integer-array>
+
+    <!-- Status bar auto-collapse behaviour -->
+    <string-array name="notification_drawer_collapse_on_dismiss_entries" translatable="false">
+        <item>@string/collapse_on_dismiss_never</item>
+        <item>@string/collapse_on_dismiss_if_empty</item>
+        <item>@string/collapse_on_dismiss_if_no_clearable</item>
+    </string-array>
+
+    <string-array name="notification_drawer_collapse_on_dismiss_summaries" translatable="false">
+        <item>@string/collapse_on_dismiss_never_summary</item>
+        <item>@string/collapse_on_dismiss_if_empty_summary</item>
+        <item>@string/collapse_on_dismiss_if_no_clearable_summary</item>
+    </string-array>
+
+    <string-array name="notification_drawer_collapse_on_dismiss_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 
     <!-- Phone blacklist management -->
     <string-array name="blacklist_policy_unknown_entries" translatable="false">
@@ -298,14 +317,14 @@
     </string-array>
 
     <!-- Arrays for root access capability -->
-    <string-array name="root_access_entries">
+    <string-array name="root_access_entries" translatable="false">
         <item>@string/root_access_none</item>
         <item>@string/root_access_apps</item>
         <item>@string/root_access_adb</item>
         <item>@string/root_access_all</item>
     </string-array>
 
-    <string-array name="root_access_values">
+    <string-array name="root_access_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -327,15 +346,22 @@
         <item>26</item>
     </string-array>
 
-    <string-array name="dithering_entries" translatable="false">
-        <item>@string/dithering_no_dither</item>
-        <item>@string/dithering_color_banding</item>
-        <item>@string/dithering_blur_effect</item>
+    <!-- Hardware key rebinding -->
+    <string-array name="hardware_keys_action_entries" translatable="false">
+        <item>@string/hardware_keys_action_nothing</item>
+        <item>@string/hardware_keys_action_menu</item>
+        <item>@string/hardware_keys_action_app_switch</item>
+        <item>@string/hardware_keys_action_search</item>
+        <item>@string/hardware_keys_action_voice_search</item>
+        <item>@string/hardware_keys_action_in_app_search</item>
     </string-array>
 
-    <string-array name="dithering_values" translatable="false">
+    <string-array name="hardware_keys_action_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
     </string-array>
 </resources>

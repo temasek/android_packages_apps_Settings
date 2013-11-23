@@ -5,7 +5,7 @@
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT Translate this -->
-    <string name="temasek_version_default">V5</string>
+    <string name="temasek_version_default">V7</string>
 
     <!-- General strings -->
     <string name="reset">Reset</string>
@@ -167,6 +167,7 @@
     <string name="shortcut_action_kill">Kill app</string>
     <string name="shortcut_action_power">Screen Off</string>
     <string name="shortcut_action_notifications">Notifications</string>
+    <string name="shortcut_action_menu_big">Menu</string>
     <string name="shortcut_action_qs">Quicksettings panel</string>
     <string name="shortcut_action_none">None</string>
     <string name="shortcut_action_power_menu">Power menu</string>
@@ -396,6 +397,19 @@
     <string name="ram_bar_button_help">Help</string>
     <string name="ram_bar_button_reset">Reset colors</string>
     <string name="ram_bar_reset">Reset</string>
-    <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>	 
+    <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>
+
+    <!-- Clear Recents position -->
+    <string name="clear_recents_position_title">Clear recents position</string>
+    <string name="clear_recents_position_disabled">Disabled</string>
+    <string name="clear_recents_position_bottom_right">Bottom right</string>
+    <string name="clear_recents_position_bottom_left">Bottom left</string>
+    <string name="clear_recents_position_top_right">Top right</string>
+    <string name="clear_recents_position_top_left">Top left</string>
+
+    <!-- Status Bar Activity Indicators -->
+    <string name="show_activity_indicators_on_status_bar_title">Networks activity indicator</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Show network activity in statusbar
+</string>
 
 </resources>
