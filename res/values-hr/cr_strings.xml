@@ -47,7 +47,7 @@
     <string name="clock_date_display">Datum</string>
     <string name="clock_date_display_summary">Prikaži prilagođeni datum prije sata</string>
     <string name="clock_date_style">Način prikaza datuma</string>
-    <string name="clock_date_format">Oblik prikaza datuma</string>
+    <string name="clock_date_format">Oblik datuma</string>
     <string name="clock_date_string_edittext_title">Mora biti u obliku npr. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Unesi niz</string>
     <string name="am_pm_clock_normal">Normalna veličina slova</string>
@@ -119,8 +119,8 @@
     <string name="hide_network_speed_summary">Sakrij mjerač mrežnog prometa kad nema prometa</string>
 
     <!-- Display : Animation options -->
-    <string name="screen_and_animations_title">Ekran i animacije</string>
-    <string name="display_category_animation_options_title">Izgled ekrana i animacija</string>
+    <string name="screen_and_animations_title">Prikaz i animacije</string>
+    <string name="display_category_animation_options_title">Izgled prikaza i animacija</string>
     <string name="system_power_crt_mode_title">CRT animacija </string>
     <string name="system_power_crt_mode_dialog_title">CRT animacija</string>
     <string name="system_power_crt_mode_off">Ne prikazuj</string>
@@ -136,7 +136,7 @@
 
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">Upravljanje svjetlinom</string>
-    <string name="status_bar_toggle_brightness_summary">Prilagodi svjetlinu ekrana klizačem u statusnoj traci</string>
+    <string name="status_bar_toggle_brightness_summary">Prilagodi svjetlinu prikaza klizačem u statusnoj traci</string>
     <string name="status_bar_toggle_info">Odabrana automatska svjetlina</string>
 
     <!-- TRDS Settings -->
@@ -150,6 +150,7 @@
     <string name="reset_message">Vrati sve vrijednosti na početne?</string>
     <string name="style_title">Oblik</string>
     <string name="shortcut_action_airplane">Način rada u zrakoplovu</string>
+	<string name="shortcut_action_expanded_desktop">Prišireni prikaz</string>
     <string name="shortcut_action_power_off">Isključi</string>
     <string name="shortcut_action_reboot">Ponovno pokreni</string>
     <string name="shortcut_action_sound">Zvuk</string>
@@ -165,6 +166,7 @@
     <string name="shortcut_action_kill">Prisilno zatvori aplikaciju</string>
     <string name="shortcut_action_power">Ugasi ekran</string>
     <string name="shortcut_action_notifications">Obavijesti</string>
+	<string name="shortcut_action_menu_big">Izbornik</string>
     <string name="shortcut_action_qs">Ploča s brzim postavkama</string>
     <string name="shortcut_action_none">Ništa</string>
     <string name="shortcut_action_power_menu">Izbornik napajanja</string>
@@ -373,7 +375,7 @@
     <string name="media_scanner_on_boot_ask">Pitaj za skeniranje (obavijest)</string>
     <string name="media_scanner_on_boot_disabled">Ne skeniraj multimedijalne datoteke</string>
 	<!-- Power menu -->
-    <string name="power_menu_style_summary">Change global menu colors</string>
+    <string name="power_menu_style_summary">Promjeni boje glavnog izbornika</string>
 
     <!-- Recents Ram Bar -->
     <string name="ram_bar">RAM traka sa nedavnim aplikacijama</string>
@@ -395,5 +397,16 @@
     <string name="ram_bar_button_reset">Vrati boje na početne vrijednosti</string>
     <string name="ram_bar_reset">Vrati</string>
     <string name="ram_bar_reset_message">Vrati izgled RAM trake na početni?</string>
+	<!-- Clear Recents position -->
+    <string name="clear_recents_position_title">Obriši mjesto nedavnih aplikacija</string>
+    <string name="clear_recents_position_disabled">Onemogućeno</string>
+    <string name="clear_recents_position_bottom_right">Dolje desno</string>
+    <string name="clear_recents_position_bottom_left">Dolje lijevo</string>
+    <string name="clear_recents_position_top_right">Gore desno</string>
+    <string name="clear_recents_position_top_left">Gore lijevo</string>
+
+    <!-- Enable Quick Unlock -->
+    <string name="lockscreen_quick_unlock_control_title">Brzo otključavanje</string>
+    <string name="lockscreen_quick_unlock_control_summary">Automatski otključaj ako je unešen ispravan PIN ili zaporka</string>
 
 </resources>
