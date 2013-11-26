@@ -121,15 +121,13 @@ public class LockscreenInterface extends SettingsPreferenceFragment {
         final LockPatternUtils lockPatternUtils = mChooseLockSettingsHelper.utils();
         if (KEY_ENABLE_WIDGETS.equals(key)) {
             lockPatternUtils.setWidgetsEnabled(mEnableKeyguardWidgets.isChecked());
-            return true;
         } else if (preference == mLockRingBattery) {
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, mLockRingBattery.isChecked()
                     ? 1 : 0);
-            return true;
         }
 
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
+        return true;
     }
 
     public static class DeviceAdminLockscreenReceiver extends DeviceAdminReceiver {}
