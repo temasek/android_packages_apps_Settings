@@ -55,7 +55,7 @@ import android.widget.Toast;
 import com.android.internal.util.temasek.ButtonConfig;
 import com.android.internal.util.temasek.ButtonsConstants;
 import com.android.internal.util.temasek.ButtonsHelper;
-import com.android.internal.util.temasek.ColorHelper;
+import com.android.internal.util.temasek.ImageHelper;
 import com.android.internal.util.temasek.DeviceUtils;
 import com.android.internal.util.temasek.DeviceUtils.FilteredDeviceFeaturesArray;
 import com.android.internal.util.temasek.PolicyHelper;
@@ -197,7 +197,7 @@ public class ButtonsListViewSettings extends ListFragment implements
         mActionDialogValues = finalActionDialogArray.values;
         mActionDialogEntries = finalActionDialogArray.entries;
 
-        mPicker = new ShortcutPickerHelper(this, this);
+        mPicker = new ShortcutPickerHelper(mActivity, this);
 
         mImageTmp = new File(mActivity.getCacheDir()
                 + File.separator + "shortcut.tmp");
@@ -218,7 +218,7 @@ public class ButtonsListViewSettings extends ListFragment implements
                         mPendingIndex = arg2;
                         mPendingLongpress = false;
                         mPendingNewButton = false;
-                        mPicker.pickShortcut();
+                        mPicker.pickShortcut(getId());
                     }
                 }
             }
@@ -236,7 +236,7 @@ public class ButtonsListViewSettings extends ListFragment implements
                             mPendingIndex = arg2;
                             mPendingLongpress = true;
                             mPendingNewButton = false;
-                            mPicker.pickShortcut();
+                            mPicker.pickShortcut(getId());
                         }
                     }
                     return true;
@@ -290,7 +290,7 @@ public class ButtonsListViewSettings extends ListFragment implements
 
     @Override
     public void shortcutPicked(String action,
-                String description, Bitmap bmp, boolean isApplication) {
+                String description, boolean isApplication) {
         if (mPendingIndex == -1) {
             return;
         }
@@ -419,7 +419,7 @@ public class ButtonsListViewSettings extends ListFragment implements
                         mPendingIndex = 0;
                         mPendingLongpress = false;
                         mPendingNewButton = true;
-                        mPicker.pickShortcut();
+                        mPicker.pickShortcut(getId());
                     }
                 }
                 break;
@@ -473,6 +473,8 @@ public class ButtonsListViewSettings extends ListFragment implements
             case POWER_MENU_SHORTCUT:
                 return PolicyHelper.getPowerMenuConfigWithDescription(
                     mActivity, mActionValuesKey, mActionEntriesKey);
+            case LOCKSCREEN_SHORTCUT:
+                return ButtonsHelper.getLockscreenShortcutConfig(mActivity);
         }
         return null;
     }
@@ -493,6 +495,8 @@ public class ButtonsListViewSettings extends ListFragment implements
                 break;
             case POWER_MENU_SHORTCUT:
                 PolicyHelper.setPowerMenuConfig(mActivity, buttonConfigs, reset);
+            case LOCKSCREEN_SHORTCUT:
+                ButtonsHelper.setLockscreenShortcutConfig(mActivity, buttonConfigs, reset);
                 break;
         }
     }
@@ -538,12 +542,12 @@ public class ButtonsListViewSettings extends ListFragment implements
                     + " " + getItem(position).getLongpressActionDescription());
             }
             if (mButtonMode == POWER_MENU_SHORTCUT) {
-                holder.iconView.setImageDrawable(ColorHelper.resize(
+                holder.iconView.setImageDrawable(ImageHelper.resize(
                         mActivity, PolicyHelper.getPowerMenuIconImage(mActivity,
                         getItem(position).getClickAction(),
                         getItem(position).getIcon(), false), 36));
             } else {
-                holder.iconView.setImageDrawable(ColorHelper.resize(
+                holder.iconView.setImageDrawable(ImageHelper.resize(
                         mActivity, ButtonsHelper.getButtonIconImage(mActivity,
                         getItem(position).getClickAction(),
                         getItem(position).getIcon()), 36));
@@ -729,7 +733,7 @@ public class ButtonsListViewSettings extends ListFragment implements
                                     getOwner().mPendingIndex = which;
                                     getOwner().mPendingLongpress = longpress;
                                     getOwner().mPendingNewButton = newButton;
-                                    getOwner().mPicker.pickShortcut();
+                                    getOwner().mPicker.pickShortcut(getId());
                                 }
                             } else {
                                 if (newButton) {

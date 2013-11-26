@@ -26,6 +26,18 @@
             android:summary="@string/unlock_set_unlock_mode_none"
             android:persistent="false"/>
 
+        <PreferenceScreen
+            android:key="lock_screen_settings"
+            android:fragment="com.android.settings.temasek.LockscreenInterface"
+            android:title="@string/slide_target_title"
+            android:summary="@string/lock_screen_summary" />
+
+        <PreferenceScreen
+            android:fragment="com.android.settings.temasek.LockscreenTargets"
+            android:key="lockscreen_targets"
+            android:summary="@string/lockscreen_target_summary"
+            android:title="@string/lockscreen_target_title" />
+
         <CheckBoxPreference
             android:key="keyguard_enable_widgets"
             android:title="@string/security_enable_widgets_title"/>

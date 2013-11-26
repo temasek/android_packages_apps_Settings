@@ -10,6 +10,7 @@
     <!-- General strings -->
     <string name="reset">Reset</string>
     <string name="enabled">Enabled</string>
+    <string name="attention">Attention</string>
     <string name="disabled">Disabled</string>
     <string name="default_string">Default</string>
 
@@ -194,10 +195,6 @@
     <string name="shortcut_action_help_delete_last_entry">Removing every %1$s in the list will disable the feature entirely.</string>
     <string name="shortcut_action_help">Help</string>
 
-    <string name="icon_picker_type">Select icon type:</string>
-    <string name="icon_default">Default</string>
-    <string name="icon_presets">System icons</string>
-    <string name="icon_custom">Gallery</string>
     <string name="shortcuts_icon_picker_alarm">Alarm</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
     <string name="shortcuts_icon_picker_battery">Battery</string>
@@ -251,10 +248,15 @@
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Unlock</string>
 
+    <string name="icon_picker_type">Select icon type:</string>
+    <string name="icon_default">Default</string>
+    <string name="icon_presets">System icons</string>
+    <string name="icon_custom">Gallery</string>
+    <string name="icon_pack">Icon pack</string>
+    <string name="icon_picker_choose_icon_title">Choose icon</string>
     <string name="icon_color_mode_all_icons">All icons</string>
     <string name="icon_color_mode_system_icons">System icons</string>
     <string name="icon_color_mode_system_custom_icons">System and custom icons</string>
-    <string name="icon_picker_choose_icon_title">Choose icon</string>
     <string name="group_applications">Applications</string>
     <string name="select_custom_app_title">Select custom application</string>
     <string name="shortcuts_text_color_title">Text color</string>
@@ -413,4 +415,55 @@
     <string name="lockscreen_quick_unlock_control_summary">Unlock automatically when the correct PIN
 /password is entered</string>
 
+    <!-- Lock Screen ASS -->
+    <string name="lock_screen_title">Lockscreen</string>
+    <string name="slide_target_title">Slider targets and shortcuts</string>
+    <string name="lock_screen_summary">View or change the slider targets and shortcuts</string>
+
+    <!-- Lock Screen Targets -->
+    <string name="lockscreen_target_info">Drag the slider to targets to assign applications</string>
+    <string name="lockscreen_target_title">Slider targets</string>
+    <string name="lockscreen_target_summary">View or change custom lock screen targets</string>
+    <string name="lockscreen_target_color_title">Target icon color</string>
+    <string name="lockscreen_eight_targets_title">Eight slider targets</string>
+    <string name="lockscreen_eight_targets_summary">Enable eight custom lock screen targets.</string>
+    <string name="lockscreen_enable_eight_targets_dialog">Changing this option resets your current lockscreen targets setup to default.</string>
+    <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nWith eight lockscreen targets enabled you cannot use your lockscreen shortcuts at the same time.</string>
+    <string name="lockscreen_target_reset">Lock screen targets reset to default</string>
+    <string name="lockscreen_target_reset_message">Delete all user created lock screen targets and restore to default?</string>
+    <string name="lockscreen_target_empty">None</string>
+    <string name="lockscreen_target_edit_title">Edit target and icon</string>
+    <string name="lockscreen_target_edit_msg">Select or change the desired application or activity and the associated icon</string>
+
+    <!-- Lockscreen Shortcuts -->
+    <string name="lockscreen_shortcuts_title">Shortcuts</string>
+    <string name="lockscreen_shortcuts_summary">View or change custom lock screen shortcuts</string>
+    <string name="lockscreen_shorcuts_longpress_title">Shortcuts longpress</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Open custom lock screen shortcuts on longpress</string>
+
+    <!-- Lock screen targets and shortcuts -->
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
+    <string name="icon_picker_alarm">Alarm</string>
+    <string name="icon_picker_browser">Browser</string>
+    <string name="icon_picker_calendar">Calendar</string>
+    <string name="icon_picker_camera">Camera</string>
+    <string name="icon_picker_email">Email</string>
+    <string name="icon_picker_email2">Email Holo</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Gallery</string>
+    <string name="icon_picker_google_small">Google (small)</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Hangouts</string>
+    <string name="icon_picker_maps">Maps</string>
+    <string name="icon_picker_sms">Messaging</string>
+    <string name="icon_picker_movie">Movie</string>
+    <string name="icon_picker_music">Music</string>
+    <string name="icon_picker_nav_normal">Navigation</string>
+    <string name="icon_picker_phone">Phone</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">Rss</string>
+    <string name="icon_picker_search">Search</string>
+    <string name="icon_picker_twitter">Twitter</string>	    
+    
 </resources>

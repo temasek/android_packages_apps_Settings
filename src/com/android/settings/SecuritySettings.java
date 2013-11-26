@@ -44,6 +44,7 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.android.internal.telephony.util.BlacklistUtils;
+import com.android.internal.util.temasek.DeviceUtils;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 
@@ -68,6 +69,9 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String KEY_DEVICE_ADMIN_CATEGORY = "device_admin_category";
     private static final String KEY_LOCK_AFTER_TIMEOUT = "lock_after_timeout";
     private static final String KEY_OWNER_INFO_SETTINGS = "owner_info_settings";
+    private static final String KEY_ENABLE_WIDGETS = "keyguard_enable_widgets";
+    private static final String KEY_INTERFACE_SETTINGS = "lock_screen_settings";
+    private static final String KEY_TARGET_SETTINGS = "lockscreen_targets";
 
     private static final int SET_OR_CHANGE_LOCK_METHOD_REQUEST = 123;
     private static final int CONFIRM_EXISTING_FOR_BIOMETRIC_WEAK_IMPROVE_REQUEST = 124;
@@ -113,6 +117,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private DialogInterface mWarnInstallApps;
     private CheckBoxPreference mToggleVerifyApps;
     private CheckBoxPreference mPowerButtonInstantlyLocks;
+    private CheckBoxPreference mEnableKeyguardWidgets;
 
 
     private Preference mNotificationAccess;
@@ -186,7 +191,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
         }
         addPreferencesFromResource(resid);
 
-
         // Add options for device encryption
         mIsPrimary = UserHandle.myUserId() == UserHandle.USER_OWNER;
 
@@ -233,12 +237,25 @@ public class SecuritySettings extends RestrictedSettingsFragment
         mPowerButtonInstantlyLocks = (CheckBoxPreference) root.findPreference(
                 KEY_POWER_INSTANTLY_LOCKS);
 
+        PreferenceGroup securityCategory = (PreferenceGroup)
+                root.findPreference(KEY_SECURITY_CATEGORY);
+        if (securityCategory != null) {
+            Preference lockInterfacePref = findPreference(KEY_INTERFACE_SETTINGS);
+            Preference lockTargetsPref = findPreference(KEY_TARGET_SETTINGS);
+            if (lockInterfacePref != null && lockTargetsPref != null) {
+                if (!DeviceUtils.isPhone(getActivity())) {
+                     // Nothing for tablets and large screen devices
+                     securityCategory.removePreference(lockInterfacePref);
+                } else {
+                     securityCategory.removePreference(lockTargetsPref);
+                }
+            }
+        }
+
         // don't display visible pattern if biometric and backup is not pattern
         if (resid == R.xml.security_settings_biometric_weak &&
                 mLockPatternUtils.getKeyguardStoredPasswordQuality() !=
                 DevicePolicyManager.PASSWORD_QUALITY_SOMETHING) {
-            PreferenceGroup securityCategory = (PreferenceGroup)
-                    root.findPreference(KEY_SECURITY_CATEGORY);
             if (securityCategory != null && mVisiblePattern != null) {
                 securityCategory.removePreference(root.findPreference(KEY_VISIBLE_PATTERN));
             }
@@ -267,6 +284,28 @@ public class SecuritySettings extends RestrictedSettingsFragment
             mQuickUnlockScreen.setChecked(Settings.System.getInt(getContentResolver(), 
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL, 0) == 1);
             mQuickUnlockScreen.setOnPreferenceChangeListener(this);
+        }
+
+        // Enable or disable keyguard widget checkbox based on DPM state
+        mEnableKeyguardWidgets = (CheckBoxPreference) root.findPreference(KEY_ENABLE_WIDGETS);
+        if (mEnableKeyguardWidgets != null) {
+            if (ActivityManager.isLowRamDeviceStatic()) {
+                // Widgets take a lot of RAM, so disable them on low-memory devices
+                if (securityCategory != null) {
+                    securityCategory.removePreference(root.findPreference(KEY_ENABLE_WIDGETS));
+                    mEnableKeyguardWidgets = null;
+                }
+            } else {
+                final boolean disabled = (0 != (mDPM.getKeyguardDisabledFeatures(null)
+                        & DevicePolicyManager.KEYGUARD_DISABLE_WIDGETS_ALL));
+                if (disabled) {
+                    mEnableKeyguardWidgets.setSummary(
+                            R.string.security_enable_widgets_disabled_summary);
+                } else {
+                    mEnableKeyguardWidgets.setSummary("");
+                }
+                mEnableKeyguardWidgets.setEnabled(!disabled);
+            }
         }
 
         // Show password
@@ -529,6 +568,10 @@ public class SecuritySettings extends RestrictedSettingsFragment
             mResetCredentials.setEnabled(!mKeyStore.isEmpty());
         }
 
+	if (mEnableKeyguardWidgets != null) {
+            mEnableKeyguardWidgets.setChecked(lockPatternUtils.getWidgetsEnabled());
+        }
+
         updateBlacklistSummary();
     }
 
@@ -583,6 +626,8 @@ public class SecuritySettings extends RestrictedSettingsFragment
         } else if (preference == mQuickUnlockScreen) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL, isToggled(preference) ? 1 : 0);
+	} else if (KEY_ENABLE_WIDGETS.equals(key)) {
+            lockPatternUtils.setWidgetsEnabled(mEnableKeyguardWidgets.isChecked());
         } else if (preference == mShowPassword) {
             Settings.System.putInt(getContentResolver(), Settings.System.TEXT_SHOW_PASSWORD,
                     mShowPassword.isChecked() ? 1 : 0);

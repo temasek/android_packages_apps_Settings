@@ -12,4 +12,8 @@
     <dimen name="navigation_bar_24">24dp</dimen>
     <dimen name="navigation_bar_0">0dp</dimen>
 
+    <!-- Lockscreen -->
+    <dimen name="lockscreen_target_inset">30dp</dimen>
+    <dimen name="shortcut_picker_left_padding">70dip</dimen>
+
 </resources>
