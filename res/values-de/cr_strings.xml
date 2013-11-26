@@ -8,6 +8,7 @@
     <!-- General strings -->
     <string name="reset">Zurücksetzen</string>
     <string name="enabled">Eingeschaltet</string>
+    <string name="attention">Achtung</string>
     <string name="disabled">Ausgeschaltet</string>
     <string name="default_string">Standard</string>
 
@@ -165,6 +166,7 @@
     <string name="shortcut_action_kill">Kille App</string>
     <string name="shortcut_action_power">Bildschirm Aus</string>
     <string name="shortcut_action_notifications">Benachrichtigungen</string>
+    <string name="shortcut_action_menu_big">Menü</string>
     <string name="shortcut_action_qs">Schnelleinstellungen Tafel</string>
     <string name="shortcut_action_none">Keine</string>
     <string name="shortcut_action_power_menu">Power Menü</string>
@@ -196,30 +198,30 @@
     <string name="icon_custom">Gallerie</string>
     <string name="shortcuts_icon_picker_alarm">Alarm</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
-    <string name="shortcuts_icon_picker_battery">Battery</string>
+    <string name="shortcuts_icon_picker_battery">Batterie</string>
     <string name="shortcuts_icon_picker_browser">Browser</string>
-    <string name="shortcuts_icon_picker_calendar">Calendar</string>
-    <string name="shortcuts_icon_picker_camera">Camera</string>
+    <string name="shortcuts_icon_picker_calendar">Kalender</string>
+    <string name="shortcuts_icon_picker_camera">Kamera</string>
     <string name="shortcuts_icon_picker_cloud">Cloud</string>
-    <string name="shortcuts_icon_picker_contact">Contact</string>
-    <string name="shortcuts_icon_picker_directdial">Direct Dial</string>
-    <string name="shortcuts_icon_picker_directmessage">Direct Message</string>
+    <string name="shortcuts_icon_picker_contact">Kontact</string>
+    <string name="shortcuts_icon_picker_directdial">Direktwahl</string>
+    <string name="shortcuts_icon_picker_directmessage">Direktnachricht</string>
     <string name="shortcuts_icon_picker_drive">Drive</string>
     <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
     <string name="shortcuts_icon_picker_email">Email</string>
-    <string name="shortcuts_icon_picker_email2">Email Alternate</string>
+    <string name="shortcuts_icon_picker_email2">Email Alternative</string>
     <string name="shortcuts_icon_picker_evernote">Evernote</string>
     <string name="shortcuts_icon_picker_facebook">Facebook</string>
-    <string name="shortcuts_icon_picker_favorite">Favorite</string>
-    <string name="shortcuts_icon_picker_file_browser">File Browser</string>
-    <string name="shortcuts_icon_picker_file_browser2">File Browser Alternate</string>
+    <string name="shortcuts_icon_picker_favorite">Favorit</string>
+    <string name="shortcuts_icon_picker_file_browser">Dateibrowser</string>
+    <string name="shortcuts_icon_picker_file_browser2">Dateibrowser Alternativ</string>
     <string name="shortcuts_icon_picker_fitness">Fitness</string>
-    <string name="shortcuts_icon_picker_gallery">Gallery</string>
+    <string name="shortcuts_icon_picker_gallery">Gallerie</string>
     <string name="shortcuts_icon_picker_gears">Gears</string>
     <string name="shortcuts_icon_picker_google_small">Google</string>
     <string name="shortcuts_icon_picker_gplus">Google Plus</string>
     <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
-    <string name="shortcuts_icon_picker_help">Help</string>
+    <string name="shortcuts_icon_picker_help">Hilfe</string>
     <string name="shortcuts_icon_picker_joystick">Joystick</string>
     <string name="shortcuts_icon_picker_key">Keys/Accounts</string>
     <string name="shortcuts_icon_picker_laptop">Laptop</string>
@@ -228,29 +230,34 @@
     <string name="shortcuts_icon_picker_maps">Maps</string>
     <string name="shortcuts_icon_picker_market">Market</string>
     <string name="shortcuts_icon_picker_movie">Movies</string>
-    <string name="shortcuts_icon_picker_music">Music</string>
+    <string name="shortcuts_icon_picker_music">Musik</string>
     <string name="shortcuts_icon_picker_nav">Navigation</string>
-    <string name="shortcuts_icon_picker_phone">Phone</string>
+    <string name="shortcuts_icon_picker_phone">Telefon</string>
     <string name="shortcuts_icon_picker_package">Package</string>
     <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
     <string name="shortcuts_icon_picker_play">Play</string>
     <string name="shortcuts_icon_picker_pocket">Pocket</string>
     <string name="shortcuts_icon_picker_quicksettings">Quick Settings</string>
     <string name="shortcuts_icon_picker_rss">RSS Feed</string>
-    <string name="shortcuts_icon_picker_sdcard">SDCard</string>
-    <string name="shortcuts_icon_picker_search">Search</string>
-    <string name="shortcuts_icon_picker_sms">Messaging</string>
+    <string name="shortcuts_icon_picker_sdcard">SDKarte</string>
+    <string name="shortcuts_icon_picker_search">Suche</string>
+    <string name="shortcuts_icon_picker_sms">Nachrichten</string>
     <string name="shortcuts_icon_picker_tasks">Tasks</string>
     <string name="shortcuts_icon_picker_terminal">Terminal</string>
     <string name="shortcuts_icon_picker_transit">Transit</string>
     <string name="shortcuts_icon_picker_tv">TV</string>
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
-    <string name="shortcuts_icon_picker_unlock">Unlock</string>
+    <string name="shortcuts_icon_picker_unlock">Entsperren</string>
 
+    <string name="icon_picker_type">Wähle Icon Typ:</string>
+    <string name="icon_default">Standard</string>
+    <string name="icon_presets">System-Icons</string>
+    <string name="icon_custom">Gallerie</string>
+    <string name="icon_pack">Icon Paket</string>
+    <string name="icon_picker_choose_icon_title">Wähle Icon</string>
     <string name="icon_color_mode_all_icons">Alle Icons</string>
     <string name="icon_color_mode_system_icons">System Icons</string>
     <string name="icon_color_mode_system_custom_icons">System und eigene Icons</string>
-    <string name="icon_picker_choose_icon_title">Wähle Icon</string>
     <string name="group_applications">Anwendungen</string>
     <string name="select_custom_app_title">Eigene Anwendung auswählen</string>
     <string name="shortcuts_color_title">Farbe Verknüpfungs-Icon</string>
@@ -314,7 +321,7 @@
     <!-- Navigation settings -->
     <string name="navigation_settings_options_title">Optionen Softkeys</string>
     <string name="navigation_settings_title">Softkeys</string>
-    <string name="power_menu_title">Neustartmenü</string>
+    <string name="power_menu_title">Powermenü</string>
 
     <!-- Navigation bar -->
     <string name="navigation_bar_size_42_dp_default">42 dp (Standard)</string>
@@ -373,7 +380,7 @@
     <string name="media_scanner_on_boot_disabled">Medien nicht scannen</string>
 
     <!-- Power menu -->
-    <string name="power_menu_style_summary">Farbe Neustartmenü ändern</string>
+    <string name="power_menu_style_summary">Farbe Powermenü ändern</string>
 
     <!-- Recents Ram Bar -->
     <string name="ram_bar">Recents RAM-Leiste</string>
@@ -394,6 +401,69 @@
     <string name="ram_bar_button_help">Hilfe</string>
     <string name="ram_bar_button_reset">Farben zurücksetzen</string>
     <string name="ram_bar_reset">Zurücksetzen</string>
-    <string name="ram_bar_reset_message">Aussehen der RAM-Leiste zurücksetzen?</string>        
+    <string name="ram_bar_reset_message">Aussehen der Recents RAM-Leiste zurücksetzen?</string>        
+
+    <!-- Clear Recents position -->
+    <string name="clear_recents_position_title">Position Recents löschen</string>
+    <string name="clear_recents_position_disabled">Ausgeschaltet</string>
+    <string name="clear_recents_position_bottom_right">Rechts unten</string>
+    <string name="clear_recents_position_bottom_left">Links unten</string>
+    <string name="clear_recents_position_top_right">Rechts oben</string>
+    <string name="clear_recents_position_top_left">Links oben</string>
+
+    <!-- Enable Quick Unlock -->
+    <string name="lockscreen_quick_unlock_control_title">Schnelles Entsperren</string>
+    <string name="lockscreen_quick_unlock_control_summary">Entsperrt automatisch wenn der richtige PIN oder das richtige Passwort eigegeben wurde.</string>
+
+    <!-- Lock Screen ASS -->
+    <string name="lock_screen_title">Entsperrbildschirm</string>
+    <string name="slide_target_title">Sliderziele und Verknüpfungen</string>
+    <string name="lock_screen_summary">Anzeigen und ändern von Sliderzielen und Verknüpfungen</string>
+
+    <!-- Lock Screen Targets -->
+    <string name="lockscreen_target_info">Ziehe den Slider auf die Ziele um Apps zuzuweisen.</string>
+    <string name="lockscreen_target_title">Sliderziele</string>
+    <string name="lockscreen_target_summary">Anzeigen und ändern von eigenen Entsperrbildschirm Zielen</string>
+    <string name="lockscreen_target_color_title">Farbe Icon Ziel</string>
+    <string name="lockscreen_eight_targets_title">Acht Sliderziele</string>
+    <string name="lockscreen_eight_targets_summary">Aktiviert acht Sliderziele.</string>
+    <string name="lockscreen_enable_eight_targets_dialog">Wenn diese Option geändert wird, werden die derzeitigen Entsperrbildschirmziele auf Standard zurückgesetzt.</string>
+    <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nWenn acht Entsperrbildschirmziele aktiviert sind können gleichzeitig NICHT die Entsperrbildschirm Verknüpfungen genutzt werden.</string>
+    <string name="lockscreen_target_reset">Entsperrbildschirmziele auf Standard zurücksetzen</string>
+    <string name="lockscreen_target_reset_message">Alle selbst erstellten Entsperrbildschirmziele läschen und auf Standard zurücksetzen?</string>
+    <string name="lockscreen_target_empty">Leer</string>
+    <string name="lockscreen_target_edit_title">Ziel und Icon bearbeiten</string>
+    <string name="lockscreen_target_edit_msg">Auswählen oder ändern der gewünschten App oder Aktivität und dem zugewiesenen Icon.</string>
+
+    <!-- Lockscreen Shortcuts -->
+    <string name="lockscreen_shortcuts_title">Verknüpfungen</string>
+    <string name="lockscreen_shortcuts_summary">Anzeigen oder ändern von eigenen Entsperrbildschirm-Verknüpfungen.</string>
+    <string name="lockscreen_shorcuts_longpress_title">Verknüpfungen langer Tastendruck</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Öffne eigene Entsperrbildschirm-Verknüpfung bei langen Tastendruck.</string>
+
+    <!-- Lock screen targets and shortcuts -->
+    <string name="picker_activities">Aktivitäten</string>
+    <string name="select_custom_activity_title">Wähle eigene Aktivität</string>
+    <string name="icon_picker_alarm">Alarm</string>
+    <string name="icon_picker_browser">Browser</string>
+    <string name="icon_picker_calendar">Kalender</string>
+    <string name="icon_picker_camera">Kamera</string>
+    <string name="icon_picker_email">Email</string>
+    <string name="icon_picker_email2">Email Holo</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Gallerie</string>
+    <string name="icon_picker_google_small">Google (klein)</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Hangouts</string>
+    <string name="icon_picker_maps">Maps</string>
+    <string name="icon_picker_sms">Nachrichten</string>
+    <string name="icon_picker_movie">Movie</string>
+    <string name="icon_picker_music">Musik</string>
+    <string name="icon_picker_nav_normal">Navigation</string>
+    <string name="icon_picker_phone">Telefon</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">Rss</string>
+    <string name="icon_picker_search">Suche</string>
+    <string name="icon_picker_twitter">Twitter</string>
 
 </resources>
