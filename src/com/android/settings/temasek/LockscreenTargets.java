@@ -14,20 +14,23 @@
  * limitations under the License.
  */
 
-package com.android.settings.cyanogenmod;
+package com.android.settings.temasek;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
+import android.content.DialogInterface;
 import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Intent.ShortcutIconResource;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.InsetDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.graphics.drawable.StateListDrawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -42,11 +45,15 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.android.internal.util.cm.LockscreenTargetUtils;
+import com.android.internal.util.temasek.AppHelper;
+import com.android.internal.util.temasek.DeviceUtils;
+import com.android.internal.util.temasek.LockscreenTargetUtils;
 import com.android.internal.widget.multiwaveview.GlowPadView;
 import com.android.internal.widget.multiwaveview.TargetDrawable;
 import com.android.settings.R;
-import com.android.settings.cyanogenmod.IconPicker.OnIconPickListener;
+import com.android.settings.temasek.util.IconPicker;
+import com.android.settings.temasek.util.IconPicker.OnIconPickListener;
+import com.android.settings.temasek.util.ShortcutPickerHelper;
 
 import java.io.File;
 import java.io.IOException;
@@ -54,12 +61,18 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 public class LockscreenTargets extends Fragment implements
-        ShortcutPickHelper.OnPickListener, GlowPadView.OnTriggerListener, OnIconPickListener {
+        ShortcutPickerHelper.OnPickListener,
+        GlowPadView.OnTriggerListener, OnIconPickListener {
+
     private static final String TAG = "LockscreenTargets";
 
+    private static final int DLG_SETUP_TARGETS   = 0;
+    private static final int DLG_RESET_TARGETS = 1;
+
     private Activity mActivity;
+    private PackageManager mPm;
     private Resources mResources;
-    private ShortcutPickHelper mPicker;
+    private ShortcutPickerHelper mPicker;
     private IconPicker mIconPicker;
 
     private GlowPadView mWaveView;
@@ -77,7 +90,8 @@ public class LockscreenTargets extends Fragment implements
     private static String mEmptyLabel;
 
     private static final int MENU_RESET = Menu.FIRST;
-    private static final int MENU_SAVE = Menu.FIRST + 1;
+
+    private Resources mKeyguardResources;
 
     private static class TargetInfo {
         String uri;
@@ -102,10 +116,17 @@ public class LockscreenTargets extends Fragment implements
         mMaxTargets = LockscreenTargetUtils.getMaxTargets(mActivity);
 
         mIconPicker = new IconPicker(mActivity, this);
-        mPicker = new ShortcutPickHelper(mActivity, this);
+        mPicker = new ShortcutPickerHelper(mActivity, this);
 
         mTemporaryImage = new File(mActivity.getCacheDir() + "/target.tmp");
         mEmptyLabel = mResources.getString(R.string.lockscreen_target_empty);
+
+        mPm = mActivity.getPackageManager();
+        try {
+            mKeyguardResources = mPm.getResourcesForApplication("com.android.keyguard");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return inflater.inflate(R.layout.lockscreen_targets, container, false);
     }
@@ -114,8 +135,10 @@ public class LockscreenTargets extends Fragment implements
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        Drawable handle = LockscreenTargetUtils.getDrawableFromResources(mActivity,
+                "com.android.keyguard", "ic_lockscreen_handle", false);
+
         mWaveView = (GlowPadView) mActivity.findViewById(R.id.lock_target);
-        Drawable handle = LockscreenTargetUtils.getDrawableFromResources(mActivity, null, "ic_lockscreen_handle", false);
         mWaveView.setHandleDrawable(handle);
         mWaveView.setOnTriggerListener(this);
 
@@ -127,25 +150,24 @@ public class LockscreenTargets extends Fragment implements
     public void onResume() {
         super.onResume();
         // If running on a phone, remove padding around container
-        if (!LockscreenTargetUtils.isScreenLarge(mActivity)) {
+        if (DeviceUtils.isPhone(mActivity)) {
             mContainer.setPadding(0, 0, 0, 0);
         }
     }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.add(0, MENU_RESET, 0, R.string.profile_reset_title)
+        menu.add(0, MENU_RESET, 0, R.string.reset)
             .setIcon(R.drawable.ic_settings_backup) // use the backup icon
             .setAlphabeticShortcut('r')
-            .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM |
-                MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+            .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case MENU_RESET:
-                resetAll();
+                showDialogInner(DLG_RESET_TARGETS, 0);
                 return true;
             default:
                 return false;
@@ -153,25 +175,23 @@ public class LockscreenTargets extends Fragment implements
     }
 
     private void initializeView(String input) {
+
         if (input == null) {
             input = GlowPadView.EMPTY_TARGET;
         }
 
         mTargetStore.clear();
 
-        final Drawable activeBack = LockscreenTargetUtils.getDrawableFromResources(
-                mActivity, null, "ic_lockscreen_target_activated" ,false);
+        final Drawable activeBack = mKeyguardResources.getDrawable(
+                mKeyguardResources.getIdentifier(
+                "com.android.keyguard:drawable/ic_lockscreen_target_activated", null, null));
         final String[] targetStore = input.split("\\|");
 
-        for (int i = 0; i < mTargetOffset; i++) {
-            mTargetStore.add(new TargetInfo());
-        }
-
         //Add the unlock icon
-        Drawable unlockFront = LockscreenTargetUtils.getDrawableFromResources(
-                mActivity, null, "ic_lockscreen_unlock_normal" ,false);
-        Drawable unlockBack = LockscreenTargetUtils.getDrawableFromResources(
-                mActivity, null, "ic_lockscreen_unlock_activated" ,false);
+        Drawable unlockFront = mKeyguardResources.getDrawable(mKeyguardResources.getIdentifier(
+                "com.android.keyguard:drawable/ic_lockscreen_unlock_normal", null, null));
+        Drawable unlockBack = mKeyguardResources.getDrawable(mKeyguardResources.getIdentifier(
+                "com.android.keyguard:drawable/ic_lockscreen_unlock_activated", null, null));
         TargetInfo unlockTarget = new TargetInfo();
         unlockTarget.icon = LockscreenTargetUtils.getLayeredDrawable(
                 mActivity, unlockBack, unlockFront, 0, true);
@@ -189,7 +209,7 @@ public class LockscreenTargets extends Fragment implements
             TargetInfo info = new TargetInfo();
             info.uri = i < targetStore.length ? targetStore[i] : GlowPadView.EMPTY_TARGET;
 
-             if (!info.uri.equals(GlowPadView.EMPTY_TARGET)) {
+            if (!info.uri.equals(GlowPadView.EMPTY_TARGET)) {
                 try {
                     Intent intent = Intent.parseUri(info.uri, 0);
                     if (intent.hasExtra(GlowPadView.ICON_FILE)) {
@@ -204,9 +224,9 @@ public class LockscreenTargets extends Fragment implements
 
                         if (info.iconSource != null) {
                             front = LockscreenTargetUtils.getDrawableFromResources(mActivity,
-                                    null, info.iconSource, false);
+                                    info.packageName, info.iconSource, false);
                             back = LockscreenTargetUtils.getDrawableFromResources(mActivity,
-                                    null, info.iconSource, true);
+                                    info.packageName, info.iconSource, true);
                             frontBlank = true;
                         }
                     }
@@ -231,33 +251,15 @@ public class LockscreenTargets extends Fragment implements
             mTargetStore.add(info);
         }
 
+        for (int i = 0; i < mTargetOffset; i++) {
+            mTargetStore.add(new TargetInfo());
+        }
+
         ArrayList<TargetDrawable> targetDrawables = new ArrayList<TargetDrawable>();
         for (TargetInfo i : mTargetStore) {
             targetDrawables.add(new TargetDrawable(mResources, i != null ? i.icon : null));
         }
         mWaveView.setTargetResources(targetDrawables);
-    }
-
-    /**
-     * Resets the target layout to stock
-     */
-    private void resetAll() {
-        new AlertDialog.Builder(mActivity)
-                .setTitle(R.string.lockscreen_target_reset_title)
-                .setIconAttribute(android.R.attr.alertDialogIcon)
-                .setMessage(R.string.lockscreen_target_reset_message)
-                .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int id) {
-                        initializeView(null);
-                        Settings.System.putString(mActivity.getContentResolver(),
-                                Settings.System.LOCKSCREEN_TARGETS, null);
-                        Toast.makeText(mActivity, R.string.lockscreen_target_reset,
-                                Toast.LENGTH_LONG).show();
-                    }
-                })
-                .setNegativeButton(R.string.cancel, null)
-                .show();
     }
 
     /**
@@ -316,6 +318,8 @@ public class LockscreenTargets extends Fragment implements
                 image.delete();
             }
         }
+        initializeView(targets);
+
     }
 
     /**
@@ -346,8 +350,9 @@ public class LockscreenTargets extends Fragment implements
         }
 
         if (!hasBackground) {
-            final Drawable activeBack = LockscreenTargetUtils.getDrawableFromResources(
-                    mActivity, null, "ic_lockscreen_target_activated", false);
+            final Drawable activeBack = mKeyguardResources.getDrawable(
+                    mKeyguardResources.getIdentifier(
+                    "com.android.keyguard:drawable/ic_lockscreen_target_activated", null, null));
             activeLayer.setDrawableByLayerId(0, new InsetDrawable(activeBack, 0, 0, 0, 0));
         }
 
@@ -419,36 +424,17 @@ public class LockscreenTargets extends Fragment implements
     public void onReleased(View v, int handle) {
     }
 
+//    @Override
+//    public void onTargetChange(View v, int whichHandle) {
+//    }
+
     @Override
     public void onTrigger(View v, final int target) {
-        mTargetIndex = target;
-
         if (target == mTargetOffset) {
             mWaveView.reset(true);
             return;
         }
-
-        new AlertDialog.Builder(mActivity)
-                .setTitle(R.string.lockscreen_target_edit_title)
-                .setView(createShortcutDialogView(target))
-                .setPositiveButton(R.string.ok,  new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        TargetInfo info = (TargetInfo) mDialogIcon.getTag();
-                        String type = info != null ? info.iconType : null;
-                        String source = info != null ? info.iconSource : null;
-                        String packageName = info != null ? info.packageName : null;
-                        int inset = LockscreenTargetUtils.getInsetForIconType(mActivity, type);
-
-                        InsetDrawable drawable = new InsetDrawable(getPickedIconFromDialog(),
-                                inset, inset, inset, inset);
-                        setTarget(mTargetIndex, mDialogLabel.getTag().toString(),
-                                drawable, type, source, packageName);
-                    }
-                })
-                .setNegativeButton(R.string.cancel, null)
-                .setCancelable(false)
-                .show();
+        showDialogInner(DLG_SETUP_TARGETS, target);
     }
 
     private View createShortcutDialogView(int target) {
@@ -470,11 +456,7 @@ public class LockscreenTargets extends Fragment implements
         view.findViewById(R.id.label).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String[] names = new String[] { mEmptyLabel };
-                ShortcutIconResource[] icons = new ShortcutIconResource[] {
-                    ShortcutIconResource.fromContext(mActivity, android.R.drawable.ic_delete)
-                };
-                mPicker.pickShortcut(names, icons, getId());
+                mPicker.pickShortcut(getId());
             }
         });
 
@@ -493,7 +475,7 @@ public class LockscreenTargets extends Fragment implements
         if (TextUtils.equals(item.uri, GlowPadView.EMPTY_TARGET)) {
             mDialogLabel.setText(mEmptyLabel);
         } else {
-            mDialogLabel.setText(mPicker.getFriendlyNameForUri(item.uri));
+            mDialogLabel.setText(AppHelper.getFriendlyNameForUri(mActivity, mPm, item.uri));
         }
         mDialogLabel.setTag(item.uri);
 
@@ -516,7 +498,7 @@ public class LockscreenTargets extends Fragment implements
                 if (mTemporaryImage.exists()) {
                     mTemporaryImage.renameTo(imageFile);
                 }
-                imageFile.setReadOnly();
+                imageFile.setReadable(true, false);
 
                 icon.iconType = GlowPadView.ICON_FILE;
                 icon.iconSource = imageFile.getAbsolutePath();
@@ -529,10 +511,11 @@ public class LockscreenTargets extends Fragment implements
                 return;
             }
         } else if (requestCode == IconPicker.REQUEST_PICK_SYSTEM) {
+            icon.packageName = intent.getStringExtra(IconPicker.PACKAGE_NAME);
             icon.iconType = GlowPadView.ICON_RESOURCE;
             icon.iconSource = intent.getStringExtra(IconPicker.RESOURCE_NAME);
             iconDrawable = LockscreenTargetUtils.getDrawableFromResources(mActivity,
-                    null, icon.iconSource, false);
+                    icon.packageName, icon.iconSource, false);
         } else if (requestCode == IconPicker.REQUEST_PICK_ICON_PACK
                 && resultCode == Activity.RESULT_OK) {
             icon.packageName = intent.getStringExtra(IconPicker.PACKAGE_NAME);
@@ -556,4 +539,88 @@ public class LockscreenTargets extends Fragment implements
     @Override
     public void onFinishFinalAnimation() {
     }
+
+    private void showDialogInner(int id, int target) {
+        DialogFragment newFragment = MyAlertDialogFragment.newInstance(id, target);
+        newFragment.setTargetFragment(this, 0);
+        newFragment.show(getFragmentManager(), "dialog " + id);
+    }
+
+    public static class MyAlertDialogFragment extends DialogFragment {
+
+        public static MyAlertDialogFragment newInstance(int id, int target) {
+            MyAlertDialogFragment frag = new MyAlertDialogFragment();
+            Bundle args = new Bundle();
+            args.putInt("id", id);
+            args.putInt("target", target);
+            frag.setArguments(args);
+            return frag;
+        }
+
+        LockscreenTargets getOwner() {
+            return (LockscreenTargets) getTargetFragment();
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            int id = getArguments().getInt("id");
+            final int target = getArguments().getInt("target");
+            switch (id) {
+                case DLG_SETUP_TARGETS:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.lockscreen_target_edit_title)
+                    .setView(getOwner().createShortcutDialogView(target))
+                    .setNegativeButton(R.string.cancel, null)
+                    .setCancelable(false)
+                    .setPositiveButton(R.string.dlg_ok,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            getOwner().mTargetIndex = target;
+                            TargetInfo info = (TargetInfo) getOwner().mDialogIcon.getTag();
+                            String type = info != null ? info.iconType : null;
+                            String source = info != null ? info.iconSource : null;
+                            String packageName = info != null ? info.packageName : null;
+                            int inset = LockscreenTargetUtils
+                                    .getInsetForIconType(getOwner().mActivity, type);
+
+                            InsetDrawable drawable = new InsetDrawable(
+                                    getOwner().getPickedIconFromDialog(),
+                                    inset, inset, inset, inset);
+                            getOwner().setTarget(target,
+                                    getOwner().mDialogLabel.getTag().toString(),
+                                    drawable, type, source, packageName);
+                        }
+                    })
+                    .create();
+                case DLG_RESET_TARGETS:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.reset)
+                    .setMessage(R.string.lockscreen_target_reset_message)
+                    .setNegativeButton(R.string.cancel, null)
+                    .setPositiveButton(R.string.dlg_ok,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            getOwner().initializeView(null);
+                            Settings.System.putString(getOwner().mActivity.getContentResolver(),
+                                    Settings.System.LOCKSCREEN_TARGETS, null);
+                            for (File pic : getOwner().mActivity.getFilesDir().listFiles()) {
+                                if (pic.getName().startsWith("lockscreen_")) {
+                                    pic.delete();
+                                }
+                            }
+                            Toast.makeText(getOwner().mActivity, R.string.lockscreen_target_reset,
+                                    Toast.LENGTH_LONG).show();
+                        }
+                    })
+                    .create();
+            }
+            throw new IllegalArgumentException("unknown id " + id);
+        }
+
+        @Override
+        public void onCancel(DialogInterface dialog) {
+
+        }
+    }
+
 }

@@ -20,10 +20,13 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.SystemProperties;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+import com.android.settings.DisplaySettings;
+import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.hardware.DisplayColor;
 import com.android.settings.hardware.DisplayGamma;
@@ -38,6 +41,7 @@ public class BootReceiver extends BroadcastReceiver {
 
     private static final String CPU_SETTINGS_PROP = "sys.cpufreq.restored";
     private static final String IOSCHED_SETTINGS_PROP = "sys.iosched.restored";
+    private static final String PERF_PROFILE_SETTINGS_PROP = "sys.perf.profile.restored";
     private static final String KSM_SETTINGS_PROP = "sys.ksm.restored";
 
     @Override
@@ -58,6 +62,14 @@ public class BootReceiver extends BroadcastReceiver {
             SystemProperties.set(IOSCHED_SETTINGS_PROP, "false");
         }
 
+        if (SystemProperties.getBoolean(PERF_PROFILE_SETTINGS_PROP, false) == false
+                && intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
+            SystemProperties.set(PERF_PROFILE_SETTINGS_PROP, "true");
+            configurePerfProfile(ctx);
+        } else {
+            SystemProperties.set(PERF_PROFILE_SETTINGS_PROP, "false");
+        }
+
         if (Utils.fileExists(MemoryManagement.KSM_RUN_FILE)) {
             if (SystemProperties.getBoolean(KSM_SETTINGS_PROP, false) == false
                     && intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
@@ -72,13 +84,14 @@ public class BootReceiver extends BroadcastReceiver {
         DisplayColor.restore(ctx);
         DisplayGamma.restore(ctx);
         VibratorIntensity.restore(ctx);
+        DisplaySettings.restore(ctx);
     }
 
     private void configureCPU(Context ctx) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
 
         if (prefs.getBoolean(Processor.SOB_PREF, false) == false) {
-            Log.i(TAG, "Restore disabled by user preference.");
+            Log.i(TAG, "CPU restore disabled by user preference.");
             return;
         }
 
@@ -118,7 +131,7 @@ public class BootReceiver extends BroadcastReceiver {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
 
         if (prefs.getBoolean(IOScheduler.SOB_PREF, false) == false) {
-            Log.i(TAG, "Restore disabled by user preference.");
+            Log.i(TAG, "IOSched restore disabled by user preference.");
             return;
         }
 
@@ -137,6 +150,29 @@ public class BootReceiver extends BroadcastReceiver {
                 Utils.fileWriteOneLine(IOScheduler.IOSCHED_LIST_FILE, ioscheduler);
             }
             Log.d(TAG, "I/O scheduler settings restored.");
+        }
+    }
+
+    private void configurePerfProfile(Context ctx) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ctx);
+        final Resources res = ctx.getResources();
+
+        if (prefs.getBoolean(PerformanceProfile.SOB_PREF, false) == false) {
+            Log.i(TAG, "Performance profile restore disabled by user preference.");
+            return;
+        }
+
+        String perfProfileProp = res.getString(R.string.config_perf_profile_prop);
+        if (perfProfileProp == null) {
+            Log.d(TAG, "Performance profiles are not supported by the device. Nothing to restore.");
+        }
+
+        String perfProfile = prefs.getString(PerformanceProfile.PERF_PROFILE_PREF, null);
+        if (perfProfile == null) {
+            Log.d(TAG, "No performance profile settings saved. Nothing to restore.");
+        } else {
+            SystemProperties.set(perfProfileProp, perfProfile);
+            Log.d(TAG, "Performance profile settings restored.");
         }
     }
 

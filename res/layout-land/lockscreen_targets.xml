@@ -7,13 +7,12 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_light"
+        android:background="#FFFFFF"
         android:padding="4dip"
         android:gravity="center_horizontal"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/lockscreen_target_info" />
 
@@ -23,9 +22,9 @@
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:layout_below="@id/label"
-        android:layout_gravity="center"
         android:orientation="horizontal"
-        android:gravity="right|center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
         android:contentDescription="@*android:string/keyguard_accessibility_slide_area"
         prvandroid:outerRingDrawable="@*android:drawable/ic_lockscreen_outerring"
         prvandroid:outerRadius="@*android:dimen/glowpadview_target_placement_radius"

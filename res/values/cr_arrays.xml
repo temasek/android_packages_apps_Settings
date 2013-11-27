@@ -577,4 +577,141 @@
         <item>4</item>
     </string-array>
 
+    <!-- Lockcsreen custom -->
+    <string-array name="lockscreen_icon_picker_labels" translatable="false">
+        <item>@string/icon_picker_alarm</item>
+        <item>@string/icon_picker_browser</item>
+        <item>@string/icon_picker_calendar</item>
+        <item>@string/icon_picker_camera</item>
+        <item>@string/icon_picker_email</item>
+        <item>@string/icon_picker_email2</item>
+        <item>@string/icon_picker_facebook</item>
+        <item>@string/icon_picker_gallery</item>
+        <item>@string/icon_picker_google_small</item>
+        <item>@string/icon_picker_googleplus</item>
+        <item>@string/icon_picker_googletalk</item>
+        <item>@string/icon_picker_maps</item>
+        <item>@string/icon_picker_sms</item>
+        <item>@string/icon_picker_movie</item>
+        <item>@string/icon_picker_music</item>
+        <item>@string/icon_picker_nav_normal</item>
+        <item>@string/icon_picker_phone</item>
+        <item>@string/icon_picker_podcast</item>
+        <item>@string/icon_picker_rss</item>
+        <item>@string/icon_picker_search</item>
+        <item>@string/icon_picker_twitter</item>
+    </string-array>
+
+    <string-array name="lockscreen_icon_picker_icons" translatable="false">
+        <item>ic_lockscreen_alarm_normal</item>
+        <item>ic_lockscreen_browser_normal</item>
+        <item>ic_lockscreen_calendar_normal</item>
+        <item>ic_lockscreen_camera_normal</item>
+        <item>ic_lockscreen_email_normal</item>
+        <item>ic_lockscreen_email2_normal</item>
+        <item>ic_lockscreen_facebook_normal</item>
+        <item>ic_lockscreen_gallery_normal</item>
+        <item>ic_lockscreen_google_small_normal</item>
+        <item>ic_lockscreen_gplus_normal</item>
+        <item>ic_lockscreen_gtalk_normal</item>
+        <item>ic_lockscreen_maps_normal</item>
+        <item>ic_lockscreen_sms_normal</item>
+        <item>ic_lockscreen_movie_normal</item>
+        <item>ic_lockscreen_music_normal</item>
+        <item>ic_lockscreen_nav_normal</item>
+        <item>ic_lockscreen_phone_normal</item>
+        <item>ic_lockscreen_podcast_normal</item>
+        <item>ic_lockscreen_rss_normal</item>
+        <item>ic_lockscreen_google_normal</item>
+        <item>ic_lockscreen_twitter_normal</item>
+    </string-array>
+
+    <!-- Active display redisplay -->
+    <string-array name="ad_redisplay_entries" translatable="false">
+        <item>@string/ad_redisplay_never</item>
+        <item>@string/ad_redisplay_1m</item>
+        <item>@string/ad_redisplay_5m</item>
+        <item>@string/ad_redisplay_15m</item>
+        <item>@string/ad_redisplay_30m</item>
+        <item>@string/ad_redisplay_1h</item>
+        <item>@string/ad_redisplay_2h</item>
+        <item>@string/ad_redisplay_5h</item>
+    </string-array>
+
+    <string-array name="ad_redisplay_values" translatable="false">
+        <item>0</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>7200000</item>
+        <item>18000000</item>
+    </string-array>
+
+    <!-- Activ display pocket mode -->
+    <string-array name="ad_pocket_mode_entries" translatable="false">
+        <item>@string/ad_pocket_mode_off</item>
+        <item>@string/ad_pocket_mode_notifications</item>
+        <item>@string/ad_pocket_mode_always</item>
+    </string-array>
+
+    <string-array name="ad_pocket_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>     
+
+    <!-- Halo -->
+    <string-array name="entries_halo_state">
+        <item>@string/halo_state_black</item>
+        <item>@string/halo_state_white</item>
+    </string-array>
+
+    <string-array name="values_halo_state" translatable="false">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="entries_halo_size">
+        <item>@string/halo_size_miniscule</item>
+        <item>@string/halo_size_small</item>
+        <item>@string/halo_size_default</item>
+        <item>@string/halo_size_large</item>
+        <item>@string/halo_size_gigantic</item>
+        <item>@string/halo_size_monster</item>
+    </string-array>
+    <string-array name="values_halo_size" translatable="false">
+        <item>0.6</item>
+        <item>0.8</item>
+        <item>1.0</item>
+        <item>1.2</item>
+        <item>1.4</item>
+        <item>1.6</item>
+    </string-array>
+
+    <string-array name="entries_halo_notification_count">
+        <item>@string/halo_notification_count_none</item>
+        <item>@string/halo_notification_count_total</item>
+        <item>@string/halo_notification_count_individual</item>
+        <item>@string/halo_notification_count_both</item>
+    </string-array>
+
+    <string-array name="values_halo_notification_count">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="entries_halo_msgbox_animation">
+        <item>@string/halo_msgbox_animation_none</item>
+        <item>@string/halo_msgbox_animation_flip</item>
+    </string-array>
+
+    <string-array name="values_halo_msgbox_animation">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>

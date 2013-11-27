@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cyanogenmod;
+package com.android.settings.temasek.util;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -38,13 +38,12 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.android.internal.util.cm.LockscreenTargetUtils;
 import com.android.settings.R;
 
 import java.io.File;
 
 public class IconPicker {
-    private static final String ICON_ACTION = "com.cyanogenmod.ACTION_PICK_ICON";
+    private static final String ICON_ACTION = "com.slim.ACTION_PICK_ICON";
     public static final String RESOURCE_NAME = "resource_name";
     public static final String PACKAGE_NAME = "package_name";
 
@@ -75,14 +74,14 @@ public class IconPicker {
         ComponentName component = iconPackIntent.resolveActivity(mParent.getPackageManager());
 
         String[] items = new String[component != null ? 3 : 2];
-        items[0] = mResources.getString(R.string.icon_picker_system_icons_title);
-        items[1] = mResources.getString(R.string.icon_picker_gallery_title);
+        items[0] = mResources.getString(R.string.icon_presets);
+        items[1] = mResources.getString(R.string.icon_custom);
         if (component != null) {
-            items[2] = mResources.getString(R.string.icon_picker_pack_title);
+            items[2] = mResources.getString(R.string.icon_pack);
         }
 
         new AlertDialog.Builder(mParent)
-                .setTitle(R.string.icon_picker_title)
+                .setTitle(R.string.icon_picker_type)
                 .setItems(items, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int item) {
@@ -119,6 +118,7 @@ public class IconPicker {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     Intent intent = new Intent();
                     intent.putExtra(RESOURCE_NAME, adapter.getItemReference(position));
+                    intent.putExtra(PACKAGE_NAME, "com.android.keyguard");
                     mIconListener.iconPicked(type, Activity.RESULT_OK, intent);
                     dialog.dismiss();
                 }
@@ -164,13 +164,17 @@ public class IconPicker {
 
         @Override
         public Object getItem(int position) {
-            return LockscreenTargetUtils.getDrawableFromResources(
-                    mParent, null, icons[position], false);
+            Resources kr = null;
+            try {
+                kr = mParent.getPackageManager()
+                        .getResourcesForApplication("com.android.keyguard");
+            } catch (Exception e) {}
+            return kr.getDrawable(kr.getIdentifier(icons[position],
+                    "drawable", "com.android.keyguard"));
         }
 
         public String getItemReference(int position) {
-            String name = icons[position];
-            return name;
+            return icons[position];
         }
 
         @Override
