@@ -311,7 +311,7 @@
     <string name="header_summary_animation">@null</string>
     
     <!-- Lockscreen battery ring -->
-    <string name="battery_around_lockscreen_ring">Batterie um Entsperr-Ring</string>
+    <string name="battery_around_lockscreen_ring">Batteriering um Entsperr-Ring</string>
 
     <!-- Navigation ring -->
     <string name="shortcut_action_ring_vib">Klingeln/Vibrieren</string>
@@ -416,30 +416,30 @@
     <string name="lockscreen_quick_unlock_control_summary">Entsperrt automatisch wenn der richtige PIN oder das richtige Passwort eigegeben wurde.</string>
 
     <!-- Lock Screen ASS -->
-    <string name="lock_screen_title">Entsperrbildschirm</string>
+    <string name="lock_screen_title">Sperrbildschirm</string>
     <string name="slide_target_title">Sliderziele und Verknüpfungen</string>
     <string name="lock_screen_summary">Anzeigen und ändern von Sliderzielen und Verknüpfungen</string>
 
     <!-- Lock Screen Targets -->
     <string name="lockscreen_target_info">Ziehe den Slider auf die Ziele um Apps zuzuweisen.</string>
     <string name="lockscreen_target_title">Sliderziele</string>
-    <string name="lockscreen_target_summary">Anzeigen und ändern von eigenen Entsperrbildschirm Zielen</string>
+    <string name="lockscreen_target_summary">Anzeigen und ändern von eigenen Sperrbildschirmzielen</string>
     <string name="lockscreen_target_color_title">Farbe Icon Ziel</string>
     <string name="lockscreen_eight_targets_title">Acht Sliderziele</string>
     <string name="lockscreen_eight_targets_summary">Aktiviert acht Sliderziele.</string>
-    <string name="lockscreen_enable_eight_targets_dialog">Wenn diese Option geändert wird, werden die derzeitigen Entsperrbildschirmziele auf Standard zurückgesetzt.</string>
-    <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nWenn acht Entsperrbildschirmziele aktiviert sind können gleichzeitig NICHT die Entsperrbildschirm Verknüpfungen genutzt werden.</string>
-    <string name="lockscreen_target_reset">Entsperrbildschirmziele auf Standard zurücksetzen</string>
-    <string name="lockscreen_target_reset_message">Alle selbst erstellten Entsperrbildschirmziele läschen und auf Standard zurücksetzen?</string>
+    <string name="lockscreen_enable_eight_targets_dialog">Wenn diese Option geändert wird, werden die derzeitigen Sperrbildschirmziele auf Standard zurückgesetzt.</string>
+    <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nWenn acht Sperrbildschirmziele aktiviert sind können gleichzeitig NICHT die Sperrbildschirm Verknüpfungen genutzt werden.</string>
+    <string name="lockscreen_target_reset">Sperrbildschirmziele auf Standard zurücksetzen</string>
+    <string name="lockscreen_target_reset_message">Alle selbst erstellten Sperrbildschirmziele läschen und auf Standard zurücksetzen?</string>
     <string name="lockscreen_target_empty">Leer</string>
     <string name="lockscreen_target_edit_title">Ziel und Icon bearbeiten</string>
     <string name="lockscreen_target_edit_msg">Auswählen oder ändern der gewünschten App oder Aktivität und dem zugewiesenen Icon.</string>
 
     <!-- Lockscreen Shortcuts -->
     <string name="lockscreen_shortcuts_title">Verknüpfungen</string>
-    <string name="lockscreen_shortcuts_summary">Anzeigen oder ändern von eigenen Entsperrbildschirm-Verknüpfungen.</string>
+    <string name="lockscreen_shortcuts_summary">Anzeigen oder ändern von eigenen Sperrbildschirm-Verknüpfungen.</string>
     <string name="lockscreen_shorcuts_longpress_title">Verknüpfungen langer Tastendruck</string>
-    <string name="lockscreen_shorcuts_longpress_summary">Öffne eigene Entsperrbildschirm-Verknüpfung bei langen Tastendruck.</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Öffne eigene Sperrbildschirm-Verknüpfung bei langen Tastendruck.</string>
 
     <!-- Lock screen targets and shortcuts -->
     <string name="picker_activities">Aktivitäten</string>
