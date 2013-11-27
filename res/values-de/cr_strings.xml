@@ -465,5 +465,52 @@
     <string name="icon_picker_rss">Rss</string>
     <string name="icon_picker_search">Suche</string>
     <string name="icon_picker_twitter">Twitter</string>
+    
+     <!-- Halo -->
+    <string name="halo_settings_title">Halo</string>
+    <string name="halo_behavior_title">Halo Verhalten</string>
+    <string name="halo_hide_title">Halo nach Aktivität verstecken</string>
+    <string name="halo_hide_summary">Halo wird bei eingehenden Tasks erscheinen und nach einer Weile wieder verschwinden.</string>
+    <string name="halo_reversed_title">Halo umkehren</string>
+    <string name="halo_reversed_summary">Gilt für Task-Umschaltung und Bewegungs-Gesten.</string>
+    <string name="halo_state_title">Halo Regeln</string>
+    <string name="halo_state_summary">Aktiviere Black/White-Listen Benachrichtigungen</string>
+    <string name="halo_state_black">Black-Liste</string>
+    <string name="halo_state_white">White-Liste</string>
+    <string name="halo_pause_title">Pausiere aktive APP</string>
+    <string name="halo_pause_summary">Wenn eine App mit Halo geöffnet wird, wird die darunterliegende App pausiert.</string>
+    <string name="halo_ninja_title">Ninja Modus</string>
+    <string name="halo_ninja_summary">Halo verschwindet komplett wenn leer.</string>
+    <string name="halo_notification_msgbox_title">Aktiviere Nachrichten-Pop-Up</string>
+    <string name="halo_notification_msgbox_summary">Zeige Nachrichten-Box für einkommende Nachrichten.</string>
+    <string name="halo_unlock_ping_title">Ping beim entsperren</string>
+    <string name="halo_unlock_ping_summary">Halo gibt nach der Entsperrung ein Ping-Geräusch wieder, wenn eine Nachricht empfangen wurde.</string>
+
+    <string name="halo_size_title">Halo Größe</string>
+    <string name="halo_size_summary">Legt die Größe von Halo fest.</string>
+    <string name="halo_size_miniscule">Winzig</string>
+    <string name="halo_size_small">Klein</string>
+    <string name="halo_size_default">Normal (Standard)</string>
+    <string name="halo_size_large">Groß</string>
+    <string name="halo_size_gigantic">Gigantisch</string>
+    <string name="halo_size_monster">Monster</string>
+
+    <string name="halo_notification_count_title">Benachrichtigungzähler</string>
+    <string name="halo_notification_count_summary">Zeigt einen Benachrichtigungszähler auf Halo an.</string>
+    <string name="halo_notification_count_none">Keine</string>
+    <string name="halo_notification_count_total">Gesamt</string>
+    <string name="halo_notification_count_individual">Pro App</string>
+    <string name="halo_notification_count_both">Beides</string>
+
+    <string name="halo_msgbox_animation_title">Animation Nachrichten-Box</string>
+    <string name="halo_msgbox_animation_summary">Animation der Halo Nachrichten-Box für eingehende Benachrichtigungen.</string>
+    <string name="halo_msgbox_animation_none">Keine</string>
+    <string name="halo_msgbox_animation_flip">Drehung</string>
+
+    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Black-Liste von HALO</string>
+    <string name="app_halo_label_white">White-Liste von HALO</string>
+
+
 
 </resources>
