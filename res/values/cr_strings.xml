@@ -5,7 +5,7 @@
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT Translate this -->
-    <string name="temasek_version_default">V10</string>
+    <string name="temasek_version_default">V11</string>
 
     <!-- General strings -->
     <string name="reset">Reset</string>
