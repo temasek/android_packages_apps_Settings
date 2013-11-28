@@ -3,11 +3,12 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, temasek version -->
-    <string name="temasek_version_title">Temasek unofficial version</string>
+    <string name="temasek_version_title">Temasek niet-officiele versie</string>
 
     <!-- General strings -->
     <string name="reset">Herstellen</string>
     <string name="enabled">Ingeschakeld</string>
+	<string name="attention">Attentie</string>
     <string name="disabled">Uitgeschakeld</string>
     <string name="default_string">Standaard</string>
 
@@ -88,7 +89,7 @@
     <string name="low_battery_warning_policy_popup">Alleen een pop-up</string>
     <string name="low_battery_warning_policy_notif">Alleen een melding</string>
     <string name="low_battery_warning_policy_sound">Alleen geluid</string>
-    <string name="low_battery_warning_policy_disabled">Niets</string> 
+    <string name="low_battery_warning_policy_disabled">Geen</string> 
 
     <!-- Screen-On Notification Light -->
     <string name="screen_on_notification_led_title">LED actief bij ingeschakeld scherm</string>
@@ -188,14 +189,10 @@
     <string name="shortcut_action_help_shortcut">snelkoppeling</string>
     <string name="shortcut_action_help_button">knop</string>
     <string name="shortcut_action_help_icon">, terwijl het icoon geselecteerd wordt, zal aanpassingsopties tonen</string>
-    <string name="shortcut_action_help_main">Om een %1$s toe te voegen, selecteer je het Toevoegen icoon. %2$s\n\nOm een %1$s te wissen, veeg je deze weg.  Herorden een %1$s door links de greep verticaal te verschuiven.\n\nOm de standaardinstellingen te herstellen, selecteer je Herstellen.</string>
+    <string name="shortcut_action_help_main">Om een %1$s toe te voegen, selecteer je het Toevoegen icoon. %2$s\n\nOm een %1$s te wissen, veeg je deze weg. Herorden een %1$s door links met het greep-icoon verticaal te schuiven.\n\nOm de standaardinstellingen te herstellen, selecteer je Herstellen.</string>
     <string name="shortcut_action_help_delete_last_entry">Door %1$s in de lijst te wissen, wordt de functie volledig uitgeschakeld</string>
     <string name="shortcut_action_help">Help</string>
 
-    <string name="icon_picker_type">Selecteer icoon-type:</string>
-    <string name="icon_default">Standaard</string>
-    <string name="icon_presets">Systeemiconen</string>
-    <string name="icon_custom">Galerij</string>
     <string name="shortcuts_icon_picker_alarm">Alarm</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
     <string name="shortcuts_icon_picker_battery">Batterij</string>
@@ -249,10 +246,15 @@
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Ontgrendelen</string>
 
-    <string name="icon_color_mode_all_icons">Alle iconen</string>
+    <string name="icon_picker_type">Selecteer icoon-type:</string>
+    <string name="icon_default">Standaard</string>
+    <string name="icon_presets">Systeemiconen</string>
+    <string name="icon_custom">Galerij</string>
+	<string name="icon_pack">Iconenpakket</string>
+	<string name="icon_picker_choose_icon_title">Kies icoon</string>
+	<string name="icon_color_mode_all_icons">Alle iconen</string>
     <string name="icon_color_mode_system_icons">Systeemiconen</string>
     <string name="icon_color_mode_system_custom_icons">Systeem en aangepaste iconen</string>
-    <string name="icon_picker_choose_icon_title">Kies icoon</string>
     <string name="group_applications">Applicaties</string>
     <string name="select_custom_app_title">Kies aangepaste applicaties</string>
     <string name="shortcuts_text_color_title">Tekstkleur</string>
@@ -331,7 +333,7 @@
     <string name="navigation_menu_right">Rechts</string>
     <string name="navigation_menu_left">Links</string>
     <string name="navigation_menu_both">Beide</string>
-    <string name="navigation_menu_default_jb_behavior">Tonen wanneer gevraagd (standaard)</string>
+    <string name="navigation_menu_default_jb_behavior">Tonen indien gevraagd (standaard)</string>
     <string name="navigation_menu_never_show">Nooit tonen</string>
     <string name="navigation_menu_always_show">Altijd tonen</string>
     <string name="navigation_bar">Navigatiebalk</string>
@@ -383,7 +385,7 @@
     <string name="ram_bar_note_summary">Deze RAM indicator toont hoe het Android systeem het beschikbare RAM geheugen utiliseert. Houd er rekening mee dat gecachte apps ervoor zorgen dat het apparaat veel sneller werkt. Voor verdere uitleg over hoe Android RAM beheer werkt, kun je het Help menu raadplegen.</string>
     <string name="ram_bar_mode_title">RAM indicator modus</string>
     <string name="ram_bar_mode_dialog_title">Tonen op RAM indicator</string>
-    <string name="ram_bar_none">Niets</string>
+    <string name="ram_bar_none">Geen</string>
     <string name="ram_bar_apps">Applicaties</string>
     <string name="ram_bar_cache">Applicaties en cache</string>
     <string name="ram_bar_other">Applicaties, cache en overig</string>
@@ -410,4 +412,137 @@
     <string name="lockscreen_quick_unlock_control_title">Snel ontgrendelen</string>
     <string name="lockscreen_quick_unlock_control_summary">Automatisch ontgrendelen indien toegangscode correct is ingevuld</string>
 
+	<!-- Lock Screen ASS -->
+    <string name="lock_screen_title">Vergrendelscherm</string>
+    <string name="slide_target_title">Ontgrendelring snelkoppelingen</string>
+    <string name="lock_screen_summary">Toon of wijzig de snelkoppelingen in de ontgrendelring</string>
+
+    <!-- Lock Screen Targets -->
+    <string name="lockscreen_target_info">Sleep naar lege vlakken om applicaties toe te wijzen</string>
+    <string name="lockscreen_target_title">Ontgrendelring snelkoppelingen</string>
+    <string name="lockscreen_target_summary">Bekijk of wijzig snelkoppelingen in de ontgrendelring</string>
+    <string name="lockscreen_target_color_title">Icoonkleur</string>
+    <string name="lockscreen_eight_targets_title">8 ontgrendelring snelkoppelingen</string>
+    <string name="lockscreen_eight_targets_summary">Schakel 8 aangepaste ontgrendelring snelkoppelingen in</string>
+    <string name="lockscreen_enable_eight_targets_dialog">Door deze optie in te schakelen worden de huidige snelkoppelingen gewist</string>
+    <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nJe kunt geen ontgrendelscherm snelkoppelingen gebruiken indien de optie 8 ontgrendelring snelkoppelingen is ingeschakeld</string>
+    <string name="lockscreen_target_reset">Herstel snelkoppelingen</string>
+    <string name="lockscreen_target_reset_message">Alle aangepaste ontgrendelring snelkoppelingen wissen?</string>
+    <string name="lockscreen_target_empty">Geen</string>
+    <string name="lockscreen_target_edit_title">Wijzig doel en icoon</string>
+    <string name="lockscreen_target_edit_msg">Selecteer of wijzig de gewenste applicatie of activiteit en het bijbehorende icoon</string>
+
+    <!-- Lockscreen Shortcuts -->
+    <string name="lockscreen_shortcuts_title">Ontgrendelscherm snelkoppelingen</string>
+    <string name="lockscreen_shortcuts_summary">Bekijk of wijzig snelkoppelingen op het ontgrendelscherm</string>
+    <string name="lockscreen_shorcuts_longpress_title">Snelkoppelingen lang indrukken...</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Open aangepaste ontgrendelscherm snelkoppelingen bij lang indrukken</string>
+
+    <!-- Lock screen targets and shortcuts -->
+    <string name="picker_activities">Activiteiten</string>
+    <string name="select_custom_activity_title">Selecteer aangepaste activiteit</string>
+    <string name="icon_picker_alarm">Alarm</string>
+    <string name="icon_picker_browser">Browser</string>
+    <string name="icon_picker_calendar">Kalender</string>
+    <string name="icon_picker_camera">Camera</string>
+    <string name="icon_picker_email">E-mail</string>
+    <string name="icon_picker_email2">E-mail Holo</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Galerij</string>
+    <string name="icon_picker_google_small">Google (klein)</string>
+    <string name="icon_picker_googleplus">Google+</string>
+    <string name="icon_picker_googletalk">Hangouts</string>
+    <string name="icon_picker_maps">Maps</string>
+    <string name="icon_picker_sms">SMS</string>
+    <string name="icon_picker_movie">Films</string>
+    <string name="icon_picker_music">Muziek</string>
+    <string name="icon_picker_nav_normal">Navigatie</string>
+    <string name="icon_picker_phone">Telefoon</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">RSS</string>
+    <string name="icon_picker_search">Zoeken</string>
+    <string name="icon_picker_twitter">Twitter</string>
+    
+    <!-- Halo -->
+    <string name="halo_settings_title">Halo</string>
+    <string name="halo_behavior_title">Halo-gedrag</string>
+    <string name="halo_hide_title">Verberg Halo na activiteit</string>
+    <string name="halo_hide_summary">Halo zal verschijnen bij inkomende meldingen en daarna weer verdwijnen</string>
+    <string name="halo_reversed_title">Keer Halo om</string>
+    <string name="halo_reversed_summary">Schakel in dat Halo verplaatst en verwijdert kan worden door te slepen over het scherm</string>
+    <string name="halo_state_title">Halo beleid</string>
+    <string name="halo_state_summary">Schakel in dat meldingen op een zwarte of witte lijst kunnen worden gezet</string>
+    <string name="halo_state_black">Zwarte lijst</string>
+    <string name="halo_state_white">Witte lijst</string>
+    <string name="halo_pause_title">Pauzeer actieve applicatie</string>
+    <string name="halo_pause_summary">Indien een applicatie geopend wordt met Halo zal de huidige applicatie gepauzeerd worden</string>
+    <string name="halo_ninja_title">Ninja modus</string>
+    <string name="halo_ninja_summary">Halo zal volledig worden verborgen indien er niets weergegeven kan worden</string>
+    <string name="halo_notification_msgbox_title">Toon berichten pop-up</string>
+    <string name="halo_notification_msgbox_summary">Toon berichten pop-up voor inkomende berichten</string>
+    <string name="halo_unlock_ping_title">Ping bij ontgrendelen</string>
+    <string name="halo_unlock_ping_summary">Halo zal pingen bij het ontgrendelen als er nieuwe meldingen zijn</string>
+
+    <string name="halo_size_title">Halo grootte</string>
+    <string name="halo_size_summary">Bepaal hoe groot Halo moet zijn</string>
+    <string name="halo_size_miniscule">Minuscuul</string>
+    <string name="halo_size_small">Klein</string>
+    <string name="halo_size_default">Normaal (standaard)</string>
+    <string name="halo_size_large">Groot</string>
+    <string name="halo_size_gigantic">Gigantisch</string>
+    <string name="halo_size_monster">Monster</string>
+
+    <string name="halo_notification_count_title">Meldingenaantal</string>
+    <string name="halo_notification_count_summary">Halo toont het aantal meldingen</string>
+    <string name="halo_notification_count_none">Niet</string>
+    <string name="halo_notification_count_total">Totaal</string>
+    <string name="halo_notification_count_individual">Per applicatie</string>
+    <string name="halo_notification_count_both">Beide</string>
+
+    <string name="halo_msgbox_animation_title">Animatie berichten pop-up</string>
+    <string name="halo_msgbox_animation_summary">Animatie van de berichten pop-up bij inkomende meldingen</string>
+    <string name="halo_msgbox_animation_none">Geen</string>
+    <string name="halo_msgbox_animation_flip">Flip</string>
+
+    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Zet op zwarte lijst</string>
+    <string name="app_halo_label_white">Zet op witte lijst</string>
+
+    <!-- ListView animation -->
+    <string name="bars_and_menus_category_system_title">Systeem</string>
+    <string name="listview_animation_title">Lijstweergave animatie</string>
+    <string name="listview_off">Uitgeschakeld</string>
+    <string name="listview_wave_left">Golf (links)</string>
+    <string name="listview_wave_right">Golf (rechts)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Schalen</string>
+    <string name="listview_stack_top">Stapel (boven)</string>
+    <string name="listview_stack_bottom">Stapel (onder)</string>
+    <string name="listview_unfold">Openvouwen</string>
+    <string name="listview_fold">Vouwen</string>
+    <string name="listview_translate_left">Translate (links)</string>
+    <string name="listview_translate_right">Translate (rechts)</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">Lijstweergave interpolatie</string>
+    <string name="listview_accelerate_interpolator">accelerate_interpolator</string>
+    <string name="listview_decelerate_interpolator">decelerate_interpolator</string>
+    <string name="listview_accelerate_decelerate_interpolator">accelerate_decelerate_interpolator</string>
+    <string name="listview_anticipate_interpolator">anticipate_interpolator</string>
+    <string name="listview_overshoot_interpolator">overshoot_interpolator</string>
+    <string name="listview_anticipate_overshoot_interpolator">anticipate_overshoot_interpolator</string>
+    <string name="listview_bounce_interpolator">bounce_interpolator</string>
+
+    <!-- Lockscreen widget settings -->
+    <string name="lockscreen_widgets_title">Widgets</string>
+    <string name="lockscreen_camera_widget_title">Schakel camera-widget in</string>
+    <string name="lockscreen_camera_widget_summary">Schakel camera-widget in op het ontgrendelscherm</string>
+    <string name="lockscreen_maximize_widgets_title">Begin gemaximaliseerd</string>
+    <string name="lockscreen_maximize_widgets_summary">Toon widget gemaximaliseerd wanneer het scherm ingeschakeld wordt</string>
+    <string name="lockscreen_disable_hints_title">Schakel beginpagina indicatie uit</string>
+    <string name="lockscreen_disable_hints_summary">Schakel de gloed uit die wordt weergegeven op het widgetscherm op het ontgrendelscherm</string>
+    <string name="lockscreen_use_widget_container_carousel_title">Schakel widget-carousel in</string>
+    <string name="lockscreen_use_widget_container_carousel_summary">Toont een carousel terwijl geschakeld wordt tussen widgetschermen</string>
+
+   
 </resources>
