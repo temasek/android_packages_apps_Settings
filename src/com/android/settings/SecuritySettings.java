@@ -118,6 +118,8 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private DialogInterface mWarnInstallApps;
     private CheckBoxPreference mToggleVerifyApps;
     private CheckBoxPreference mPowerButtonInstantlyLocks;
+    private Preference mEnableKeyguardWidgets;
+    private CheckBoxPreference mQuickUnlockScreen;
 
     private Preference mNotificationAccess;
 
@@ -132,9 +134,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
     public SecuritySettings() {
         super(null /* Don't ask for restrictions pin on creation. */);
     }
-
-    // Omni Additions
-    private CheckBoxPreference mQuickUnlockScreen;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -293,6 +292,27 @@ public class SecuritySettings extends RestrictedSettingsFragment
             mMenuUnlock.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.MENU_UNLOCK_SCREEN, 0) == 1);
             mMenuUnlock.setOnPreferenceChangeListener(this);
+        }
+
+        // Link to widget settings showing summary about the actual status
+        // and remove them on low memory devices
+        mEnableKeyguardWidgets = root.findPreference(KEY_ENABLE_WIDGETS);
+        if (mEnableKeyguardWidgets != null) {
+            if (ActivityManager.isLowRamDeviceStatic()) {
+                // Widgets take a lot of RAM, so disable them on low-memory devices
+                if (securityCategory != null) {
+                    securityCategory.removePreference(root.findPreference(KEY_ENABLE_WIDGETS));
+                    mEnableKeyguardWidgets = null;
+                }
+            } else {
+                final boolean disabled = (0 != (mDPM.getKeyguardDisabledFeatures(null)
+                        & DevicePolicyManager.KEYGUARD_DISABLE_WIDGETS_ALL));
+                if (disabled) {
+                    mEnableKeyguardWidgets.setSummary(
+                            R.string.security_enable_widgets_disabled_summary);
+                }
+                mEnableKeyguardWidgets.setEnabled(!disabled);
+            }
         }
 
         // Show password
@@ -555,7 +575,15 @@ public class SecuritySettings extends RestrictedSettingsFragment
             mResetCredentials.setEnabled(!mKeyStore.isEmpty());
         }
 
-	updateBlacklistSummary();
+        if (mEnableKeyguardWidgets != null) {
+            if (!lockPatternUtils.getWidgetsEnabled()) {
+                mEnableKeyguardWidgets.setSummary(R.string.disabled);
+            } else {
+                mEnableKeyguardWidgets.setSummary(R.string.enabled);
+            }
+        }
+
+        updateBlacklistSummary();
     }
 
     @Override

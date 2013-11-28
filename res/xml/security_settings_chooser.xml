@@ -39,6 +39,11 @@
             android:title="@string/lockscreen_target_title" />
 
         <PreferenceScreen
+            android:key="keyguard_enable_widgets"
+            android:fragment="com.android.settings.temasek.LockscreenWidgets"
+            android:title="@string/lockscreen_widgets_title"/>
+
+        <PreferenceScreen
             android:fragment="com.android.settings.OwnerInfoSettings"
             android:key="owner_info_settings"
             android:title="@string/owner_info_settings_title"
