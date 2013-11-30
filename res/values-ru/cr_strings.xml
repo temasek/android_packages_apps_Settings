@@ -315,8 +315,8 @@
     <string name="shortcut_action_ring_vib_silent">Звук/Вибро/Без звука</string>
 
     <!-- Navigation settings -->
-    <string name="navigation_settings_options_title">Параметры навигации</string>
-    <string name="navigation_settings_title">Навигация</string>
+    <string name="navigation_settings_options_title">Параметры кнопок навигации</string>
+    <string name="navigation_settings_title">Кнопки навигации</string>
     <string name="power_menu_title">Меню кнопки питания</string>
 
     <!-- Navigation bar -->
@@ -353,14 +353,14 @@
     <string name="navbar_can_move_summary">Отображение строки навигации внизу в ландшафтном режиме</string>
     <string name="navbar_style_dimen_title">Размеры</string>
     <string name="navbar_button_title">Кнопки</string>
-    <string name="navbar_targets_title">Ярлыки кольца</string>
+    <string name="navbar_targets_title">Ярлыки быстрого запуска</string>
     <string name="navbar_cat">Строка навигации</string>
     <string name="navbar_dimensions_reset_message">Сбросить все значения размеров по умолчанию?</string>
 
     <!-- Navigation bar button style -->
     <string name="nav_bar_button_style_summary">Изменение цвета кнопок строки навигации</string>
     <string name="button_transparency_title">Прозрачность кнопки</string>
-    <string name="nav_button_color_mode_summary">Измените цветовой режим кнопки строки навигации</string>
+    <string name="nav_button_color_mode_summary">Изменение цветового режима кнопок строки навигации</string>
     <string name="navigation_bar_glow_tint_title">Цвет свечения</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
