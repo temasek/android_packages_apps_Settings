@@ -8,6 +8,7 @@
     <!-- General strings -->
     <string name="reset">Réinitialiser</string>
     <string name="enabled">Activé</string>
+    <string name="attention">Attention</string>
     <string name="disabled">Désactivé</string>
     <string name="default_string">Défaut</string>
 
@@ -146,7 +147,14 @@
     <string name="restart_systemui">Redémarrer SystemUI</string>
 
     <!-- Button shorcut actions -->
-    <string name="additional_options_title">Options additionnelles</string>
+    <string name="additional_options_title">Options additionelles</string>
+    <string name="reset_message">Réinitialiser aux valeurs par défaut?</string>
+    <string name="style_title">Style</string>
+    <string name="shortcut_action_airplane">Mode avion</string>
+    <string name="shortcut_action_expanded_desktop">Bureau étendu</string>
+    <string name="shortcut_action_power_off">Eteindre</string>
+    <string name="shortcut_action_reboot">Redémarrer</string>
+    <string name="shortcut_action_sound">Son</string>
     <string name="shortcut_action_app">App personalisée</string>
     <string name="shortcut_action_home">Home</string>
     <string name="shortcut_action_back">Retour</string>
@@ -159,36 +167,32 @@
     <string name="shortcut_action_kill">Fermer l\'app de force</string>
     <string name="shortcut_action_power">Eteindre l\'écran</string>
     <string name="shortcut_action_notifications">Notifications</string>
+    <string name="shortcut_action_menu_big">Menu</string>
     <string name="shortcut_action_qs">Panneau de paramètres rapides</string>
     <string name="shortcut_action_none">Aucun</string>
     <string name="shortcut_action_power_menu">Menu d\'extinction</string>
     <string name="shortcut_action_torch">Torche</string>
     <string name="shortcut_action_longpress">Appui long:</string>
-    <!--This needs to redo
     <string name="shortcut_action_select_action_longpress">Choisissez l\'action d\'appui long:</string>
-    <string name="shortcut_action_select_action">Choisissez l'action:</string>
-    <string name="shortcut_action_select_action_newbutton">Choisissez le nouveau boutton:</string>
+    <string name="shortcut_action_select_action">Choisissez l\'action:</string>
+    <string name="shortcut_action_select_action_newbutton">Choisissez la nouvelle action:</string>
     <string name="shortcut_action_reset">Réinitialiser</string>
     <string name="shortcut_action_add">Ajouter</string>
-    <string name="shortcut_action_reset_message">Réinitialiser tous les entrées?</string>
+    <string name="shortcut_action_reset_message">Réinitialiser toutes les entrées?</string>
     <string name="shortcut_action_max">Le nombre maximum d\'entrées a été atteint.</string>
     <string name="shortcut_action_warning">Attention</string>
     <string name="shortcut_action_warning_message">Il est impossible d\'effacer la dernière entrée</string>
-    <string name="shortcut_action_disable_message">Disabled\nAdd an entry to enable this feature</string>
-    <string name="shortcut_image_not_valid">L\'app séléctionnée n'a pas retourné une icône valide ou ne supporte pas le recadrage d\'image. Veuillez utiliser une app différente.</string>
-    <string name="shortcut_duplicate_entry">L\'action séléctionnée ne peut etre ajoutée deux fois</string>
+    <string name="shortcut_action_disable_message">Désactivé\nAjouter une entrée pour activer cette fonction</string>
+    <string name="shortcut_image_not_valid">L\'app séléctionnée n\'a pas retourné une icône valide ou ne supporte pas le recadrage d\'image. Veuillez utiliser une app différente.</string>
+    <string name="shortcut_duplicate_entry">L\'action séléctionnée ne peut être ajoutée deux fois</string>
 
     <string name="shortcut_action_help_shortcut">Raccourci</string>
     <string name="shortcut_action_help_button">boutton</string>
-    <string name="shortcut_action_help_icon">, en même temps que l\'icône est séléctionnée fera apparaître les options de personalisation</string>-->
+    <string name="shortcut_action_help_icon">, en même temps que l\'icône est séléctionnée fera apparaître les options de personalisation</string>
     <string name="shortcut_action_help_main">Pour ajouter un(e) %1$s, veuillez selectionner "ajouter une icône".  Une fois qu\'un(e) %1$s est ajouté(e), séléctionner une ligne changera la cible%2$s\n\nPour enlever un(e) %1$s, faire glisser la ligne horizontalement vers la gauche ou la droite.  Re-arrangez le %1$s dans la liste en faisant glisser la poignée sur la gauche verticalement.\n\nPour effacer ou retourner aux valeurs par défaut, veuillez selectionner l\'icône "Réinitialiser".</string>
     <string name="shortcut_action_help_delete_last_entry">Enlever tous les %1$s dans la liste désactivera la fonction complètement.</string>
     <string name="shortcut_action_help">Help</string>
 
-    <string name="icon_picker_type">Séléctionnez le type d\'icône</string>
-    <string name="icon_default">Défaut</string>
-    <string name="icon_presets">Icônes système</string>
-    <string name="icon_custom">Gallerie</string>
     <string name="shortcuts_icon_picker_alarm">Alarme</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
     <string name="shortcuts_icon_picker_battery">Batterie</string>
@@ -242,20 +246,26 @@
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Débloquer</string>
 
+    <string name="icon_picker_type">Choisissez le type d\'icône:</string>
+    <string name="icon_default">Défaut</string>
+    <string name="icon_presets">Icônes de système</string>
+    <string name="icon_custom">Gallerie</string>
+    <string name="icon_pack">Pack d\'icônes</string>
+    <string name="icon_picker_choose_icon_title">Choisissez une icône</string>
     <string name="icon_color_mode_all_icons">Toutes les icônes</string>
     <string name="icon_color_mode_system_icons">Icônes système</string>
     <string name="icon_color_mode_system_custom_icons">Icônes système personalisées</string>
-    <string name="icon_picker_choose_icon_title">Choisissez une icône</string>
     <string name="group_applications">Applications</string>
     <string name="select_custom_app_title">Choisissez une application personalisée</string>
-    <string name="shortcuts_color_title">Couleur de l\'icône de raccourci</string>
-    <string name="shortcuts_color_summary">Colorizez la couleur du raccourci</string>
+    <string name="shortcuts_text_color_title">Couleur du texte</string>
+    <string name="shortcuts_color_title">Couleur des icônes</string>
     <string name="shortcuts_color_mode_title">Mode de couleur de l\'icône</string>
     <string name="shortcuts_color_mode_summary">Changez le mode de couleur de l\'icône du raccourci</string>
 
     <!-- Notification drawer settings  -->
     <string name="notification_drawer_title">Tiroir de notifications</string>
     <string name="notification_hide_carrier_title">Cacher le nom de l\'opérateur</string>
+    <string name="notification_hide_carrier_summary">Cacher le nom de l\opérateur et du réseau Wi-Fi dans le tiroir de notifications</string>
     <string name="notification_shortcuts_settings_title">Raccourcis</string>
     <string name="notification_shortcuts_settings_summary">Montrer les raccourcis dans le tiroir de notifications</string>
 
@@ -296,5 +306,203 @@
     <string name="summary_animation_no_override">Empêcher les applications d\'annuler les transitions.</string>  
     <string name="animation_duration_default">Défaut</string>
     <string name="header_summary_animation">@null</string>
+
+    <!-- Navigation ring -->
+    <string name="shortcut_action_ring_vib">Cercle/Vibrations</string>
+    <string name="shortcut_action_ring_silent">Cercle/Silencieux</string>
+    <string name="shortcut_action_ring_vib_silent">Cercle/Vibrations/Silencieux</string>
+
+    <!-- Navigation settings -->
+    <string name="navigation_settings_options_title">Options de navigation</string>
+    <string name="navigation_settings_title">Navigation</string>
+    <string name="power_menu_title">Menu global</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_size_42_dp_default">42 dp (défaut)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (défaut)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (off)</string>
+    <string name="navigation_menu_right">À droite</string>
+    <string name="navigation_menu_left">À gauche</string>
+    <string name="navigation_menu_both">À droite et à gauche</string>
+    <string name="navigation_menu_default_jb_behavior">Afficher sur demande (défaut)</string>
+    <string name="navigation_menu_never_show">Ne jamais afficher</string>
+    <string name="navigation_menu_always_show">Toujours afficher</string>
+    <string name="navigation_bar">Barre de navigation</string>
+    <string name="navbar_button_cat">Bouttons de la barre de navigation</string>
+    <string name="title_pref_menu_location">Position du menu</string>
+    <string name="summary_pref_menu_location">Où voulez-vous que les bouttons du menu apparaissent?</string>
+    <string name="title_pref_menu_display">Visibilité du menu</string>
+    <string name="summary_pref_menu_display">Comment et quand voulez-vous que les bouttons du menu apparaissent?</string>
+    <string name="navbar_enable_bar">Activer la barre de navigation</string>
+    <string name="navbar_enable_bar_summary">Activer la barre de navigation</string>
+    <string name="navigation_bar_height_title">Hauteur de la barre de navigation</string>
+    <string name="navigation_bar_height_summary">Hauteur de la barre de navigation en mode portrait.</string>
+    <string name="navigation_bar_height_landscape_title">Hauteur de la barre de navigation en mode paysage</string>
+    <string name="navigation_bar_height_landscape_summary">Hauteur de la barre de navigation en mode paysage.</string>
+    <string name="navigation_bar_width_title">Largeur de la barre de navigation</string>
+    <string name="navigation_bar_width_summary">Hauteur de la barre de navigation si la barre est le long d\'un côté.</string>
+    <string name="navbar_can_move">Afficher en paysage</string>
+    <string name="navbar_can_move_summary">Affiche la barre de navigation en mode paysage en bas</string>
+    <string name="navbar_style_dimen_title">Dimensions</string>
+    <string name="navbar_button_title">Bouttons</string>
+    <string name="navbar_targets_title">Cibles du cercle</string>
+    <string name="navbar_cat">Barre de navigation</string>
+    <string name="navbar_dimensions_reset_message">Réinitialiser toutes les entrées de dimensions aux valeurs par défaut?</string>
+
+    <!-- Navigation bar button style -->
+    <string name="nav_bar_button_style_summary">Changer la couleur des bouttons de la barre de navigation</string>
+    <string name="button_transparency_title">Transparence des boutons</string>
+    <string name="nav_button_color_mode_summary">Changer le mode de couleur des bouttons de la barre de navigation</string>
+    <string name="navigation_bar_glow_tint_title">Couleur de lueur</string>
+    
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Bouttons physiques</string>
+    <string name="key_menu_enabled">Boutton de menu activé</string>
+    <string name="key_back_enabled">Boutton de retour activé</string>
+    <string name="key_home_enabled">Boutton home activé</string>
+    
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">Comportement de MediaScanner au démarrage</string>
+    <string name="media_scanner_on_boot_enabled">Scanner media</string>
+    <string name="media_scanner_on_boot_ask">Demande de scan (notification)</string>
+    <string name="media_scanner_on_boot_disabled">Ne pas scanner media</string>
+    
+    <!-- Power menu -->
+    <string name="power_menu_style_summary">Changer les couleurs du menu global</string>
+
+    <!-- Recents Ram Bar -->
+    <string name="ram_bar">Barre de RAM des applications récentes</string>
+    <string name="ram_bar_note_title">Note</string>
+    <string name="ram_bar_note_summary">Cette barre de RAM affiche l\'utilisation réelle de la mémoire (RAM) android. Veuillez noter qu\'avoir des applications dans le cache aide votre appareil à ouvrir les applications bien plus rapidement. Pour plus d\'explications sur la façon dont la mémoire android (RAM) est gérée, veuillez vous réferer au menu d\'aide.</string>
+    <string name="ram_bar_mode_title">Mode de la barre de RAM des applications récentes</string>
+    <string name="ram_bar_mode_dialog_title">Afficher sur la barre de RAM des applications récentes</string>
+    <string name="ram_bar_none">Aucun</string>
+    <string name="ram_bar_apps">Applications</string>
+    <string name="ram_bar_cache">Applications et cache</string>
+    <string name="ram_bar_other">Applications, cache et autres</string>
+    <string name="ram_bar_style_cat">Style de la barre de RAM des applications récentes</string>
+    <string name="ram_bar_color_app_mem_color">Couleur de la RAM des applications</string>
+    <string name="ram_bar_color_cache_mem_color">Couleur de la RAM cache</string>
+    <string name="ram_bar_color_total_mem_color">Couleur de la RAM autres</string>
+    <string name="ram_bar_color_enabled">Activée</string>
+    <string name="ram_bar_color_disabled">Désactivée</string>
+    <string name="ram_bar_button_help">Aide</string>
+    <string name="ram_bar_button_reset">Réinitialiser les couleurs</string>
+    <string name="ram_bar_reset">Réinitialiser</string>
+    <string name="ram_bar_reset_message">Réinitialiser le style de la barre de RAM aux valeurs par défaut?</string>   
+
+    <!-- Clear Recents position -->
+    <string name="clear_recents_position_title">Position du boutton de suppression des applications récentes</string>
+    <string name="clear_recents_position_disabled">Désactivé</string>
+    <string name="clear_recents_position_bottom_right">En bas à droite</string>
+    <string name="clear_recents_position_bottom_left">En bas à gauche</string>
+    <string name="clear_recents_position_top_right">En haut à droite</string>
+    <string name="clear_recents_position_top_left">En haut à gauche</string>
+    
+    <!-- Enable Quick Unlock -->
+    <string name="lockscreen_quick_unlock_control_title">Déverrouillage rapide</string>
+    <string name="lockscreen_quick_unlock_control_summary">Déverrouiller automatiquement lorsque le PIN ou mot de passe correct est saisi</string>
+    
+    <!-- Lock Screen ASS -->
+    <string name="lock_screen_title">Écran de verrouillage</string>
+    <string name="slide_target_title">Cibles et raccourcis du curseur</string>
+    <string name="lock_screen_summary">Voir ou changer les cibles et raccourcis du curseur</string>
+
+    <!-- Lock Screen Targets -->
+    <string name="lockscreen_target_info">Faire glisser le curseur vers une cible pour attribuer une application</string>
+    <string name="lockscreen_target_title">Cibles du curseur</string>
+    <string name="lockscreen_target_summary">Voir ou changer les cibles de l\'écran de verrouillage personnalisé</string>
+    <string name="lockscreen_target_color_title">Couleur des cibles</string>
+    <string name="lockscreen_eight_targets_title">Huit cibles de curseur</string>
+    <string name="lockscreen_eight_targets_summary">Activer huit cibles de curseur d\'écran de verrouillage personnalisé.</string>
+    <string name="lockscreen_enable_eight_targets_dialog">Changer cette option réinitialisera la configuration de vos cibles d\'écran de verrouillage aux valeurs par défaut.</string>
+    <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nAvec huit cibles d\'écran de verrouillage activées, vous ne pouvez pas utiliser vos raccourcis d\'écran de verrouillage en même temps.</string>
+    <string name="lockscreen_target_reset">Réinitialisation des cibles d\'écran aux valeur par défaut</string>
+    <string name="lockscreen_target_reset_message">Effacer toutes les cibles d\'écran de verrouillage créées par l\'utilisateur et réinitialiser aux valeurs par défaut?</string>
+    <string name="lockscreen_target_empty">Aucune</string>
+    <string name="lockscreen_target_edit_title">Modifier la cible et l\'icône</string>
+    <string name="lockscreen_target_edit_msg">Séléctionner ou changer l\'application ou activité désirée ainsi que l\'icône associée</string>
+
+    <!-- Lockscreen Shortcuts -->
+    <string name="lockscreen_shortcuts_title">Raccourcis</string>
+    <string name="lockscreen_shortcuts_summary">Afficher ou changer les raccourcis d\'écran de verrouillage personnaliséView or change custom lock screen shortcuts</string>
+    <string name="lockscreen_shorcuts_longpress_title">Appui long sur le raccourcis</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Un appui long ouvrira le raccourcis d\'écran de verrouillage personnalisé</string>
+
+    <!-- Lock screen targets and shortcuts -->
+    <string name="picker_activities">Activités</string>
+    <string name="select_custom_activity_title">Séléctionnez une activité personnalisée</string>
+    <string name="icon_picker_alarm">Réveil</string>
+    <string name="icon_picker_browser">Navigateur</string>
+    <string name="icon_picker_calendar">Agenda</string>
+    <string name="icon_picker_camera">Appareil photo</string>
+    <string name="icon_picker_email">E-mail</string>
+    <string name="icon_picker_email2">E-mail Holo</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Gallerie</string>
+    <string name="icon_picker_google_small">Google (petit)</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Hangouts</string>
+    <string name="icon_picker_maps">Maps</string>
+    <string name="icon_picker_sms">SMS</string>
+    <string name="icon_picker_movie">Films</string>
+    <string name="icon_picker_music">Musique</string>
+    <string name="icon_picker_nav_normal">GPS</string>
+    <string name="icon_picker_phone">Téléphone</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">Rss</string>
+    <string name="icon_picker_search">Recherche</string>
+    <string name="icon_picker_twitter">Twitter</string>
+
+    <!-- Halo -->
+    <string name="halo_settings_title">Halo</string>
+    <string name="halo_behavior_title">Comportement de Halo</string>
+    <string name="halo_hide_title">Cacher Halo après l\'activité</string>
+    <string name="halo_hide_summary">Halo apparaîtra pour les nouvelles tâches et se déroulera hors de vue apres un petit moment</string>
+    <string name="halo_reversed_title">Inverser Halo</string>
+    <string name="halo_reversed_summary">S\'applique aux changement de tâche et mouvement en cours</string>
+    <string name="halo_state_title">Règles d\'Halo</string>
+    <string name="halo_state_summary">Active les notifications de listes en noir/blanc</string>
+    <string name="halo_state_black">Liste de couleur noire</string>
+    <string name="halo_state_white">Liste de couleur blanche</string>
+    <string name="halo_pause_title">Mettre l\'app activée en pause</string>
+    <string name="halo_pause_summary">Lorsqu\'une app est ouverte avec Halo, l\'app en dessous sera mise en pause</string>
+    <string name="halo_ninja_title">Mode ninja</string>
+    <string name="halo_ninja_summary">Halo disparaîtra complètement lorsqu\'il sera vide</string>
+    <string name="halo_notification_msgbox_title">Activer les messages pop-up</string>
+    <string name="halo_notification_msgbox_summary">Montrer une boîte de message pour les nouvelles notifications</string>
+    <string name="halo_unlock_ping_title">Ping au déverrouillage</string>
+    <string name="halo_unlock_ping_summary">Halo émettra un ping lorsque l\'appareil est déverouillé si de nouvelles notifications ont été reçues</string>
+
+    <string name="halo_size_title">Taille d\'Halo</string>
+    <string name="halo_size_summary">Defini quelle sera la taille d\'Halo</string>
+    <string name="halo_size_miniscule">Miniscule</string>
+    <string name="halo_size_small">Petite</string>
+    <string name="halo_size_default">Normale (défaut)</string>
+    <string name="halo_size_large">Grande</string>
+    <string name="halo_size_gigantic">Gigantesque</string>
+    <string name="halo_size_monster">Monstrueuse</string>
+
+    <string name="halo_notification_count_title">Compteur de notifications</string>
+    <string name="halo_notification_count_summary">Afficher le compteur de notifications sur Halo</string>
+    <string name="halo_notification_count_none">Aucune</string>
+    <string name="halo_notification_count_total">Total</string>
+    <string name="halo_notification_count_individual">Par app</string>
+    <string name="halo_notification_count_both">Les deux</string>
+
+    <string name="halo_msgbox_animation_title">Animation de la boîte de message</string>
+    <string name="halo_msgbox_animation_summary">Animation de la boîte de message d\'Halo pour les nouvelles notifications</string>
+    <string name="halo_msgbox_animation_none">Aucune</string>
+    <string name="halo_msgbox_animation_flip">Flip</string>
+
+    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Liste noire d\'HALO</string>
+    <string name="app_halo_label_white">Liste blanche d\'HALO</string>
 
 </resources>
