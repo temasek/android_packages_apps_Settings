@@ -170,7 +170,7 @@
     <string name="shortcut_action_power">Отключить экран</string>
     <string name="shortcut_action_notifications">Уведомления</string>
     <string name="shortcut_action_menu_big">Меню</string>
-    <string name="shortcut_action_qs">Панель быстпых настроек</string>
+    <string name="shortcut_action_qs">Панель быстрых настроек</string>
     <string name="shortcut_action_none">Ничего</string>
     <string name="shortcut_action_power_menu">Меню питания</string>
     <string name="shortcut_action_torch">Фонарик</string>
