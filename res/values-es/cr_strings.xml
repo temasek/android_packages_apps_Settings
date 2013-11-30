@@ -4,10 +4,13 @@
 
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
+    <!-- Do NOT Translate this -->
+    <string name="temasek_version_default">V12</string>
 
     <!-- General strings -->
     <string name="reset">Reiniciar</string>
     <string name="enabled">Habilitado</string>
+    <string name="attention">Atención</string>
     <string name="disabled">Inhabilitado</string>
     <string name="default_string">Predeterminado</string>
 
@@ -132,8 +135,8 @@
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Mostrar información del CPU</string>
     <!--
-    UI debug setting: show cpu usage summary [CHAR LIMIT=50]
-    -->
+UI debug setting: show cpu usage summary [CHAR LIMIT=50]
+-->
     <string name="show_cpu_info_summary">Información del CPU superpuesta sobre cualquier actividad</string>
 
     <!-- Status bar brightness control -->
@@ -149,6 +152,13 @@
 
     <!-- Button shorcut actions -->
     <string name="additional_options_title">Configuración adicional</string>
+    <string name="reset_message">¿Resetear todo al default?</string>
+    <string name="style_title">Estilo</string>
+    <string name="shortcut_action_airplane">Modo avión</string>
+    <string name="shortcut_action_expanded_desktop">Escritorio expandido</string>
+    <string name="shortcut_action_power_off">Apagar</string>
+    <string name="shortcut_action_reboot">Reiniciar</string>
+    <string name="shortcut_action_sound">Sonido</string>
     <string name="shortcut_action_app">Aplicación personalizada</string>
     <string name="shortcut_action_home">Escritorio</string>
     <string name="shortcut_action_back">Atrás</string>
@@ -161,6 +171,7 @@
     <string name="shortcut_action_kill">Cerrar aplicación</string>
     <string name="shortcut_action_power">Apagar pantalla</string>
     <string name="shortcut_action_notifications">Notificaciones</string>
+    <string name="shortcut_action_menu_big">Menú</string>
     <string name="shortcut_action_qs">Panel de ajustes rápidos</string>
     <string name="shortcut_action_none">Ninguna</string>
     <string name="shortcut_action_power_menu">Menú de apagado</string>
@@ -178,17 +189,14 @@
     <string name="shortcut_action_disable_message">Inhabilitado\nAñade una entrada para habilitar esta función</string>
     <string name="shortcut_image_not_valid">La aplicación elegida no posee un ícono válido o no admite recorte de imagen. Seleccione otra aplicación</string>
     <string name="shortcut_duplicate_entry">La acción seleccionada no puede añadirse dos veces</string>
+
     <string name="shortcut_action_help_shortcut">acceso directo</string>
     <string name="shortcut_action_help_button">botón</string>
     <string name="shortcut_action_help_icon">,mientras selecciona el icono, aparecerán opciones de personalización</string>
-    <string name="shortcut_action_help_main">Para agregar un botón, presiona el ícono Añadir (+). Puedes modificar su función tocando sobre él o agregar una acción a su pulsación prolongada.\n\nPara eliminar un botón desliza horizontalmente.\n\nPara reordenar desliza verticalmente.\n\nPara volver a los valores predeterminados presiona el botón Restaurar.
-   </string>
-   <string name="shortcut_action_help_delete_last_entry">Eliminar todos los %1$s de la lista desactivará la función.</string>
+    <string name="shortcut_action_help_main">Para agregar un botón, presiona el ícono Añadir (+). Puedes modificar su función tocando sobre él o agregar una acción a su pulsación prolongada.\n\nPara eliminar un botón desliza horizontalmente.\n\nPara reordenar desliza verticalmente.\n\nPara volver a los valores predeterminados presiona el botón Restaurar.</string>
+    <string name="shortcut_action_help_delete_last_entry">Eliminar todos los %1$s de la lista desactivará la función.</string>
     <string name="shortcut_action_help">Ayuda</string>
-    <string name="icon_picker_type">Selecciona un tipo de ícono:</string>
-    <string name="icon_default">Predeterminado</string>
-    <string name="icon_presets">Iconos del sistema</string>
-    <string name="icon_custom">Galería</string>
+
     <string name="shortcuts_icon_picker_alarm">Alarma</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
     <string name="shortcuts_icon_picker_battery">Batería</string>
@@ -241,28 +249,35 @@
     <string name="shortcuts_icon_picker_tv">TV</string>
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Desbloqueo</string>
-    <string name="icon_color_mode_all_icons">Todos los iconos</string>
+
+    <string name="icon_picker_type">Selecciona un tipo de ícono:</string>
+    <string name="icon_default">Predeterminado</string>
+    <string name="icon_presets">Iconos del sistema</string>
+    <string name="icon_custom">Galería</string>
+    <string name="icon_pack">Paquete de íconos</string>
+    <string name="icon_picker_choose_icon_title">Elegir ícono</string>
+    <string name="icon_color_mode_all_icons">Todos los íconos</string>
     <string name="icon_color_mode_system_icons">Iconos del sistema</string>
     <string name="icon_color_mode_system_custom_icons">Iconos del sistema y usuario </string>
-    <string name="icon_picker_choose_icon_title">Elegir icono</string>
     <string name="group_applications">Aplicaciones</string>
     <string name="select_custom_app_title">Selección personalizada</string>
+    <string name="shortcuts_text_color_title">Color de texto</string>
     <string name="shortcuts_color_title">Color de los accesos directos</string>
-    <string name="shortcuts_color_summary">Colorea los iconos de los accesos directos</string>
     <string name="shortcuts_color_mode_title">Colorear</string>
     <string name="shortcuts_color_mode_summary">Aplicar color a:</string>
 
     <!-- Notification drawer settings -->
     <string name="notification_drawer_title">Panel de notificaciones</string>
     <string name="notification_hide_carrier_title">Ocultar nombre de operadora</string>
+    <string name="notification_hide_carrier_summary">Ocultar nobre de operadora y etiqueta Wi-Fi en el panel de notificaciones</string>
     <string name="notification_shortcuts_settings_title">Accesos directos</string>
     <string name="notification_shortcuts_settings_summary">Accesos rápidos en el panel de notificaciones</string>
 
     <!-- StatusBar Battery Settings -->
-    <string name="battery_icon_title">Estilo de batería</string>
-    <string name="battery_status_icon">Icono</string>
+    <string name="battery_icon_title">Ícono de batería</string>
+    <string name="battery_status_icon">Ícono</string>
     <string name="battery_status_percentage">Porcentaje</string>
-    <string name="battery_status_icon_percentage">Icono y porcentaje</string>
+    <string name="battery_status_icon_percentage">Ícono y porcentaje</string>
     <string name="battery_status_circle">Círculo</string>
     <string name="battery_status_circle_percentage">Círculo y porcentaje</string>
     <string name="battery_status_dotted_circle_percentage">Círculo de puntos y porcentaje</string>
@@ -307,7 +322,8 @@
     <!-- Navigation settings -->
     <string name="navigation_settings_options_title">Opciones de navegación</string>
     <string name="navigation_settings_title">Navegación</string>
- 
+    <string name="power_menu_title">Menú Global</string>
+
     <!-- Navigation bar -->
     <string name="navigation_bar_size_42_dp_default">42 dp (predeterminado)</string>
     <string name="navigation_bar_size_36_dp">36 dp</string>
@@ -345,15 +361,10 @@
     <string name="navbar_targets_title">Accesos rápidos</string>
     <string name="navbar_cat">Barra de navegación</string>
     <string name="navbar_dimensions_reset_message">¿Restaurar dimensiones predeterminadas?</string>
-    <string name="navbar_button_style_reset_message">¿Restaurar configuración predeterminada?</string>
  
     <!-- Navigation bar button style -->
-    <string name="nav_bar_button_style">Apariencia</string>
-    <string name="nav_bar_button_style_summary">Modifica el estilo de los botones de la barra</string>
+    <string name="nav_bar_button_style_summary">Modifica el color de los botones de la barra</string>
     <string name="button_transparency_title">Transparencia de los botones</string>
-    <string name="navigation_bar_icon_tint_title">Color de los botones</string>
-    <string name="nav_button_color_mode_title">Modo color</string>
-    <string name="nav_button_color_mode_dialog_title">Colorear</string>
     <string name="nav_button_color_mode_summary">Modifica el color de los botones</string>
     <string name="navigation_bar_glow_tint_title">Color del resplandor</string>
  
@@ -383,7 +394,6 @@
     <string name="ram_bar_cache">Aplicaciones y cache</string>
     <string name="ram_bar_other">Aplicaciones, cache y otros</string>
     <string name="ram_bar_style_cat">Estilo Barra RAM</string>
-    
     <string name="ram_bar_color_app_mem_color">Color RAM de aplicaciones</string>
     <string name="ram_bar_color_cache_mem_color">Color RAM de caché</string>
     <string name="ram_bar_color_total_mem_color">Color del total</string>
@@ -502,6 +512,7 @@
     <string name="halo_enabled_title">Activar Halo</string>
     <string name="halo_enabled_summary">Activa o desactiva completamente la función Halo</string>
     
+    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Lista negra de Halo</string>
     <string name="app_halo_label_white">Lista blanca de Halo</string>
 
@@ -542,11 +553,11 @@
     <string name="lockscreen_use_widget_container_carousel_summary">Use carousel animation in portrait when switching between lock screen widgets</string>
     
     <!-- Active display settings -->
-     <string name="ad_settings_title">Pantalla Activa</string>
+    <string name="ad_settings_title">Pantalla Activa</string>
     <string name="ad_settings_summary">Cambiar la configuracion de Pantalla Activa</string>
     <string name="ad_enable_title">Activada</string>
     <string name="ad_enable_summary_on">Pantalla Activa activada</string>
-    <string name="ad_enable_summary_off">Pantalla Activa desactivada</string> 
+    <string name="ad_enable_summary_off">Pantalla Activa desactivada</string>
     <string name="ad_text_title">Texto notificación</string>
     <string name="ad_text_summary">Muestra el texto de notificación alrededor del anillo.</string>
     <string name="ad_all_notifications_title">Todas notificaciones</string>
@@ -561,7 +572,7 @@
     <string name="ad_customizations_title">Personalización</string>
     <string name="ad_excluded_apps_title">Excluir aplicaciones</string>
     <string name="ad_excluded_apps_summary">Las aplicaciones excluidas no se mostrarán en la pantalla activa.</string>
-      <string name="ad_brightness_title">Brillo de notificaciones</string>
+    <string name="ad_brightness_title">Brillo de notificaciones</string>
     <string name="ad_brightness_summary">Nivel de brillo para mostrar cuando el brillo automatico no esta activado.</string>
     <string name="ad_show_date_title">Mostrar fecha</string>
     <string name="ad_show_date_summary">Muestra la fecha encima del reloj</string>
@@ -580,20 +591,35 @@
     <string name="ad_pocket_mode_always">Siempre</string>
 
     <!-- Lockscreen pin shuffle -->
-    <string name="lock_numpad_random_title">Change the order of PIN pad numbers</string>
-    <string name="lock_numpad_random_dialog_title">PIN pad random order</string>
-    <string name="lock_numpad_random_off">Disabled</string>
-    <string name="lock_numpad_random_always">Always</string>
-    <string name="lock_numpad_random_on_request">On request</string>
+    <string name="lock_numpad_random_title">Cambiar el orden de los números en el PIN pad</string>
+    <string name="lock_numpad_random_dialog_title">Orden aleatorio en PIN pad</string>
+    <string name="lock_numpad_random_off">Desactivado</string>
+    <string name="lock_numpad_random_always">Siempre</string>
+    <string name="lock_numpad_random_on_request">A pedido</string>
 
     <!-- Lock before unlock -->
-    <string name="lock_before_unlock_title">Show slider before secure unlock</string>
-    <string name="lock_before_unlock_summary">Show slider lockscreen before secure unlock mechanism</string>
+    <string name="lock_before_unlock_title">Mostar deslizador antes de desbloqueo seguro</string>
+    <string name="lock_before_unlock_summary">Mostrar pantalla de bloquedo con deslizador antes de mecanismo de desbloqueo seguro</string>
 
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_pattern_size_3">3x3</string>
     <string name="lock_pattern_size_4">4x4</string>
     <string name="lock_pattern_size_5">5x5</string>
     <string name="lock_pattern_size_6">6x6</string>
+    
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotación</string>
+    <string name="display_rotation_disabled">Desactivado</string>
+    <string name="display_rotation_unit">grados</string>
+    <string name="display_rotation_category_title">Modos de rotación</string>
+    <string name="display_rotation_0_title">0 grados</string>
+    <string name="display_rotation_90_title">90 grados</string>
+    <string name="display_rotation_180_title">180 grados</string>
+    <string name="display_rotation_270_title">270 grados</string>
+
+    <!-- Custom notification panel header -->
+    <string name="notification_drawer_category_title">Panel de Notificaciones</string>
+    <string name="custom_statusbar_header_title">Encabezado contextual de panel de notificaciones</string>
+    <string name="custom_statusbar_header_summary">Fondo del encabezado de panel de notificación con una imagen con hora y fecha actuales</string>
     
 </resources>
