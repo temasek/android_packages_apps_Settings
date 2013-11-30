@@ -310,73 +310,73 @@
     <string name="header_summary_animation">@null</string>
 
     <!-- Navigation ring -->
-    <string name="shortcut_action_ring_vib">Ring/Vib</string>
-    <string name="shortcut_action_ring_silent">Ring/Silent</string>
-    <string name="shortcut_action_ring_vib_silent">Ring/Vib/Silent</string>
+    <string name="shortcut_action_ring_vib">Звук/Вибро</string>
+    <string name="shortcut_action_ring_silent">Звук/Без звука</string>
+    <string name="shortcut_action_ring_vib_silent">Звук/Вибро/Без звука</string>
 
     <!-- Navigation settings -->
-    <string name="navigation_settings_options_title">Navigation options</string>
-    <string name="navigation_settings_title">Navigation</string>
-    <string name="power_menu_title">Global menu</string>
+    <string name="navigation_settings_options_title">Параметры навигации</string>
+    <string name="navigation_settings_title">Навигация</string>
+    <string name="power_menu_title">Меню кнопки питания</string>
 
     <!-- Navigation bar -->
-    <string name="navigation_bar_size_42_dp_default">42 dp (default)</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (по умолчанию)</string>
     <string name="navigation_bar_size_36_dp">36 dp</string>
     <string name="navigation_bar_size_30_dp">30 dp</string>
     <string name="navigation_bar_size_24_dp">24 dp</string>
-    <string name="navigation_bar_size_48_dp_default">48 dp (default)</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (по умолчанию)</string>
     <string name="navigation_bar_size_44_dp">44 dp</string>
     <string name="navigation_bar_size_40_dp">40 dp</string>
     <string name="navigation_bar_size_42_dp">42 dp</string>
-    <string name="navigation_bar_size_0_dp">0 dp (off)</string>
-    <string name="navigation_menu_right">Right</string>
-    <string name="navigation_menu_left">Left</string>
-    <string name="navigation_menu_both">Both</string>
-    <string name="navigation_menu_default_jb_behavior">Show on request (default)</string>
-    <string name="navigation_menu_never_show">Never show</string>
-    <string name="navigation_menu_always_show">Always show</string>
-    <string name="navigation_bar">Navigation bar</string>
-    <string name="navbar_button_cat">Navigation bar buttons</string>
-    <string name="title_pref_menu_location">Menu location</string>
-    <string name="summary_pref_menu_location">Where do you want the menu buttons to appear?</string>
-    <string name="title_pref_menu_display">Menu visibility</string>
-    <string name="summary_pref_menu_display">How and when do you want the menu buttons to appear?</string>
-    <string name="navbar_enable_bar">Enable navigation bar</string>
-    <string name="navbar_enable_bar_summary">Enable the navigation bar</string>
-    <string name="navigation_bar_height_title">Navigation bar height</string>
-    <string name="navigation_bar_height_summary">Navigation bar height while in portrait.</string>
-    <string name="navigation_bar_height_landscape_title">Navigation bar height landscape</string>
-    <string name="navigation_bar_height_landscape_summary">Navigation bar height while in landscape.</string>
-    <string name="navigation_bar_width_title">Navigation bar width</string>
-    <string name="navigation_bar_width_summary">Navigation bar height if the bar is along a side.</string>
-    <string name="navbar_can_move">Show landscape</string>
-    <string name="navbar_can_move_summary">Shows navigation bar in lanscape on the bottom</string>
-    <string name="navbar_style_dimen_title">Dimensions</string>
-    <string name="navbar_button_title">Buttons</string>
-    <string name="navbar_targets_title">Ring targets</string>
-    <string name="navbar_cat">Navigation bar</string>
-    <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
+    <string name="navigation_bar_size_0_dp">0 dp (выкл.)</string>
+    <string name="navigation_menu_right">Справа</string>
+    <string name="navigation_menu_left">Слева</string>
+    <string name="navigation_menu_both">Справа и слева</string>
+    <string name="navigation_menu_default_jb_behavior">Показывать по необходимости (по умолчанию)</string>
+    <string name="navigation_menu_never_show">Не показывать</string>
+    <string name="navigation_menu_always_show">Всегда показывать</string>
+    <string name="navigation_bar">Строка навигации</string>
+    <string name="navbar_button_cat">Кнопки строки навигации</string>
+    <string name="title_pref_menu_location">Расположение кнопки меню</string>
+    <string name="summary_pref_menu_location">Выберите, где будет отображаться кнопка меню</string>
+    <string name="title_pref_menu_display">Видимость кнопки меню</string>
+    <string name="summary_pref_menu_display">Выберите, как и когда будет отображаться кнопка меню</string>
+    <string name="navbar_enable_bar">Включить строку навигации</string>
+    <string name="navbar_enable_bar_summary">Включение отображения строки навигации</string>
+    <string name="navigation_bar_height_title">Высота строки навигации</string>
+    <string name="navigation_bar_height_summary">Высота строки навигации в портретном режиме.</string>
+    <string name="navigation_bar_height_landscape_title">Высота строки навигации в ландшафте</string>
+    <string name="navigation_bar_height_landscape_summary">Высота строки навигации в ландшафтном режиме.</string>
+    <string name="navigation_bar_width_title">Ширина строки навигации</string>
+    <string name="navigation_bar_width_summary">Ширина строки навигации, если строка расположена вдоль боковой стороны.</string>
+    <string name="navbar_can_move">Показывать в ландшафтом режиме</string>
+    <string name="navbar_can_move_summary">Отображение строки навигации внизу в ландшафтном режиме</string>
+    <string name="navbar_style_dimen_title">Размеры</string>
+    <string name="navbar_button_title">Кнопки</string>
+    <string name="navbar_targets_title">Ярлыки кольца</string>
+    <string name="navbar_cat">Строка навигации</string>
+    <string name="navbar_dimensions_reset_message">Сбросить все значения размеров по умолчанию?</string>
 
     <!-- Navigation bar button style -->
-    <string name="nav_bar_button_style_summary">Change navigation bar button colors</string>
-    <string name="button_transparency_title">Button transparency</string>
-    <string name="nav_button_color_mode_summary">Change the navigation bar button color mode</string>
-    <string name="navigation_bar_glow_tint_title">Glow color</string>
+    <string name="nav_bar_button_style_summary">Изменение цвета кнопок строки навигации</string>
+    <string name="button_transparency_title">Прозрачность кнопки</string>
+    <string name="nav_button_color_mode_summary">Измените цветовой режим кнопки строки навигации</string>
+    <string name="navigation_bar_glow_tint_title">Цвет свечения</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
-    <string name="hw_keys_title">Hardware Keys</string>
-    <string name="key_menu_enabled">Menu Key Enabled</string>
-    <string name="key_back_enabled">Back Key Enabled</string>
-    <string name="key_home_enabled">Home Key Enabled</string>
+    <string name="hw_keys_title">Аппаратные кнопки</string>
+    <string name="key_menu_enabled">Кнопка "Меню" включена</string>
+    <string name="key_back_enabled">Кнопка "Назад" включена</string>
+    <string name="key_home_enabled">Кнопка "Главная" включена</string>
 
     <!-- MediaScanner behavior on boot -->
-    <string name="media_scanner_on_boot_title">MediaScanner behavior on boot</string>
-    <string name="media_scanner_on_boot_enabled">Scan media</string>
-    <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
-    <string name="media_scanner_on_boot_disabled">Do not scan media</string>
+    <string name="media_scanner_on_boot_title">Поведение сканера медиафайлов при загрузке</string>
+    <string name="media_scanner_on_boot_enabled">Сканировать</string>
+    <string name="media_scanner_on_boot_ask">Спросить для сканирования (уведомление)</string>
+    <string name="media_scanner_on_boot_disabled">Не сканировать</string>
 
     <!-- Power menu -->
-    <string name="power_menu_style_summary">Change global menu colors</string>
+    <string name="power_menu_style_summary">Изменеие цвета значков в меню кнопки питания</string>
 
     <!-- Recents Ram Bar -->
     <string name="ram_bar">Recents RAM bar</string>
