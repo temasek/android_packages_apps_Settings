@@ -3,9 +3,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, temasek version -->
-    <string name="temasek_version_title">Temasek unofficial version</string>
+    <string name="temasek_version_title">Неофициальная версия от Temasek</string>
     <!-- Do NOT Translate this -->
-    <string name="temasek_version_default">V10</string>
+    <string name="temasek_version_default">V12</string>
 
     <!-- General strings -->
     <string name="reset">Сброс</string>
@@ -308,6 +308,9 @@
     <string name="summary_animation_no_override">Prevent apps from overriding transitions.</string>  
     <string name="animation_duration_default">Default</string>
     <string name="header_summary_animation">@null</string>
+    
+        <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Индикатор батареи вокруг слайдера разблокировки</string>
 
     <!-- Navigation ring -->
     <string name="shortcut_action_ring_vib">Звук/Вибро</string>
@@ -436,7 +439,7 @@
     <string name="lockscreen_shortcuts_title">Ярлыки на экране блокировки</string>
     <string name="lockscreen_shortcuts_summary">Просмотр или изменение ярлыков на экране блокировки</string>
     <string name="lockscreen_shorcuts_longpress_title">Длительное нажатие на ярлык</string>
-    <string name="lockscreen_shorcuts_longpress_summary">Открытие пользовательского приложения при длительном нажатии на ярлык</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Открывать пользовательское приложение при длительном нажатии на ярлык</string>
 
     <!-- Lock screen targets and shortcuts -->
     <string name="picker_activities">Activities</string>
@@ -504,8 +507,117 @@
     <string name="halo_msgbox_animation_none">None</string>
     <string name="halo_msgbox_animation_flip">Flip</string>
 
+    <string name="halo_enabled_title">Enable HALO</string>
+    <string name="halo_enabled_summary">Completely enable or disable HALO</string>
+
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Blacklist from HALO</string>
     <string name="app_halo_label_white">Whitelist from HALO</string>
 
+    <!-- ListView animation -->
+    <string name="bars_and_menus_category_system_title">System</string>
+    <string name="listview_animation_title">ListView Animation</string>
+    <string name="listview_off">Off</string>
+    <string name="listview_wave_left">Wave (Left)</string>
+    <string name="listview_wave_right">Wave (Right)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Scale</string>
+    <string name="listview_stack_top">Stack (Top)</string>
+    <string name="listview_stack_bottom">Stack (Bottom)</string>
+    <string name="listview_unfold">Unfold</string>
+    <string name="listview_fold">Fold</string>
+    <string name="listview_translate_left">Translate (Left)</string>
+    <string name="listview_translate_right">Translate (Right)</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">ListView Interpolator</string>
+    <string name="listview_accelerate_interpolator">accelerate_interpolator</string>
+    <string name="listview_decelerate_interpolator">decelerate_interpolator</string>
+    <string name="listview_accelerate_decelerate_interpolator">accelerate_decelerate_interpolator</string>
+    <string name="listview_anticipate_interpolator">anticipate_interpolator</string>
+    <string name="listview_overshoot_interpolator">overshoot_interpolator</string>
+    <string name="listview_anticipate_overshoot_interpolator">anticipate_overshoot_interpolator</string>
+    <string name="listview_bounce_interpolator">bounce_interpolator</string>
+
+    <!-- Lockscreen widget settings -->
+    <string name="lockscreen_widgets_title">Виджеты</string>
+    <string name="lockscreen_camera_widget_title">Включить виджет камеры</string>
+    <string name="lockscreen_camera_widget_summary">Показывать виджет камеры на экране блокировки</string>
+    <string name="lockscreen_maximize_widgets_title">Открывать развёрнутыми</string>
+    <string name="lockscreen_maximize_widgets_summary">Показывать виджеты в развёрнутом виде при включении экрана</string>
+    <string name="lockscreen_disable_hints_title">Отключить подсказки на начальной странице</string>
+    <string name="lockscreen_disable_hints_summary">Отключить свечение окружающее виджет по краям на экране блокировки в портретном режиме</string>
+    <string name="lockscreen_use_widget_container_carousel_title">Включить карусель для виджетов</string>
+    <string name="lockscreen_use_widget_container_carousel_summary">Использовать анимацию карусели в портретном режиме для переключения между виджетами на экране блокировки</string>
+
+    <!-- Active display settings -->
+    <string name="ad_settings_title">Active display</string>
+    <string name="ad_settings_summary">Change active display settings</string>
+    <string name="ad_enable_title">Enable</string>
+    <string name="ad_enable_summary_on">Active display enabled</string>
+    <string name="ad_enable_summary_off">Active display disabled</string>
+    <string name="ad_text_title">Notification text</string>
+    <string name="ad_text_summary">Show the notification text around the ring.</string>
+    <string name="ad_all_notifications_title">All notifications</string>
+    <string name="ad_all_notifications_summary">Show all notifications including ongoing, non-clearable notifications.</string>
+    <string name="ad_hide_low_priority_title">Hide low priority</string>
+    <string name="ad_hide_low_priority_summary">Hide low priority notifications such as those from Google Now.</string>
+    <string name="ad_pocket_mode_title">Pocket mode</string>
+    <string name="ad_pocket_mode_summary">Show active display notifications when you take the device out of your pocket.</string>
+    <string name="ad_redisplay_title">Redisplay notifications</string>
+    <string name="ad_sunlight_mode_title">Sunlight mode</string>
+    <string name="ad_sunlight_mode_summary">Invert the colors when in areas with bright light such as direct sunlight.</string>
+    <string name="ad_customizations_title">Customizations</string>
+    <string name="ad_excluded_apps_title">Excluded applications</string>
+    <string name="ad_excluded_apps_summary">Excluded applications will not show up in active display.</string>
+    <string name="ad_brightness_title">Notification brightness</string>
+    <string name="ad_brightness_summary">Brightness level for displaying notifications\n when automatic brightness is not enabled.</string>
+    <string name="ad_show_date_title">Show date</string>
+    <string name="ad_show_date_summary">Show the date above the clock</string>
+    <string name="ad_show_ampm_title">Show AM/PM</string>
+    <string name="ad_show_ampm_summary">Show AM/PM indicator next to time when using 12hour format</string>
+    <string name="ad_redisplay_never">Never</string>
+    <string name="ad_redisplay_1m">1 minute</string>
+    <string name="ad_redisplay_5m">5 minutes</string>
+    <string name="ad_redisplay_15m">15 minutes</string>
+    <string name="ad_redisplay_30m">30 minutes</string>
+    <string name="ad_redisplay_1h">1 hour</string>
+    <string name="ad_redisplay_2h">2 hours</string>
+    <string name="ad_redisplay_5h">5 hours</string>
+    <string name="ad_pocket_mode_off">Off</string>
+    <string name="ad_pocket_mode_notifications">Notifications only</string>
+    <string name="ad_pocket_mode_always">Always</string>
+
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Change the order of PIN pad numbers</string>
+    <string name="lock_numpad_random_dialog_title">PIN pad random order</string>
+    <string name="lock_numpad_random_off">Отключено</string>
+    <string name="lock_numpad_random_always">Всегда</string>
+    <string name="lock_numpad_random_on_request">По запросу</string>
+
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">Показывать слайдер для разблокировки</string>
+    <string name="lock_before_unlock_summary">Показывать слайдер на экране блокировки для безопасной разблокировки устройства</string>
+
+    <!-- Sizes for pattern lockscreen -->
+    <string name="lock_pattern_size_3">3x3</string>
+    <string name="lock_pattern_size_4">4x4</string>
+    <string name="lock_pattern_size_5">5x5</string>
+    <string name="lock_pattern_size_6">6x6</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Поворот экрана</string>
+    <string name="display_rotation_disabled">Отключено</string>
+    <string name="display_rotation_unit">градусы</string>
+    <string name="display_rotation_category_title">Режимы вращения</string>
+    <string name="display_rotation_0_title">0 градусов</string>
+    <string name="display_rotation_90_title">90 градусов</string>
+    <string name="display_rotation_180_title">180 градусов</string>
+    <string name="display_rotation_270_title">270 градусов</string>
+
+    <!-- Custom notification panel header -->
+    <string name="notification_drawer_category_title">Панель уведомлений</string>
+    <string name="custom_statusbar_header_title">Контекстный заголовок панели уведомлений</string>
+    <string name="custom_statusbar_header_summary">Устанавить фоновое изображение заголовка панели уведомлений в виде текущей даты и времени</string>
+    
 </resources>
