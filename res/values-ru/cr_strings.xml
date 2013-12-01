@@ -4,8 +4,8 @@
 
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Неофициальная версия от Temasek</string>
-    <!-- Do NOT Translate this -->
-    <string name="temasek_version_default">V10</string>
+
+
 
     <!-- General strings -->
     <string name="reset">Сброс</string>
@@ -29,7 +29,7 @@
     <!-- Status bar -->
     <string name="status_bar_title">Строка состояния</string>
     <string name="status_bar_style_title">Параметры строки состояния</string>
-    <string name="status_bar_general_title">Общие</string>
+    <string name="status_bar_general_title">Основные</string>
 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Часы и дата</string>
@@ -98,8 +98,8 @@
     <string name="screen_on_notification_led_summary">Включить индикатор уведомлений даже когда экран включен</string>
  
     <!-- Alternate default app picker -->
-    <string name="general_settings_title">Общие настройки</string>
-    <string name="general_settings_style_title">Общие параметры</string>
+    <string name="general_settings_title">Основные настройки</string>
+    <string name="general_settings_style_title">Основные параметры</string>
     <string name="display_short">Дисплей</string>
     <string name="misc_short">Разное</string>
     <string name="alt_resolver">Использовать по умолчанию альтернативную сетку приложений</string>
@@ -149,7 +149,7 @@
     <string name="restart_systemui">Перезагрузка SystemUI</string>
 
     <!-- Button shorcut actions -->
-    <string name="additional_options_title">Дополнительные опции</string>
+    <string name="additional_options_title">Дополнительные параметры</string>
     <string name="reset_message">Сбросить все значения по умолчанию?</string>
     <string name="style_title">Стиль</string>
     <string name="shortcut_action_airplane">Режим полёта</string>
@@ -170,7 +170,7 @@
     <string name="shortcut_action_power">Отключить экран</string>
     <string name="shortcut_action_notifications">Уведомления</string>
     <string name="shortcut_action_menu_big">Меню</string>
-    <string name="shortcut_action_qs">Панель быстпых настроек</string>
+    <string name="shortcut_action_qs">Панель быстрых настроек</string>
     <string name="shortcut_action_none">Ничего</string>
     <string name="shortcut_action_power_menu">Меню питания</string>
     <string name="shortcut_action_torch">Фонарик</string>
@@ -191,8 +191,8 @@
     <string name="shortcut_action_help_shortcut">ярлык</string>
     <string name="shortcut_action_help_button">кнопка</string>
     <string name="shortcut_action_help_icon">, а при нажатии на иконку, появится возможность настройки</string>
-    <string name="shortcut_action_help_main">Чтобы добавить %1$s, нажмите значек Добавить.  После того, как %1$s добавлен, нажмите на строку для смены назначения%2$s\n\nЧтобы удалить %1$s, проведите по строке горизонтально влево или вправо.  Расположение %1$s в списке по вертикали меняется перетаскиванием иконки слева.\n\nЧтобы очистить или сбросить значения по умолчанию, нажмите на значек Сброс.</string>
-    <string name="shortcut_action_help_delete_last_entry">Удаление каждого %1$s в списке будет отключать функцию полностью.</string>
+    <string name="shortcut_action_help_main">Чтобы добавить %1$и, нажмите значек Добавить.  После того, как %1$и добавлены, нажмите на строку для смены назначения%2$ов\n\nЧтобы удалить %1$и, проведите по строке горизонтально влево или вправо.  Расположение %1$ов в списке по вертикали меняется перетаскиванием иконки слева.\n\nЧтобы очистить или сбросить значения по умолчанию, нажмите на значек Сброс.</string>
+    <string name="shortcut_action_help_delete_last_entry">Удаление любого %1$а в списке будет отключать функцию полностью.</string>
     <string name="shortcut_action_help">Помощь</string>
 
     <string name="shortcuts_icon_picker_alarm">Alarm</string>
@@ -308,135 +308,138 @@
     <string name="summary_animation_no_override">Prevent apps from overriding transitions.</string>  
     <string name="animation_duration_default">Default</string>
     <string name="header_summary_animation">@null</string>
+    
+        <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Индикатор батареи вокруг слайдера разблокировки</string>
 
     <!-- Navigation ring -->
-    <string name="shortcut_action_ring_vib">Ring/Vib</string>
-    <string name="shortcut_action_ring_silent">Ring/Silent</string>
-    <string name="shortcut_action_ring_vib_silent">Ring/Vib/Silent</string>
+    <string name="shortcut_action_ring_vib">Звук/Вибро</string>
+    <string name="shortcut_action_ring_silent">Звук/Без звука</string>
+    <string name="shortcut_action_ring_vib_silent">Звук/Вибро/Без звука</string>
 
     <!-- Navigation settings -->
-    <string name="navigation_settings_options_title">Navigation options</string>
-    <string name="navigation_settings_title">Navigation</string>
-    <string name="power_menu_title">Global menu</string>
+    <string name="navigation_settings_options_title">Параметры кнопок навигации</string>
+    <string name="navigation_settings_title">Кнопки навигации</string>
+    <string name="power_menu_title">Меню кнопки питания</string>
 
     <!-- Navigation bar -->
-    <string name="navigation_bar_size_42_dp_default">42 dp (default)</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (по умолчанию)</string>
     <string name="navigation_bar_size_36_dp">36 dp</string>
     <string name="navigation_bar_size_30_dp">30 dp</string>
     <string name="navigation_bar_size_24_dp">24 dp</string>
-    <string name="navigation_bar_size_48_dp_default">48 dp (default)</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (по умолчанию)</string>
     <string name="navigation_bar_size_44_dp">44 dp</string>
     <string name="navigation_bar_size_40_dp">40 dp</string>
     <string name="navigation_bar_size_42_dp">42 dp</string>
-    <string name="navigation_bar_size_0_dp">0 dp (off)</string>
-    <string name="navigation_menu_right">Right</string>
-    <string name="navigation_menu_left">Left</string>
-    <string name="navigation_menu_both">Both</string>
-    <string name="navigation_menu_default_jb_behavior">Show on request (default)</string>
-    <string name="navigation_menu_never_show">Never show</string>
-    <string name="navigation_menu_always_show">Always show</string>
-    <string name="navigation_bar">Navigation bar</string>
-    <string name="navbar_button_cat">Navigation bar buttons</string>
-    <string name="title_pref_menu_location">Menu location</string>
-    <string name="summary_pref_menu_location">Where do you want the menu buttons to appear?</string>
-    <string name="title_pref_menu_display">Menu visibility</string>
-    <string name="summary_pref_menu_display">How and when do you want the menu buttons to appear?</string>
-    <string name="navbar_enable_bar">Enable navigation bar</string>
-    <string name="navbar_enable_bar_summary">Enable the navigation bar</string>
-    <string name="navigation_bar_height_title">Navigation bar height</string>
-    <string name="navigation_bar_height_summary">Navigation bar height while in portrait.</string>
-    <string name="navigation_bar_height_landscape_title">Navigation bar height landscape</string>
-    <string name="navigation_bar_height_landscape_summary">Navigation bar height while in landscape.</string>
-    <string name="navigation_bar_width_title">Navigation bar width</string>
-    <string name="navigation_bar_width_summary">Navigation bar height if the bar is along a side.</string>
-    <string name="navbar_can_move">Show landscape</string>
-    <string name="navbar_can_move_summary">Shows navigation bar in lanscape on the bottom</string>
-    <string name="navbar_style_dimen_title">Dimensions</string>
-    <string name="navbar_button_title">Buttons</string>
-    <string name="navbar_targets_title">Ring targets</string>
-    <string name="navbar_cat">Navigation bar</string>
-    <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
+    <string name="navigation_bar_size_0_dp">0 dp (выкл.)</string>
+    <string name="navigation_menu_right">Справа</string>
+    <string name="navigation_menu_left">Слева</string>
+    <string name="navigation_menu_both">Справа и слева</string>
+    <string name="navigation_menu_default_jb_behavior">Показывать по необходимости (по умолчанию)</string>
+    <string name="navigation_menu_never_show">Не показывать</string>
+    <string name="navigation_menu_always_show">Всегда показывать</string>
+    <string name="navigation_bar">Строка навигации</string>
+    <string name="navbar_button_cat">Кнопки строки навигации</string>
+    <string name="title_pref_menu_location">Расположение кнопки меню</string>
+    <string name="summary_pref_menu_location">Выберите, где будет отображаться кнопка меню</string>
+    <string name="title_pref_menu_display">Видимость кнопки меню</string>
+    <string name="summary_pref_menu_display">Выберите, как и когда будет отображаться кнопка меню</string>
+    <string name="navbar_enable_bar">Включить строку навигации</string>
+    <string name="navbar_enable_bar_summary">Включение отображения строки навигации</string>
+    <string name="navigation_bar_height_title">Высота строки навигации</string>
+    <string name="navigation_bar_height_summary">Высота строки навигации в портретном режиме.</string>
+    <string name="navigation_bar_height_landscape_title">Высота строки навигации в ландшафте</string>
+    <string name="navigation_bar_height_landscape_summary">Высота строки навигации в ландшафтном режиме.</string>
+    <string name="navigation_bar_width_title">Ширина строки навигации</string>
+    <string name="navigation_bar_width_summary">Ширина строки навигации, если строка расположена вдоль боковой стороны.</string>
+    <string name="navbar_can_move">Показывать в ландшафтом режиме</string>
+    <string name="navbar_can_move_summary">Отображение строки навигации внизу в ландшафтном режиме</string>
+    <string name="navbar_style_dimen_title">Размеры</string>
+    <string name="navbar_button_title">Кнопки</string>
+    <string name="navbar_targets_title">Ярлыки быстрого запуска</string>
+    <string name="navbar_cat">Строка навигации</string>
+    <string name="navbar_dimensions_reset_message">Сбросить все значения размеров по умолчанию?</string>
 
     <!-- Navigation bar button style -->
-    <string name="nav_bar_button_style_summary">Change navigation bar button colors</string>
-    <string name="button_transparency_title">Button transparency</string>
-    <string name="nav_button_color_mode_summary">Change the navigation bar button color mode</string>
-    <string name="navigation_bar_glow_tint_title">Glow color</string>
+    <string name="nav_bar_button_style_summary">Изменение цвета кнопок строки навигации</string>
+    <string name="button_transparency_title">Прозрачность кнопки</string>
+    <string name="nav_button_color_mode_summary">Изменение цветового режима кнопок строки навигации</string>
+    <string name="navigation_bar_glow_tint_title">Цвет свечения</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
-    <string name="hw_keys_title">Hardware Keys</string>
-    <string name="key_menu_enabled">Menu Key Enabled</string>
-    <string name="key_back_enabled">Back Key Enabled</string>
-    <string name="key_home_enabled">Home Key Enabled</string>
+    <string name="hw_keys_title">Аппаратные кнопки</string>
+    <string name="key_menu_enabled">Кнопка "Меню" включена</string>
+    <string name="key_back_enabled">Кнопка "Назад" включена</string>
+    <string name="key_home_enabled">Кнопка "Домой" включена</string>
 
     <!-- MediaScanner behavior on boot -->
-    <string name="media_scanner_on_boot_title">MediaScanner behavior on boot</string>
-    <string name="media_scanner_on_boot_enabled">Scan media</string>
-    <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
-    <string name="media_scanner_on_boot_disabled">Do not scan media</string>
+    <string name="media_scanner_on_boot_title">Поведение сканера медиафайлов при загрузке</string>
+    <string name="media_scanner_on_boot_enabled">Сканировать</string>
+    <string name="media_scanner_on_boot_ask">Спросить для сканирования (уведомление)</string>
+    <string name="media_scanner_on_boot_disabled">Не сканировать</string>
 
     <!-- Power menu -->
-    <string name="power_menu_style_summary">Change global menu colors</string>
+    <string name="power_menu_style_summary">Изменеие цвета значков в меню кнопки питания</string>
 
     <!-- Recents Ram Bar -->
-    <string name="ram_bar">Recents RAM bar</string>
-    <string name="ram_bar_note_title">Note</string>
-    <string name="ram_bar_note_summary">This RAM bar shows the actual android memory (RAM) utilization. Please note that having cached apps helps your device open apps much faster. For further explanations on how android memory (RAM) management works, check the help menu.</string>
-    <string name="ram_bar_mode_title">Recents RAM bar mode</string>
-    <string name="ram_bar_mode_dialog_title">Show on recents RAM bar</string>
-    <string name="ram_bar_none">None</string>
-    <string name="ram_bar_apps">Applications</string>
-    <string name="ram_bar_cache">Applications and cache</string>
-    <string name="ram_bar_other">Applications, cache and other</string>
-    <string name="ram_bar_style_cat">Recents RAM bar style</string>
-    <string name="ram_bar_color_app_mem_color">Applications RAM color</string>
-    <string name="ram_bar_color_cache_mem_color">Cache RAM color</string>
-    <string name="ram_bar_color_total_mem_color">Other RAM color</string>
-    <string name="ram_bar_color_enabled">Enabled</string>
-    <string name="ram_bar_color_disabled">Disabled</string>
-    <string name="ram_bar_button_help">Help</string>
-    <string name="ram_bar_button_reset">Reset colors</string>
-    <string name="ram_bar_reset">Reset</string>
-    <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>
+    <string name="ram_bar">Строка использования ОЗУ</string>
+    <string name="ram_bar_note_title">Примечание</string>
+    <string name="ram_bar_note_summary">Эта строка ОЗУ показывает фактическое использование андроидом оперативной памяти (ОЗУ). Пожалуйста, обратите внимание, что наличие приложений в кэше помогает устройству открывать приложения гораздо быстрее. Для дальнейших объяснений того, как работает управление оперативной памятью (ОЗУ) в андроиде, откройте меню помощи.</string>
+    <string name="ram_bar_mode_title">Режим строки использования ОЗУ</string>
+    <string name="ram_bar_mode_dialog_title">Показывать в строке использования ОЗУ</string>
+    <string name="ram_bar_none">Ничего</string>
+    <string name="ram_bar_apps">Приложения</string>
+    <string name="ram_bar_cache">Кэш</string>
+    <string name="ram_bar_other">Приложения, кэш и другое</string>
+    <string name="ram_bar_style_cat">Стиль строки использования ОЗУ</string>
+    <string name="ram_bar_color_app_mem_color">Цвет приложений в строке ОЗУ</string>
+    <string name="ram_bar_color_cache_mem_color">Цвет кэша в строке ОЗУ</string>
+    <string name="ram_bar_color_total_mem_color">Цвет другого в строке ОЗУ</string>
+    <string name="ram_bar_color_enabled">Включено</string>
+    <string name="ram_bar_color_disabled">Отключено</string>
+    <string name="ram_bar_button_help">Помощь</string>
+    <string name="ram_bar_button_reset">Сброс цвета</string>
+    <string name="ram_bar_reset">Сброс</string>
+    <string name="ram_bar_reset_message">Сбросить стиль строки использования ОЗУ по умолчанию?</string>
 
     <!-- Clear Recents position -->
-    <string name="clear_recents_position_title">Clear recents position</string>
-    <string name="clear_recents_position_disabled">Disabled</string>
-    <string name="clear_recents_position_bottom_right">Bottom right</string>
-    <string name="clear_recents_position_bottom_left">Bottom left</string>
-    <string name="clear_recents_position_top_right">Top right</string>
-    <string name="clear_recents_position_top_left">Top left</string>
+    <string name="clear_recents_position_title">Расположение кнопки очистки последних приложений</string>
+    <string name="clear_recents_position_disabled">Отключено</string>
+    <string name="clear_recents_position_bottom_right">Внизу справа</string>
+    <string name="clear_recents_position_bottom_left">Внизу слева</string>
+    <string name="clear_recents_position_top_right">Вверху справа</string>
+    <string name="clear_recents_position_top_left">Вверху слева</string>
 
     <!-- Enable Quick Unlock -->
-    <string name="lockscreen_quick_unlock_control_title">Quick unlock</string>
-    <string name="lockscreen_quick_unlock_control_summary">Unlock automatically when the correct PIN
-/password is entered</string>
+    <string name="lockscreen_quick_unlock_control_title">Быстрая разблокировка</string>
+    <string name="lockscreen_quick_unlock_control_summary">Разблокировать автоматически, когда введён правильный ПИН-код
+/пароль</string>
 
     <!-- Lock Screen ASS -->
-    <string name="lock_screen_title">Lockscreen</string>
-    <string name="slide_target_title">Slider targets and shortcuts</string>
-    <string name="lock_screen_summary">View or change the slider targets and shortcuts</string>
+    <string name="lock_screen_title">Экран блокировки</string>
+    <string name="slide_target_title">Ярлыки экрана блокировки</string>
+    <string name="lock_screen_summary">Установка и настройка ярлыков экрана блокировки</string>
 
     <!-- Lock Screen Targets -->
-    <string name="lockscreen_target_info">Drag the slider to targets to assign applications</string>
-    <string name="lockscreen_target_title">Slider targets</string>
-    <string name="lockscreen_target_summary">View or change custom lock screen targets</string>
-    <string name="lockscreen_target_color_title">Target icon color</string>
-    <string name="lockscreen_eight_targets_title">Eight slider targets</string>
-    <string name="lockscreen_eight_targets_summary">Enable eight custom lock screen targets.</string>
-    <string name="lockscreen_enable_eight_targets_dialog">Changing this option resets your current lockscreen targets setup to default.</string>
-    <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nWith eight lockscreen targets enabled you cannot use your lockscreen shortcuts at the same time.</string>
-    <string name="lockscreen_target_reset">Lock screen targets reset to default</string>
-    <string name="lockscreen_target_reset_message">Delete all user created lock screen targets and restore to default?</string>
-    <string name="lockscreen_target_empty">None</string>
-    <string name="lockscreen_target_edit_title">Edit target and icon</string>
-    <string name="lockscreen_target_edit_msg">Select or change the desired application or activity and the associated icon</string>
-
+    <string name="lockscreen_target_info">Потяните ползунок к цели, чтобы назначить приложение</string>
+    <string name="lockscreen_target_title">Ярлыки слайдера разблокировки</string>
+    <string name="lockscreen_target_summary">Установка и настройка ярлыков слайдера разблокировки</string>
+    <string name="lockscreen_target_color_title">Цвет слайдера разблокировки</string>
+    <string name="lockscreen_eight_targets_title">Восемь ярлыков в слайдере разблокировки</string>
+    <string name="lockscreen_eight_targets_summary">Включить восемь пользовательских ярлыков в слайдере разблокировки экрана.</string>
+    <string name="lockscreen_enable_eight_targets_dialog">Изменение этого параметра сбросит ваши текущие настройки экрана блокировки к настройкам по умолчанию.</string>
+    <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nЕсли используются восемь ярлыков в слайдере разблокировки, то вы не можете использовать ярлыки приложений на экране блокировки.</string>
+    <string name="lockscreen_target_reset">Сброс ярлыков экрана блокировки по умолчанию</string>
+    <string name="lockscreen_target_reset_message">Удалить все созданные ярлыки экрана блокировки и восстановить значения по умолчанию?</string>
+    <string name="lockscreen_target_empty">Ничего</string>
+    <string name="lockscreen_target_edit_title">Редактировать ярлык и значек</string>
+    <string name="lockscreen_target_edit_msg">Выберите или измените нужное приложение или действие и связанную с ними иконку</string>
+    
     <!-- Lockscreen Shortcuts -->
-    <string name="lockscreen_shortcuts_title">Shortcuts</string>
-    <string name="lockscreen_shortcuts_summary">View or change custom lock screen shortcuts</string>
-    <string name="lockscreen_shorcuts_longpress_title">Shortcuts longpress</string>
-    <string name="lockscreen_shorcuts_longpress_summary">Open custom lock screen shortcuts on longpress</string>
+    <string name="lockscreen_shortcuts_title">Ярлыки на экране блокировки</string>
+    <string name="lockscreen_shortcuts_summary">Просмотр или изменение ярлыков на экране блокировки</string>
+    <string name="lockscreen_shorcuts_longpress_title">Длительное нажатие на ярлык</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Открывать пользовательское приложение при длительном нажатии на ярлык</string>
 
     <!-- Lock screen targets and shortcuts -->
     <string name="picker_activities">Activities</string>
@@ -504,8 +507,117 @@
     <string name="halo_msgbox_animation_none">None</string>
     <string name="halo_msgbox_animation_flip">Flip</string>
 
+    <string name="halo_enabled_title">Enable HALO</string>
+    <string name="halo_enabled_summary">Completely enable or disable HALO</string>
+
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Blacklist from HALO</string>
     <string name="app_halo_label_white">Whitelist from HALO</string>
 
+    <!-- ListView animation -->
+    <string name="bars_and_menus_category_system_title">Система</string>
+    <string name="listview_animation_title">Список анимации</string>
+    <string name="listview_off">Выкл.</string>
+    <string name="listview_wave_left">Волна (Слева)</string>
+    <string name="listview_wave_right">Волна (Справа)</string>
+    <string name="listview_alpha">Альфа</string>
+    <string name="listview_scale">Масштаб</string>
+    <string name="listview_stack_top">Стек (Вверху)</string>
+    <string name="listview_stack_bottom">Стек (Внизу)</string>
+    <string name="listview_unfold">Раскрывается</string>
+    <string name="listview_fold">Сворачивается</string>
+    <string name="listview_translate_left">Перевод (Слева)</string>
+    <string name="listview_translate_right">Перевод (Справа)</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">Список интерполяторов</string>
+    <string name="listview_accelerate_interpolator">accelerate_interpolator</string>
+    <string name="listview_decelerate_interpolator">decelerate_interpolator</string>
+    <string name="listview_accelerate_decelerate_interpolator">accelerate_decelerate_interpolator</string>
+    <string name="listview_anticipate_interpolator">anticipate_interpolator</string>
+    <string name="listview_overshoot_interpolator">overshoot_interpolator</string>
+    <string name="listview_anticipate_overshoot_interpolator">anticipate_overshoot_interpolator</string>
+    <string name="listview_bounce_interpolator">bounce_interpolator</string>
+
+    <!-- Lockscreen widget settings -->
+    <string name="lockscreen_widgets_title">Виджеты</string>
+    <string name="lockscreen_camera_widget_title">Включить виджет камеры</string>
+    <string name="lockscreen_camera_widget_summary">Показывать виджет камеры на экране блокировки</string>
+    <string name="lockscreen_maximize_widgets_title">Открывать развёрнутыми</string>
+    <string name="lockscreen_maximize_widgets_summary">Показывать виджеты в развёрнутом виде при включении экрана</string>
+    <string name="lockscreen_disable_hints_title">Отключить подсказки на начальной странице</string>
+    <string name="lockscreen_disable_hints_summary">Отключить свечение окружающее виджет по краям на экране блокировки в портретном режиме</string>
+    <string name="lockscreen_use_widget_container_carousel_title">Включить карусель для виджетов</string>
+    <string name="lockscreen_use_widget_container_carousel_summary">Использовать анимацию карусели в портретном режиме для переключения между виджетами на экране блокировки</string>
+
+    <!-- Active display settings -->
+    <string name="ad_settings_title">Активный дисплей</string>
+    <string name="ad_settings_summary">Изменеие настроек активного дисплея</string>
+    <string name="ad_enable_title">Включение</string>
+    <string name="ad_enable_summary_on">Активный дисплей включен</string>
+    <string name="ad_enable_summary_off">Активный дисплей выключен</string>
+    <string name="ad_text_title">Тект уведомлений</string>
+    <string name="ad_text_summary">Показывать тект уведомления по кольцу.</string>
+    <string name="ad_all_notifications_title">Все уведомления</string>
+    <string name="ad_all_notifications_summary">Показывать все уведомленя, включая текущие и не прекращающиеся.</string>
+    <string name="ad_hide_low_priority_title">Скрыть низкий приоритет</string>
+    <string name="ad_hide_low_priority_summary">Скрыть уведомления с низким приоритетом, например от Google Now</string>
+    <string name="ad_pocket_mode_title">"Карманный" режим</string>
+    <string name="ad_pocket_mode_summary">Показывать активные уведомления, когда вы достаете устройство из кармана.</string>
+    <string name="ad_redisplay_title">Обновить уведомления</string>
+    <string name="ad_sunlight_mode_title">Режим "Солнечный свет"</string>
+    <string name="ad_sunlight_mode_summary">Инвертировать цвета, если вы находитесь в ярко освещённом месте, например под прямым солнечным светом.</string>
+    <string name="ad_customizations_title">Настройки</string>
+    <string name="ad_excluded_apps_title">Исключённые приложения</string>
+    <string name="ad_excluded_apps_summary">Исключённые приложения не будут отображаться на активном дисплее.</string>
+    <string name="ad_brightness_title">Яркость уведомлений</string>
+    <string name="ad_brightness_summary">Уровень яркости для отображения уведомлений\n когда автоматическая яркость отключена.</string>
+    <string name="ad_show_date_title">Показывать дату</string>
+    <string name="ad_show_date_summary">Показывать дату над часами</string>
+    <string name="ad_show_ampm_title">Показывть AM/PM</string>
+    <string name="ad_show_ampm_summary">Показывать индикатор AM/PM рядом с часами при использовании 12-часового формата.</string>
+    <string name="ad_redisplay_never">Никогда</string>
+    <string name="ad_redisplay_1m">1 минуту</string>
+    <string name="ad_redisplay_5m">5 минут</string>
+    <string name="ad_redisplay_15m">15 минут</string>
+    <string name="ad_redisplay_30m">30 минут</string>
+    <string name="ad_redisplay_1h">1 час</string>
+    <string name="ad_redisplay_2h">2 часа</string>
+    <string name="ad_redisplay_5h">5 часов</string>
+    <string name="ad_pocket_mode_off">Выкл.</string>
+    <string name="ad_pocket_mode_notifications">Только уведомлений</string>
+    <string name="ad_pocket_mode_always">Всегда</string>
+
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Change the order of PIN pad numbers</string>
+    <string name="lock_numpad_random_dialog_title">PIN pad random order</string>
+    <string name="lock_numpad_random_off">Отключено</string>
+    <string name="lock_numpad_random_always">Всегда</string>
+    <string name="lock_numpad_random_on_request">По запросу</string>
+
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">Показывать слайдер для разблокировки</string>
+    <string name="lock_before_unlock_summary">Показывать слайдер на экране блокировки для безопасной разблокировки устройства</string>
+
+    <!-- Sizes for pattern lockscreen -->
+    <string name="lock_pattern_size_3">3x3</string>
+    <string name="lock_pattern_size_4">4x4</string>
+    <string name="lock_pattern_size_5">5x5</string>
+    <string name="lock_pattern_size_6">6x6</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Поворот экрана</string>
+    <string name="display_rotation_disabled">Отключено</string>
+    <string name="display_rotation_unit">градусы</string>
+    <string name="display_rotation_category_title">Режимы вращения</string>
+    <string name="display_rotation_0_title">0 градусов</string>
+    <string name="display_rotation_90_title">90 градусов</string>
+    <string name="display_rotation_180_title">180 градусов</string>
+    <string name="display_rotation_270_title">270 градусов</string>
+
+    <!-- Custom notification panel header -->
+    <string name="notification_drawer_category_title">Панель уведомлений</string>
+    <string name="custom_statusbar_header_title">Контекстный заголовок панели уведомлений</string>
+    <string name="custom_statusbar_header_summary">Устанавить фоновое изображение заголовка панели уведомлений в виде текущей даты и времени</string>
+    
 </resources>
