@@ -634,6 +634,10 @@
     <string name="sms_security_check_limit_title">Ограничение SMS-сообщений</string>
     <string name="sms_security_check_limit_summary">Показывать предупреждение при слишком частой отправке SMS-сообщений приложениями. Текущее значение: %d сообщений в 15 минут.</string>
     <string name="sms_security_check_limit_default">30 (по умолчанию)</string>
+    
+    <!--- Lock clock -->
+    <string name="lock_clock_title">Виджет «cLock»</string>
+    <string name="lock_clock_summary">Просмотр или изменение настроек отображения виджета «cLock» на главном экране или экране блокировки</string>
 
     <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
