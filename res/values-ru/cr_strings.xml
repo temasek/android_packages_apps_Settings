@@ -702,7 +702,7 @@
     <string name="lock_clock_title">Виджет «cLock»</string>
     <string name="lock_clock_summary">Просмотр или изменение настроек отображения виджета «cLock» на главном экране или экране блокировки</string>
 	
-	<!-- Lock screen widgets -->
+    <!-- Lock screen widgets -->
     <string name="lockscreen_widgets_category_title">Виджеты</string>
     <string name="lockscreen_enable_widgets_title">Виджеты приложений</string>
 	
@@ -720,11 +720,11 @@
     <string name="notification_light_missed_call_title">Пропущенный вызов</string>
     <string name="notification_light_voicemail_title">Голосовая почта</string>
 	
-	<!-- Backlight brightness settings screen -->
+    <!-- Backlight brightness settings screen -->
     <string name="adaptive_backlight_title">Адаптивная подсветка</string>
     <string name="adaptive_backlight_summary">Интеллектуальное изменение яркости подсветки экрана для сохранения заряда аккумулятора</string>
 	
-	<!-- Battery light settings -->
+    <!-- Battery light settings -->
     <string name="battery_light_title">Индикация батареи</string>
     <string name="battery_low_pulse_title">Индикация разрядки батареи</string>
     <string name="battery_light_list_title">Цвета</string>
@@ -776,7 +776,7 @@
     <string name="backlight_summary_enabled_with_timeout">Включена <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Включена всегда</string>
 	
-	<!--  Other device settings -->
+    <!--  Other device settings -->
     <string name="more_device_controls_title">Ещё...</string>
     <string name="more_device_settings_title">Другие настройки устройства</string>
     <string name="sensors_motors_title">Датчики и вибрация</string>
