@@ -11,6 +11,11 @@
     <string name="attention">Upozorenje</string>
     <string name="disabled">Onemogućeno</string>
     <string name="default_string">Početno</string>
+    <string name="additional_options_title">Dodatne mogućnosti</string>
+    <string name="reset_message">Vrati sve na početne postavke?</string>
+    <string name="style_title">Izgled</string>
+    <string name="add">Dodaj</string>
+    <string name="title_general">Općenito</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek dodatne postavke</string>
@@ -131,9 +136,6 @@
     <string name="restart_systemui">Ponovno pokreni SystemUI</string>
 
     <!-- Button shorcut actions -->
-    <string name="additional_options_title">Dodatne mogućnosti</string>
-    <string name="reset_message">Vrati sve vrijednosti na početne?</string>
-    <string name="style_title">Oblik</string>
     <string name="shortcut_action_airplane">Način rada u zrakoplovu</string>
     <string name="shortcut_action_expanded_desktop">Prišireni prikaz</string>
     <string name="shortcut_action_power_off">Isključi</string>
@@ -247,6 +249,7 @@
     <string name="shortcuts_color_mode_summary">Promjeni način boje ikone</string>
 
     <!-- Notification drawer settings  -->
+    <string name="notification_drawer_qs_title">Traka s obavijestima i brze postavke</string>
     <string name="notification_drawer_title">Traka s obavijestima</string>
     <string name="notification_hide_carrier_title">Sakrij oznaku operatera</string>
     <string name="notification_hide_carrier_summary">Sakrij oznaku operatera i bezžične mreže u traci s obavijestima</string>
@@ -383,14 +386,6 @@
     <string name="ram_bar_button_reset">Vrati boje na početne vrijednosti</string>
     <string name="ram_bar_reset">Vrati</string>
     <string name="ram_bar_reset_message">Vrati izgled RAM trake na početni?</string>
-
-    <!-- Clear Recents position -->
-    <string name="clear_recents_position_title">Tipka za brisanje nedavnih aplikacija</string>
-    <string name="clear_recents_position_disabled">Onemogućeno</string>
-    <string name="clear_recents_position_bottom_right">Dolje desno</string>
-    <string name="clear_recents_position_bottom_left">Dolje lijevo</string>
-    <string name="clear_recents_position_top_right">Gore desno</string>
-    <string name="clear_recents_position_top_left">Gore lijevo</string>
 
     <!-- Enable Quick Unlock -->
     <string name="lockscreen_quick_unlock_control_title">Brzo otključavanje</string>
@@ -608,5 +603,79 @@
     <string name="notification_drawer_category_title">Ploča s obavijestima</string>
     <string name="custom_statusbar_header_title">Kontekstualno zaglavlje ploče s obavijestima</string>
     <string name="custom_statusbar_header_summary">Postavljanje slikovne pozadine zaglavlja ploče s obavijestima na osnovu trenutnog vremena i datuma</string>
+
+    <string name="omni_features_recent_panel_title" >Izbornik nedavnih aplikacija</string>
+
+    <!--  Recents clear all -->
+    <string name="show_recent_clear_all_button_title">Prikaži gumb za čišćenje svega</string>
+    <string name="show_recent_clear_all_button_summary">Označi za prikaz ili odznači za skrivanje gumba za čišćenje nedavnih aplikacija</string>
+    <string name="recent_clear_all_button_location_title">Smještaj gumba za čišćenje</string>
+    <string name="recent_clear_all_button_location_summary">Odaberite u kojem će kutu zaslona biti prikazan gumb za čišćenje</string>
+    <string name="recent_clear_all_button_location_top_left">Gore lijevo</string>
+    <string name="recent_clear_all_button_location_top_right">Gore desno</string>
+    <string name="recent_clear_all_button_location_bottom_left">Dolje lijevo</string>
+    <string name="recent_clear_all_button_location_bottom_right">Dolje desno</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings_title">Brze postavke</string>
+    <string name="tile_picker_title">Pločice i raspored</string>
+    <string name="tile_picker_summary">Pregledajte, odaberite ili izmjenite prikazane pločice</string>
+    <string name="tile_choose_title">Odaberi pločicu</string>
+    <string name="title_tile_airplane">Zrakoplovni način</string>
+    <string name="title_tile_battery">Baterija</string>
+    <string name="title_tile_bluetooth">Bluetooth</string>
+    <string name="title_tile_brightness">Svjetlina</string>
+    <string name="title_tile_sleep">Spavanje</string>
+    <string name="title_tile_location">Lokacija</string>
+    <string name="title_tile_torch">Svjetiljka</string>
+    <string name="title_tile_lockscreen">Zaslon zaključavanja</string>
+    <string name="title_tile_lte">LTE</string>
+    <string name="title_tile_mobiledata">Mobilni podaci</string>
+    <string name="title_tile_autorotate">Orijentacija</string>
+    <string name="title_tile_settings">Postavke</string>
+    <string name="title_tile_sound">Zvuk</string>
+    <string name="title_tile_sync">Sinkronizacija</string>
+    <string name="title_tile_wifiap">Wi-Fi AP</string>
+    <string name="title_tile_wifi">Wi-Fi</string>
+    <string name="title_tile_user">Izmjena korisnika</string>
+    <string name="title_tile_networkmode">Mrežni način</string>
+    <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">Istek zaslona</string>
+    <string name="title_tile_quiet_hours">Vrijeme stišavanja</string>
+    <string name="title_tile_volume">Glasnoća</string>
+    <string name="title_tile_expanded_desktop">Prošireni prikaz</string>
+    <string name="title_tile_music">Glazba</string>
+    <string name="title_tile_reboot">Ponovno pokretanje</string>
+    <string name="tiles_reset_message">Vrati početne postavke?</string>
+
+    <!-- QuickSettings style options -->
+    <string name="quicksettings_tiles_style">Izgled</string>
+    <string name="summary_quicksettings_tiles_style">Pregledajte ili promjenite izgled brzih postavki</string>
+    <string name="quicksettings_tiles_style_additional_options">Dodatne mogućnosti</string>
+    <string name="tiles_per_row_title">Pločica u redu</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Scale landscape quantity</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Pejsažni prikaz prikazuje dvostruki broj pločica u redu</string>
+    <string name="quick_tiles_bg_color_title">Boja pozadine pločica</string>
+    <string name="quick_tiles_bg_pressed_color_title">Boja pozadine pritisnute pločice</string>
+    <string name="quick_tiles_text_color_title">Boja teksta pločica</string>
+    <string name="quick_tiles_alpha_title">Prozirnost pozadine pločica</string>
+    <string name="qs_style_reset_message">Vrati boje na početne vrijednosti?</string>
+
+    <string name="pref_network_mode_title">Mrežni načini</string>
+    <string name="pref_screentimeout_mode_title">Načini isteka prikaza</string>
+    <string name="pref_ring_mode_title">Načini zvuka</string>
+    <string name="screentimeout_mode1">15s | 1m | 5m | Nikad</string>
+    <string name="screentimeout_mode2">30s | 2m | 5m | Nikad</string>
+    <string name="sound_mode_silent">Tiho</string>
+    <string name="sound_mode_vibrate">Vibracija</string>
+    <string name="sound_mode_sound">Zvuk</string>
+    <string name="sound_mode_soundVibrate">Zvuk &amp; Vibracija</string>
+
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Brzo povlačenje</string>
+    <string name="summary_quick_pulldown">Rub statusne trake povlači brze postavke</string>
+    <string name="quick_pulldown_off">Isključeno</string>
+    <string name="quick_pulldown_left">Lijevo</string>
+    <string name="quick_pulldown_right">Desno</string>
     
 </resources>
