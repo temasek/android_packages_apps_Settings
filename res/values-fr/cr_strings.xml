@@ -11,7 +11,12 @@
     <string name="attention">Attention</string>
     <string name="disabled">Désactivé</string>
     <string name="default_string">Défaut</string>
-
+    <string name="additional_options_title">Options supplémentaires</string>
+    <string name="reset_message">Réinitialiser aux valeurs par défaut?</string>
+    <string name="style_title">Style</string>
+    <string name="add">Ajouter</string>
+    <string name="title_general">Général</string>
+    
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Pièces détachées de temasek</string>
 
@@ -99,7 +104,7 @@
     <string name="status_bar_network_usage_color_reset">Réinitialiser la couleur</string>
     <string name="status_bar_network_usage_color_reset_message">Réinitialiser la couleur des statistiques de réseau par défaut?</string>
 
-    <!-- Network stats hide if there's no traffic -->
+    <!-- Network stats hide if there\'s no traffic -->
     <string name="hide_network_speed">Cacher lorsqu\'il n\'y a pas de traffic</string>
     <string name="hide_network_speed_summary">Cacher l\'indicateur de statistiques reseau lorsqu\'il n\'y a pas de traffic</string>
 
@@ -131,9 +136,6 @@
     <string name="restart_systemui">Redémarrer SystemUI</string>
 
     <!-- Button shorcut actions -->
-    <string name="additional_options_title">Options additionelles</string>
-    <string name="reset_message">Réinitialiser aux valeurs par défaut?</string>
-    <string name="style_title">Style</string>
     <string name="shortcut_action_airplane">Mode avion</string>
     <string name="shortcut_action_expanded_desktop">Bureau étendu</string>
     <string name="shortcut_action_power_off">Eteindre</string>
@@ -247,6 +249,7 @@
     <string name="shortcuts_color_mode_summary">Changez le mode de couleur de l\'icône du raccourci</string>
 
     <!-- Notification drawer settings  -->
+    <string name="notification_drawer_qs_title">Tiroir de notifications et paramètres rapides</string>
     <string name="notification_drawer_title">Tiroir de notifications</string>
     <string name="notification_hide_carrier_title">Cacher le nom de l\'opérateur</string>
     <string name="notification_hide_carrier_summary">Cacher le nom de l\opérateur et du réseau Wi-Fi dans le tiroir de notifications</string>
@@ -384,14 +387,6 @@
     <string name="ram_bar_reset">Réinitialiser</string>
     <string name="ram_bar_reset_message">Réinitialiser le style de la barre de RAM aux valeurs par défaut?</string>   
 
-    <!-- Clear Recents position -->
-    <string name="clear_recents_position_title">Position du boutton de suppression des applications récentes</string>
-    <string name="clear_recents_position_disabled">Désactivé</string>
-    <string name="clear_recents_position_bottom_right">En bas à droite</string>
-    <string name="clear_recents_position_bottom_left">En bas à gauche</string>
-    <string name="clear_recents_position_top_right">En haut à droite</string>
-    <string name="clear_recents_position_top_left">En haut à gauche</string>
-    
     <!-- Enable Quick Unlock -->
     <string name="lockscreen_quick_unlock_control_title">Déverrouillage rapide</string>
     <string name="lockscreen_quick_unlock_control_summary">Déverrouiller automatiquement lorsque le PIN ou mot de passe correct est saisi</string>
@@ -592,8 +587,8 @@
     <string name="notification_drawer_background">Arrière-plan et transparence</string> 
 
     <!-- Notification drawer background -->
-    <string name="notification_style_title">Style</string>
-    <string name="notification_style_summary">Changez le style de votre tiroir de notifications</string>
+    <string name="notification_style_title">Style d\'arrière-plan</string>
+    <string name="notification_style_summary">Voir ou changer l\'arrière-plan de votre tiroir de notifications et paramètres rapides</string>
     <string name="notification_wallpaper_title">Arrière-plan du tiroir de notifications</string>
     <string name="notification_wallpaper_landscape_title">Arrière-plan différent en mode paysage</string>
     <string name="notification_background_color_fill">Couleur</string>
@@ -608,5 +603,79 @@
     <string name="notification_drawer_category_title">Tiroir de notifications</string>
     <string name="custom_statusbar_header_title">En-tête contextuel du panneau de notifications</string>
     <string name="custom_statusbar_header_summary">Applique une image basée sur l\'heure et date actuelles en arrière-plan de l\'en-tête du panneau de notifications</string>
-      
+
+    <string name="omni_features_recent_panel_title" >Menu applications récentes</string>
+
+    <!--  Recents clear all -->
+    <string name="show_recent_clear_all_button_title">Afficher le boutton \"tout effacer\"</string>
+    <string name="show_recent_clear_all_button_summary">Cocher pour afficher ou décocher pour cacher le boutton \"tout effacer\" dans l\'écran des applications récentes</string>
+    <string name="recent_clear_all_button_location_title">Position du boutton \"tout effacer\"</string>
+    <string name="recent_clear_all_button_location_summary">Choisissez dans quel coin le boutton \"effacer toutes les applications récentes\" est affiché</string>
+    <string name="recent_clear_all_button_location_top_left">En haut à gauche</string>
+    <string name="recent_clear_all_button_location_top_right">En haut à droite</string>
+    <string name="recent_clear_all_button_location_bottom_left">En bas à gauche</string>
+    <string name="recent_clear_all_button_location_bottom_right">En bas à droite</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings_title">Paramètres rapides</string>
+    <string name="tile_picker_title">Tuiles et mise en page</string>
+    <string name="tile_picker_summary">Afficher, sélectionner ou modifier la disposition des tuiles affichées</string>
+    <string name="tile_choose_title">Choisir une tuile</string>
+    <string name="title_tile_airplane">Mode Avion</string>
+    <string name="title_tile_battery">État de la batterie</string>
+    <string name="title_tile_bluetooth">Bluetooth</string>
+    <string name="title_tile_brightness">Luminosité</string>
+    <string name="title_tile_sleep">Dormir</string>
+    <string name="title_tile_location">GPS</string>
+    <string name="title_tile_torch">Lampe torche</string>
+    <string name="title_tile_lockscreen">Écran de verrouillage</string>
+    <string name="title_tile_lte">LTE</string>
+    <string name="title_tile_mobiledata">Données mobiles</string>
+    <string name="title_tile_autorotate">Orientation</string>
+    <string name="title_tile_settings">Paramètres</string>
+    <string name="title_tile_sound">Son</string>
+    <string name="title_tile_sync">Synchronisaiton</string>
+    <string name="title_tile_wifiap">Point d\'accès Wi-Fi</string>
+    <string name="title_tile_wifi">Wi-Fi</string>
+    <string name="title_tile_user">Switcheur d\'utilisateur</string>
+    <string name="title_tile_networkmode">Mode réseau</string>
+    <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">Mise en veille de l\'écran</string>
+    <string name="title_tile_quiet_hours">Heures silencieuses</string>
+    <string name="title_tile_volume">Volume</string>
+    <string name="title_tile_expanded_desktop">Bureau étendu</string>
+    <string name="title_tile_music">Musique</string>
+    <string name="title_tile_reboot">Redémarrer</string>
+    <string name="tiles_reset_message">Restaurer les tuiles par défaut et leur mise en page ?</string>
+
+    <!-- QuickSettings style options -->
+    <string name="quicksettings_tiles_style">Style des paramètres rapides</string>
+    <string name="summary_quicksettings_tiles_style">Afficher ou modifier les options du style des paramètres rapides</string>
+    <string name="quicksettings_tiles_style_additional_options">Options supplémentaires</string>
+    <string name="tiles_per_row_title">Tuiles par lignes</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Adapter la quantité en mode paysage</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Doubler les tuiles par ligne en mode paysage</string>
+    <string name="quick_tiles_bg_color_title">Couleur d\'arrière-plan des tuiles</string>
+    <string name="quick_tiles_bg_pressed_color_title">Couleur d\'arrière-plan des tuiles avec appui long</string>
+    <string name="quick_tiles_text_color_title">Couleur de texte des tuiles</string>
+    <string name="quick_tiles_alpha_title">Transparence de l\'arrière-plan des tuiles</string>
+    <string name="qs_style_reset_message">Restaurer la couleur des tuiles par défaut?</string>
+
+    <string name="pref_network_mode_title">Modes réseaux</string>
+    <string name="pref_screentimeout_mode_title">Modes de mise en veille</string>
+    <string name="pref_ring_mode_title">Modes de son</string>
+    <string name="screentimeout_mode1">15s | 1m | 5m | Never</string>
+    <string name="screentimeout_mode2">30s | 2m | 5m | Never</string>
+    <string name="sound_mode_silent">Silencieux</string>
+    <string name="sound_mode_vibrate">Vibrations</string>
+    <string name="sound_mode_sound">Sons</string>
+    <string name="sound_mode_soundVibrate">Sons &amp; Vibrations</string>
+
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Ouverture rapide</string>
+    <string name="summary_quick_pulldown">Tirer la bordure %1$s pour ouvrir le panneau des raccourcis</string>
+    <string name="quick_pulldown_off">Désactiver</string>
+    <string name="quick_pulldown_left">À gauche</string>
+    <string name="quick_pulldown_right">À droite</string>
+
 </resources>
