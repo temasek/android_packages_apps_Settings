@@ -527,7 +527,7 @@
     <string name="lockscreen_colorize_handle_summary">Пользовательская картинка будет определять цвет блокировки</string>
     <string name="lockscreen_style_title">Стиль блокировки</string>
     <string name="lockscreen_frame_color_title">Цвет рамки</string>
-    <string name="lockscreen_frame_color_summary">Цвет рамки слайдера разблокировки</string>
+    <string name="lockscreen_frame_color_summary">Цвет рамки и фона экрана разблокировки</string>
     <string name="lockscreen_lock_color_title">Цвет замка</string>
     <string name="lockscreen_lock_color_summary">Цвет иконки замка в слайдере разблокировки</string>
     <string name="lockscreen_dots_color_title">Цвет точек</string>
@@ -715,7 +715,7 @@
 	
     <!-- INTERFACE Settings -->
     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
-    <string name="header_category_interface">Персонализация</string>
+    <string name="header_category_interface">Интерфейс</string>
 	
     <!-- Themes settings -->
     <string name="themes_settings_title">Темы</string>
