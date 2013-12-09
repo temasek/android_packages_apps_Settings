@@ -272,8 +272,14 @@
 \n\n
 <b>Как изменить кривую яркости?</b>
 \n\n
-Каждая строка списка соответствует одной <i>контрольной точке</i> кривой яркости. Чтобы изменить уровень яркости для этой точки, используйте специальный ползунок. Яркость экрана будет изменяться соответствующим образом для демонстрации.\n
-Дополнительные настройки доступны по длительному нажатию на строку списка. Выбрав «Изменить», вы можете изменить уровень освещённости, а также вручную ввести желаемое значение яркости экрана. Пункт «Разделить» делит одну строку на два значения для вставки дополнительных контрольных точек. Пункт «Удалить» удаляет выбранную строку.
+Каждая строка списка соответствует одной <i>контрольной точке</i> кривой яркости. 
+Чтобы изменить уровень яркости для этой точки, используйте специальный ползунок. 
+Яркость экрана будет изменяться соответствующим образом для демонстрации.\n
+Дополнительные настройки доступны по длительному нажатию на строку списка. 
+Выбрав «Изменить», вы можете изменить уровень освещённости, а также 
+вручную ввести желаемое значение яркости экрана. Пункт «Разделить» делит одну 
+строку на два значения для вставки дополнительных контрольных точек. 
+Пункт «Удалить» удаляет выбранную строку.
     </string>
 
     <string name="auto_brightness_sensitivity_title">Чувствительность</string>
@@ -529,7 +535,6 @@
     <!-- Setting checkbox summary for displaying USB debugging notification -->
     <string name="adb_notify">Уведомление об отладке по USB</string>
     <string name="adb_notify_summary">Показывать уведомление о включённом режиме отладки по USB</string>
-
     <!-- Android debugging over WiFi -->
     <string name="adb_over_network">ADB по сети</string>
     <string name="adb_over_network_summary">Включить отладку TCP/IP через сетевые интерфейсы (Wi-Fi, USB сети). Эта установка сбрасывается при перезагрузке</string>
@@ -537,26 +542,6 @@
     <string name="adb_over_network_warning">ВНИМАНИЕ: когда включён ADB по сети, телефон открыт для доступа из всех подключённых сетей, включая передачу данных GSM!\n\nИспользуйте эту функцию только тогда, когда вы подключены к доверенным сетям.\n\nВы действительно хотите включить эту функцию?</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Название устройства</string>
-
-    <!-- System Interface settings  -->
-    <string name="system_settings_title">Интерфейс</string>
-    <string name="system_interface_title">Системный интерфейс</string>
-
-    <!-- Notification Drawer  -->
-    <string name="notification_drawer_title">Панель уведомлений</string>
-    <string name="notification_drawer_collapse_on_dismiss_title">Автоскрытие панели</string>
-    <string name="collapse_on_dismiss_never">Выключено</string>
-    <string name="collapse_on_dismiss_if_empty">Если нет уведомлений</string>
-    <string name="collapse_on_dismiss_if_no_clearable">Если нет удаляемых уведомлений</string>
-    <string name="collapse_on_dismiss_never_summary">Не скрывать панель при удалении уведомлений</string>
-    <string name="collapse_on_dismiss_if_empty_summary">Скрывать панель при удалении всех уведомлений</string>
-    <string name="collapse_on_dismiss_if_no_clearable_summary">Скрывать панель при удалении всех удаляемых уведомлений</string>
-
-    <!-- Quick access ribbon -->
-    <string name="category_quick_access">Лента быстрого доступа</string>
-    <string name="title_quick_access">Показывать в панели</string>
-    <string name="title_quick_access_linked">Связанное расположение</string>
-    <string name="summary_quick_access_linked">Используются плитки и их размещение из панели быстрых настроек</string>
 
     <!-- Font size sample text. This needs to be a very short string, as it is shown in
     multiple font sizes in a limited amount of space. -->
@@ -654,4 +639,12 @@
 
     <!-- Delete apn confirmation dialog message -->
     <string name="confirm_delete_apn">Точка доступа (APN) будет удалена.</string>
+
+    <!-- AOSP dummy strings -->
+    <string name="experimental_webview"></string>
+    <string name="experimental_webview_summary"></string>
+
+    <!--  development shortcut -->
+    <string name="development_shortcut_title">Ярлык разработчика</string>
+    <string name="development_shortcut_summary">Включить опцию \'wipe data\' и \'force close\' в панели уведомлений и списке недавних приложений</string>
 </resources>
