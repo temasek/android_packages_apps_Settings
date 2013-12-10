@@ -705,6 +705,6 @@
 
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Индикатор сетевой активности</string>
-    <string name="show_activity_indicators_on_status_bar_summary">Показывать индикатор сетевой активности в строке сосояния</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Показывать индикатор сетевой активности в строке сосояния на значках сети или WiFi</string>
 
 </resources>
