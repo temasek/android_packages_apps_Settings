@@ -250,6 +250,7 @@
     <string name="shortcuts_color_mode_summary">Ändere den Farb-Modus der Verknüpfungs-Icons</string>
 
     <!-- Notification drawer settings -->
+    <string name="notification_drawer_qs_title">Benachrichtigungen &amp; Schnelleinstellungen</string>
     <string name="notification_drawer_title">Benachrichtigungsfeld</string>
     <string name="notification_hide_carrier_title">Verstecke Netzbetreiber</string>
     <string name="notification_hide_carrier_summary">Verstecke Netzbetreiber und Wi-Fi Namen im Benachrichtigungsfeld</string>
@@ -333,12 +334,12 @@
     <string name="navbar_enable_bar_summary">Aktiviert die Softkeyleiste</string>
     <string name="navigation_bar_height_title">Höhe Softkeyleiste</string>
     <string name="navigation_bar_height_summary">Höhe Softkeyleiste im Portrait-Modus.</string>
-    <string name="navigation_bar_height_landscape_title">Höhe Softkeyleiste im Landscape-Modus.</string>
-    <string name="navigation_bar_height_landscape_summary">Höhe der Softkeyleiste im Landscape-Modus.</string>
+    <string name="navigation_bar_height_landscape_title">Höhe Softkeyleiste im Querformat.</string>
+    <string name="navigation_bar_height_landscape_summary">Höhe der Softkeyleiste im Querformat.</string>
     <string name="navigation_bar_width_title">Breite der Softkeyleiste</string>
     <string name="navigation_bar_width_summary">Breite der Softkeyleiste wenn die Leiste an der Seite angezeigt wird.</string>
-    <string name="navbar_can_move">Anzeige Landscape</string>
-    <string name="navbar_can_move_summary">Zeigt Softkeyleiste im Landscape-Modus unten an.</string>
+    <string name="navbar_can_move">Anzeige Querformat</string>
+    <string name="navbar_can_move_summary">Zeigt Softkeyleiste im Querformat unten an.</string>
     <string name="navbar_style_dimen_title">Dimensionen</string>
     <string name="navbar_button_title">Tasten</string>
     <string name="navbar_targets_title">Ziele Ring</string>
@@ -553,16 +554,16 @@
     <string name="ad_settings_title">Active Display</string>
     <string name="ad_settings_summary">Active Display Einstellungen ändern</string>
     <string name="ad_enable_title">Aktivieren</string>
-    <string name="ad_enable_summary_on">Active Display aktivieren</string>
-    <string name="ad_enable_summary_off">Active Display deaktivieren</string>
+    <string name="ad_enable_summary_on">Active Display aktiviert</string>
+    <string name="ad_enable_summary_off">Active Display deaktiviert</string>
     <string name="ad_text_title">Benachrichtigungs-Text</string>
     <string name="ad_text_summary">Zeige den Benachrichtigungs-Text um der Ring herum.</string>
     <string name="ad_all_notifications_title">Alle Benachrichtigungen</string>
     <string name="ad_all_notifications_summary">Zeige alle Benachrichtigungen inklusive laufenden, nicht-löschbaren Benachrichtigungen.</string>
     <string name="ad_hide_low_priority_title">Verstecke niedrige Priorität</string>
     <string name="ad_hide_low_priority_summary">Verstecke Benachrichtigungen mit niedriger Priorität. Z.B. Benachrichtigungen von Google Now.</string>
-    <string name="ad_pocket_mode_title">Taschen Modus</string>
-    <string name="ad_pocket_mode_summary">Zeige Aktive Display Benachrichtigungen wenn das Gerät aus der Tasche genommen wird.</string>
+    <string name="ad_pocket_mode_title">Hosentaschen Modus</string>
+    <string name="ad_pocket_mode_summary">Zeige Aktive Display Benachrichtigungen wenn das Gerät aus der Hosentasche genommen wird.</string>
     <string name="ad_redisplay_title">Benachrichtigungen erneut anzeigen</string>
     <string name="ad_sunlight_mode_title">Sonnenlicht-Modus</string>
     <string name="ad_sunlight_mode_summary">Invertiert die Farbe in Umgebungen mit hellem Licht wie z.B. direkter Sonneneinstrahlung.</string>
@@ -625,16 +626,16 @@
     <!-- Custom notification panel header -->
     <string name="omni_features_title">Omni Features</string>
     <string name="notification_drawer_category_title">Benachrichtigungsfeld</string>
-    <string name="custom_statusbar_header_title">Kontextueller Benachrichtigungsfeld-Kopf</string>
-    <string name="custom_statusbar_header_summary">Setzt den Hintergrund des Benachrichtigungsfeld-Kopfes auf ein Bild basierend auf dem aktuellen Datum und der Uhrzeit.</string>
+    <string name="custom_statusbar_header_title">Bild Benachrichtigungsfeld</string>
+    <string name="custom_statusbar_header_summary">Ersetzt den Hintergrund des Benachrichtigungsfeld-Kopfes durch ein Hintergrundbild mit dem aktuellen Datum und der Uhrzeit.</string>
 
     <string name="omni_features_recent_panel_title" >Recents Menü</string>
     
     <!-- Recents clear all -->
     <string name="show_recent_clear_all_button_title">Zeige Alle schließen Taste</string>
     <string name="show_recent_clear_all_button_summary">Haken setzen oder nicht setzen zum anzeigen bzw. verstecken der "Alle schließen" Taste innerhalb des Recents (zuvor geöffnete Apps) Bildschirms.</string>
-    <string name="recent_clear_all_button_location_title">Position Alle schließen Taste</string>
-    <string name="recent_clear_all_button_location_summary">Entscheide in welcher Ecke die "Alles schließen" Taste angezeigt werden soll.</string>
+    <string name="recent_clear_all_button_location_title">Position -Alle schließen- Taste</string>
+    <string name="recent_clear_all_button_location_summary">Entscheide in welcher Ecke die -Alles schließen- Taste angezeigt werden soll.</string>
     <string name="recent_clear_all_button_location_top_left">Oben links</string>
     <string name="recent_clear_all_button_location_top_right">Oben rechts</string>
     <string name="recent_clear_all_button_location_bottom_left">Unten links</string>
@@ -677,8 +678,8 @@
     <string name="summary_quicksettings_tiles_style">Optionen für Aussehen der Schnelleinstellungen anzeigen oder ändern.</string>
     <string name="quicksettings_tiles_style_additional_options">Zusätzliche Optionen</string>
     <string name="tiles_per_row_title">Kacheln pro Reihe</string>
-    <string name="tiles_per_row_duplicate_landscape_title">Anzahl Landscape-Modus Maßstab</string>
-    <string name="tiles_per_row_duplicate_landscape_summary">Landscape-Modus zeigt doppelte Anzahl Kacheln pro Reihe</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Anzahl im Querformat</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Querformat zeigt doppelte Anzahl Kacheln pro Reihe</string>
     <string name="quick_tiles_bg_color_title">Hintergrundfarbe Kacheln</string>
     <string name="quick_tiles_bg_pressed_color_title">Hintergrundfarbe betätigte Kacheln</string>
     <string name="quick_tiles_text_color_title">Textfarbe Kacheln</string>
@@ -708,5 +709,33 @@
     <!-- security settings menu unlock -->
     <string name="unlock_menu_unlock_title">Menütaste Entsperrt</string>
     <string name="unlock_menu_unlock_summary">Drücken der Menütaste entsperrt das Gerät.</string>
+    
+    <!-- Status Bar Activity Indicators -->
+    <string name="show_activity_indicators_on_status_bar_title">Indikator Aktivität Netzwerk</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Zeigt die Netzwerk-Aktivität in der Statusleiste an.</string>
+
+    <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_category_title">Smart Cover</string>
+    <string name="smart_cover_wake_title">Smart Cover Aufwachen</string>
+    <string name="smart_cover_wake_summary">Weckt das Gerät auf wenn das Smart Cover geöffnet wird.</string>
+
+    <!-- Keyboard and Input ASS methods -->
+    <string name="title_keyboard_input">Erweiterte Optionen</string>
+    <string name="disable_fullscreen_keyboard_title">Deaktiviere Vollbild-Tastatur</string>
+    <string name="disable_fullscreen_keyboard_summary">Querformat-Tastatur wird nie den komplette Bildschirm ausfüllen.</string>
+    <string name="volume_key_cursor_control_title">Lautstärketaste Cursorkontrolle</string>
+    <string name="volume_key_cursor_control_on">Lautstärke Auf/Ab bewegt Cursor links/rechts</string>
+    <string name="volume_key_cursor_control_on_reverse">Lautstärke Auf/Ab bewegt Cursor rechts/links</string>
+    <string name="keyboard_rotation_toggle_title">Auto Tastatur-Drehung</string>
+    <string name="keyboard_rotation_toggle_summary">Erzwinge automatische Drehung wenn die Tastatur angezeigt wird.</string>
+    <string name="keyboard_rotation_timeout_title">Auto-Drehung Timeout</string>
+    <string name="keyboard_rotation_timeout_summary">Deaktiviert Sensor Auto-Drehung <xliff:g id="rotate_timeout">%1$s</xliff:g> Sekunden nachdem die Tastatur verschwindet.</string>
+    <string name="keyboard_rotation_dialog">Hinweis: Dieses Feature erzwingt zeitweise das Einschalten der Auto-Drehung während die Tastatur aktiv ist. Es hat keinen Einfluß wenn die Auto-Drehung bereits eingeschaltet wurde.</string>
+    <string name="show_enter_key_title">Zeige Enter Taste</string>
+    <string name="show_enter_key_summary">Erzwingt das Erscheinen der Enter Taste anstelle der Emoticon Taste</string>
+    <string name="ime_switcher_notify">Benachrichtigung Umschaltung IME</string>
+    <string name="ime_switcher_notify_summary">Zeige Benachrichtigung für die Umschaltung der Eingabemethode (IME).</string>
+
+
 
 </resources>
