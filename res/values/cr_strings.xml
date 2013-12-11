@@ -5,7 +5,11 @@
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT Translate this -->
+<<<<<<< HEAD
     <string name="temasek_version_default">V11</string>
+=======
+    <string name="temasek_version_default">V19</string>
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
 
     <!-- General strings -->
     <string name="reset">Reset</string>
@@ -13,6 +17,11 @@
     <string name="attention">Attention</string>
     <string name="disabled">Disabled</string>
     <string name="default_string">Default</string>
+    <string name="additional_options_title">Additional options</string>
+    <string name="reset_message">Reset all entries to default?</string>
+    <string name="style_title">Style</string>
+    <string name="add">Add</string>
+    <string name="title_general">General</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek spare parts</string>
@@ -64,22 +73,6 @@
     <string name="clock_date_style_uppercase">Uppercase</string>
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
-
-    <!-- Notification Drawer Settings -->
-    <string name="notification_drawer_title">Notification drawer</string>
-    <string name="notification_drawer_style_title">Notification drawer options</string>
-    <string name="notification_style_summary">Change your notification drawer style</string>
-    <string name="notification_drawer_background">Background and transparency</string> 
-
-    <!-- Notification drawer background -->
-    <string name="notification_wallpaper_title">Notification drawer background</string>
-    <string name="notification_wallpaper_landscape_title">Different landscape background</string>
-    <string name="notification_background_color_fill">Color fill</string>
-    <string name="notification_background_custom_image">Custom image</string>
-    <string name="notification_background_default_wallpaper">Default background</string>
-    <string name="notification_drawer_custom_background_dialog_title">Choose color</string>
-    <string name="notif_wallpaper_alpha_title">Notification background transparency</string> 
-    <string name="notif_alpha_title">Notification row transparency</string>
 
     <!-- Advanced low battery indicator options -->  
     <string name="lights_and_warnings_title">Lights and warnings</string>
@@ -149,9 +142,6 @@
     <string name="restart_systemui">Restart SystemUI</string>
 
     <!-- Button shorcut actions -->
-    <string name="additional_options_title">Additional options</string>
-    <string name="reset_message">Reset all entries to default?</string>
-    <string name="style_title">Style</string>
     <string name="shortcut_action_airplane">Airplane mode</string>
     <string name="shortcut_action_expanded_desktop">Expanded desktop</string>
     <string name="shortcut_action_power_off">Power off</string>
@@ -185,7 +175,7 @@
     <string name="shortcut_action_warning">Warning</string>
     <string name="shortcut_action_warning_message">It is not possible to delete last entry</string>
     <string name="shortcut_action_disable_message">Disabled\nAdd an entry to enable this feature</string>
-    <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
+    <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app.</string>
     <string name="shortcut_duplicate_entry">The chosen action cannot be added twice</string>
 
     <string name="shortcut_action_help_shortcut">shortcut</string>
@@ -265,6 +255,7 @@
     <string name="shortcuts_color_mode_summary">Change the shorcuts icon color mode</string>
 
     <!-- Notification drawer settings  -->
+    <string name="notification_drawer_qs_title">Notification &amp; QS drawer</string>
     <string name="notification_drawer_title">Notification drawer</string>
     <string name="notification_hide_carrier_title">Hide carrier label</string>
     <string name="notification_hide_carrier_summary">Hide carrier and Wi-Fi label on the notification drawer</string>
@@ -402,14 +393,6 @@
     <string name="ram_bar_reset">Reset</string>
     <string name="ram_bar_reset_message">Reset RAM bar style to default?</string>
 
-    <!-- Clear Recents position -->
-    <string name="clear_recents_position_title">Clear recents position</string>
-    <string name="clear_recents_position_disabled">Disabled</string>
-    <string name="clear_recents_position_bottom_right">Bottom right</string>
-    <string name="clear_recents_position_bottom_left">Bottom left</string>
-    <string name="clear_recents_position_top_right">Top right</string>
-    <string name="clear_recents_position_top_left">Top left</string>
-
     <!-- Enable Quick Unlock -->
     <string name="lockscreen_quick_unlock_control_title">Quick unlock</string>
     <string name="lockscreen_quick_unlock_control_summary">Unlock automatically when the correct PIN
@@ -507,6 +490,9 @@
     <string name="halo_msgbox_animation_none">None</string>
     <string name="halo_msgbox_animation_flip">Flip</string>
 
+    <string name="halo_enabled_title">Enable HALO</string>
+    <string name="halo_enabled_summary">Completely enable or disable HALO</string>
+
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Blacklist from HALO</string>
     <string name="app_halo_label_white">Whitelist from HALO</string>
@@ -536,6 +522,24 @@
     <string name="listview_anticipate_overshoot_interpolator">anticipate_overshoot_interpolator</string>
     <string name="listview_bounce_interpolator">bounce_interpolator</string>
 
+<<<<<<< HEAD
+=======
+    <!-- Lockscreen style settings -->
+    <string name="lockscreen_style_reset_message">Reset all lockscreen colors?</string>
+    <string name="lockscreen_icon_title">Lock handle icon</string>
+    <string name="lockscreen_lock_icon_custom">Custom icon</string>
+    <string name="lockscreen_lock_icon_default">Default icon</string>
+    <string name="lockscreen_colorize_handle_title">Colorize custom handle</string>
+    <string name="lockscreen_colorize_handle_summary">Lock color will be set to your custom image</string>
+    <string name="lockscreen_style_title">Theme style</string>
+    <string name="lockscreen_frame_color_title">Frame color</string>
+    <string name="lockscreen_frame_color_summary">Color of the widget and unlock frames</string>
+    <string name="lockscreen_lock_color_title">Lock color</string>
+    <string name="lockscreen_lock_color_summary">Color of the lock handles</string>
+    <string name="lockscreen_dots_color_title">Dots color</string>
+    <string name="lockscreen_dots_color_summary">Color of the glowpad dots</string>
+
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
     <!-- Lockscreen widget settings -->
     <string name="lockscreen_widgets_title">Widgets</string>
     <string name="lockscreen_camera_widget_title">Enable camera widget</string>
@@ -547,4 +551,192 @@
     <string name="lockscreen_use_widget_container_carousel_title">Enable portrait widget carousel</string>
     <string name="lockscreen_use_widget_container_carousel_summary">Use carousel animation in portrait when switching between lock screen widgets</string>
 
+<<<<<<< HEAD
+=======
+    <!-- Active display settings -->
+    <string name="ad_settings_title">Active display</string>
+    <string name="ad_settings_summary">Change active display settings</string>
+    <string name="ad_enable_title">Enable</string>
+    <string name="ad_enable_summary_on">Active display enabled</string>
+    <string name="ad_enable_summary_off">Active display disabled</string>
+    <string name="ad_text_title">Notification text</string>
+    <string name="ad_text_summary">Show the notification text around the ring.</string>
+    <string name="ad_all_notifications_title">All notifications</string>
+    <string name="ad_all_notifications_summary">Show all notifications including ongoing, non-clearable notifications.</string>
+    <string name="ad_hide_low_priority_title">Hide low priority</string>
+    <string name="ad_hide_low_priority_summary">Hide low priority notifications such as those from Google Now.</string>
+    <string name="ad_pocket_mode_title">Pocket mode</string>
+    <string name="ad_pocket_mode_summary">Show active display notifications when you take the device out of your pocket.</string>
+    <string name="ad_redisplay_title">Redisplay notifications</string>
+    <string name="ad_sunlight_mode_title">Sunlight mode</string>
+    <string name="ad_sunlight_mode_summary">Invert the colors when in areas with bright light such as direct sunlight.</string>
+    <string name="ad_customizations_title">Customizations</string>
+    <string name="ad_excluded_apps_title">Excluded applications</string>
+    <string name="ad_excluded_apps_summary">Excluded applications will not show up in active display.</string>
+    <string name="ad_brightness_title">Notification brightness</string>
+    <string name="ad_brightness_summary">Brightness level for displaying notifications\n when automatic brightness is not enabled.</string>
+    <string name="ad_show_date_title">Show date</string>
+    <string name="ad_show_date_summary">Show the date above the clock</string>
+    <string name="ad_show_ampm_title">Show AM/PM</string>
+    <string name="ad_show_ampm_summary">Show AM/PM indicator next to time when using 12hour format</string>
+    <string name="ad_redisplay_never">Never</string>
+    <string name="ad_redisplay_1m">1 minute</string>
+    <string name="ad_redisplay_5m">5 minutes</string>
+    <string name="ad_redisplay_15m">15 minutes</string>
+    <string name="ad_redisplay_30m">30 minutes</string>
+    <string name="ad_redisplay_1h">1 hour</string>
+    <string name="ad_redisplay_2h">2 hours</string>
+    <string name="ad_redisplay_5h">5 hours</string>
+    <string name="ad_pocket_mode_off">Off</string>
+    <string name="ad_pocket_mode_notifications">Notifications only</string>
+    <string name="ad_pocket_mode_always">Always</string>
+
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Change the order of PIN pad numbers</string>
+    <string name="lock_numpad_random_dialog_title">PIN pad random order</string>
+    <string name="lock_numpad_random_off">Disabled</string>
+    <string name="lock_numpad_random_always">Always</string>
+    <string name="lock_numpad_random_on_request">On request</string>
+
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">Show slider before secure unlock</string>
+    <string name="lock_before_unlock_summary">Show slider lockscreen before secure unlock mechanism</string>
+
+    <!-- Sizes for pattern lockscreen -->
+    <string name="lock_pattern_size_3">3x3</string>
+    <string name="lock_pattern_size_4">4x4</string>
+    <string name="lock_pattern_size_5">5x5</string>
+    <string name="lock_pattern_size_6">6x6</string>
+
+    <!-- Notification Drawer Settings -->
+    <string name="notification_drawer_title">Notification drawer</string>
+    <string name="notification_drawer_style_title">Notification drawer options</string>
+    <string name="notification_drawer_background">Background and transparency</string>
+
+    <!-- Notification drawer background -->
+    <string name="notification_style_title">Background style</string>
+    <string name="notification_style_summary">View or change your notification drawer and quicksettings background</string>
+    <string name="notification_wallpaper_title">Background</string>
+    <string name="notification_wallpaper_landscape_title">Different landscape background</string>
+    <string name="notification_background_color_fill">Color fill</string>
+    <string name="notification_background_custom_image">Custom image</string>
+    <string name="notification_background_default_wallpaper">Default background</string>
+    <string name="notification_drawer_custom_background_dialog_title">Choose color</string>
+    <string name="notif_wallpaper_alpha_title">Background transparency</string>
+    <string name="notif_alpha_title">Notification transparency</string>
+
+    <!-- Custom notification panel header -->
+    <string name="omni_features_title">Omni features</string>
+    <string name="notification_drawer_category_title">Notification drawer</string>
+    <string name="custom_statusbar_header_title">Contextual notification panel header</string>
+    <string name="custom_statusbar_header_summary">Sets the background of the notification panel header to an image based on the current date and time</string>
+
+    <string name="omni_features_recent_panel_title" >Recents menu</string>
+
+    <!--  Recents clear all -->
+    <string name="show_recent_clear_all_button_title">Show clear all button</string>
+    <string name="show_recent_clear_all_button_summary">Tick to show or untick to hide the clear all button within the recent applications screen</string>
+    <string name="recent_clear_all_button_location_title">Clear all button position</string>
+    <string name="recent_clear_all_button_location_summary">Choose in which corner the clear all recent apps button is shown</string>
+    <string name="recent_clear_all_button_location_top_left">Top left</string>
+    <string name="recent_clear_all_button_location_top_right">Top right</string>
+    <string name="recent_clear_all_button_location_bottom_left">Bottom left</string>
+    <string name="recent_clear_all_button_location_bottom_right">Bottom right</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings_title">Quick settings</string>
+    <string name="tile_picker_title">Tiles and layout</string>
+    <string name="tile_picker_summary">View, select or change the displayed tiles</string>
+    <string name="tile_choose_title">Choose a tile</string>
+    <string name="title_tile_airplane">Airplane mode</string>
+    <string name="title_tile_battery">Battery</string>
+    <string name="title_tile_bluetooth">Bluetooth</string>
+    <string name="title_tile_brightness">Brightness</string>
+    <string name="title_tile_sleep">Go to sleep</string>
+    <string name="title_tile_location">Location</string>
+    <string name="title_tile_torch">Torch</string>
+    <string name="title_tile_lockscreen">Lock screen</string>
+    <string name="title_tile_lte">LTE</string>
+    <string name="title_tile_mobiledata">Mobile data</string>
+    <string name="title_tile_autorotate">Orientation</string>
+    <string name="title_tile_settings">Settings</string>
+    <string name="title_tile_sound">Sound</string>
+    <string name="title_tile_sync">Sync</string>
+    <string name="title_tile_wifiap">Wi-Fi AP</string>
+    <string name="title_tile_wifi">Wi-Fi</string>
+    <string name="title_tile_user">User switcher</string>
+    <string name="title_tile_networkmode">Network mode</string>
+    <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">Screen timeout</string>
+    <string name="title_tile_quiet_hours">Quiet hours</string>
+    <string name="title_tile_volume">Volume</string>
+    <string name="title_tile_expanded_desktop">Expanded desktop</string>
+    <string name="title_tile_music">Music</string>
+    <string name="title_tile_reboot">Reboot</string>
+    <string name="tiles_reset_message">Restore the default displayed tiles and layout?</string>
+
+    <!-- QuickSettings style options -->
+    <string name="quicksettings_tiles_style">Style</string>
+    <string name="summary_quicksettings_tiles_style">View or change quick settings style options</string>
+    <string name="quicksettings_tiles_style_additional_options">Additional options</string>
+    <string name="tiles_per_row_title">Tiles per row</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Scale landscape quantity</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Landscape view doubles tiles per row quantity</string>
+    <string name="quick_tiles_bg_color_title">Tiles background color</string>
+    <string name="quick_tiles_bg_pressed_color_title">Tiles pressed background color</string>
+    <string name="quick_tiles_text_color_title">Tiles text color</string>
+    <string name="quick_tiles_alpha_title">Tiles background transparency</string>
+    <string name="qs_style_reset_message">Reset all colors to default?</string>
+
+    <string name="pref_network_mode_title">Network modes</string>
+    <string name="pref_screentimeout_mode_title">Screen timeout modes</string>
+    <string name="pref_ring_mode_title">Sound modes</string>
+    <string name="pref_music_mode_title">Music mode</string>
+    <string name="screentimeout_mode1">15s | 1m | 5m | Never</string>
+    <string name="screentimeout_mode2">30s | 2m | 5m | Never</string>
+    <string name="sound_mode_silent">Silent</string>
+    <string name="sound_mode_vibrate">Vibrate</string>
+    <string name="sound_mode_sound">Sound</string>
+    <string name="sound_mode_soundVibrate">Sound &amp; Vibrate</string>
+    <string name="music_tile_mode_background">Show album artwork</string>
+    <string name="music_tile_mode_tracktitle">Show track title</string>
+
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Quick pulldown</string>
+    <string name="summary_quick_pulldown">edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
+
+    <!-- security settings menu unlock -->
+    <string name="unlock_menu_unlock_title">Menu unlock</string>
+    <string name="unlock_menu_unlock_summary">Pressing the menu button unlocks the device</string>
+
+    <!-- Status Bar Activity Indicators -->
+    <string name="show_activity_indicators_on_status_bar_title">Network activity indicator</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Show network activity in statusbar</string>
+
+    <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_category_title">Smart cover</string>
+    <string name="smart_cover_wake_title">Smart cover wake</string>
+    <string name="smart_cover_wake_summary">Wakeup device when smart cover opens</string>
+
+    <!-- Keyboard and Input ASS methods  -->
+    <string name="title_keyboard_input">Advanced options</string>
+    <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
+    <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
+    <string name="keyboard_rotation_toggle_summary">Force auto-rotate when keyboard is shown</string>
+    <string name="keyboard_rotation_timeout_title">Auto-rotate timeout</string>
+    <string name="keyboard_rotation_timeout_summary">Disables auto-rotate sensor <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
+    <string name="keyboard_rotation_dialog">Note: This feature forces auto-rotate to turn on temporarily while the keyboard is out.  It has no effect when auto-rotate is already enabled.</string>
+    <string name="show_enter_key_title">Show enter key</string>
+    <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
+    <string name="ime_switcher_notify">Selector notification</string>
+    <string name="ime_switcher_notify_summary">Display input method selector notification</string>
+
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
 </resources>

@@ -27,9 +27,10 @@
                 android:title="@string/wallpaper_settings_title"
                 android:fragment="com.android.settings.WallpaperTypeSettings" />
 
-        <CheckBoxPreference
-            android:key="accelerometer"
-            android:title="@string/accelerometer_title"/>
+        <PreferenceScreen
+            android:key="display_rotation"
+            android:fragment="com.android.settings.cyanogenmod.DisplayRotation"
+            android:title="@string/display_rotation_title" />
 
         <ListPreference
                 android:key="screen_timeout"
@@ -61,6 +62,22 @@
                 android:summary="@string/adaptive_backlight_summary"
                 android:defaultValue="true" />
 
+        <CheckBoxPreference
+            android:key="wake_when_plugged_or_unplugged"
+            android:title="@string/wake_when_plugged_or_unplugged_title"
+            android:summary="@string/wake_when_plugged_or_unplugged_summary"
+            android:defaultValue="false" />
+
+        <!-- DeviceParts Device Specific Display settings -->
+        <Preference
+            android:key="advanced_display_settings"
+            android:title="@string/advanced_settings_title">
+            <intent
+                android:action="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS"
+                android:targetPackage="com.cyanogenmod.settings.device"
+                android:targetClass="com.cyanogenmod.settings.device.DisplaySettings" />
+        </Preference>
+
         <PreferenceCategory
             android:key="lights_prefs"
             android:title="@string/lights_category_title">
@@ -74,6 +91,17 @@
                 android:key="battery_light"
                 android:title="@string/battery_light_title"
                 android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="smart_cover_category"
+            android:title="@string/smart_cover_category_title">
+
+            <CheckBoxPreference
+                android:key="smart_cover_wake"
+                android:title="@string/smart_cover_wake_title"
+                android:summary="@string/smart_cover_wake_summary" />
 
         </PreferenceCategory>
 

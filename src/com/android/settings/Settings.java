@@ -75,6 +75,12 @@ import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothEnabler;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.cyanogenmod.ButtonSettings;
+import com.android.settings.cyanogenmod.LockscreenInterface;
+import com.android.settings.cyanogenmod.MoreDeviceSettings;
+import com.android.settings.cyanogenmod.PerformanceSettings;
+//import com.android.settings.cyanogenmod.SystemUiSettings;
+import com.android.settings.cyanogenmod.superuser.PolicyNativeFragment;
 import com.android.settings.deviceinfo.Memory;
 import com.android.settings.deviceinfo.UsbSettings;
 import com.android.settings.fuelgauge.PowerUsageSummary;
@@ -92,6 +98,7 @@ import com.android.settings.profiles.AppGroupConfig;
 import com.android.settings.profiles.ProfileConfig;
 import com.android.settings.profiles.ProfileEnabler;
 import com.android.settings.profiles.ProfilesSettings;
+import com.android.settings.temasek.BatteryIconStyle;
 import com.android.settings.tts.TextToSpeechSettings;
 import com.android.settings.users.UserSettings;
 import com.android.settings.vpn2.VpnSettings;
@@ -310,11 +317,6 @@ public class Settings extends PreferenceActivity
         }
     }
 
-    @Override
-    public boolean onIsMultiPane() {
-        return false;
-    }
-
     private static final String[] ENTRY_FRAGMENTS = {
         WirelessSettings.class.getName(),
         WifiSettings.class.getName(),
@@ -362,6 +364,16 @@ public class Settings extends PreferenceActivity
         PaymentSettings.class.getName(),
         KeyboardLayoutPickerFragment.class.getName(),
         BlacklistSettings.class.getName(),
+        ApnSettings.class.getName(),
+        BatteryIconStyle.class.getName(),
+        HomeSettings.class.getName(),
+        LockscreenInterface.class.getName(),
+        //SystemUiSettings.class.getName(),
+        ButtonSettings.class.getName(),
+        MoreDeviceSettings.class.getName(),
+        ProfilesSettings.class.getName(),
+        PerformanceSettings.class.getName(),
+        PolicyNativeFragment.class.getName()
     };
 
     @Override
@@ -508,15 +520,27 @@ public class Settings extends PreferenceActivity
 
     @Override
     public Intent onBuildStartFragmentIntent(String fragmentName, Bundle args,
+            CharSequence titleText, CharSequence shortTitleText) {
+        Intent intent = super.onBuildStartFragmentIntent(fragmentName, args,
+                titleText, shortTitleText);
+        onBuildStartFragmentIntentHelper(fragmentName, intent);
+        return intent;
+    }
+
+    @Override
+    public Intent onBuildStartFragmentIntent(String fragmentName, Bundle args,
             int titleRes, int shortTitleRes) {
         Intent intent = super.onBuildStartFragmentIntent(fragmentName, args,
                 titleRes, shortTitleRes);
+        onBuildStartFragmentIntentHelper(fragmentName, intent);
+        return intent;
+    }
 
+    private void onBuildStartFragmentIntentHelper(String fragmentName, Intent intent) {
         // Some fragments want split ActionBar; these should stay in sync with
         // uiOptions for fragments also defined as activities in manifest.
         if (WifiSettings.class.getName().equals(fragmentName) ||
                 WifiP2pSettings.class.getName().equals(fragmentName) ||
-                WifiDisplaySettings.class.getName().equals(fragmentName) ||
                 BlacklistSettings.class.getName().equals(fragmentName) ||
                 BluetoothSettings.class.getName().equals(fragmentName) ||
                 DreamSettings.class.getName().equals(fragmentName) ||
@@ -530,9 +554,7 @@ public class Settings extends PreferenceActivity
                 PrintServiceSettingsFragment.class.getName().equals(fragmentName)) {
             intent.putExtra(EXTRA_UI_OPTIONS, ActivityInfo.UIOPTION_SPLIT_ACTION_BAR_WHEN_NARROW);
         }
-
         intent.setClass(this, SubSettings.class);
-        return intent;
     }
 
     /**
@@ -619,7 +641,8 @@ public class Settings extends PreferenceActivity
                         target.remove(i);
                     }
                 }
-            } else if (id == R.id.development_settings) {
+            } else if (id == R.id.development_settings
+                    || id == R.id.performance_settings) {
                 if (!showDev) {
                     target.remove(i);
                 }
@@ -1160,6 +1183,10 @@ public class Settings extends PreferenceActivity
     public static class PrintSettingsActivity extends Settings { /* empty */ }
     public static class PrintJobSettingsActivity extends Settings { /* empty */ }
     public static class AnonymousStatsActivity extends Settings { /* empty */ }
+    public static class ApnSettingsActivity extends Settings { /* empty */ }
+    public static class ApnEditorActivity extends Settings { /* empty */ }
     public static class BlacklistSettingsActivity extends Settings { /* empty */ }
     public static class ASSRamBarActivity extends Settings { /* empty */ } 
+    public static class QuietHoursSettingsActivity extends Settings { /* empty */ }
+    public static class BatteryIconStyleSettingsActivity extends Settings { /* empty */ }
 }

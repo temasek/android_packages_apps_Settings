@@ -14,6 +14,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wi-Fi region code -->
+    <string name="wifi_setting_countrycode_title">Wi-Fi region code</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
+    <string name="wifi_setting_countrycode_summary">Specify the region code for Wi-Fi</string>
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
+    <!-- Wi-Fi settings screen, advanced, title of the item to set the Wi-Fi priority. -->
+    <string name="wifi_setting_priority_title">Wi-Fi priority</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the Wi-Fi priority-->
+    <string name="wifi_setting_priority_summary">Specify the priority of the Wi-Fi networks</string>
+
     <!-- Sound settings screen -->
     <string name="ring_mode_title">Ring mode</string>
     <string name="ring_mode_normal">Normal</string>
@@ -172,6 +183,10 @@
     <string name="adaptive_backlight_title">Adaptive backlight</string>
     <string name="adaptive_backlight_summary">Intelligently vary the backlight brightness of the display and help maximize battery life</string>
 
+    <!-- Turn on display when power connected; turn off display when power disconnected -->
+    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting the charger</string>
+
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
@@ -220,75 +235,6 @@
     <!-- Waiver -->
     <string name="cyanogenmod_waiver_title">Waiver</string>
     <string name="cyanogenmod_waiver_body">Changing this setting may be against your state or government laws.\n\nIn selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless CyanogenMod and its contributors from all legal liabilities.</string>
-
-    <!-- Quick settings panel  -->
-    <string name="quick_settings_panel_title">Quick Settings panel</string>
-    <string name="title_static_tiles">Static tiles</string>
-    <string name="tile_picker_title">Tiles and layout</string>
-    <string name="tile_picker_summary">View, select or change the layout of the displayed tiles</string>
-    <string name="tile_choose_title">Choose a tile</string>
-
-    <string name="title_tile_airplane">Airplane mode</string>
-    <string name="title_tile_battery">Battery stats</string>
-    <string name="title_tile_bluetooth">Bluetooth</string>
-    <string name="title_tile_brightness">Brightness</string>
-    <string name="title_tile_camera">Camera</string>
-    <string name="title_tile_sleep">Go to sleep</string>
-    <string name="title_tile_gps">GPS</string>
-    <string name="title_tile_torch">Torch</string>
-    <string name="title_tile_lockscreen">Lock screen</string>
-    <string name="title_tile_lte">LTE</string>
-    <string name="title_tile_mobiledata">Mobile data</string>
-    <string name="title_tile_profile">Profile</string>
-    <string name="title_tile_performance_profile">Performance profile</string>
-    <string name="title_tile_autorotate">Orientation</string>
-    <string name="title_tile_settings">Settings</string>
-    <string name="title_tile_sound">Sound</string>
-    <string name="title_tile_sync">Sync</string>
-    <string name="title_tile_wifiap">Wi-Fi AP</string>
-    <string name="title_tile_wifi">Wi-Fi</string>
-    <string name="title_tile_user">User switcher</string>
-    <string name="title_tile_networkmode">Network mode</string>
-    <string name="title_tile_nfc">NFC</string>
-    <string name="title_tile_screen_timeout">Screen timeout</string>
-    <string name="title_tile_quiet_hours">Quiet hours</string>
-    <string name="title_tile_volume">Volume</string>
-    <string name="title_tile_expanded_desktop">Expanded desktop</string>
-    <string name="title_tile_network_adb">ADB over network</string>
-
-    <string name="title_dynamic_tiles">Dynamic tiles</string>
-    <string name="dynamic_tiles_note_title">Note</string>
-    <string name="dynamic_tiles_note_summary">Dynamic tiles are not always visible and will only show up if triggered by a system event</string>
-    <string name="title_dynamic_alarm">Alarm clock</string>
-    <string name="title_dynamic_bugreport">Bug report</string>
-    <string name="title_dynamic_dock_battery">Dock battery</string>
-    <string name="title_dynamic_ime">IME changer</string>
-    <string name="title_dynamic_usbtether">USB Tether</string>
-    <string name="title_dynamic_wifi">Wi-Fi display</string>
-
-    <string name="title_general">General</string>
-    <string name="title_quick_pulldown">Quick pulldown</string>
-    <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_summary_left">Left</string>
-    <string name="quick_pulldown_summary_right">Right</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
-    <string name="title_collapse_panel">Auto close panel</string>
-    <string name="summary_collapse_panel">Close the Quick Settings panel after toggling a tile</string>
-
-    <string name="pref_network_mode_title">Network modes</string>
-    <string name="pref_screentimeout_mode_title">Screen timeout modes</string>
-    <string name="pref_ring_mode_title">Sound modes</string>
-    <string name="pref_ring_mode_summary">View or change the Sound button modes</string>
-    <string name="cm_sound_mode_silent">Silent</string>
-    <string name="cm_sound_mode_vibrate">Vibrate</string>
-    <string name="cm_sound_mode_sound">Sound</string>
-    <string name="cm_sound_mode_soundVibrate">Sound &amp; Vibrate</string>
-
-    <!-- Reset tiles -->
-    <string name="tiles_reset_title">Reset</string>
-    <string name="tiles_reset_message">Restore the default displayed tiles and layout?</string>
 
     <!-- Automatic brightness customization -->
     <string name="auto_brightness_setup_title">Automatic brightness</string>
@@ -346,6 +292,17 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="auto_brightness_sensitivity_medium">Medium</string>
     <string name="auto_brightness_sensitivity_high">High</string>
     <string name="auto_brightness_sensitivity_veryhigh">Very high</string>
+
+    <!-- Display : Rotation  -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_disabled">Disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_lockscreen_rotation_title">Rotate lock screen</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
 
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Advanced reboot</string>
@@ -420,7 +377,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- INTERFACE Settings -->
     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
-    <string name="header_category_interface">Personalization</string>
+    <string name="header_category_interface">INTERFACE</string>
 
     <!-- Themes settings -->
     <string name="themes_settings_title">Themes</string>
@@ -482,7 +439,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Change Log strings -->
     <string name="changelog_title">View changelog</string>
-    <string name="changelog_dialog">Changelog</string>
     <string name="changelog_loading">Loading changelog...</string>
     <string name="changelog_error">Unable to load changelog</string>
     <string name="changelog_unknown">Unknown</string>
@@ -491,6 +447,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- CM Updater -->
     <string name="cmupdate_settings_title">CyanogenMod updates</string>
     <string name="cmupdate_settings_summary">Check for, view or install available updates</string>
+
+    <!-- Advanced, Device specific (DeviceParts) settings  -->
+    <string name="advanced_settings_title">Advanced</string>
 
     <!-- Launches Dev Tools -->
     <string name="development_tools_title">Launch Tools</string>
@@ -579,7 +538,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Setting checkbox summary for displaying USB debugging notification -->
     <string name="adb_notify">USB debugging notify</string>
     <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
-
     <!-- Android debugging over WiFi -->
     <string name="adb_over_network">ADB over network</string>
     <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
@@ -587,26 +545,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
-
-    <!-- System Interface settings  -->
-    <string name="system_settings_title">Interface</string>
-    <string name="system_interface_title">System interface</string>
-
-    <!-- Notification Drawer  -->
-    <string name="notification_drawer_title">Notification drawer</string>
-    <string name="notification_drawer_collapse_on_dismiss_title">Auto close behavior</string>
-    <string name="collapse_on_dismiss_never">Disabled</string>
-    <string name="collapse_on_dismiss_if_empty">If none remaining</string>
-    <string name="collapse_on_dismiss_if_no_clearable">If no removable remaining</string>
-    <string name="collapse_on_dismiss_never_summary">Leave open after removing notifications</string>
-    <string name="collapse_on_dismiss_if_empty_summary">Close after removing the last notification</string>
-    <string name="collapse_on_dismiss_if_no_clearable_summary">Close after removing the last removable notification</string>
-
-    <!-- Quick access ribbon -->
-    <string name="category_quick_access">Quick Access ribbon</string>
-    <string name="title_quick_access">Show in drawer</string>
-    <string name="title_quick_access_linked">Linked layout</string>
-    <string name="summary_quick_access_linked">Use the same tiles and layout as the Quick Settings panel</string>
 
     <!-- Font size sample text. This needs to be a very short string, as it is shown in
     multiple font sizes in a limited amount of space. -->
@@ -617,6 +555,13 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="sms_security_check_limit_summary">Apps can send %d messages in 30 minutes before requiring confirmation</string>
     <string name="sms_security_check_limit_default">30 (Default)</string>
 
+<<<<<<< HEAD
+=======
+    <!--- Lock clock -->
+    <string name="lock_clock_title">Clock widget</string>
+    <string name="lock_clock_summary">View or change how the \'cLock\' Home and Lock screen widgets will display</string>
+
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
     <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
     <string name="power_notifications_category_title">Charging sounds</string>
@@ -700,4 +645,17 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Delete apn confirmation dialog message -->
     <string name="confirm_delete_apn">The APN will be deleted.</string>
+<<<<<<< HEAD
+=======
+
+    <!--  development shortcut -->
+    <string name="development_shortcut_title">Development shortcut</string>
+    <string name="development_shortcut_summary">Enable \'wipe data\' and \'force close\' options in notification area and recent apps list</string>
+
+    <!-- WhisperPush -->
+    <string name="whisperpush_title">WhisperPush</string>
+    <string name="whisperpush_registration_title">Register</string>
+    <string name="whisperpush_registration_summary">Register for WhisperPush to enable encrypted SMS.</string>
+    <string name="whisperpush_identitykey_title">Review identity keys</string>
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
 </resources>

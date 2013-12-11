@@ -1,7 +1,6 @@
 package com.android.settings.temasek;
 
 import android.app.ActivityManager;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -25,13 +24,11 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
     private static final String SHOW_CPU_INFO_KEY = "show_cpu_info";
     private static final String RESTART_SYSTEMUI = "restart_systemui";
     private static final String PREF_MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
-    private static final String KEY_CLEAR_RECENTS_POSITION = "clear_recents_position";
 
     private CheckBoxPreference mUseAltResolver;
     private CheckBoxPreference mShowCpuInfo;
     private Preference mRestartSystemUI;
     private ListPreference mMsob;
-    private ListPreference mClearPosition;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,13 +50,6 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
                 Settings.System.MEDIA_SCANNER_ON_BOOT, 0)));
         mMsob.setSummary(mMsob.getEntry());
         mMsob.setOnPreferenceChangeListener(this);
-
-        mClearPosition = (ListPreference) findPreference(KEY_CLEAR_RECENTS_POSITION);
-        int ClearSide = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.CLEAR_RECENTS_POSITION, 2);
-        mClearPosition.setValue(String.valueOf(ClearSide));
-        mClearPosition.setSummary(mClearPosition.getEntry());
-        mClearPosition.setOnPreferenceChangeListener(this);
 
     }
 
@@ -107,14 +97,6 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
 
             mMsob.setValue(String.valueOf(value));
             mMsob.setSummary(mMsob.getEntry());
-            return true;
-        } else if (preference == mClearPosition) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.CLEAR_RECENTS_POSITION,
-                    Integer.valueOf(value));
-
-            mClearPosition.setValue(String.valueOf(value));
-            mClearPosition.setSummary(mClearPosition.getEntry());
             return true;
         }
         return false;

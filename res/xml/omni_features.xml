@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 The OmniROM Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/sound_settings"
+        android:key="sound_settings"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <!-- Status bar -->
+    <PreferenceCategory
+            android:key="category_status_bar"
+            android:title="@string/status_bar_title"/>
+
+    <CheckBoxPreference
+            android:key="status_bar_network_activity"
+            android:title="@string/show_activity_indicators_on_status_bar_title"
+            android:summary="@string/show_activity_indicators_on_status_bar_summary"
+            android:defaultValue="false" />
+
+    <!-- Notification drawer -->
+    <PreferenceCategory
+            android:key="category_notification_drawer"
+            android:title="@string/notification_drawer_category_title"/>
+
+    <CheckBoxPreference
+            android:key="custom_status_bar_header"
+            android:title="@string/custom_statusbar_header_title"
+            android:summary="@string/custom_statusbar_header_summary"
+            android:defaultValue="false" />
+
+    <!-- Recent panel -->
+    <PreferenceCategory
+            android:key="category_recent_panel"
+            android:title="@string/omni_features_recent_panel_title"/>
+
+    <CheckBoxPreference
+            android:key="recent_menu_clear_all"
+            android:title="@string/show_recent_clear_all_button_title"
+            android:summary="@string/show_recent_clear_all_button_summary"
+            android:defaultValue="true" />
+
+    <ListPreference
+            android:key="recent_menu_clear_all_location"
+            android:title="@string/recent_clear_all_button_location_title"
+            android:summary="@string/recent_clear_all_button_location_summary"
+            android:entries="@array/recent_clear_all_button_location_entries"
+            android:entryValues="@array/recent_clear_all_button_location_values"
+            android:defaultValue="2"
+            android:dependency="recent_menu_clear_all" />
+
+</PreferenceScreen>

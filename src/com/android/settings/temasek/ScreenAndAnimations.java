@@ -2,6 +2,7 @@ package com.android.settings.temasek;
 
 import android.app.ActivityManager;
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -33,7 +34,7 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.screen_and_animations);
 
-	PreferenceScreen prefSet = getPreferenceScreen();
+        PreferenceScreen prefSet = getPreferenceScreen();
 
 	// respect device default configuration
         // true fades while false animates
@@ -53,22 +54,18 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
         }
 
         //ListView Animations
-        mListViewAnimation = (ListPreference) prefSet.findPreference(KEY_LISTVIEW_ANIMATION);
-        if (mListViewAnimation != null) {
-           int listViewAnimation = Settings.System.getInt(getContentResolver(),
-                    Settings.System.LISTVIEW_ANIMATION, 1);
-           mListViewAnimation.setSummary(mListViewAnimation.getEntry());
-           mListViewAnimation.setValue(String.valueOf(listViewAnimation));
-        }
+        mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
+        int listviewanimation = Settings.System.getInt(getActivity().getContentResolver(),
+            Settings.System.LISTVIEW_ANIMATION, 1);
+        mListViewAnimation.setValue(String.valueOf(listviewanimation));
+        mListViewAnimation.setSummary(mListViewAnimation.getEntry());
         mListViewAnimation.setOnPreferenceChangeListener(this);
 
-        mListViewInterpolator = (ListPreference) prefSet.findPreference(KEY_LISTVIEW_INTERPOLATOR);
-        if (mListViewInterpolator != null) {
-           int listViewInterpolator = Settings.System.getInt(getContentResolver(),
-                    Settings.System.LISTVIEW_INTERPOLATOR, 1);
-           mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
-           mListViewInterpolator.setValue(String.valueOf(listViewInterpolator));
-        }
+        mListViewInterpolator = (ListPreference) findPreference(KEY_LISTVIEW_INTERPOLATOR);
+        int listviewinterpolator = Settings.System.getInt(getActivity().getContentResolver(),
+            Settings.System.LISTVIEW_INTERPOLATOR, 0);
+        mListViewInterpolator.setValue(String.valueOf(listviewinterpolator));
+        mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
         mListViewInterpolator.setOnPreferenceChangeListener(this);
     }
 
@@ -77,30 +74,33 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
 	final String key = preference.getKey();
 
 	if (KEY_POWER_CRT_MODE.equals(key)) {
-            int value = Integer.parseInt((String) newValue);
-            int index = mCrtMode.findIndexOfValue((String) newValue);
+            int value = Integer.parseInt((String) objValue);
+            int index = mCrtMode.findIndexOfValue((String) objValue);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.SYSTEM_POWER_CRT_MODE,
                     value);
             mCrtMode.setSummary(mCrtMode.getEntries()[index]);
-        } else if (KEY_LISTVIEW_ANIMATION.equals(key)) {
-            int value = Integer.parseInt((String) newValue);
-            int index = mListViewAnimation.findIndexOfValue((String) newValue);
-            Settings.System.putInt(getContentResolver(),
+            return true;
+        } else if (preference == mListViewAnimation) {
+            int listviewanimation = Integer.valueOf((String) objValue);
+            int index = mListViewAnimation.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.LISTVIEW_ANIMATION,
-                    value);
+                    listviewanimation);
             mListViewAnimation.setSummary(mListViewAnimation.getEntries()[index]);
-        } else if (KEY_LISTVIEW_INTERPOLATOR.equals(key)) {
-            int value = Integer.parseInt((String) newValue);
-            int index = mListViewInterpolator.findIndexOfValue((String) newValue);
-            Settings.System.putInt(getContentResolver(),
+            return true;
+        } else if (preference == mListViewInterpolator) {
+            int listviewinterpolator = Integer.valueOf((String) objValue);
+            int index = mListViewInterpolator.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.LISTVIEW_INTERPOLATOR,
-                    value);
+                    listviewinterpolator);
             mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
+            return true;
         }
         return false;
     }

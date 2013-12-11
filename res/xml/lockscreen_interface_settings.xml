@@ -49,6 +49,16 @@
         android:title="@string/lockscreen_widgets_category_title"
         android:key="lockscreen_widgets_category" >
 
+        <!-- Lock clock -->
+        <PreferenceScreen
+        android:key="lock_clock"
+        android:title="@string/lock_clock_title"
+        android:summary="@string/lock_clock_summary">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.lockclock"
+                android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
+        </PreferenceScreen>
+
         <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
             android:key="lockscreen_maximize_widgets"
             android:summary="@string/lockscreen_maximize_widgets_summary"
@@ -57,11 +67,6 @@
         <CheckBoxPreference
             android:key="keyguard_enable_widgets"
             android:title="@string/lockscreen_enable_widgets_title" />
-
-        <CheckBoxPreference
-            android:key="battery_around_lockscreen_ring"
-            android:title="@string/battery_around_lockscreen_ring"
-            android:defaultValue="true" />
 
     </PreferenceCategory>
 </PreferenceScreen>

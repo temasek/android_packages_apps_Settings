@@ -9,13 +9,22 @@
         android:key="category_animation_options"
         android:title="@string/display_category_animation_options_title" >
 
-       <ListPreference
+	<!-- Active display -->	
+	<PreferenceScreen	
+	    android:key="active_display"	
+	    android:fragment="com.android.settings.temasek.ActiveDisplaySettings"	
+	    android:title="@string/ad_settings_title"	
+	    android:summary="@string/ad_settings_summary" /> 
+
+	<!-- CRT animation -->
+        <ListPreference
             android:key="system_power_crt_mode"
             android:dialogTitle="@string/system_power_crt_mode_dialog_title"
             android:title="@string/system_power_crt_mode_title"
             android:entries="@array/entries_system_power_crt_mode"
             android:entryValues="@array/values_system_power_crt_mode" />
 
+	<!-- AOKP custom system animations -->
 	<PreferenceScreen
             android:id="@+id/animations"  
             android:title="@string/title_animation_controls"  

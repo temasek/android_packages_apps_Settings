@@ -40,17 +40,11 @@ public class LockscreenInterface extends SettingsPreferenceFragment {
     private static final String KEY_ENABLE_WIDGETS = "keyguard_enable_widgets";
     private static final String LOCKSCREEN_WIDGETS_CATEGORY = "lockscreen_widgets_category";
 
-    // Omni Additions
-    private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
-
     private CheckBoxPreference mEnableKeyguardWidgets;
 
     private ChooseLockSettingsHelper mChooseLockSettingsHelper;
     private DevicePolicyManager mDPM;
     private boolean mIsPrimary;
-
-    // Omni Additions
-    private CheckBoxPreference mLockRingBattery;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,10 +73,6 @@ public class LockscreenInterface extends SettingsPreferenceFragment {
 
         // This applies to all users
         // Enable or disable keyguard widget checkbox based on DPM state
-        mLockRingBattery = (CheckBoxPreference) findPreference(BATTERY_AROUND_LOCKSCREEN_RING);
-        mLockRingBattery.setChecked(Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, 0) == 1);
-
         mEnableKeyguardWidgets = (CheckBoxPreference) findPreference(KEY_ENABLE_WIDGETS);
         if (mEnableKeyguardWidgets != null) {
             if (ActivityManager.isLowRamDeviceStatic()) {
@@ -121,11 +111,6 @@ public class LockscreenInterface extends SettingsPreferenceFragment {
         final LockPatternUtils lockPatternUtils = mChooseLockSettingsHelper.utils();
         if (KEY_ENABLE_WIDGETS.equals(key)) {
             lockPatternUtils.setWidgetsEnabled(mEnableKeyguardWidgets.isChecked());
-            return true;
-        } else if (preference == mLockRingBattery) {
-            Settings.System.putInt(mContext.getContentResolver(),
-                    Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, mLockRingBattery.isChecked()
-                    ? 1 : 0);
             return true;
         }
 

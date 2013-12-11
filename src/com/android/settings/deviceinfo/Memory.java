@@ -112,13 +112,6 @@ public class Memory extends SettingsPreferenceFragment {
         category.init();
     }
 
-    private boolean isMassStorageEnabled() {
-        // Mass storage is enabled if primary volume supports it
-        final StorageVolume[] volumes = mStorageManager.getVolumeList();
-        final StorageVolume primary = StorageManager.getPrimaryVolume(volumes);
-        return primary != null && primary.allowMassStorage();
-    }
-
     @Override
     public void onResume() {
         super.onResume();
@@ -177,9 +170,7 @@ public class Memory extends SettingsPreferenceFragment {
     public void onPrepareOptionsMenu(Menu menu) {
         final MenuItem usb = menu.findItem(R.id.storage_usb);
         UserManager um = (UserManager)getActivity().getSystemService(Context.USER_SERVICE);
-        boolean usbItemVisible = !isMassStorageEnabled()
-                && !um.hasUserRestriction(UserManager.DISALLOW_USB_FILE_TRANSFER);
-        usb.setVisible(usbItemVisible);
+        usb.setVisible(!um.hasUserRestriction(UserManager.DISALLOW_USB_FILE_TRANSFER));
     }
 
     @Override

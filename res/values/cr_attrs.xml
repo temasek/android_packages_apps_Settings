@@ -44,4 +44,10 @@
         <attr name="useDefaultController" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="SeekBarPreferenceChOS">
+        <attr name="minAD" format="integer" />
+        <attr name="unitsLeft" format="string" />
+        <attr name="unitsRight" format="string" />
+    </declare-styleable>
+
 </resources>

@@ -15,6 +15,35 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi region code. -->
+    <string-array name="wifi_countrycode_entries">
+        <item>United States</item>
+        <item>Canada, Taiwan</item>
+        <item>Germany</item>
+        <item>Europe</item>
+        <item>Japan, Russia</item>
+        <item>Australia</item>
+        <item>China</item>
+        <item>Korea</item>
+        <item>Turkey</item>
+        <item>Singapore</item>
+        <item>Brazil</item>
+    </string-array>
+
+    <string-array name="wifi_countrycode_values" translatable="false">
+        <item>US</item>
+        <item>CA</item>
+        <item>DE</item>
+        <item>GB</item>
+        <item>JP</item>
+        <item>AU</item>
+        <item>CN</item>
+        <item>KR</item>
+        <item>TR</item>
+        <item>SG</item>
+        <item>BR</item>
+    </string-array>
+
     <!-- Ascending ringtone increase intervals -->
     <string-array name="increasing_ring_interval_entries" translatable="false">
         <item>@string/increasing_ring_interval_eachring</item>
@@ -154,56 +183,6 @@
         <item>5000</item>
     </string-array>
 
-    <string-array name="entries_network_widget" translatable="false">
-        <item>2G | 2G+3G</item>
-        <item>2G | 3G</item>
-        <item>2G | 3G | 2G+3G</item>
-    </string-array>
-
-    <string-array name="values_network_widget" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-    <string-array name="entries_screentimeout_widget">
-        <item>15s | 1m | 5m</item>
-        <item>30s | 2m | 5m</item>
-    </string-array>
-
-    <string-array name="values_screentimeout_widget" translatable="false">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-
-    <string-array name="entries_ring_widget" translatable="false">
-        <item>@string/cm_sound_mode_silent</item>
-        <item>@string/cm_sound_mode_vibrate</item>
-        <item>@string/cm_sound_mode_sound</item>
-        <item>@string/cm_sound_mode_soundVibrate</item>
-    </string-array>
-
-    <string-array name="values_ring_widget" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-
-    <!-- Quick pulldown -->
-    <string-array name="quick_pulldown_entries" translatable="false">
-        <item>@string/quick_pulldown_off</item>
-        <item>@string/quick_pulldown_right</item>
-        <item>@string/quick_pulldown_left</item>
-    </string-array>
-
-    <string-array name="quick_pulldown_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-
     <!-- Auto-brightness sensitivity -->
     <string-array name="auto_brightness_sensitivity_entries" translatable="false">
         <item>@string/auto_brightness_sensitivity_verylow</item>
@@ -220,25 +199,6 @@
         <item>50</item>
         <item>25</item>
     </integer-array>
-
-    <!-- Status bar auto-collapse behaviour -->
-    <string-array name="notification_drawer_collapse_on_dismiss_entries" translatable="false">
-        <item>@string/collapse_on_dismiss_never</item>
-        <item>@string/collapse_on_dismiss_if_empty</item>
-        <item>@string/collapse_on_dismiss_if_no_clearable</item>
-    </string-array>
-
-    <string-array name="notification_drawer_collapse_on_dismiss_summaries" translatable="false">
-        <item>@string/collapse_on_dismiss_never_summary</item>
-        <item>@string/collapse_on_dismiss_if_empty_summary</item>
-        <item>@string/collapse_on_dismiss_if_no_clearable_summary</item>
-    </string-array>
-
-    <string-array name="notification_drawer_collapse_on_dismiss_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
 
     <!-- Phone blacklist management -->
     <string-array name="blacklist_policy_unknown_entries" translatable="false">
@@ -294,6 +254,21 @@
         <item>26</item>
     </string-array>
 
+    <!--- Sms security limit -->
+    <string-array name="sms_security_check_limit_entries" translatable="false">
+        <item>@string/sms_security_check_limit_default</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+
+    <string-array name="sms_security_check_limit_values" translatable="false">
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+
     <!-- Hardware key rebinding -->
     <string-array name="hardware_keys_action_entries" translatable="false">
         <item>@string/hardware_keys_action_nothing</item>
@@ -311,20 +286,5 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
-    </string-array>
-
-    <!--- Sms security limit -->
-    <string-array name="sms_security_check_limit_entries" translatable="false">
-        <item>@string/sms_security_check_limit_default</item>
-        <item>50</item>
-        <item>100</item>
-        <item>200</item>
-    </string-array>
-
-    <string-array name="sms_security_check_limit_values" translatable="false">
-        <item>30</item>
-        <item>50</item>
-        <item>100</item>
-        <item>200</item>
     </string-array>
 </resources>

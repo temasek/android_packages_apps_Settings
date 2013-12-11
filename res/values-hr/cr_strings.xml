@@ -11,6 +11,11 @@
     <string name="attention">Upozorenje</string>
     <string name="disabled">Onemogućeno</string>
     <string name="default_string">Početno</string>
+    <string name="additional_options_title">Dodatne mogućnosti</string>
+    <string name="reset_message">Vrati sve na početne postavke?</string>
+    <string name="style_title">Izgled</string>
+    <string name="add">Dodaj</string>
+    <string name="title_general">Općenito</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek dodatne postavke</string>
@@ -62,22 +67,6 @@
     <string name="clock_date_style_uppercase">velikim slovima</string>
     <string name="clock_date_format_custom">Prilagođeni java oblik</string>
     <string name="status_bar_clock_style_reset_message">Početna postava boje sata?</string>
-
-    <!-- Notification Drawer Settings -->
-    <string name="notification_drawer_title">Ploča s obavijestima</string>
-    <string name="notification_drawer_style_title">Izgled ploče s obavijestima</string>
-    <string name="notification_style_summary">Promjenite svoje postavke ploče s obavijestima</string>
-    <string name="notification_drawer_background">Pozadina i prozirnost</string>
-
-    <!-- Notification drawer background -->
-    <string name="notification_wallpaper_title">Pozadina ploče s obavijestima</string>
-    <string name="notification_wallpaper_landscape_title">Različita pejsažna pozadina</string>
-    <string name="notification_background_color_fill">Boja popunjavanja</string>
-    <string name="notification_background_custom_image">Prilagođena slika</string>
-    <string name="notification_background_default_wallpaper">Početna postava pozadine</string>
-    <string name="notification_drawer_custom_background_dialog_title">Odaberi boju</string>
-    <string name="notif_wallpaper_alpha_title">Prozirnost pozadine obavijesti</string>
-    <string name="notif_alpha_title">Prozirnost retka obavijesti</string>
 
     <!-- Advanced low battery indicator options -->
     <string name="lights_and_warnings_title">Svjetla i upozorenja</string>
@@ -147,9 +136,6 @@
     <string name="restart_systemui">Ponovno pokreni SystemUI</string>
 
     <!-- Button shorcut actions -->
-    <string name="additional_options_title">Dodatne mogućnosti</string>
-    <string name="reset_message">Vrati sve vrijednosti na početne?</string>
-    <string name="style_title">Oblik</string>
     <string name="shortcut_action_airplane">Način rada u zrakoplovu</string>
     <string name="shortcut_action_expanded_desktop">Prišireni prikaz</string>
     <string name="shortcut_action_power_off">Isključi</string>
@@ -263,6 +249,7 @@
     <string name="shortcuts_color_mode_summary">Promjeni način boje ikone</string>
 
     <!-- Notification drawer settings  -->
+    <string name="notification_drawer_qs_title">Traka s obavijestima i brze postavke</string>
     <string name="notification_drawer_title">Traka s obavijestima</string>
     <string name="notification_hide_carrier_title">Sakrij oznaku operatera</string>
     <string name="notification_hide_carrier_summary">Sakrij oznaku operatera i bezžične mreže u traci s obavijestima</string>
@@ -400,14 +387,6 @@
     <string name="ram_bar_reset">Vrati</string>
     <string name="ram_bar_reset_message">Vrati izgled RAM trake na početni?</string>
 
-    <!-- Clear Recents position -->
-    <string name="clear_recents_position_title">Obriši mjesto nedavnih aplikacija</string>
-    <string name="clear_recents_position_disabled">Onemogućeno</string>
-    <string name="clear_recents_position_bottom_right">Dolje desno</string>
-    <string name="clear_recents_position_bottom_left">Dolje lijevo</string>
-    <string name="clear_recents_position_top_right">Gore desno</string>
-    <string name="clear_recents_position_top_left">Gore lijevo</string>
-
     <!-- Enable Quick Unlock -->
     <string name="lockscreen_quick_unlock_control_title">Brzo otključavanje</string>
     <string name="lockscreen_quick_unlock_control_summary">Automatski otključaj ako je unešen ispravan PIN ili zaporka</string>
@@ -504,9 +483,12 @@
     <string name="halo_msgbox_animation_none">Nijedna</string>
     <string name="halo_msgbox_animation_flip">Preokreni</string>
 
+    <string name="halo_enabled_title">Omogući HALO</string>
+    <string name="halo_enabled_summary">U potpunosti omogući ili onemogući HALO</string>
+
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
-    <string name="app_halo_label_black">Zabrani za HALO</string>
-    <string name="app_halo_label_white">Dozvoli za HALO</string>
+    <string name="app_halo_label_black">Zabranjeno za HALO</string>
+    <string name="app_halo_label_white">Dozvoljeno za HALO</string>
  
     <!-- ListView animation -->
     <string name="bars_and_menus_category_system_title">Sustav</string>
@@ -524,7 +506,7 @@
     <string name="listview_translate_right">Prijenos u desno</string>
 
     <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">Umetanje popisa</string>
+    <string name="listview_interpolator_title">Mogućnosti animacije popisa</string>
     <string name="listview_accelerate_interpolator">Ubrzaj umetanje</string>
     <string name="listview_decelerate_interpolator">Uspori umetanje</string>
     <string name="listview_accelerate_decelerate_interpolator">Ubrzaj/uspori umetanje</string>
@@ -532,5 +514,194 @@
     <string name="listview_overshoot_interpolator">Prebaci umetanje</string>
     <string name="listview_anticipate_overshoot_interpolator">Predvidi/prebaci umetanje</string>
     <string name="listview_bounce_interpolator">Skočno umetanje</string>
+
+    <!-- Lockscreen style settings -->
+    <string name="lockscreen_style_reset_message">Početne postavke boja zaslona zaključavanja?</string>
+    <string name="lockscreen_icon_title">Ikona ručice zaključavanja</string>
+    <string name="lockscreen_lock_icon_custom">Prilagođena ikona</string>
+    <string name="lockscreen_lock_icon_default">Zadana ikona</string>
+    <string name="lockscreen_colorize_handle_title">Boja prilagođene ručice</string>
+    <string name="lockscreen_colorize_handle_summary">Boja zaključavanja će biti podešena prema vašoj slici</string>
+    <string name="lockscreen_style_title">Izgled teme</string>
+    <string name="lockscreen_frame_color_title">Boja okvira</string>
+    <string name="lockscreen_frame_color_summary">Boja dodataka i okvira otključavanja</string>
+    <string name="lockscreen_lock_color_title">Boja zaključavanja</string>
+    <string name="lockscreen_lock_color_summary">Boja ručica zaključavanja</string>
+    <string name="lockscreen_dots_color_title">Boja točkica</string>
+    <string name="lockscreen_dots_color_summary">Boja točkica isijavanja</string>
+
+    <!-- Lockscreen widget settings -->
+    <string name="lockscreen_widgets_title">Dodaci</string>
+    <string name="lockscreen_camera_widget_title">Omogući fotoaparat</string>
+    <string name="lockscreen_camera_widget_summary">Prikaži sigurni dodatak fotoaparata na zaslonu zaključavanja</string>
+    <string name="lockscreen_maximize_widgets_title">Započni uvećan</string>
+    <string name="lockscreen_maximize_widgets_summary">Prikaži dodatak uvećan kod buđenja zaslona</string>
+    <string name="lockscreen_disable_hints_title">Onemogući početne savjete</string>
+    <string name="lockscreen_disable_hints_summary">Onemogućuje sjajni rub dodatka na zaslonu zaključavanja u portretnom prikazu</string>
+    <string name="lockscreen_use_widget_container_carousel_title">Omogući kružni prikaz dodataka u portretnom načinu</string>
+    <string name="lockscreen_use_widget_container_carousel_summary">Koristi kružni prikaz u portretnom načinu za prebacivanje između dodataka na zaslonu zaključavanja</string>
+
+    <!-- Active display settings -->
+    <string name="ad_settings_title">Aktivni prikaz</string>
+    <string name="ad_settings_summary">Promjeni postavke aktivnog prikaza</string>
+    <string name="ad_enable_title">Omogući</string>
+    <string name="ad_enable_summary_on">Aktivni prikaz omogućen</string>
+    <string name="ad_enable_summary_off">Aktivni prikaz onemogućen</string>
+    <string name="ad_text_title">Tekst obavijesti</string>
+    <string name="ad_text_summary">Prikaži tekst obavijesti oko prstena za otključavanje.</string>
+    <string name="ad_all_notifications_title">Sve obavijesti</string>
+    <string name="ad_all_notifications_summary">Prikaži sve obavijesti, uključujući i aktivne, koje se ne mogu očistiti.</string>
+    <string name="ad_hide_low_priority_title">Sakrij obavijesti niske važnosti</string>
+    <string name="ad_hide_low_priority_summary">Sakrij obavijesti niske važnosti, poput onih od Google Now.</string>
+    <string name="ad_pocket_mode_title">Džepni način</string>
+    <string name="ad_pocket_mode_summary">Prikaži obavijesti u aktivnom prikazu kad izvadite uređaj iz džepa.</string>
+    <string name="ad_redisplay_title">Ponovni prikaz obavijesti</string>
+    <string name="ad_sunlight_mode_title">Način jake svjetlosti</string>
+    <string name="ad_sunlight_mode_summary">Obrni boje u područjima jake svjetlosti, poput direktne sunčeve svjetlosti.</string>
+    <string name="ad_customizations_title">Prilagodbe</string>
+    <string name="ad_excluded_apps_title">Isključene aplikacije</string>
+    <string name="ad_excluded_apps_summary">Isključene aplikacije neće biti prikazane u aktivnom prikazu.</string>
+    <string name="ad_brightness_title">Svjetlina obavijesti</string>
+    <string name="ad_brightness_summary">Jakost svjetline kod prikaza obavijesti\n kad automatska svjetlina nije omogućena.</string>
+    <string name="ad_show_date_title">Prikaži datum</string>
+    <string name="ad_show_date_summary">Prikaži datum iznad sata</string>
+    <string name="ad_show_ampm_title">Prikaži AM/PM</string>
+    <string name="ad_show_ampm_summary">Prikaži AM/PM kod 12-satnog prikaza vremena</string>
+    <string name="ad_redisplay_never">Nikad</string>
+    <string name="ad_redisplay_1m">1 minuta</string>
+    <string name="ad_redisplay_5m">5 minuta</string>
+    <string name="ad_redisplay_15m">15 minuta</string>
+    <string name="ad_redisplay_30m">30 minuta</string>
+    <string name="ad_redisplay_1h">1 sat</string>
+    <string name="ad_redisplay_2h">2 sata</string>
+    <string name="ad_redisplay_5h">5 sati</string>
+    <string name="ad_pocket_mode_off">Isključeno</string>
+    <string name="ad_pocket_mode_notifications">Samo obavijesti</string>
+    <string name="ad_pocket_mode_always">Uvijek</string>
+
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Promjeni redoslijed brojeva na PIN podlozi</string>
+    <string name="lock_numpad_random_dialog_title">Nasumičan redoslijed brojeva na PIN podlozi</string>
+    <string name="lock_numpad_random_off">Isključeno</string>
+    <string name="lock_numpad_random_always">Uvijek</string>
+    <string name="lock_numpad_random_on_request">Na zahtjev</string>
+
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">Prikaži klizač prije sigurnog otključavanja</string>
+    <string name="lock_before_unlock_summary">Prikaži klizač zaslona zaključavanja prije mehanizma sigurnog otključavanja</string>
+
+    <!-- Sizes for pattern lockscreen -->
+    <string name="lock_pattern_size_3">3x3</string>
+    <string name="lock_pattern_size_4">4x4</string>
+    <string name="lock_pattern_size_5">5x5</string>
+    <string name="lock_pattern_size_6">6x6</string>
+    
+    <!-- Notification Drawer Settings -->
+    <string name="notification_drawer_title">Ploča s obavijestima</string>
+    <string name="notification_drawer_style_title">Izgled ploče s obavijestima</string>
+    <string name="notification_drawer_background">Pozadina i prozirnost</string>
+
+    <!-- Notification drawer background -->
+    <string name="notification_style_title">Izgled</string>
+    <string name="notification_style_summary">Promjenite izgled ploče s obavijestima</string>
+    <string name="notification_wallpaper_title">Pozadina</string>
+    <string name="notification_wallpaper_landscape_title">Različita pozadina za pejsažni način</string>
+    <string name="notification_background_color_fill">Boja popunjavanja</string>
+    <string name="notification_background_custom_image">Prilagođena slika</string>
+    <string name="notification_background_default_wallpaper">Početna postava pozadine</string>
+    <string name="notification_drawer_custom_background_dialog_title">Odaberite boju</string>
+    <string name="notif_wallpaper_alpha_title">Prozirnost ploče obavijesti</string>
+    <string name="notif_alpha_title">Prozirnost pojedine obavijesti</string>
+
+    <!-- Custom notification panel header -->
+    <string name="omni_features_title">Omni dodaci</string>
+    <string name="notification_drawer_category_title">Ploča s obavijestima</string>
+    <string name="custom_statusbar_header_title">Kontekstualno zaglavlje ploče s obavijestima</string>
+    <string name="custom_statusbar_header_summary">Postavljanje slikovne pozadine zaglavlja ploče s obavijestima na osnovu trenutnog vremena i datuma</string>
+
+    <string name="omni_features_recent_panel_title" >Izbornik nedavnih aplikacija</string>
+
+    <!--  Recents clear all -->
+    <string name="show_recent_clear_all_button_title">Prikaži gumb za čišćenje svega</string>
+    <string name="show_recent_clear_all_button_summary">Označi za prikaz ili odznači za skrivanje gumba za čišćenje nedavnih aplikacija</string>
+    <string name="recent_clear_all_button_location_title">Smještaj gumba za čišćenje</string>
+    <string name="recent_clear_all_button_location_summary">Odaberite u kojem će kutu zaslona biti prikazan gumb za čišćenje</string>
+    <string name="recent_clear_all_button_location_top_left">Gore lijevo</string>
+    <string name="recent_clear_all_button_location_top_right">Gore desno</string>
+    <string name="recent_clear_all_button_location_bottom_left">Dolje lijevo</string>
+    <string name="recent_clear_all_button_location_bottom_right">Dolje desno</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings_title">Brze postavke</string>
+    <string name="tile_picker_title">Pločice i raspored</string>
+    <string name="tile_picker_summary">Pregledajte, odaberite ili izmjenite prikazane pločice</string>
+    <string name="tile_choose_title">Odaberi pločicu</string>
+    <string name="title_tile_airplane">Zrakoplovni način</string>
+    <string name="title_tile_battery">Baterija</string>
+    <string name="title_tile_bluetooth">Bluetooth</string>
+    <string name="title_tile_brightness">Svjetlina</string>
+    <string name="title_tile_sleep">Spavanje</string>
+    <string name="title_tile_location">Lokacija</string>
+    <string name="title_tile_torch">Svjetiljka</string>
+    <string name="title_tile_lockscreen">Zaslon zaključavanja</string>
+    <string name="title_tile_lte">LTE</string>
+    <string name="title_tile_mobiledata">Mobilni podaci</string>
+    <string name="title_tile_autorotate">Orijentacija</string>
+    <string name="title_tile_settings">Postavke</string>
+    <string name="title_tile_sound">Zvuk</string>
+    <string name="title_tile_sync">Sinkronizacija</string>
+    <string name="title_tile_wifiap">Wi-Fi AP</string>
+    <string name="title_tile_wifi">Wi-Fi</string>
+    <string name="title_tile_user">Izmjena korisnika</string>
+    <string name="title_tile_networkmode">Mrežni način</string>
+    <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">Istek zaslona</string>
+    <string name="title_tile_quiet_hours">Vrijeme stišavanja</string>
+    <string name="title_tile_volume">Glasnoća</string>
+    <string name="title_tile_expanded_desktop">Prošireni prikaz</string>
+    <string name="title_tile_music">Glazba</string>
+    <string name="title_tile_reboot">Ponovno pokretanje</string>
+    <string name="tiles_reset_message">Vrati početne postavke?</string>
+
+    <!-- QuickSettings style options -->
+    <string name="quicksettings_tiles_style">Izgled</string>
+    <string name="summary_quicksettings_tiles_style">Pregledajte ili promjenite izgled brzih postavki</string>
+    <string name="quicksettings_tiles_style_additional_options">Dodatne mogućnosti</string>
+    <string name="tiles_per_row_title">Pločica u redu</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Scale landscape quantity</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Pejsažni prikaz prikazuje dvostruki broj pločica u redu</string>
+    <string name="quick_tiles_bg_color_title">Boja pozadine pločica</string>
+    <string name="quick_tiles_bg_pressed_color_title">Boja pozadine pritisnute pločice</string>
+    <string name="quick_tiles_text_color_title">Boja teksta pločica</string>
+    <string name="quick_tiles_alpha_title">Prozirnost pozadine pločica</string>
+    <string name="qs_style_reset_message">Vrati boje na početne vrijednosti?</string>
+
+    <string name="pref_network_mode_title">Mrežni način</string>
+    <string name="pref_screentimeout_mode_title">Način isteka prikaza</string>
+    <string name="pref_ring_mode_title">Način zvuka</string>
+    <string name="pref_music_mode_title">Način glazbe</string>
+    <string name="screentimeout_mode1">15s | 1m | 5m | Nikad</string>
+    <string name="screentimeout_mode2">30s | 2m | 5m | Nikad</string>
+    <string name="sound_mode_silent">Tiho</string>
+    <string name="sound_mode_vibrate">Vibracija</string>
+    <string name="sound_mode_sound">Zvuk</string>
+    <string name="sound_mode_soundVibrate">Zvuk &amp; Vibracija</string>
+    <string name="music_tile_mode_background">Prikaži omot albuma</string>
+    <string name="music_tile_mode_tracktitle">Prikaži naslov pjesme</string>
+
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Brzo povlačenje</string>
+    <string name="summary_quick_pulldown">Rub statusne trake povlači brze postavke</string>
+    <string name="quick_pulldown_off">Isključeno</string>
+    <string name="quick_pulldown_left">Lijevo</string>
+    <string name="quick_pulldown_right">Desno</string>
+
+    <!-- security settings menu unlock -->
+    <string name="unlock_menu_unlock_title">Otključavanje tipkom izbornika</string>
+    <string name="unlock_menu_unlock_summary">Pritisak tipke izbornika otključava uređaj</string>
+
+    <!-- Status Bar Activity Indicators -->
+    <string name="show_activity_indicators_on_status_bar_title">Pokazatelj mrežne aktivnosti</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Prikaži aktivnosti mreže u statusnoj tracu</string>
 
 </resources>

@@ -11,9 +11,14 @@
         android:title="@string/status_bar_title" />
 
     <PreferenceScreen
-        android:key="notification_drawer"
-        android:fragment="com.android.settings.temasek.NotificationDrawer"
-        android:title="@string/notification_drawer_title" />
+        android:key="notification_drawer_qs"
+        android:fragment="com.android.settings.temasek.NotificationDrawerQsSettings"
+        android:title="@string/notification_drawer_qs_title" />
+
+    <PreferenceScreen
+        android:key="omni_features"
+        android:fragment="com.android.settings.temasek.OmniFeatures"
+        android:title="@string/omni_features_title" />
 
     <PreferenceScreen
         android:key="lights_and_warnings"

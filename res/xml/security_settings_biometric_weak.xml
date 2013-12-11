@@ -27,6 +27,11 @@
             android:persistent="false"/>
 
         <PreferenceScreen
+            android:key="keyguard_style"
+            android:fragment="com.android.settings.temasek.LockscreenStyle"
+            android:title="@string/lockscreen_style_title"/>
+
+        <PreferenceScreen
             android:key="biometric_weak_improve_matching"
             android:title="@string/biometric_weak_improve_matching_title"/>
 
@@ -51,6 +56,28 @@
             android:key="power_button_instantly_locks"
             android:title="@string/lockpattern_settings_enable_power_button_instantly_locks"/>
 
+<<<<<<< HEAD
+=======
+        <CheckBoxPreference
+            android:key="lock_before_unlock"
+            android:title="@string/lock_before_unlock_title"
+            android:summary="@string/lock_before_unlock_summary" />
+
+        <PreferenceScreen
+            android:key="lock_screen_settings"
+            android:dependency="lock_before_unlock"
+            android:fragment="com.android.settings.temasek.LockscreenInterface"
+            android:title="@string/lock_screen_title"
+            android:summary="@string/lock_screen_summary" />
+
+        <PreferenceScreen
+            android:key="lockscreen_targets"
+            android:dependency="lock_before_unlock"
+            android:fragment="com.android.settings.temasek.LockscreenTargets"
+            android:summary="@string/lockscreen_target_summary"
+            android:title="@string/lockscreen_target_title" />
+
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
         <PreferenceScreen
             android:key="keyguard_enable_widgets"
             android:fragment="com.android.settings.temasek.LockscreenWidgets"

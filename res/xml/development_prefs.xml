@@ -27,15 +27,15 @@
                 android:targetClass="com.android.development.Development" />
     </PreferenceScreen>
 
-    <CheckBoxPreference
-        android:key="advanced_reboot"
-        android:title="@string/advanced_reboot_title"
-        android:summary="@string/advanced_reboot_summary" />
-
     <com.android.settings.BugreportPreference
             android:key="bugreport"
             android:title="@*android:string/bugreport_title"
             android:dialogTitle="@*android:string/bugreport_title" />
+
+    <CheckBoxPreference
+        android:key="advanced_reboot"
+        android:title="@string/advanced_reboot_title"
+        android:summary="@string/advanced_reboot_summary" />
 
     <PreferenceScreen
             android:key="local_backup_password"
@@ -133,6 +133,11 @@
             android:key="allow_mock_location"
             android:title="@string/allow_mock_location"
             android:summary="@string/allow_mock_location_summary"/>
+
+        <CheckBoxPreference
+            android:key="development_shortcut"
+            android:title="@string/development_shortcut_title"
+            android:summary="@string/development_shortcut_summary" />
 
         <PreferenceScreen android:key="debug_app"
                 android:title="@string/debug_app" />

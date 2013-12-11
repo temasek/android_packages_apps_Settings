@@ -72,6 +72,8 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String KEY_ENABLE_WIDGETS = "keyguard_enable_widgets";
     private static final String KEY_INTERFACE_SETTINGS = "lock_screen_settings";
     private static final String KEY_TARGET_SETTINGS = "lockscreen_targets";
+    private static final String LOCK_NUMPAD_RANDOM = "lock_numpad_random";
+    private static final String LOCK_BEFORE_UNLOCK = "lock_before_unlock";
 
     private static final int SET_OR_CHANGE_LOCK_METHOD_REQUEST = 123;
     private static final int CONFIRM_EXISTING_FOR_BIOMETRIC_WEAK_IMPROVE_REQUEST = 124;
@@ -99,6 +101,8 @@ public class SecuritySettings extends RestrictedSettingsFragment
 
     // Omni Additions
     private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "lockscreen_quick_unlock_control";
+    private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
+    private static final String MENU_UNLOCK_PREF = "menu_unlock";
 
     private PackageManager mPM;
     private DevicePolicyManager mDPM;
@@ -121,6 +125,11 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mPowerButtonInstantlyLocks;
     private Preference mEnableKeyguardWidgets;
     private CheckBoxPreference mQuickUnlockScreen;
+<<<<<<< HEAD
+=======
+    private ListPreference mLockNumpadRandom;
+    private CheckBoxPreference mLockBeforeUnlock;
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
 
     private Preference mNotificationAccess;
 
@@ -136,6 +145,13 @@ public class SecuritySettings extends RestrictedSettingsFragment
         super(null /* Don't ask for restrictions pin on creation. */);
     }
 
+<<<<<<< HEAD
+=======
+    // Omni Additions
+    private CheckBoxPreference mLockRingBattery;
+    private CheckBoxPreference mMenuUnlock;
+
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -227,6 +243,15 @@ public class SecuritySettings extends RestrictedSettingsFragment
             updateLockAfterPreferenceSummary();
         }
 
+        // Menu Unlock
+        mMenuUnlock = (CheckBoxPreference) root.findPreference(MENU_UNLOCK_PREF);
+        if (mMenuUnlock != null) {
+            final boolean configDisabled = getResources().getBoolean
+                    (com.android.internal.R.bool.config_disableMenuKeyInLockScreen);
+            mMenuUnlock.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.MENU_UNLOCK_SCREEN, configDisabled ? 0 : 1) == 1);
+        }
+
         // biometric weak liveliness
         mBiometricWeakLiveliness =
                 (CheckBoxPreference) root.findPreference(KEY_BIOMETRIC_WEAK_LIVELINESS);
@@ -262,6 +287,34 @@ public class SecuritySettings extends RestrictedSettingsFragment
             }
         }
 
+        // Lock Numpad Random
+        mLockNumpadRandom = (ListPreference) root.findPreference(LOCK_NUMPAD_RANDOM);
+        if (mLockNumpadRandom != null) {
+            mLockNumpadRandom.setValue(String.valueOf(
+                    Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.LOCK_NUMPAD_RANDOM, 0)));
+            mLockNumpadRandom.setSummary(mLockNumpadRandom.getEntry());
+            mLockNumpadRandom.setOnPreferenceChangeListener(this);
+        }
+
+        // Lock before Unlock
+        mLockBeforeUnlock = (CheckBoxPreference) root
+                .findPreference(LOCK_BEFORE_UNLOCK);
+        if (mLockBeforeUnlock != null) {
+            mLockBeforeUnlock.setChecked(
+                    Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.LOCK_BEFORE_UNLOCK, 0) == 1);
+            mLockBeforeUnlock.setOnPreferenceChangeListener(this);
+        }
+
+        // Add the additional Omni settings
+        mLockRingBattery = (CheckBoxPreference) root
+                .findPreference(BATTERY_AROUND_LOCKSCREEN_RING);
+        if (mLockRingBattery != null) {
+            mLockRingBattery.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, 0) == 1);
+        }
+
         // Append the rest of the settings
         addPreferencesFromResource(R.xml.security_settings_misc);
 
@@ -287,6 +340,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
             mQuickUnlockScreen.setOnPreferenceChangeListener(this);
         }
 
+<<<<<<< HEAD
         // Menu Unlock
         mMenuUnlock = (CheckBoxPreference) root.findPreference(MENU_UNLOCK_SCREEN);
         if (mMenuUnlock  != null) {
@@ -302,6 +356,8 @@ public class SecuritySettings extends RestrictedSettingsFragment
                     Settings.System.HOME_UNLOCK_SCREEN, 0) == 1);
             mHomeUnlock.setOnPreferenceChangeListener(this);
 
+=======
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
         // Link to widget settings showing summary about the actual status
         // and remove them on low memory devices
         mEnableKeyguardWidgets = root.findPreference(KEY_ENABLE_WIDGETS);
@@ -385,6 +441,13 @@ public class SecuritySettings extends RestrictedSettingsFragment
                     root.findPreference(KEY_APP_SECURITY_CATEGORY);
             appCategory.removePreference(mBlacklist);
             appCategory.removePreference(mSmsSecurityCheck);
+        }
+
+        // WhisperPush
+        // Only add if device has telephony support and has WhisperPush installed.
+        if (pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)
+                && isPackageInstalled("org.whispersystems.whisperpush")) {
+            addPreferencesFromResource(R.xml.security_settings_whisperpush);
         }
 
         mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
@@ -645,12 +708,21 @@ public class SecuritySettings extends RestrictedSettingsFragment
         } else if (preference == mQuickUnlockScreen) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL, isToggled(preference) ? 1 : 0);
+<<<<<<< HEAD
         } else if (preference == mMenuUnlock) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.MENU_UNLOCK_SCREEN, isToggled(preference) ? 1 : 0);
         } else if (preference == mHomeUnlock) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.HOME_UNLOCK_SCREEN, isToggled(preference) ? 1 : 0);
+=======
+        } else if (preference == mLockRingBattery) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, isToggled(preference) ? 1 : 0);
+        } else if (preference == mMenuUnlock) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.MENU_UNLOCK_SCREEN, isToggled(preference) ? 1 : 0);        
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
         } else if (preference == mShowPassword) {
             Settings.System.putInt(getContentResolver(), Settings.System.TEXT_SHOW_PASSWORD,
                     mShowPassword.isChecked() ? 1 : 0);
@@ -714,6 +786,16 @@ public class SecuritySettings extends RestrictedSettingsFragment
             Settings.Global.putInt(getContentResolver(),
                     Settings.Global.SMS_OUTGOING_CHECK_MAX_COUNT, smsSecurityCheck);
             updateSmsSecuritySummary(smsSecurityCheck);
+        } else if (preference == mLockNumpadRandom) {
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.LOCK_NUMPAD_RANDOM,
+                    Integer.valueOf((String) value));
+            mLockNumpadRandom.setValue(String.valueOf(value));
+            mLockNumpadRandom.setSummary(mLockNumpadRandom.getEntry());
+        } else if (preference == mLockBeforeUnlock) {
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.LOCK_BEFORE_UNLOCK,
+                    ((Boolean) value) ? 1 : 0);
         }
         return true;
     }

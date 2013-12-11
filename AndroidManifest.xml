@@ -151,6 +151,21 @@
             android:name=".cyanogenmod.superuser.SuReceiver"
             android:permission="android.permission.REPORT_SUPERUSER" />
 
+        <receiver
+            android:name=".cyanogenmod.superuser.PackageChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
 
         <!-- Settings -->
 
@@ -339,17 +354,20 @@
             </intent-filter>
         </activity-alias>
 
-        <activity android:name="ApnSettings"
+        <activity android:name="Settings$ApnSettingsActivity"
                 android:label="@string/apn_settings"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:launchMode="singleTask"
-                android:parentActivityName="Settings$WirelessSettingsActivity">
+                android:parentActivityName="Settings$WirelessSettingsActivity"
+                android:clearTaskOnLaunch="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.settings.APN_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
             </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.ApnSettings" />
         </activity>
 
         <activity android:name="Settings$BluetoothSettingsActivity"
@@ -1132,6 +1150,8 @@
             android:excludeFromRecents="true"
         />
 
+        <activity android:name="ChooseLockPatternSize" android:exported="false"/>
+
         <activity android:name="ChooseLockPattern" android:exported="false"/>
 
         <activity android:name="ChooseLockPassword" android:exported="false"
@@ -1175,8 +1195,9 @@
         <activity android:name=".deviceinfo.MiscFilesHandler"
                 android:theme="@android:style/Theme.Holo.DialogWhenLarge"/>
 
-        <activity android:name="ApnEditor"
-                android:label="@string/apn_edit">
+        <activity android:name="Settings$ApnEditorActivity"
+                android:label="@string/apn_edit"
+                android:clearTaskOnLaunch="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.EDIT" />
@@ -1189,6 +1210,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="vnd.android.cursor.dir/telephony-carrier" />
             </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.ApnEditor" />
         </activity>
 
         <activity android:name="MediaFormat" android:label="@string/media_format_title">
@@ -1425,7 +1448,6 @@
         </activity>
 
         <activity android:name="Settings$WifiDisplaySettingsActivity"
-                android:uiOptions="splitActionBarWhenNarrow"
                 android:label="@string/wifi_display_settings_title"
                 android:taskAffinity=""
                 android:excludeFromRecents="true">
@@ -1658,7 +1680,6 @@
         />
 
         <!-- CyanogenMod activities Start -->
-        <activity android:name=".cyanogenmod.SystemUiSettings"/>
 
         <activity android:name=".cyanogenmod.AutoBrightnessSetup"
                 android:excludeFromRecents="true"
@@ -1719,6 +1740,8 @@
 
         <activity android:name=".cyanogenmod.PerformanceSettings" />
 
+        <activity android:name=".ApnEditor" />
+
         <activity android:name="Settings$AnonymousStatsActivity"
                 android:label="@string/anonymous_statistics_title"
                 android:configChanges="orientation|keyboardHidden|screenSize"
@@ -1727,11 +1750,7 @@
                 android:value="com.android.settings.cmstats.AnonymousStats" />
         </activity>
 
-        <activity android:name=".cyanogenmod.ChangeLog" android:label="@string/changelog_title">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-            </intent-filter>
-        </activity>
+        <activity android:name=".cyanogenmod.ChangeLog" />
 
         <activity android:name=".notificationlight.NotificationLightSettings" />
 
@@ -1771,13 +1790,52 @@
                 android:value="com.android.settings.temasek.RamBar" />
         </activity>
 
+        <!-- Pseudo-activity used to provide an intent-filter entry point to quite hours settings -->
+        <activity android:name="Settings$QuietHoursSettingsActivity"
+                android:label="@string/quiet_hours_title"
+                android:taskAffinity=""
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.temasek.QuietHours" />
+        </activity>
+
+        <!-- Pseudo-activity used to provide an intent-filter entry point to battery icon settings -->
+        <activity android:name="Settings$BatteryIconStyleSettingsActivity"
+                android:label="@string/quiet_hours_title"
+                android:taskAffinity=""
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.temasek.BatteryIconStyle" />
+        </activity>
+
+        <!-- Pseudo-activity used to provide an intent-filter entry point to rotation settings
+        <activity android:name="Settings$DisplayRotationSettingsActivity"
+                android:label="@string/quiet_hours_title"
+                android:taskAffinity=""
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.temasek.DisplayRotation" />
+        </activity> -->
+
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
                 android:label="@string/crypt_keeper_encrypt_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.app.action.START_ENCRYPTION" />
-                <category android:name="android.intent.category.DEFAULT" /> />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.CryptKeeperSettings" />
