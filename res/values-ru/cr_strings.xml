@@ -4,7 +4,6 @@
 
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Неофициальная версия от Temasek</string>
-        
     <!-- General strings -->
     <string name="reset">Сброс</string>
     <string name="enabled">Включено</string>
@@ -16,7 +15,6 @@
     <string name="style_title">Стиль</string>
     <string name="add">Добавить</string>
     <string name="title_general">Основные</string>
-        
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Настройки от Temasek</string>
 
@@ -619,7 +617,7 @@
     <string name="notification_drawer_category_title">Панель уведомлений</string>
     <string name="custom_statusbar_header_title">Заголовок панели уведомлений</string>
     <string name="custom_statusbar_header_summary">Устанавить случайное фоновое изображение в заголовке панели уведомлений, там, где располагается текущая дата и время.</string>
-        
+
     <string name="omni_features_recent_panel_title" >Последние приложения</string>
 
     <!--  Recents clear all -->
@@ -631,7 +629,6 @@
     <string name="recent_clear_all_button_location_top_right">Вверху справа</string>
     <string name="recent_clear_all_button_location_bottom_left">Внизу слева</string>
     <string name="recent_clear_all_button_location_bottom_right">Внизу справа</string>
-        
     <!-- Quick Settings -->
     <string name="quick_settings_title">Панель быстрых настроек</string>
     <string name="tile_picker_title">Плитки и размещение</string>
@@ -704,5 +701,27 @@
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Индикатор сетевой активности</string>
     <string name="show_activity_indicators_on_status_bar_summary">Показывать индикатор сетевой активности в строке сосояния на значках сети или WiFi</string>
+
+    <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_category_title">Smart cover</string>
+    <string name="smart_cover_wake_title">Smart cover wake</string>
+    <string name="smart_cover_wake_summary">Wakeup device when smart cover opens</string>
+
+    <!-- Keyboard and Input ASS methods  -->
+    <string name="title_keyboard_input">Дополнительные параметры</string>
+    <string name="disable_fullscreen_keyboard_title">Отключить полноэкранную клавиатуру</string>
+    <string name="disable_fullscreen_keyboard_summary">Клавиатура в ландшафтном режиме никогда не будет занимать весь экран</string>
+    <string name="volume_key_cursor_control_title">Управление курсором кнопками громкости</string>
+    <string name="volume_key_cursor_control_on">Громкость вверх/вниз перемещает курсор влево/вправо</string>
+    <string name="volume_key_cursor_control_on_reverse">Громкость вверх/вниз перемещение курсора вправо/влево</string>
+    <string name="keyboard_rotation_toggle_title">Автоповорот клавиатуры</string>
+    <string name="keyboard_rotation_toggle_summary">Задействовать автоповорот при отображении клавиатуры</string>
+    <string name="keyboard_rotation_timeout_title">Задержка автоповорота</string>
+    <string name="keyboard_rotation_timeout_summary">Отключение датчика автоповорота через <xliff:g id="rotate_timeout">%1$s</xliff:g> секунд после скрытия клавиатуры</string>
+    <string name="keyboard_rotation_dialog">Примечание: Эта функция временно задействует автоповорот пока используется клавиатура, и не действует если автоповорот уже включен в настройках.</string>
+    <string name="show_enter_key_title">Показывать клавишу Ввод</string>
+    <string name="show_enter_key_summary">Показывать клавишу Ввод вместо клавиши со смайликом</string>
+    <string name="ime_switcher_notify">Показывать уведомление</string>
+    <string name="ime_switcher_notify_summary">Отображать уведомление о выборе метода ввода</string>
 
 </resources>

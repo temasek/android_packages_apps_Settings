@@ -96,6 +96,8 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String KEY_APP_SECURITY_CATEGORY = "app_security";
     private static final String KEY_BLACKLIST = "blacklist";
     private static final String KEY_SMS_SECURITY_CHECK_PREF = "sms_security_check_limit";
+    private static final String MENU_UNLOCK_SCREEN = "menu_unlock_screen";
+    private static final String HOME_UNLOCK_SCREEN = "home_unlock_screen";
 
     // Omni Additions
     private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "lockscreen_quick_unlock_control";
@@ -123,8 +125,11 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mPowerButtonInstantlyLocks;
     private Preference mEnableKeyguardWidgets;
     private CheckBoxPreference mQuickUnlockScreen;
+<<<<<<< HEAD
+=======
     private ListPreference mLockNumpadRandom;
     private CheckBoxPreference mLockBeforeUnlock;
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
 
     private Preference mNotificationAccess;
 
@@ -133,15 +138,20 @@ public class SecuritySettings extends RestrictedSettingsFragment
     // CyanogenMod Additions
     private PreferenceScreen mBlacklist;
     private ListPreference mSmsSecurityCheck;
+    private CheckBoxPreference mMenuUnlock;
+    private CheckBoxPreference mHomeUnlock;
 
     public SecuritySettings() {
         super(null /* Don't ask for restrictions pin on creation. */);
     }
 
+<<<<<<< HEAD
+=======
     // Omni Additions
     private CheckBoxPreference mLockRingBattery;
     private CheckBoxPreference mMenuUnlock;
 
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -330,6 +340,24 @@ public class SecuritySettings extends RestrictedSettingsFragment
             mQuickUnlockScreen.setOnPreferenceChangeListener(this);
         }
 
+<<<<<<< HEAD
+        // Menu Unlock
+        mMenuUnlock = (CheckBoxPreference) root.findPreference(MENU_UNLOCK_SCREEN);
+        if (mMenuUnlock  != null) {
+            mMenuUnlock.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.MENU_UNLOCK_SCREEN, 0) == 1);
+            mMenuUnlock.setOnPreferenceChangeListener(this);
+        }
+
+        // Home Unlock
+        mHomeUnlock = (CheckBoxPreference) root.findPreference(HOME_UNLOCK_SCREEN);
+        if (mHomeUnlock  != null) {
+            mHomeUnlock.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.HOME_UNLOCK_SCREEN, 0) == 1);
+            mHomeUnlock.setOnPreferenceChangeListener(this);
+
+=======
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
         // Link to widget settings showing summary about the actual status
         // and remove them on low memory devices
         mEnableKeyguardWidgets = root.findPreference(KEY_ENABLE_WIDGETS);
@@ -680,12 +708,21 @@ public class SecuritySettings extends RestrictedSettingsFragment
         } else if (preference == mQuickUnlockScreen) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL, isToggled(preference) ? 1 : 0);
+<<<<<<< HEAD
+        } else if (preference == mMenuUnlock) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.MENU_UNLOCK_SCREEN, isToggled(preference) ? 1 : 0);
+        } else if (preference == mHomeUnlock) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.HOME_UNLOCK_SCREEN, isToggled(preference) ? 1 : 0);
+=======
         } else if (preference == mLockRingBattery) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, isToggled(preference) ? 1 : 0);
         } else if (preference == mMenuUnlock) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.MENU_UNLOCK_SCREEN, isToggled(preference) ? 1 : 0);        
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
         } else if (preference == mShowPassword) {
             Settings.System.putInt(getContentResolver(), Settings.System.TEXT_SHOW_PASSWORD,
                     mShowPassword.isChecked() ? 1 : 0);
