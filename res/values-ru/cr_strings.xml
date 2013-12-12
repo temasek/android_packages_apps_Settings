@@ -724,4 +724,8 @@
     <string name="ime_switcher_notify">Показывать уведомление</string>
     <string name="ime_switcher_notify_summary">Отображать уведомление о выборе метода ввода</string>
 
+    <!-- Add option to hide power menu when screen is locked -->
+    <string name="lockscreen_power_menu_title">Включить меню кнопки питания</string>
+    <string name="lockscreen_power_menu_summary">Показывать меню кнопки питания, когда экран заблокирован</string>
+
 </resources>
