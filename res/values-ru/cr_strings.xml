@@ -4,7 +4,10 @@
 
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Неофициальная версия от Temasek</string>
+<<<<<<< HEAD
+=======
 
+>>>>>>> d2505d14c4203f23dc6226162f76cc35bfc84f0d
     <!-- General strings -->
     <string name="reset">Сброс</string>
     <string name="enabled">Включено</string>
@@ -724,5 +727,9 @@
     <string name="show_enter_key_summary">Показывать клавишу Ввод вместо клавиши со смайликом</string>
     <string name="ime_switcher_notify">Показывать уведомление</string>
     <string name="ime_switcher_notify_summary">Отображать уведомление о выборе метода ввода</string>
+
+    <!-- Add option to hide power menu when screen is locked -->
+    <string name="lockscreen_power_menu_title">Включить меню кнопки питания</string>
+    <string name="lockscreen_power_menu_summary">Показывать меню кнопки питания, когда экран заблокирован</string>
 
 </resources>

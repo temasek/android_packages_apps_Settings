@@ -555,10 +555,13 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="sms_security_check_limit_summary">Apps can send %d messages in 30 minutes before requiring confirmation</string>
     <string name="sms_security_check_limit_default">30 (Default)</string>
 
+<<<<<<< HEAD
+=======
     <!--- Lock clock -->
     <string name="lock_clock_title">Clock widget</string>
     <string name="lock_clock_summary">View or change how the \'cLock\' Home and Lock screen widgets will display</string>
 
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
     <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
     <string name="power_notifications_category_title">Charging sounds</string>
@@ -638,6 +641,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Delete apn confirmation dialog message -->
     <string name="confirm_delete_apn">The APN will be deleted.</string>
+<<<<<<< HEAD
+=======
 
     <!--  development shortcut -->
     <string name="development_shortcut_title">Development shortcut</string>
@@ -648,4 +653,5 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="whisperpush_registration_title">Register</string>
     <string name="whisperpush_registration_summary">Register for WhisperPush to enable encrypted SMS.</string>
     <string name="whisperpush_identitykey_title">Review identity keys</string>
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
 </resources>
