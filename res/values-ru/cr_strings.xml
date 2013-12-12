@@ -4,7 +4,6 @@
 
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Неофициальная версия от Temasek</string>
-
     <!-- General strings -->
     <string name="reset">Сброс</string>
     <string name="enabled">Включено</string>
@@ -661,6 +660,9 @@
     <string name="title_tile_music">Музыка</string>
     <string name="title_tile_reboot">Перезагузка</string>
     <string name="tiles_reset_message">Восстановить плитки и их расположение по умолчанию?</string>
+    <string name="disable_qs">Быстрые настройки отключены</string>
+    <string name="disable_qs_message">Все плитки были удалены. Панель быстрых настройек отключена.\n\nДля включения панели добавьте плитку.</string>
+    <string name="help_qs_message">Чтобы добавить плитку в панель быстрых настроек, нажмите кнопку Добавить и выберите нужную вам плитку. Для пермещения плиток, нажмите и удерживайте плитку и перетащите в нужное вам место. Для удаления плитки, перетащите её на кнопку Удалить, которая появляется при перемещении плитки.\n\nДля удаления панели быстрых настроек, удалите все плитки.</string>
 
     <!-- QuickSettings style options -->
     <string name="quicksettings_tiles_style">Стиль быстрых настроек</string>
@@ -724,5 +726,9 @@
     <string name="show_enter_key_summary">Показывать клавишу Ввод вместо клавиши со смайликом</string>
     <string name="ime_switcher_notify">Показывать уведомление</string>
     <string name="ime_switcher_notify_summary">Отображать уведомление о выборе метода ввода</string>
+
+    <!-- Add option to hide power menu when screen is locked -->
+    <string name="lockscreen_power_menu_title">Включить меню кнопки питания</string>
+    <string name="lockscreen_power_menu_summary">Показывать меню кнопки питания, когда экран заблокирован</string>
 
 </resources>
