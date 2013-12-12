@@ -4,10 +4,6 @@
 
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Неофициальная версия от Temasek</string>
-<<<<<<< HEAD
-=======
-
->>>>>>> d2505d14c4203f23dc6226162f76cc35bfc84f0d
     <!-- General strings -->
     <string name="reset">Сброс</string>
     <string name="enabled">Включено</string>
@@ -664,6 +660,9 @@
     <string name="title_tile_music">Музыка</string>
     <string name="title_tile_reboot">Перезагузка</string>
     <string name="tiles_reset_message">Восстановить плитки и их расположение по умолчанию?</string>
+    <string name="disable_qs">Quick settings are disabled</string>
+    <string name="disable_qs_message">All tiles were removed. Quick settings are disabled.\n\nTo enable add a tile.</string>
+    <string name="help_qs_message">To add a quick settings tile, press the Add button and choose the tile you would like. To rearrange your tiles, longpress the tile and drag it into the position you want. If you want to delete a tile, drag it to the delete button which appears while dragging the tile.\n\nTo disable quick settings, remove all tiles.</string>
 
     <!-- QuickSettings style options -->
     <string name="quicksettings_tiles_style">Стиль быстрых настроек</string>
