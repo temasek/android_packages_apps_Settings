@@ -702,6 +702,28 @@
 
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Pokazatelj mrežne aktivnosti</string>
-    <string name="show_activity_indicators_on_status_bar_summary">Prikaži aktivnosti mreže u statusnoj tracu</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Prikaži aktivnosti mreže u statusnoj traci</string>
+
+    <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_category_title">Pametna navlaka</string>
+    <string name="smart_cover_wake_title">Buđenje uređaja pametnom navlakom</string>
+    <string name="smart_cover_wake_summary">Probudi uređaj kad se otvori pametna navlaka</string>
+
+    <!-- Keyboard and Input ASS methods  -->
+    <string name="title_keyboard_input">Napredne mogućnosti</string>
+    <string name="disable_fullscreen_keyboard_title">Onemogući tipkovnicu preko cijelog zaslona</string>
+    <string name="disable_fullscreen_keyboard_summary">Tipkovnica u pejsažnom načinu nikad neće zauzeti cijeli zaslon</string>
+    <string name="volume_key_cursor_control_title">Upravljanje pokazivačem tipkama za glasnoću</string>
+    <string name="volume_key_cursor_control_on">Tipke za glasnoću gore/dolje pomiču pokazivač lijevo/desno</string>
+    <string name="volume_key_cursor_control_on_reverse">Tipke za glasnoću gore/dolje pomiču pokazivač desno/lijevo</string>
+    <string name="keyboard_rotation_toggle_title">Automatsko zakretanje tipkovnice</string>
+    <string name="keyboard_rotation_toggle_summary">Prisilno automatsko zakretanje kad je tipkovnica prikazana</string>
+    <string name="keyboard_rotation_timeout_title">Vrijeme isteka automatskog zakretanja</string>
+    <string name="keyboard_rotation_timeout_summary">Onemogućuje senzor automatskog zakretanja <xliff:g id="rotate_timeout">%1$s</xliff:g> sekundi nakon što je tipkovnica skrivena</string>
+    <string name="keyboard_rotation_dialog">Bilješka: Ovo svojstvo prisilno uključuje automatsko zakretanje kad je tipkovnica uključena. Ako je automatsko zakretanje već uključeno onda nema nikakvog utjecaja.</string>
+    <string name="show_enter_key_title">Prikaži tipku enter</string>
+    <string name="show_enter_key_summary">Prisilno prikazuje tipku enter umjesto tipke emotikona</string>
+    <string name="ime_switcher_notify">Obavijest o izborniku</string>
+    <string name="ime_switcher_notify_summary">Prikazuje obavijest o izborniku načina unosa</string>
 
 </resources>

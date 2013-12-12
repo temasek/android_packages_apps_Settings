@@ -25,6 +25,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.os.UserHandle;
 
 import com.android.internal.util.temasek.DeviceUtils;
 
@@ -42,7 +43,12 @@ public class NotificationDrawerQsSettings extends SettingsPreferenceFragment
             "notification_hide_carrier";
     private static final String PREF_NOTIFICATION_ALPHA =
             "notification_alpha";
-    private static final String QUICK_PULLDOWN = "quick_pulldown";
+    private static final String PRE_QUICK_PULLDOWN =
+            "quick_pulldown";
+    private static final String PREF_TILES_STYLE =
+            "quicksettings_tiles_style";
+    private static final String PREF_TILE_PICKER =
+            "tile_picker";
 
     CheckBoxPreference mHideCarrier;
     SeekBarPreference mNotificationAlpha;
@@ -86,7 +92,7 @@ public class NotificationDrawerQsSettings extends SettingsPreferenceFragment
         mNotificationAlpha.setProperty(Settings.System.NOTIFICATION_ALPHA);
         mNotificationAlpha.setOnPreferenceChangeListener(this);
 
-        mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
+        mQuickPulldown = (ListPreference) findPreference(PRE_QUICK_PULLDOWN);
         if (!DeviceUtils.isPhone(getActivity())) {
             prefs.removePreference(mQuickPulldown);
         } else {
@@ -96,12 +102,30 @@ public class NotificationDrawerQsSettings extends SettingsPreferenceFragment
             mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
             updatePulldownSummary();
         }
+
+        updateQuickSettingsOptions();
+    }
+
+    private void updateQuickSettingsOptions() {
+        Preference tilesStyle = (Preference) findPreference(PREF_TILES_STYLE);
+        Preference tilesPicker = (Preference) findPreference(PREF_TILE_PICKER);
+        String qsConfig = Settings.System.getStringForUser(getContentResolver(),
+                Settings.System.QUICK_SETTINGS_TILES, UserHandle.USER_CURRENT);
+        boolean hideSettingsPanel = qsConfig != null && qsConfig.isEmpty();
+        mQuickPulldown.setEnabled(!hideSettingsPanel);
+        tilesStyle.setEnabled(!hideSettingsPanel);
+        if (hideSettingsPanel) {
+            tilesPicker.setSummary(getResources().getString(R.string.disable_qs));
+        } else {
+            tilesPicker.setSummary(getResources().getString(R.string.tile_picker_summary));
+        }
     }
 
     @Override
     public void onResume() {
         super.onResume();
         QuickSettingsUtil.updateAvailableTiles(getActivity());
+        updateQuickSettingsOptions();
     }
 
     @Override

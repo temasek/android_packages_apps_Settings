@@ -156,7 +156,7 @@
     <string name="shortcut_action_menu_big">Menu</string>
     <string name="shortcut_action_qs">Panneau de paramètres rapides</string>
     <string name="shortcut_action_none">Aucun</string>
-    <string name="shortcut_action_power_menu">Menu d\'extinction</string>
+    <string name="shortcut_action_power_menu">Menu global</string>
     <string name="shortcut_action_torch">Torche</string>
     <string name="shortcut_action_longpress">Appui long:</string>
     <string name="shortcut_action_select_action_longpress">Choisissez l\'action d\'appui long:</string>
@@ -662,6 +662,9 @@
     <string name="title_tile_music">Musique</string>
     <string name="title_tile_reboot">Redémarrer</string>
     <string name="tiles_reset_message">Restaurer les tuiles par défaut et leur mise en page ?</string>
+    <string name="disable_qs">Désactiver les paramètres rapides</string>
+    <string name="disable_qs_message">Toutes les tuiles ont été effacées. Les paramètres rapides sont maintenant désactivés.\n\nPour les réactiver, veuillez ajouter une tuile.</string>
+    <string name="help_qs_message">Pour ajouter une tuile de paramètres rapides, veuillez appuyers sur le boutton Ajouter et choisissez quelle tuile vous voulez utiliser. Pour réarranger les tuiles, veuillez appuyer longuement sur la tuile et la faire glisser jusqu\'à la position que vous souhaitez. Si vous voulez effacer une tuile, faites la glisser sur le bouton Effacer qui apparait lorsque vous faites glisser la tuile.\n\nPour désactiver les paramètres rapides, veuillez effacer toutes les tuiles.</string>
 
     <!-- QuickSettings style options -->
     <string name="quicksettings_tiles_style">Style des paramètres rapides</string>
@@ -703,5 +706,31 @@
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Indicateur d\'activité réseau</string>
     <string name="show_activity_indicators_on_status_bar_summary">Afficher l\'activité réseau dans la barre d\'état</string>
+
+    <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_category_title">Smart cover</string>
+    <string name="smart_cover_wake_title">Reveil Smart Cover</string>
+    <string name="smart_cover_wake_summary">Reveiller l\'appareil lorsque la smart cover est ouverte</string>
+
+    <!-- Keyboard and Input ASS methods  -->
+    <string name="title_keyboard_input">Options avancées</string>
+    <string name="disable_fullscreen_keyboard_title">Désactiver le clavier plein écran</string>
+    <string name="disable_fullscreen_keyboard_summary">Le clavier en mode paysage ne prendra jamais tous l\'écran</string>
+    <string name="volume_key_cursor_control_title">Contrôle du curseur avec les bouttons de volumes</string>
+    <string name="volume_key_cursor_control_on">Les bouttons de volume haut/bas deplacent le curseur à gauche/droite</string>
+    <string name="volume_key_cursor_control_on_reverse">Les bouttons de volume haut/bas deplacent le curseur à droite/gauche</string>
+    <string name="keyboard_rotation_toggle_title">Rotation automatique du clavier</string>
+    <string name="keyboard_rotation_toggle_summary">Forcer la rotation automatique lorsque le clavier est affiché</string>
+    <string name="keyboard_rotation_timeout_title">Temps mort de la rotation automatique</string>
+    <string name="keyboard_rotation_timeout_summary">Désactiver le capteur de rotation automatique <xliff:g id="rotate_timeout">%1$s</xliff:g> secondes après que le clavier soit caché</string>
+    <string name="keyboard_rotation_dialog">Note: Cette fonctionalite force l\'activation temporaire de la rotation automatique du clavier lorsque celui-ci est affiché. Cela n\'a aucun effet lorsque la rotation automatique est déjà activée.</string>
+    <string name="show_enter_key_title">Afficher la touche Entrée</string>
+    <string name="show_enter_key_summary">Forcer le clavier à montrer la touche Entrée au lieu de la touche Smiley</string>
+    <string name="ime_switcher_notify">Notification de selection de clavier</string>
+    <string name="ime_switcher_notify_summary">Afficher la notification de selection de clavier</string>
+
+    <!-- Add option to hide power menu when screen is locked -->
+    <string name="lockscreen_power_menu_title">Activer le menu global</string>
+    <string name="lockscreen_power_menu_summary">Afficher le menu global lorsque l\'écran est verrouillé</string>
 
 </resources>

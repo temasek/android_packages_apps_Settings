@@ -16,6 +16,7 @@
 
 package com.android.settings.temasek.quicksettings;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -26,6 +27,7 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.res.Resources.NotFoundException;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -61,6 +63,7 @@ import java.util.Comparator;
 public class QuickSettingsTiles extends Fragment {
 
     private static final int MENU_RESET = Menu.FIRST;
+    private static final int MENU_HELP  = MENU_RESET + 1;
 
     private static final String SEPARATOR = "OV=I=XseparatorX=I=VO";
 
@@ -70,6 +73,8 @@ public class QuickSettingsTiles extends Fragment {
     private static final int DLG_RINGER        = 3;
     private static final int DLG_MUSIC         = 4;
     private static final int DLG_SHOW_LIST     = 5;
+    private static final int DLG_HELP          = 6;
+    private static final int DLG_DISABLED      = 7;
 
     private DraggableGridView mDragView;
     private ViewGroup mContainer;
@@ -250,7 +255,11 @@ public class QuickSettingsTiles extends Fragment {
                         QuickSettingsUtil.getCurrentTiles(getActivity()));
                 tiles.remove(index);
                 QuickSettingsUtil.saveCurrentTiles(getActivity(),
-                        QuickSettingsUtil.getTileStringFromList(tiles));
+                        mDragView.getChildCount() == 1 ?
+                        "" : QuickSettingsUtil.getTileStringFromList(tiles));
+                if (mDragView.getChildCount() == 1) {
+                    showDialogInner(DLG_DISABLED);
+                }
             }
         });
         mDragView.setOnItemClickListener(new OnItemClickListener() {
@@ -280,6 +289,15 @@ public class QuickSettingsTiles extends Fragment {
             }
         });
 
+        // get shared preference
+        SharedPreferences preferences =
+                getActivity().getSharedPreferences("quick_settings_tiles", Activity.MODE_PRIVATE);
+        if (!preferences.getBoolean("first_help_shown", false)) {
+            preferences.edit()
+                    .putBoolean("first_help_shown", true).commit();
+            showDialogInner(DLG_HELP);
+        }
+
         setHasOptionsMenu(true);
     }
 
@@ -296,6 +314,9 @@ public class QuickSettingsTiles extends Fragment {
         menu.add(0, MENU_RESET, 0, R.string.reset)
                 .setIcon(R.drawable.ic_settings_backup) // use the backup icon
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        menu.add(0, MENU_HELP, 0, R.string.help_label)
+                .setIcon(R.drawable.ic_settings_about)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 
     @Override
@@ -303,6 +324,9 @@ public class QuickSettingsTiles extends Fragment {
         switch (item.getItemId()) {
             case MENU_RESET:
                 showDialogInner(DLG_RESET);
+                return true;
+            case MENU_HELP:
+                showDialogInner(DLG_HELP);
                 return true;
             default:
                 return false;
@@ -340,6 +364,28 @@ public class QuickSettingsTiles extends Fragment {
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             int id = getArguments().getInt("id");
             switch (id) {
+                case DLG_DISABLED:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.disabled)
+                    .setMessage(R.string.disable_qs_message)
+                    .setNegativeButton(R.string.dlg_ok,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    })
+                    .create();
+                case DLG_HELP:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.help_label)
+                    .setMessage(R.string.help_qs_message)
+                    .setNegativeButton(R.string.dlg_ok,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    })
+                    .create();
                 case DLG_RESET:
                     return new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.reset)
