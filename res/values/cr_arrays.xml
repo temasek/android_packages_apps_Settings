@@ -125,12 +125,14 @@
     <!-- Lockscreen lock icon values -->
     <string-array name="lock_icon_entries">
         <item>@string/lockscreen_lock_icon_custom</item>
+        <item>@string/lockscreen_lock_icon_temasek</item>
         <item>@string/lockscreen_lock_icon_default</item>
     </string-array>
 
     <string-array name="lock_icon_values" translatable="false">
         <item>0</item>
         <item>1</item>
+        <item>2</item>
     </string-array>
 
     <!-- Icon type for lockscreen shorcut. -->

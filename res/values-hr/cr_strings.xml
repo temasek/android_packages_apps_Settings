@@ -662,6 +662,9 @@
     <string name="title_tile_music">Glazba</string>
     <string name="title_tile_reboot">Ponovno pokretanje</string>
     <string name="tiles_reset_message">Vrati početne postavke?</string>
+    <string name="disable_qs">Brze postavke su onemogućene</string>
+    <string name="disable_qs_message">Sve pločice su izbrisane. Brze postavke su onemogućene.\n\nDa bi omogućili brze postavke dodajte pločicu.</string>
+    <string name="help_qs_message">Da bi dodali pločicu brzih postavki dodirnite tipku za dodavanje i odaberite pločicu koju želite dodati. Za premještaj pločica dugo držite pločicu i povucite je na željeno mjesto. Ako želite obrisati pločicu povucite ju na mjesto za brisanje koje se pojavljuje kad pomičete pločicu.\n\nZa onemogućavanje brzih postavki obrišite sve pločice.</string>
 
     <!-- QuickSettings style options -->
     <string name="quicksettings_tiles_style">Izgled</string>
@@ -725,5 +728,9 @@
     <string name="show_enter_key_summary">Prisilno prikazuje tipku enter umjesto tipke emotikona</string>
     <string name="ime_switcher_notify">Obavijest o izborniku</string>
     <string name="ime_switcher_notify_summary">Prikazuje obavijest o izborniku načina unosa</string>
+
+    <!-- Add option to hide power menu when screen is locked -->
+    <string name="lockscreen_power_menu_title">Omogući izbornik pokretanja</string>
+    <string name="lockscreen_power_menu_summary">Prikaži izbornik pokretanja kad je zaslon upaljen</string>
 
 </resources>
