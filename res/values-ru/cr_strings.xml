@@ -518,9 +518,10 @@
     <string name="lockscreen_style_reset_message">Сбросить все цвета экрана блокировки?</string>
     <string name="lockscreen_icon_title">Иконка замка в слайдере</string>
     <string name="lockscreen_lock_icon_custom">Пользовательская иконка</string>
+    <string name="lockscreen_lock_icon_temasek">Иконка от Temasek</string>
     <string name="lockscreen_lock_icon_default">Иконка по умолчанию</string>
-    <string name="lockscreen_colorize_handle_title">Изменить цвет замка</string>
-    <string name="lockscreen_colorize_handle_summary">Пользовательская картинка будет определять цвет блокировки</string>
+    <string name="lockscreen_colorize_handle_title">Расскрасить вручную</string>
+    <string name="lockscreen_colorize_handle_summary">Цвет блокировки будет установлен на основе ручного выбора</string>
     <string name="lockscreen_style_title">Стиль блокировки</string>
     <string name="lockscreen_frame_color_title">Цвет рамки</string>
     <string name="lockscreen_frame_color_summary">Цвет рамки и фона экрана разблокировки</string>
