@@ -52,6 +52,9 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_SHOW_DATE = "ad_show_date";
     private static final String KEY_SHOW_AMPM = "ad_show_ampm";
     private static final String KEY_BRIGHTNESS = "ad_brightness";
+    private static final String KEY_TIMEOUT = "ad_timeout";
+    private static final String KEY_THRESHOLD = "ad_threshold";
+    private static final String KEY_TURNOFF_MODE = "ad_turnoff_mode";
 
     private SwitchPreference mEnabledPref;
     private CheckBoxPreference mShowTextPref;
@@ -64,6 +67,9 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
     private ListPreference mRedisplayPref;
     private SeekBarPreferenceChOS mBrightnessLevel;
     private AppMultiSelectListPreference mExcludedAppsPref;
+    private ListPreference mDisplayTimeout;
+    private ListPreference mProximityThreshold;
+    private CheckBoxPreference mTurnOffModePref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -130,6 +136,24 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
         Set<String> excludedApps = getExcludedApps();
         if (excludedApps != null) mExcludedAppsPref.setValues(excludedApps);
         mExcludedAppsPref.setOnPreferenceChangeListener(this);
+
+        mDisplayTimeout = (ListPreference) prefSet.findPreference(KEY_TIMEOUT);
+        mDisplayTimeout.setOnPreferenceChangeListener(this);
+        timeout = Settings.System.getLong(getContentResolver(),
+                Settings.System.ACTIVE_DISPLAY_TIMEOUT, 8000L);
+        mDisplayTimeout.setValue(String.valueOf(timeout));
+        updateTimeoutSummary(timeout);
+
+        mProximityThreshold = (ListPreference) prefSet.findPreference(KEY_THRESHOLD);
+        mProximityThreshold.setOnPreferenceChangeListener(this);
+        long threshold = Settings.System.getLong(getContentResolver(),
+                Settings.System.ACTIVE_DISPLAY_THRESHOLD, 5000L);
+        mProximityThreshold.setValue(String.valueOf(threshold));
+        updateThresholdSummary(threshold);
+
+        mTurnOffModePref = (CheckBoxPreference) findPreference(KEY_TURNOFF_MODE);
+        mTurnOffModePref.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.ACTIVE_DISPLAY_TURNOFF_MODE, 0) == 1));
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -153,6 +177,14 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mExcludedAppsPref) {
             storeExcludedApps((Set<String>) newValue);
+            return true;
+        } else if (preference == mDisplayTimeout) {
+            long timeout = Integer.valueOf((String) newValue);
+            updateTimeoutSummary(timeout);
+            return true;
+        } else if (preference == mProximityThreshold) {
+            long threshold = Integer.valueOf((String) newValue);
+            updateThresholdSummary(threshold);
             return true;
         }
         return false;
@@ -192,6 +224,11 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.ACTIVE_DISPLAY_SHOW_AMPM,
                     value ? 1 : 0);
+        } else if (preference == mTurnOffModePref) {
+            value = mTurnOffModePref.isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.ACTIVE_DISPLAY_TURNOFF_MODE,
+                    value ? 1 : 0);
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
@@ -210,6 +247,24 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
         mRedisplayPref.setSummary(mRedisplayPref.getEntries()[mRedisplayPref.findIndexOfValue("" + value)]);
         Settings.System.putLong(getContentResolver(),
                 Settings.System.ACTIVE_DISPLAY_REDISPLAY, value);
+    }
+
+    private void updateTimeoutSummary(long value) {
+        try {
+            mDisplayTimeout.setSummary(mDisplayTimeout.getEntries()[mDisplayTimeout.findIndexOfValue("" + value)]);
+            Settings.System.putLong(getContentResolver(),
+                    Settings.System.ACTIVE_DISPLAY_TIMEOUT, value);
+        } catch (ArrayIndexOutOfBoundsException e) {
+        }
+    }
+
+    private void updateThresholdSummary(long value) {
+        try {
+            mProximityThreshold.setSummary(mProximityThreshold.getEntries()[mProximityThreshold.findIndexOfValue("" + value)]);
+            Settings.System.putLong(getContentResolver(),
+                    Settings.System.ACTIVE_DISPLAY_THRESHOLD, value);
+        } catch (ArrayIndexOutOfBoundsException e) {
+        }
     }
 
     private boolean hasProximitySensor() {

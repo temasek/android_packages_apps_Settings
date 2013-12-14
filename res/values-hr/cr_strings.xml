@@ -519,6 +519,7 @@
     <string name="lockscreen_style_reset_message">Početne postavke boja zaslona zaključavanja?</string>
     <string name="lockscreen_icon_title">Ikona ručice zaključavanja</string>
     <string name="lockscreen_lock_icon_custom">Prilagođena ikona</string>
+    <string name="lockscreen_lock_icon_temasek">Temasek ikona</string>
     <string name="lockscreen_lock_icon_default">Zadana ikona</string>
     <string name="lockscreen_colorize_handle_title">Boja prilagođene ručice</string>
     <string name="lockscreen_colorize_handle_summary">Boja zaključavanja će biti podešena prema vašoj slici</string>
