@@ -18,13 +18,17 @@
 package com.android.settings.temasek.quicksettings;
 
 import static com.android.internal.util.temasek.QSConstants.TILES_DEFAULT;
+import static com.android.internal.util.temasek.QSConstants.DYNAMIC_TILES_DEFAULT;
 import static com.android.internal.util.temasek.QSConstants.TILE_AIRPLANE;
+import static com.android.internal.util.temasek.QSConstants.TILE_ALARM;
 import static com.android.internal.util.temasek.QSConstants.TILE_AUTOROTATE;
 import static com.android.internal.util.temasek.QSConstants.TILE_BATTERY;
 import static com.android.internal.util.temasek.QSConstants.TILE_BLUETOOTH;
 import static com.android.internal.util.temasek.QSConstants.TILE_BRIGHTNESS;
+import static com.android.internal.util.temasek.QSConstants.TILE_BUGREPORT;
 import static com.android.internal.util.temasek.QSConstants.TILE_DELIMITER;
 import static com.android.internal.util.temasek.QSConstants.TILE_EXPANDEDDESKTOP;
+import static com.android.internal.util.temasek.QSConstants.TILE_IMESWITCHER;
 import static com.android.internal.util.temasek.QSConstants.TILE_LOCATION;
 import static com.android.internal.util.temasek.QSConstants.TILE_LOCKSCREEN;
 import static com.android.internal.util.temasek.QSConstants.TILE_LTE;
@@ -39,6 +43,7 @@ import static com.android.internal.util.temasek.QSConstants.TILE_SETTINGS;
 import static com.android.internal.util.temasek.QSConstants.TILE_SLEEP;
 import static com.android.internal.util.temasek.QSConstants.TILE_SYNC;
 import static com.android.internal.util.temasek.QSConstants.TILE_TORCH;
+import static com.android.internal.util.temasek.QSConstants.TILE_USBTETHER;
 import static com.android.internal.util.temasek.QSConstants.TILE_USER;
 import static com.android.internal.util.temasek.QSConstants.TILE_VOLUME;
 import static com.android.internal.util.temasek.QSConstants.TILE_WIFI;
@@ -202,6 +207,40 @@ Log.e("qsUtil", "torch removed");
 
     }
 
+    public static ArrayList<String> getAllDynamicTiles(Context context) {
+         // Don't show the ime switcher if not supported
+        if (!DeviceUtils.deviceSupportsImeSwitcher(context)) {
+            DYNAMIC_TILES_DEFAULT.remove(TILE_IMESWITCHER);
+        }
+        // Don't show the usb tethering tile if not supported
+        if (!DeviceUtils.deviceSupportsUsbTether(context)) {
+            DYNAMIC_TILES_DEFAULT.remove(TILE_USBTETHER);
+        }
+        return DYNAMIC_TILES_DEFAULT;
+    }
+
+    public static String getDynamicTileDescription(Context context, String tile) {
+        if (tile.equals(TILE_IMESWITCHER)) {
+            return context.getResources().getString(R.string.dynamic_tile_ime_switcher);
+        } else if (tile.equals(TILE_USBTETHER)) {
+            return context.getResources().getString(R.string.dynamic_tile_usb_tether);
+        } else if (tile.equals(TILE_ALARM)) {
+            return context.getResources().getString(R.string.dynamic_tile_alarm);
+        } else if (tile.equals(TILE_BUGREPORT)) {
+            return context.getResources().getString(R.string.dynamic_tile_bugreport);
+        }
+        return null;
+    }
+
+    public static boolean[] toPrimitiveArray(ArrayList<Boolean> booleanList) {
+        boolean[] primitives = new boolean[booleanList.size()];
+        int index = 0;
+        for (Boolean value : booleanList) {
+            primitives[index++] = value;
+        }
+        return primitives;
+    }
+
     private static synchronized void refreshAvailableTiles(Context context) {
         ContentResolver resolver = context.getContentResolver();
 
@@ -282,7 +321,7 @@ Log.e("qsUtil", "torch removed");
     }
 
     public static ArrayList<String> getTileListFromString(String tiles) {
-        return new ArrayList<String>(Arrays.asList(tiles.split("\\|")));
+        return new ArrayList<String>(Arrays.asList(tiles.split("\\" + TILE_DELIMITER)));
     }
 
     public static String getTileStringFromList(ArrayList<String> tiles) {

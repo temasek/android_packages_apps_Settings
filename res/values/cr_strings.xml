@@ -5,7 +5,7 @@
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT Translate this -->
-    <string name="temasek_version_default">V20.1</string>
+    <string name="temasek_version_default">V20.2-private</string>
 
     <!-- General strings -->
     <string name="reset">Reset</string>
@@ -681,10 +681,15 @@
     <string name="title_tile_expanded_desktop">Expanded desktop</string>
     <string name="title_tile_music">Music</string>
     <string name="title_tile_reboot">Reboot</string>
-    <string name="tiles_reset_message">Restore the default displayed tiles and layout?</string>
+    <string name="dynamic_tile_ime_switcher">IME switcher</string>
+    <string name="dynamic_tile_usb_tether">USB tether</string>
+    <string name="dynamic_tile_alarm">Alarm</string>
+    <string name="dynamic_tile_bugreport">Bugreport</string>
+    <string name="dynamic_tiles_title">Dynamic tiles</string>
+    <string name="tiles_reset_message">Reset displayed tiles and layout to default?</string>
     <string name="disable_qs">Quick settings are disabled</string>
     <string name="disable_qs_message">All tiles were removed. Quick settings are disabled.\n\nTo enable add a tile.</string>
-    <string name="help_qs_message">To add a quick settings tile, press the Add button and choose the tile you would like. To rearrange your tiles, longpress the tile and drag it into the position you want. If you want to delete a tile, drag it to the delete button which appears while dragging the tile.\n\nTo disable quick settings, remove all tiles.</string>
+    <string name="help_qs_message">To add a quick settings tile, press the Add button and choose the tile you would like. To rearrange your tiles, longpress the tile and drag it into the position you want. If you want to delete a tile, drag it to the delete button which appears while dragging the tile.\n\nTo setup dynamic tiles press the respective icon on the top right of the screen\n\nTo disable quick settings, remove all tiles.</string>
 
     <!-- QuickSettings style options -->
     <string name="quicksettings_tiles_style">Style</string>
