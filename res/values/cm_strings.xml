@@ -642,6 +642,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="privacy_guard_manager_show_system_apps">Show built-in apps</string>
     <string name="privacy_guard_manager_filter_permissions">Permission filter</string>
     <string name="privacy_guard_advanced_settings_title">Advanced</string>
+    <string name="privacy_guard_notification_title">Show Notification</string>
 
     <!-- Blacklist preferences -->
     <string name="blacklist_title">Blacklist</string>
