@@ -4,6 +4,7 @@
 
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Неофициальная версия от Temasek</string>
+	
     <!-- General strings -->
     <string name="reset">Сброс</string>
     <string name="enabled">Включено</string>
@@ -556,8 +557,12 @@
     <string name="ad_pocket_mode_title">"Карманный" режим</string>
     <string name="ad_pocket_mode_summary">Показывать уведомления активного дисплея, когда устройство извлекается из кармана.</string>
     <string name="ad_redisplay_title">Показывать уведомления повторно</string>
+    <string name="ad_timeout_title">Задержка отключения дисплея</string>
+    <string name="ad_threshold_title">Порг приближения</string>
     <string name="ad_sunlight_mode_title">Режим "Солнечный свет"</string>
     <string name="ad_sunlight_mode_summary">Инвертировать цвета, если вы находитесь в ярко освещённом месте, например под прямым солнечным светом.</string>
+    <string name="ad_turnoff_mode_title">Отключение дисплея</string>
+    <string name="ad_turnoff_mode_summary">Отключить дисплей, если устройство находится в кармане, и снова перейти в режим активного дисплея</string>
     <string name="ad_customizations_title">Настройки</string>
     <string name="ad_excluded_apps_title">Исключённые приложения</string>
     <string name="ad_excluded_apps_summary">Исключённые приложения не будут отображаться на активном дисплее.</string>
@@ -575,6 +580,18 @@
     <string name="ad_redisplay_1h">1 час</string>
     <string name="ad_redisplay_2h">2 часа</string>
     <string name="ad_redisplay_5h">5 часов</string>
+    <string name="ad_timeout_3s">3 секунды</string>
+    <string name="ad_timeout_5s">5 секунд</string>
+    <string name="ad_timeout_8s">8 секунд</string>
+    <string name="ad_timeout_10s">10 секунд</string>
+    <string name="ad_timeout_15s">15 секунд</string>
+    <string name="ad_timeout_25s">25 секунд</string>
+    <string name="ad_threshold_0s">Мгновенно</string>
+    <string name="ad_threshold_1s">1 секунда</string>
+    <string name="ad_threshold_2s">2 секунды</string>
+    <string name="ad_threshold_3s">3 секунды</string>
+    <string name="ad_threshold_4s">4 секунды</string>
+    <string name="ad_threshold_5s">5 секунд</string>
     <string name="ad_pocket_mode_off">Выкл.</string>
     <string name="ad_pocket_mode_notifications">Только уведомлений</string>
     <string name="ad_pocket_mode_always">Всегда</string>
@@ -630,6 +647,7 @@
     <string name="recent_clear_all_button_location_top_right">Вверху справа</string>
     <string name="recent_clear_all_button_location_bottom_left">Внизу слева</string>
     <string name="recent_clear_all_button_location_bottom_right">Внизу справа</string>
+
     <!-- Quick Settings -->
     <string name="quick_settings_title">Панель быстрых настроек</string>
     <string name="tile_picker_title">Плитки и размещение</string>
@@ -660,6 +678,11 @@
     <string name="title_tile_expanded_desktop">Расширенный экран</string>
     <string name="title_tile_music">Музыка</string>
     <string name="title_tile_reboot">Перезагузка</string>
+    <string name="dynamic_tile_ime_switcher">Способ ввода</string>
+    <string name="dynamic_tile_usb_tether">USB</string>
+    <string name="dynamic_tile_alarm">Будильник</string>
+    <string name="dynamic_tile_bugreport">Отчет об ошибке</string>
+    <string name="dynamic_tiles_title">Динамические плитки</string>
     <string name="tiles_reset_message">Восстановить плитки и их расположение по умолчанию?</string>
     <string name="disable_qs">Быстрые настройки отключены</string>
     <string name="disable_qs_message">Все плитки были удалены. Панель быстрых настройек отключена.\n\nДля включения панели добавьте плитку.</string>
