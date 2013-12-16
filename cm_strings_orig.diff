@@ -1,0 +1,32 @@
+diff --git "a/D:\\Temp\\TortoiseGit\\cm_DB90.tmp\\cm_strings-a306630-left.xml" "b/D:\\Temp\\TortoiseGit\\cm_DB8F.tmp\\cm_strings-4528e68-right.xml"
+index 9ee8130..a431329 100644
+--- "a/D:\\Temp\\TortoiseGit\\cm_DB90.tmp\\cm_strings-a306630-left.xml"
++++ "b/D:\\Temp\\TortoiseGit\\cm_DB8F.tmp\\cm_strings-4528e68-right.xml"
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<!-- Copyright (C) 2012-2013 The CyanogenMod Project
++<!--
++     Copyright (C) 2012-2013 The CyanogenMod Project
+ 
+      Licensed under the Apache License, Version 2.0 (the "License");
+      you may not use this file except in compliance with the License.
+@@ -628,10 +629,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
+     <string name="keyboard_backlight_seekbar_title">Keyboard brightness</string>
+     <string name="backlight_timeout_title">Illumination timeout</string>
+     <string name="backlight_timeout_unlimited">Don\'t turn off</string>
+-    <plurals name="backlight_timeout_time">
+-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
+-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
+-    </plurals>
+     <string name="backlight_summary_disabled">Disabled</string>
+     <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
+     <string name="backlight_summary_enabled">Enabled</string>
+@@ -652,4 +649,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
+     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
+     <string name="custom_runtime_warning_title">Warning</string>
+     <string name="custom_runtime_warning_message">ART is not supported by CyanogenMod. This setting is included for experimentation only and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for more information.&lt;br/&gt;&lt;br/&gt;We request you do not file bug reports if you have enabled ART as your runtime.&lt;br/&gt;&lt;br/&gt;Are you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
++
++    <!-- GPS download data over wi-fi only -->
++    <string name="gps_download_data_wifi_only">Download GPS assisted data only over Wi-Fi networks</string>
++
+ </resources>

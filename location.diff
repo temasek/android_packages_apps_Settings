@@ -1,0 +1,16 @@
+diff --git "a/D:\\Temp\\TortoiseGit\\locF531.tmp\\location_settings-a306630-left.xml" "b/D:\\Temp\\TortoiseGit\\locF530.tmp\\location_settings-4528e68-right.xml"
+index 83b80b1..7189ef2 100644
+--- "a/D:\\Temp\\TortoiseGit\\locF531.tmp\\location_settings-a306630-left.xml"
++++ "b/D:\\Temp\\TortoiseGit\\locF530.tmp\\location_settings-4528e68-right.xml"
+@@ -21,6 +21,11 @@
+             android:title="@string/location_mode_title"
+             android:summary="@string/location_mode_location_off_title" />
+ 
++        <com.android.settings.WrappingCheckBoxPreference
++            android:key="gps_download_data_wifi_only"
++            android:title="@string/gps_download_data_wifi_only"
++            android:defaultValue="true" />
++
+         <PreferenceCategory
+             android:key="recent_location_requests"
+             android:title="@string/location_category_recent_location_requests" />
