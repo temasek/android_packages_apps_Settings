@@ -4,7 +4,7 @@
 
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Неофициальная версия от Temasek</string>
-	
+        
     <!-- General strings -->
     <string name="reset">Сброс</string>
     <string name="enabled">Включено</string>

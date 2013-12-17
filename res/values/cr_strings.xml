@@ -5,7 +5,7 @@
     <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT Translate this -->
-    <string name="temasek_version_default">V21</string>
+    <string name="temasek_version_default">V21.1-oldcm</string>
 
     <!-- General strings -->
     <string name="reset">Reset</string>
@@ -757,5 +757,8 @@
     <!-- Add option to hide power menu when screen is locked -->
     <string name="lockscreen_power_menu_title">Enable power menu</string>
     <string name="lockscreen_power_menu_summary">Show power menu when screen is locked</string>
+
+    <!-- Advanced, Device specific (DeviceParts) settings  -->
+    <string name="advanced_settings_title">Advanced</string>
 
 </resources>

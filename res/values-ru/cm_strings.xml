@@ -358,8 +358,8 @@
     <string name="anonymous_statistics_summary">Помогите сделать CM лучше, включив отправку анонимных отчётов</string>
     <string name="anonymous_statistics_warning_title">Информация об использовании</string>
     <string name="anonymous_statistics_warning">Анонимные отчёты позволяют разработчикам CyanogenMod отслеживать 
-	установки на различные устройства. Отсылаемая информацию включает в себя название устройства, версию прошивки и уникальный идентификатор, 
-	отправка которого никаким образом не вредит Вашей конфиденциальности. Отчёт отсылается при каждой загрузке устройства.\n\nЧтобы посмотреть, какие данные отсылаются, выберите «Предпросмотр».</string>
+        установки на различные устройства. Отсылаемая информацию включает в себя название устройства, версию прошивки и уникальный идентификатор, 
+        отправка которого никаким образом не вредит Вашей конфиденциальности. Отчёт отсылается при каждой загрузке устройства.\n\nЧтобы посмотреть, какие данные отсылаются, выберите «Предпросмотр».</string>
     <string name="enable_reporting_title">Включить отправку отчётов</string>
     <string name="preview_data_title">Предпросмотр</string>
     <string name="preview_data_summary" translatable="false">%s</string>
@@ -493,7 +493,7 @@
     <string name="blacklist_summary_type_messages_only">сообщения</string>
     <string name="blacklist_summary_type_calls_and_messages">вызовы и сообщения</string>
     <string name="blacklist_regex_title">Регулярные выражения</string>
-    <string name="blacklist_regex_summary">Используйте «.» как маску и «*» для повторения. Например, выражение «123.*» будет блокировать номера, начинающиеся с «123», а «.*123.*» — номера, содержащие «123» в любой части</string>
+    <string name="blacklist_regex_summary">Используйте «.» как маску и «*» для повторения. Например, выражение «123.*» будет блокировать номера, начинающиеся с «123», а «.*123.*» — номера, содержащие «123» в любой части</string>
     <string name="blacklist_policy_block_calls">Блокировать входящие вызовы</string>
     <string name="blacklist_policy_block_messages">Блокировать входящие сообщения</string>
 
