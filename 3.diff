@@ -1,0 +1,13 @@
+diff --git "a/D:\\Temp\\TortoiseGit\\cr_ED47.tmp\\cr_strings-51e3d76-left.xml" "b/D:\\Temp\\TortoiseGit\\cr_ED46.tmp\\cr_strings-51264a9-right.xml"
+index e640440..147c64e 100644
+--- "a/D:\\Temp\\TortoiseGit\\cr_ED47.tmp\\cr_strings-51e3d76-left.xml"
++++ "b/D:\\Temp\\TortoiseGit\\cr_ED46.tmp\\cr_strings-51264a9-right.xml"
+@@ -5,7 +5,7 @@
+     <!-- About phone screen, temasek version -->
+     <string name="temasek_version_title">Temasek unofficial version</string>
+     <!-- Do NOT Translate this -->
+-    <string name="temasek_version_default">V21.1-oldcm</string>
++    <string name="temasek_version_default">V22.1</string>
+ 
+     <!-- General strings -->
+     <string name="reset">Reset</string>

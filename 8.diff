@@ -1,0 +1,48 @@
+diff --git "a/D:\\Temp\\TortoiseGit\\StaF4F0.tmp\\Status-51e3d76-left.java" "b/D:\\Temp\\TortoiseGit\\StaF4EF.tmp\\Status-51264a9-right.java"
+index 6a15027..5eb0858 100644
+--- "a/D:\\Temp\\TortoiseGit\\StaF4F0.tmp\\Status-51e3d76-left.java"
++++ "b/D:\\Temp\\TortoiseGit\\StaF4EF.tmp\\Status-51264a9-right.java"
+@@ -16,6 +16,7 @@
+ 
+ package com.android.settings.deviceinfo;
+ 
++import android.app.ActionBar;
+ import android.bluetooth.BluetoothAdapter;
+ import android.content.BroadcastReceiver;
+ import android.content.Context;
+@@ -42,6 +43,7 @@ import android.telephony.PhoneStateListener;
+ import android.telephony.ServiceState;
+ import android.telephony.TelephonyManager;
+ import android.text.TextUtils;
++import android.view.MenuItem;
+ 
+ import com.android.internal.telephony.Phone;
+ import com.android.internal.telephony.PhoneConstants;
+@@ -211,6 +213,11 @@ public class Status extends PreferenceActivity {
+     protected void onCreate(Bundle icicle) {
+         super.onCreate(icicle);
+ 
++        ActionBar mActionBar = getActionBar();
++        if (mActionBar != null) {
++            mActionBar.setDisplayHomeAsUpEnabled(true);
++        }
++
+         mHandler = new MyHandler(this);
+ 
+         mTelephonyManager = (TelephonyManager)getSystemService(TELEPHONY_SERVICE);
+@@ -305,6 +312,15 @@ public class Status extends PreferenceActivity {
+     }
+ 
+     @Override
++    public boolean onOptionsItemSelected(MenuItem item) {
++        if (item.getItemId() == android.R.id.home) {
++            finish();
++            return true;
++        }
++        return false;
++    }
++
++    @Override
+     protected void onResume() {
+         super.onResume();
+ 

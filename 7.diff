@@ -1,0 +1,48 @@
+diff --git "a/D:\\Temp\\TortoiseGit\\ChoC1D8.tmp\\ChooseAccountActivity-51e3d76-left.java" "b/D:\\Temp\\TortoiseGit\\ChoC1D7.tmp\\ChooseAccountActivity-51264a9-right.java"
+index 631fe47..b2d57ff 100644
+--- "a/D:\\Temp\\TortoiseGit\\ChoC1D8.tmp\\ChooseAccountActivity-51e3d76-left.java"
++++ "b/D:\\Temp\\TortoiseGit\\ChoC1D7.tmp\\ChooseAccountActivity-51264a9-right.java"
+@@ -18,6 +18,7 @@ package com.android.settings.accounts;
+ 
+ import android.accounts.AccountManager;
+ import android.accounts.AuthenticatorDescription;
++import android.app.ActionBar;
+ import android.content.ContentResolver;
+ import android.content.Context;
+ import android.content.Intent;
+@@ -31,6 +32,7 @@ import android.preference.PreferenceActivity;
+ import android.preference.PreferenceGroup;
+ import android.preference.PreferenceScreen;
+ import android.util.Log;
++import android.view.MenuItem;
+ import com.android.internal.util.CharSequences;
+ import com.android.settings.R;
+ import com.google.android.collect.Maps;
+@@ -79,6 +81,11 @@ public class ChooseAccountActivity extends PreferenceActivity {
+     protected void onCreate(Bundle icicle) {
+         super.onCreate(icicle);
+ 
++        ActionBar mActionBar = getActionBar();
++        if (mActionBar != null) {
++            mActionBar.setDisplayHomeAsUpEnabled(true);
++        }
++
+         setContentView(R.layout.add_account_screen);
+         addPreferencesFromResource(R.xml.add_account_settings);
+         mAuthorities = getIntent().getStringArrayExtra(
+@@ -95,6 +102,15 @@ public class ChooseAccountActivity extends PreferenceActivity {
+         updateAuthDescriptions();
+     }
+ 
++    @Override
++    public boolean onOptionsItemSelected(MenuItem item) {
++        if (item.getItemId() == android.R.id.home) {
++            finish();
++            return true;
++        }
++        return false;
++    }
++
+     /**
+      * Updates provider icons. Subclasses should call this in onCreate()
+      * and update any UI that depends on AuthenticatorDescriptions in onAuthDescriptionsUpdated().

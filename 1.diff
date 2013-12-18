@@ -1,0 +1,65 @@
+diff --git "a/D:\\Temp\\TortoiseGit\\And5D8B.tmp\\AndroidManifest-51e3d76-left.xml" "b/D:\\Temp\\TortoiseGit\\And5D2D.tmp\\AndroidManifest-51264a9-right.xml"
+index f01c3f6..4214b1c 100644
+--- "a/D:\\Temp\\TortoiseGit\\And5D8B.tmp\\AndroidManifest-51e3d76-left.xml"
++++ "b/D:\\Temp\\TortoiseGit\\And5D2D.tmp\\AndroidManifest-51264a9-right.xml"
+@@ -737,16 +737,28 @@
+         <activity android:name="SettingsLicenseActivity"
+                 android:label="@string/settings_license_activity_title"
+                 android:theme="@android:style/Theme.Holo.Panel"
+-                android:configChanges="orientation|screenSize">
++                android:configChanges="orientation|screenSize"
++                android:parentActivityName="Settings$DeviceInfoSettingsActivity">
+             <intent-filter>
+                 <action android:name="android.settings.LICENSE" />
+                 <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+         </activity>
+ 
++        <activity android:name="SettingsCMLicenseActivity"
++                android:label="@string/settings_cmlicense_activity_title"
++                android:theme="@android:style/Theme.Holo.Panel"
++                android:configChanges="orientation|screenSize">
++            <intent-filter>
++                <action android:name="android.settings.CMLICENSE" />
++                <category android:name="android.intent.category.DEFAULT" />
++            </intent-filter>
++        </activity>
++
+         <activity android:name="SettingsSafetyLegalActivity"
+                 android:label="@string/settings_safetylegal_activity_title"
+-                android:theme="@*android:style/Theme.Holo.Dialog.Alert">
++                android:theme="@*android:style/Theme.Holo.Dialog.Alert"
++                android:parentActivityName="Settings$DeviceInfoSettingsActivity">
+             <intent-filter>
+                 <action android:name="android.settings.SAFETY" />
+                 <category android:name="android.intent.category.DEFAULT" />
+@@ -1167,7 +1179,8 @@
+         <activity android:name=".deviceinfo.Status"
+                 android:label="@string/device_status_activity_title"
+                 android:theme="@android:style/Theme.Holo.DialogWhenLarge"
+-                android:process="com.android.phone">
++                android:process="com.android.phone"
++                android:parentActivityName="Settings$DeviceInfoSettingsActivity">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.DEFAULT" />
+@@ -1651,7 +1664,8 @@
+         <activity android:name="com.android.settings.accounts.ChooseAccountActivity"
+             android:label="@string/header_add_an_account"
+             android:configChanges="orientation|keyboardHidden|screenSize"
+-            android:theme="@android:style/Theme.Holo.DialogWhenLarge"/>
++            android:theme="@android:style/Theme.Holo.DialogWhenLarge"
++            android:parentActivityName="Settings"/>
+ 
+         <activity android:name=".CryptKeeper"
+                   android:immersive="true"
+@@ -1725,7 +1739,8 @@
+ 
+         <activity android:name=".profiles.WifiTriggers" />
+ 
+-        <activity android:name=".profiles.NFCProfileWriter" />
++        <activity android:name=".profiles.NFCProfileWriter"
++                android:parentActivityName="Settings$ProfilesSettingsActivity" />
+ 
+         <activity android:name=".profiles.NFCProfileSelect" />
+ 

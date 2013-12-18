@@ -1,0 +1,48 @@
+diff --git "a/D:\\Temp\\TortoiseGit\\Set90D3.tmp\\SettingsSafetyLegalActivity-51e3d76-left.java" "b/D:\\Temp\\TortoiseGit\\Set90C2.tmp\\SettingsSafetyLegalActivity-51264a9-right.java"
+index 368ee1d..783cf67 100644
+--- "a/D:\\Temp\\TortoiseGit\\Set90D3.tmp\\SettingsSafetyLegalActivity-51e3d76-left.java"
++++ "b/D:\\Temp\\TortoiseGit\\Set90C2.tmp\\SettingsSafetyLegalActivity-51264a9-right.java"
+@@ -16,6 +16,7 @@
+ 
+ package com.android.settings;
+ 
++import android.app.ActionBar;
+ import android.app.AlertDialog;
+ import android.content.Context;
+ import android.content.res.Configuration;
+@@ -25,6 +26,7 @@ import android.os.SystemProperties;
+ import android.telephony.TelephonyManager;
+ import android.text.TextUtils;
+ import android.view.KeyEvent;
++import android.view.MenuItem;
+ import android.webkit.WebView;
+ import android.webkit.WebViewClient;
+ import com.android.internal.app.AlertActivity;
+@@ -46,6 +48,11 @@ public class SettingsSafetyLegalActivity extends AlertActivity
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+ 
++        ActionBar mActionBar = getActionBar();
++        if (mActionBar != null) {
++            mActionBar.setDisplayHomeAsUpEnabled(true);
++        }
++
+         String userSafetylegalUrl = SystemProperties.get(PROPERTY_LSAFETYLEGAL_URL);
+ 
+         final Configuration configuration = getResources().getConfiguration();
+@@ -86,6 +93,15 @@ public class SettingsSafetyLegalActivity extends AlertActivity
+         setupAlert();
+     }
+ 
++    @Override
++    public boolean onOptionsItemSelected(MenuItem item) {
++        if (item.getItemId() == android.R.id.home) {
++            finish();
++            return true;
++        }
++        return false;
++    }
++
+     private void showErrorAndFinish(String url) {
+         if (mErrorDialog == null) {
+             mErrorDialog = new AlertDialog.Builder(this)
