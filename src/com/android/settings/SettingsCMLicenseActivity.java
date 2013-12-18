@@ -16,7 +16,6 @@
 
 package com.android.settings;
 
-import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.res.Configuration;
@@ -26,7 +25,6 @@ import android.os.SystemProperties;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.view.KeyEvent;
-import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import com.android.internal.app.AlertActivity;
@@ -34,11 +32,11 @@ import com.android.internal.app.AlertController;
 import android.content.DialogInterface;
 
 /**
- * The "dialog" that shows from "Safety information" in the Settings app.
+ * The "dialog" that shows from "CyanogenMod Legal" in the Settings app.
  */
-public class SettingsSafetyLegalActivity extends AlertActivity 
+public class SettingsCMLicenseActivity extends AlertActivity
         implements DialogInterface.OnCancelListener, DialogInterface.OnClickListener {
-    private static final String PROPERTY_LSAFETYLEGAL_URL = "ro.url.safetylegal";
+    private static final String PROPERTY_CMLICENSE_URL = "ro.cmlegal.url";
 
     private WebView mWebView;
 
@@ -48,27 +46,22 @@ public class SettingsSafetyLegalActivity extends AlertActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ActionBar mActionBar = getActionBar();
-        if (mActionBar != null) {
-            mActionBar.setDisplayHomeAsUpEnabled(true);
-        }
-
-        String userSafetylegalUrl = SystemProperties.get(PROPERTY_LSAFETYLEGAL_URL);
+        String userCMLicenseUrl = SystemProperties.get(PROPERTY_CMLICENSE_URL);
 
         final Configuration configuration = getResources().getConfiguration();
         final String language = configuration.locale.getLanguage();
         final String country = configuration.locale.getCountry();
 
-        String loc = String.format("locale=%s-%s", language, country);
+        //String loc = String.format("locale=%s-%s", language, country);
 
-        userSafetylegalUrl = String.format("%s&%s", userSafetylegalUrl, loc);
+        userCMLicenseUrl = String.format(userCMLicenseUrl);
 
         mWebView = new WebView(this);
 
         // Begin accessing
         mWebView.getSettings().setJavaScriptEnabled(true);
         if (savedInstanceState == null) {
-            mWebView.loadUrl(userSafetylegalUrl);
+            mWebView.loadUrl(userCMLicenseUrl);
         } else {
             mWebView.restoreState(savedInstanceState);
         }
@@ -76,7 +69,7 @@ public class SettingsSafetyLegalActivity extends AlertActivity
             @Override
             public void onPageFinished(WebView view, String url) {
                 // Change from 'Loading...' to the real title
-                mAlert.setTitle(getString(R.string.settings_safetylegal_activity_title));
+                mAlert.setTitle(getString(R.string.settings_cmlicense_activity_title));
             }
 
             @Override
@@ -87,25 +80,16 @@ public class SettingsSafetyLegalActivity extends AlertActivity
         });
 
         final AlertController.AlertParams p = mAlertParams;
-        p.mTitle = getString(R.string.settings_safetylegal_activity_loading);
+        p.mTitle = getString(R.string.settings_license_activity_loading);
         p.mView = mWebView;
         p.mForceInverseBackground = true;
         setupAlert();
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            finish();
-            return true;
-        }
-        return false;
-    }
-
     private void showErrorAndFinish(String url) {
         if (mErrorDialog == null) {
             mErrorDialog = new AlertDialog.Builder(this)
-                    .setTitle(R.string.settings_safetylegal_activity_title)
+                    .setTitle(R.string.settings_cmlicense_activity_title)
                     .setPositiveButton(android.R.string.ok, this)
                     .setOnCancelListener(this)
                     .setCancelable(true)
@@ -116,7 +100,7 @@ public class SettingsSafetyLegalActivity extends AlertActivity
             }
         }
         mErrorDialog.setMessage(getResources()
-                .getString(R.string.settings_safetylegal_activity_unreachable, url));
+                .getString(R.string.settings_cmlicense_activity_unreachable, url));
         mErrorDialog.show();
     }
 
@@ -132,7 +116,7 @@ public class SettingsSafetyLegalActivity extends AlertActivity
 
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
-        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK 
+        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK
                 && event.getAction() == KeyEvent.ACTION_DOWN) {
             if (mWebView.canGoBack()) {
                 mWebView.goBack();

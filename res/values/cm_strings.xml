@@ -653,4 +653,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- GPS download data over wi-fi only -->
     <string name="gps_download_data_wifi_only">Download GPS assisted data only over Wi-Fi networks</string>
 
+    <!-- CM Legal -->
+    <string name="cmlicense_title">CyanogenMod Legal</string>
+    <string name="settings_cmlicense_activity_title">CyanogenMod Legal</string>
+    <string name="settings_cmlicense_activity_unreachable">You don\'t have a data connection. To view this information now, go to %s from any computer connected to the Internet.</string>
 </resources>
