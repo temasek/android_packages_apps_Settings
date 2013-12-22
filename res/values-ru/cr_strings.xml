@@ -558,7 +558,7 @@
     <string name="ad_pocket_mode_summary">Показывать уведомления активного дисплея, когда устройство извлекается из кармана.</string>
     <string name="ad_redisplay_title">Показывать уведомления повторно</string>
     <string name="ad_timeout_title">Задержка отключения дисплея</string>
-    <string name="ad_threshold_title">Порг приближения</string>
+    <string name="ad_threshold_title">Порог приближения</string>
     <string name="ad_sunlight_mode_title">Режим "Солнечный свет"</string>
     <string name="ad_sunlight_mode_summary">Инвертировать цвета, если вы находитесь в ярко освещённом месте, например под прямым солнечным светом.</string>
     <string name="ad_turnoff_mode_title">Отключение дисплея</string>
@@ -716,7 +716,7 @@
 
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Быстрый доступ к плиткам</string>
-    <string name="summary_quick_pulldown">угол строки уведомлений при опускании вниз открывает панель быстрых настроек</string>
+    <string name="summary_quick_pulldown">%1$s угол строки уведомлений при опускании вниз открывает панель быстрых настроек</string>
     <string name="quick_pulldown_off">Выкл.</string>
     <string name="quick_pulldown_left">Левый</string>
     <string name="quick_pulldown_right">Правый</string>
@@ -740,12 +740,12 @@
     <string name="disable_fullscreen_keyboard_summary">Клавиатура в ландшафтном режиме никогда не будет занимать весь экран</string>
     <string name="volume_key_cursor_control_title">Управление курсором кнопками громкости</string>
     <string name="volume_key_cursor_control_on">Громкость вверх/вниз перемещает курсор влево/вправо</string>
-    <string name="volume_key_cursor_control_on_reverse">Громкость вверх/вниз перемещение курсора вправо/влево</string>
+    <string name="volume_key_cursor_control_on_reverse">Громкость вверх/вниз перемещает курсор вправо/влево</string>
     <string name="keyboard_rotation_toggle_title">Автоповорот клавиатуры</string>
     <string name="keyboard_rotation_toggle_summary">Задействовать автоповорот при отображении клавиатуры</string>
     <string name="keyboard_rotation_timeout_title">Задержка автоповорота</string>
     <string name="keyboard_rotation_timeout_summary">Отключение датчика автоповорота через <xliff:g id="rotate_timeout">%1$s</xliff:g> секунд после скрытия клавиатуры</string>
-    <string name="keyboard_rotation_dialog">Примечание: Эта функция временно задействует автоповорот пока используется клавиатура, и не действует если автоповорот уже включен в настройках.</string>
+    <string name="keyboard_rotation_dialog">Примечание: Эта функция временно задействует автоповорот пока используется клавиатура, и не действует, если автоповорот уже включен в настройках.</string>
     <string name="show_enter_key_title">Показывать клавишу Ввод</string>
     <string name="show_enter_key_summary">Показывать клавишу Ввод вместо клавиши со смайликом</string>
     <string name="ime_switcher_notify">Показывать уведомление</string>
@@ -754,5 +754,8 @@
     <!-- Add option to hide power menu when screen is locked -->
     <string name="lockscreen_power_menu_title">Включить меню кнопки питания</string>
     <string name="lockscreen_power_menu_summary">Показывать меню кнопки питания, когда экран заблокирован</string>
-
+	
+    <!-- Advanced, Device specific (DeviceParts) settings  -->
+    <string name="advanced_settings_title">Расширенные</string>
+	
 </resources>

@@ -653,4 +653,8 @@
     <!-- GPS download data over wi-fi only -->
     <string name="gps_download_data_wifi_only">Скачивать данные A-GPS только через сети Wi-Fi</string>
 
+    <!-- CM Legal -->
+    <string name="cmlicense_title">CyanogenMod Legal</string>
+    <string name="settings_cmlicense_activity_title">Правовая информация CyanogenMod</string>
+    <string name="settings_cmlicense_activity_unreachable">У вас отсутствует подключение к Интернету. Для просмотра этой информации, перейдите по ссылке %s с любого компьютера, подключенного к Интернету.</string>
 </resources>
