@@ -59,6 +59,8 @@ public class LockscreenWidgets extends SettingsPreferenceFragment
     private CheckBoxPreference mLockscreenHints;
     private CheckBoxPreference mLockscreenUseCarousel;
 
+    private boolean mCameraWidgetAttached;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,6 +103,7 @@ public class LockscreenWidgets extends SettingsPreferenceFragment
                     & DevicePolicyManager.KEYGUARD_DISABLE_SECURE_CAMERA) != 0) {
             prefSet.removePreference(mCameraWidget);
         } else {
+            mCameraWidgetAttached = true;
             mCameraWidget.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_CAMERA_WIDGET, cameraDefault ? 1 : 0) == 1);
             mCameraWidget.setOnPreferenceChangeListener(this);
@@ -131,21 +134,27 @@ public class LockscreenWidgets extends SettingsPreferenceFragment
                 Settings.System.LOCKSCREEN_USE_WIDGET_CONTAINER_CAROUSEL, 0) == 1);
         mLockscreenUseCarousel.setOnPreferenceChangeListener(this);
 
+        updatePreferences(!mEnableWidgets.isChecked()
+                && (mCameraWidgetAttached ? !mCameraWidget.isChecked() : true));
+    }
+
+    private void updatePreferences(boolean disable) {
+        mLockscreenUseCarousel.setEnabled(!disable);
+        mLockscreenHints.setEnabled(!disable);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mEnableWidgets) {
             new LockPatternUtils(getActivity()).setWidgetsEnabled((Boolean) newValue);
-            if ((Boolean) newValue) {
-                mEnableWidgets.setSummary(R.string.enabled);
-            } else {
-                mEnableWidgets.setSummary(R.string.disabled);
-            }
+            mEnableWidgets.setSummary((Boolean) newValue ? R.string.enabled : R.string.disabled);
+            updatePreferences(!((Boolean) newValue)
+                    && (mCameraWidgetAttached ? !mCameraWidget.isChecked() : true));
             return true;
         } else if (preference == mCameraWidget) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_CAMERA_WIDGET,
                     (Boolean) newValue ? 1 : 0);
+            updatePreferences(!((Boolean) newValue) && !mEnableWidgets.isChecked());
             return true;
         } else if (preference == mMaximizeWidgets) {
             Settings.System.putInt(getContentResolver(),
