@@ -755,4 +755,7 @@
     <string name="lockscreen_power_menu_title">Omogući izbornik pokretanja</string>
     <string name="lockscreen_power_menu_summary">Prikaži izbornik pokretanja kad je zaslon upaljen</string>
 
+    <!-- Advanced, Device specific (DeviceParts) settings  -->
+    <string name="advanced_settings_title">Napredno</string>
+
 </resources>
