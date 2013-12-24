@@ -472,6 +472,7 @@
     <string name="privacy_guard_manager_show_system_apps">Системные приложения</string>
     <string name="privacy_guard_manager_filter_permissions">Фильтр разрешений</string>
     <string name="privacy_guard_advanced_settings_title">Расширенные настройки</string>
+    <string name="privacy_guard_notification_title">Показывать уведомление</string>
 
     <!-- Blacklist preferences -->
     <string name="blacklist_title">Чёрный список</string>
