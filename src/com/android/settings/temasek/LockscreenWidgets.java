@@ -79,7 +79,11 @@ public class LockscreenWidgets extends SettingsPreferenceFragment
         mEnableWidgets.setChecked(enabled);
         mEnableWidgets.setOnPreferenceChangeListener(this);
 
+<<<<<<< HEAD
+        Resources keyguardResources;
+=======
 /*        Resources keyguardResources;
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
         PackageManager pm = getPackageManager();
         try {
             keyguardResources = pm.getResourcesForApplication("com.android.keyguard");
@@ -104,7 +108,11 @@ public class LockscreenWidgets extends SettingsPreferenceFragment
                     Settings.System.LOCKSCREEN_CAMERA_WIDGET, cameraDefault ? 1 : 0) == 1);
             mCameraWidget.setOnPreferenceChangeListener(this);
         }
+<<<<<<< HEAD
+
+=======
 */
+>>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
         mMaximizeWidgets = (CheckBoxPreference) findPreference(KEY_LOCKSCREEN_MAXIMIZE_WIDGETS);
         if (!DeviceUtils.isPhone(getActivity())) {
             if (mMaximizeWidgets != null) {

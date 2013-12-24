@@ -141,8 +141,8 @@
     <string name="shortcut_action_reboot">Перезагрузка</string>
     <string name="shortcut_action_sound">Звуковая панель</string>
     <string name="shortcut_action_app">Пользовательское приложение</string>
-    <string name="shortcut_action_home">Главная</string>
-    <string name="shortcut_action_back">Назад</string>
+    <string name="shortcut_action_home">"Домой"</string>
+    <string name="shortcut_action_back">"Назад"</string>
     <string name="shortcut_action_recent">Недавние приложения</string>
     <string name="shortcut_action_lastapp">Последнее приложение</string>
     <string name="shortcut_action_search">Поиск</string>
