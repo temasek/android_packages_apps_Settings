@@ -101,7 +101,7 @@
 
     <!-- Network stats hide if there's no traffic -->
     <string name="hide_network_speed">Netzwerkanzeige verstecken</string>
-    <string name="hide_network_speed_summary">Netzwerkanzeige verstecken wenn kein Datenverkehr</string>
+    <string name="hide_network_speed_summary">Netzwerkanzeige verstecken wenn kein Datenverkehr vorhanden.</string>
 
     <!-- Display : Animation options -->
     <string name="screen_and_animations_title">Bildschirm und Animationen</string>
@@ -153,7 +153,7 @@
     <string name="shortcut_action_menu_big">Menü</string>
     <string name="shortcut_action_qs">Schnelleinstellungen Tafel</string>
     <string name="shortcut_action_none">Keine</string>
-    <string name="shortcut_action_power_menu">Power Menü</string>
+    <string name="shortcut_action_power_menu">Power-Menü</string>
     <string name="shortcut_action_torch">Taschenlampe</string>
     <string name="shortcut_action_longpress">Langer Tastendruck:</string>
     <string name="shortcut_action_select_action_longpress">Wähle Aktion für langen Tastendruck:</string>
@@ -253,9 +253,9 @@
     <string name="notification_drawer_qs_title">Benachrichtigungen &amp; Schnelleinstellungen</string>
     <string name="notification_drawer_title">Benachrichtigungsfeld</string>
     <string name="notification_hide_carrier_title">Verstecke Netzbetreiber</string>
-    <string name="notification_hide_carrier_summary">Verstecke Netzbetreiber und Wi-Fi Namen im Benachrichtigungsfeld</string>
+    <string name="notification_hide_carrier_summary">Verstecke Netzbetreiber und Wi-Fi Namen im Benachrichtigungsfeld.</string>
     <string name="notification_shortcuts_settings_title">Verknüpfungen</string>
-    <string name="notification_shortcuts_settings_summary">Zeige Verknüpfungen im Benachrichtigungsfeld</string>
+    <string name="notification_shortcuts_settings_summary">Zeige Verknüpfungen im Benachrichtigungsfeld an.</string>
 
     <!-- StatusBar Battery Settings -->
     <string name="battery_icon_title">Batterie Symbol</string>
@@ -296,7 +296,7 @@
     <string name="header_summary_animation">@null</string>
     
     <!-- Lockscreen battery ring -->
-    <string name="battery_around_lockscreen_ring">Batteriering um Entsperr-Ring</string>
+    <string name="battery_around_lockscreen_ring">Batterieanzeige um Entsperr-Ring</string>
 
     <!-- Navigation ring -->
     <string name="shortcut_action_ring_vib">Klingeln/Vibrieren</string>
@@ -306,7 +306,7 @@
     <!-- Navigation settings -->
     <string name="navigation_settings_options_title">Optionen Softkeys</string>
     <string name="navigation_settings_title">Softkeys</string>
-    <string name="power_menu_title">Powermenü</string>
+    <string name="power_menu_title">Power-Menü</string>
 
     <!-- Navigation bar -->
     <string name="navigation_bar_size_42_dp_default">42 dp (Standard)</string>
@@ -327,11 +327,11 @@
     <string name="navigation_bar">Softkeyleiste</string>
     <string name="navbar_button_cat">Tasten Softkeyleiste</string>
     <string name="title_pref_menu_location">Position Menü</string>
-    <string name="summary_pref_menu_location">Wo möchten sie die Menütasten angezeigt bekommen?</string>
+    <string name="summary_pref_menu_location">Wo möchten sie die Menü-Tasten angezeigt bekommen?</string>
     <string name="title_pref_menu_display">Sichtbarkeit Menü</string>
-    <string name="summary_pref_menu_display">Wie und wann sollen die Menütasten angezeigt werden?</string>
+    <string name="summary_pref_menu_display">Wie und wann sollen die Menü-Tasten angezeigt werden?</string>
     <string name="navbar_enable_bar">Softkeyleiste aktivieren</string>
-    <string name="navbar_enable_bar_summary">Aktiviert die Softkeyleiste</string>
+    <string name="navbar_enable_bar_summary">Aktiviert die Softkeyleiste.</string>
     <string name="navigation_bar_height_title">Höhe Softkeyleiste</string>
     <string name="navigation_bar_height_summary">Höhe Softkeyleiste im Portrait-Modus.</string>
     <string name="navigation_bar_height_landscape_title">Höhe Softkeyleiste im Querformat.</string>
@@ -342,7 +342,7 @@
     <string name="navbar_can_move_summary">Zeigt Softkeyleiste im Querformat unten an.</string>
     <string name="navbar_style_dimen_title">Dimensionen</string>
     <string name="navbar_button_title">Tasten</string>
-    <string name="navbar_targets_title">Ziele Ring</string>
+    <string name="navbar_targets_title">Sliderziele Ring</string>
     <string name="navbar_cat">Softkeyleiste</string>
     <string name="navbar_dimensions_reset_message">Alle Dimensionen auf Standard zurücksetzen?</string>
 
@@ -365,7 +365,7 @@
     <string name="media_scanner_on_boot_disabled">Medien nicht scannen</string>
 
     <!-- Power menu -->
-    <string name="power_menu_style_summary">Farbe Powermenü ändern</string>
+    <string name="power_menu_style_summary">Farbe Power-Menü ändern</string>
 
     <!-- Recents Ram Bar -->
     <string name="ram_bar">Recents RAM-Leiste</string>
@@ -501,7 +501,7 @@
     
     <!-- ListView animation -->
     <string name="bars_and_menus_category_system_title">System</string>
-    <string name="listview_animation_title">ListView Animation</string>
+    <string name="listview_animation_title">Listenansicht Animation</string>
     <string name="listview_off">Aus</string>
     <string name="listview_wave_left">Welle (Links)</string>
     <string name="listview_wave_right">Welle (Rechts)</string>
@@ -515,7 +515,7 @@
     <string name="listview_translate_right">Übertragen (Rechts)</string>
     
     <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">ListView Interpolator</string>
+    <string name="listview_interpolator_title">Listenansicht Interpolator</string>
     <string name="listview_accelerate_interpolator">beschleunigen_interpolator</string>
     <string name="listview_decelerate_interpolator">verlangsamen_interpolator</string>
     <string name="listview_accelerate_decelerate_interpolator">beschleunigen_verlangsamen_interpolator</string>
@@ -542,13 +542,13 @@
     <!-- Lockscreen widget settings -->
     <string name="lockscreen_widgets_title">Widgets</string>
     <string name="lockscreen_camera_widget_title">Kamera-Widget aktivieren</string>
-    <string name="lockscreen_camera_widget_summary">Zeige Kamera-Widget im Entsperr-Bildschirm.</string>
+    <string name="lockscreen_camera_widget_summary">Zeige Kamera-Widget im Sperrbildschirm.</string>
     <string name="lockscreen_maximize_widgets_title">Maximiert starten</string>
     <string name="lockscreen_maximize_widgets_summary">Widget maximiert anzeigen wenn der Bildschirm eingeschaltet wird.</string>
     <string name="lockscreen_disable_hints_title">Deaktiviere Anfangsseiten-Hinweise</string>
-    <string name="lockscreen_disable_hints_summary">Deaktiviert das Leuchten der Kanten welche die Widget-Seite des Entsperrbilschirms umranden.</string>
+    <string name="lockscreen_disable_hints_summary">Deaktiviert das Leuchten der Kanten welche die Widget-Seite des Sperrbilschirms umranden.</string>
     <string name="lockscreen_use_widget_container_carousel_title">Portrait Widget-Karussel aktivieren</string>
-    <string name="lockscreen_use_widget_container_carousel_summary">Benutze Karussel-Animation im Portrait-Modus wenn zwischen Entsperr-Bilschirm-Widget umgeschaltet wird.</string>
+    <string name="lockscreen_use_widget_container_carousel_summary">Benutze Karussel-Animation im Portrait-Modus wenn zwischen Sperrbildschirm-Widget umgeschaltet wird.</string>
 
     <!-- Active display settings -->
     <string name="ad_settings_title">Active Display</string>
@@ -565,13 +565,17 @@
     <string name="ad_pocket_mode_title">Hosentaschen Modus</string>
     <string name="ad_pocket_mode_summary">Zeige Aktive Display Benachrichtigungen wenn das Gerät aus der Hosentasche genommen wird.</string>
     <string name="ad_redisplay_title">Benachrichtigungen erneut anzeigen</string>
+    <string name="ad_timeout_title">Bildschirm Timeout</string>
+    <string name="ad_threshold_title">Schwellwert Annäherung</string>
     <string name="ad_sunlight_mode_title">Sonnenlicht-Modus</string>
     <string name="ad_sunlight_mode_summary">Invertiert die Farbe in Umgebungen mit hellem Licht wie z.B. direkter Sonneneinstrahlung.</string>
+    <string name="ad_turnoff_mode_title">Bildschirm ausschalten</string>
+    <string name="ad_turnoff_mode_summary">Schaltet den Bildschirm wieder aus, wenn das Gerät wieder in die Tasche gesteckt wird und zuvor mit Active Display eingeschaltet wurde.</string>
     <string name="ad_customizations_title">Eigene Einstellungen</string>
     <string name="ad_excluded_apps_title">Auszuschließende Apps</string>
     <string name="ad_excluded_apps_summary">Auszuschließende Apps werden nicht im Active Display erscheinen.</string>
     <string name="ad_brightness_title">Helligkeit Benachrichtigungen</string>
-    <string name="ad_brightness_summary">Helligkeitslevel der angezeigten Benachrichtigungen\n wenn automatische Helligkeit nicht aktiviert ist.</string>
+    <string name="ad_brightness_summary">Helligkeitslevel der angezeigten Benachrichtigungen.\n Wenn automatische Helligkeit nicht aktiviert ist.</string>
     <string name="ad_show_date_title">Zeige Datum</string>
     <string name="ad_show_date_summary">Zeigt das Datum über der Uhr an.</string>
     <string name="ad_show_ampm_title">Zeige AM/PM</string>
@@ -584,6 +588,18 @@
     <string name="ad_redisplay_1h">1 Stunde</string>
     <string name="ad_redisplay_2h">2 Stunden</string>
     <string name="ad_redisplay_5h">5 Stunden</string>
+    <string name="ad_timeout_3s">3 Sekunden</string>
+    <string name="ad_timeout_5s">5 Sekunden</string>
+    <string name="ad_timeout_8s">8 Sekunden</string>
+    <string name="ad_timeout_10s">10 Sekunden</string>
+    <string name="ad_timeout_15s">15 Sekunden</string>
+    <string name="ad_timeout_25s">25 Sekunden</string>
+    <string name="ad_threshold_0s">Sofort</string>
+    <string name="ad_threshold_1s">1 Sekunde</string>
+    <string name="ad_threshold_2s">2 Sekunden</string>
+    <string name="ad_threshold_3s">3 Sekunden</string>
+    <string name="ad_threshold_4s">4 Sekunden</string>
+    <string name="ad_threshold_5s">5 Sekunden</string>
     <string name="ad_pocket_mode_off">Aus</string>
     <string name="ad_pocket_mode_notifications">Nur Benachrichtigung</string>
     <string name="ad_pocket_mode_always">Immer</string>
@@ -597,7 +613,7 @@
 
     <!-- Lock before unlock -->
     <string name="lock_before_unlock_title">Zeige Slider vor Sicherheits-Entsperrung</string>
-    <string name="lock_before_unlock_summary">Zeige Slider Entsperrbildschirm vor dem Sicherheits Entsperrungs-Mechanismus.</string>
+    <string name="lock_before_unlock_summary">Zeige Slider Sperrbildschirm vor dem Sicherheits Entsperrungs-Mechanismus.</string>
 
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_pattern_size_3">3x3</string>
@@ -632,9 +648,9 @@
     <string name="omni_features_recent_panel_title" >Recents Menü</string>
     
     <!-- Recents clear all -->
-    <string name="show_recent_clear_all_button_title">Zeige Alle schließen Taste</string>
-    <string name="show_recent_clear_all_button_summary">Haken setzen oder nicht setzen zum anzeigen bzw. verstecken der "Alle schließen" Taste innerhalb des Recents (zuvor geöffnete Apps) Bildschirms.</string>
-    <string name="recent_clear_all_button_location_title">Position -Alle schließen- Taste</string>
+    <string name="show_recent_clear_all_button_title">Zeige -Alles schließen- Taste</string>
+    <string name="show_recent_clear_all_button_summary">Haken setzen oder nicht setzen zum anzeigen bzw. verstecken der -Alles schließen- Taste innerhalb des Recents (zuvor geöffnete Apps) Bildschirms.</string>
+    <string name="recent_clear_all_button_location_title">Position -Alles schließen- Taste</string>
     <string name="recent_clear_all_button_location_summary">Entscheide in welcher Ecke die -Alles schließen- Taste angezeigt werden soll.</string>
     <string name="recent_clear_all_button_location_top_left">Oben links</string>
     <string name="recent_clear_all_button_location_top_right">Oben rechts</string>
@@ -653,7 +669,7 @@
     <string name="title_tile_sleep">Gehe schlafen</string>
     <string name="title_tile_location">Standort</string>
     <string name="title_tile_torch">Taschenlampe</string>
-    <string name="title_tile_lockscreen">Entsperrbildschirm</string>
+    <string name="title_tile_lockscreen">Sperrbildschirm</string>
     <string name="title_tile_lte">LTE</string>
     <string name="title_tile_mobiledata">Mobile Daten</string>
     <string name="title_tile_autorotate">Ausrichtung</string>
@@ -701,14 +717,14 @@
 
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Schnelles Herunterziehen</string>
-    <string name="summary_quick_pulldown">Ecke der Statusleisten an welcher die Schnelleinstellungen heruntergezogen werden.</string>
+    <string name="summary_quick_pulldown">Legt die Ecke der Statusleiste fest in welcher die Schnelleinstellungen heruntergezogen werden.</string>
     <string name="quick_pulldown_off">Aus</string>
     <string name="quick_pulldown_left">Links</string>
     <string name="quick_pulldown_right">Rechts</string>
 
     <!-- security settings menu unlock -->
-    <string name="unlock_menu_unlock_title">Menütaste Entsperrt</string>
-    <string name="unlock_menu_unlock_summary">Drücken der Menütaste entsperrt das Gerät.</string>
+    <string name="unlock_menu_unlock_title">Menü-Taste Entsperrt</string>
+    <string name="unlock_menu_unlock_summary">Drücken der Menü-Taste entsperrt das Gerät.</string>
     
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Indikator Aktivität Netzwerk</string>
@@ -735,6 +751,13 @@
     <string name="show_enter_key_summary">Erzwingt das Erscheinen der Enter Taste anstelle der Emoticon Taste</string>
     <string name="ime_switcher_notify">Benachrichtigung Umschaltung IME</string>
     <string name="ime_switcher_notify_summary">Zeige Benachrichtigung für die Umschaltung der Eingabemethode (IME).</string>
+    
+    <!-- Add option to hide power menu when screen is locked -->
+    <string name="lockscreen_power_menu_title">Power-Menü aktivieren</string>
+    <string name="lockscreen_power_menu_summary">Zeige das Power-Menü bei gesperrtem Bildschirm.</string>
+
+    <!-- Advanced, Device specific (DeviceParts) settings -->
+    <string name="advanced_settings_title">Erweitert</string>
 
 
 

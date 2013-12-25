@@ -16,45 +16,45 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Wi-Fi region code -->
-    <string name="wifi_setting_countrycode_title">Wi-Fi region code</string>
+    <string name="wifi_setting_countrycode_title">Wi-Fi ülke kodu</string>
     <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
-    <string name="wifi_setting_countrycode_summary">Specify the region code for Wi-Fi</string>
+    <string name="wifi_setting_countrycode_summary">Wi-Fi için bölge kodunu belirtin</string>
     <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
-    <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
+    <string name="wifi_setting_countrycode_error">Bölge kodunu ayarlanırken bir sorun oldu.</string>
     <!-- Wi-Fi settings screen, advanced, title of the item to set the Wi-Fi priority. -->
-    <string name="wifi_setting_priority_title">Wi-Fi priority</string>
+    <string name="wifi_setting_priority_title">Wi-Fi önceliği</string>
     <!-- Wi-Fi settings screen, setting summary for setting the Wi-Fi priority-->
-    <string name="wifi_setting_priority_summary">Specify the priority of the Wi-Fi networks</string>
+    <string name="wifi_setting_priority_summary">Wi-Fi ağlarının önceliğini belirtin</string>
 
     <!-- Sound settings screen -->
-    <string name="ring_mode_title">Ring mode</string>
+    <string name="ring_mode_title">Ses modu</string>
     <string name="ring_mode_normal">Normal</string>
-    <string name="ring_mode_vibrate">Vibrate</string>
-    <string name="ring_mode_mute">Mute</string>
+    <string name="ring_mode_vibrate">Titreşim</string>
+    <string name="ring_mode_mute">Sessiz</string>
 
-    <string name="lock_screen_title">Lock screen</string>
+    <string name="lock_screen_title">Kilit ekranı</string>
 
-    <string name="increasing_ring_title">Ascending ringtone</string>
+    <string name="increasing_ring_title">Artan zil sesi</string>
     <!-- Sound settings screen, the caption of the checkbox for making incoming calls increase in volume -->
-    <string name="checkbox_increasing_ring">Enable</string>
+    <string name="checkbox_increasing_ring">Aktif</string>
     <!-- Sound settings screen, the title of the volume bar to adjust the minimum increasing ring volume -->
-    <string name="increasing_ring_min_volume_title">Ringing start volume</string>
-    <string name="increasing_ring_volume_notice">Notice:\nAs the start volume is set higher than the ringer volume, the ring tone will be played using the ringer volume.</string>
-    <string name="increasing_ring_interval_title">Increase interval</string>
+    <string name="increasing_ring_min_volume_title">Zil başlangıç ​​düzeyi</string>
+    <string name="increasing_ring_volume_notice">Uyarı:\nAs başlangıç ses düzeyi zil ses düzeyinden daha fazla, the ring tone will be played using the ringer volume.</string>
+    <string name="increasing_ring_interval_title">Süreyi arttır</string>
     <string name="increasing_ring_interval_eachring">On each ring</string>
-    <string name="increasing_ring_interval_half_second">0.5 seconds</string>
-    <string name="increasing_ring_interval_1second">1 second</string>
-    <string name="increasing_ring_interval_2seconds">2 seconds</string>
-    <string name="increasing_ring_interval_3seconds">3 seconds</string>
-    <string name="increasing_ring_interval_5seconds">5 seconds</string>
-    <string name="increasing_ring_interval_10seconds">10 seconds</string>
+    <string name="increasing_ring_interval_half_second">0.5 saniye</string>
+    <string name="increasing_ring_interval_1second">1 saniye</string>
+    <string name="increasing_ring_interval_2seconds">2 saniye</string>
+    <string name="increasing_ring_interval_3seconds">3 saniye</string>
+    <string name="increasing_ring_interval_5seconds">5 saniye</string>
+    <string name="increasing_ring_interval_10seconds">10 saniye</string>
 
     <!-- Profiles settings -->
-    <string name="profiles_settings_title">Profiles</string>
-    <string name="profiles_add">Add</string>
-    <string name="profile_menu_delete">Delete</string>
-    <string name="profile_settings_title">Profile</string>
-    <string name="profile_empty_list_profiles_off">To configure and use system profiles, turn profiles on.</string>
+    <string name="profiles_settings_title">Profiller</string>
+    <string name="profiles_add">Ekle</string>
+    <string name="profile_menu_delete">Sil</string>
+    <string name="profile_settings_title">Profil</string>
+    <string name="profile_empty_list_profiles_off">Sistem profillerini kullanmak ve değiştirmek için profilleri açın.</string>
     <string name="profile_trigger_configure">Configure trigger</string>
     <string name="profile_triggers">Triggers</string>
     <string name="profile_trigger_filter_all">All triggers</string>
@@ -64,33 +64,33 @@
     <string name="profile_write_touch_tag">Touch tag to write</string>
     <string name="profile_write_success">Tag successfully written</string>
     <string name="profile_write_failed">Tag writing failed!</string>
-    <string name="profile_selected">Profile selected: %1$s</string>
+    <string name="profile_selected">Profil seçildi: %1$s</string>
     <string name="profile_nfc_text">Writing a profile to a NFC tag allows for tapping the tag to select the profile. Tapping a second time will select the previously selected profile.</string>
-    <string name="profile_unknown_nfc_tag">Unknown profile</string>
+    <string name="profile_unknown_nfc_tag">Bilinmeyen profil</string>
     <string name="profile_add_nfc_text">This NFC tag refers to an unknown profile. Attaching this NFC tag to an existing profile will allow for selecting the profile in the future.</string>
-    <string name="profile_select">Select profile</string>
+    <string name="profile_select">Profil seç</string>
 
     <!-- Add Profile -->
-    <string name="add_profile_dialog_title">Create new profile</string>
-    <string name="profile_name_title">Name</string>
-    <string name="profile_profile_name_prompt">Enter a name for the new profile</string>
-    <string name="menu_new_profile">New profile</string>
+    <string name="add_profile_dialog_title">Yeni profil oluştur</string>
+    <string name="profile_name_title">İsim</string>
+    <string name="profile_profile_name_prompt">Yeni profilin ismini girin</string>
+    <string name="menu_new_profile">Yeni Profil</string>
     <string name="new_profile_name">&lt;new profile&gt;</string>
 
     <!-- Rename Dialog -->
-    <string name="rename_dialog_title">Rename</string>
-    <string name="rename_dialog_message">Enter a new name</string>
-    <string name="duplicate_profile_name">Duplicate profile name!</string>
+    <string name="rename_dialog_title">Yeniden adlandır</string>
+    <string name="rename_dialog_message">Yeni bir ad gir</string>
+    <string name="duplicate_profile_name">Profil ismini tekrarlayın!</string>
     <string name="duplicate_appgroup_name">Duplicate app group name!</string>
 
     <!-- Reset Profiles -->
     <string name="profile_reset_title">Reset</string>
-    <string name="profile_reset_message">Delete all user created profiles and app groups and restore them to default?</string>
+    <string name="profile_reset_message">Tüm kullanıcı oluşturulan profiller ve uygulama grupları sil ve bunları varsayılanlara geri getir?</string>
 
     <!-- Delete confimation messages -->
-    <string name="profile_delete_confirm">Delete this profile?</string>
-    <string name="profile_app_delete_confirm">Remove this app?</string>
-    <string name="profile_cannot_delete">An active profile cannot be deleted</string>
+    <string name="profile_delete_confirm">Profili sil?</string>
+    <string name="profile_app_delete_confirm">Uygulamayı kaldır?</string>
+    <string name="profile_cannot_delete">Aktif bir profil kaldırılamaz</string>
 
     <!-- Profile network mode -->
     <string name="profile_networkmode_2g">2G</string>
@@ -98,20 +98,20 @@
     <string name="profile_networkmode_2g3g">2G/3G</string>
 
     <!-- Profile Config screen PreferenceGroup titles -->
-    <string name="profile_connectionoverrides_title">Connection overrides</string>
-    <string name="profile_volumeoverrides_title">Volume overrides</string>
-    <string name="connection_state_disabled">Disable</string>
-    <string name="connection_state_enabled">Enable</string>
-    <string name="volume_override_summary">Set to</string>
+    <string name="profile_connectionoverrides_title">Geçersiz kılınan bağlantılar</string>
+    <string name="profile_volumeoverrides_title">Geçersiz kılınan sesler</string>
+    <string name="connection_state_disabled">Devre dışı bırak</string>
+    <string name="connection_state_enabled">Aktifleştir</string>
+    <string name="volume_override_summary">Başla</string>
 
     <!-- Menu item for managing profiles -->
-    <string name="profile_profiles_manage">Profiles</string>
-    <string name="profile_profile_manage">Manage profile</string>
-    <string name="profile_appgroups_manage">App groups</string>
-    <string name="profile_appgroup_manage">Manage app group</string>
+    <string name="profile_profiles_manage">Profiller</string>
+    <string name="profile_profile_manage">Profili yönet</string>
+    <string name="profile_appgroups_manage">Uygulama grupları</string>
+    <string name="profile_appgroup_manage">Uygulama grubunu yönet</string>
 
     <!-- Profile settings screen, section header for settings related to notification profiles -->
-    <string name="profile_settings">Profile settings</string>
+    <string name="profile_settings">Profil ayarları</string>
     <string name="profile_trigger_connect">On connect</string>
     <string name="profile_trigger_disconnect">On disconnect</string>
     <string name="profile_trigger_notrigger">No trigger</string>
@@ -125,7 +125,7 @@
     <string name="choose_ringtone">Choose ringtone</string>
 
     <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up) -->
-    <string name="soundtone_title">Notification tone</string>
+    <string name="soundtone_title">Bildirim sesi</string>
     <string name="soundtone_summary" translatable="false">""</string>
 
     <!-- Title for application group setting screen -->
@@ -137,10 +137,10 @@
     <string name="profile_appgroup_name_title">Name</string>
 
     <!-- Add application dialog box title -->
-    <string name="profile_choose_app">Choose app</string>
+    <string name="profile_choose_app">Uygulama seç</string>
 
     <!-- Profiles - system settings -->
-    <string name="profile_system_settings_title">System settings</string>
+    <string name="profile_system_settings_title">Sistem ayarları</string>
     <string name="profile_lockmode_title">Lock screen mode</string>
     <string name="profile_lockmode_default">Default</string>
     <string name="profile_lockmode_insecure">Insecure</string>
@@ -152,56 +152,56 @@
 
     <!-- Connection override toggles (not all are used at this time ) -->
     <string name="toggleWifi">Wi-Fi</string>
-    <string name="toggleWifiAp">Portable Wi-Fi hotspot</string>
+    <string name="toggleWifiAp">Wi-Fi hotspot</string>
     <string name="toggleBluetooth">Bluetooth</string>
     <string name="toggleGPS">GPS</string>
-    <string name="toggleData">Mobile Data</string>
-    <string name="toggleSync">Data Sync</string>
+    <string name="toggleData">Mobil Veri</string>
+    <string name="toggleSync">Senkronize</string>
     <string name="toggle2g3g">2G/3G</string>
     <string name="toggleWimax">WiMAX</string>
     <string name="toggleNfc">NFC</string>
 
     <!-- Sound volumes panel -->
     <string name="link_volume_ringtones">Link ringtone &amp; notifications volumes</string>
-    <string name="link_volume_mutes">Silent mode affects notifications</string>
-    <string name="volume_keys_control_ring_stream">Volume keys control ringtone volume</string>
+    <string name="link_volume_mutes">Sessiz mod bildirimleri etkiler</string>
+    <string name="volume_keys_control_ring_stream">Ses tuşları zil sesini kontrol eder</string>
 
     <!-- Lights settings screen, notification light settings -->
-    <string name="display_lights_settings_title">Display &amp; lights</string>
-    <string name="lights_category_title">Lights</string>
-    <string name="notification_pulse_title">Notification light</string>
-    <string name="notification_light_general_title">General</string>
-    <string name="notification_light_applist_title">Applications</string>
-    <string name="notification_light_phonelist_title">Phone</string>
+    <string name="display_lights_settings_title">Ekran ve ışıklar</string>
+    <string name="lights_category_title">Işıklar</string>
+    <string name="notification_pulse_title">Bildirim ışığı</string>
+    <string name="notification_light_general_title">Genel</string>
+    <string name="notification_light_applist_title">Uygulamalar</string>
+    <string name="notification_light_phonelist_title">Telefon</string>
     <string name="notification_light_use_custom">Use custom values</string>
-    <string name="notification_light_enabled">Enabled</string>
-    <string name="notification_light_disabled">Disabled</string>
-    <string name="notification_light_default_value">Default</string>
-    <string name="notification_light_missed_call_title">Missed call</string>
+    <string name="notification_light_enabled">Aktif</string>
+    <string name="notification_light_disabled">Devre dışı</string>
+    <string name="notification_light_default_value">Varsayılan</string>
+    <string name="notification_light_missed_call_title">Cevapsız arama</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
 
     <!-- Backlight brightness settings screen -->
-    <string name="adaptive_backlight_title">Adaptive backlight</string>
+    <string name="adaptive_backlight_title">Uyarlanabilir arka ışık</string>
     <string name="adaptive_backlight_summary">Intelligently vary the backlight brightness of the display and help maximize battery life</string>
 
     <!-- Turn on display when power connected; turn off display when power disconnected -->
-    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting the charger</string>
+    <string name="wake_when_plugged_or_unplugged_title">Fişe takıldığında uyan</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Şarj cihazını bağlarken veya ayırırken ekran açılır</string>
 
     <!-- Notification light dialogs -->
-    <string name="edit_light_settings">Edit light settings</string>
+    <string name="edit_light_settings">Işık ayarlarını değiştir</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
     <string name="default_time">Normal</string>
     <string name="custom_time">Custom</string>
     <string name="dialog_test">Test</string>
-    <string name="dialog_delete_title">Delete</string>
-    <string name="dialog_delete_message">Remove selected item?</string>
+    <string name="dialog_delete_title">Sil</string>
+    <string name="dialog_delete_message">Seçilen öğe silinsinmi?</string>
     <string name="dialog_test_message">Turn the screen off to see the selected notification in action or dismiss this dialog to stop the test</string>
     <string name="dialog_test_button">Dismiss</string>
 
     <!-- Values for the notification light pulse spinners -->
-    <string name="pulse_length_always_on">Always on</string>
-    <string name="pulse_length_very_short">Very short</string>
+    <string name="pulse_length_always_on">Her zaman açık</string>
+    <string name="pulse_length_very_short">Çok kısa</string>
     <string name="pulse_length_short">Short</string>
     <string name="pulse_length_normal">Normal</string>
     <string name="pulse_length_long">Long</string>
@@ -213,87 +213,57 @@
     <string name="pulse_speed_very_slow">Very slow</string>
 
     <!-- Battery light settings -->
-    <string name="battery_light_title">Battery light</string>
-    <string name="battery_low_pulse_title">Pulse if battery low</string>
-    <string name="battery_light_list_title">Colors</string>
-    <string name="battery_light_low_color_title">Battery low</string>
-    <string name="battery_light_medium_color_title">Charging</string>
-    <string name="battery_light_full_color_title">Fully charged</string>
+    <string name="battery_light_title">Batarya ışığı</string>
+    <string name="battery_low_pulse_title">Bayarya az ise ışığı aç</string>
+    <string name="battery_light_list_title">Renkler</string>
+    <string name="battery_light_low_color_title">Düşük batarya</string>
+    <string name="battery_light_medium_color_title">Şarj oluyor</string>
+    <string name="battery_light_full_color_title">Şarj oldu</string>
 
     <!-- Sound settings screen -->
-    <string name="volume_ring_only_description">Ringtone</string>
-
-    <!-- Lock screen vibrate settings -->
-    <string name="lockscreen_vibrate_enabled_title">Vibrate</string>
-    <string name="lockscreen_vibrate_enabled_head">Vibrate when unlocking</string>
-
-    <!-- Screen security -->
-    <string name="screen_security_category">Screen security</string>
-    <string name="screen_security_title">Lock screen</string>
-    <string name="screen_security_summary">View or change lock screen security, delay and timeout settings</string>
-    <string name="additional_options_title">Additional options</string>
-    <string name="unlock_menu_unlock_title">Menu unlock</string>
-    <string name="unlock_menu_unlock_summary">Pressing the menu button unlocks the device</string>
-    <string name="unlock_home_unlock_title">Home unlock</string>
-    <string name="unlock_home_unlock_summary">Pressing the home button unlocks the device</string>
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
-
-    <!-- Slide lock delay -->
-    <string name="delay_and_timeout_title">Lock delay</string>
-    <string name="slide_lock_delay_title">Delay screen lock</string>
-    <string name="slide_lock_timeout_delay_title">Delay after timeout</string>
-    <string name="slide_lock_screenoff_delay_title">Delay after turned off</string>
-    <string name="slide_lock_delay_none">None</string>
-    <string name="slide_lock_delay_1s">1 second</string>
-    <string name="slide_lock_delay_5s">5 seconds</string>
-    <string name="slide_lock_delay_10s">10 seconds</string>
-    <string name="slide_lock_delay_15s">15 seconds</string>
-    <string name="slide_lock_delay_30s">30 seconds</string>
-    <string name="slide_lock_delay_1m">1 minute</string>
-    <string name="slide_lock_delay_5m">5 minutes</string>
-    <string name="slide_lock_delay_10m">10 minutes</string>
-    <string name="slide_lock_delay_30m">30 minutes</string>
+    <string name="volume_ring_only_description">Zil sesi</string>
 
     <!-- Lock screen widgets -->
-    <string name="lockscreen_widgets_category_title">Widgets</string>
+    <string name="lockscreen_widgets_category_title">Widgetler</string>
     <string name="lockscreen_maximize_widgets_title">Maximize widgets</string>
-    <string name="lockscreen_maximize_widgets_summary">Expand widgets when the screen is turned on</string>
+    <string name="lockscreen_maximize_widgets_summary">Show widgets maximized and the unlock minimized when the screen is turned on</string>
+    <string name="lockscreen_enable_widgets_title">Widget pager</string>
+    <string name="lockscreen_enable_widgets_summary">Allow multiple widget pages to be added and selected</string>
 
     <!-- Safe headset volume restore checkbox -->
-    <string name="safe_headset_volume_title">Safe headset volume</string>
+    <string name="safe_headset_volume_title">Güvenli kulaklık sesi</string>
 
     <!-- Waiver -->
     <string name="cyanogenmod_waiver_title">Waiver</string>
     <string name="cyanogenmod_waiver_body">Changing this setting may be against your state or government laws.\n\nIn selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless CyanogenMod and its contributors from all legal liabilities.</string>
 
     <!-- Automatic brightness customization -->
-    <string name="auto_brightness_setup_title">Automatic brightness</string>
-    <string name="auto_brightness_adjustment_title">Brightness adjustment</string>
-    <string name="auto_brightness_twilight_adjustment">Adjust to sunrise and sunset</string>
-    <string name="light_sensor_current_value">Current light sensor value: <xliff:g id="light_level">%d</xliff:g> lux</string>
-    <string name="auto_brightness_dialog_title">Automatic brightness levels</string>
+    <string name="auto_brightness_setup_title">Otomatik parlaklık</string>
+    <string name="auto_brightness_adjustment_title">Parlaklık ayarı</string>
+    <string name="auto_brightness_twilight_adjustment">Gündoğumu ve günbatımı için ayarlayın</string>
+    <string name="light_sensor_current_value">Şu anki ışık sensörü değeri: <xliff:g id="light_level">%d</xliff:g> lux</string>
+    <string name="auto_brightness_dialog_title">Otomatik parlaklık seviyeleri</string>
     <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>
     <string name="auto_brightness_last_level_format"><xliff:g id="level">%1$d</xliff:g> -\n\u221e lux</string>
     <string name="auto_brightness_brightness_format" translatable="false"><xliff:g id="percent">%s</xliff:g>%%</string>
-    <string name="auto_brightness_adjust_button">Adjust</string>
-    <string name="auto_brightness_close_button">Close</string>
-    <string name="auto_brightness_reset_button">Reset</string>
+    <string name="auto_brightness_adjust_button">Ayarla</string>
+    <string name="auto_brightness_close_button">Kapat</string>
+    <string name="auto_brightness_reset_button">Sıfırla</string>
     <string name="auto_brightness_split_dialog_title">Split brightness level</string>
-    <string name="auto_brightness_level_dialog_title">Light level setup</string>
-    <string name="auto_brightness_lux">Ambient brightness (lux)</string>
-    <string name="auto_brightness_backlight">Screen brightness (%)</string>
-    <string name="auto_brightness_reset_dialog_title">Reset levels?</string>
-    <string name="auto_brightness_reset_confirmation">All brightness levels will be reset to their default settings.</string>
+    <string name="auto_brightness_level_dialog_title">Işık seviyesi ayarı</string>
+    <string name="auto_brightness_lux">Ortam parlaklığı (lux)</string>
+    <string name="auto_brightness_backlight">Ekran aydınlağı (%)</string>
+    <string name="auto_brightness_reset_dialog_title">Seviyeleri sıfırla?</string>
+    <string name="auto_brightness_reset_confirmation">Tüm parlaklık seviyelerini varsayılan ayarlarına sıfırlar.</string>
     <string name="auto_brightness_split_lux_format">Split position (between <xliff:g id="min">%1$d</xliff:g> and <xliff:g id="max">%2$d</xliff:g> lux)</string>
-    <string name="auto_brightness_level_options">Light level options</string>
-    <string name="auto_brightness_menu_edit">Edit</string>
+    <string name="auto_brightness_level_options">Işık seviyesi ayarları</string>
+    <string name="auto_brightness_menu_edit">Düzenle</string>
     <string name="auto_brightness_menu_split">Split</string>
-    <string name="auto_brightness_menu_remove">Remove</string>
-    <string name="auto_brightness_preview">Preview</string>
-    <string name="auto_brightness_preview_dialog_title">Brightness curve preview</string>
-    <string name="auto_brightness_help_dialog_title">Help</string>
-    <string name="auto_brightness_help_text"><b>How is brightness calculated?</b>
+    <string name="auto_brightness_menu_remove">Kaldır</string>
+    <string name="auto_brightness_preview">Önizle</string>
+    <string name="auto_brightness_preview_dialog_title">Parlaklık eğrisini önizle</string>
+    <string name="auto_brightness_help_dialog_title">Yardım</string>
+    <string name="auto_brightness_help_text"><b>Parlaklık nasıl ölçülür?</b>
 \n\n
 The brightness curve is calculated by performing a <i>cubic spline interpolation</i>
 on a given number of <i>control points</i>. It\'s not a \'bucket-type\' calculation where
@@ -317,44 +287,44 @@ desired screen brightness. Selecting \'Split\' allows you to to duplicate one li
 two in order to insert additional control points. \'Remove\' deletes the selected line.
     </string>
 
-    <string name="auto_brightness_sensitivity_title">Adjustment sensitivity</string>
-    <string name="auto_brightness_sensitivity_verylow">Very low</string>
-    <string name="auto_brightness_sensitivity_low">Low</string>
-    <string name="auto_brightness_sensitivity_medium">Medium</string>
-    <string name="auto_brightness_sensitivity_high">High</string>
-    <string name="auto_brightness_sensitivity_veryhigh">Very high</string>
+    <string name="auto_brightness_sensitivity_title">Hassasiyeti ayarla</string>
+    <string name="auto_brightness_sensitivity_verylow">Çok düşük</string>
+    <string name="auto_brightness_sensitivity_low">Düşük</string>
+    <string name="auto_brightness_sensitivity_medium">Orta</string>
+    <string name="auto_brightness_sensitivity_high">Yüksek</string>
+    <string name="auto_brightness_sensitivity_veryhigh">Çok yüksek</string>
 
     <!-- Display : Rotation  -->
-    <string name="display_rotation_title">Rotation</string>
-    <string name="display_rotation_disabled">Disabled</string>
-    <string name="display_rotation_unit">degrees</string>
-    <string name="display_lockscreen_rotation_title">Rotate lock screen</string>
-    <string name="display_rotation_category_title">Rotation modes</string>
-    <string name="display_rotation_0_title">0 degrees</string>
-    <string name="display_rotation_90_title">90 degrees</string>
-    <string name="display_rotation_180_title">180 degrees</string>
-    <string name="display_rotation_270_title">270 degrees</string>
+    <string name="display_rotation_title">Döndürme</string>
+    <string name="display_rotation_disabled">Devre dışı</string>
+    <string name="display_rotation_unit">Derece</string>
+    <string name="display_lockscreen_rotation_title">Kilit ekranını döndür</string>
+    <string name="display_rotation_category_title">Döndürme dereceleri</string>
+    <string name="display_rotation_0_title">0 derece</string>
+    <string name="display_rotation_90_title">90 derece</string>
+    <string name="display_rotation_180_title">180 derece</string>
+    <string name="display_rotation_270_title">270 derece</string>
 
     <!-- Advanced reboot options -->
-    <string name="advanced_reboot_title">Advanced reboot</string>
-    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery or bootloader</string>
+    <string name="advanced_reboot_title">Gelişmiş reboot</string>
+    <string name="advanced_reboot_summary">Açıldığında, güç menüsünde yeniden başlatma modunda recovery ve bootloader seçenekleri çıkar.</string>
 
-    <string name="app_security_title">App security</string>
+    <string name="app_security_title">Uygulama güvenliği</string>
 
     <!-- Setting checkbox title for root access -->
-    <string name="root_access">Root access</string>
-    <string name="root_access_warning_title">Allow root access?</string>
-    <string name="root_access_warning_message">Allowing applications to request root access is very dangerous and could compromise the security of your system!</string>
-    <string name="root_access_none">Disabled</string>
-    <string name="root_access_apps">Apps only</string>
-    <string name="root_access_adb">ADB only</string>
-    <string name="root_access_all">Apps and ADB</string>
+    <string name="root_access">Root erişimi</string>
+    <string name="root_access_warning_title">Root erişimine izin verilsinmi?</string>
+    <string name="root_access_warning_message">Bazı uygulamalara root erişimi vermek tehlikeli olabilir!</string>
+    <string name="root_access_none">Devre dışı</string>
+    <string name="root_access_apps">Sadece uygulamalar</string>
+    <string name="root_access_adb">Sadece ADB</string>
+    <string name="root_access_all">ADB ve uygulamalar</string>
 
-    <string name="ok">OK</string>
+    <string name="ok">Tamam</string>
 
     <!-- Quiet hours -->
-    <string name="quiet_hours_title">Quiet hours</string>
-    <string name="quiet_hours_summary">Configure the hours the device should be quiet</string>
+    <string name="quiet_hours_title">Sessiz saatler</string>
+    <string name="quiet_hours_summary">Cihazın sessiz olacağı saatleri ayarlayın</string>
     <string name="quiet_hours_note_summary">Note: Incoming calls will not be affected by quiet hours and will ring like normal</string>
     <string name="quiet_hours_enabled">Enforce quiet hours</string>
     <string name="quiet_hours_mute">Mute notifications</string>
@@ -366,20 +336,20 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="quiet_hours_active_to">to</string>
 
     <!-- time range preference -->
-    <string name="start_time_title">Start</string>
-    <string name="end_time_title">End</string>
+    <string name="start_time_title">Başlat</string>
+    <string name="end_time_title">Son</string>
 
 
     <!-- About phone screen,  setting option name -->
     <string name="mod_version">CyanogenMod version</string>
-    <string name="mod_version_default">Unknown</string>
+    <string name="mod_version_default">Bilinmiyor</string>
     <!-- About phone screen, build date of ROM -->
-    <string name="build_date">Build date</string>
+    <string name="build_date">Derleme zamanı</string>
     <string name="build_date_default" translatable="false">2012-01-01-0000</string>
     <!-- About device screen, Cpu info -->
     <string name="cpu_info">CPU</string>
     <!-- About phone screen, Free memory info -->
-    <string name="mem_info">Memory</string>
+    <string name="mem_info">Hafıza</string>
     <!-- About phone screen, status item label -->
 
     <!-- Anonymous Statistics #CM -->
@@ -411,30 +381,30 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="header_category_interface">INTERFACE</string>
 
     <!-- Themes settings -->
-    <string name="themes_settings_title">Themes</string>
+    <string name="themes_settings_title">Temalar</string>
 
     <!-- Performance settings -->
-    <string name="performance_settings_title">Performance</string>
+    <string name="performance_settings_title">Performans</string>
 
     <!-- Performance Settings : Warning dialog -->
-    <string name="performance_settings_warning_title">Proceed with Caution</string>
+    <string name="performance_settings_warning_title">Dikkat ile devam</string>
     <string name="performance_settings_warning">These settings are included for experimentation and any changes made to them have the potential to cause instability, crashes, data loss or hardware failures.\n\nWe request you do not file bug reports if any of these settings have been changed from the defaults.</string>
 
     <!-- Performance Settings : Set on boot option -->
-    <string name="performance_set_on_boot">Set on boot</string>
+    <string name="performance_set_on_boot">Açılışta ayarla</string>
     <string name="performance_set_on_boot_summary">Restore the settings on boot</string>
 
     <!-- Performance Settings : Processor Settings -->
     <!-- Performance Settings : Processor settings title -->
-    <string name="processor_title">Processor</string>
+    <string name="processor_title">İşlemci</string>
 
     <!-- Performance Settings : Processor settings sub items -->
-    <string name="cpu_cur_freq_title">Current CPU frequency</string>
+    <string name="cpu_cur_freq_title">Şu anki CPU hızı</string>
     <string name="cpu_governors_title">CPU governor</string>
     <string name="cpu_governors_summary" translatable="false">%S</string>
-    <string name="cpu_min_freq_title">Minimum CPU frequency</string>
+    <string name="cpu_min_freq_title">Minimum CPU hızı</string>
     <string name="cpu_min_freq_summary" translatable="false">%s</string>
-    <string name="cpu_max_freq_title">Maximum CPU frequency</string>
+    <string name="cpu_max_freq_title">Maximum CPU hızı</string>
     <string name="cpu_max_freq_summary" translatable="false">%s</string>
 
     <!-- Performance Settings : I/O scheduler settings title -->
@@ -445,7 +415,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="io_sched_summary" translatable="false">%S</string>
 
     <!-- Performance Settings : Performance profile settings -->
-    <string name="perf_profile_title">Profile</string>
+    <string name="perf_profile_title">Profil</string>
     <string name="perf_profile_summary" translatable="false">%s</string>
 
     <!-- Memory Management -->
@@ -480,7 +450,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="cmupdate_settings_summary">Check for, view or install available updates</string>
 
     <!-- Advanced, Device specific (DeviceParts) settings  -->
-    <string name="advanced_settings_title">Advanced</string>
+    <string name="advanced_settings_title">Gelişmiş</string>
 
     <!-- Launches Dev Tools -->
     <string name="development_tools_title">Launch Tools</string>
@@ -555,17 +525,17 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Category title for headset specific Settings.
          [CHAR LIMIT=40] -->
-    <string name="headset_category_title">Headset</string>
+    <string name="headset_category_title">Kulaklık</string>
 
     <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app</string>
+    <string name="headset_connect_player_title">Müzik uygulamasını çalıştır</string>
     <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
 
     <!--  Other device settings -->
     <string name="more_device_controls_title">More\u2026</string>
-    <string name="more_device_settings_title">Other device options</string>
-    <string name="sensors_motors_title">Sensors &amp; motors</string>
-    <string name="display_calibration_title">Display calibration</string>
+    <string name="more_device_settings_title">Diğer cihaz ayarları</string>
+    <string name="sensors_motors_title">Sensorler ve motorlar</string>
+    <string name="display_calibration_title">Ekran kalibrasyonu</string>
 
     <!-- Setting checkbox summary for displaying USB debugging notification -->
     <string name="adb_notify">USB debugging notify</string>
@@ -587,39 +557,36 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="sms_security_check_limit_summary">Apps can send %d messages in 30 minutes before requiring confirmation</string>
     <string name="sms_security_check_limit_default">30 (Default)</string>
 
-    <!-- Custom widgets -->
-    <string name="lockscreen_custom_widgets_title">Custom widgets</string>
-
     <!--- Lock clock -->
     <string name="lock_clock_title">Clock widget</string>
-    <string name="lock_clock_summary">Customize the default Lock and Home screen widget</string>
+    <string name="lock_clock_summary">View or change how the \'cLock\' Home and Lock screen widgets will display</string>
 
     <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
-    <string name="power_notifications_category_title">Charging sounds</string>
+    <string name="power_notifications_category_title">Şarj bildirimleri</string>
 
     <!-- Sound settings, Charging sounds enable/disable, setting check box label -->
-    <string name="power_notifications_enable_title">Enable</string>
+    <string name="power_notifications_enable_title">Aktifleştir</string>
     <string name="power_notifications_enable_summary">Play a sound when connecting or disconnecting the charger</string>
     <!-- Sound settings, Charging sounds vibrate enable/disable, setting check box label -->
-    <string name="power_notifications_vibrate_title">Vibrate</string>
+    <string name="power_notifications_vibrate_title">Titreşim</string>
     <!-- Sound settings, Charging sounds ringtone selection, preference label -->
-    <string name="power_notifications_ringtone_title">Notification sound</string>
+    <string name="power_notifications_ringtone_title">Bildirim sesi</string>
     <!-- Sound settings, charging sounds label for ringtone == none -->
     <string name="power_notifications_ringtone_silent">Silent</string>
 
     <!-- Power menu enable disable -->
-    <string name="power_menu_title">Power menu</string>
-    <string name="power_menu_reboot_title">Reboot menu</string>
-    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_title">Güç menüsü</string>
+    <string name="power_menu_reboot_title">Yeniden başlatma menüsü</string>
+    <string name="power_menu_screenshot_title">Ekran görüntüsü</string>
     <string name="power_menu_expanded_desktop">Expanded desktop</string>
-    <string name="expanded_desktop_disabled">Disabled</string>
+    <string name="expanded_desktop_disabled">Devre dışı</string>
     <string name="expanded_desktop_status_bar">Status bar visible</string>
     <string name="expanded_desktop_no_status_bar">Status bar hidden</string>
-    <string name="power_menu_profiles_title">Profile switcher</string>
-    <string name="power_menu_airplane_title">Airplane mode</string>
-    <string name="power_menu_user_title">User switcher</string>
-    <string name="power_menu_sound_title">Sound panel</string>
+    <string name="power_menu_profiles_title">Profil değiştirici</string>
+    <string name="power_menu_airplane_title">Uçak modu</string>
+    <string name="power_menu_user_title">Kullanıcı değiştirici</string>
+    <string name="power_menu_sound_title">Ses paneli</string>
 
     <!-- Hardware keys -->
     <string name="button_settings">Buttons</string>

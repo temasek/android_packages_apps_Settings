@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!--
+     Copyright (C) 2012-2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -46,27 +47,41 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/title_general"
+        android:key="lockscreen_general_category" >
+
+        <PreferenceScreen
+            android:key="screen_security"
+            android:fragment="com.android.settings.SecuritySettings"
+            android:title="@string/screen_security_category"
+            android:summary="@string/screen_security_summary">
+            <extra android:name="cm_security" android:value="true" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/lockscreen_widgets_category_title"
         android:key="lockscreen_widgets_category" >
 
+        <CheckBoxPreference
+            android:key="keyguard_enable_widgets"
+            android:title="@string/lockscreen_custom_widgets_title" />
+
         <!-- Lock clock -->
         <PreferenceScreen
-        android:key="lock_clock"
-        android:title="@string/lock_clock_title"
-        android:summary="@string/lock_clock_summary">
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.cyanogenmod.lockclock"
-                android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
+            android:key="lock_clock"
+            android:title="@string/lock_clock_title"
+            android:summary="@string/lock_clock_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.cyanogenmod.lockclock"
+                    android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
         </PreferenceScreen>
 
         <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
             android:key="lockscreen_maximize_widgets"
             android:summary="@string/lockscreen_maximize_widgets_summary"
             android:title="@string/lockscreen_maximize_widgets_title" />
-
-        <CheckBoxPreference
-            android:key="keyguard_enable_widgets"
-            android:title="@string/lockscreen_enable_widgets_title" />
 
     </PreferenceCategory>
 </PreferenceScreen>
