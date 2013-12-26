@@ -1,0 +1,32 @@
+From faee691f59063db8099b7de7ab895d24ec8dc420 Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Mon, 16 Dec 2013 19:00:50 +0300
+Subject: [PATCH 42/56] Delete cr_strings_v21.diff
+
+---
+ cr_strings_v21.diff | 13 -------------
+ 1 file changed, 13 deletions(-)
+ delete mode 100644 cr_strings_v21.diff
+
+diff --git a/cr_strings_v21.diff b/cr_strings_v21.diff
+deleted file mode 100644
+index bb74f8d..0000000
+--- a/cr_strings_v21.diff
++++ /dev/null
+@@ -1,13 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\cr_96A4.tmp\\cr_strings-a306630-left.xml" "b/D:\\Temp\\TortoiseGit\\cr_9694.tmp\\cr_strings-4528e68-right.xml"
+-index 4434dc0..c9df56b 100644
+---- "a/D:\\Temp\\TortoiseGit\\cr_96A4.tmp\\cr_strings-a306630-left.xml"
+-+++ "b/D:\\Temp\\TortoiseGit\\cr_9694.tmp\\cr_strings-4528e68-right.xml"
+-@@ -5,7 +5,7 @@
+-     <!-- About phone screen, temasek version -->
+-     <string name="temasek_version_title">Temasek unofficial version</string>
+-     <!-- Do NOT Translate this -->
+--    <string name="temasek_version_default">V20.2-private</string>
+-+    <string name="temasek_version_default">V21</string>
+- 
+-     <!-- General strings -->
+-     <string name="reset">Reset</string>
+-- 
+1.8.4.msysgit.0
+

@@ -1,0 +1,29 @@
+From 46150174156d9ca8a318b1020ac56291fd010c63 Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Sat, 14 Dec 2013 17:00:36 +0400
+Subject: [PATCH 33/56] Update V20
+
+---
+ res/values-ru/cr_strings.xml | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/res/values-ru/cr_strings.xml b/res/values-ru/cr_strings.xml
+index c8605d5..19c05bd 100644
+--- a/res/values-ru/cr_strings.xml
++++ b/res/values-ru/cr_strings.xml
+@@ -518,9 +518,10 @@
+     <string name="lockscreen_style_reset_message">Сбросить все цвета экрана блокировки?</string>
+     <string name="lockscreen_icon_title">Иконка замка в слайдере</string>
+     <string name="lockscreen_lock_icon_custom">Пользовательская иконка</string>
++    <string name="lockscreen_lock_icon_temasek">Иконка от Temasek</string>
+     <string name="lockscreen_lock_icon_default">Иконка по умолчанию</string>
+-    <string name="lockscreen_colorize_handle_title">Изменить цвет замка</string>
+-    <string name="lockscreen_colorize_handle_summary">Пользовательская картинка будет определять цвет блокировки</string>
++    <string name="lockscreen_colorize_handle_title">Расскрасить вручную</string>
++    <string name="lockscreen_colorize_handle_summary">Цвет блокировки будет установлен на основе ручного выбора</string>
+     <string name="lockscreen_style_title">Стиль блокировки</string>
+     <string name="lockscreen_frame_color_title">Цвет рамки</string>
+     <string name="lockscreen_frame_color_summary">Цвет рамки и фона экрана разблокировки</string>
+-- 
+1.8.4.msysgit.0
+

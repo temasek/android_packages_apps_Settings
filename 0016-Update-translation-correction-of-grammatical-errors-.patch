@@ -1,0 +1,364 @@
+From fad267487ede8220af69ef74e6c9f75d4fcad89e Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Thu, 5 Dec 2013 01:11:30 +0400
+Subject: [PATCH 16/56] Update translation, correction of grammatical errors,
+ reducing text in files.
+
+---
+ res/values-ru/cm_strings.xml |   4 ++
+ res/values-ru/cr_strings.xml | 163 ++++++++++++++++++++++---------------------
+ 2 files changed, 87 insertions(+), 80 deletions(-)
+
+diff --git a/res/values-ru/cm_strings.xml b/res/values-ru/cm_strings.xml
+index da631ad..6fa3055 100644
+--- a/res/values-ru/cm_strings.xml
++++ b/res/values-ru/cm_strings.xml
+@@ -634,6 +634,10 @@
+     <string name="sms_security_check_limit_title">Ограничение SMS-сообщений</string>
+     <string name="sms_security_check_limit_summary">Показывать предупреждение при слишком частой отправке SMS-сообщений приложениями. Текущее значение: %d сообщений в 15 минут.</string>
+     <string name="sms_security_check_limit_default">30 (по умолчанию)</string>
++    
++    <!--- Lock clock -->
++    <string name="lock_clock_title">Виджет «cLock»</string>
++    <string name="lock_clock_summary">Просмотр или изменение настроек отображения виджета «cLock» на главном экране или экране блокировки</string>
+ 
+     <!-- Category title for Charging sounds (Power state change) specific Settings.
+          [CHAR LIMIT=40] -->
+diff --git a/res/values-ru/cr_strings.xml b/res/values-ru/cr_strings.xml
+index 12ed1ad..a90369c 100644
+--- a/res/values-ru/cr_strings.xml
++++ b/res/values-ru/cr_strings.xml
+@@ -4,9 +4,7 @@
+ 
+     <!-- About phone screen, temasek version -->
+     <string name="temasek_version_title">Неофициальная версия от Temasek</string>
+-    <!-- Do NOT Translate this -->
+-    <string name="temasek_version_default">V14</string>
+-
++	
+     <!-- General strings -->
+     <string name="reset">Сброс</string>
+     <string name="enabled">Включено</string>
+@@ -29,7 +27,7 @@
+     <!-- Status bar -->
+     <string name="status_bar_title">Строка состояния</string>
+     <string name="status_bar_style_title">Параметры строки состояния</string>
+-    <string name="status_bar_general_title">Общие</string>
++    <string name="status_bar_general_title">Основные</string>
+ 
+     <!-- Status bar | Clock -->
+     <string name="status_bar_clock">Часы и дата</string>
+@@ -43,7 +41,7 @@
+     <string name="status_bar_am_pm_title">AM/PM</string>
+     <string name="status_bar_am_pm_info">24-часовой формат включен</string>
+     <string name="enable_clock_weekday">День недели</string>
+-    <string name="enable_clock_weekday_summary">Сокращенный день недели для отображения</string>
++    <string name="enable_clock_weekday_summary">Сокращённый день недели для отображения</string>
+     <string name="right_clock">Часы справа</string>
+     <string name="center_clock">Часы по центру</string>
+     <string name="dont_show">Не показывать</string>
+@@ -68,7 +66,7 @@
+     <!-- Advanced low battery indicator options -->  
+     <string name="lights_and_warnings_title">Индикация и предупреждения</string>
+     <string name="lights_and_warnings_style_title">Параметры индикации и предупреждений</string>
+-    <string name="pref_low_battery_warning_policy_title">Предупреждение о низком заряде батареи</string>
++    <string name="pref_low_battery_warning_policy_title">Уведомление о низком заряде батареи</string>
+     <string name="pref_low_battery_warning_policy_dialog_title">Уведомление о низком заряде батареи</string>
+     <string name="low_battery_warning_policy_popup_sound">Всплывающий диалог и звук</string>
+     <string name="low_battery_warning_policy_notif_sound">Уведомление и звук</string>
+@@ -83,7 +81,7 @@
+ 
+     <!-- Alternate default app picker -->
+     <string name="general_settings_title">Общие настройки</string>
+-    <string name="general_settings_style_title">Общие параметры</string>
++    <string name="general_settings_style_title">Общие настройки</string>
+     <string name="display_short">Дисплей</string>
+     <string name="misc_short">Разное</string>
+     <string name="alt_resolver">Использовать по умолчанию альтернативную сетку приложений</string>
+@@ -117,9 +115,9 @@
+     <string name="system_power_crt_mode_scale">Уменьшать</string>
+ 
+     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+-    <string name="show_cpu_info">Показывать информацию о ЦП</string>
++    <string name="show_cpu_info">Информация о загрузке ЦП</string>
+     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+-    <string name="show_cpu_info_summary">Экран, показывающий текущую загрузку ЦП</string>
++    <string name="show_cpu_info_summary">Включить экран, показывающий текущую загрузку ЦП</string>
+ 
+     <!-- Status bar brightness control -->
+     <string name="status_bar_toggle_brightness">Регулировка яркости</string>
+@@ -158,8 +156,8 @@
+     <string name="shortcut_action_none">Ничего</string>
+     <string name="shortcut_action_power_menu">Меню питания</string>
+     <string name="shortcut_action_torch">Фонарик</string>
+-    <string name="shortcut_action_longpress">Длительное нажатие:</string>
+-    <string name="shortcut_action_select_action_longpress">Выберите действие для длительного нажатия:</string>
++    <string name="shortcut_action_longpress">Долгое нажатие:</string>
++    <string name="shortcut_action_select_action_longpress">Выберите действие для долгого нажатия:</string>
+     <string name="shortcut_action_select_action">Выберите действие:</string>
+     <string name="shortcut_action_select_action_newbutton">Выберите новое действие:</string>
+     <string name="shortcut_action_reset">Сброс</string>
+@@ -175,68 +173,68 @@
+     <string name="shortcut_action_help_shortcut">ярлык</string>
+     <string name="shortcut_action_help_button">ярлык</string>
+     <string name="shortcut_action_help_icon">, а при нажатии на иконку, появится возможность настройки</string>
+-    <string name="shortcut_action_help_main">Чтобы добавить %1$s, нажмите значек Добавить.  После того, как %1$s добавлен, нажмите на строку для смены назначения%2$ов\n\nЧтобы удалить %1$s, проведите по строке горизонтально влево или вправо.  Расположение %1$s в списке по вертикали меняется перетаскиванием иконки слева.\n\nЧтобы очистить или сбросить значения по умолчанию, нажмите на значек Сброс.</string>
++    <string name="shortcut_action_help_main">Чтобы добавить %1$s, нажмите значек Добавить.  После того, как %1$s добавлен, нажмите на строку для смены назначения%2$s\n\nЧтобы удалить %1$s, проведите по строке горизонтально влево или вправо.  Расположение %1$s в списке по вертикали меняется перетаскиванием иконки слева.\n\nЧтобы очистить или сбросить значения по умолчанию, нажмите на значек Сброс.</string>
+     <string name="shortcut_action_help_delete_last_entry">Удаление любого %1$s в списке будет отключать функцию полностью.</string>
+-    <string name="shortcut_action_help">Помощь</string>
++    <string name="shortcut_action_help">Справка</string>
+ 
+-    <string name="shortcuts_icon_picker_alarm">Alarm</string>
++    <string name="shortcuts_icon_picker_alarm">Будильник</string>
+     <string name="shortcuts_icon_picker_andy">Andy</string>
+-    <string name="shortcuts_icon_picker_battery">Battery</string>
+-    <string name="shortcuts_icon_picker_browser">Browser</string>
+-    <string name="shortcuts_icon_picker_calendar">Calendar</string>
+-    <string name="shortcuts_icon_picker_camera">Camera</string>
+-    <string name="shortcuts_icon_picker_cloud">Cloud</string>
+-    <string name="shortcuts_icon_picker_contact">Contact</string>
+-    <string name="shortcuts_icon_picker_directdial">Direct Dial</string>
+-    <string name="shortcuts_icon_picker_directmessage">Direct Message</string>
+-    <string name="shortcuts_icon_picker_drive">Drive</string>
++    <string name="shortcuts_icon_picker_battery">Батарея</string>
++    <string name="shortcuts_icon_picker_browser">Браузер</string>
++    <string name="shortcuts_icon_picker_calendar">Календарь</string>
++    <string name="shortcuts_icon_picker_camera">Камера</string>
++    <string name="shortcuts_icon_picker_cloud">Облачный сервис</string>
++    <string name="shortcuts_icon_picker_contact">Контакт</string>
++    <string name="shortcuts_icon_picker_directdial">Быстрый звонок</string>
++    <string name="shortcuts_icon_picker_directmessage">Быстрое сообщение</string>
++    <string name="shortcuts_icon_picker_drive">Вождение</string>
+     <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+-    <string name="shortcuts_icon_picker_email">Email</string>
+-    <string name="shortcuts_icon_picker_email2">Email Alternate</string>
++    <string name="shortcuts_icon_picker_email">Почта</string>
++    <string name="shortcuts_icon_picker_email2">Почта 2</string>
+     <string name="shortcuts_icon_picker_evernote">Evernote</string>
+     <string name="shortcuts_icon_picker_facebook">Facebook</string>
+-    <string name="shortcuts_icon_picker_favorite">Favorite</string>
+-    <string name="shortcuts_icon_picker_file_browser">File Browser</string>
+-    <string name="shortcuts_icon_picker_file_browser2">File Browser Alternate</string>
+-    <string name="shortcuts_icon_picker_fitness">Fitness</string>
+-    <string name="shortcuts_icon_picker_gallery">Gallery</string>
++    <string name="shortcuts_icon_picker_favorite">Избранное</string>
++    <string name="shortcuts_icon_picker_file_browser">Файловый менеджер</string>
++    <string name="shortcuts_icon_picker_file_browser2">Файловый менеджер 2</string>
++    <string name="shortcuts_icon_picker_fitness">Фитнес</string>
++    <string name="shortcuts_icon_picker_gallery">Галерея</string>
+     <string name="shortcuts_icon_picker_gears">Gears</string>
+     <string name="shortcuts_icon_picker_google_small">Google</string>
+     <string name="shortcuts_icon_picker_gplus">Google Plus</string>
+     <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
+-    <string name="shortcuts_icon_picker_help">Help</string>
++    <string name="shortcuts_icon_picker_help">Справка</string>
+     <string name="shortcuts_icon_picker_joystick">Joystick</string>
+-    <string name="shortcuts_icon_picker_key">Keys/Accounts</string>
++    <string name="shortcuts_icon_picker_key">Ключи/Аккаунты</string>
+     <string name="shortcuts_icon_picker_laptop">Laptop</string>
+-    <string name="shortcuts_icon_picker_notes">Notes</string>
+-    <string name="shortcuts_icon_picker_luggage">Travel</string>
+-    <string name="shortcuts_icon_picker_maps">Maps</string>
+-    <string name="shortcuts_icon_picker_market">Market</string>
+-    <string name="shortcuts_icon_picker_movie">Movies</string>
+-    <string name="shortcuts_icon_picker_music">Music</string>
+-    <string name="shortcuts_icon_picker_nav">Navigation</string>
+-    <string name="shortcuts_icon_picker_phone">Phone</string>
+-    <string name="shortcuts_icon_picker_package">Package</string>
+-    <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+-    <string name="shortcuts_icon_picker_play">Play</string>
+-    <string name="shortcuts_icon_picker_pocket">Pocket</string>
+-    <string name="shortcuts_icon_picker_quicksettings">Quick Settings</string>
++    <string name="shortcuts_icon_picker_notes">Заметки</string>
++    <string name="shortcuts_icon_picker_luggage">Путешествие</string>
++    <string name="shortcuts_icon_picker_maps">Карты</string>
++    <string name="shortcuts_icon_picker_market">Магазин</string>
++    <string name="shortcuts_icon_picker_movie">Видео</string>
++    <string name="shortcuts_icon_picker_music">Музыка</string>
++    <string name="shortcuts_icon_picker_nav">Навигация</string>
++    <string name="shortcuts_icon_picker_phone">Телефон</string>
++    <string name="shortcuts_icon_picker_package">Пакеты</string>
++    <string name="shortcuts_icon_picker_pinterest">Интерес</string>
++    <string name="shortcuts_icon_picker_play">Игра</string>
++    <string name="shortcuts_icon_picker_pocket">Карман</string>
++    <string name="shortcuts_icon_picker_quicksettings">Быстрые настройки</string>
+     <string name="shortcuts_icon_picker_rss">RSS Feed</string>
+-    <string name="shortcuts_icon_picker_sdcard">SDCard</string>
+-    <string name="shortcuts_icon_picker_search">Search</string>
+-    <string name="shortcuts_icon_picker_sms">Messaging</string>
+-    <string name="shortcuts_icon_picker_tasks">Tasks</string>
+-    <string name="shortcuts_icon_picker_terminal">Terminal</string>
+-    <string name="shortcuts_icon_picker_transit">Transit</string>
+-    <string name="shortcuts_icon_picker_tv">TV</string>
++    <string name="shortcuts_icon_picker_sdcard">SD карта</string>
++    <string name="shortcuts_icon_picker_search">Поиск</string>
++    <string name="shortcuts_icon_picker_sms">Сообщение</string>
++    <string name="shortcuts_icon_picker_tasks">Задачи</string>
++    <string name="shortcuts_icon_picker_terminal">Терминал</string>
++    <string name="shortcuts_icon_picker_transit">Транзит</string>
++    <string name="shortcuts_icon_picker_tv">ТВ</string>
+     <string name="shortcuts_icon_picker_twitter">Twitter</string>
+-    <string name="shortcuts_icon_picker_unlock">Unlock</string>
++    <string name="shortcuts_icon_picker_unlock">Разблокировать</string>
+ 
+     <string name="icon_picker_type">Выберите тип иконки:</string>
+     <string name="icon_default">По умолчанию</string>
+     <string name="icon_presets">Системные иконки</string>
+     <string name="icon_custom">Галерея</string>
+-    <string name="icon_pack">Пак иконок</string>
++    <string name="icon_pack">Набор иконок</string>
+     <string name="icon_picker_choose_icon_title">Выбор иконок</string>
+     <string name="icon_color_mode_all_icons">Все иконки</string>
+     <string name="icon_color_mode_system_icons">Системные</string>
+@@ -270,13 +268,13 @@
+     <string name="circle_battery_animation_speed_slow">Медленная</string>
+     <string name="circle_battery_animation_speed_stock">Нормальная</string>
+     <string name="circle_battery_animation_speed_fast">Быстрая</string>
+-    <string name="battery_text_color">Цвет текста с процентами</string>
++    <string name="battery_text_color">Цвет текста процентов</string>
+     <string name="battery_bolt_color">Цвет значка зарядки (молнии)</string>
+-    <string name="battery_text_charging_color">Цвет текста с процентами при зарядке</string>
++    <string name="battery_text_charging_color">Цвет текста процентов при зарядке</string>
+     <string name="battery_style_reset_message">Сбросить все цвета индикатора батареи?</string>
+    
+     <!-- Animation Controls -->  
+-    <string name="title_animation_controls">Custom System Animations</string>  
++    <string name="title_animation_controls">Пользовательская анимация системы</string>  
+     <string name="activity_open_title">Activity Open Animation</string>  
+     <string name="activity_close_title">Activity Close Animation</string>  
+     <string name="task_open_title">Task Open Animation</string>  
+@@ -357,7 +355,7 @@
+     <string name="key_home_enabled">Кнопка "Домой" включена</string>
+ 
+     <!-- MediaScanner behavior on boot -->
+-    <string name="media_scanner_on_boot_title">Поведение сканера медиафайлов при загрузке</string>
++    <string name="media_scanner_on_boot_title">Сканирование медиафайлов при загрузке</string>
+     <string name="media_scanner_on_boot_enabled">Сканировать</string>
+     <string name="media_scanner_on_boot_ask">Спросить для сканирования (уведомление)</string>
+     <string name="media_scanner_on_boot_disabled">Не сканировать</string>
+@@ -368,12 +366,12 @@
+     <!-- Recents Ram Bar -->
+     <string name="ram_bar">Строка использования ОЗУ</string>
+     <string name="ram_bar_note_title">Примечание</string>
+-    <string name="ram_bar_note_summary">Эта строка ОЗУ показывает фактическое использование андроидом оперативной памяти (ОЗУ). Пожалуйста, обратите внимание, что наличие приложений в кэше помогает устройству открывать приложения гораздо быстрее. Для дальнейших объяснений того, как работает управление оперативной памятью (ОЗУ) в андроиде, откройте меню помощи.</string>
++    <string name="ram_bar_note_summary">Эта строка ОЗУ показывает фактическое использование андроидом оперативной памяти (ОЗУ). Пожалуйста, обратите внимание, что наличие приложений в кэше помогает устройству открывать приложения гораздо быстрее. Для дальнейших объяснений того, как работает управление оперативной памятью (ОЗУ) в андроиде, нажмите кнопку Справка.</string>
+     <string name="ram_bar_mode_title">Режим строки использования ОЗУ</string>
+     <string name="ram_bar_mode_dialog_title">Показывать в строке использования ОЗУ</string>
+     <string name="ram_bar_none">Ничего</string>
+     <string name="ram_bar_apps">Приложения</string>
+-    <string name="ram_bar_cache">Кэш</string>
++    <string name="ram_bar_cache">Приложения и кэш</string>
+     <string name="ram_bar_other">Приложения, кэш и другое</string>
+     <string name="ram_bar_style_cat">Стиль строки использования ОЗУ</string>
+     <string name="ram_bar_color_app_mem_color">Цвет приложений в строке ОЗУ</string>
+@@ -381,18 +379,11 @@
+     <string name="ram_bar_color_total_mem_color">Цвет другого в строке ОЗУ</string>
+     <string name="ram_bar_color_enabled">Включено</string>
+     <string name="ram_bar_color_disabled">Отключено</string>
+-    <string name="ram_bar_button_help">Помощь</string>
++    <string name="ram_bar_button_help">Справка</string>
+     <string name="ram_bar_button_reset">Сброс цвета</string>
+     <string name="ram_bar_reset">Сброс</string>
+     <string name="ram_bar_reset_message">Сбросить стиль строки использования ОЗУ по умолчанию?</string>
+ 
+-    <!-- Clear Recents position -->
+-    <string name="clear_recents_position_title">Расположение кнопки очистки последних приложений</string>
+-    <string name="clear_recents_position_disabled">Отключено</string>
+-    <string name="clear_recents_position_bottom_right">Внизу справа</string>
+-    <string name="clear_recents_position_bottom_left">Внизу слева</string>
+-    <string name="clear_recents_position_top_right">Вверху справа</string>
+-    <string name="clear_recents_position_top_left">Вверху слева</string>
+ 
+     <!-- Enable Quick Unlock -->
+     <string name="lockscreen_quick_unlock_control_title">Быстрая разблокировка</string>
+@@ -417,13 +408,13 @@
+     <string name="lockscreen_target_reset_message">Удалить все созданные ярлыки экрана блокировки и восстановить значения по умолчанию?</string>
+     <string name="lockscreen_target_empty">Ничего</string>
+     <string name="lockscreen_target_edit_title">Редактировать ярлык и иконку</string>
+-    <string name="lockscreen_target_edit_msg">Выберите или измените нужное приложение или действие и связанную с ними иконку</string>
++    <string name="lockscreen_target_edit_msg">Выберите или измените нужное приложение или действие, и связанную с ними иконку</string>
+ 
+     <!-- Lockscreen Shortcuts -->
+     <string name="lockscreen_shortcuts_title">Ярлыки на экране блокировки</string>
+     <string name="lockscreen_shortcuts_summary">Просмотр или изменение ярлыков на экране блокировки</string>
+-    <string name="lockscreen_shorcuts_longpress_title">Длительное нажатие на ярлык</string>
+-    <string name="lockscreen_shorcuts_longpress_summary">Открывать пользовательское приложение при длительном нажатии на ярлык</string>
++    <string name="lockscreen_shorcuts_longpress_title">Долгое нажатие на ярлык</string>
++    <string name="lockscreen_shorcuts_longpress_summary">Открывать пользовательское приложение при долгом нажатии на ярлык</string>
+ 
+     <!-- Lock screen targets and shortcuts -->
+     <string name="picker_activities">Activities</string>
+@@ -500,7 +491,7 @@
+ 
+     <!-- ListView animation -->
+     <string name="bars_and_menus_category_system_title">Система</string>
+-    <string name="listview_animation_title">Список анимации</string>
++    <string name="listview_animation_title">Выбрать анимацию для списков</string>
+     <string name="listview_off">Выкл.</string>
+     <string name="listview_wave_left">Волна (Слева)</string>
+     <string name="listview_wave_right">Волна (Справа)</string>
+@@ -514,7 +505,7 @@
+     <string name="listview_translate_right">Перевод (Справа)</string>
+ 
+     <!-- ListView interpolator -->
+-    <string name="listview_interpolator_title">Список интерполяторов</string>
++    <string name="listview_interpolator_title">Выбрать интерполятор для списков</string>
+     <string name="listview_accelerate_interpolator">accelerate_interpolator</string>
+     <string name="listview_decelerate_interpolator">decelerate_interpolator</string>
+     <string name="listview_accelerate_decelerate_interpolator">accelerate_decelerate_interpolator</string>
+@@ -530,7 +521,7 @@
+     <string name="lockscreen_maximize_widgets_title">Открывать развёрнутыми</string>
+     <string name="lockscreen_maximize_widgets_summary">Показывать виджеты в развёрнутом виде при включении экрана</string>
+     <string name="lockscreen_disable_hints_title">Отключить подсказки на начальной странице</string>
+-    <string name="lockscreen_disable_hints_summary">Отключить свечение окружающее виджет по краям на экране блокировки в портретном режиме</string>
++    <string name="lockscreen_disable_hints_summary">Отключить свечение, окружающее виджет по краям на экране блокировки в портретном режиме</string>
+     <string name="lockscreen_use_widget_container_carousel_title">Включить карусель для виджетов</string>
+     <string name="lockscreen_use_widget_container_carousel_summary">Использовать анимацию карусели в портретном режиме для переключения между виджетами на экране блокировки</string>
+ 
+@@ -540,8 +531,8 @@
+     <string name="ad_enable_title">Включение</string>
+     <string name="ad_enable_summary_on">Активный дисплей включен</string>
+     <string name="ad_enable_summary_off">Активный дисплей выключен</string>
+-    <string name="ad_text_title">Тект уведомлений</string>
+-    <string name="ad_text_summary">Показывать тект уведомления по кольцу.</string>
++    <string name="ad_text_title">Текст уведомлений</string>
++    <string name="ad_text_summary">Показывать текст уведомления вокруг слайдера.</string>
+     <string name="ad_all_notifications_title">Все уведомления</string>
+     <string name="ad_all_notifications_summary">Показывать все уведомленя, включая текущие и не прекращающиеся.</string>
+     <string name="ad_hide_low_priority_title">Скрыть низкий приоритет</string>
+@@ -573,8 +564,8 @@
+     <string name="ad_pocket_mode_always">Всегда</string>
+ 
+     <!-- Lockscreen pin shuffle -->
+-    <string name="lock_numpad_random_title">Change the order of PIN pad numbers</string>
+-    <string name="lock_numpad_random_dialog_title">PIN pad random order</string>
++    <string name="lock_numpad_random_title">Изменить порядок цифр на PIN-клавиатуре</string>
++    <string name="lock_numpad_random_dialog_title">PIN-клавиатура в случайном порядке</string>
+     <string name="lock_numpad_random_off">Отключено</string>
+     <string name="lock_numpad_random_always">Всегда</string>
+     <string name="lock_numpad_random_on_request">По запросу</string>
+@@ -619,7 +610,19 @@
+     <!-- Custom notification panel header -->
+     <string name="omni_features_title">Особенности OMNI</string>
+     <string name="notification_drawer_category_title">Панель уведомлений</string>
+-    <string name="custom_statusbar_header_title">Контекстный заголовок панели уведомлений</string>
+-    <string name="custom_statusbar_header_summary">Устанавить фоновое изображение заголовка панели уведомлений в виде текущей даты и времени</string>
++    <string name="custom_statusbar_header_title">Заголовок панели уведомлений</string>
++    <string name="custom_statusbar_header_summary">Устанавить случайное фоновое изображение в заголовке панели уведомлений, там, где располагается текущая дата и время.</string>
++	
++    <string name="omni_features_recent_panel_title" >Последние приложения</string>
++
++    <!--  Recents clear all -->
++    <string name="show_recent_clear_all_button_title">Показывать кнопку "Очистить всё"</string>
++    <string name="show_recent_clear_all_button_summary">Установите галочку, чтобы показать или снимите, чтобы скрыть отображение кнопки "Очистить всё" на экране последних приложений</string>
++    <string name="recent_clear_all_button_location_title">Расположение кнопки "Очистить всё"</string>
++    <string name="recent_clear_all_button_location_summary">Выберите, где будет располагаться кнопка "Очистить всё"</string>
++    <string name="recent_clear_all_button_location_top_left">Вверху слева</string>
++    <string name="recent_clear_all_button_location_top_right">Вверху справа</string>
++    <string name="recent_clear_all_button_location_bottom_left">Внизу слева</string>
++    <string name="recent_clear_all_button_location_bottom_right">Внизу справа</string>
+         
+ </resources>
+-- 
+1.8.4.msysgit.0
+

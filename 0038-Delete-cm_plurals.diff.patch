@@ -1,0 +1,46 @@
+From 1ffa529f9d6f1cb562401e3118964491ab0e9e8b Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Mon, 16 Dec 2013 18:57:38 +0300
+Subject: [PATCH 38/56] Delete cm_plurals.diff
+
+---
+ cm_plurals.diff | 27 ---------------------------
+ 1 file changed, 27 deletions(-)
+ delete mode 100644 cm_plurals.diff
+
+diff --git a/cm_plurals.diff b/cm_plurals.diff
+deleted file mode 100644
+index 92bc8fd..0000000
+--- a/cm_plurals.diff
++++ /dev/null
+@@ -1,27 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\Pat543D.tmp.xml" "b/D:\\Temp\\TortoiseGit\\cm_543C.tmp\\cm_plurals-4528e68.xml"
+-index e69de29..c6943e3 100644
+---- "a/D:\\Temp\\TortoiseGit\\Pat543D.tmp.xml"
+-+++ "b/D:\\Temp\\TortoiseGit\\cm_543C.tmp\\cm_plurals-4528e68.xml"
+-@@ -0,0 +1,22 @@
+-+<?xml version="1.0" encoding="utf-8"?>
+-+<!--
+-+     Copyright (C) 2013 The CyanogenMod Project
+-+
+-+     Licensed under the Apache License, Version 2.0 (the "License");
+-+     you may not use this file except in compliance with the License.
+-+     You may obtain a copy of the License at
+-+
+-+          http://www.apache.org/licenses/LICENSE-2.0
+-+
+-+     Unless required by applicable law or agreed to in writing, software
+-+     distributed under the License is distributed on an "AS IS" BASIS,
+-+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-+     See the License for the specific language governing permissions and
+-+     limitations under the License.
+-+-->
+-+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+-+    <plurals name="backlight_timeout_time">
+-+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
+-+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
+-+    </plurals>
+-+</resources>
+-- 
+1.8.4.msysgit.0
+

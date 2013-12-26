@@ -1,0 +1,184 @@
+From 705973ffef2ac1ad054774e6f9be48077e224b60 Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Fri, 13 Dec 2013 00:15:16 +0400
+Subject: [PATCH 30/56] Fix
+
+---
+ res/values-ru/cm_strings.xml | 19 ++++++++++---------
+ res/values-ru/cr_strings.xml |  7 +++----
+ res/values/cm_strings.xml    |  6 ------
+ res/values/cr_strings.xml    | 17 -----------------
+ 4 files changed, 13 insertions(+), 36 deletions(-)
+
+diff --git a/res/values-ru/cm_strings.xml b/res/values-ru/cm_strings.xml
+index 06bf1d5..9f9e1f5 100644
+--- a/res/values-ru/cm_strings.xml
++++ b/res/values-ru/cm_strings.xml
+@@ -20,6 +20,10 @@
+     <string name="wifi_setting_countrycode_summary">Укажите код региона Wi-Fi</string>
+     <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+     <string name="wifi_setting_countrycode_error">При настройке кода региона Wi-Fi возникла неполадка.</string>
++    <!-- Wi-Fi settings screen, advanced, title of the item to set the Wi-Fi priority. -->
++    <string name="wifi_setting_priority_title">Wi-Fi priority</string>
++    <!-- Wi-Fi settings screen, setting summary for setting the Wi-Fi priority-->
++    <string name="wifi_setting_priority_summary">Specify the priority of the Wi-Fi networks</string>
+ 
+     <!-- Sound settings screen -->
+     <string name="ring_mode_title">Режим звонка</string>
+@@ -435,7 +439,6 @@
+ 
+     <!-- Change Log strings -->
+     <string name="changelog_title">Список изменений</string>
+-    <string name="changelog_dialog">Список изменений</string>
+     <string name="changelog_loading">Загрузка списка...</string>
+     <string name="changelog_error">Ошибка загрузки списка</string>
+     <string name="changelog_unknown">Неизвестно</string>
+@@ -595,10 +598,6 @@
+     <string name="hardware_keys_short_press_title">Короткое нажатие</string>
+     <string name="hardware_keys_long_press_title">Долгое нажатие</string>
+     <string name="hardware_keys_double_tap_title">Двойное нажатие</string>
+-    <string name="hardware_keys_show_overflow_title">Показывать кнопку меню</string>
+-    <string name="hardware_keys_show_overflow_summary">Показывать кнопку меню (вертикальное троеточие) в приложениях</string>
+-    <string name="hardware_keys_show_overflow_toast_enable">Кнопка меню может не отображаться до перезапуска приложений</string>
+-    <string name="hardware_keys_show_overflow_toast_disable">Кнопка меню может отображаться до перезапуска приложений</string>
+     <string name="hardware_keys_action_nothing">Нет действия</string>
+     <string name="hardware_keys_action_menu">Меню приложения</string>
+     <string name="hardware_keys_action_app_switch">Запущенные приложения</string>
+@@ -640,11 +639,13 @@
+     <!-- Delete apn confirmation dialog message -->
+     <string name="confirm_delete_apn">Точка доступа (APN) будет удалена.</string>
+ 
+-    <!-- AOSP dummy strings -->
+-    <string name="experimental_webview"></string>
+-    <string name="experimental_webview_summary"></string>
+-
+     <!--  development shortcut -->
+     <string name="development_shortcut_title">Ярлык разработчика</string>
+     <string name="development_shortcut_summary">Включить опцию \'wipe data\' и \'force close\' в панели уведомлений и списке недавних приложений</string>
++
++    <!-- WhisperPush -->
++    <string name="whisperpush_title">WhisperPush</string>
++    <string name="whisperpush_registration_title">Register</string>
++    <string name="whisperpush_registration_summary">Register for WhisperPush to enable encrypted SMS.</string>
++    <string name="whisperpush_identitykey_title">Review identity keys</string>
+ </resources>
+diff --git a/res/values-ru/cr_strings.xml b/res/values-ru/cr_strings.xml
+index b592c18..38b1788 100644
+--- a/res/values-ru/cr_strings.xml
++++ b/res/values-ru/cr_strings.xml
+@@ -4,10 +4,6 @@
+ 
+     <!-- About phone screen, temasek version -->
+     <string name="temasek_version_title">Неофициальная версия от Temasek</string>
+-<<<<<<< HEAD
+-=======
+-
+->>>>>>> d2505d14c4203f23dc6226162f76cc35bfc84f0d
+     <!-- General strings -->
+     <string name="reset">Сброс</string>
+     <string name="enabled">Включено</string>
+@@ -664,6 +660,9 @@
+     <string name="title_tile_music">Музыка</string>
+     <string name="title_tile_reboot">Перезагузка</string>
+     <string name="tiles_reset_message">Восстановить плитки и их расположение по умолчанию?</string>
++    <string name="disable_qs">Quick settings are disabled</string>
++    <string name="disable_qs_message">All tiles were removed. Quick settings are disabled.\n\nTo enable add a tile.</string>
++    <string name="help_qs_message">To add a quick settings tile, press the Add button and choose the tile you would like. To rearrange your tiles, longpress the tile and drag it into the position you want. If you want to delete a tile, drag it to the delete button which appears while dragging the tile.\n\nTo disable quick settings, remove all tiles.</string>
+ 
+     <!-- QuickSettings style options -->
+     <string name="quicksettings_tiles_style">Стиль быстрых настроек</string>
+diff --git a/res/values/cm_strings.xml b/res/values/cm_strings.xml
+index 4a9c715..ea0914e 100644
+--- a/res/values/cm_strings.xml
++++ b/res/values/cm_strings.xml
+@@ -555,13 +555,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
+     <string name="sms_security_check_limit_summary">Apps can send %d messages in 30 minutes before requiring confirmation</string>
+     <string name="sms_security_check_limit_default">30 (Default)</string>
+ 
+-<<<<<<< HEAD
+-=======
+     <!--- Lock clock -->
+     <string name="lock_clock_title">Clock widget</string>
+     <string name="lock_clock_summary">View or change how the \'cLock\' Home and Lock screen widgets will display</string>
+ 
+->>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
+     <!-- Category title for Charging sounds (Power state change) specific Settings.
+          [CHAR LIMIT=40] -->
+     <string name="power_notifications_category_title">Charging sounds</string>
+@@ -641,8 +638,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
+ 
+     <!-- Delete apn confirmation dialog message -->
+     <string name="confirm_delete_apn">The APN will be deleted.</string>
+-<<<<<<< HEAD
+-=======
+ 
+     <!--  development shortcut -->
+     <string name="development_shortcut_title">Development shortcut</string>
+@@ -653,5 +648,4 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
+     <string name="whisperpush_registration_title">Register</string>
+     <string name="whisperpush_registration_summary">Register for WhisperPush to enable encrypted SMS.</string>
+     <string name="whisperpush_identitykey_title">Review identity keys</string>
+->>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
+ </resources>
+diff --git a/res/values/cr_strings.xml b/res/values/cr_strings.xml
+index 425ab11..940a43a 100644
+--- a/res/values/cr_strings.xml
++++ b/res/values/cr_strings.xml
+@@ -5,15 +5,7 @@
+     <!-- About phone screen, temasek version -->
+     <string name="temasek_version_title">Temasek unofficial version</string>
+     <!-- Do NOT Translate this -->
+-<<<<<<< HEAD
+-<<<<<<< HEAD
+-    <string name="temasek_version_default">V11</string>
+-=======
+-    <string name="temasek_version_default">V19</string>
+->>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
+-=======
+     <string name="temasek_version_default">V20</string>
+->>>>>>> d2505d14c4203f23dc6226162f76cc35bfc84f0d
+ 
+     <!-- General strings -->
+     <string name="reset">Reset</string>
+@@ -526,8 +518,6 @@
+     <string name="listview_anticipate_overshoot_interpolator">anticipate_overshoot_interpolator</string>
+     <string name="listview_bounce_interpolator">bounce_interpolator</string>
+ 
+-<<<<<<< HEAD
+-=======
+     <!-- Lockscreen style settings -->
+     <string name="lockscreen_style_reset_message">Reset all lockscreen colors?</string>
+     <string name="lockscreen_icon_title">Lock handle icon</string>
+@@ -543,7 +533,6 @@
+     <string name="lockscreen_dots_color_title">Dots color</string>
+     <string name="lockscreen_dots_color_summary">Color of the glowpad dots</string>
+ 
+->>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
+     <!-- Lockscreen widget settings -->
+     <string name="lockscreen_widgets_title">Widgets</string>
+     <string name="lockscreen_camera_widget_title">Enable camera widget</string>
+@@ -555,8 +544,6 @@
+     <string name="lockscreen_use_widget_container_carousel_title">Enable portrait widget carousel</string>
+     <string name="lockscreen_use_widget_container_carousel_summary">Use carousel animation in portrait when switching between lock screen widgets</string>
+ 
+-<<<<<<< HEAD
+-=======
+     <!-- Active display settings -->
+     <string name="ad_settings_title">Active display</string>
+     <string name="ad_settings_summary">Change active display settings</string>
+@@ -745,12 +732,8 @@
+     <string name="ime_switcher_notify">Selector notification</string>
+     <string name="ime_switcher_notify_summary">Display input method selector notification</string>
+ 
+-<<<<<<< HEAD
+->>>>>>> ebc7605d03139b1108388eb125639fd8e16c03d2
+-=======
+     <!-- Add option to hide power menu when screen is locked -->
+     <string name="lockscreen_power_menu_title">Enable power menu</string>
+     <string name="lockscreen_power_menu_summary">Show power menu when screen is locked</string>
+ 
+->>>>>>> d2505d14c4203f23dc6226162f76cc35bfc84f0d
+ </resources>
+-- 
+1.8.4.msysgit.0
+

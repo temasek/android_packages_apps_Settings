@@ -1,0 +1,176 @@
+From 8c4affcea0520f71dcd9343ec375c996927d7d9b Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Mon, 9 Dec 2013 23:46:13 +0300
+Subject: [PATCH 23/56] Ru translate cm_strings.xml
+
+---
+ res/values-ru/cm_strings.xml | 113 ++++++++-----------------------------------
+ 1 file changed, 19 insertions(+), 94 deletions(-)
+
+diff --git a/res/values-ru/cm_strings.xml b/res/values-ru/cm_strings.xml
+index 6fa3055..06bf1d5 100644
+--- a/res/values-ru/cm_strings.xml
++++ b/res/values-ru/cm_strings.xml
+@@ -14,6 +14,13 @@
+      limitations under the License.
+ -->
+ <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
++    <!-- Wi-Fi region code -->
++    <string name="wifi_setting_countrycode_title">Код региона Wi-Fi</string>
++    <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]-->
++    <string name="wifi_setting_countrycode_summary">Укажите код региона Wi-Fi</string>
++    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
++    <string name="wifi_setting_countrycode_error">При настройке кода региона Wi-Fi возникла неполадка.</string>
++
+     <!-- Sound settings screen -->
+     <string name="ring_mode_title">Режим звонка</string>
+     <string name="ring_mode_normal">Обычный</string>
+@@ -225,75 +232,6 @@
+     <string name="cyanogenmod_waiver_title">Отказ от ответственности</string>
+     <string name="cyanogenmod_waiver_body">Изменение этих настроек может противоречить законам вашего государства.\n\nНажимая «OK», вы соглашаетесь с этим предупреждением и освобождаете CyanogenMod и всех его разработчиков от любых юридических обязательств.</string>
+ 
+-    <!-- Quick settings panel  -->
+-    <string name="quick_settings_panel_title">Панель быстрых настроек</string>
+-    <string name="title_static_tiles">Статические плитки</string>
+-    <string name="tile_picker_title">Плитки и размещение</string>
+-    <string name="tile_picker_summary">Просмотр, выбор или изменение размещения отображаемых плиток</string>
+-    <string name="tile_choose_title">Выбор плитки</string>
+-
+-    <string name="title_tile_airplane">Режим полёта</string>
+-    <string name="title_tile_battery">Батарея</string>
+-    <string name="title_tile_bluetooth">Bluetooth</string>
+-    <string name="title_tile_brightness">Подсветка</string>
+-    <string name="title_tile_camera">Камера</string>
+-    <string name="title_tile_sleep">Сон</string>
+-    <string name="title_tile_gps">GPS</string>
+-    <string name="title_tile_torch">Фонарик</string>
+-    <string name="title_tile_lockscreen">Экран блокировки</string>
+-    <string name="title_tile_lte">LTE</string>
+-    <string name="title_tile_mobiledata">Передача данных</string>
+-    <string name="title_tile_profile">Профиль</string>
+-    <string name="title_tile_performance_profile">Произв. профиля</string>
+-    <string name="title_tile_autorotate">Автоповорот</string>
+-    <string name="title_tile_settings">Настройки</string>
+-    <string name="title_tile_sound">Звук</string>
+-    <string name="title_tile_sync">Синхронизация</string>
+-    <string name="title_tile_wifiap">Точка доступа Wi-Fi</string>
+-    <string name="title_tile_wifi">Wi-Fi</string>
+-    <string name="title_tile_user">Пользователи</string>
+-    <string name="title_tile_networkmode">Режим сети</string>
+-    <string name="title_tile_nfc">NFC</string>
+-    <string name="title_tile_screen_timeout">Задержка выкл. экрана</string>
+-    <string name="title_tile_quiet_hours">Тихие часы</string>
+-    <string name="title_tile_volume">Громкость</string>
+-    <string name="title_tile_expanded_desktop">Расширенный экран</string>
+-    <string name="title_tile_network_adb">ADB по сети</string>
+-
+-    <string name="title_dynamic_tiles">Динамические плитки</string>
+-    <string name="dynamic_tiles_note_title">Примечание</string>
+-    <string name="dynamic_tiles_note_summary">Динамические плитки видны, только если они вызваны системным событием</string>
+-    <string name="title_dynamic_alarm">Будильник</string>
+-    <string name="title_dynamic_bugreport">Отчёт об ошибке</string>
+-    <string name="title_dynamic_dock_battery">Батарея док-станции</string>
+-    <string name="title_dynamic_ime">Выбор способа ввода</string>
+-    <string name="title_dynamic_usbtether">USB-модем</string>
+-    <string name="title_dynamic_wifi">Подключение к Wi-Fi</string>
+-
+-    <string name="title_general">Основные</string>
+-    <string name="title_quick_pulldown">Быстрый доступ</string>
+-    <string name="summary_quick_pulldown">%1$s угол строки уведомлений при опускании вниз открывает панель быстрых настроек</string>
+-    <string name="quick_pulldown_summary_left">Левый</string>
+-    <string name="quick_pulldown_summary_right">Правый</string>
+-    <string name="quick_pulldown_off">Выкл.</string>
+-    <string name="quick_pulldown_left">Левый</string>
+-    <string name="quick_pulldown_right">Правый</string>
+-    <string name="title_collapse_panel">Автоскрытие панели</string>
+-    <string name="summary_collapse_panel">Скрывать панель быстрых настроек после переключения</string>
+-
+-    <string name="pref_network_mode_title">Режимы сети (2G/3G)</string>
+-    <string name="pref_screentimeout_mode_title">Время до отключения экрана</string>
+-    <string name="pref_ring_mode_title">Режимы звука</string>
+-    <string name="pref_ring_mode_summary">Выбор режимов для кнопки «Звук»</string>
+-    <string name="cm_sound_mode_silent">Беззвучный</string>
+-    <string name="cm_sound_mode_vibrate">Вибрация</string>
+-    <string name="cm_sound_mode_sound">Звук</string>
+-    <string name="cm_sound_mode_soundVibrate">Звук и вибросигнал</string>
+-
+-    <!-- Reset tiles -->
+-    <string name="tiles_reset_title">Сброс</string>
+-    <string name="tiles_reset_message">Восстановить плитки и их расположение по умолчанию?</string>
+-
+     <!-- Automatic brightness customization -->
+     <string name="auto_brightness_setup_title">Автоматическая регулировка</string>
+     <string name="auto_brightness_adjustment_title">Корректировка яркости</string>
+@@ -338,9 +276,9 @@
+ Чтобы изменить уровень яркости для этой точки, используйте специальный ползунок. 
+ Яркость экрана будет изменяться соответствующим образом для демонстрации.\n
+ Дополнительные настройки доступны по длительному нажатию на строку списка. 
+-Выбрав «Изменить», вы можете изменить уровень освещённости, а также вручную 
+-ввести желаемое значение яркости экрана. Пункт «Разделить» делит одну строку 
+-на два значения для вставки дополнительных контрольных точек. 
++Выбрав «Изменить», вы можете изменить уровень освещённости, а также 
++вручную ввести желаемое значение яркости экрана. Пункт «Разделить» делит одну 
++строку на два значения для вставки дополнительных контрольных точек. 
+ Пункт «Удалить» удаляет выбранную строку.
+     </string>
+ 
+@@ -435,7 +373,7 @@
+ 
+     <!-- INTERFACE Settings -->
+     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
+-    <string name="header_category_interface">Персонализация</string>
++    <string name="header_category_interface">Интефейс</string>
+ 
+     <!-- Themes settings -->
+     <string name="themes_settings_title">Темы</string>
+@@ -597,7 +535,6 @@
+     <!-- Setting checkbox summary for displaying USB debugging notification -->
+     <string name="adb_notify">Уведомление об отладке по USB</string>
+     <string name="adb_notify_summary">Показывать уведомление о включённом режиме отладки по USB</string>
+-
+     <!-- Android debugging over WiFi -->
+     <string name="adb_over_network">ADB по сети</string>
+     <string name="adb_over_network_summary">Включить отладку TCP/IP через сетевые интерфейсы (Wi-Fi, USB сети). Эта установка сбрасывается при перезагрузке</string>
+@@ -606,26 +543,6 @@
+     <!-- Hostname setting -->
+     <string name="device_hostname">Название устройства</string>
+ 
+-    <!-- System Interface settings  -->
+-    <string name="system_settings_title">Интерфейс</string>
+-    <string name="system_interface_title">Системный интерфейс</string>
+-
+-    <!-- Notification Drawer  -->
+-    <string name="notification_drawer_title">Панель уведомлений</string>
+-    <string name="notification_drawer_collapse_on_dismiss_title">Автоскрытие панели</string>
+-    <string name="collapse_on_dismiss_never">Выключено</string>
+-    <string name="collapse_on_dismiss_if_empty">Если нет уведомлений</string>
+-    <string name="collapse_on_dismiss_if_no_clearable">Если нет удаляемых уведомлений</string>
+-    <string name="collapse_on_dismiss_never_summary">Не скрывать панель при удалении уведомлений</string>
+-    <string name="collapse_on_dismiss_if_empty_summary">Скрывать панель при удалении всех уведомлений</string>
+-    <string name="collapse_on_dismiss_if_no_clearable_summary">Скрывать панель при удалении всех удаляемых уведомлений</string>
+-
+-    <!-- Quick access ribbon -->
+-    <string name="category_quick_access">Лента быстрого доступа</string>
+-    <string name="title_quick_access">Показывать в панели</string>
+-    <string name="title_quick_access_linked">Связанное расположение</string>
+-    <string name="summary_quick_access_linked">Используются плитки и их размещение из панели быстрых настроек</string>
+-
+     <!-- Font size sample text. This needs to be a very short string, as it is shown in
+     multiple font sizes in a limited amount of space. -->
+     <string name="font_size_sample">Пример текста</string>
+@@ -722,4 +639,12 @@
+ 
+     <!-- Delete apn confirmation dialog message -->
+     <string name="confirm_delete_apn">Точка доступа (APN) будет удалена.</string>
++
++    <!-- AOSP dummy strings -->
++    <string name="experimental_webview"></string>
++    <string name="experimental_webview_summary"></string>
++
++    <!--  development shortcut -->
++    <string name="development_shortcut_title">Ярлык разработчика</string>
++    <string name="development_shortcut_summary">Включить опцию \'wipe data\' и \'force close\' в панели уведомлений и списке недавних приложений</string>
+ </resources>
+-- 
+1.8.4.msysgit.0
+

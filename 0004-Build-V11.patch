@@ -1,0 +1,25 @@
+From 302994854a453916ebd50eea2600313a151c4469 Mon Sep 17 00:00:00 2001
+From: Janson Kang <temasek71@gmail.com>
+Date: Fri, 29 Nov 2013 01:59:50 +0800
+Subject: [PATCH 04/56] Build V11
+
+---
+ res/values/cr_strings.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/res/values/cr_strings.xml b/res/values/cr_strings.xml
+index 81b9733..eeffce5 100644
+--- a/res/values/cr_strings.xml
++++ b/res/values/cr_strings.xml
+@@ -5,7 +5,7 @@
+     <!-- About phone screen, temasek version -->
+     <string name="temasek_version_title">Temasek unofficial version</string>
+     <!-- Do NOT Translate this -->
+-    <string name="temasek_version_default">V10</string>
++    <string name="temasek_version_default">V11</string>
+ 
+     <!-- General strings -->
+     <string name="reset">Reset</string>
+-- 
+1.8.4.msysgit.0
+

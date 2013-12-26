@@ -1,0 +1,35 @@
+From d429f32429ac8e29dc91fd61f3694c14696077c4 Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Mon, 16 Dec 2013 19:01:38 +0300
+Subject: [PATCH 45/56] Delete location.diff
+
+---
+ location.diff | 16 ----------------
+ 1 file changed, 16 deletions(-)
+ delete mode 100644 location.diff
+
+diff --git a/location.diff b/location.diff
+deleted file mode 100644
+index 4d040b9..0000000
+--- a/location.diff
++++ /dev/null
+@@ -1,16 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\locF531.tmp\\location_settings-a306630-left.xml" "b/D:\\Temp\\TortoiseGit\\locF530.tmp\\location_settings-4528e68-right.xml"
+-index 83b80b1..7189ef2 100644
+---- "a/D:\\Temp\\TortoiseGit\\locF531.tmp\\location_settings-a306630-left.xml"
+-+++ "b/D:\\Temp\\TortoiseGit\\locF530.tmp\\location_settings-4528e68-right.xml"
+-@@ -21,6 +21,11 @@
+-             android:title="@string/location_mode_title"
+-             android:summary="@string/location_mode_location_off_title" />
+- 
+-+        <com.android.settings.WrappingCheckBoxPreference
+-+            android:key="gps_download_data_wifi_only"
+-+            android:title="@string/gps_download_data_wifi_only"
+-+            android:defaultValue="true" />
+-+
+-         <PreferenceCategory
+-             android:key="recent_location_requests"
+-             android:title="@string/location_category_recent_location_requests" />
+-- 
+1.8.4.msysgit.0
+

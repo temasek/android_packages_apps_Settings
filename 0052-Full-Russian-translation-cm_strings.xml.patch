@@ -1,0 +1,82 @@
+From 35cbfa0c7df95057e09d2d57b1e082aadbb3924b Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Mon, 16 Dec 2013 23:59:24 +0400
+Subject: [PATCH 52/56] Full Russian translation cm_strings.xml
+
+---
+ res/values-ru/cm_strings.xml | 29 +++++++++++++++++------------
+ 1 file changed, 17 insertions(+), 12 deletions(-)
+
+diff --git a/res/values-ru/cm_strings.xml b/res/values-ru/cm_strings.xml
+index 9f9e1f5..43bce67 100644
+--- a/res/values-ru/cm_strings.xml
++++ b/res/values-ru/cm_strings.xml
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<!-- Copyright (C) 2012-2013 The CyanogenMod Project
++<!--
++     Copyright (C) 2012-2013 The CyanogenMod Project
+ 
+      Licensed under the Apache License, Version 2.0 (the "License");
+      you may not use this file except in compliance with the License.
+@@ -21,9 +22,9 @@
+     <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+     <string name="wifi_setting_countrycode_error">При настройке кода региона Wi-Fi возникла неполадка.</string>
+     <!-- Wi-Fi settings screen, advanced, title of the item to set the Wi-Fi priority. -->
+-    <string name="wifi_setting_priority_title">Wi-Fi priority</string>
++    <string name="wifi_setting_priority_title">Приоритет Wi-Fi</string>
+     <!-- Wi-Fi settings screen, setting summary for setting the Wi-Fi priority-->
+-    <string name="wifi_setting_priority_summary">Specify the priority of the Wi-Fi networks</string>
++    <string name="wifi_setting_priority_summary">Укажите приоритет использования сетей Wi-Fi</string>
+ 
+     <!-- Sound settings screen -->
+     <string name="ring_mode_title">Режим звонка</string>
+@@ -377,7 +378,7 @@
+ 
+     <!-- INTERFACE Settings -->
+     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
+-    <string name="header_category_interface">Интефейс</string>
++    <string name="header_category_interface">Интерфейс</string>
+ 
+     <!-- Themes settings -->
+     <string name="themes_settings_title">Темы</string>
+@@ -628,16 +629,12 @@
+     <string name="keyboard_backlight_seekbar_title">Яркость клавиатуры</string>
+     <string name="backlight_timeout_title">Длительность подсветки</string>
+     <string name="backlight_timeout_unlimited">Не выключать</string>
+-    <plurals name="backlight_timeout_time">
+-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> секунду</item>
+-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> секунд</item>
+-    </plurals>
+     <string name="backlight_summary_disabled">Выключена</string>
+     <string name="backlight_summary_enabled_with_timeout">Включена <xliff:g id="timeout">%s</xliff:g></string>
+     <string name="backlight_summary_enabled">Включена всегда</string>
+ 
+     <!-- Delete apn confirmation dialog message -->
+-    <string name="confirm_delete_apn">Точка доступа (APN) будет удалена.</string>
++    <string name="confirm_delete_apn">Точка доступа APN будет удалена</string>
+ 
+     <!--  development shortcut -->
+     <string name="development_shortcut_title">Ярлык разработчика</string>
+@@ -645,7 +642,15 @@
+ 
+     <!-- WhisperPush -->
+     <string name="whisperpush_title">WhisperPush</string>
+-    <string name="whisperpush_registration_title">Register</string>
+-    <string name="whisperpush_registration_summary">Register for WhisperPush to enable encrypted SMS.</string>
+-    <string name="whisperpush_identitykey_title">Review identity keys</string>
++    <string name="whisperpush_registration_title">Регистрация</string>
++    <string name="whisperpush_registration_summary">Зарегистрируйтесь на WhisperPush для включения шифрования смс-сообщений.</string>
++    <string name="whisperpush_identitykey_title">Просмотр идентификационных ключей</string>
++
++    <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
++    <string name="custom_runtime_warning_title">Предупреждение</string>
++    <string name="custom_runtime_warning_message">Среда ART не поддерживается CyanogenMod. Этот параметр включен только для эксперимента и имеет возможность вызывать нестабильность, сбои и потерю данных, а также может препятствовать нормальной загрузке устройства. Посетите &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; для получения дополнительной информации.&lt;br/&gt;&lt;br/&gt;Мы просим вас не присылать файл отчёта об ошибках, если вы используете среду ART.&lt;br/&gt;&lt;br/&gt;Вы уверены, что хотите перезагрузить устройство для перехода с <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> на <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
++
++    <!-- GPS download data over wi-fi only -->
++    <string name="gps_download_data_wifi_only">Скачивать данные A-GPS только через сети Wi-Fi</string>
++
+ </resources>
+-- 
+1.8.4.msysgit.0
+

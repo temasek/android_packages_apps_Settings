@@ -1,0 +1,86 @@
+From cad88fcadb401e5ae3acdc4d9b45095135d0ffc4 Mon Sep 17 00:00:00 2001
+From: Veeti Paananen <veeti.paananen@rojekti.fi>
+Date: Wed, 27 Nov 2013 01:36:00 +0200
+Subject: [PATCH 02/56] Remove the "enable widgets" preference properly
+
+779a6aed2c89b17ee11e59710434dac31dfbd7ec removed this preference in
+favor of a switch in the CM lock screen section, but failed to do so for
+all lock screen types. Remove the broken preference from every possible
+lock type to avoid confusing a lot of people (i.e. me) with a broken
+toggle.
+
+Change-Id: Ib1544cd5dcccb77a8f7a70b820035cf16cf43589
+
+Conflicts:
+
+	res/xml/security_settings_chooser.xml
+---
+ res/xml/security_settings_chooser.xml  | 4 ----
+ res/xml/security_settings_password.xml | 4 ----
+ res/xml/security_settings_pattern.xml  | 4 ----
+ res/xml/security_settings_pin.xml      | 4 ----
+ 4 files changed, 16 deletions(-)
+
+diff --git a/res/xml/security_settings_chooser.xml b/res/xml/security_settings_chooser.xml
+index f8d8367..d27d3b0 100644
+--- a/res/xml/security_settings_chooser.xml
++++ b/res/xml/security_settings_chooser.xml
+@@ -38,10 +38,6 @@
+             android:summary="@string/lockscreen_target_summary"
+             android:title="@string/lockscreen_target_title" />
+ 
+-        <CheckBoxPreference
+-            android:key="keyguard_enable_widgets"
+-            android:title="@string/security_enable_widgets_title"/>
+-
+         <PreferenceScreen
+             android:fragment="com.android.settings.OwnerInfoSettings"
+             android:key="owner_info_settings"
+diff --git a/res/xml/security_settings_password.xml b/res/xml/security_settings_password.xml
+index 6465f56..83043e1 100644
+--- a/res/xml/security_settings_password.xml
++++ b/res/xml/security_settings_password.xml
+@@ -38,10 +38,6 @@
+             android:key="power_button_instantly_locks"
+             android:title="@string/lockpattern_settings_enable_power_button_instantly_locks"/>
+ 
+-        <CheckBoxPreference
+-            android:key="keyguard_enable_widgets"
+-            android:title="@string/security_enable_widgets_title"/>
+-
+         <PreferenceScreen
+             android:fragment="com.android.settings.OwnerInfoSettings"
+             android:key="owner_info_settings"
+diff --git a/res/xml/security_settings_pattern.xml b/res/xml/security_settings_pattern.xml
+index d8e06b3..d47a99d 100644
+--- a/res/xml/security_settings_pattern.xml
++++ b/res/xml/security_settings_pattern.xml
+@@ -42,10 +42,6 @@
+             android:key="power_button_instantly_locks"
+             android:title="@string/lockpattern_settings_enable_power_button_instantly_locks"/>
+ 
+-        <CheckBoxPreference
+-            android:key="keyguard_enable_widgets"
+-            android:title="@string/security_enable_widgets_title"/>
+-
+         <PreferenceScreen
+             android:fragment="com.android.settings.OwnerInfoSettings"
+             android:key="owner_info_settings"
+diff --git a/res/xml/security_settings_pin.xml b/res/xml/security_settings_pin.xml
+index 160ea6a..1d5f426 100644
+--- a/res/xml/security_settings_pin.xml
++++ b/res/xml/security_settings_pin.xml
+@@ -38,10 +38,6 @@
+             android:key="power_button_instantly_locks"
+             android:title="@string/lockpattern_settings_enable_power_button_instantly_locks"/>
+ 
+-        <CheckBoxPreference
+-            android:key="keyguard_enable_widgets"
+-            android:title="@string/security_enable_widgets_title"/>
+-
+         <PreferenceScreen
+             android:fragment="com.android.settings.OwnerInfoSettings"
+             android:key="owner_info_settings"
+-- 
+1.8.4.msysgit.0
+

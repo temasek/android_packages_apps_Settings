@@ -1,0 +1,589 @@
+From ebf63558448b17e2056606e101ed06347d7942c7 Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Wed, 18 Dec 2013 21:33:40 +0400
+Subject: [PATCH 54/56] Delete fix
+
+---
+ 1.diff  |  65 ----------------------------
+ 10.diff |  57 -------------------------
+ 2.diff  |  13 ------
+ 3.diff  |  13 ------
+ 4.diff  |  18 --------
+ 5.diff  | 147 ----------------------------------------------------------------
+ 6.diff  |  48 ---------------------
+ 7.diff  |  48 ---------------------
+ 8.diff  |  48 ---------------------
+ 9.diff  |  41 ------------------
+ 10 files changed, 498 deletions(-)
+ delete mode 100644 1.diff
+ delete mode 100644 10.diff
+ delete mode 100644 2.diff
+ delete mode 100644 3.diff
+ delete mode 100644 4.diff
+ delete mode 100644 5.diff
+ delete mode 100644 6.diff
+ delete mode 100644 7.diff
+ delete mode 100644 8.diff
+ delete mode 100644 9.diff
+
+diff --git a/1.diff b/1.diff
+deleted file mode 100644
+index 732bde0..0000000
+--- a/1.diff
++++ /dev/null
+@@ -1,65 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\And5D8B.tmp\\AndroidManifest-51e3d76-left.xml" "b/D:\\Temp\\TortoiseGit\\And5D2D.tmp\\AndroidManifest-51264a9-right.xml"
+-index f01c3f6..4214b1c 100644
+---- "a/D:\\Temp\\TortoiseGit\\And5D8B.tmp\\AndroidManifest-51e3d76-left.xml"
+-+++ "b/D:\\Temp\\TortoiseGit\\And5D2D.tmp\\AndroidManifest-51264a9-right.xml"
+-@@ -737,16 +737,28 @@
+-         <activity android:name="SettingsLicenseActivity"
+-                 android:label="@string/settings_license_activity_title"
+-                 android:theme="@android:style/Theme.Holo.Panel"
+--                android:configChanges="orientation|screenSize">
+-+                android:configChanges="orientation|screenSize"
+-+                android:parentActivityName="Settings$DeviceInfoSettingsActivity">
+-             <intent-filter>
+-                 <action android:name="android.settings.LICENSE" />
+-                 <category android:name="android.intent.category.DEFAULT" />
+-             </intent-filter>
+-         </activity>
+- 
+-+        <activity android:name="SettingsCMLicenseActivity"
+-+                android:label="@string/settings_cmlicense_activity_title"
+-+                android:theme="@android:style/Theme.Holo.Panel"
+-+                android:configChanges="orientation|screenSize">
+-+            <intent-filter>
+-+                <action android:name="android.settings.CMLICENSE" />
+-+                <category android:name="android.intent.category.DEFAULT" />
+-+            </intent-filter>
+-+        </activity>
+-+
+-         <activity android:name="SettingsSafetyLegalActivity"
+-                 android:label="@string/settings_safetylegal_activity_title"
+--                android:theme="@*android:style/Theme.Holo.Dialog.Alert">
+-+                android:theme="@*android:style/Theme.Holo.Dialog.Alert"
+-+                android:parentActivityName="Settings$DeviceInfoSettingsActivity">
+-             <intent-filter>
+-                 <action android:name="android.settings.SAFETY" />
+-                 <category android:name="android.intent.category.DEFAULT" />
+-@@ -1167,7 +1179,8 @@
+-         <activity android:name=".deviceinfo.Status"
+-                 android:label="@string/device_status_activity_title"
+-                 android:theme="@android:style/Theme.Holo.DialogWhenLarge"
+--                android:process="com.android.phone">
+-+                android:process="com.android.phone"
+-+                android:parentActivityName="Settings$DeviceInfoSettingsActivity">
+-             <intent-filter>
+-                 <action android:name="android.intent.action.MAIN" />
+-                 <category android:name="android.intent.category.DEFAULT" />
+-@@ -1651,7 +1664,8 @@
+-         <activity android:name="com.android.settings.accounts.ChooseAccountActivity"
+-             android:label="@string/header_add_an_account"
+-             android:configChanges="orientation|keyboardHidden|screenSize"
+--            android:theme="@android:style/Theme.Holo.DialogWhenLarge"/>
+-+            android:theme="@android:style/Theme.Holo.DialogWhenLarge"
+-+            android:parentActivityName="Settings"/>
+- 
+-         <activity android:name=".CryptKeeper"
+-                   android:immersive="true"
+-@@ -1725,7 +1739,8 @@
+- 
+-         <activity android:name=".profiles.WifiTriggers" />
+- 
+--        <activity android:name=".profiles.NFCProfileWriter" />
+-+        <activity android:name=".profiles.NFCProfileWriter"
+-+                android:parentActivityName="Settings$ProfilesSettingsActivity" />
+- 
+-         <activity android:name=".profiles.NFCProfileSelect" />
+- 
+diff --git a/10.diff b/10.diff
+deleted file mode 100644
+index 222a168..0000000
+--- a/10.diff
++++ /dev/null
+@@ -1,57 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\Qui5C97.tmp\\QuickSettingsTiles-51e3d76-left.java" "b/D:\\Temp\\TortoiseGit\\Qui5C86.tmp\\QuickSettingsTiles-51264a9-right.java"
+-index 552fc6e..8f3c0fc 100644
+---- "a/D:\\Temp\\TortoiseGit\\Qui5C97.tmp\\QuickSettingsTiles-51e3d76-left.java"
+-+++ "b/D:\\Temp\\TortoiseGit\\Qui5C86.tmp\\QuickSettingsTiles-51264a9-right.java"
+-@@ -33,7 +33,6 @@ import android.content.SharedPreferences;
+- import android.graphics.drawable.Drawable;
+- import android.os.Bundle;
+- import android.os.UserHandle;
+--import android.os.Vibrator;
+- import android.provider.Settings;
+- import android.text.TextUtils;
+- import android.util.TypedValue;
+-@@ -90,8 +89,6 @@ public class QuickSettingsTiles extends Fragment {
+-     private int mTileTextSize;
+-     private int mTileTextPadding;
+- 
+--    private boolean mHasVibrator;
+--
+-     @Override
+-     public View onCreateView(LayoutInflater inflater,
+-             ViewGroup container, Bundle savedInstanceState) {
+-@@ -139,9 +136,6 @@ public class QuickSettingsTiles extends Fragment {
+-         }
+-         mTileAdapter = new TileAdapter(getActivity());
+- 
+--        Vibrator vibrator = (Vibrator) getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+--        mHasVibrator = vibrator.hasVibrator();
+--
+-         return mDragView;
+-     }
+- 
+-@@ -230,7 +224,7 @@ public class QuickSettingsTiles extends Fragment {
+-                         QSConstants.TILE_SCREENTIMEOUT).getTitleResId()
+-                 || titleId == QuickSettingsUtil.TILES.get(
+-                             QSConstants.TILE_RINGER).getTitleResId()
+--                        && mHasVibrator
+-+                        && DeviceUtils.deviceSupportsVibrator(getActivity())
+-                 || titleId == QuickSettingsUtil.TILES.get(
+-                             QSConstants.TILE_MUSIC).getTitleResId()
+-                 || QuickSettingsUtil.isTileAvailable(QSConstants.TILE_NETWORKMODE)
+-@@ -274,7 +268,6 @@ public class QuickSettingsTiles extends Fragment {
+-                 }
+-             }
+-         });
+--        final boolean hasVibrator = mHasVibrator;
+-         mDragView.setOnItemClickListener(new OnItemClickListener() {
+-             @Override
+-             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+-@@ -291,7 +284,7 @@ public class QuickSettingsTiles extends Fragment {
+-                         showDialogInner(DLG_NETWORK_MODE);
+-                     }
+-                     if (tiles.get(arg2).equals(QSConstants.TILE_RINGER)
+--                            && hasVibrator) {
+-+                            && DeviceUtils.deviceSupportsVibrator(getActivity())) {
+-                         showDialogInner(DLG_RINGER);
+-                     }
+-                     if (tiles.get(arg2).equals(QSConstants.TILE_MUSIC)) {
+diff --git a/2.diff b/2.diff
+deleted file mode 100644
+index c8e8121..0000000
+--- a/2.diff
++++ /dev/null
+@@ -1,13 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\cm_914B.tmp\\cm_strings-51e3d76-left.xml" "b/D:\\Temp\\TortoiseGit\\cm_912A.tmp\\cm_strings-51264a9-right.xml"
+-index a431329..115959c 100644
+---- "a/D:\\Temp\\TortoiseGit\\cm_914B.tmp\\cm_strings-51e3d76-left.xml"
+-+++ "b/D:\\Temp\\TortoiseGit\\cm_912A.tmp\\cm_strings-51264a9-right.xml"
+-@@ -653,4 +653,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
+-     <!-- GPS download data over wi-fi only -->
+-     <string name="gps_download_data_wifi_only">Download GPS assisted data only over Wi-Fi networks</string>
+- 
+-+    <!-- CM Legal -->
+-+    <string name="cmlicense_title">CyanogenMod Legal</string>
+-+    <string name="settings_cmlicense_activity_title">CyanogenMod Legal</string>
+-+    <string name="settings_cmlicense_activity_unreachable">You don\'t have a data connection. To view this information now, go to %s from any computer connected to the Internet.</string>
+- </resources>
+diff --git a/3.diff b/3.diff
+deleted file mode 100644
+index 5ee5849..0000000
+--- a/3.diff
++++ /dev/null
+@@ -1,13 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\cr_ED47.tmp\\cr_strings-51e3d76-left.xml" "b/D:\\Temp\\TortoiseGit\\cr_ED46.tmp\\cr_strings-51264a9-right.xml"
+-index e640440..147c64e 100644
+---- "a/D:\\Temp\\TortoiseGit\\cr_ED47.tmp\\cr_strings-51e3d76-left.xml"
+-+++ "b/D:\\Temp\\TortoiseGit\\cr_ED46.tmp\\cr_strings-51264a9-right.xml"
+-@@ -5,7 +5,7 @@
+-     <!-- About phone screen, temasek version -->
+-     <string name="temasek_version_title">Temasek unofficial version</string>
+-     <!-- Do NOT Translate this -->
+--    <string name="temasek_version_default">V21.1-oldcm</string>
+-+    <string name="temasek_version_default">V22.1</string>
+- 
+-     <!-- General strings -->
+-     <string name="reset">Reset</string>
+diff --git a/4.diff b/4.diff
+deleted file mode 100644
+index 1e4328c..0000000
+--- a/4.diff
++++ /dev/null
+@@ -1,18 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\dev29A7.tmp\\device_info_settings-51e3d76-left.xml" "b/D:\\Temp\\TortoiseGit\\dev29A6.tmp\\device_info_settings-51264a9-right.xml"
+-index 4764069..7d0b628 100644
+---- "a/D:\\Temp\\TortoiseGit\\dev29A7.tmp\\device_info_settings-51e3d76-left.xml"
+-+++ "b/D:\\Temp\\TortoiseGit\\dev29A6.tmp\\device_info_settings-51264a9-right.xml"
+-@@ -87,6 +87,13 @@
+-                 <intent android:action="android.settings.LICENSE" />
+-             </PreferenceScreen>
+- 
+-+            <!-- CM License information -->
+-+            <PreferenceScreen
+-+                    android:key="cmlicense"
+-+                    android:title="@string/cmlicense_title">
+-+                <intent android:action="android.settings.CMLICENSE" />
+-+            </PreferenceScreen>
+-+
+-             <!-- Terms and conditions -->
+-             <PreferenceScreen
+-                     android:key="terms"
+diff --git a/5.diff b/5.diff
+deleted file mode 100644
+index ed97389..0000000
+--- a/5.diff
++++ /dev/null
+@@ -1,147 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\Pat5C24.tmp.java" "b/D:\\Temp\\TortoiseGit\\Set5C23.tmp\\SettingsCMLicenseActivity-51264a9.java"
+-index e69de29..39997a6 100644
+---- "a/D:\\Temp\\TortoiseGit\\Pat5C24.tmp.java"
+-+++ "b/D:\\Temp\\TortoiseGit\\Set5C23.tmp\\SettingsCMLicenseActivity-51264a9.java"
+-@@ -0,0 +1,142 @@
+-+/*
+-+ * Copyright (C) 2009 The Android Open Source Project
+-+ *
+-+ * Licensed under the Apache License, Version 2.0 (the "License");
+-+ * you may not use this file except in compliance with the License.
+-+ * You may obtain a copy of the License at
+-+ *
+-+ *      http://www.apache.org/licenses/LICENSE-2.0
+-+ *
+-+ * Unless required by applicable law or agreed to in writing, software
+-+ * distributed under the License is distributed on an "AS IS" BASIS,
+-+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-+ * See the License for the specific language governing permissions and
+-+ * limitations under the License.
+-+ */
+-+
+-+package com.android.settings;
+-+
+-+import android.app.AlertDialog;
+-+import android.content.Context;
+-+import android.content.res.Configuration;
+-+import android.os.Build;
+-+import android.os.Bundle;
+-+import android.os.SystemProperties;
+-+import android.telephony.TelephonyManager;
+-+import android.text.TextUtils;
+-+import android.view.KeyEvent;
+-+import android.webkit.WebView;
+-+import android.webkit.WebViewClient;
+-+import com.android.internal.app.AlertActivity;
+-+import com.android.internal.app.AlertController;
+-+import android.content.DialogInterface;
+-+
+-+/**
+-+ * The "dialog" that shows from "CyanogenMod Legal" in the Settings app.
+-+ */
+-+public class SettingsCMLicenseActivity extends AlertActivity
+-+        implements DialogInterface.OnCancelListener, DialogInterface.OnClickListener {
+-+    private static final String PROPERTY_CMLICENSE_URL = "ro.cmlegal.url";
+-+
+-+    private WebView mWebView;
+-+
+-+    private AlertDialog mErrorDialog = null;
+-+
+-+    @Override
+-+    protected void onCreate(Bundle savedInstanceState) {
+-+        super.onCreate(savedInstanceState);
+-+
+-+        String userCMLicenseUrl = SystemProperties.get(PROPERTY_CMLICENSE_URL);
+-+
+-+        final Configuration configuration = getResources().getConfiguration();
+-+        final String language = configuration.locale.getLanguage();
+-+        final String country = configuration.locale.getCountry();
+-+
+-+        //String loc = String.format("locale=%s-%s", language, country);
+-+
+-+        userCMLicenseUrl = String.format(userCMLicenseUrl);
+-+
+-+        mWebView = new WebView(this);
+-+
+-+        // Begin accessing
+-+        mWebView.getSettings().setJavaScriptEnabled(true);
+-+        if (savedInstanceState == null) {
+-+            mWebView.loadUrl(userCMLicenseUrl);
+-+        } else {
+-+            mWebView.restoreState(savedInstanceState);
+-+        }
+-+        mWebView.setWebViewClient(new WebViewClient() {
+-+            @Override
+-+            public void onPageFinished(WebView view, String url) {
+-+                // Change from 'Loading...' to the real title
+-+                mAlert.setTitle(getString(R.string.settings_cmlicense_activity_title));
+-+            }
+-+
+-+            @Override
+-+            public void onReceivedError(WebView view, int errorCode,
+-+                    String description, String failingUrl) {
+-+                showErrorAndFinish(failingUrl);
+-+            }
+-+        });
+-+
+-+        final AlertController.AlertParams p = mAlertParams;
+-+        p.mTitle = getString(R.string.settings_license_activity_loading);
+-+        p.mView = mWebView;
+-+        p.mForceInverseBackground = true;
+-+        setupAlert();
+-+    }
+-+
+-+    private void showErrorAndFinish(String url) {
+-+        if (mErrorDialog == null) {
+-+            mErrorDialog = new AlertDialog.Builder(this)
+-+                    .setTitle(R.string.settings_cmlicense_activity_title)
+-+                    .setPositiveButton(android.R.string.ok, this)
+-+                    .setOnCancelListener(this)
+-+                    .setCancelable(true)
+-+                    .create();
+-+        } else {
+-+            if (mErrorDialog.isShowing()) {
+-+                mErrorDialog.dismiss();
+-+            }
+-+        }
+-+        mErrorDialog.setMessage(getResources()
+-+                .getString(R.string.settings_cmlicense_activity_unreachable, url));
+-+        mErrorDialog.show();
+-+    }
+-+
+-+    @Override
+-+    protected void onDestroy() {
+-+        super.onDestroy();
+-+
+-+        if (mErrorDialog != null) {
+-+            mErrorDialog.dismiss();
+-+            mErrorDialog = null;
+-+        }
+-+    }
+-+
+-+    @Override
+-+    public boolean dispatchKeyEvent(KeyEvent event) {
+-+        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK
+-+                && event.getAction() == KeyEvent.ACTION_DOWN) {
+-+            if (mWebView.canGoBack()) {
+-+                mWebView.goBack();
+-+                return true;
+-+            }
+-+        }
+-+        return super.dispatchKeyEvent(event);
+-+    }
+-+
+-+    public void onClick(DialogInterface dialog, int whichButton) {
+-+        finish();
+-+    }
+-+
+-+    public void onCancel(DialogInterface dialog) {
+-+        finish();
+-+    }
+-+
+-+    @Override
+-+    public void onSaveInstanceState(Bundle icicle) {
+-+        mWebView.saveState(icicle);
+-+        super.onSaveInstanceState(icicle);
+-+    }
+-+}
+diff --git a/6.diff b/6.diff
+deleted file mode 100644
+index 3993300..0000000
+--- a/6.diff
++++ /dev/null
+@@ -1,48 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\Set90D3.tmp\\SettingsSafetyLegalActivity-51e3d76-left.java" "b/D:\\Temp\\TortoiseGit\\Set90C2.tmp\\SettingsSafetyLegalActivity-51264a9-right.java"
+-index 368ee1d..783cf67 100644
+---- "a/D:\\Temp\\TortoiseGit\\Set90D3.tmp\\SettingsSafetyLegalActivity-51e3d76-left.java"
+-+++ "b/D:\\Temp\\TortoiseGit\\Set90C2.tmp\\SettingsSafetyLegalActivity-51264a9-right.java"
+-@@ -16,6 +16,7 @@
+- 
+- package com.android.settings;
+- 
+-+import android.app.ActionBar;
+- import android.app.AlertDialog;
+- import android.content.Context;
+- import android.content.res.Configuration;
+-@@ -25,6 +26,7 @@ import android.os.SystemProperties;
+- import android.telephony.TelephonyManager;
+- import android.text.TextUtils;
+- import android.view.KeyEvent;
+-+import android.view.MenuItem;
+- import android.webkit.WebView;
+- import android.webkit.WebViewClient;
+- import com.android.internal.app.AlertActivity;
+-@@ -46,6 +48,11 @@ public class SettingsSafetyLegalActivity extends AlertActivity
+-     protected void onCreate(Bundle savedInstanceState) {
+-         super.onCreate(savedInstanceState);
+- 
+-+        ActionBar mActionBar = getActionBar();
+-+        if (mActionBar != null) {
+-+            mActionBar.setDisplayHomeAsUpEnabled(true);
+-+        }
+-+
+-         String userSafetylegalUrl = SystemProperties.get(PROPERTY_LSAFETYLEGAL_URL);
+- 
+-         final Configuration configuration = getResources().getConfiguration();
+-@@ -86,6 +93,15 @@ public class SettingsSafetyLegalActivity extends AlertActivity
+-         setupAlert();
+-     }
+- 
+-+    @Override
+-+    public boolean onOptionsItemSelected(MenuItem item) {
+-+        if (item.getItemId() == android.R.id.home) {
+-+            finish();
+-+            return true;
+-+        }
+-+        return false;
+-+    }
+-+
+-     private void showErrorAndFinish(String url) {
+-         if (mErrorDialog == null) {
+-             mErrorDialog = new AlertDialog.Builder(this)
+diff --git a/7.diff b/7.diff
+deleted file mode 100644
+index a106a5a..0000000
+--- a/7.diff
++++ /dev/null
+@@ -1,48 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\ChoC1D8.tmp\\ChooseAccountActivity-51e3d76-left.java" "b/D:\\Temp\\TortoiseGit\\ChoC1D7.tmp\\ChooseAccountActivity-51264a9-right.java"
+-index 631fe47..b2d57ff 100644
+---- "a/D:\\Temp\\TortoiseGit\\ChoC1D8.tmp\\ChooseAccountActivity-51e3d76-left.java"
+-+++ "b/D:\\Temp\\TortoiseGit\\ChoC1D7.tmp\\ChooseAccountActivity-51264a9-right.java"
+-@@ -18,6 +18,7 @@ package com.android.settings.accounts;
+- 
+- import android.accounts.AccountManager;
+- import android.accounts.AuthenticatorDescription;
+-+import android.app.ActionBar;
+- import android.content.ContentResolver;
+- import android.content.Context;
+- import android.content.Intent;
+-@@ -31,6 +32,7 @@ import android.preference.PreferenceActivity;
+- import android.preference.PreferenceGroup;
+- import android.preference.PreferenceScreen;
+- import android.util.Log;
+-+import android.view.MenuItem;
+- import com.android.internal.util.CharSequences;
+- import com.android.settings.R;
+- import com.google.android.collect.Maps;
+-@@ -79,6 +81,11 @@ public class ChooseAccountActivity extends PreferenceActivity {
+-     protected void onCreate(Bundle icicle) {
+-         super.onCreate(icicle);
+- 
+-+        ActionBar mActionBar = getActionBar();
+-+        if (mActionBar != null) {
+-+            mActionBar.setDisplayHomeAsUpEnabled(true);
+-+        }
+-+
+-         setContentView(R.layout.add_account_screen);
+-         addPreferencesFromResource(R.xml.add_account_settings);
+-         mAuthorities = getIntent().getStringArrayExtra(
+-@@ -95,6 +102,15 @@ public class ChooseAccountActivity extends PreferenceActivity {
+-         updateAuthDescriptions();
+-     }
+- 
+-+    @Override
+-+    public boolean onOptionsItemSelected(MenuItem item) {
+-+        if (item.getItemId() == android.R.id.home) {
+-+            finish();
+-+            return true;
+-+        }
+-+        return false;
+-+    }
+-+
+-     /**
+-      * Updates provider icons. Subclasses should call this in onCreate()
+-      * and update any UI that depends on AuthenticatorDescriptions in onAuthDescriptionsUpdated().
+diff --git a/8.diff b/8.diff
+deleted file mode 100644
+index c966c58..0000000
+--- a/8.diff
++++ /dev/null
+@@ -1,48 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\StaF4F0.tmp\\Status-51e3d76-left.java" "b/D:\\Temp\\TortoiseGit\\StaF4EF.tmp\\Status-51264a9-right.java"
+-index 6a15027..5eb0858 100644
+---- "a/D:\\Temp\\TortoiseGit\\StaF4F0.tmp\\Status-51e3d76-left.java"
+-+++ "b/D:\\Temp\\TortoiseGit\\StaF4EF.tmp\\Status-51264a9-right.java"
+-@@ -16,6 +16,7 @@
+- 
+- package com.android.settings.deviceinfo;
+- 
+-+import android.app.ActionBar;
+- import android.bluetooth.BluetoothAdapter;
+- import android.content.BroadcastReceiver;
+- import android.content.Context;
+-@@ -42,6 +43,7 @@ import android.telephony.PhoneStateListener;
+- import android.telephony.ServiceState;
+- import android.telephony.TelephonyManager;
+- import android.text.TextUtils;
+-+import android.view.MenuItem;
+- 
+- import com.android.internal.telephony.Phone;
+- import com.android.internal.telephony.PhoneConstants;
+-@@ -211,6 +213,11 @@ public class Status extends PreferenceActivity {
+-     protected void onCreate(Bundle icicle) {
+-         super.onCreate(icicle);
+- 
+-+        ActionBar mActionBar = getActionBar();
+-+        if (mActionBar != null) {
+-+            mActionBar.setDisplayHomeAsUpEnabled(true);
+-+        }
+-+
+-         mHandler = new MyHandler(this);
+- 
+-         mTelephonyManager = (TelephonyManager)getSystemService(TELEPHONY_SERVICE);
+-@@ -305,6 +312,15 @@ public class Status extends PreferenceActivity {
+-     }
+- 
+-     @Override
+-+    public boolean onOptionsItemSelected(MenuItem item) {
+-+        if (item.getItemId() == android.R.id.home) {
+-+            finish();
+-+            return true;
+-+        }
+-+        return false;
+-+    }
+-+
+-+    @Override
+-     protected void onResume() {
+-         super.onResume();
+- 
+diff --git a/9.diff b/9.diff
+deleted file mode 100644
+index cb1df6f..0000000
+--- a/9.diff
++++ /dev/null
+@@ -1,41 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\NFC3130.tmp\\NFCProfileWriter-51e3d76-left.java" "b/D:\\Temp\\TortoiseGit\\NFC311F.tmp\\NFCProfileWriter-51264a9-right.java"
+-index 72b8c13..e858af4 100644
+---- "a/D:\\Temp\\TortoiseGit\\NFC3130.tmp\\NFCProfileWriter-51e3d76-left.java"
+-+++ "b/D:\\Temp\\TortoiseGit\\NFC311F.tmp\\NFCProfileWriter-51264a9-right.java"
+-@@ -18,6 +18,7 @@ package com.android.settings.profiles;
+- 
+- import java.util.UUID;
+- 
+-+import android.app.ActionBar;
+- import android.app.Activity;
+- import android.app.PendingIntent;
+- import android.app.Profile;
+-@@ -29,6 +30,7 @@ import android.nfc.NfcAdapter;
+- import android.nfc.Tag;
+- import android.os.Bundle;
+- import android.util.Log;
+-+import android.view.MenuItem;
+- import android.widget.Toast;
+- 
+- import com.android.settings.R;
+-@@ -61,6 +63,20 @@ public class NFCProfileWriter extends Activity {
+- 
+-         setContentView(R.layout.nfc_writer);
+-         setTitle(R.string.profile_write_nfc_tag);
+-+
+-+        ActionBar mActionBar = getActionBar();
+-+        if (mActionBar != null) {
+-+            mActionBar.setDisplayHomeAsUpEnabled(true);
+-+        }
+-+    }
+-+
+-+    @Override
+-+    public boolean onOptionsItemSelected(MenuItem item) {
+-+        if (item.getItemId() == android.R.id.home) {
+-+            finish();
+-+            return true;
+-+        }
+-+        return false;
+-     }
+- 
+-     @Override
+-- 
+1.8.4.msysgit.0
+

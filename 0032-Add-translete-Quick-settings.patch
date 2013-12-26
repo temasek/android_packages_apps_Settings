@@ -1,0 +1,29 @@
+From f9d4c6b13f8cfe2644c9c4b0cabfb955b90ba71d Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Fri, 13 Dec 2013 01:08:08 +0400
+Subject: [PATCH 32/56] Add translete Quick settings
+
+---
+ res/values-ru/cr_strings.xml | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/res/values-ru/cr_strings.xml b/res/values-ru/cr_strings.xml
+index 38b1788..c8605d5 100644
+--- a/res/values-ru/cr_strings.xml
++++ b/res/values-ru/cr_strings.xml
+@@ -660,9 +660,9 @@
+     <string name="title_tile_music">Музыка</string>
+     <string name="title_tile_reboot">Перезагузка</string>
+     <string name="tiles_reset_message">Восстановить плитки и их расположение по умолчанию?</string>
+-    <string name="disable_qs">Quick settings are disabled</string>
+-    <string name="disable_qs_message">All tiles were removed. Quick settings are disabled.\n\nTo enable add a tile.</string>
+-    <string name="help_qs_message">To add a quick settings tile, press the Add button and choose the tile you would like. To rearrange your tiles, longpress the tile and drag it into the position you want. If you want to delete a tile, drag it to the delete button which appears while dragging the tile.\n\nTo disable quick settings, remove all tiles.</string>
++    <string name="disable_qs">Быстрые настройки отключены</string>
++    <string name="disable_qs_message">Все плитки были удалены. Панель быстрых настройек отключена.\n\nДля включения панели добавьте плитку.</string>
++    <string name="help_qs_message">Чтобы добавить плитку в панель быстрых настроек, нажмите кнопку Добавить и выберите нужную вам плитку. Для пермещения плиток, нажмите и удерживайте плитку и перетащите в нужное вам место. Для удаления плитки, перетащите её на кнопку Удалить, которая появляется при перемещении плитки.\n\nДля удаления панели быстрых настроек, удалите все плитки.</string>
+ 
+     <!-- QuickSettings style options -->
+     <string name="quicksettings_tiles_style">Стиль быстрых настроек</string>
+-- 
+1.8.4.msysgit.0
+

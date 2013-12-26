@@ -1,0 +1,34 @@
+From b5f6f49791649017fcf80ddd65641fc5bc0cae26 Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Mon, 9 Dec 2013 02:38:20 +0300
+Subject: [PATCH 21/56] Small update Russian translation for v17
+
+---
+ res/values-ru/cr_strings.xml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/res/values-ru/cr_strings.xml b/res/values-ru/cr_strings.xml
+index 911eb49..54ab49a 100644
+--- a/res/values-ru/cr_strings.xml
++++ b/res/values-ru/cr_strings.xml
+@@ -527,7 +527,7 @@
+     <string name="lockscreen_colorize_handle_summary">Пользовательская картинка будет определять цвет блокировки</string>
+     <string name="lockscreen_style_title">Стиль блокировки</string>
+     <string name="lockscreen_frame_color_title">Цвет рамки</string>
+-    <string name="lockscreen_frame_color_summary">Цвет рамки слайдера разблокировки</string>
++    <string name="lockscreen_frame_color_summary">Цвет рамки и фона экрана разблокировки</string>
+     <string name="lockscreen_lock_color_title">Цвет замка</string>
+     <string name="lockscreen_lock_color_summary">Цвет иконки замка в слайдере разблокировки</string>
+     <string name="lockscreen_dots_color_title">Цвет точек</string>
+@@ -715,7 +715,7 @@
+ 	
+     <!-- INTERFACE Settings -->
+     <!-- Settings main menu category heading. Interface (Launcher, Themes, System). [CHAR LIMIT=40] -->
+-    <string name="header_category_interface">Персонализация</string>
++    <string name="header_category_interface">Интерфейс</string>
+ 	
+     <!-- Themes settings -->
+     <string name="themes_settings_title">Темы</string>
+-- 
+1.8.4.msysgit.0
+

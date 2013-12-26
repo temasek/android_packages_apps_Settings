@@ -1,0 +1,47 @@
+From fc9e2744cdc253145bfcc30200eedaeb156349a7 Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Mon, 16 Dec 2013 19:00:15 +0300
+Subject: [PATCH 39/56] Delete cm_strings_GB.diff
+
+---
+ cm_strings_GB.diff | 28 ----------------------------
+ 1 file changed, 28 deletions(-)
+ delete mode 100644 cm_strings_GB.diff
+
+diff --git a/cm_strings_GB.diff b/cm_strings_GB.diff
+deleted file mode 100644
+index 5a675a2..0000000
+--- a/cm_strings_GB.diff
++++ /dev/null
+@@ -1,28 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\Pat616C.tmp.xml" "b/D:\\Temp\\TortoiseGit\\cm_616B.tmp\\cm_strings-4528e68.xml"
+-index e69de29..eb2e15e 100644
+---- "a/D:\\Temp\\TortoiseGit\\Pat616C.tmp.xml"
+-+++ "b/D:\\Temp\\TortoiseGit\\cm_616B.tmp\\cm_strings-4528e68.xml"
+-@@ -0,0 +1,23 @@
+-+<?xml version="1.0" encoding="UTF-8"?>
+-+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+-+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+-+     <string name="dialog_test_message">Turn the screen off to see the selected notification in action or dismiss this dialogue box to stop the test</string>
+-+     <string name="battery_light_list_title">Colours</string>
+-+     <string name="lockscreen_maximize_widgets_title">Maximise widgets</string>
+-+     <string name="lockscreen_maximize_widgets_summary">Show widgets maximised and the unlock minimised when the screen is turned on</string>
+-+     <string name="cyanogenmod_waiver_body">Changing this setting may be against your state or government laws.\n\nBy selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless CyanogenMod and its contributors from all legal liabilities.</string>
+-+     <string name="title_tile_airplane">Aeroplane mode</string>
+-+     <string name="title_collapse_panel">Auto-close panel</string>
+-+     <string name="header_category_interface">Personalisation</string>
+-+     <string name="processor_summary">Change CPU governor and clock speed</string>
+-+     <string name="cpu_set_on_boot">Set on boot</string>
+-+     <string name="cpu_set_on_boot_summary">Restore the processor settings on boot</string>
+-+     <string name="io_scheds_summary">Change I/O scheduler</string>
+-+     <string name="io_sched_set_on_boot">Set on boot</string>
+-+     <string name="io_sched_set_on_boot_summary">Restore the I/O scheduler settings on boot</string>
+-+     <string name="color_calibration_title">Colour calibration</string>
+-+     <string name="color_calibration_summary">Calibrate on-screen colours</string>
+-+     <string name="notification_drawer_collapse_on_dismiss_title">Auto-close behaviour</string>
+-+     <string name="sms_security_check_limit_summary">Apps can send %d messages in 30 minutes before requiring confirmation</string>
+-+    <string name="adaptive_backlight_summary">Intelligently vary the backlight brightness of the display and help maximise battery life</string>
+-+</resources>
+-- 
+1.8.4.msysgit.0
+

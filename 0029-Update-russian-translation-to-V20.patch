@@ -1,0 +1,25 @@
+From 3e76c21f87b4d4462468f3f067d55e7953b26754 Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Thu, 12 Dec 2013 22:09:32 +0300
+Subject: [PATCH 29/56] Update russian translation to V20
+
+---
+ res/values-ru/cr_strings.xml | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/res/values-ru/cr_strings.xml b/res/values-ru/cr_strings.xml
+index 35913a4..592358a 100644
+--- a/res/values-ru/cr_strings.xml
++++ b/res/values-ru/cr_strings.xml
+@@ -724,4 +724,8 @@
+     <string name="ime_switcher_notify">Показывать уведомление</string>
+     <string name="ime_switcher_notify_summary">Отображать уведомление о выборе метода ввода</string>
+ 
++    <!-- Add option to hide power menu when screen is locked -->
++    <string name="lockscreen_power_menu_title">Включить меню кнопки питания</string>
++    <string name="lockscreen_power_menu_summary">Показывать меню кнопки питания, когда экран заблокирован</string>
++
+ </resources>
+-- 
+1.8.4.msysgit.0
+

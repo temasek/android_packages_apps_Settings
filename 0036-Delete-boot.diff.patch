@@ -1,0 +1,39 @@
+From 86f0fc8868443069c3cc3baeb8c31c899756b1ae Mon Sep 17 00:00:00 2001
+From: ValeraSh <9144287@gmail.com>
+Date: Mon, 16 Dec 2013 18:57:05 +0300
+Subject: [PATCH 36/56] Delete boot.diff
+
+---
+ boot.diff | 20 --------------------
+ 1 file changed, 20 deletions(-)
+ delete mode 100644 boot.diff
+
+diff --git a/boot.diff b/boot.diff
+deleted file mode 100644
+index bd78910..0000000
+--- a/boot.diff
++++ /dev/null
+@@ -1,20 +0,0 @@
+-diff --git "a/D:\\Temp\\TortoiseGit\\Boo19A2.tmp\\BootReceiver-a306630-left.java" "b/D:\\Temp\\TortoiseGit\\Boo19A1.tmp\\BootReceiver-4528e68-right.java"
+-index 3ff8a4f..a7392c2 100644
+---- "a/D:\\Temp\\TortoiseGit\\Boo19A2.tmp\\BootReceiver-a306630-left.java"
+-+++ "b/D:\\Temp\\TortoiseGit\\Boo19A1.tmp\\BootReceiver-4528e68-right.java"
+-@@ -30,6 +30,7 @@ import com.android.settings.Utils;
+- import com.android.settings.hardware.DisplayColor;
+- import com.android.settings.hardware.DisplayGamma;
+- import com.android.settings.hardware.VibratorIntensity;
+-+import com.android.settings.location.LocationSettings;
+- 
+- import java.util.Arrays;
+- import java.util.List;
+-@@ -75,6 +76,7 @@ public class BootReceiver extends BroadcastReceiver {
+-         DisplayGamma.restore(ctx);
+-         VibratorIntensity.restore(ctx);
+-         DisplaySettings.restore(ctx);
+-+        LocationSettings.restore(ctx);
+-     }
+- 
+-     private void initFreqCapFiles(Context ctx)
+-- 
+1.8.4.msysgit.0
+
