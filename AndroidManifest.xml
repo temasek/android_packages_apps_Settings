@@ -1148,6 +1148,9 @@
         <activity android:name="ConfirmLockPassword"
             android:windowSoftInputMode="stateVisible|adjustResize"/>
 
+        <activity android:name="ChooseEncryptionPassword" android:exported="false"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+
         <activity android:name="ChooseLockGeneric"
             android:label="@string/lockpassword_choose_lock_generic_header"
             android:excludeFromRecents="true" >
