@@ -1,0 +1,14 @@
+diff --git "a/D:\\Temp\\TortoiseGit\\And428.tmp\\AndroidManifest-1ca28f4-left.xml" "b/D:\\Temp\\TortoiseGit\\And427.tmp\\AndroidManifest-27e876f-right.xml"
+index 739b836..7505cff 100644
+--- "a/D:\\Temp\\TortoiseGit\\And428.tmp\\AndroidManifest-1ca28f4-left.xml"
++++ "b/D:\\Temp\\TortoiseGit\\And427.tmp\\AndroidManifest-27e876f-right.xml"
+@@ -1148,6 +1148,9 @@
+         <activity android:name="ConfirmLockPassword"
+             android:windowSoftInputMode="stateVisible|adjustResize"/>
+ 
++        <activity android:name="ChooseEncryptionPassword" android:exported="false"
++            android:windowSoftInputMode="stateVisible|adjustResize"/>
++
+         <activity android:name="ChooseLockGeneric"
+             android:label="@string/lockpassword_choose_lock_generic_header"
+             android:excludeFromRecents="true" >

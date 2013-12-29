@@ -1,0 +1,13 @@
+diff --git "a/D:\\Temp\\TortoiseGit\\pre44BE.tmp\\preference_linearcolor-1ca28f4-left.xml" "b/D:\\Temp\\TortoiseGit\\pre44AD.tmp\\preference_linearcolor-27e876f-right.xml"
+index d3a2603..754558d 100644
+--- "a/D:\\Temp\\TortoiseGit\\pre44BE.tmp\\preference_linearcolor-1ca28f4-left.xml"
++++ "b/D:\\Temp\\TortoiseGit\\pre44AD.tmp\\preference_linearcolor-27e876f-right.xml"
+@@ -19,7 +19,7 @@
+         android:layout_height="?android:attr/listPreferredItemHeight"
+         android:paddingEnd="?android:attr/scrollbarSize">
+     <com.android.settings.applications.LinearColorBar
+-        android:id="@+android:id/linear_color_bar"
++        android:id="@+id/linear_color_bar"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="16dp"
