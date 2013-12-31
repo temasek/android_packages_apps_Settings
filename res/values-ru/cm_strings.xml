@@ -643,5 +643,20 @@
     <string name="mod_version">Версия CyanogenMod</string>
     <string name="mod_version_default">Неизвестно</string>
     <string name="build_date">Дата сборки</string>
-
+	
+    <string name="lockscreen_buttons_title">Действия кнопок</string>
+    <string name="lockscreen_buttons_summary">Просмотр или изменение действий кнопок при заблокированном экране</string>
+    <string name="lockscreen_long_press_back_title">Долгое нажатие кнопки Назад</string>
+    <string name="lockscreen_long_press_home_title">Долгое нажатие кнопки Домой</string>
+    <string name="lockscreen_long_press_menu_title">Долгое нажатие кнопки Меню</string>
+    <string name="lockscreen_buttons_no_action">Действие не требуется</string>
+    <string name="lockscreen_buttons_flashlight">Фонарик</string>
+    <string name="lockscreen_buttons_next">Следующая песня</string>
+    <string name="lockscreen_buttons_previous">Предыдущая песня</string>
+    <string name="lockscreen_buttons_playpause">Играть/Остановить музыку</string>
+    <string name="lockscreen_buttons_toggle_sound">Переключить звук</string>
+    <string name="lockscreen_buttons_sleep">Выключить экран</string>
+	
+    <string name="storage_rescan_media">Повторное сканироание медиафайлов на карте памяти</string>
+    <string name="storage_rescan_media_complete">Сканирование завершено</string>
 </resources>

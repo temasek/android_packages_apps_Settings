@@ -757,5 +757,17 @@
 	
     <!-- Advanced, Device specific (DeviceParts) settings  -->
     <string name="advanced_settings_title">Расширенные</string>
+
+    <!-- Chamber of Secrets -->
+    <string name="chamber_title">Тайная комната</string>
+    <string name="chamber_toast">Тайная комната открыта</string>
+
+     <!-- Title for PreferenceScreen to change encryption password [CHAR LIMIT=22] -->
+    <string name="change_crypt_password_title">Смена пароля</string>
+    <!-- Summary for PreferenceScreen to change encryption password [CHAR LIMIT=45] -->
+    <string name="change_crypt_password_summary">Изменение пароля, используемого для шифрования устройства</string>
+
+    <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
+    <string name="encryptionpassword_choose_your_password_header">Установить пароль шифрования</string>
 	
 </resources>
