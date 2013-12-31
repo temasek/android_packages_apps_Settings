@@ -11,6 +11,11 @@
     <string name="attention">Atención</string>
     <string name="disabled">Inhabilitado</string>
     <string name="default_string">Predeterminado</string>
+    <string name="additional_options_title">Opciones adicionales</string>
+    <string name="reset_message">¿Resetear todas las entradas al valor por defecto?</string>
+    <string name="style_title">Estilo</string>
+    <string name="add">Añadir</string>
+    <string name="title_general">General</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Opciones avanzadas</string>
@@ -113,7 +118,10 @@
     <string name="system_power_crt_mode_vertical">Cierre vertical</string>
     <string name="system_power_crt_mode_both">Cierre según la orientación</string>
     <string name="system_power_crt_mode_scale">Cierre proporcional</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
     <string name="show_cpu_info">Mostrar información del CPU</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Información del CPU superpuesta sobre cualquier actividad</string>
 
     <!-- Status bar brightness control -->
@@ -128,15 +136,12 @@
     <string name="restart_systemui">Reiniciar UI</string>
 
     <!-- Button shorcut actions -->
-    <string name="additional_options_title">Configuración adicional</string>
-    <string name="shortcut_action_app">Aplicación personalizada</string>
-    <string name="reset_message">¿Restaurar predeterminado?</string>
-    <string name="style_title">Estilo</string>
     <string name="shortcut_action_airplane">Modo avión</string>
     <string name="shortcut_action_expanded_desktop">Escritorio expandido</string>
     <string name="shortcut_action_power_off">Apagar</string>
     <string name="shortcut_action_reboot">Reiniciar</string>
     <string name="shortcut_action_sound">Sonido</string>
+    <string name="shortcut_action_app">Applicación Personalizada</string>
     <string name="shortcut_action_home">Escritorio</string>
     <string name="shortcut_action_back">Atrás</string>
     <string name="shortcut_action_recent">Recientes</string>
@@ -166,13 +171,14 @@
     <string name="shortcut_action_disable_message">Inhabilitado\nAñade una entrada para habilitar esta función</string>
     <string name="shortcut_image_not_valid">La aplicación elegida no posee un ícono válido o no admite recorte de imagen. Seleccione otra aplicación</string>
     <string name="shortcut_duplicate_entry">La acción seleccionada no puede añadirse dos veces</string>
+    
     <string name="shortcut_action_help_shortcut">acceso directo</string>
     <string name="shortcut_action_help_button">botón</string>
     <string name="shortcut_action_help_icon">,mientras selecciona el ícono, aparecerán opciones de personalización</string>
     <string name="shortcut_action_help_main">Para agregar un botón, presiona el ícono Añadir (+). Puedes modificar su función tocando sobre él o agregar una acción a su pulsación prolongada.\n\nPara eliminar un botón desliza horizontalmente.\n\nPara reordenar desliza verticalmente.\n\nPara volver a los valores predeterminados presiona el botón Restaurar. </string>
     <string name="shortcut_action_help_delete_last_entry">Eliminar todos los %1$s de la lista desactivará la función.</string>
     <string name="shortcut_action_help">Ayuda</string>
-    <string name="icon_custom">Galería</string>
+    
     <string name="shortcuts_icon_picker_alarm">Alarma</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
     <string name="shortcuts_icon_picker_battery">Batería</string>
@@ -225,6 +231,7 @@
     <string name="shortcuts_icon_picker_tv">TV</string>
     <string name="shortcuts_icon_picker_twitter">Twitter</string>
     <string name="shortcuts_icon_picker_unlock">Desbloqueo</string>
+    
     <string name="icon_picker_type">Selecciona un tipo de ícono:</string>
     <string name="icon_default">Predeterminado</string>
     <string name="icon_presets">Íconos del sistema</string>
@@ -236,12 +243,13 @@
     <string name="icon_color_mode_system_custom_icons">Íconos del sistema y de usuario </string>
     <string name="group_applications">Aplicaciones</string>
     <string name="select_custom_app_title">Selección personalizada</string>
+    <string name="shortcuts_text_color_title">Color del texto</string>
     <string name="shortcuts_color_title">Color de los accesos directos</string>
-    <string name="shortcuts_color_summary">Colorea los íconos de los accesos directos</string>
     <string name="shortcuts_color_mode_title">Colorear</string>
     <string name="shortcuts_color_mode_summary">Aplicar color a:</string>
 
     <!-- Notification drawer settings -->
+    <string name="notification_drawer_qs_title">Panel de Notificaciones &amp; QS</string>
     <string name="notification_drawer_title">Panel de notificaciones</string>
     <string name="notification_hide_carrier_title">Ocultar etiquetas</string>
     <string name="notification_hide_carrier_summary">Ocultar nombre de operadora y etiqueta WiFi del panel de notificaciones</string>
@@ -336,15 +344,10 @@
     <string name="navbar_targets_title">Accesos rápidos</string>
     <string name="navbar_cat">Barra de navegación</string>
     <string name="navbar_dimensions_reset_message">¿Restaurar dimensiones predeterminadas?</string>
-    <string name="navbar_button_style_reset_message">¿Restaurar configuración predeterminada?</string>
  
     <!-- Navigation bar button style -->
-    <string name="nav_bar_button_style">Apariencia</string>
     <string name="nav_bar_button_style_summary">Modifica el color de los botones de la barra</string>
     <string name="button_transparency_title">Transparencia de los botones</string>
-    <string name="navigation_bar_icon_tint_title">Color de los botones</string>
-    <string name="nav_button_color_mode_title">Modo color</string>
-    <string name="nav_button_color_mode_dialog_title">Colorear</string>
     <string name="nav_button_color_mode_summary">Modifica el color de los botones</string>
     <string name="navigation_bar_glow_tint_title">Color del resplandor</string>
  
@@ -384,14 +387,6 @@
     <string name="ram_bar_reset">Restaurar</string>
     <string name="ram_bar_reset_message">¿Restaurar la barra al estilo predefinido?</string>
 
-    <!-- Clear Recents position -->
-    <string name="clear_recents_position_title">Botón Borrar recientes</string>
-    <string name="clear_recents_position_disabled">Inhabilitado</string>
-    <string name="clear_recents_position_bottom_right">Abajo a la derecha</string>
-    <string name="clear_recents_position_bottom_left">Abajo a la izquierda</string>
-    <string name="clear_recents_position_top_right">Arriba a la derecha</string>
-    <string name="clear_recents_position_top_left">Arriba a la izquierda</string>
-
     <!-- Enable Quick Unlock -->
     <string name="lockscreen_quick_unlock_control_title">Desbloqueo rápido</string>
     <string name="lockscreen_quick_unlock_control_summary">Desbloquear automáticamente cuando el PIN o contraseña es correcto</string>
@@ -401,7 +396,7 @@
     <string name="slide_target_title">Control de atajos y accesos</string>
     <string name="lock_screen_summary">Ver o cambiar los atajos y accesos deslizables</string>
 
-    <!-- Lock Screen Targets --> 
+    <!-- Lock Screen Targets -->
     <string name="lockscreen_target_info">Arrastra el deslizador para ajustar los accesos directos</string>
     <string name="lockscreen_target_title">Accesos directos</string>
     <string name="lockscreen_target_summary">Añadir o configurar accesos directos en la pantalla de bloqueo</string>
@@ -416,7 +411,7 @@
     <string name="lockscreen_target_edit_title">Editar acceso directo</string>
     <string name="lockscreen_target_edit_msg">Seleccionar o cambiar la aplicación (o actividad) y su ícono</string>
 
- <!-- Lockscreen Shortcuts -->
+    <!-- Lockscreen Shortcuts -->
     <string name="lockscreen_shortcuts_title">Atajos de desbloqueo</string>
     <string name="lockscreen_shortcuts_summary">Añadir o configurar atajos en la pantalla de bloqueo</string>
     <string name="lockscreen_shorcuts_longpress_title">Atajos de pulsación prolongada</string>
@@ -491,6 +486,7 @@
     <string name="halo_enabled_title">Activar Halo</string>
     <string name="halo_enabled_summary">Activa o desactiva completamente la función Halo</string>
     
+    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Lista negra de Halo</string>
     <string name="app_halo_label_white">Lista blanca de Halo</string>
 
@@ -519,12 +515,28 @@
     <string name="listview_anticipate_overshoot_interpolator">anticipate_overshoot_interpolator</string>
     <string name="listview_bounce_interpolator">bounce_interpolator</string>
 
+    <!-- Lockscreen style settings -->
+    <string name="lockscreen_style_reset_message">¿Resetear todos los colores de la pantalla de bloqueo?</string>
+    <string name="lockscreen_icon_title">Ícono de manejador de bloqueo</string>
+    <string name="lockscreen_lock_icon_custom">Ícono personalizado</string>
+    <string name="lockscreen_lock_icon_temasek">Ícono de Temasek</string>
+    <string name="lockscreen_lock_icon_default">Ícono por defecto</string>
+    <string name="lockscreen_colorize_handle_title">Colorear manejador personalizado</string>
+    <string name="lockscreen_colorize_handle_summary">Color de bloqueo se seteará al color del manejador personalizado</string>
+    <string name="lockscreen_style_title">Estilo del tema</string>
+    <string name="lockscreen_frame_color_title">Color de marco</string>
+    <string name="lockscreen_frame_color_summary">Color del widget y de marco de desbloqueo</string>
+    <string name="lockscreen_lock_color_title">Color de bloqueo</string>
+    <string name="lockscreen_lock_color_summary">Color de manejador de bloqueo</string>
+    <string name="lockscreen_dots_color_title">Color de los puntos</string>
+    <string name="lockscreen_dots_color_summary">Color de los puntos brillantes</string>
+
     <!-- Lockscreen widget settings -->
     <string name="lockscreen_widgets_title">Widgets</string>
-    <string name="lockscreen_camera_widget_title">Widget de cámara</string>
-    <string name="lockscreen_camera_widget_summary">Mostrar el widget de cámara a la derecha del bloqueo de pantalla</string>
+    <string name="lockscreen_camera_widget_title">Habilitar Widget de cámara</string>
+    <string name="lockscreen_camera_widget_summary">Mostrar el widget de cámara en la pantalla de bloqueo</string>
     <string name="lockscreen_maximize_widgets_title">Maximizar widgets</string>
-    <string name="lockscreen_maximize_widgets_summary">Mostrar los widgets maximizados y el widget de bloqueo minimizado al encender la pantalla</string>
+    <string name="lockscreen_maximize_widgets_summary">Mostrar los widgets maximizados al encender la pantalla</string>
     <string name="lockscreen_disable_hints_title">Desactivar indicador de página</string>
     <string name="lockscreen_disable_hints_summary">Desactiva el brillo que indica la página en donde te encuentres</string>
     <string name="lockscreen_use_widget_container_carousel_title">Activar modo carrusel</string>
@@ -535,7 +547,7 @@
     <string name="ad_settings_summary">Cambiar la configuracion de Pantalla Activa</string>
     <string name="ad_enable_title">Activada</string>
     <string name="ad_enable_summary_on">Pantalla Activa activada</string>
-    <string name="ad_enable_summary_off">Pantalla Activa desactivada</string> 
+    <string name="ad_enable_summary_off">Pantalla Activa desactivada</string>
     <string name="ad_text_title">Texto notificación</string>
     <string name="ad_text_summary">Muestra el texto de notificación alrededor del anillo.</string>
     <string name="ad_all_notifications_title">Todas notificaciones</string>
@@ -543,15 +555,19 @@
     <string name="ad_hide_low_priority_title">Ocultar Baja-prioridad</string>
     <string name="ad_hide_low_priority_summary">Oculta las notificaciones de baja prioridad como las de Google Now.</string>
     <string name="ad_pocket_mode_title">Modo Bolsillo</string>
-    <string name="ad_pocket_mode_summary">Muestra la Pantalla Activa cuando sacas el dispositivo del bolsillo.</string>
+    <string name="ad_pocket_mode_summary">Muestra notificaciones de Pantalla Activa cuando sacas el dispositivo del bolsillo.</string>
     <string name="ad_redisplay_title">Re-Mostrar Notificaciones</string>
+    <string name="ad_timeout_title">Timeout de pantalla</string>
+    <string name="ad_threshold_title">Umbral de proximidad</string>
     <string name="ad_sunlight_mode_title">Modo Soleado</string>
-    <string name="ad_sunlight_mode_summary">Altera los colores en areas muy iluminadas.</string>
+    <string name="ad_sunlight_mode_summary">Altera los colores en áreas muy iluminadas.</string>
+    <string name="ad_turnoff_mode_title">Apagar la pantalla</string>
+    <string name="ad_turnoff_mode_summary">Apagar la pantalla si el dispositivo se guarda nuevamente en el bolsillo y fue encendida por la Pantalla Activa.</string>
     <string name="ad_customizations_title">Personalización</string>
     <string name="ad_excluded_apps_title">Excluir aplicaciones</string>
     <string name="ad_excluded_apps_summary">Las aplicaciones excluidas no se mostrarán en la pantalla activa.</string>
     <string name="ad_brightness_title">Brillo de notificaciones</string>
-    <string name="ad_brightness_summary">Nivel de brillo para mostrar cuando el brillo automatico no esta activado.</string>
+    <string name="ad_brightness_summary">Nivel de brillo para mostrar cuando el brillo automático no está activado.</string>
     <string name="ad_show_date_title">Mostrar fecha</string>
     <string name="ad_show_date_summary">Muestra la fecha encima del reloj</string>
     <string name="ad_show_ampm_title">Mostrar AM/PM</string>
@@ -564,6 +580,18 @@
     <string name="ad_redisplay_1h">1 hora</string>
     <string name="ad_redisplay_2h">2 horas</string>
     <string name="ad_redisplay_5h">5 horas</string>
+    <string name="ad_timeout_3s">3 segundos</string>
+    <string name="ad_timeout_5s">5 segundos</string>
+    <string name="ad_timeout_8s">8 segundos</string>
+    <string name="ad_timeout_10s">10 segundos</string>
+    <string name="ad_timeout_15s">15 segundos</string>
+    <string name="ad_timeout_25s">25 segundos</string>
+    <string name="ad_threshold_0s">Instantáneo</string>
+    <string name="ad_threshold_1s">1 segundo</string>
+    <string name="ad_threshold_2s">2 segundos</string>
+    <string name="ad_threshold_3s">3 segundos</string>
+    <string name="ad_threshold_4s">4 segundos</string>
+    <string name="ad_threshold_5s">5 segundos</string>
     <string name="ad_pocket_mode_off">Apagado</string>
     <string name="ad_pocket_mode_notifications">Solo para notificaciones</string>
     <string name="ad_pocket_mode_always">Siempre</string>
@@ -585,37 +613,158 @@
     <string name="lock_pattern_size_5">5x5</string>
     <string name="lock_pattern_size_6">6x6</string>
     
-    <!-- Display : Rotation -->
-    <string name="display_rotation_title">Rotación</string>
-    <string name="display_rotation_disabled">Disactivada</string>
-    <string name="display_rotation_unit">grados</string>
-    <string name="display_rotation_category_title">Modos de rotación</string>
-    <string name="display_rotation_0_title">0 grados</string>
-    <string name="display_rotation_90_title">90 grados</string>
-    <string name="display_rotation_180_title">180 grados</string>
-    <string name="display_rotation_270_title">270 grados</string>
-    
     <!-- Notification Drawer Settings -->
-    <string name="notification_drawer_title">Panel de notificaciones</string>
-    <string name="notification_drawer_style_title">Opciones del panel</string>
-    <string name="notification_drawer_background">Fondo y transparencia</string>
+    <string name="notification_drawer_title">Panel de notificación</string>
+    <string name="notification_drawer_style_title">Opciones del panel de notificación</string>
+    <string name="notification_drawer_background">Trasnparencia y fondo</string>
 
     <!-- Notification drawer background -->
-    <string name="notification_style_title">Estilo</string>
-    <string name="notification_style_summary">Modifica el estilo del panel de notificaciones</string>
-    <string name="notification_wallpaper_title">Fondo del panel de notificaciones</string>
-    <string name="notification_wallpaper_landscape_title">Fondo en modo paisaje</string>
-    <string name="notification_background_color_fill">Color</string>
+    <string name="notification_style_title">Estilo del fondo</string>
+    <string name="notification_style_summary">Ver o cambiar el fondo del panel de notificación y de QuickSettings</string>
+    <string name="notification_wallpaper_title">Fondo</string>
+    <string name="notification_wallpaper_landscape_title">Fondo landscape diferente</string>
+    <string name="notification_background_color_fill">Color de llenado</string>
     <string name="notification_background_custom_image">Imagen personalizada</string>
-    <string name="notification_background_default_wallpaper">Fondo predeterminado</string>
+    <string name="notification_background_default_wallpaper">Fondo por defecto</string>
     <string name="notification_drawer_custom_background_dialog_title">Elegir color</string>
-    <string name="notif_wallpaper_alpha_title">Transparencia de las notificaciones</string>
-    <string name="notif_alpha_title">Transparencia de fila de notificaciones</string>
-    
+    <string name="notif_wallpaper_alpha_title">Transparencia del fondo</string>
+    <string name="notif_alpha_title">Transparencia de notificación</string>
+
     <!-- Custom notification panel header -->
     <string name="omni_features_title">Características de Omni</string>
-    <string name="notification_drawer_category_title">Panel de notificaciones</string>
-    <string name="custom_statusbar_header_title">Encabezado contextual del panel de notificaciones</string>
+    <string name="notification_drawer_category_title">Panel de Notificación</string>
+    <string name="custom_statusbar_header_title">Encabezado contextual del panel de notificación</string>
     <string name="custom_statusbar_header_summary">Establece una imagen basada en la fecha y hora actual como fondo del panel</string>
-    
+
+    <string name="omni_features_recent_panel_title" >Menú recientes</string>
+
+    <!-- Recents clear all -->
+    <string name="show_recent_clear_all_button_title">Mostrar botón para limpiar todo</string>
+    <string name="show_recent_clear_all_button_summary">Marque para mostrar o desmarque para ocultar el botón limpiar todo en la pantalla de aplicaciones recientes</string>
+    <string name="recent_clear_all_button_location_title">Posición del botón limpiar todo</string>
+    <string name="recent_clear_all_button_location_summary">Elija en cual esquina se mostrará el botón limpiar todo</string>
+    <string name="recent_clear_all_button_location_top_left">Arriba a la izquierda</string>
+    <string name="recent_clear_all_button_location_top_right">Arriba a la derecha</string>
+    <string name="recent_clear_all_button_location_bottom_left">Abajo a la izquierda</string>
+    <string name="recent_clear_all_button_location_bottom_right">Abajo a la derecha</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings_title">Ajustes rápidos</string>
+    <string name="tile_picker_title">Azulejos y disposición</string>
+    <string name="tile_picker_summary">Ver, seleccionar o cambiar los azulejos mostrados</string>
+    <string name="tile_choose_title">Elegir un azulejo</string>
+    <string name="title_tile_airplane">Modo aeroplano</string>
+    <string name="title_tile_battery">Batería</string>
+    <string name="title_tile_bluetooth">Bluetooth</string>
+    <string name="title_tile_brightness">Brillo</string>
+    <string name="title_tile_sleep">Ir a dormir</string>
+    <string name="title_tile_location">Ubicación</string>
+    <string name="title_tile_torch">Linterna</string>
+    <string name="title_tile_lockscreen">Pantalla de bloqueo</string>
+    <string name="title_tile_lte">LTE</string>
+    <string name="title_tile_mobiledata">Datos móviles</string>
+    <string name="title_tile_autorotate">Orientación</string>
+    <string name="title_tile_settings">Configuración</string>
+    <string name="title_tile_sound">Sonido</string>
+    <string name="title_tile_sync">Sincronización</string>
+    <string name="title_tile_wifiap">WiFi AP</string>
+    <string name="title_tile_wifi">WiFi</string>
+    <string name="title_tile_user">Cambiar Usuario</string>
+    <string name="title_tile_networkmode">Modo de red</string>
+    <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">Timeout de pantalla</string>
+    <string name="title_tile_quick_record">Grabación rápida</string>
+    <string name="title_tile_quiet_hours">Horas Silenciosas</string>
+    <string name="title_tile_volume">Volumen</string>
+    <string name="title_tile_expanded_desktop">Escritorio Expandido</string>
+    <string name="title_tile_music">Música</string>
+    <string name="title_tile_reboot">Reiniciar</string>
+    <string name="dynamic_tile_ime_switcher">Cambiar IME</string>
+    <string name="dynamic_tile_usb_tether">USB tether</string>
+    <string name="dynamic_tile_alarm">Alarma</string>
+    <string name="dynamic_tile_bugreport">Reporte de Error</string>
+    <string name="dynamic_tiles_title">Azulejos Dinámicos</string>
+    <string name="tiles_reset_message">¿Resetear azulejos mostrados y la disposición al valor por defecto?</string>
+    <string name="disable_qs">Ajustes rápidos está deshabilitado</string>
+    <string name="disable_qs_message">Todos los azulejos fueron removidos. Ajustes rápidos está deshabilitado.\n\nAñada un azulejo para habilitarlo.</string>
+    <string name="help_qs_message">Para añadir un azulejo a Ajustes rápidos, presione el botón Añadir y elija un azulejo. Para reordenar los azulejos, mantenga presionado el azulejo y muévalo a la posición que desee. Si desea eliminar un azulejo, arrástrelo al botón Eliminar que aparece mientras se mueve el azulejo.\n\nPara configurar azulejos dinámicos presione el ícono respectivo en la parte superior derecha de la pantalla\n\nPara deshabilitar Ajustes rápidos, remueva todos los azulejos.</string>
+
+    <!-- QuickSettings style options -->
+    <string name="quicksettings_tiles_style">Estlo</string>
+    <string name="summary_quicksettings_tiles_style">Ver o cambiar las opciones de estilo de Ajustes rápidos</string>
+    <string name="quicksettings_tiles_style_additional_options">Opciones adicionales</string>
+    <string name="tiles_per_row_title">Azulejos por fila</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Escalar cantidad en modo horizonal</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Duplicar cantidad de azulejos por fila en modo horizontal</string>
+    <string name="quick_tiles_bg_color_title">Color de fondo de azulejos</string>
+    <string name="quick_tiles_bg_pressed_color_title">Color de fondo de azulejos presionados</string>
+    <string name="quick_tiles_text_color_title">Color de texto de azulejos</string>
+    <string name="quick_tiles_alpha_title">Transparencia de fondo de azulejos</string>
+    <string name="qs_style_reset_message">¿Resetear todos los colores al valor por defecto?</string>
+
+    <string name="pref_network_mode_title">Modos de red</string>
+    <string name="pref_screentimeout_mode_title">Modos de timeout de pantalla</string>
+    <string name="pref_ring_mode_title">Modos de sonido</string>
+    <string name="pref_music_mode_title">Modos de música</string>
+    <string name="screentimeout_mode1">15s | 1m | 5m | Nunca</string>
+    <string name="screentimeout_mode2">30s | 2m | 5m | Nunca</string>
+    <string name="sound_mode_silent">Silencio</string>
+    <string name="sound_mode_vibrate">Vibración</string>
+    <string name="sound_mode_sound">Sonido</string>
+    <string name="sound_mode_soundVibrate">Sonido &amp; Vibración</string>
+    <string name="music_tile_mode_background">Mostrar arte del álbum</string>
+    <string name="music_tile_mode_tracktitle">Mostrar título de pista</string>
+
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Acceso rápido</string>
+    <string name="summary_quick_pulldown">Deslice hacia abajo el borde %1$s de la barra de estado para acceder a los Ajustes Rápidos</string>
+    <string name="quick_pulldown_off">Apagado</string>
+    <string name="quick_pulldown_left">Izquierdo</string>
+    <string name="quick_pulldown_right">Derecho</string>
+
+    <!-- Status Bar Activity Indicators -->
+    <string name="show_activity_indicators_on_status_bar_title">Indicador de actividad de red</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Mostrar actividad de red en la barra de estado</string>
+
+    <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_category_title">Cubierta inteligente</string>
+    <string name="smart_cover_wake_title">Despertar con cubierta inteligente</string>
+    <string name="smart_cover_wake_summary">Despertar el dispositivo cuando se abra la cubierta inteligente</string>
+
+    <!-- Keyboard and Input ASS methods -->
+    <string name="title_keyboard_input">Opciones Avanzadas</string>
+    <string name="disable_fullscreen_keyboard_title">Deshabilitar teclado en pantalla completa</string>
+    <string name="disable_fullscreen_keyboard_summary">En modo horizontal, el teclado nunca ocupará toda la pantalla.</string>
+    <string name="volume_key_cursor_control_title">Control de cursor con teclas de volumen</string>
+    <string name="volume_key_cursor_control_on">Volumen arriba/abajo mueve el cursor izquierda/derecha</string>
+    <string name="volume_key_cursor_control_on_reverse">Volumen arriba/abajo mueve el cursor derecha/izquierda</string>
+    <string name="keyboard_rotation_toggle_title">Rotación automática de teclado</string>
+    <string name="keyboard_rotation_toggle_summary">Forzar auto-rotación cuando el teclado está visible</string>
+    <string name="keyboard_rotation_timeout_title">Timeout de auto-rotación</string>
+    <string name="keyboard_rotation_timeout_summary">Deshabilita el sensor de auto-rotación <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos luego de que el teclado se oculta</string>
+    <string name="keyboard_rotation_dialog">Nota: Esta característica fuerza temporalmenet el encendido de la auto-rotación mientras el teclado no está. No tiene efecto cuando la auto-rotación ya está habilitada.</string>
+    <string name="show_enter_key_title">Mostrar tecla Enter</string>
+    <string name="show_enter_key_summary">Forzar que el teclado muestre la tecla Enter en lugar de la tecla de emoticones</string>
+    <string name="ime_switcher_notify">Notificación de selector</string>
+    <string name="ime_switcher_notify_summary">Mostrar notificación de selección de método de entrada</string>
+
+    <!-- Add option to hide power menu when screen is locked -->
+    <string name="lockscreen_power_menu_title">Habilitar menú de Encendido</string>
+    <string name="lockscreen_power_menu_summary">Mostrar mení de Encendido cuando la pantalla está bloqueada</string>
+
+    <!-- Advanced, Device specific (DeviceParts) settings -->
+    <string name="advanced_settings_title">Avanzado</string>
+
+    <!-- Chamber of Secrets -->
+    <string name="chamber_title">Cámara de secretos</string>
+    <string name="chamber_toast">La cámara de secretos está abierta</string>
+
+     <!-- Title for PreferenceScreen to change encryption password [CHAR LIMIT=22] -->
+    <string name="change_crypt_password_title">Cambiar contraseña</string>
+    <!-- Summary for PreferenceScreen to change encryption password [CHAR LIMIT=45] -->
+    <string name="change_crypt_password_summary">Cambiar la contraseña usada para encriptar el dispositivo</string>
+
+    <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
+    <string name="encryptionpassword_choose_your_password_header">Asignar la contraseña de encriptación</string>
+ 
 </resources>

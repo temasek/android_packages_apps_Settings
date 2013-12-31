@@ -673,6 +673,7 @@
     <string name="title_tile_networkmode">Mrežni način</string>
     <string name="title_tile_nfc">NFC</string>
     <string name="title_tile_screen_timeout">Istek zaslona</string>
+    <string name="title_tile_quick_record">Brzo snimanje</string>
     <string name="title_tile_quiet_hours">Vrijeme stišavanja</string>
     <string name="title_tile_volume">Glasnoća</string>
     <string name="title_tile_expanded_desktop">Prošireni prikaz</string>
@@ -721,10 +722,6 @@
     <string name="quick_pulldown_left">Lijevo</string>
     <string name="quick_pulldown_right">Desno</string>
 
-    <!-- security settings menu unlock -->
-    <string name="unlock_menu_unlock_title">Otključavanje tipkom izbornika</string>
-    <string name="unlock_menu_unlock_summary">Pritisak tipke izbornika otključava uređaj</string>
-
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Pokazatelj mrežne aktivnosti</string>
     <string name="show_activity_indicators_on_status_bar_summary">Prikaži aktivnosti mreže u statusnoj traci</string>
@@ -757,5 +754,17 @@
 
     <!-- Advanced, Device specific (DeviceParts) settings  -->
     <string name="advanced_settings_title">Napredno</string>
+
+    <!-- Chamber of Secrets -->
+    <string name="chamber_title">Spremište zaporki</string>
+    <string name="chamber_toast">Spremište zaporki otvoreno</string>
+
+     <!-- Title for PreferenceScreen to change encryption password [CHAR LIMIT=22] -->
+    <string name="change_crypt_password_title">Promjeni zaporku</string>
+    <!-- Summary for PreferenceScreen to change encryption password [CHAR LIMIT=45] -->
+    <string name="change_crypt_password_summary">Promjeni zaporku za enkripciju uređaja</string>
+
+    <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
+    <string name="encryptionpassword_choose_your_password_header">Postavi zaporku enkripcije</string>
 
 </resources>
