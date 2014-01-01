@@ -47,6 +47,8 @@
             android:key="keyguard_enable_widgets"
             android:fragment="com.android.settings.temasek.LockscreenWidgets"
             android:title="@string/lockscreen_widgets_title"/>
+<<<<<<< HEAD
+=======
 
         <CheckBoxPreference
             android:key="battery_around_lockscreen_ring"

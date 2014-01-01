@@ -43,6 +43,8 @@
             android:key="power_button_instantly_locks"
             android:title="@string/lockpattern_settings_enable_power_button_instantly_locks"/>
 
+
+
         <ListPreference
             android:key="lock_numpad_random"
             android:entries="@array/lock_numpad_random_entries"
@@ -68,6 +70,7 @@
             android:fragment="com.android.settings.temasek.LockscreenTargets"
             android:summary="@string/lockscreen_target_summary"
             android:title="@string/lockscreen_target_title" />
+
 
         <PreferenceScreen
             android:key="keyguard_enable_widgets"
