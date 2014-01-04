@@ -653,4 +653,31 @@
         <item>2.0</item>
     </string-array>
 
+    <!-- Driving mode -->
+    <string-array name="voice_tts_annoy_notif_entries">
+        <item>@string/voice_tts_annoy_notif_default</item>
+        <item>@string/voice_tts_annoy_notif_3s</item>
+        <item>@string/voice_tts_annoy_notif_5s</item>
+        <item>@string/voice_tts_annoy_notif_10s</item>
+        <item>@string/voice_tts_annoy_notif_15s</item>
+        <item>@string/voice_tts_annoy_notif_30s</item>
+        <item>@string/voice_tts_annoy_notif_45s</item>
+        <item>@string/voice_tts_annoy_notif_1m</item>
+        <item>@string/voice_tts_annoy_notif_2m</item>
+        <item>@string/voice_tts_annoy_notif_5m</item>
+    </string-array>
+
+    <string-array name="voice_tts_annoy_notif_values" translatable="false">
+        <item>0</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>45000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+    </string-array>
+
 </resources>
