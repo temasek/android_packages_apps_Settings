@@ -659,4 +659,24 @@
         
     <string name="storage_rescan_media">Повторное сканироание медиафайлов на карте памяти</string>
     <string name="storage_rescan_media_complete">Сканирование завершено</string>
+	
+    <string name="status_bar_double_tap_to_sleep_title">Двойное нажатие выключает экран</string>
+    <string name="status_bar_notif_count_title">Показывать счетчик уведомлений</string>
+    <string name="status_bar_notif_count_summary">Отображение количества полученных уведомлений</string>
+	
+    <string name="volume_overlay_title">Вид панели громкости</string>
+    <string name="volume_overlay_single">Одиночная</string>
+    <string name="volume_overlay_expandable">Расширяемая</string>
+    <string name="volume_overlay_expanded">Расширенная</string>
+    <string name="volume_overlay_none">Не показывать</string>
+
+    <string name="automation_effects_title">Автоматизация и Эффекты</string>
+
+    <string name="notification_convert_sound_to_vibration_title">Вибрирация при уведомлении</string>
+    <string name="notification_convert_sound_to_vibration_summary">В режиме вибрации, все уведомления будут вибрировать независимо от индивидуальных настроек приложений</string>
+    <string name="notification_vibrate_during_calls_title">Вибрация во время вызова</string>
+    <string name="notification_vibrate_during_calls_summary">Входящие уведомления будут мягко вибрировать во время телефонных вызовов</string>
+
+    <string name="volume_adjust_sounds_enable_title">Регулировка громкости звука</string>
+    <string name="volume_adjust_sounds_enable_summary">Воспроизведение звука при регулировке уровня громкости кнопками управления</string>
 </resources>
