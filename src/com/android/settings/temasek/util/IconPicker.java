@@ -69,6 +69,12 @@ public class IconPicker {
         mIconListener.iconPicked(requestCode, resultCode, data);
     }
 
+    public void pickGallery(final int fragmentId, final File image) {
+        Intent iconPackIntent = new Intent(ICON_ACTION);
+        ComponentName component = iconPackIntent.resolveActivity(mParent.getPackageManager());
+        showChosen(REQUEST_PICK_GALLERY, image, fragmentId);
+    }
+
     public void pickIcon(final int fragmentId, final File image) {
         Intent iconPackIntent = new Intent(ICON_ACTION);
         ComponentName component = iconPackIntent.resolveActivity(mParent.getPackageManager());
