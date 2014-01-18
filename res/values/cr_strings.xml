@@ -469,8 +469,6 @@
     <string name="halo_behavior_title">Halo Behavior</string>
     <string name="halo_hide_title">Hide Halo after activity</string>
     <string name="halo_hide_summary">Halo will appear for incoming tasks and scroll out of sight after a while</string>
-    <string name="halo_reversed_title">Reverse Halo</string>
-    <string name="halo_reversed_summary">Applies for task switching and moving gestures</string>
     <string name="halo_state_title">Halo policy</string>
     <string name="halo_state_summary">Enables black/white listing notifications</string>
     <string name="halo_state_black">Black list</string>
@@ -499,11 +497,6 @@
     <string name="halo_notification_count_total">Total</string>
     <string name="halo_notification_count_individual">Per app</string>
     <string name="halo_notification_count_both">Both</string>
-
-    <string name="halo_msgbox_animation_title">Message box animation</string>
-    <string name="halo_msgbox_animation_summary">Halo message box animation for incoming notifications</string>
-    <string name="halo_msgbox_animation_none">None</string>
-    <string name="halo_msgbox_animation_flip">Flip</string>
 
     <string name="halo_enabled_title">Enable HALO</string>
     <string name="halo_enabled_summary">Completely enable or disable HALO</string>

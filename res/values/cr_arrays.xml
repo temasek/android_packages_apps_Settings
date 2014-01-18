@@ -641,16 +641,6 @@
         <item>4</item>
     </string-array>
 
-    <string-array name="entries_halo_msgbox_animation">
-        <item>@string/halo_msgbox_animation_none</item>
-        <item>@string/halo_msgbox_animation_flip</item>
-    </string-array>
-
-    <string-array name="values_halo_msgbox_animation">
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!-- Listview animation -->
     <string-array name="listview_animation_entries">
         <item>@string/listview_off</item>
