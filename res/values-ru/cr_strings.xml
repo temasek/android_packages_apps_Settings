@@ -256,10 +256,21 @@
     <!-- Notification drawer settings  -->
     <string name="notification_drawer_qs_title">Панель уведомлений и быстрых настроек</string>
     <string name="notification_drawer_title">Панель уведомлений</string>
-    <string name="notification_hide_carrier_title">Скрыть название оператора</string>
-    <string name="notification_hide_carrier_summary">Не показывать название оператора и сети WiFi в панели уведомлений</string>
     <string name="notification_shortcuts_settings_title">Ярлыки</string>
     <string name="notification_shortcuts_settings_summary">Показывать ярлыки приложений в панели уведомлений</string>
+
+    <string name="notification_carrier_label_title">Название оператора</string>
+    <string name="notification_custom_carrier_label_title">Свое название оператора</string>
+    <string name="notification_custom_carrier_label_explain">Пожалуйста, введите новое название. Пустая строка вернёт название оператора по умолчанию.</string>
+    <string name="notification_custom_carrier_label_notset">Своё название в настоящее время не установлено</string>
+
+    <!-- Notification hide labels -->
+    <string name="notification_hide_labels_title">Скрыть названия операторов</string>
+    <string name="notification_hide_labels_disable">Показывать все названия</string>
+    <string name="notification_hide_labels_carrier">Скрыть название оператора</string>
+    <string name="notification_hide_labels_wifi">Скрыть название WiFi-сети</string>
+    <string name="notification_hide_labels_all">Скрыть все названия</string>
+    <string name="notification_hide_labels_text">в панели уведомлений</string>
 
     <!-- StatusBar Battery Settings -->
     <string name="battery_icon_title">Индикатор заряда батареи</string>
@@ -412,6 +423,8 @@
     <string name="lockscreen_eight_targets_summary">Включить восемь пользовательских ярлыков в слайдере разблокировки экрана.</string>
     <string name="lockscreen_enable_eight_targets_dialog">Изменение этого параметра сбросит ваши текущие настройки экрана блокировки к настройкам по умолчанию.</string>
     <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nЕсли используются восемь ярлыков в слайдере разблокировки, то вы не можете использовать ярлыки приложений на экране блокировки.</string>
+    <string name="lockscreen_glowpad_torch_title">Фонарик на слайдере</string>
+    <string name="lockscreen_glowpad_torch_summary">Дважды нажмите и удерживайте слайдер блокировки, чтобы включить фонарик</string>
     <string name="lockscreen_target_reset">Сброс ярлыков экрана блокировки по умолчанию</string>
     <string name="lockscreen_target_reset_message">Удалить все созданные ярлыки экрана блокировки и восстановить значения по умолчанию?</string>
     <string name="lockscreen_target_empty">Ничего</string>
@@ -815,20 +828,20 @@
     <string name="show_always">Показывать всегда</string>
     <string name="show_always_summary">Всегда включать экран, когда устройство достается из кармана, даже при отсутствии ожидающих уведомлений.</string>
     <string name="hide_low_priority">Скрыть низкий приоритет</string>
-    <string name="hide_low_priority_summary">Скрыь уведомления с низким приоритетом, такие как уведомления о погоде от Google Now.</string>
+    <string name="hide_low_priority_summary">Скрыть уведомления с низким приоритетом, такие как уведомления о погоде от Google Now.</string>
     <string name="hide_non_clearable">Скрыть неудаляемые</string>
     <string name="hide_non_clearable_summary">Скрыть все неудаляемые уведомления</string>
     <string name="dismiss_all">Разрешить отключение всех уведомлений</string>
     <string name="dismiss_all_summary">Разрешить отключение даже неудаляемых уведомлений. Конечно, они просто скрываются на экране блокировки, а не на панели уведомлений..</string>
     <string name="expanded_view">Расширенный вид уведомления</string>
-    <string name="expanded_view_summary">Добавить возможность переключения между режимами обычный и расширенный вид по долгому нажатию на уведомление. Расширенный вид иногда показывает больше личной информации, поэтому вы можете отключить его.</string>
+    <string name="expanded_view_summary">Добавить возможность переключения между обычным и расширенным видом по долгому нажатию на уведомление. Расширенный вид иногда показывает больше личной информации, поэтому вы можете отключить его.</string>
     <string name="force_expanded_view">Форсировать расширенный вид</string>
-    <string name="force_expanded_view_summary">Показать уведомления в расширенном виде по умолчанию. Вы по-прежнему можете переключаться между расширенным и обычным видами.</string>
+    <string name="force_expanded_view_summary">Показать уведомления в расширенном виде по умолчанию. Вы по-прежнему можете переключаться между расширенным и обычным видом.</string>
     <string name="wake_on_notification">Пробуждение при уведомлении</string>
     <string name="wake_on_notification_summary">Будить устройство при получении новых уведомлений</string>
     <string name="notifications_height">Количество уведомлений</string>
     <string name="notifications_height_summary">Количество уведомлений, отображаемых одновременно на экране</string>
-    <string name="offset_top">Смещение от верхней части экрана:</string>
+    <string name="offset_top">Смещение от верхней части экрана</string>
     <string name="privacy_mode">Приватный режим</string>
     <string name="privacy_mode_summary">Отключает просмотр уведомлений на экране блокировки. Таким образом, вы просто видите иконки ваших уведомлений.</string>
     <string name="excluded_apps_title">Исключённые приложения</string>
