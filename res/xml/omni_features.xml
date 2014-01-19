@@ -85,4 +85,6 @@
             android:summary="@string/voicemail_breath_summary"
             android:persistent="false"/>
 
+     </PreferenceCategory>
+
 </PreferenceScreen>
