@@ -18,6 +18,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/battery_icon_title">
 
+    <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+        android:key="hide_battery_icon"
+        android:title="@string/hide_battery_icon_title"
+        android:summary="@string/hide_battery_icon_summary"
+        android:defaultValue="false" />
+
     <ListPreference
         android:key="battery_icon"
         android:dialogTitle="@string/battery_icon_title"
