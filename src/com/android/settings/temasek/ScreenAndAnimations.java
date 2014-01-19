@@ -131,6 +131,7 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
             if (resultCode == Activity.RESULT_OK) {
                 if (mWallpaperTemporary.exists()) {
                     mWallpaperTemporary.renameTo(mWallpaperImage);
+                    mWallpaperImage.setReadable(true, false);
                 }
                 hintId = R.string.lockscreen_wallpaper_result_successful;
                 updateCustomWallpaperSummary();
