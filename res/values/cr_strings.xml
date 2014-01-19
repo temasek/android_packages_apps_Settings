@@ -889,4 +889,12 @@
     <string name="voicemail_breath_title">Breathing Voicemail</string>
     <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
 
+    <!-- Custom lock screen wallpaper -->
+    <string name="lockscreen_custom_wallpaper_title">Wallpaper</string>
+    <string name="lockscreen_custom_wallpaper_summary">Change the Lockscreen Wallpaper</string>
+    <string name="lockscreen_wallpaper_result_successful">Lockscreen Wallpaper changed successfully</string>
+    <string name="lockscreen_wallpaper_result_not_successful">Lockscreen Wallpaper could not be changed</string>
+    <string name="lockscreen_wallpaper_custom">Custom Wallpaper Image</string>
+    <string name="lockscreen_default_wallpaper">Default Wallpaper</string>
+
 </resources>

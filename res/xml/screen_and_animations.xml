@@ -23,6 +23,15 @@
             android:title="@string/lockscreen_notifications"
             android:summary="@string/lockscreen_notifications_summary" />
 
+       <!-- Custom lockscreen wallpaper --> 
+       <ListPreference
+            android:key="default_lock_wallpaper"
+            android:persistent="false"
+            android:dialogTitle="@string/lockscreen_custom_wallpaper_title"
+            android:title="@string/lockscreen_custom_wallpaper_title"
+            android:entries="@array/lockscreen_wallpaper_entries"
+            android:entryValues="@array/lockscreen_wallpaper_values" />
+
 	<!-- CRT animation -->
         <ListPreference
             android:key="system_power_crt_mode"
