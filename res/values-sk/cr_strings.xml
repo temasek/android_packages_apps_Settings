@@ -77,40 +77,40 @@
     <string name="clock_font_normal">Normálne</string>
 
     <!-- Advanced low battery indicator options -->  
-    <string name="lights_and_warnings_title">Lights and warnings</string>
-    <string name="lights_and_warnings_style_title">Lights and warnings options</string>
-    <string name="pref_low_battery_warning_policy_title">Low battery warning</string>
-    <string name="pref_low_battery_warning_policy_dialog_title">Indicate low battery warning with</string>
-    <string name="low_battery_warning_policy_popup_sound">Pop-up and sound</string>
-    <string name="low_battery_warning_policy_notif_sound">Notification and sound</string>
-    <string name="low_battery_warning_policy_popup">Pop-up dialog only</string>
-    <string name="low_battery_warning_policy_notif">Notification only</string>
-    <string name="low_battery_warning_policy_sound">Sound only</string>
-    <string name="low_battery_warning_policy_disabled">Disabled</string> 
+    <string name="lights_and_warnings_title">Dióda a upozornenia</string>
+    <string name="lights_and_warnings_style_title">Nastavenia diódy a upozornení</string>
+    <string name="pref_low_battery_warning_policy_title">Upozornenie na slabú batériu</string>
+    <string name="pref_low_battery_warning_policy_dialog_title">Upozorniť na slabú batériu</string>
+    <string name="low_battery_warning_policy_popup_sound">Vyskočením okna a zvukom</string>
+    <string name="low_battery_warning_policy_notif_sound">Oznámením a zvukom</string>
+    <string name="low_battery_warning_policy_popup">Iba vyskočením okna</string>
+    <string name="low_battery_warning_policy_notif">Iba oznámením</string>
+    <string name="low_battery_warning_policy_sound">Iba zvukom</string>
+    <string name="low_battery_warning_policy_disabled">Vypnúť upozornenie</string> 
 
     <!-- Screen-On Notification Light -->
-    <string name="screen_on_notification_led_title">Screen-On Notification Light</string>
-    <string name="screen_on_notification_led_summary">Enable Notification Light even when screen is on</string> 
+    <string name="screen_on_notification_led_title">Upozornenie diódou počas zapnutej obrazovky</string>
+    <string name="screen_on_notification_led_summary">Zapnúť upozornenie diódou aj keď je obrazovka zapnutá</string> 
 
     <!-- Alternate default app picker -->
-    <string name="general_settings_title">General settings</string>
-    <string name="general_settings_style_title">General options</string>
-    <string name="display_short">Display</string>
-    <string name="misc_short">Misc</string>
-    <string name="alt_resolver">Use Alt Default App Grid</string>
-    <string name="alt_resolver_summary">Use Alternate Default App Picker</string>
+    <string name="general_settings_title">Ďalšie nastevenia</string>
+    <string name="general_settings_style_title">Ďalšie možnosti</string>
+    <string name="display_short">Displej</string>
+    <string name="misc_short">Všeličo</string>
+    <string name="alt_resolver">Použiť alt. pôvodnú App mriežku</string>
+    <string name="alt_resolver_summary">Použiť pôvodný striedavý App výber</string>
 
     <!-- Network stats stats -->
-    <string name="status_bar_network_cat">Network traffic meter</string>
-    <string name="status_bar_network_header">Network traffic meter</string>
-    <string name="status_bar_network_title">Network traffic</string>
-    <string name="status_bar_show_network_stats_title">Show network speeds</string>
-    <string name="status_bar_network_stats_update_title">Update frequency</string>
+    <string name="status_bar_network_cat">Ukazovateľ sieťovej prevádzky</string>
+    <string name="status_bar_network_header">Nastavenia ukazovateľa sieť. prevádzky</string>
+    <string name="status_bar_network_title">Sieťová prevádzka</string>
+    <string name="status_bar_show_network_stats_title">Ukázať rýchlosť siete</string>
+    <string name="status_bar_network_stats_update_title">Obnovovacia frekvencia</string>
 
     <!-- Network stats custm colors -->
-    <string name="status_bar_network_usage_color_style">Color style</string>
-    <string name="status_bar_network_usage_color_reset">Reset color</string>
-    <string name="status_bar_network_usage_color_reset_message">Reset network stats color to default?</string>
+    <string name="status_bar_network_usage_color_style">Farebný štýl</string>
+    <string name="status_bar_network_usage_color_reset">Obnoviť farbu</string>
+    <string name="status_bar_network_usage_color_reset_message">Obnoviť farbu ukazovateľa?</string>
 
     <!-- Network stats hide if there's no traffic -->
     <string name="hide_network_speed">Hide when there is no traffic</string>
