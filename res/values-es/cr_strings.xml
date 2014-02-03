@@ -27,7 +27,7 @@
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
+    <string name="set">Establecer</string>
 
     <!-- Status bar -->
     <string name="status_bar_title">Barra de estado</string>
@@ -45,8 +45,8 @@
     <string name="status_bar_show_clock_title">Mostrar hora y fecha</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">Formato 24hs activado</string>
-    <string name="enable_clock_weekday">Dia de la semana</string>
-    <string name="enable_clock_weekday_summary">Se muestra el dia actual de forma abreviada</string>
+    <string name="enable_clock_weekday">Día de la semana</string>
+    <string name="enable_clock_weekday_summary">Se muestra el día actual de forma abreviada</string>
     <string name="right_clock">Reloj a la derecha</string>
     <string name="center_clock">Reloj centrado</string>
     <string name="dont_show">No mostrar</string>
@@ -67,7 +67,13 @@
     <string name="clock_date_style_uppercase">Mayúsculas</string>
     <string name="clock_date_format_custom">Formato personalizado</string>
     <string name="status_bar_clock_style_reset_message">¿Restaurar color del reloj?</string>
-
+	<string name="clock_font_style_title">Fuente</string>
+    <string name="clock_font_bold">Fuerte</string>
+    <string name="clock_font_condensed">Condensada</string>
+    <string name="clock_font_light">Liviana</string>
+    <string name="clock_font_light_italic">Liviana italica</string>
+    <string name="clock_font_normal">Normal</string>
+    
     <!-- Advanced low battery indicator options -->
     <string name="lights_and_warnings_title">Leds y alertas</string>
     <string name="lights_and_warnings_style_title">Configuración de leds y alertas</string>
@@ -129,9 +135,6 @@
     <string name="status_bar_toggle_brightness_summary">Ajuste el brillo deslizando a través de la barra de estado</string>
     <string name="status_bar_toggle_info">Brillo automático activado</string>
 
-    <!-- TRDS Settings -->
-    <string name="trds_settings_title">Modo oscuro</string>
-
     <!-- Restart SystemUI -->
     <string name="restart_systemui">Reiniciar UI</string>
 
@@ -145,13 +148,16 @@
     <string name="shortcut_action_home">Escritorio</string>
     <string name="shortcut_action_back">Atrás</string>
     <string name="shortcut_action_recent">Recientes</string>
-    <string name="shortcut_action_lastapp">Aplicación anterior</string>
-    <string name="shortcut_action_search">Buscar</string>
+    <string name="shortcut_action_lastapp">Ultima Aplicacion</string>
+    <string name="shortcut_action_assist">Buscar</string>
+    <string name="shortcut_action_search">Buscar en aplicacion</string>
+    <string name="shortcut_action_voice_search">Busqueda por voz</string>
     <string name="shortcut_action_screenshot">Captura de pantalla</string>
     <string name="shortcut_action_menu">Menú</string>
     <string name="shortcut_action_ime">Abrir selector de teclado</string>
     <string name="shortcut_action_kill">Cerrar aplicación</string>
     <string name="shortcut_action_power">Apagar pantalla</string>
+    <string name="shortcut_action_theme_switch">Selector de temas</string>
     <string name="shortcut_action_notifications">Notificaciones</string>
     <string name="shortcut_action_menu_big">Menú</string>
     <string name="shortcut_action_qs">Panel de ajustes rápidos</string>
@@ -161,7 +167,7 @@
     <string name="shortcut_action_longpress">Pulsación prolongada:</string>
     <string name="shortcut_action_select_action_longpress">Seleccionar acción prolongada:</string>
     <string name="shortcut_action_select_action">Seleccionar acción:</string>
-    <string name="shortcut_action_select_action_newbutton">Seleccionar botón:</string>
+    <string name="shortcut_action_select_action_newbutton">Seleccionar nueva accion:</string>
     <string name="shortcut_action_reset">Restaurar</string>
     <string name="shortcut_action_add">Añadir</string>
     <string name="shortcut_action_reset_message">¿Restaurar todas las entradas?</string>
@@ -251,10 +257,22 @@
     <!-- Notification drawer settings -->
     <string name="notification_drawer_qs_title">Panel de Notificaciones &amp; QS</string>
     <string name="notification_drawer_title">Panel de notificaciones</string>
-    <string name="notification_hide_carrier_title">Ocultar etiquetas</string>
-    <string name="notification_hide_carrier_summary">Ocultar nombre de operadora y etiqueta WiFi del panel de notificaciones</string>
     <string name="notification_shortcuts_settings_title">Accesos directos</string>
     <string name="notification_shortcuts_settings_summary">Accesos rápidos en el panel de notificaciones</string>
+
+    <string name="notification_carrier_label_title">Etiqueta portadora</string>
+    <string name="notification_custom_carrier_label_title">Etiqueta portadora personalizada</string>
+    <string name="notification_custom_carrier_label_explain">Por favor introduzca una nueva etiqueta. Introduzca una etiqueta vacía para revertir a la etiqueta stock.</string>
+    <string name="notification_custom_carrier_label_notset">Etiqueta personalizada actualmente no establecida</string>
+    
+    <!-- Notification hide labels -->
+    <string name="notification_hide_labels_title">Ocultar etiquetas de notificación</string>
+    <string name="notification_hide_labels_disable">Mostrar todas las etiquetas</string>
+    <string name="notification_hide_labels_carrier">Ocultar etiqueta portadora</string>
+    <string name="notification_hide_labels_wifi">Ocultar etiqueta WIFI</string>
+    <string name="notification_hide_labels_all">Ocultar todas las etiquetas</string>
+    <string name="notification_hide_labels_text">En el panel de notificaciones</string>
+
 
     <!-- StatusBar Battery Settings -->
     <string name="battery_icon_title">Ícono de batería</string>
@@ -355,7 +373,7 @@
     <string name="hw_keys_title">Botones físicos</string>
     <string name="key_menu_enabled">Habilitar botón Menú</string>
     <string name="key_back_enabled">Habilitar botón Atrás</string>
-    <string name="key_home_enabled">Habilitar botón Escritorio</string>
+    <string name="key_home_enabled">Habilitar botón de inicio</string>
 
     <!-- MediaScanner behavior on boot -->
     <string name="media_scanner_on_boot_title">Comportamiento del escáner de medios al iniciar</string>
@@ -405,6 +423,8 @@
     <string name="lockscreen_eight_targets_summary">Habilita ocho accesos en el deslizador</string>
     <string name="lockscreen_enable_eight_targets_dialog">Esta acción restablecerá sus accesos predeterminados.</string>
     <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nCon ocho accesos habilitados no podrás utilizar los atajos de la pantalla de bloqueo.</string>
+    <string name="lockscreen_glowpad_torch_title">Linterna deslizante</string>
+    <string name="lockscreen_glowpad_torch_summary">Haga doble toque y mantenga el control deslizante para iniciar la linterna</string>
     <string name="lockscreen_target_reset">Valores predeterminados restaurados</string>
     <string name="lockscreen_target_reset_message">¿Eliminar todos los accesos directos y restaurar valores predeterminados?</string>
     <string name="lockscreen_target_empty">Vacío</string>
@@ -491,29 +511,29 @@
     <string name="app_halo_label_white">Lista blanca de Halo</string>
 
     <!-- ListView animation -->
-    <string name="bars_and_menus_category_system_title">System</string>
-    <string name="listview_animation_title">ListView Animation</string>
+    <string name="bars_and_menus_category_system_title">Sistema</string>
+    <string name="listview_animation_title">Animación ListView</string>
     <string name="listview_off">Off</string>
-    <string name="listview_wave_left">Wave (Left)</string>
-    <string name="listview_wave_right">Wave (Right)</string>
-    <string name="listview_alpha">Alpha</string>
-    <string name="listview_scale">Scale</string>
-    <string name="listview_stack_top">Stack (Top)</string>
-    <string name="listview_stack_bottom">Stack (Bottom)</string>
-    <string name="listview_unfold">Unfold</string>
-    <string name="listview_fold">Fold</string>
-    <string name="listview_translate_left">Translate (Left)</string>
-    <string name="listview_translate_right">Translate (Right)</string>
+    <string name="listview_wave_left">Ola (Izquierda)</string>
+    <string name="listview_wave_right">Ola (Derecha)</string>
+    <string name="listview_alpha">Alfa</string>
+    <string name="listview_scale">Escala</string>
+    <string name="listview_stack_top">Montón (Superior)</string>
+    <string name="listview_stack_bottom">Montón (Inferior)</string>
+    <string name="listview_unfold">Desplegar</string>
+    <string name="listview_fold">Plegar</string>
+    <string name="listview_translate_left">Trasladar (Izquierda)</string>
+    <string name="listview_translate_right">Trasladar (Derecha)</string>
 
     <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">ListView Interpolator</string>
-    <string name="listview_accelerate_interpolator">accelerate_interpolator</string>
-    <string name="listview_decelerate_interpolator">decelerate_interpolator</string>
-    <string name="listview_accelerate_decelerate_interpolator">accelerate_decelerate_interpolator</string>
-    <string name="listview_anticipate_interpolator">anticipate_interpolator</string>
-    <string name="listview_overshoot_interpolator">overshoot_interpolator</string>
-    <string name="listview_anticipate_overshoot_interpolator">anticipate_overshoot_interpolator</string>
-    <string name="listview_bounce_interpolator">bounce_interpolator</string>
+    <string name="listview_interpolator_title">ListView Interpolador</string>
+    <string name="listview_accelerate_interpolator">acelerar_interpolador</string>
+    <string name="listview_decelerate_interpolator">desacelerar_interpolador</string>
+    <string name="listview_accelerate_decelerate_interpolator">acelerar_desacelerar_interpolador</string>
+    <string name="listview_anticipate_interpolator">anticipar_interpolador</string>
+    <string name="listview_overshoot_interpolator">pasar de la raya_interpolador</string>
+    <string name="listview_anticipate_overshoot_interpolator">anticiparse_pasar de la raya_interpolador</string>
+    <string name="listview_bounce_interpolator">rebote_interpolador</string>
 
     <!-- Lockscreen style settings -->
     <string name="lockscreen_style_reset_message">¿Resetear todos los colores de la pantalla de bloqueo?</string>
@@ -557,7 +577,7 @@
     <string name="ad_pocket_mode_title">Modo Bolsillo</string>
     <string name="ad_pocket_mode_summary">Muestra notificaciones de Pantalla Activa cuando sacas el dispositivo del bolsillo.</string>
     <string name="ad_redisplay_title">Re-Mostrar Notificaciones</string>
-    <string name="ad_timeout_title">Timeout de pantalla</string>
+    <string name="ad_timeout_title">Tiempo fuera de pantalla</string>
     <string name="ad_threshold_title">Umbral de proximidad</string>
     <string name="ad_sunlight_mode_title">Modo Soleado</string>
     <string name="ad_sunlight_mode_summary">Altera los colores en áreas muy iluminadas.</string>
@@ -620,9 +640,9 @@
 
     <!-- Notification drawer background -->
     <string name="notification_style_title">Estilo del fondo</string>
-    <string name="notification_style_summary">Ver o cambiar el fondo del panel de notificación y de QuickSettings</string>
+    <string name="notification_style_summary">Ver o cambiar el fondo del panel de notificación y de ajustes rápidos</string>
     <string name="notification_wallpaper_title">Fondo</string>
-    <string name="notification_wallpaper_landscape_title">Fondo landscape diferente</string>
+    <string name="notification_wallpaper_landscape_title">Fondo en modo paisaje diferente</string>
     <string name="notification_background_color_fill">Color de llenado</string>
     <string name="notification_background_custom_image">Imagen personalizada</string>
     <string name="notification_background_default_wallpaper">Fondo por defecto</string>
@@ -681,7 +701,8 @@
     <string name="title_tile_expanded_desktop">Escritorio Expandido</string>
     <string name="title_tile_music">Música</string>
     <string name="title_tile_reboot">Reiniciar</string>
-    <string name="dynamic_tile_ime_switcher">Cambiar IME</string>
+    <string name="title_tile_theme">Selector de tema</string>
+    <string name="dynamic_tile_ime_switcher">Selector IME</string>
     <string name="dynamic_tile_usb_tether">USB tether</string>
     <string name="dynamic_tile_alarm">Alarma</string>
     <string name="dynamic_tile_bugreport">Reporte de Error</string>
@@ -697,6 +718,7 @@
     <string name="custom_toggle_match_state_check">Click action matches icon</string>
     <string name="custom_tile_long_press">Presión prolongada:</string>
     <string name="custom_tile_null_warning">Primero debe asignar una acción</string>
+    <string name="custom_tile_resolve_name">Desconocido</string>
 
     <!-- QuickSettings style options -->
     <string name="quicksettings_tiles_style">Estilo</string>
@@ -759,10 +781,21 @@
 
     <!-- Add option to hide power menu when screen is locked -->
     <string name="lockscreen_power_menu_title">Habilitar menú de Encendido</string>
-    <string name="lockscreen_power_menu_summary">Mostrar mení de Encendido cuando la pantalla está bloqueada</string>
+    <string name="lockscreen_power_menu_summary">Mostrar menú de Encendido cuando la pantalla está bloqueada</string>
 
     <!-- Advanced, Device specific (DeviceParts) settings -->
     <string name="advanced_settings_title">Avanzado</string>
+    
+    <!-- QuickSettings: Smart Pulldown -->
+    <string name="smart_pulldown_title">Deslizamiento de la barra de estado inteligente</string>
+    <string name="smart_pulldown_summary">Abra configuración rápida cuando no hay %1$s notificationes presentes</string>
+    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_dismissable">Descartable</string>
+    <string name="smart_pulldown_persistent">Persistente</string>
+    
+    <!-- QuickSettings: Quick Collapse -->
+    <string name="title_collapse_panel">Colapso rápido</string>
+    <string name="summary_collapse_panel">Cerrar el panel de notificaciones sobre el toggle</string>
 
     <!-- Chamber of Secrets -->
     <string name="chamber_title">Cámara de secretos</string>
@@ -775,5 +808,139 @@
 
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
     <string name="encryptionpassword_choose_your_password_header">Asignar la contraseña de encriptación</string>
+    
+    <!-- Hardware keys -->
+    <string name="button_keys_title">Botones de hardware</string>
+    <string name="keys_bindings_title">Acciones de tecla</string>
+    <string name="keys_enable_custom_title">Habilitar acciones personalizadas</string>
+    <string name="keys_enable_custom_summary">Habilitar acciones de tecla de hardware personalizados</string>
+    <string name="keys_back_press_title">Tecla atrás</string>
+    <string name="keys_back_long_press_title">Tecla atrás (pulsación larga)</string>
+    <string name="keys_back_double_tap_title">Tecla atrás (doble toque)</string>
+    <string name="keys_home_press_title">Tecla de inicio</string>
+    <string name="keys_home_long_press_title">Tecla de inicio (pulsación larga)</string>
+    <string name="keys_home_double_tap_title">Tecla de inicio (doble toque)</string>
+    <string name="keys_menu_press_title">Tecla de menú</string>
+    <string name="keys_menu_long_press_title">Tecla de menú (pulsación larga)</string>
+    <string name="keys_menu_double_tap_title">Tecla de menú (doble toque)</string>
+    <string name="keys_assist_press_title">Tecla de Búsqueda</string>
+    <string name="keys_assist_long_press_title">Tecla de Búsqueda (pulsación larga)</string>
+    <string name="keys_assist_double_tap_title">Tecla de Búsqueda (doble toque)</string>
+    <string name="keys_app_switch_press_title">Tecla del interuptor de aplicacion</string>
+    <string name="keys_app_switch_long_press_title">Tecla del interuptor de aplicacion (pulsación larga)</string>
+    <string name="keys_app_switch_double_tap_title">Tecla del interuptor de aplicacion (doble toque)</string>
+    <string name="keys_action_normal">Pulsación normal</string>
+    <string name="keys_action_long">Pulsación larga</string>
+    <string name="keys_action_double">Doble toque</string>
+    <string name="no_home_key">Usted no tiene un boton asignado al \"Inicio\" acción!\n\nEsto puede hacer que el dispositivo quede inutilizable!</string>
+
+    <!-- Minimum Vibration Duration -->
+    <string name="minimum_vibration_duration">Duracion minima de vibración</string>
+
+    <!--Lockscreen See Through-->
+     <string name="see_through_title">Mirar a través</string>
+     <string name="see_through_summary">Muestra el contenido detrás de la pantalla de bloqueo, sus datos pueden ser visibles a los que te rodean</string>
+
+    <!--Lockscreen blur-->
+    <string name="blur_behind_title">Fondo de desenfoque de la pantalla de bloqueo</string>
+    <string name="blur_behind_summary">Añade un efecto de desenfoque agradable para el fondo</string>
+    <string name="blur_radius_title">Radio de desenfoque</string>
+    <string name="blur_radius_summary">Ajuste el radio de desenfoque, para el efecto de desenfoque</string>
+
+    <!-- Lockscreen Notifications -->
+    <string name="general">General</string>
+    <string name="layout">disposición</string>
+    <string name="privacy">Privacidad</string>
+    <string name="lockscreen_notifications">Notificaciones en pantalla de bloqueo</string>
+    <string name="lockscreen_notifications_summary">Mostrar las notificaciones pendientes en la pantalla de bloqueo</string>
+    <string name="pocket_mode">Modo Bolsillo</string>
+    <string name="pocket_mode_summary">Prender la pantalla y mostrar todas las notificaciones cuando el dispositivo se saca de su bolsillo. Apagar la pantalla cuando el dispositivo se pone de nuevo en el bolsillo</string>
+    <string name="show_always">Mostar siempre</string>
+    <string name="show_always_summary">mantener siempre la pantalla prendida cuando se saca de su bolsillo, incluso cuando no hay notificaciones pendientes</string>
+    <string name="hide_low_priority">Ocultar baja prioridad</string>
+    <string name="hide_low_priority_summary">Ocultar notificaciones de baja prioridad como Google now notificaciones meteorológicas</string>
+    <string name="hide_non_clearable">Ocultar no eliminables</string>
+    <string name="hide_non_clearable_summary">Ocultar todas las notificaciones no eliminables</string>
+    <string name="dismiss_all">Permitir descartar todas las notificaciones</string>
+    <string name="dismiss_all_summary">Permitir descartar incluso notificaciones no eliminables. Por supuesto, son\ solo ocultadas de la pantalla de bloqueo y no del panel de notificaciones.</string>
+    <string name="expanded_view">Vista ampliada</string>
+    <string name="expanded_view_summary">Añade la posibilidad de alternar entre la vista normal y ampliada por pulsación larga. La vista expandida a veces muestra la información más privada así que sería bueno desactivarlo.</string>
+    <string name="force_expanded_view">Forzar vista ampliada</string>
+    <string name="force_expanded_view_summary">Mostrar notificaciones expandido por defecto. Usted todavía será capaz de alternar entre la vista ampliada y normal.</string>
+    <string name="wake_on_notification">Despertar con notificación</string>
+    <string name="wake_on_notification_summary">Despertar dispositivo cuando recibe una nueva notificación</string>
+    <string name="notifications_height">Contador de Notificaciónes</string>
+    <string name="notifications_height_summary">Número de notificaciones que se muestran a la véz</string>
+    <string name="offset_top">Desplazamiento a la parte superior de la pantalla:</string>
+    <string name="privacy_mode">Modo privacidad</string>
+    <string name="privacy_mode_summary">Desactiva la muestra de las notificaciones de existencia y rechazo. De esta manera, usted solo verá los iconos de las notificaciones.</string>
+    <string name="excluded_apps_title">Aplicaciones excluidas</string>
+    <string name="excluded_apps_summary">Aplicaciones excluidas no se mostrará como notificaciones en la pantalla de bloqueo</string>
+
+    <!-- Screen recorder -->
+    <string name="screen_recorder_title">Grabador de pantalla</string>
+    <string name="screen_recorder_summary">Ajuste de la configuración del grabador de pantalla</string>
+    <string name="screen_recorder_video_dimensions_title">tamaño de vídeo</string>
+    <string name="screen_recorder_video_bitrate_title">Bitrate</string>
+    <string name="screen_recorder_record_audio_title">Grabación de audio</string>
+    <string name="screen_recorder_record_audio_summary">Grabación de audio del micrófono</string>
+    <!-- video sizes -->
+    <string name="screen_recorder_size_240x400">240x400</string>
+    <string name="screen_recorder_size_360x640">360x640</string>
+    <string name="screen_recorder_size_480x800">480x800</string>
+    <string name="screen_recorder_size_480x854">480x854</string>
+    <string name="screen_recorder_size_540x960">540x960</string>
+    <string name="screen_recorder_size_600x1024">600x1024</string>
+    <string name="screen_recorder_size_720x1280">720x1280</string>
+    <!-- frame rates -->
+    <string name="screen_recorder_bitrate_title_100000">100 kB/s</string>
+    <string name="screen_recorder_bitrate_title_250000">250 kB/s</string>
+    <string name="screen_recorder_bitrate_title_500000">500 kB/s</string>
+    <string name="screen_recorder_bitrate_title_1000000">1 MB/s</string>
+    <string name="screen_recorder_bitrate_title_2000000">2 MB/s</string>
+    <string name="screen_recorder_bitrate_title_3000000">3 MB/s</string>
+    <string name="screen_recorder_bitrate_title_4000000">4 MB/s</string>
+    <string name="screen_recorder_bitrate_title_5000000">5 MB/s</string>
+    <string name="screen_recorder_bitrate_title_10000000">10 MB/s</string>
+    <string name="screen_recorder_bitrate_title_20000000">20 MB/s</string>
+    <string name="screen_recorder_bitrate_title_50000000">50 MB/s</string>
+    <string name="screen_recorder_bitrate_title_100000000">100 MB/s</string>
+    <string name="screen_recorder_bitrate_100000">100000</string>
+    <string name="screen_recorder_bitrate_250000">250000</string>
+    <string name="screen_recorder_bitrate_500000">500000</string>
+    <string name="screen_recorder_bitrate_1000000">1000000</string>
+    <string name="screen_recorder_bitrate_2000000">2000000</string>
+    <string name="screen_recorder_bitrate_3000000">3000000</string>
+    <string name="screen_recorder_bitrate_4000000">4000000</string>
+    <string name="screen_recorder_bitrate_5000000">5000000</string>
+    <string name="screen_recorder_bitrate_10000000">10000000</string>
+    <string name="screen_recorder_bitrate_20000000">20000000</string>
+    <string name="screen_recorder_bitrate_50000000">50000000</string>
+    <string name="screen_recorder_bitrate_100000000">100000000</string>
+
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_title">Notificaciones respirantes</string>
+    <string name="sms_breath_title">SMS respirante</string>
+    <string name="sms_breath_summary">Dará sus alertas de sms un efecto de respiración en la barra de estado</string>
+    <string name="missed_call_breath_title">Llamada perdida respirante</string>
+    <string name="missed_call_breath_summary">Dará a sus notificaciones de llamadas perdidas un efecto de respiración en la barra de estado</string>
+    <string name="voicemail_breath_title">Correo de voz respirante</string>
+    <string name="voicemail_breath_summary">Dará a sus notificaciones de correo de voz un efecto de respiración en la barra de estado</string>
+
+    <!-- Keyguard always show battery -->
+    <string name="lockscreen_battery_status_title">Estado de la batería</string>
+    <string name="lockscreen_battery_status_summary">Siempre mostrar el estado de la batería en el bloqueo de teclas (keyguard)</string>
+
+    <!-- Notification Drawer - Swipe to Switch full screen detection-->
+    <string name="title_full_screen_swipe">Detección deslizar-para cambiar</string>
+    <string name="summary_full_screen_swipe">Utilice la detección de pantalla completa para "deslizar para cambiar", no sólo la barra inferior</string>
+
+    <!-- Themes -->
+    <string name="theme_settings_title">UI oscura (TRDS)</string>
+    <string name="theme_auto_mode_title">Seleccionar el tema</string>
+    <string name="theme_auto_mode_off">Manual</string>
+    <string name="theme_auto_mode_lightsensor">En cambio de condición de luz <string>
+    <string name="theme_auto_mode_twilight">En el día</string>
+    <string name="theme_auto_switch_mode_error">Cambio de la condición de luz modo automático está activado. Conmutación manual no es posible.</string>
  
 </resources>
