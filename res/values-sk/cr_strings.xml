@@ -89,8 +89,8 @@
     <string name="low_battery_warning_policy_disabled">Vypnúť upozornenie</string> 
 
     <!-- Screen-On Notification Light -->
-    <string name="screen_on_notification_led_title">Upozornenie diódou počas zapnutej obrazovky</string>
-    <string name="screen_on_notification_led_summary">Zapnúť upozornenie diódou aj keď je obrazovka zapnutá</string> 
+    <string name="screen_on_notification_led_title">Oznámenie diódou počas zapnutej obrazovky</string>
+    <string name="screen_on_notification_led_summary">Zapnúť oznámenia diódou aj keď je obrazovka zapnutá</string> 
 
     <!-- Alternate default app picker -->
     <string name="general_settings_title">Ďalšie nastevenia</string>
@@ -160,7 +160,7 @@
     <string name="shortcut_action_kill">Zabiť app</string>
     <string name="shortcut_action_power">Vypnúť obrazovku</string>
     <string name="shortcut_action_theme_switch">Prepínač témy</string>
-    <string name="shortcut_action_notifications">Upozornenia</string>
+    <string name="shortcut_action_notifications">Oznámenia</string>
     <string name="shortcut_action_menu_big">Menu</string>
     <string name="shortcut_action_qs">Panel rýchlych nastavení</string>
     <string name="shortcut_action_none">Žiadne</string>
@@ -257,43 +257,43 @@
     <string name="shortcuts_color_mode_summary">Zmeniť farbu ikony skratky</string>
 
     <!-- Notification drawer settings  -->
-    <string name="notification_drawer_qs_title">Notification &amp; QS drawer</string>
-    <string name="notification_drawer_title">Notification drawer</string>
-    <string name="notification_shortcuts_settings_title">Shortcuts</string>
-    <string name="notification_shortcuts_settings_summary">Show shortcuts in the notification drawer</string>
+    <string name="notification_drawer_qs_title">Oznámenia &amp; Rýchle nastavenia</string>
+    <string name="notification_drawer_title">Oznamovacia lišta</string>
+    <string name="notification_shortcuts_settings_title">Skratky</string>
+    <string name="notification_shortcuts_settings_summary">Zobraziť skratky v oznamovacej lište</string>
 
-    <string name="notification_carrier_label_title">Carrier label</string>
-    <string name="notification_custom_carrier_label_title">Custom carrier label</string>
-    <string name="notification_custom_carrier_label_explain">Please enter a new label. Enter an empty label to revert to stock label.</string>
-    <string name="notification_custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="notification_carrier_label_title">Operátor</string>
+    <string name="notification_custom_carrier_label_title">Vlastný štítok</string>
+    <string name="notification_custom_carrier_label_explain">Prosím vložte nový štítok. Vložte prázdny štítok pre obnovenie pôvodného.</string>
+    <string name="notification_custom_carrier_label_notset">Vlastný štítok nie je nastavený.</string>
 
     <!-- Notification hide labels -->
-    <string name="notification_hide_labels_title">Hide notification labels</string>
-    <string name="notification_hide_labels_disable">Show all labels</string>
-    <string name="notification_hide_labels_carrier">Hide Carrier label</string>
-    <string name="notification_hide_labels_wifi">Hide WiFi label</string>
-    <string name="notification_hide_labels_all">Hide all labels</string>
-    <string name="notification_hide_labels_text">in the notification panel</string>
+    <string name="notification_hide_labels_title">Skryť oznamovací štítok</string>
+    <string name="notification_hide_labels_disable">Ukázať všetky štítky</string>
+    <string name="notification_hide_labels_carrier">Skryť štítok operátora</string>
+    <string name="notification_hide_labels_wifi">Skryť WiFi štítok</string>
+    <string name="notification_hide_labels_all">Skryť všetky štítky</string>
+    <string name="notification_hide_labels_text">v oznamovacej lište</string>
 
     <!-- StatusBar Battery Settings -->
-    <string name="battery_icon_title">Battery icon</string>
-    <string name="battery_status_icon">Icon</string>
-    <string name="battery_status_percentage">Percentage</string>
-    <string name="battery_status_icon_percentage">Icon with percentage</string>
-    <string name="battery_status_circle">Circle</string>
-    <string name="battery_status_circle_percentage">Circle with percentage</string>
-    <string name="battery_status_dotted_circle_percentage">Dotted Circle with percentage</string>
-    <string name="battery_status_dotted_circle">Dotted Circle</string>
-    <string name="battery_color_title">Battery color</string>
-    <string name="circle_battery_animation_speed">Circle animation speed</string>
-    <string name="circle_battery_animation_speed_none">None</string>
-    <string name="circle_battery_animation_speed_slow">Slow</string>
-    <string name="circle_battery_animation_speed_stock">Normal</string>
-    <string name="circle_battery_animation_speed_fast">Fast</string>
-    <string name="battery_text_color">Percentage text color</string>
-    <string name="battery_bolt_color">Bolt charging color</string>
-    <string name="battery_text_charging_color">Percentage text charging color</string>
-    <string name="battery_style_reset_message">Reset all battery colors?</string>
+    <string name="battery_icon_title">Ikony batérie</string>
+    <string name="battery_status_icon">Ikona</string>
+    <string name="battery_status_percentage">Percentá</string>
+    <string name="battery_status_icon_percentage">Ikona s percentami</string>
+    <string name="battery_status_circle">Kruh</string>
+    <string name="battery_status_circle_percentage">Kruh s percentami</string>
+    <string name="battery_status_dotted_circle_percentage">Bodkovaný kruh s percentami</string>
+    <string name="battery_status_dotted_circle">Bodkovaný kruh</string>
+    <string name="battery_color_title">Farba batérie</string>
+    <string name="circle_battery_animation_speed">Rýchlosť animácie kruhu</string>
+    <string name="circle_battery_animation_speed_none">Žiadna</string>
+    <string name="circle_battery_animation_speed_slow">Pomaly</string>
+    <string name="circle_battery_animation_speed_stock">Normálne</string>
+    <string name="circle_battery_animation_speed_fast">Rýchlo</string>
+    <string name="battery_text_color">Farba textu percent</string>
+    <string name="battery_bolt_color">Farba blesku nabíjania</string>
+    <string name="battery_text_charging_color">Farba percent nabíjania</string>
+    <string name="battery_style_reset_message">Obnoviť všetky farby nabíjania?</string>
    
     <!-- Animation Controls -->  
     <string name="title_animation_controls">Custom System Animations</string>  
