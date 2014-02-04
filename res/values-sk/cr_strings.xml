@@ -14,7 +14,7 @@
     <string name="disabled">Vypnutý</string>
     <string name="default_string">Predvolené</string>
     <string name="additional_options_title">Ďalšie nastavenia</string>
-    <string name="reset_message">Resetovať všetky hodnoty na predvolené?</string>
+    <string name="reset_message">Obnoviť všetky hodnoty na predvolené?</string>
     <string name="style_title">Štýl</string>
     <string name="add">Pridať</string>
     <string name="title_general">Ďalšie</string>
@@ -97,7 +97,7 @@
     <string name="general_settings_style_title">Ďalšie možnosti</string>
     <string name="display_short">Displej</string>
     <string name="misc_short">Všeličo</string>
-    <string name="alt_resolver">Použiť alt. pôvodnú App mriežku</string>
+    <string name="alt_resolver">Použiť alt. predvolenú App mriežku</string>
     <string name="alt_resolver_summary">Použiť pôvodný striedavý App výber</string>
 
     <!-- Network stats stats -->
@@ -172,7 +172,7 @@
     <string name="shortcut_action_select_action_newbutton">Vybrať novú akciu:</string>
     <string name="shortcut_action_reset">Obnoviť</string>
     <string name="shortcut_action_add">Pridať</string>
-    <string name="shortcut_action_reset_message">Obnoviť všetky skratky?</string>
+    <string name="shortcut_action_reset_message">Obnoviť všetky skratky na predvolené?</string>
     <string name="shortcut_action_max">Maximum vstupov bolo dosiahnutých</string>
     <string name="shortcut_action_warning">Varovanie</string>
     <string name="shortcut_action_warning_message">Nie je možné vymazať posledný vstup</string>
@@ -241,7 +241,7 @@
     <string name="shortcuts_icon_picker_unlock">Odomknúť</string>
 
     <string name="icon_picker_type">Vyberte typ ikony:</string>
-    <string name="icon_default">Pôvodná</string>
+    <string name="icon_default">Predvolená</string>
     <string name="icon_presets">Systémové ikony</string>
     <string name="icon_custom">Galéria</string>
     <string name="icon_pack">Balíček ikon</string>
@@ -310,7 +310,7 @@
     <string name="animation_duration_title">Trvanie animácie</string>  
     <string name="title_animation_no_override">Zabrániť app prelínanie animácií</string>  
     <string name="summary_animation_no_override">Zabrániť apps mimoriadne prechody.</string>  
-    <string name="animation_duration_default">Pôvodné</string>
+    <string name="animation_duration_default">Predvolené</string>
     <string name="header_summary_animation">@null</string>
 
     <!-- Lockscreen battery ring -->
@@ -327,11 +327,11 @@
     <string name="power_menu_title">Rozšírené nastavenia</string>
 
     <!-- Navigation bar -->
-    <string name="navigation_bar_size_42_dp_default">42 dp (pôvodné)</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (predvolené)</string>
     <string name="navigation_bar_size_36_dp">36 dp</string>
     <string name="navigation_bar_size_30_dp">30 dp</string>
     <string name="navigation_bar_size_24_dp">24 dp</string>
-    <string name="navigation_bar_size_48_dp_default">48 dp (pôvodné)</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (predvolené)</string>
     <string name="navigation_bar_size_44_dp">44 dp</string>
     <string name="navigation_bar_size_40_dp">40 dp</string>
     <string name="navigation_bar_size_42_dp">42 dp</string>
@@ -339,7 +339,7 @@
     <string name="navigation_menu_right">Pravý</string>
     <string name="navigation_menu_left">Ľavý</string>
     <string name="navigation_menu_both">Obe</string>
-    <string name="navigation_menu_default_jb_behavior">Zobraziť na vyžiadanie (pôvodné)</string>
+    <string name="navigation_menu_default_jb_behavior">Zobraziť na vyžiadanie (predvolené)</string>
     <string name="navigation_menu_never_show">Nezobrazovať</string>
     <string name="navigation_menu_always_show">Zobrazuj stále</string>
     <string name="navigation_bar">Navigačný panel</string>
@@ -362,7 +362,7 @@
     <string name="navbar_button_title">Tlačidlá</string>
     <string name="navbar_targets_title">Ciele kruhu</string>
     <string name="navbar_cat">Navigačný panel</string>
-    <string name="navbar_dimensions_reset_message">Obnoviť všetky rozmery na pôvodné?</string>
+    <string name="navbar_dimensions_reset_message">Obnoviť všetky rozmery na predvolené?</string>
 
     <!-- Navigation bar button style -->
     <string name="nav_bar_button_style_summary">Zmena farieb tlačidiel navigačného panela</string>
@@ -405,7 +405,7 @@
     <string name="ram_bar_button_help">Pomoc</string>
     <string name="ram_bar_button_reset">Obnoviť farby</string>
     <string name="ram_bar_reset">Obnoviť</string>
-    <string name="ram_bar_reset_message">Obnoviť štýl RAM lišty?</string>
+    <string name="ram_bar_reset_message">Obnoviť štýl RAM lišty na predvolený?</string>
 
     <!-- Enable Quick Unlock -->
     <string name="lockscreen_quick_unlock_control_title">Rýchle odomknutie</string>
@@ -424,74 +424,74 @@
     <string name="lockscreen_target_color_title">Farba ikony cieľa</string>
     <string name="lockscreen_eight_targets_title">Osem akcií posuvníka</string>
     <string name="lockscreen_eight_targets_summary">Nastaviť osem vlastnýck akcií posuvníka na zamknutej obrazovke</string>
-    <string name="lockscreen_enable_eight_targets_dialog">Výberom tejto možnosti resetujete vaše aktuálne ciele na zamknutej obrazovke.</string>
+    <string name="lockscreen_enable_eight_targets_dialog">Výberom tejto možnosti obnovíte vaše aktuálne ciele na zamknutej obrazovke na pôvodné.</string>
     <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nAk je možnosť Osem cieľov aktivovaná, nemôžte súčasne používať vaše skratky posuvníka na zamknutej obrazovke.</string>
     <string name="lockscreen_glowpad_torch_title">Posuvník baterky</string>
     <string name="lockscreen_glowpad_torch_summary">Dvojklikom a podržaním posuvníka aktivujete baterku</string>
-    <string name="lockscreen_target_reset">Obnoviť akcie posuvníka</string>
-    <string name="lockscreen_target_reset_message">Vymazať všetky vaše priradené ciele posuvníka zamknutej obrazovky a obnoviť pôvodné?</string>
+    <string name="lockscreen_target_reset">Obnoviť akcie posuvníka na predvolené</string>
+    <string name="lockscreen_target_reset_message">Vymazať všetky vaše priradené ciele posuvníka zamknutej obrazovky a obnoviť ich na predvolené?</string>
     <string name="lockscreen_target_empty">Žiadne</string>
     <string name="lockscreen_target_edit_title">Zmeniť cieľ a ikonu</string>
     <string name="lockscreen_target_edit_msg">Zvoľte alebo zmeňte aplikáciu alebo akciu a priradenú ikonu</string>
 
     <!-- Lockscreen Shortcuts -->
-    <string name="lockscreen_shortcuts_title">Shortcuts</string>
-    <string name="lockscreen_shortcuts_summary">View or change custom lock screen shortcuts</string>
-    <string name="lockscreen_shorcuts_longpress_title">Shortcuts longpress</string>
-    <string name="lockscreen_shorcuts_longpress_summary">Open custom lock screen shortcuts on longpress</string>
+    <string name="lockscreen_shortcuts_title">Skratky</string>
+    <string name="lockscreen_shortcuts_summary">Ukázať alebo zmeniť vlastné skratky na zamknutej obrazovke</string>
+    <string name="lockscreen_shorcuts_longpress_title">Dlhé stlačenie skratly</string>
+    <string name="lockscreen_shorcuts_longpress_summary">Dlhým podržaním otvoriť vlastnú skratku</string>
 
     <!-- Lock screen targets and shortcuts -->
-    <string name="picker_activities">Activities</string>
-    <string name="select_custom_activity_title">Select custom activity</string>
-    <string name="icon_picker_alarm">Alarm</string>
-    <string name="icon_picker_browser">Browser</string>
-    <string name="icon_picker_calendar">Calendar</string>
-    <string name="icon_picker_camera">Camera</string>
+    <string name="picker_activities">Aktivity</string>
+    <string name="select_custom_activity_title">Zvoliť vlastnú aktivitu</string>
+    <string name="icon_picker_alarm">Budík</string>
+    <string name="icon_picker_browser">Prehliadač</string>
+    <string name="icon_picker_calendar">Kalendár</string>
+    <string name="icon_picker_camera">Fotoaparát</string>
     <string name="icon_picker_email">Email</string>
     <string name="icon_picker_email2">Email Holo</string>
     <string name="icon_picker_facebook">Facebook</string>
-    <string name="icon_picker_gallery">Gallery</string>
-    <string name="icon_picker_google_small">Google (small)</string>
+    <string name="icon_picker_gallery"Galéria</string>
+    <string name="icon_picker_google_small">Google (malý)</string>
     <string name="icon_picker_googleplus">Google Plus</string>
     <string name="icon_picker_googletalk">Hangouts</string>
-    <string name="icon_picker_maps">Maps</string>
-    <string name="icon_picker_sms">Messaging</string>
-    <string name="icon_picker_movie">Movie</string>
-    <string name="icon_picker_music">Music</string>
-    <string name="icon_picker_nav_normal">Navigation</string>
-    <string name="icon_picker_phone">Phone</string>
+    <string name="icon_picker_maps">Mapy</string>
+    <string name="icon_picker_sms">Správy</string>
+    <string name="icon_picker_movie">Film</string>
+    <string name="icon_picker_music">Hudba</string>
+    <string name="icon_picker_nav_normal">Navigácia</string>
+    <string name="icon_picker_phone">Telefón</string>
     <string name="icon_picker_podcast">Podcast</string>
     <string name="icon_picker_rss">Rss</string>
-    <string name="icon_picker_search">Search</string>
+    <string name="icon_picker_search">Hľadať</string>
     <string name="icon_picker_twitter">Twitter</string>
     
     <!-- Halo -->
     <string name="halo_settings_title">Halo</string>
-    <string name="halo_behavior_title">Halo Behavior</string>
-    <string name="halo_hide_title">Hide Halo after activity</string>
-    <string name="halo_hide_summary">Halo will appear for incoming tasks and scroll out of sight after a while</string>
-    <string name="halo_reversed_title">Reverse Halo</string>
-    <string name="halo_reversed_summary">Applies for task switching and moving gestures</string>
-    <string name="halo_state_title">Halo policy</string>
-    <string name="halo_state_summary">Enables black/white listing notifications</string>
-    <string name="halo_state_black">Black list</string>
-    <string name="halo_state_white">White list</string>
-    <string name="halo_pause_title">Pause active app</string>
-    <string name="halo_pause_summary">When opening an app with Halo the underlying app will get paused</string>
-    <string name="halo_ninja_title">Ninja mode</string>
-    <string name="halo_ninja_summary">Halo will disappear completely when empty</string>
-    <string name="halo_notification_msgbox_title">Enable message pop-up</string>
-    <string name="halo_notification_msgbox_summary">Show message box for incoming notifications</string>
-    <string name="halo_unlock_ping_title">Ping on unlock</string>
-    <string name="halo_unlock_ping_summary">Halo will ping when device is unlocked if new notifications were received</string>
+    <string name="halo_behavior_title">Halo správanie</string>
+    <string name="halo_hide_title">Skryť Halo po akcii</string>
+    <string name="halo_hide_summary">Halo zobrazí úlohu a po chvíli sa skryje</string>
+    <string name="halo_reversed_title">Prevrátiť Halo</string>
+    <string name="halo_reversed_summary">Platí pre prepínanie úloh a pohybu gest</string>
+    <string name="halo_state_title">Halo zásady</string>
+    <string name="halo_state_summary">Zapne čieny/biely zoznam oznámení</string>
+    <string name="halo_state_black">Čierny zoznam</string>
+    <string name="halo_state_white">Biely zoznam</string>
+    <string name="halo_pause_title">Zastaviť aktivovanú app</string>
+    <string name="halo_pause_summary">Otvorením aplikácie cez Halo, bude aktuálne otvorená aplikácia zastavená</string>
+    <string name="halo_ninja_title">Ninja mód</string>
+    <string name="halo_ninja_summary">Halo úplne zmizne ak je prázdne</string>
+    <string name="halo_notification_msgbox_title">Zapnúť vyskakovacie správy</string>
+    <string name="halo_notification_msgbox_summary">Zobrazí okno s oznámeniami</string>
+    <string name="halo_unlock_ping_title">Cinknúť pri odomknutí</string>
+    <string name="halo_unlock_ping_summary">Halo cinkne po odomknutí zariadenia, ak máte nové oznámenie</string>
 
-    <string name="halo_size_title">Halo size</string>
-    <string name="halo_size_summary">Defines how big Halo is going to be</string>
-    <string name="halo_size_miniscule">Miniscule</string>
-    <string name="halo_size_small">Small</string>
-    <string name="halo_size_default">Normal (default)</string>
-    <string name="halo_size_large">Large</string>
-    <string name="halo_size_gigantic">Gigantic</string>
+    <string name="halo_size_title">Halo veľkosť</string>
+    <string name="halo_size_summary">Nastavte aké veľké má byť Halo</string>
+    <string name="halo_size_miniscule">Maličké</string>
+    <string name="halo_size_small">Malé</string>
+    <string name="halo_size_default">Normálne (predvolené)</string>
+    <string name="halo_size_large">Veľké</string>
+    <string name="halo_size_gigantic">Gigantické</string>
     <string name="halo_size_monster">Monster</string>
 
     <string name="halo_notification_count_title">Notification count</string>
