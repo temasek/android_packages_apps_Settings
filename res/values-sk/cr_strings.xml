@@ -945,6 +945,19 @@
     <string name="theme_auto_mode_off">Manuálne</string>
     <string name="theme_auto_mode_lightsensor">Na základe svetelných podmienok</string>
     <string name="theme_auto_mode_twilight">Na základe dennej doby</string>
-    <string name="theme_auto_switch_mode_error">Mód automatického zisťovania podmienok je aktivovaný. Manuálne prepínanie nie je možné.</string>
+    <string name="theme_auto_switch_mode_error">Mód automatického zisťovania svetelných podmienok je aktivovaný. Manuálne prepínanie nie je možné.</string>
+
+    <!-- Show 4G icon instead of LTE. User defined settings -->
+    <string name="show_lte_or_fourgee_title">Ukáž 4G sieť</string>
+    <string name="show_lte_or_fourgee_summary">Dovolí ukázať 4G namiesto LTE</string>
+
+    <!-- Sound themes -->
+    <string name="sound_packages_title">Zvukové balíčky</string>
+    <string name="install_sound_pack_title">Inštalovať zvukový balíček</string>
+    <string name="install_sound_pack_summary">Nainštaluje nový zvukový balíček pridaný v SoundPacks súbore vo nútornej pamäti</string>
+    <string name="select_sound_pack_title">Zvoliť zvukový balíček</string>
+    <string name="select_sound_pack_summary">Zvolí aktívny zvukový balíček</string>
+    <string name="default_sound_pack">Predvolený (Systém)</string>
+    <string name="error_pack_install">Chyba počas inštalovania zvukového balíčka</string>
 
 </resources>
