@@ -784,22 +784,22 @@
     <string name="ime_switcher_notify_summary">Zobrazí možnosti vstupu v lište oznámení</string>
 
     <!-- Add option to hide power menu when screen is locked -->
-    <string name="lockscreen_power_menu_title">Enable power menu</string>
-    <string name="lockscreen_power_menu_summary">Show power menu when screen is locked</string>
+    <string name="lockscreen_power_menu_title">Zapnúť power menu</string>
+    <string name="lockscreen_power_menu_summary">Zobrazí power menu aj pri zamknutej obrazovke</string>
 
     <!-- Advanced, Device specific (DeviceParts) settings  -->
-    <string name="advanced_settings_title">Advanced</string>
+    <string name="advanced_settings_title">Rozšírené</string>
 
     <!-- QuickSettings: Smart Pulldown -->
-    <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open Quick Settings when there are no %1$s notifications present</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_dismissable">Dismissable</string>
-    <string name="smart_pulldown_persistent">Persistent</string>
+    <string name="smart_pulldown_title">Inteligentné stiahnutie</string>
+    <string name="smart_pulldown_summary">Otvorí Rýchle nastavenia ak v lište nie je %1$s oznámenie v danej dobe</string>
+    <string name="smart_pulldown_off">Vypnuté</string>
+    <string name="smart_pulldown_dismissable">Nepodstatné</string>
+    <string name="smart_pulldown_persistent">Trvalé</string>
 
     <!-- QuickSettings: Quick Collapse -->
-    <string name="title_collapse_panel">Quick collapse</string>
-    <string name="summary_collapse_panel">Close the notification panel upon toggle</string>
+    <string name="title_collapse_panel">Rýchle stiahnutie</string>
+    <string name="summary_collapse_panel">Zatvorí lištu po vykonaní akcie</string>
 
     <!-- Chamber of Secrets -->
     <string name="chamber_title">Chamber of secrets</string>
