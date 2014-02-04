@@ -338,7 +338,7 @@
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
     <string name="navigation_menu_right">Pravý</string>
     <string name="navigation_menu_left">Ľavý</string>
-    <string name="navigation_menu_both">Obe</string>
+    <string name="navigation_menu_both">Obidve</string>
     <string name="navigation_menu_default_jb_behavior">Zobraziť na vyžiadanie (predvolené)</string>
     <string name="navigation_menu_never_show">Nezobrazovať</string>
     <string name="navigation_menu_always_show">Zobrazuj stále</string>
@@ -494,39 +494,39 @@
     <string name="halo_size_gigantic">Gigantické</string>
     <string name="halo_size_monster">Monster</string>
 
-    <string name="halo_notification_count_title">Notification count</string>
-    <string name="halo_notification_count_summary">Display notification counts on Halo</string>
-    <string name="halo_notification_count_none">None</string>
-    <string name="halo_notification_count_total">Total</string>
-    <string name="halo_notification_count_individual">Per app</string>
-    <string name="halo_notification_count_both">Both</string>
+    <string name="halo_notification_count_title">Počítadlo oznámení</string>
+    <string name="halo_notification_count_summary">Zobraziť počítadlo oznámení v Halo</string>
+    <string name="halo_notification_count_none">Žiadne</string>
+    <string name="halo_notification_count_total">Celkovo</string>
+    <string name="halo_notification_count_individual">Každá app</string>
+    <string name="halo_notification_count_both">Obidve</string>
 
-    <string name="halo_msgbox_animation_title">Message box animation</string>
-    <string name="halo_msgbox_animation_summary">Halo message box animation for incoming notifications</string>
-    <string name="halo_msgbox_animation_none">None</string>
-    <string name="halo_msgbox_animation_flip">Flip</string>
+    <string name="halo_msgbox_animation_title">Animácia okna správ</string>
+    <string name="halo_msgbox_animation_summary">Animácia nových oznámení v okne správ</string>
+    <string name="halo_msgbox_animation_none">Žiadne</string>
+    <string name="halo_msgbox_animation_flip">Prevrátiť</string>
 
-    <string name="halo_enabled_title">Enable HALO</string>
-    <string name="halo_enabled_summary">Completely enable or disable HALO</string>
+    <string name="halo_enabled_title">Zapnúť HALO</string>
+    <string name="halo_enabled_summary">Úplné zapnutie/vypnutie HALO</string>
 
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
-    <string name="app_halo_label_black">Blacklist from HALO</string>
-    <string name="app_halo_label_white">Whitelist from HALO</string>
+    <string name="app_halo_label_black">Čierny zoznam HALO</string>
+    <string name="app_halo_label_white">Biely zoznam HALO</string>
 
     <!-- ListView animation -->
-    <string name="bars_and_menus_category_system_title">System</string>
-    <string name="listview_animation_title">ListView Animation</string>
-    <string name="listview_off">Off</string>
-    <string name="listview_wave_left">Wave (Left)</string>
-    <string name="listview_wave_right">Wave (Right)</string>
-    <string name="listview_alpha">Alpha</string>
-    <string name="listview_scale">Scale</string>
-    <string name="listview_stack_top">Stack (Top)</string>
-    <string name="listview_stack_bottom">Stack (Bottom)</string>
-    <string name="listview_unfold">Unfold</string>
-    <string name="listview_fold">Fold</string>
-    <string name="listview_translate_left">Translate (Left)</string>
-    <string name="listview_translate_right">Translate (Right)</string>
+    <string name="bars_and_menus_category_system_title">Systém</string>
+    <string name="listview_animation_title">Animácia posúvania</string>
+    <string name="listview_off">Vypnutá</string>
+    <string name="listview_wave_left">Vlna (zľava)</string>
+    <string name="listview_wave_right">Vlna (zprava)</string>
+    <string name="listview_alpha">Objavenie</string>
+    <string name="listview_scale">Zväčšovanie</string>
+    <string name="listview_stack_top">Pád (zhora)</string>
+    <string name="listview_stack_bottom">Pád (zdola)</string>
+    <string name="listview_unfold">Zhora zdola</string>
+    <string name="listview_fold">Zhora zdola 2</string>
+    <string name="listview_translate_left">Príchod (zľava)</string>
+    <string name="listview_translate_right">Príchod (zprava)</string>
 
     <!-- ListView interpolator -->
     <string name="listview_interpolator_title">ListView Interpolator</string>
