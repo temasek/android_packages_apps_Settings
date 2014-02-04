@@ -351,13 +351,13 @@
     <string name="navbar_enable_bar">Zapnúť navigačný panel</string>
     <string name="navbar_enable_bar_summary">Aktivuje softvérové tlačidlá</string>
     <string name="navigation_bar_height_title">Výška navigačného panela</string>
-    <string name="navigation_bar_height_summary">Výška navigačného panela v portrét móde.</string>
-    <string name="navigation_bar_height_landscape_title">Výška navigačného panela v landscape móde</string>
-    <string name="navigation_bar_height_landscape_summary">Výška navigačného panela v režime landscape.</string>
+    <string name="navigation_bar_height_summary">Výška navigačného panela v režime na výšku.</string>
+    <string name="navigation_bar_height_landscape_title">Výška navigačného panela v režime na šírku</string>
+    <string name="navigation_bar_height_landscape_summary">Výška navigačného panela v režime landscape móde.</string>
     <string name="navigation_bar_width_title">Šírka navigačného panela</string>
     <string name="navigation_bar_width_summary">Šírka navigačného panela ak je pozdĺž boku.</string>
-    <string name="navbar_can_move">Ukázať navigačný panel v landscape</string>
-    <string name="navbar_can_move_summary">Ukáže navigačný panel v lanscape na spodu.</string>
+    <string name="navbar_can_move">Ukázať navigačný panel v režime na šírku</string>
+    <string name="navbar_can_move_summary">Ukáže navigačný panel v landscape móde na spodu.</string>
     <string name="navbar_style_dimen_title">Rozmery</string>
     <string name="navbar_button_title">Tlačidlá</string>
     <string name="navbar_targets_title">Ciele kruhu</string>
@@ -555,15 +555,15 @@
     <string name="lockscreen_dots_color_summary">Farba efektu bodiek</string>
 
     <!-- Lockscreen widget settings -->
-    <string name="lockscreen_widgets_title">Widgets</string>
-    <string name="lockscreen_camera_widget_title">Enable camera widget</string>
-    <string name="lockscreen_camera_widget_summary">Show secure camera widget on the lock screen</string>
-    <string name="lockscreen_maximize_widgets_title">Start maximized</string>
-    <string name="lockscreen_maximize_widgets_summary">Show widget maximized when screen turned on</string>
-    <string name="lockscreen_disable_hints_title">Disable initial page hints</string>
-    <string name="lockscreen_disable_hints_summary">Disables the glow on the edges that surrounds the widget pager on lock screen in portrait mode</string>
-    <string name="lockscreen_use_widget_container_carousel_title">Enable portrait widget carousel</string>
-    <string name="lockscreen_use_widget_container_carousel_summary">Use carousel animation in portrait when switching between lock screen widgets</string>
+    <string name="lockscreen_widgets_title">Widgety</string>
+    <string name="lockscreen_camera_widget_title">Zapnúť widget fotoaparátu</string>
+    <string name="lockscreen_camera_widget_summary">Ukáže zabezpečený widget fotoaparátu na zamknutej obrazovke</string>
+    <string name="lockscreen_maximize_widgets_title">Spustiť maximalizovaný</string>
+    <string name="lockscreen_maximize_widgets_summary">Keď sa obrazovka zapne, ukáže widget maximalizovaný </string>
+    <string name="lockscreen_disable_hints_title">Vypnúť typy na úvodnej stránke</string>
+    <string name="lockscreen_disable_hints_summary">Neukáže žiaru na okrajoch, ktorá obklopuje widget na zamknutej obrazovke v režime na výšku</string>
+    <string name="lockscreen_use_widget_container_carousel_title">Zapnúť karusel efekt prechodu</string>
+    <string name="lockscreen_use_widget_container_carousel_summary">Použije animáciu karusela v režime na výšku, pri posúvaní medzi obrazovkami widgetov</string>
 
     <!-- Active display settings -->
     <string name="ad_settings_title">Active display</string>
