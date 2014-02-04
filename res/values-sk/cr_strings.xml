@@ -654,7 +654,7 @@
     <string name="notif_alpha_title">Priehľadnosť lišty oznámení</string>
 
     <!-- Custom notification panel header -->
-    <string name="omni_features_title">Omni vychytávky</string>
+    <string name="omni_features_title">Omni funkcie</string>
     <string name="notification_drawer_category_title">Lišta oznámení</string>
     <string name="custom_statusbar_header_title">Kontextové pozadie lišty</string>
     <string name="custom_statusbar_header_summary">Nastaví pozadie hlavičky hornej lišty na základe času a dátumu</string>
@@ -882,12 +882,12 @@
     <string name="excluded_apps_summary">Vylúčené aplikácie nebudú zobrazované ako oznámenie zamknutej obrazovky</string>
 
     <!-- Screen recorder -->
-    <string name="screen_recorder_title">Screen recorder</string>
-    <string name="screen_recorder_summary">Adjust screen recorder settings</string>
-    <string name="screen_recorder_video_dimensions_title">Video size</string>
-    <string name="screen_recorder_video_bitrate_title">Bitrate</string>
-    <string name="screen_recorder_record_audio_title">Record audio</string>
-    <string name="screen_recorder_record_audio_summary">Record audio from the microphone</string>
+    <string name="screen_recorder_title">Nahrávanie obrazovky</string>
+    <string name="screen_recorder_summary">Upravte nastavenia nahrávania obrazovky</string>
+    <string name="screen_recorder_video_dimensions_title">Veľkosť videa</string>
+    <string name="screen_recorder_video_bitrate_title">Zápis</string>
+    <string name="screen_recorder_record_audio_title">Nahrať zvuk</string>
+    <string name="screen_recorder_record_audio_summary">Nahrá zvuk cez mikrofón</string>
     <!-- video sizes -->
     <string name="screen_recorder_size_240x400">240x400</string>
     <string name="screen_recorder_size_360x640">360x640</string>
@@ -923,13 +923,13 @@
     <string name="screen_recorder_bitrate_100000000">100000000</string>
 
     <!-- Breathing Notifications -->
-    <string name="breathing_notifications_title">Breathing Notifications</string>
-    <string name="sms_breath_title">Breathing SMS</string>
-    <string name="sms_breath_summary">Will give your sms notifications a breathing effect in the statusbar</string>
-    <string name="missed_call_breath_title">Breathing Missed Call</string>
-    <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect in the statusbar</string>
-    <string name="voicemail_breath_title">Breathing Voicemail</string>
-    <string name="voicemail_breath_summary">Will give your voicemail notifications a breathing effect in the statusbar</string>
+    <string name="breathing_notifications_title">Dýchajúce oznámenia</string>
+    <string name="sms_breath_title">Dýchajúce SMS</string>
+    <string name="sms_breath_summary">Oznámenie o novej SMS správe sa zobrazí ako blikajúca ikona v hornej lište</string>
+    <string name="missed_call_breath_title">Dýchajúci zmeškaný hovor</string>
+    <string name="missed_call_breath_summary">Oznámenie o zmeškanom hovore sa zobrazí ako blikajúca ikona v hornej lište</string>
+    <string name="voicemail_breath_title">Dýchajúca hlasová správa</string>
+    <string name="voicemail_breath_summary">Oznámenie o novej hlasovej správe sa zobrazí ako blikajúca ikona v hornej lište</string>
 
     <!-- Keyguard always show battery -->
     <string name="lockscreen_battery_status_title">Battery status</string>
