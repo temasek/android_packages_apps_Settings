@@ -620,15 +620,15 @@
     <string name="ad_pocket_mode_always">Vždy</string>
 
     <!-- Lockscreen pin shuffle -->
-    <string name="lock_numpad_random_title">Change the order of PIN pad numbers</string>
-    <string name="lock_numpad_random_dialog_title">PIN pad random order</string>
-    <string name="lock_numpad_random_off">Disabled</string>
-    <string name="lock_numpad_random_always">Always</string>
-    <string name="lock_numpad_random_on_request">On request</string>
+    <string name="lock_numpad_random_title">Zmena poradia čísel PIN</string>
+    <string name="lock_numpad_random_dialog_title">Náhodné PIN poradie</string>
+    <string name="lock_numpad_random_off">Vypnuté</string>
+    <string name="lock_numpad_random_always">Vždy</string>
+    <string name="lock_numpad_random_on_request">Na požiadanie</string>
 
     <!-- Lock before unlock -->
-    <string name="lock_before_unlock_title">Show slider before secure unlock</string>
-    <string name="lock_before_unlock_summary">Show slider lockscreen before secure unlock mechanism</string>
+    <string name="lock_before_unlock_title">Ukázať posuvník pred bezpečným odomknutím</string>
+    <string name="lock_before_unlock_summary">Ukázať posuvník zamknutej obrazovky pred bezpečnostným odomykacím módom</string>
 
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_pattern_size_3">3x3</string>
@@ -637,21 +637,21 @@
     <string name="lock_pattern_size_6">6x6</string>
 
     <!-- Notification Drawer Settings -->
-    <string name="notification_drawer_title">Notification drawer</string>
-    <string name="notification_drawer_style_title">Notification drawer options</string>
-    <string name="notification_drawer_background">Background and transparency</string>
+    <string name="notification_drawer_title">Lišta oznámení</string>
+    <string name="notification_drawer_style_title">Možnosti lišty oznámení</string>
+    <string name="notification_drawer_background">Pozadie a priehľadnosť</string>
 
     <!-- Notification drawer background -->
-    <string name="notification_style_title">Background style</string>
-    <string name="notification_style_summary">View or change your notification drawer and quicksettings background</string>
-    <string name="notification_wallpaper_title">Background</string>
-    <string name="notification_wallpaper_landscape_title">Different landscape background</string>
-    <string name="notification_background_color_fill">Color fill</string>
-    <string name="notification_background_custom_image">Custom image</string>
-    <string name="notification_background_default_wallpaper">Default background</string>
-    <string name="notification_drawer_custom_background_dialog_title">Choose color</string>
-    <string name="notif_wallpaper_alpha_title">Background transparency</string>
-    <string name="notif_alpha_title">Notification transparency</string>
+    <string name="notification_style_title">Štýl pozadia</string>
+    <string name="notification_style_summary">Ukázať alebo zmeniť lištu oznámení a pozadie rýchlych nastavení</string>
+    <string name="notification_wallpaper_title">Pozadie</string>
+    <string name="notification_wallpaper_landscape_title">Odlišné pozadie v režime na šírku</string>
+    <string name="notification_background_color_fill">Farba výplne</string>
+    <string name="notification_background_custom_image">Vlastný obrázok</string>
+    <string name="notification_background_default_wallpaper">Pôvodné pozadie</string>
+    <string name="notification_drawer_custom_background_dialog_title">Výber farby</string>
+    <string name="notif_wallpaper_alpha_title">Priehľadnosť pozadia</string>
+    <string name="notif_alpha_title">Priehľadnosť lišty oznámení</string>
 
     <!-- Custom notification panel header -->
     <string name="omni_features_title">Omni features</string>
