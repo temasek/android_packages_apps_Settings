@@ -802,48 +802,48 @@
     <string name="summary_collapse_panel">Zatvorí lištu po vykonaní akcie</string>
 
     <!-- Chamber of Secrets -->
-    <string name="chamber_title">Chamber of secrets</string>
-    <string name="chamber_toast">The chamber of secrets has opened</string>
+    <string name="chamber_title">Komora tajomstiev</string>
+    <string name="chamber_toast">Komora tajomstiev bola otvorená</string>
 
      <!-- Title for PreferenceScreen to change encryption password [CHAR LIMIT=22] -->
-    <string name="change_crypt_password_title">Change password</string>
+    <string name="change_crypt_password_title">Zmeniť heslo</string>
     <!-- Summary for PreferenceScreen to change encryption password [CHAR LIMIT=45] -->
-    <string name="change_crypt_password_summary">Change the password used for device encryption</string>
+    <string name="change_crypt_password_summary">Zmeniť heslo používané na šifrovanie zariadenia</string>
 
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
-    <string name="encryptionpassword_choose_your_password_header">Set encryption password</string>
+    <string name="encryptionpassword_choose_your_password_header">Nastaviť heslo šifrovania</string>
 
     <!-- Hardware keys -->
-    <string name="button_keys_title">Hardware Buttons</string>
-    <string name="keys_bindings_title">Key actions</string>
-    <string name="keys_enable_custom_title">Enable custom actions</string>
-    <string name="keys_enable_custom_summary">Enable custom hardware key actions</string>
-    <string name="keys_back_press_title">Back key</string>
-    <string name="keys_back_long_press_title">Back key (long press)</string>
-    <string name="keys_back_double_tap_title">Back key (double tap)</string>
-    <string name="keys_home_press_title">Home key</string>
-    <string name="keys_home_long_press_title">Home key (long press)</string>
-    <string name="keys_home_double_tap_title">Home key (double tap)</string>
-    <string name="keys_menu_press_title">Menu key</string>
-    <string name="keys_menu_long_press_title">Menu key (long press)</string>
-    <string name="keys_menu_double_tap_title">Menu key (double tap)</string>
-    <string name="keys_assist_press_title">Search key</string>
-    <string name="keys_assist_long_press_title">Search key (long press)</string>
-    <string name="keys_assist_double_tap_title">Search key (double tap)</string>
-    <string name="keys_app_switch_press_title">App switch key</string>
-    <string name="keys_app_switch_long_press_title">App switch key (long press)</string>
-    <string name="keys_app_switch_double_tap_title">App switch key (double tap)</string>
-    <string name="keys_action_normal">Normal press</string>
-    <string name="keys_action_long">Long press</string>
-    <string name="keys_action_double">Double tap</string>
-    <string name="no_home_key">You have no button assigned any more to the \"Home\" action!\n\nThis can make your device unusable!</string>
+    <string name="button_keys_title">Hardvérové tlačidlá</string>
+    <string name="keys_bindings_title">Akcie tlačidiel</string>
+    <string name="keys_enable_custom_title">Zapnúť vlastné akcie</string>
+    <string name="keys_enable_custom_summary">Zapne vlastné akcie vykonané hardverovými tlačidlami</string>
+    <string name="keys_back_press_title">Tlačidlo Späť</string>
+    <string name="keys_back_long_press_title">Tlačidlo Späť (dlhé stlačenie)</string>
+    <string name="keys_back_double_tap_title">Tlačidlo Späť (dvojité stlačenie)</string>
+    <string name="keys_home_press_title">Tlačidlo Domov</string>
+    <string name="keys_home_long_press_title">Tlačidlo Domov (dlhé stlačenie)</string>
+    <string name="keys_home_double_tap_title">Tlačidlo Domov (dvojité stlačenie)</string>
+    <string name="keys_menu_press_title">Tlačidlo Menu</string>
+    <string name="keys_menu_long_press_title">Tlačidlo Menu (dlhé stlačenie)</string>
+    <string name="keys_menu_double_tap_title">Tlačidlo Menu (dvojité stlačenie)</string>
+    <string name="keys_assist_press_title">Tlačidlo Hľadať</string>
+    <string name="keys_assist_long_press_title">Tlačidlo Hľadať (dlhé stlačenie)</string>
+    <string name="keys_assist_double_tap_title">Tlačidlo Hľadať (dvojité stlačenie)</string>
+    <string name="keys_app_switch_press_title">Tlačidlo Prepínania Apps</string>
+    <string name="keys_app_switch_long_press_title">Tlačidlo Prepínania Apps (dlhé stlačenie)</string>
+    <string name="keys_app_switch_double_tap_title">Tlačidlo Prepínania Apps (dvojité stlačenie)</string>
+    <string name="keys_action_normal">Normálne stlačenie</string>
+    <string name="keys_action_long">Dlhé stlačenie</string>
+    <string name="keys_action_double">Dvojité stlačenie</string>
+    <string name="no_home_key">Už viac nemáte priradenú akciu pre tlačidlo \"Domov\"!\n\nToto môže mať za následok nefunkčnosť zariadenia!</string>
 
     <!-- Minimum Vibration Duration -->
-    <string name="minimum_vibration_duration">Minimum vibration duration</string>
+    <string name="minimum_vibration_duration">Minimálna doba trvania vibrácie</string>
 
     <!--Lockscreen See Through-->
-     <string name="see_through_title">See through</string>
-     <string name="see_through_summary">Shows the content behind your lockscreen, your data may be visible to those around you</string>
+     <string name="see_through_title">Vidieť cez</string>
+     <string name="see_through_summary">Ukáže obsah za zamknutou obrazovkou, vaše dáta môžu byť viditeľné!</string>
 
     <!--Lockscreen blur-->
     <string name="blur_behind_title">Blur Lockscreen Background</string>
