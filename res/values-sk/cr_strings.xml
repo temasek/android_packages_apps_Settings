@@ -932,19 +932,19 @@
     <string name="voicemail_breath_summary">Oznámenie o novej hlasovej správe sa zobrazí ako blikajúca ikona v hornej lište</string>
 
     <!-- Keyguard always show battery -->
-    <string name="lockscreen_battery_status_title">Battery status</string>
-    <string name="lockscreen_battery_status_summary">Always show battery status on keyguard</string>
+    <string name="lockscreen_battery_status_title">Stav batérie</string>
+    <string name="lockscreen_battery_status_summary">Vždy ukáže stav batérie na klávesnici zamknutej obrazovky</string>
 
     <!-- Notification Drawer - Swipe to Switch full screen detection-->
-    <string name="title_full_screen_swipe">Swipe-to-Switch detection</string>
-    <string name="summary_full_screen_swipe">Use full screen detection for swipe to switch, not just the bottom bar</string>
+    <string name="title_full_screen_swipe">Swipe-to-Switch detekcia</string>
+    <string name="summary_full_screen_swipe">Prechod z Lišty oznámení na Rýchle nastavenia a opačne, potiahnutím prsta kdekoľvek na obrazovke nie len na spodnej lište</string>
 
     <!-- Themes -->
-    <string name="theme_settings_title">Dark UI (TRDS)</string>
-    <string name="theme_auto_mode_title">Switch theme</string>
-    <string name="theme_auto_mode_off">Manual</string>
-    <string name="theme_auto_mode_lightsensor">On light condition change</string>
-    <string name="theme_auto_mode_twilight">On daytime</string>
-    <string name="theme_auto_switch_mode_error">Automatic light condition change mode is enabled. Manual switching is not possible.</string>
+    <string name="theme_settings_title">Tmavé UI (TRDS)</string>
+    <string name="theme_auto_mode_title">Prepnúť tému</string>
+    <string name="theme_auto_mode_off">Manuálne</string>
+    <string name="theme_auto_mode_lightsensor">Na základe svetelných podmienok</string>
+    <string name="theme_auto_mode_twilight">Na základe dennej doby</string>
+    <string name="theme_auto_switch_mode_error">Mód automatického zisťovania podmienok je aktivovaný. Manuálne prepínanie nie je možné.</string>
 
 </resources>
