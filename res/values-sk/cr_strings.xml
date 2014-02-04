@@ -725,17 +725,17 @@
     <string name="custom_tile_resolve_name">Neznáme</string>
 
     <!-- QuickSettings style options -->
-    <string name="quicksettings_tiles_style">Style</string>
-    <string name="summary_quicksettings_tiles_style">View or change quick settings style options</string>
-    <string name="quicksettings_tiles_style_additional_options">Additional options</string>
-    <string name="tiles_per_row_title">Tiles per row</string>
-    <string name="tiles_per_row_duplicate_landscape_title">Scale landscape quantity</string>
-    <string name="tiles_per_row_duplicate_landscape_summary">Landscape view doubles tiles per row quantity</string>
-    <string name="quick_tiles_bg_color_title">Tiles background color</string>
-    <string name="quick_tiles_bg_pressed_color_title">Tiles pressed background color</string>
-    <string name="quick_tiles_text_color_title">Tiles text color</string>
-    <string name="quick_tiles_alpha_title">Tiles background transparency</string>
-    <string name="qs_style_reset_message">Reset all colors to default?</string>
+    <string name="quicksettings_tiles_style">Štýl</string>
+    <string name="summary_quicksettings_tiles_style">Ukázať alebo zmeniť možnosti štýlu Rýchlych nastavení</string>
+    <string name="quicksettings_tiles_style_additional_options">Ďalšie možnosti</string>
+    <string name="tiles_per_row_title">Dlaždice na riadok</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Množstvo dlaždíc v režime na šírku</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Režim na šírku zdvojnásobí množstvo dlaždíc na riadok</string>
+    <string name="quick_tiles_bg_color_title">Farba pozadia dlaždíc</string>
+    <string name="quick_tiles_bg_pressed_color_title">Farba stlačenej dlaždice</string>
+    <string name="quick_tiles_text_color_title">Farba textu dlaždíc</string>
+    <string name="quick_tiles_alpha_title">Priehľadnosť pozadia dlaždíc</string>
+    <string name="qs_style_reset_message">Obnoviť všetky farby na pôvodné?</string>
 
     <string name="pref_network_mode_title">Network modes</string>
     <string name="pref_screentimeout_mode_title">Screen timeout modes</string>
