@@ -539,20 +539,20 @@
     <string name="listview_bounce_interpolator">skákajúci_príchod</string>
 
     <!-- Lockscreen style settings -->
-    <string name="lockscreen_style_reset_message">Reset all lockscreen colors?</string>
-    <string name="lockscreen_icon_title">Lock handle icon</string>
-    <string name="lockscreen_lock_icon_custom">Custom icon</string>
-    <string name="lockscreen_lock_icon_temasek">Temasek icon</string>
-    <string name="lockscreen_lock_icon_default">Default icon</string>
-    <string name="lockscreen_colorize_handle_title">Colorize custom handle</string>
-    <string name="lockscreen_colorize_handle_summary">Lock color will be set to the lock handle</string>
-    <string name="lockscreen_style_title">Theme style</string>
-    <string name="lockscreen_frame_color_title">Frame color</string>
-    <string name="lockscreen_frame_color_summary">Color of the widget and unlock frames</string>
-    <string name="lockscreen_lock_color_title">Lock color</string>
-    <string name="lockscreen_lock_color_summary">Color of the lock handles</string>
-    <string name="lockscreen_dots_color_title">Dots color</string>
-    <string name="lockscreen_dots_color_summary">Color of the glowpad dots</string>
+    <string name="lockscreen_style_reset_message">Obnoviť všetky farby zamknutej obrazovky?</string>
+    <string name="lockscreen_icon_title">Ikona zámku</string>
+    <string name="lockscreen_lock_icon_custom">Vlastná ikona</string>
+    <string name="lockscreen_lock_icon_temasek">Temasek ikona</string>
+    <string name="lockscreen_lock_icon_default">Predvolená ikona</string>
+    <string name="lockscreen_colorize_handle_title">Farba vlastnej ikony</string>
+    <string name="lockscreen_colorize_handle_summary">Farba zámku bude nastavená na ikone zámku</string>
+    <string name="lockscreen_style_title">Štýl zamknutej obrazovky</string>
+    <string name="lockscreen_frame_color_title">Farba rámu</string>
+    <string name="lockscreen_frame_color_summary">Farba widgetu a odomykajúceho rámu</string>
+    <string name="lockscreen_lock_color_title">Farba zámku</string>
+    <string name="lockscreen_lock_color_summary">Farba ikony zámku</string>
+    <string name="lockscreen_dots_color_title">Farba bodiek</string>
+    <string name="lockscreen_dots_color_summary">Farba efektu bodiek</string>
 
     <!-- Lockscreen widget settings -->
     <string name="lockscreen_widgets_title">Widgets</string>
