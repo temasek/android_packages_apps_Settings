@@ -418,21 +418,21 @@
     <string name="lock_screen_summary">Zobraziť alebo zmeniť akcie a skratky posuvníka</string>
 
     <!-- Lock Screen Targets -->
-    <string name="lockscreen_target_info">Drag the slider to targets to assign applications</string>
-    <string name="lockscreen_target_title">Slider targets</string>
-    <string name="lockscreen_target_summary">View or change custom lock screen targets</string>
-    <string name="lockscreen_target_color_title">Target icon color</string>
-    <string name="lockscreen_eight_targets_title">Eight slider targets</string>
-    <string name="lockscreen_eight_targets_summary">Enable eight custom lock screen targets.</string>
-    <string name="lockscreen_enable_eight_targets_dialog">Changing this option resets your current lockscreen targets setup to default.</string>
-    <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nWith eight lockscreen targets enabled you cannot use your lockscreen shortcuts at the same time.</string>
-    <string name="lockscreen_glowpad_torch_title">Slider torch</string>
-    <string name="lockscreen_glowpad_torch_summary">Double-tap and hold the slider to start torch</string>
-    <string name="lockscreen_target_reset">Lock screen targets reset to default</string>
-    <string name="lockscreen_target_reset_message">Delete all user created lock screen targets and restore to default?</string>
-    <string name="lockscreen_target_empty">None</string>
-    <string name="lockscreen_target_edit_title">Edit target and icon</string>
-    <string name="lockscreen_target_edit_msg">Select or change the desired application or activity and the associated icon</string>
+    <string name="lockscreen_target_info">Potiahnite posuvník pre priradenie akcie</string>
+    <string name="lockscreen_target_title">Akcie posuvníka</string>
+    <string name="lockscreen_target_summary">Ukázať alebo zmeniť vlastné akcie na zamknutej obrazovke</string>
+    <string name="lockscreen_target_color_title">Farba ikony cieľa</string>
+    <string name="lockscreen_eight_targets_title">Osem akcií posuvníka</string>
+    <string name="lockscreen_eight_targets_summary">Nastaviť osem vlastnýck akcií posuvníka na zamknutej obrazovke</string>
+    <string name="lockscreen_enable_eight_targets_dialog">Výberom tejto možnosti resetujete vaše aktuálne ciele na zamknutej obrazovke.</string>
+    <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nAk je možnosť Osem cieľov aktivovaná, nemôžte súčasne používať vaše skratky posuvníka na zamknutej obrazovke.</string>
+    <string name="lockscreen_glowpad_torch_title">Posuvník baterky</string>
+    <string name="lockscreen_glowpad_torch_summary">Dvojklikom a podržaním posuvníka aktivujete baterku</string>
+    <string name="lockscreen_target_reset">Obnoviť akcie posuvníka</string>
+    <string name="lockscreen_target_reset_message">Vymazať všetky vaše priradené ciele posuvníka zamknutej obrazovky a obnoviť pôvodné?</string>
+    <string name="lockscreen_target_empty">Žiadne</string>
+    <string name="lockscreen_target_edit_title">Zmeniť cieľ a ikonu</string>
+    <string name="lockscreen_target_edit_msg">Zvoľte alebo zmeňte aplikáciu alebo akciu a priradenú ikonu</string>
 
     <!-- Lockscreen Shortcuts -->
     <string name="lockscreen_shortcuts_title">Shortcuts</string>
