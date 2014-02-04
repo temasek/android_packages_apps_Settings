@@ -695,7 +695,7 @@
     <string name="title_tile_wifiap">Wi-Fi AP</string>
     <string name="title_tile_wifi">Wi-Fi</string>
     <string name="title_tile_user">Prepínač používateľov</string>
-    <string name="title_tile_networkmode">Sieť</string>
+    <string name="title_tile_networkmode">Režim siete</string>
     <string name="title_tile_nfc">NFC</string>
     <string name="title_tile_screen_timeout">Čas obrazovky</string>
     <string name="title_tile_quick_record">Nahrávanie hlasu</string>
@@ -737,42 +737,42 @@
     <string name="quick_tiles_alpha_title">Priehľadnosť pozadia dlaždíc</string>
     <string name="qs_style_reset_message">Obnoviť všetky farby na pôvodné?</string>
 
-    <string name="pref_network_mode_title">Network modes</string>
-    <string name="pref_screentimeout_mode_title">Screen timeout modes</string>
-    <string name="pref_ring_mode_title">Sound modes</string>
-    <string name="pref_music_mode_title">Music mode</string>
-    <string name="screentimeout_mode1">15s | 1m | 5m | Never</string>
-    <string name="screentimeout_mode2">30s | 2m | 5m | Never</string>
-    <string name="sound_mode_silent">Silent</string>
-    <string name="sound_mode_vibrate">Vibrate</string>
-    <string name="sound_mode_sound">Sound</string>
-    <string name="sound_mode_soundVibrate">Sound &amp; Vibrate</string>
-    <string name="music_tile_mode_background">Show album artwork</string>
-    <string name="music_tile_mode_tracktitle">Show track title</string>
+    <string name="pref_network_mode_title">Režim siete</string>
+    <string name="pref_screentimeout_mode_title">Čas obrazovky</string>
+    <string name="pref_ring_mode_title">Režim zvuku</string>
+    <string name="pref_music_mode_title">Režim hudby</string>
+    <string name="screentimeout_mode1">15s | 1m | 5m | Nikdy</string>
+    <string name="screentimeout_mode2">30s | 2m | 5m | Nikdy</string>
+    <string name="sound_mode_silent">Tichý</string>
+    <string name="sound_mode_vibrate">Vibrovať</string>
+    <string name="sound_mode_sound">Zvuk</string>
+    <string name="sound_mode_soundVibrate">Zvuk &amp; Vibrovať</string>
+    <string name="music_tile_mode_background">Zobraziť obal albumu</string>
+    <string name="music_tile_mode_tracktitle">Zobraziť názov pesničky</string>
 
     <!-- QuickSettings: Quick Pulldown -->
-    <string name="title_quick_pulldown">Quick pulldown</string>
-    <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
+    <string name="title_quick_pulldown">Rýchle stiahnutie</string>
+    <string name="summary_quick_pulldown">%1$s okraj hornej lišty stiahne Rýchle nastavenia</string>
+    <string name="quick_pulldown_off">Vypnuté</string>
+    <string name="quick_pulldown_left">Ľavý</string>
+    <string name="quick_pulldown_right">Pravý</string>
 
     <!-- Status Bar Activity Indicators -->
-    <string name="show_activity_indicators_on_status_bar_title">Network activity indicator</string>
-    <string name="show_activity_indicators_on_status_bar_summary">Show network activity in statusbar</string>
+    <string name="show_activity_indicators_on_status_bar_title">Indikátor aktivity siete</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Ukáže aktivitu siete v hornej lište</string>
 
     <!-- Lockscreen Lid Settings -->
     <string name="smart_cover_category_title">Smart cover</string>
-    <string name="smart_cover_wake_title">Smart cover wake</string>
-    <string name="smart_cover_wake_summary">Wakeup device when smart cover opens</string>
+    <string name="smart_cover_wake_title">Smart cover zobudenie</string>
+    <string name="smart_cover_wake_summary">Zobudí zariadenie keď otvoríte smart cover</string>
 
     <!-- Keyboard and Input ASS methods  -->
-    <string name="title_keyboard_input">Advanced options</string>
-    <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
-    <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="title_keyboard_input">Pokročilé možnosti</string>
+    <string name="disable_fullscreen_keyboard_title">Vypnúť klávesnicu na celú obrazovku</string>
+    <string name="disable_fullscreen_keyboard_summary">Klávesnica nezaberie celé miesto v režime na šírku</string>
+    <string name="volume_key_cursor_control_title">Ovládanie kurzora tlačidla hlasitosti</string>
+    <string name="volume_key_cursor_control_on">Hlasitosť hore/dole posunie kurzor doľava/doprava</string>
+    <string name="volume_key_cursor_control_on_reverse">Hlasitosť hore/dole posunie kurzor doprava/doľava</string>
     <string name="keyboard_rotation_toggle_title">Auto keyboard rotation</string>
     <string name="keyboard_rotation_toggle_summary">Force auto-rotate when keyboard is shown</string>
     <string name="keyboard_rotation_timeout_title">Auto-rotate timeout</string>
