@@ -87,4 +87,14 @@
 
     </PreferenceCategory>
 
+    <!-- Audio Theme -->
+    <PreferenceCategory
+            android:key="audio_theme_title"
+            android:title="@string/audio_theme_title" />
+
+        <PreferenceScreen
+            android:key="sound_packages"
+            android:fragment="com.android.settings.temasek.SoundPackageSettings"
+            android:title="@string/sound_packages_title" />
+
 </PreferenceScreen>
