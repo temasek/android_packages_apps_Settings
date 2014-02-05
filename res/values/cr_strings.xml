@@ -952,6 +952,7 @@
     <string name="show_lte_or_fourgee_summary">This will allow you to show 4G instead of LTE</string>
 
     <!-- Sound themes -->
+    <string name="audio_theme_title">Audio theme</string>
     <string name="sound_packages_title">Sound packs</string>
     <string name="install_sound_pack_title">Install sound pack</string>
     <string name="install_sound_pack_summary">Install new sound packs added in SoundPacks folder on the internal storage</string>
