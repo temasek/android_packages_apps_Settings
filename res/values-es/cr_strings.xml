@@ -942,5 +942,18 @@
     <string name="theme_auto_mode_lightsensor">En cambio de condición de luz </string>
     <string name="theme_auto_mode_twilight">En el día</string>
     <string name="theme_auto_switch_mode_error">Cambio de la condición de luz modo automático está activado. Conmutación manual no es posible.</string>
+    
+    <!-- Show 4G icon instead of LTE. User defined settings -->
+    <string name="show_lte_or_fourgee_title">Mostrar red 4G</string>
+    <string name="show_lte_or_fourgee_summary">Esto le permitirá mostrar 4G en lugar de LTE</string>
+
+    <!-- Sound themes -->
+    <string name="sound_packages_title">Paquetes de sonido</string>
+    <string name="install_sound_pack_title">Instale el paquete de sonido</string>
+    <string name="install_sound_pack_summary">Instalar nuevos paquetes de sonido añadidos en la carpeta "Sound Packs" de la memoria interna</string>
+    <string name="select_sound_pack_title">Seleccione el paquete de sonido</string>
+    <string name="select_sound_pack_summary">Seleccione el paquete de sonido activo</string>
+    <string name="default_sound_pack">Defecto (Sistema)</string>
+    <string name="error_pack_install">Error al instalar el paquete de sonido</string>
  
 </resources>
