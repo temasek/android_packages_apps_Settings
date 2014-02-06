@@ -67,7 +67,7 @@
     <string name="clock_date_style_uppercase">Mayúsculas</string>
     <string name="clock_date_format_custom">Formato personalizado</string>
     <string name="status_bar_clock_style_reset_message">¿Restaurar color del reloj?</string>
-	<string name="clock_font_style_title">Fuente</string>
+    <string name="clock_font_style_title">Fuente</string>
     <string name="clock_font_bold">Fuerte</string>
     <string name="clock_font_condensed">Condensada</string>
     <string name="clock_font_light">Liviana</string>
@@ -383,6 +383,7 @@
     
     <!-- Power menu -->
     <string name="power_menu_style_summary">Cambia el color de los íconos del menú de apagado</string>
+    <string name="power_menu_screenrecord_title">Grabar pantalla</string>
 
     <!-- Recents Ram Bar -->
     <string name="ram_bar">Medidor de RAM</string>
@@ -713,6 +714,7 @@
     <string name="help_qs_message">Para añadir un azulejo a Ajustes rápidos, presione el botón Añadir y elija un azulejo. Para reordenar los azulejos, mantenga presionado el azulejo y muévalo a la posición que desee. Si desea eliminar un azulejo, arrástrelo al botón Eliminar que aparece mientras se mueve el azulejo.\n\nPara configurar azulejos dinámicos presione el ícono respectivo en la parte superior derecha de la pantalla\n\nPara deshabilitar Ajustes rápidos, remueva todos los azulejos.</string>
     <string name="custom_tile_dialog_text">Cada acción añadirá un nuevo estado al azulejo. Cada click cambia al siguiente estado. Presione prolongadamente para añadir acción de presión prolongada. Si no existe una acción de click se usará la acción para presión prolongada. Esto permite cambiar estados haciendo click y lanzar acciones con presionando prolongadamente.</string>
     <string name="custom_tile_dialog_title">Acción de azulejo personalizada</string>
+    <string name="custom_tile_dialog_extra_text">Azulejo avanzado detectado. Su azulejo ahora cambiará de estado cuando se ajusta desde cualquier lugar. Opcionalmente puede introducir un icono y una etiqueta para cambiar el toggle si aun así no reconoce en el estado que está.</string>
     <string name="custom_toggle_extras">Custom tile extras</string>
     <string name="custom_toggle_collapse_check">Collapse notification shade</string>
     <string name="custom_toggle_match_state_check">Click action matches icon</string>
@@ -942,5 +944,18 @@
     <string name="theme_auto_mode_lightsensor">En cambio de condición de luz </string>
     <string name="theme_auto_mode_twilight">En el día</string>
     <string name="theme_auto_switch_mode_error">Cambio de la condición de luz modo automático está activado. Conmutación manual no es posible.</string>
+    
+    <!-- Show 4G icon instead of LTE. User defined settings -->
+    <string name="show_lte_or_fourgee_title">Mostrar red 4G</string>
+    <string name="show_lte_or_fourgee_summary">Esto le permitirá mostrar 4G en lugar de LTE</string>
+
+    <!-- Sound themes -->
+    <string name="sound_packages_title">Paquetes de sonido</string>
+    <string name="install_sound_pack_title">Instale el paquete de sonido</string>
+    <string name="install_sound_pack_summary">Instalar nuevos paquetes de sonido añadidos en la carpeta "Soundpacks" de la memoria interna</string>
+    <string name="select_sound_pack_title">Seleccione el paquete de sonido</string>
+    <string name="select_sound_pack_summary">Seleccione el paquete de sonido activo</string>
+    <string name="default_sound_pack">Defecto (Sistema)</string>
+    <string name="error_pack_install">Error al instalar el paquete de sonido</string>
  
 </resources>
