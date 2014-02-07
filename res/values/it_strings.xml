@@ -9,15 +9,15 @@
 
     <!-- General strings -->
     <string name="reset">Reset</string>
-    <string name="enabled">Enabled</string>
-    <string name="attention">Attention</string>
-    <string name="disabled">Disabled</string>
+    <string name="enabled">Abilitato</string>
+    <string name="attention">Attenzione</string>
+    <string name="disabled">Disabilitato</string>
     <string name="default_string">Default</string>
-    <string name="additional_options_title">Additional options</string>
-    <string name="reset_message">Reset all entries to default?</string>
-    <string name="style_title">Style</string>
-    <string name="add">Add</string>
-    <string name="title_general">General</string>
+    <string name="additional_options_title">Opzioni addizionali</string>
+    <string name="reset_message">Resettare tutte le modifiche alle impostazioni iniziali?</string>
+    <string name="style_title">Stile</string>
+    <string name="add">Aggiungi</string>
+    <string name="title_general">Generale</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek spare parts</string>
