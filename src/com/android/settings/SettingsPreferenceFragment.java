@@ -54,6 +54,9 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
     // Need to use AOKP Custom system animation
     protected ContentResolver mContentRes; 
 
+    //Needed for Lockscreen Notifications
+    protected Context mContext;
+
     // Cache the content resolver for async callbacks
     private ContentResolver mContentResolver;
 
