@@ -573,4 +573,8 @@
     <string name="lockscreen_widget_frame_title">Disable widget frames</string>
     <string name="lockscreen_widget_frame_summary">Disable widget background frames</string>
 
+    <!-- Volume pane timeout -->
+    <string name="volume_panel_timeout_title">Volume panel Timeout</string>
+    <string name="volume_panel_timeout_summary">Time until the volume panel to hide</string>
+
 </resources>

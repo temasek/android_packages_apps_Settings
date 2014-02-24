@@ -46,6 +46,16 @@
             android:entries="@array/volume_overlay_entries"
             android:entryValues="@array/volume_overlay_values" />
 
+    <com.android.settings.crdroid.SeekBarPreferenceCHOS
+            android:key="volume_panel_timeout"
+            android:title="@string/volume_panel_timeout_title"
+            android:summary="@string/volume_panel_timeout_summary"
+            android:max="10"
+            settings:min="1"
+            settings:unitsLeft=""
+            settings:unitsRight="sec"
+            android:persistent="false" />
+
     <PreferenceCategory
             android:key="category_automation_effects"
             android:title="@string/automation_effects_title"/>

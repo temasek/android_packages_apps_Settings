@@ -56,6 +56,8 @@ import java.util.Date;
 import java.util.Calendar;
 import java.util.List;
 
+import com.android.settings.crdroid.SeekBarPreferenceCHOS;
+
 public class SoundSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SoundSettings";
@@ -93,6 +95,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_POWER_NOTIFICATIONS = "power_notifications";
     private static final String KEY_POWER_NOTIFICATIONS_VIBRATE = "power_notifications_vibrate";
     private static final String KEY_POWER_NOTIFICATIONS_RINGTONE = "power_notifications_ringtone";
+    private static final String KEY_VOLUME_PANEL_TIMEOUT = "volume_panel_timeout";
 
     private static final String RING_MODE_NORMAL = "normal";
     private static final String RING_MODE_VIBRATE = "vibrate";
@@ -132,6 +135,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mPowerSounds;
     private CheckBoxPreference mPowerSoundsVibrate;
     private Preference mPowerSoundsRingtone;
+
+    private SeekBarPreferenceCHOS mVolumePanelTimeout;
 
     private Handler mHandler = new Handler() {
         public void handleMessage(Message msg) {
@@ -181,6 +186,13 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                 VolumePanel.VOLUME_OVERLAY_EXPANDABLE);
         mVolumeOverlay.setValue(Integer.toString(volumeOverlay));
         mVolumeOverlay.setSummary(mVolumeOverlay.getEntry());
+
+        // Volume panel timeout
+        mVolumePanelTimeout = (SeekBarPreferenceCHOS) findPreference(KEY_VOLUME_PANEL_TIMEOUT);
+        int statusVolumePanelTimeout = Settings.System.getInt(resolver,
+                Settings.System.VOLUME_PANEL_TIMEOUT, 3000);
+        mVolumePanelTimeout.setValue(statusVolumePanelTimeout / 1000);
+        mVolumePanelTimeout.setOnPreferenceChangeListener(this);
 
         mRingMode = (ListPreference) findPreference(KEY_RING_MODE);
         if (!getResources().getBoolean(R.bool.has_silent_mode)) {
@@ -479,6 +491,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.MODE_VOLUME_OVERLAY, value);
             mVolumeOverlay.setSummary(mVolumeOverlay.getEntries()[index]);
+        } else if (preference == mVolumePanelTimeout) {
+            int volumePanelTimeout = (Integer) objValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.VOLUME_PANEL_TIMEOUT, volumePanelTimeout * 1000);
         }
 
         return true;
