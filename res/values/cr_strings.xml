@@ -1083,4 +1083,8 @@
     <string name="wakelock_blocker_warning_title">Proceed with Caution</string>
     <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss.</string>
 
+    <!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper">Custom wallpaper</string>
+    <string name="select_wallpaper">Select wallpaper</string>
+
 </resources>

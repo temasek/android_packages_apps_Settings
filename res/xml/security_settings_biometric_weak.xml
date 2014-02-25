@@ -109,6 +109,14 @@
             android:max="25"
             android:defaultValue="12" />
 
+        <CheckBoxPreference
+            android:key="lockscreen_wallpaper"
+            android:title="@string/lockscreen_wallpaper" />
+
+        <Preference
+            android:key="select_lockscreen_wallpaper"
+            android:title="@string/select_wallpaper" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
