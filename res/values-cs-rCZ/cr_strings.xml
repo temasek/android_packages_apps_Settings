@@ -2,10 +2,10 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- About phone screen, temasek version -->
+   <!-- About phone screen, temasek version -->
     <string name="temasek_version_title">Temasek - Neoficiální verze</string>
     <!-- Do NOT Translate this -->
-    <string name="temasek_version_default">V45</string>
+    <string name="temasek_version_default">V50</string>
 
     <!-- General strings -->
     <string name="reset">Resetovat</string>
@@ -28,8 +28,8 @@
     <!-- Color Picker -->
     <string name="dialog_color_picker">Zvolit barvu</string>
     <string name="press_color_to_apply">Výběrem barvy tuto aplikujete</string>
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
+    <string name="arrow_right">›</string>
+    <string name="arrow_down">ˇ</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
     <string name="set">Nastavit</string>
@@ -56,7 +56,7 @@
     <string name="center_clock">Hodiny uprostřed</string>
     <string name="dont_show">Nezobrazovat</string>
     <string name="clock_date_display">Datum</string>
-    <string name="clock_date_display_summary">Zobrazit uživatelské datum před časem</string>
+    <string name="clock_date_display_summary">Zobrazit vlastní datum před časem</string>
     <string name="clock_date_style">Styl data</string>
     <string name="clock_date_format">Formát data</string>
     <string name="clock_date_string_edittext_title">Musí být v DateFormat např. MM/dd/yy</string>
@@ -72,7 +72,7 @@
     <string name="clock_date_style_uppercase">Velká písmena</string>
     <string name="clock_date_format_custom">Uživatelský Java formát</string>
     <string name="status_bar_clock_style_reset_message">Resetovat barvu času?</string>
-    <string name="clock_font_style_title">Font</string>
+    <string name="clock_font_style_title">Písmo</string>
     <string name="clock_font_bold">Tučné</string>
     <string name="clock_font_condensed">Stlačené</string>
     <string name="clock_font_light">Tenké</string>
@@ -92,8 +92,8 @@
     <string name="low_battery_warning_policy_disabled">Zakázáno</string> 
 
     <!-- Screen-On Notification Light -->
-    <string name="screen_on_notification_led_title">Screen-On Notification Light</string>
-    <string name="screen_on_notification_led_summary">Enable Notification Light even when screen is on</string> 
+    <string name="screen_on_notification_led_title">Notifikační dioda</string>
+    <string name="screen_on_notification_led_summary">Povolí notifikační diodu i když je displej zapnutý</string> 
 
     <!-- Alternate default app picker -->
     <string name="general_settings_title">Hlavní nastavení</string>
@@ -145,7 +145,7 @@
 
     <!-- Button shorcut actions -->
     <string name="shortcut_action_navbar">Navigační panel</string>
-    <string name="shortcut_action_pie">Pie controls</string>
+    <string name="shortcut_action_pie">Pie - ovládání</string>
     <string name="shortcut_action_airplane">Režim letadlo</string>
     <string name="shortcut_action_expanded_desktop">Rozšířená plocha</string>
     <string name="shortcut_action_power_off">Vypnout</string>
@@ -159,10 +159,10 @@
     <string name="shortcut_action_assist">Hledat</string>
     <string name="shortcut_action_search">Hledat v aplikacích</string>
     <string name="shortcut_action_voice_search">Hlasové vyhledávání</string>
-    <string name="shortcut_action_screenshot">Screenshot</string>
+    <string name="shortcut_action_screenshot">Snímek obrazovky</string>
     <string name="shortcut_action_menu">Menu</string>
     <string name="shortcut_action_ime">Otevřít IME přepínač</string>
-    <string name="shortcut_action_kill">Kill app</string>
+    <string name="shortcut_action_kill">Ukončit aplikaci</string>
     <string name="shortcut_action_power">Vypnout displej</string>
     <string name="shortcut_action_theme_switch">Přepínač témat</string>
     <string name="shortcut_action_notifications">Oznámení</string>
@@ -182,7 +182,7 @@
     <string name="shortcut_action_warning">Varování</string>
     <string name="shortcut_action_warning_message">Není možné smazat tuto položku</string>
     <string name="shortcut_action_disable_message">Zakázáno\nPřidáním položky povolíte tuto funkci</string>
-    <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app.</string>
+    <string name="shortcut_image_not_valid">Zvolená aplikace neobsahuje ikonu. Zvolte jinou aplikaci.</string>
     <string name="shortcut_duplicate_entry">Vybraná akce nemůže být přidána dvakrát</string>
 
     <string name="shortcut_action_help_shortcut">zástupce</string>
@@ -190,7 +190,7 @@
     <string name="shortcut_action_help_icon">, while selecting the icon will bring up customization options</string>
     <string name="shortcut_action_help_main">To add a %1$s, select the Add icon.  Once a %1$s is added, selecting the row will change the target%2$s\n\nTo remove a %1$s, swipe the row horizontally left or right.  Re-order a %1$s in the list by vertically dragging the anchor on the left.\n\nTo clear or reset to defaults, select the Reset icon.</string>
     <string name="shortcut_action_help_delete_last_entry">Removing every %1$s in the list will disable the feature entirely.</string>
-    <string name="shortcut_action_help">Help</string>
+    <string name="shortcut_action_help"Nápověda</string>
     <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Removing every %1$s in the list will disable the second pie layer entirely.</string>
 
     <string name="shortcuts_icon_picker_alarm">Budík</string>
@@ -236,9 +236,9 @@
     <string name="shortcuts_icon_picker_pocket">Pocket</string>
     <string name="shortcuts_icon_picker_quicksettings">Rychlá nastavení</string>
     <string name="shortcuts_icon_picker_rss">RSS</string>
-    <string name="shortcuts_icon_picker_sdcard">SDCard</string>
+    <string name="shortcuts_icon_picker_sdcard">SD Karta</string>
     <string name="shortcuts_icon_picker_search">Hledat</string>
-    <string name="shortcuts_icon_picker_sms">Messaging</string>
+    <string name="shortcuts_icon_picker_sms">Zprávy</string>
     <string name="shortcuts_icon_picker_tasks">Úkoly</string>
     <string name="shortcuts_icon_picker_terminal">Terminal</string>
     <string name="shortcuts_icon_picker_transit">Transit</string>
@@ -260,7 +260,7 @@
     <string name="shortcuts_text_color_title">Barva textu</string>
     <string name="shortcuts_color_title">Barva ikony</string>
     <string name="shortcuts_color_mode_title">Režim ikony</string>
-    <string name="shortcuts_color_mode_summary">Change the shorcuts icon color mode</string>
+    <string name="shortcuts_color_mode_summary">Změní barevný režim ikon</string>
 
     <!-- Notification drawer settings  -->
     <string name="notification_drawer_qs_title">Oznámení &amp; QS drawer</string>
@@ -366,16 +366,16 @@
     <string name="navbar_can_move_summary">Zobrazit Navigační panel v režimu na šířku dole</string>
     <string name="navbar_style_dimen_title">Velikost</string>
     <string name="navbar_button_title">Tlačítka</string>
-    <string name="navbar_targets_title">Ring targets</string>
+    <string name="navbar_targets_title">Ring - zástupci</string>
     <string name="navbar_cat">Navigační panel</string>
     <string name="navbar_dimensions_reset_message">Resetovat nastavení velikosti na původní hodnoty?</string>
-    <string name="navigation_bar_warning_no_navigation_present">No other navigation is currently enabled. Turning off the navigation bar can result in an unusable device. Do you want to enable pie controls instead?</string>
+    <string name="navigation_bar_warning_no_navigation_present">Žádná další navigace není aktuálně zvolena. Vypnutím navigačního panelu může dojít k nepoužitelnosti zařízení! Chcete místo toho povolit Pie control?</string>
 
     <!-- Navigation bar button style -->
     <string name="nav_bar_button_style_summary">Změnit barvu tlačítek navigačního panelu</string>
     <string name="button_transparency_title">Průhlednost tlačítek</string>
-    <string name="nav_button_color_mode_summary">Change the navigation bar button color mode</string>
-    <string name="navigation_bar_glow_tint_title">Glow color</string>
+    <string name="nav_button_color_mode_summary">Změní barevný režim navigačního panelu</string>
+    <string name="navigation_bar_glow_tint_title">Glow barva</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Hardwarová tlačítka</string>
@@ -390,13 +390,14 @@
     <string name="media_scanner_on_boot_disabled">Neskenovat media</string>
 
     <!-- Power menu -->
-    <string name="power_menu_style_summary">Change global menu colors</string>
+    <string name="power_menu_style_summary">Změní barvy hlavního menu</string>
     <string name="power_menu_screenrecord_title">Nahrávání obrazovky</string>
 
     <!-- Recents Ram Bar -->
     <string name="ram_bar">Panel využití RAM</string>
     <string name="ram_bar_note_title">Žádný</string>
     <string name="ram_bar_note_summary">Tento panel zobrazuje aktuální využití paměti RAM. Vezměte na vědomí, že aplikace v tzv. cache pomáhá vašemu zařízení otevírat aplikace rychleji. Pro více informací, jak Android spravuje paměť RAM, naleznete pod volbou Nápověda.</string>
+
     <string name="ram_bar_mode_title">Režim panelu využití RAM</string>
     <string name="ram_bar_mode_dialog_title">Zobrazit panel využití RAM</string>
     <string name="ram_bar_none">Žádný</string>
@@ -420,12 +421,12 @@
 
     <!-- Lock Screen ASS -->
     <string name="lock_screen_title">Zámek displeje</string>
-    <string name="slide_target_title">Slider targets and shortcuts</string>
+    <string name="slide_target_title">Slider - zástupci</string>
     <string name="lock_screen_summary">View or change the slider targets and shortcuts</string>
 
     <!-- Lock Screen Targets -->
     <string name="lockscreen_target_info">Přetáhněte posuvník do místa, kde chcete přiřadit aplikaci</string>
-    <string name="lockscreen_target_title">Slider targets</string>
+    <string name="lockscreen_target_title">Zástupci posuvníku</string>
     <string name="lockscreen_target_summary">View or change custom lock screen targets</string>
     <string name="lockscreen_target_color_title">Target icon color</string>
     <string name="lockscreen_eight_targets_title">Eight slider targets</string>
@@ -474,8 +475,8 @@
     <!-- Halo -->
     <string name="halo_settings_title">Halo</string>
     <string name="halo_behavior_title">Chování Halo</string>
-    <string name="halo_hide_title">Hide Halo after activity</string>
-    <string name="halo_hide_summary">Halo will appear for incoming tasks and scroll out of sight after a while</string>
+    <string name="halo_hide_title">Skrýt Halo po aktivitě</string>
+    <string name="halo_hide_summary">Halo se zobrazí pro příchozí úlohy a po chvíli zmizí</string>
     <string name="halo_reversed_title">Reverse Halo</string>
     <string name="halo_reversed_summary">Applies for task switching and moving gestures</string>
     <string name="halo_state_title">Halo policy</string>
@@ -545,12 +546,12 @@
     <string name="listview_bounce_interpolator">bounce_interpolator</string>
 
     <!-- Lockscreen style settings -->
-    <string name="lockscreen_style_reset_message">Reset all lockscreen colors?</string>
-    <string name="lockscreen_icon_title">Lock handle icon</string>
-    <string name="lockscreen_lock_icon_custom">Custom icon</string>
-    <string name="lockscreen_lock_icon_temasek">Temasek icon</string>
-    <string name="lockscreen_lock_icon_default">Default icon</string>
-    <string name="lockscreen_colorize_handle_title">Colorize custom handle</string>
+    <string name="lockscreen_style_reset_message">Obnovit všechny barvy?</string>
+    <string name="lockscreen_icon_title">Ikona zámku</string>
+    <string name="lockscreen_lock_icon_custom">Vlastní ikona</string>
+    <string name="lockscreen_lock_icon_temasek">Temasek ikona</string>
+    <string name="lockscreen_lock_icon_default">Základní ikona</string>
+    <string name="lockscreen_colorize_handle_title">Obarvit vlastní zámek</string>
     <string name="lockscreen_colorize_handle_summary">Lock color will be set to the lock handle</string>
     <string name="lockscreen_style_title">Theme style</string>
     <string name="lockscreen_frame_color_title">Frame color</string>
@@ -577,8 +578,12 @@
     <string name="ad_enable_title">Povolit</string>
     <string name="ad_enable_summary_on">Aktivní displej povolen</string>
     <string name="ad_enable_summary_off">Aktivní displej zakázán</string>
+	<string name="ad_bypass_title">Obejít aktivní displej</string>
+	<string name="ad_bypass_summary">Neexistují-li žádné oznámení, kapesní režim uzamkne zařízení</string>
     <string name="ad_text_title">Text oznámení</string>
     <string name="ad_text_summary">Zobrazí text oznámení okolo kruhu.</string>
+	<string name="ad_content_title">Použít vlastní zobrazení oznámení</string>
+    <string name="ad_content_summary">Použije styl Aktivního displeje k zobrazení oznámení přes stylem systému</string>
     <string name="ad_all_notifications_title">Všechna oznámení</string>
     <string name="ad_all_notifications_summary">Zobrazí všechna oznámení bez výjimky.</string>
     <string name="ad_hide_low_priority_title">Skrýt s nízkou prioritou</string>
@@ -587,19 +592,30 @@
     <string name="ad_pocket_mode_summary">Zobrazí oznámení aktivního displeje když vyndáte zařízení z kapsy.</string>
     <string name="ad_redisplay_title">Znovu zobrazit oznámení</string>
     <string name="ad_timeout_title">Timeout displeje</string>
-    <string name="ad_threshold_title">Práh blízkosti</string>
+    <string name="ad_threshold_title">Doba aktivity senzoru přiblížení</string>
+	<string name="ad_threshold_summary">Doba, po kterou musí být senzor přiblížení aktivní, aby se zobrazil Aktivní displej</string>
+	<string name="ad_brightness_title">Jas oznámení</string>
+	<string name="ad_customizations_title">Úpravy</string>
+	<string name="ad_excluded_apps_title">Vyjímky</string>
+	<string name="ad_excluded_apps_summary">Alikace, jejichž oznámení se nezobrazí na aktivním displeji.</string>
     <string name="ad_sunlight_mode_title">Režim Slunce</string>
     <string name="ad_sunlight_mode_summary">Invertuje barvy v místech s vysokým jasem, např. na přímém slunci.</string>
-    <string name="ad_turnoff_mode_title">Vypnout displej</string>
-    <string name="ad_turnoff_mode_summary">Vypne displej, pokud zařízení vrátíte zpět do kapsy a přitom byl zapnut Aktivní displej.</string>
-    <string name="ad_customizations_title">Úpravy</string>
-    <string name="ad_excluded_apps_title">Vyjímky</string>
-    <string name="ad_excluded_apps_summary">Alikace, jejichž oznámení se nezobrazí na aktivním displeji.</string>
-    <string name="ad_brightness_title">Jas oznámení</string>
+    <string name="ad_turnoff_mode_title">Automaticky vypnout displej</string>
+
+    <string name="ad_privacy_apps_title">Soukromý režim</string>
+    <string name="ad_privacy_apps_summary">Pro tyto aplikace nebudou zobrazeny žádné podrobnosti v oznámení</string>
+    
+    
+
+ 
+ 
     <string name="ad_brightness_summary">Úroveň jasu pro zobrazovaná oznámení\n pokud není povolen automatický jas.</string>
+
+
     <string name="ad_show_date_title">Zobrazit datum</string>
     <string name="ad_show_date_summary">Zobrazí datum nad časem</string>
     <string name="ad_show_ampm_title">Zobrazit AM/PM</string>
+	<string name="ad_turnoff_mode_summary">Vypne displej, pokud zařízení vrátíte zpět do kapsy a přitom byl zapnut Aktivní displej.</string>
     <string name="ad_show_ampm_summary">Zobrazí AM/PM pokud je použit 12 hodinový formát</string>
     <string name="ad_redisplay_never">Nikdy</string>
     <string name="ad_redisplay_1m">1 minuta</string>
@@ -626,15 +642,15 @@
     <string name="ad_pocket_mode_always">Vždy</string>
 
     <!-- Lockscreen pin shuffle -->
-    <string name="lock_numpad_random_title">Change the order of PIN pad numbers</string>
-    <string name="lock_numpad_random_dialog_title">PIN pad random order</string>
-    <string name="lock_numpad_random_off">Disabled</string>
-    <string name="lock_numpad_random_always">Always</string>
-    <string name="lock_numpad_random_on_request">On request</string>
+    <string name="lock_numpad_random_title">Změna pořadí čísel PIN klávesnice</string>
+    <string name="lock_numpad_random_dialog_title">Náhodné pořadí položek PIN klávesnice</string>
+    <string name="lock_numpad_random_off">Zakázáno</string>
+    <string name="lock_numpad_random_always">Vždy</string>
+    <string name="lock_numpad_random_on_request">Na vyžádání</string>
 
     <!-- Lock before unlock -->
-    <string name="lock_before_unlock_title">Show slider before secure unlock</string>
-    <string name="lock_before_unlock_summary">Show slider lockscreen before secure unlock mechanism</string>
+    <string name="lock_before_unlock_title">Odemčení posuvníkem před zabezpečením</string>
+    <string name="lock_before_unlock_summary">Zobrazí odemykací obrazovku s posuvníkem před obrazovkou s bezpečnostním mechanismem</string>
 
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_pattern_size_3">3x3</string>
@@ -719,12 +735,13 @@
     <string name="tiles_reset_message">Resetovat dlaždice na původní hodnoty?</string>
     <string name="disable_qs">Rychlé nastavení je zakázáno</string>
     <string name="disable_qs_message">Všechny dlaždice byly odstraněny. Rychlé nastavení je zakázáno.\n\nPřidejte alespoň 1 dlaždici.</string>
+
     <string name="help_qs_message">Pro přidání dlaždice, stisknětě tlačítko Přidat a vyberte dlaždici, kterou požadujete. Pro uspořádání dlaždic, dlouze klikněte na zvolenou dlaždici a přemístěte na nové místo. Pokud chcete dlaždici odstranit, dlouze klikněte na zvolenou dlaždici a přemístěte jí na dlaždici s ikonou odpadkovéno koše.\n\nChcete-li nastavit dynamické dlaždice, stiskněte příslušnou ikonu v pravém horním rohu obrazovky\n\nPro vypnutí rychlého nastavení, odstraňte všechny dlaždice.</string>
     <string name="custom_tile_dialog_text">Each action will add a new state to the tile. Each click changes to the next state. Long-press to add long-press actions. If no click action exists the long-action icon will be used for the tile. This allows you to change states by clicking and launch actions by long-pressing.</string>
     <string name="custom_tile_dialog_title">Vlastní dlaždice</string>
     <string name="custom_tile_dialog_extra_text">Advanced tile detected. Your tile will now change states when adjusted from anywhere. You may optionally input an icon and label for the toggle to switch to if it doesn\'t recognize the state it\'s in.</string>
     <string name="custom_toggle_extras">Custom tile extras</string>
-    <string name="custom_toggle_collapse_check">Collapse notification shade</string>
+    <string name="custom_toggle_collapse_check">Stín sbalení oznámení</string>
     <string name="custom_toggle_match_state_check">Click action matches icon</string>
     <string name="custom_tile_long_press">Dlouhý stisk:</string>
     <string name="custom_tile_null_warning">Nejdříve nastavte akci</string>
@@ -757,11 +774,11 @@
     <string name="music_tile_mode_tracktitle">Zobrazit název stopy</string>
 
     <!-- QuickSettings: Quick Pulldown -->
-    <string name="title_quick_pulldown">Quick pulldown</string>
-    <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
-    <string name="quick_pulldown_off">Off</string>
-    <string name="quick_pulldown_left">Left</string>
-    <string name="quick_pulldown_right">Right</string>
+    <string name="title_quick_pulldown">Rychlé stáhnutí lišty</string>
+    <string name="summary_quick_pulldown">%1$s okraj stavovém řádku stáhne panel rychlého nastavení</string>
+    <string name="quick_pulldown_off">Vypnuto</string>
+    <string name="quick_pulldown_left">Vlevo</string>
+    <string name="quick_pulldown_right">Vpravo</string>
 
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Indikátor aktivity sítě</string>
@@ -794,7 +811,7 @@
     <string name="lockscreen_power_menu_summary">Zobrazí Power menu, když je displej zamknutý</string>
 
     <!-- Advanced, Device specific (DeviceParts) settings  -->
-    <string name="advanced_settings_title">Advanced</string>
+    <string name="advanced_settings_title">Rozšířené</string>
 
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">Smart pulldown</string>
@@ -842,6 +859,7 @@
     <string name="keys_action_normal">Normální stisk</string>
     <string name="keys_action_long">LDlouhý stisk</string>
     <string name="keys_action_double">Dvojitý klik</string>
+
     <string name="no_home_key">Nemáte přiřazenou žádnou akci k tlačítku \"Domů\"!\n\nVaše zařízení se může stát nepoužitelnám!</string>
 
     <!-- Minimum Vibration Duration -->
@@ -849,6 +867,7 @@
 
     <!--Lockscreen See Through-->
      <string name="see_through_title">Pohled skrz</string>
+
      <string name="see_through_summary">Zobrazí obsah za zamykací obrazovkou. Vaše data mohou být viditelná!</string>
 
     <!--Lockscreen blur-->
@@ -861,32 +880,32 @@
     <string name="general">Hlavní</string>
     <string name="layout">Rozložení</string>
     <string name="privacy">Soukromý</string>
-    <string name="lockscreen_notifications">Lockscreen notifications</string>
-    <string name="lockscreen_notifications_summary">Show pending notifications on lockscreen</string>
-    <string name="pocket_mode">Pocket mode</string>
-    <string name="pocket_mode_summary">Turn screen on and show all notifications when device is pulled out of pocket. Turn screen off when device gets back into pocket.</string>
-    <string name="show_always">Show always</string>
-    <string name="show_always_summary">Always turn screen on when pulled out of pocket, even when there are no notifications pending</string>
-    <string name="hide_low_priority">Hide low priority</string>
-    <string name="hide_low_priority_summary">Hide low priority notifications such as google now weather notifications</string>
-    <string name="hide_non_clearable">Hide non clearable</string>
-    <string name="hide_non_clearable_summary">Hide all non clearable notifications</string>
-    <string name="dismiss_all">Allow dismissing all notifications</string>
-    <string name="dismiss_all_summary">Allow dismissing even non clearable notifications. Of course, they\'re just hidden from lockscreen and not from the notification panel.</string>
-    <string name="expanded_view">Expanded notification view</string>
-    <string name="expanded_view_summary">Add possibility to toggle between normal and expanded view by longpress. The expanded view sometimes shows more private information so you might want to disable it.</string>
-    <string name="force_expanded_view">Force expanded view</string>
-    <string name="force_expanded_view_summary">Show notifications expanded by default. You still will be able to toggle between expanded and normal view.</string>
-    <string name="wake_on_notification">Wake on notification</string>
-    <string name="wake_on_notification_summary">Wake device when a new notification is received</string>
-    <string name="notifications_height">Notification count</string>
-    <string name="notifications_height_summary">Number of notifications displayed at once</string>
-    <string name="offset_top">Offset to the top of the screen:</string>
-    <string name="privacy_mode">Privacy Mode</string>
-    <string name="privacy_mode_summary">Disables notifications from beeing shown and dismissed. This way, you just see the icons of your notifications.</string>
-    <string name="excluded_apps_title">Excluded applications</string>
-    <string name="excluded_apps_summary">Excluded applications will not show up as lockscreen notifications</string>
-    <string name="notification_color">Notification background color</string>
+    <string name="lockscreen_notifications">Oznámení na zamykací obrazovce</string>
+    <string name="lockscreen_notifications_summary">Zobrazí příchozí oznámení na zamykací obrazovce</string>
+    <string name="pocket_mode">Kapesní režim</string>
+    <string name="pocket_mode_summary">Zapne obrazovku a zobrazí všecna oznámení, když přístroj vytáhnete z kapsy. Vypne obrazovku, když přístroj vrátíte do kapsy.</string>
+    <string name="show_always">Vždy zobrazit</string>
+    <string name="show_always_summary">Vždy zapne obrazovku, když vytáhnete zařízení z kapsy, i když nejsou žádná příchozí oznámení</string>
+    <string name="hide_low_priority">Skrýt s nízkou prioritou</string>
+    <string name="hide_low_priority_summary">Skryje oznámení s nízkou prioritou, např. počasí od Google Now</string>
+    <string name="hide_non_clearable">Skrýt neodstranitelná</string>
+    <string name="hide_non_clearable_summary">Skryje všechna neodstranitelná oznámení</string>
+    <string name="dismiss_all">Povolit odstranit všechna oznámení</string>
+    <string name="dismiss_all_summary">Povolí odstranit oznámení i když jde o odstranitelné oznámení. Samozřejmě jsou tato oznámení skryta pouze z obrazovky uzamčení a ne z lišty upozornění.</string>
+    <string name="expanded_view">Rozbalený režim</string>
+    <string name="expanded_view_summary">Přidá možnost přepínat mezi normálním a rozbaleným pohledem na oznámení. Rozbalený pohled někdy ukazuje více informací, např. text zprávy, takže možná budete chtít tuto funkci zakázat.</string>
+    <string name="force_expanded_view">Vždy použít Rozbalený režim</string>
+    <string name="force_expanded_view_summary">Zobrazí rozbalené oznámení ve výchozím stavu. Stále ale budete moci přepínat mezi rozbaleným a normální režimem.</string>
+    <string name="wake_on_notification">Probudit při oznámení</string>
+    <string name="wake_on_notification_summary">Probudí zařízení, pokud je přijato oznámení</string>
+    <string name="notifications_height">Počítadlo oznámení</string>
+    <string name="notifications_height_summary">Počet oznámení zobrazovaných najednou</string>
+    <string name="offset_top">Posun od horního okraje obrazovky:</string>
+    <string name="privacy_mode">Soukromý režim</string>
+    <string name="privacy_mode_summary">Zakáže text oznámení. Tímto způsobem se zobrazí pouze ikony vašich oznámení.</string>
+    <string name="excluded_apps_title">Vyloučené aplikace</string>
+    <string name="excluded_apps_summary">Vyloučené aplikace nebudou zobrazovat svá oznámení na uzamčené obrazovce</string>
+    <string name="notification_color">Barva pozadí oznámení</string>
 
     <!-- Screen recorder -->
     <string name="screen_recorder_title">Záznam obrazovky</string>
@@ -943,8 +962,8 @@
     <string name="lockscreen_battery_status_summary">Zobrazit stav baterie na zamknuté obrazovce</string>
 
     <!-- Notification Drawer - Swipe to Switch full screen detection-->
-    <string name="title_full_screen_swipe">Swipe-to-Switch detection</string>
-    <string name="summary_full_screen_swipe">Use full screen detection for swipe to switch, not just the bottom bar</string>
+    <string name="title_full_screen_swipe">Swipe-to-Switch detekce</string>
+    <string name="summary_full_screen_swipe">Použít detekci na celé obrazovce</string>
 
     <!-- Themes -->
     <string name="theme_settings_title">Tmavé UI (TRDS)</string>
@@ -959,33 +978,33 @@
     <string name="show_lte_or_fourgee_summary">Toto povolí zobrazení 4G namísto LTE</string>
 
     <!-- Sound themes -->
-    <string name="audio_theme_title">Omnirom audio theme</string>
-    <string name="sound_packages_title">Sound packs</string>
-    <string name="install_sound_pack_title">Install sound pack</string>
-    <string name="install_sound_pack_summary">Install new sound packs added in SoundPacks folder on the internal storage</string>
-    <string name="select_sound_pack_title">Select sound pack</string>
-    <string name="select_sound_pack_summary">Select the active sound pack</string>
-    <string name="default_sound_pack">Default (System)</string>
-    <string name="error_pack_install">Error while installing the sound pack</string>
+    <string name="audio_theme_title">Omnirom - téma zvuku</string>
+    <string name="sound_packages_title">Zvukové balíčky</string>
+    <string name="install_sound_pack_title">Instalovat zvukové balíčky</string>
+    <string name="install_sound_pack_summary">Instalace nového zvukového balíčku vložením do složky SoundPacks v Interním úložišti</string>
+    <string name="select_sound_pack_title">Zvolit zvukový balíček</string>
+    <string name="select_sound_pack_summary">Vyberte aktivní zvukový balíček</string>
+    <string name="default_sound_pack">Základní (System)</string>
+    <string name="error_pack_install">Chyba při instalaci zvukového balíčku</string>
 
     <!-- Telo Radio -->
-    <string name="telo_radio_settings_title">Connection manager</string>
-    <string name="telo_radio_options_category">Screen on configuration</string>
+    <string name="telo_radio_settings_title">Správce připojení</string>
+    <string name="telo_radio_options_category">Nastavení při zapnuté obrazovce</string>
     <string name="telo_radio_lte_title">LTE</string>
-    <string name="telo_radio_lte_summary">Select this option if you use LTE (4G).</string>
-    <string name="telo_radio_2g_wifi_title">2G on Wi-Fi</string>
-    <string name="telo_radio_2g_wifi_title_summary">When Wi-Fi is connected network mode is switched to 2G.</string>
-    <string name="telo_radio_2g_screenoff_category">Screen off configuration</string>
-    <string name="telo_radio_2g_screenoff_title">2G with screen off</string>
-    <string name="telo_radio_2g_screenoff_summary">The device will switch to 2G when the screen is off.</string>
-    <string name="telo_radio_2g_screenoff_timeout_title">Time to switch to 2G</string>
-    <string name="telo_radio_2g_3min">3 minutes</string>
-    <string name="telo_radio_2g_5min">5 minutes</string>
-    <string name="telo_radio_2g_10min">10 minutes</string>
-    <string name="telo_radio_2g_15min">15 minutes</string>
-    <string name="telo_radio_2g_20min">20 minutes</string>
-    <string name="telo_radio_go_3g_unlock_title">3G Unlock</string>
-    <string name="telo_radio_go_3g_unlock_summary">When device is unlocked network mode switches to 3G again.</string>
+    <string name="telo_radio_lte_summary">Tuto možnost vyberte, pokud používáte LTE (4G).</string>
+    <string name="telo_radio_2g_wifi_title">2G a Wi-Fi</string>
+    <string name="telo_radio_2g_wifi_title_summary">Pokud je Wi-Fi připojena, režim sítě se přepne na 2G.</string>
+    <string name="telo_radio_2g_screenoff_category">Nastavení při vynuté obrazovce</string>
+    <string name="telo_radio_2g_screenoff_title">2G při vypnuté obrazovce</string>
+    <string name="telo_radio_2g_screenoff_summary">Přístroj se přepne do 2G, když je obrazovka vypnutá.</string>
+    <string name="telo_radio_2g_screenoff_timeout_title">Čas k přepnutí na 2G</string>
+    <string name="telo_radio_2g_3min">3 minuty</string>
+    <string name="telo_radio_2g_5min">5 minut</string>
+    <string name="telo_radio_2g_10min">10 minut</string>
+    <string name="telo_radio_2g_15min">15 minut</string>
+    <string name="telo_radio_2g_20min">20 minut</string>
+    <string name="telo_radio_go_3g_unlock_title">3G po odemčení</string>
+    <string name="telo_radio_go_3g_unlock_summary">Při odemknutí zařízení se síť přepne na 3G.</string>
 
     <!-- Captive portal toggle -->
     <string name="captive_toggle">Captive portal detection</string>
@@ -995,51 +1014,93 @@
 
     <!-- Pie Control -->
     <string name="pie_control_title">SlimPIE</string>
-    <string name="pie_control_summary">Enable pie controls</string>
-    <string name="pie_control_size">Navigation size</string>
-    <string name="pie_control_trigger_positions">Trigger options</string>
-    <string name="pie_control_trigger_left">Trigger left screen border</string>
-    <string name="pie_control_trigger_bottom">Trigger bottom screen border</string>
-    <string name="pie_control_trigger_right">Trigger right screen border</string>
-    <string name="pie_control_trigger_top">Trigger top screen border</string>
-    <string name="pie_control_trigger_top_summary">Top pie does not show status and clock information</string>
-    <string name="pie_button_style">Buttons style</string>
-    <string name="pie_button_color_title">Button color</string>
-    <string name="pie_button_alpha_title">Button transparency</string>
-    <string name="pie_button_outline_color_title">Button outline color</string>
-    <string name="pie_button_pressed_color_title">Button pressed color</string>
-    <string name="pie_button_long_pressed_color_title">Button long pressed color</string>
-    <string name="pie_button_pressed_alpha_title">Button pressed transparency</string>
-    <string name="pie_icon_style">Button icon style</string>
-    <string name="pie_icon_color_title">Button icon color</string>
-    <string name="pie_icon_color_mode_title">Button icon color mode</string>
-    <string name="pie_icon_color_mode_dialog_title">Colorize</string>
-    <string name="pie_icon_color_mode_summary">Change the button icon color mode</string>
-    <string name="pie_trigger_note_title">Note</string>
-    <string name="pie_trigger_note_summary">To avoid conflicts with status bar or navigation bar, the triggers on these edges are automatically turned off if one or both are available</string>
-    <string name="pie_background_color_title">Background color</string>
-    <string name="pie_snap_color_title">Snap point color</string>
-    <string name="pie_text_color_title">Text color</string>
-    <string name="pie_background_alpha_title">Background transparency</string>
-    <string name="pie_mirror_right_title">Mirror right pie</string>
-    <string name="pie_mirror_right_summary">Mirror right pie on the horizontal axis</string>
-    <string name="pie_style">Style and dimension</string>
-    <string name="pie_style_title">Style</string>
-    <string name="pie_dimens_title">Dimension</string>
-    <string name="pie_show_snap_title">Show snap points</string>
-    <string name="pie_show_snap_summary">Shows snap points to change the trigger edge dynamically</string>
-    <string name="pie_show_text_title">Show status and clock</string>
-    <string name="pie_show_text_summary">Shows phone status, time and date information</string>
-    <string name="pie_show_background_title">Show background</string>
-    <string name="pie_show_background_summary">Enable pie background screen</string>
-    <string name="pie_button">Buttons</string>
-    <string name="pie_button_second_layer">Buttons second layer</string>
-    <string name="pie_button_second_layer_summary">Change second layer buttons</string>
-    <string name="pie_button_style_summary">Change pie button style</string>
-    <string name="pie_style_reset_message">Reset style entries to default?</string>
-    <string name="pie_warning_no_navigation_present">No other navigation is currently enabled. Turning off pie controls can result in an unusable device. Do you want to enable navigation bar instead?</string>
-    <string name="pie_trigger_warning">Minimum one of the main triggers (bottom, left or right) needs to be enabled.</string>
-    <string name="pie_disable_ime_triggers_title">Reduce trigger size on keyboard</string>
-    <string name="pie_disable_ime_triggers_summary">Reduces left and right trigger size if keyboard is active</string>
+    <string name="pie_control_summary">Povolit pie ovládání</string>
+    <string name="pie_control_size">Velikost navigace</string>
+    <string name="pie_control_trigger_positions">Možnosti spouštění</string>
+    <string name="pie_control_trigger_left">Spouštět na levém okraji obrazovky</string>
+    <string name="pie_control_trigger_bottom">Spouštět na spodním okraji obrazovky</string>
+    <string name="pie_control_trigger_right">Spouštět na pravém okraji obrazovky</string>
+    <string name="pie_control_trigger_top">Spouštět na horním okraji obrazovky</string>
+    <string name="pie_control_trigger_top_summary">Pie u vrchního okraje nezobrazuje stav a hodiny</string>
+    <string name="pie_button_style">Styl tlačítek</string>
+    <string name="pie_button_color_title">Barva tlačítka</string>
+    <string name="pie_button_alpha_title">Průhlednost tlačítka</string>
+    <string name="pie_button_outline_color_title">Barva ohraničení tlačítka</string>
+    <string name="pie_button_pressed_color_title">Barva stisknutého tlačítka</string>
+    <string name="pie_button_long_pressed_color_title">Barva dlouhého stisku tlačítka</string>
+    <string name="pie_button_pressed_alpha_title">Průhlednost stisknutého tlačítka</string>
+    <string name="pie_icon_style">Styl ikony tlačítka</string>
+    <string name="pie_icon_color_title">Barva ikony tlačítka</string>
+    <string name="pie_icon_color_mode_title">Barevný režim ikony tlačítka</string>
+    <string name="pie_icon_color_mode_dialog_title">Obarvit</string>
+    <string name="pie_icon_color_mode_summary">Změní barevný režim ikony tlačítka</string>
+    <string name="pie_trigger_note_title">Poznámka</string>
+    <string name="pie_trigger_note_summary">K zabráněním konfliktů se stavovým řádkem nebo navigační lištou, spouštění na těchto hranách je automaticky vypnuto, pokud jeden nebo oba jsou prvky k povoleny</string>
+    <string name="pie_background_color_title">Barva pozadí</string>
+    <string name="pie_snap_color_title">Barva úchopového bodu</string>
+    <string name="pie_text_color_title">Barva textu</string>
+    <string name="pie_background_alpha_title">Průhlednost pozadí</string>
+    <string name="pie_mirror_right_title">Zrcadlit pravý pie</string>
+    <string name="pie_mirror_right_summary">Zrcadlí pravý pie v horizontální ose</string>
+    <string name="pie_style">Styl a rozměr</string>
+    <string name="pie_style_title">Styl</string>
+    <string name="pie_dimens_title">Rozměr</string>
+    <string name="pie_show_snap_title">Zobrazit úchopové body</string>
+    <string name="pie_show_snap_summary">Zobrazí úchopové body ke změně hrany spouštění</string>
+    <string name="pie_show_text_title">Zobrazit stav a hodiny</string>
+    <string name="pie_show_text_summary">Zobrazit stav telefonu, čas a datum</string>
+    <string name="pie_show_background_title">Zobrazit pozadí</string>
+    <string name="pie_show_background_summary">Povolit pozadí pie</string>
+    <string name="pie_button">Tlačítka</string>
+    <string name="pie_button_second_layer">Tlačítka druhé vrstvy</string>
+    <string name="pie_button_second_layer_summary">Změna tlačítek druhé vrstva</string>
+    <string name="pie_button_style_summary">Změna stylu tlačítek</string>
+    <string name="pie_style_reset_message">Obnovit původní nastavení?</string>
+    <string name="pie_warning_no_navigation_present">Žádný jiný navigační prvek není v současné době povolen. Vypnutí Pie ovládání může mít za následek nepoužitelnost zařízení. Chcete místo toho zapnout navigační panel?</string>
+    <string name="pie_trigger_warning">Minimálně jeden z hlavních spouštěčů (dole, vlevo nebo vpravo), musí být povolen.</string>
+    <string name="pie_disable_ime_triggers_title">Změnšit velikost při zapnuté klávesnici</string>
+    <string name="pie_disable_ime_triggers_summary">Změní velikost spouštěče Pie, pokud je aktivní klávesnice</string>
+
+<!-- Volume Steps -->
+    <string name="volume_steps_title">Úrovně hlasitosti</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <string name="volume_steps_alarm_title">Budík</string>
+    <string name="volume_steps_dtmf_title">DTMF</string>
+    <string name="volume_steps_music_title">Hudba</string>
+    <string name="volume_steps_notification_title">Oznámení</string>
+    <string name="volume_steps_ring_title">Vyzvánění</string>
+    <string name="volume_steps_system_title">Systém</string>
+    <string name="volume_steps_voice_call_title">Hovor</string>
+
+    <!-- Notification Reminders -->
+    <string name="noti_reminder_category">Upozornění na oznámení</string>
+    <string name="noti_reminder_enable_title">Povolit upozornění na oznámení</string>
+    <string name="noti_reminder_sound_title">Zvuk upozornění</string>
+    <string name="noti_reminder_sound_looping">Dokud není přečtené</string>
+    <string name="noti_reminder_ringtone">Zvuk upozornění</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker">Blokování probouzení</string>
+    <string name="wakelock_blocker_title">Povolit</string>
+    <string name="wakelock_blocker_summary">Aktivovat blokování pro označené aplikace</string>
+    <string name="wakelock_blocker_save">Uložit</string>
+    <string name="wakelock_list_header">Dostupné aplikace</string>
+    <string name="wakelock_blocker_reload">Znovu načíst</string>
+    <string name="wakelock_blocker_warning_title">Postupujte opatrně</string>
+    <string name="wakelock_blocker_warning">Toto blokování může způsobit nestabilitu, pády nebo ztrátu dat.</string>
+
+    <!-- Density Changer -->
+    <string name="custom_density_title">Vlastní LCD DPI</string>
+    <string name="set_custom_density_title">Nastavit vlasní DPI</string>
+    <string name="set_custom_density_set">Nastavit</string>
+    <string name="current_density">"Současné DPI: "</string>
+    <string name="new_density">"Nové DPI: "</string>
+    <string name="density_change_warning">Poznámka: Změnou DPI ukončíte všechny běžící aplikace!</string>
+    <string name="density_settings_title">Změna DPI</string>
 
 </resources>
