@@ -3,10 +3,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, Temasek version -->
-    <string name="temasek_version_title">Temasek inoffizielle CM Version</string>
+    <string name="temasek_version_title">Temaseks inoffizielle CM Version</string>
 
     <!-- temasek spare parts -->
-    <string name="temasek_settings_title">Temasek Erweiterungen</string>
+    <string name="temasek_settings_title">Temaseks Erweiterungen</string>
 
     <!-- General strings -->
     <string name="default_string">Voreinstellung</string>
