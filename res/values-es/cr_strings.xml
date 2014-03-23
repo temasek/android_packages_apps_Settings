@@ -513,7 +513,7 @@
     <!-- Gesture Anywhere -->
     <string name="gesture_anywhere_title">Gestos en cualquier lugar</string>
     <string name="gesture_anywhere_enabled_title">Gestos en cualquier lugar</string>
-    <string name="gesture_anywhere_enabled_summary">Hablitar la función gestios en cualquier lugar</string>
+    <string name="gesture_anywhere_enabled_summary">Hablitar la función gestos en cualquier lugar</string>
     <string name="gesture_anywhere_position_title">Ubicación</string>
     <string name="gesture_anywhere_position_left">Borde izquierdo</string>
     <string name="gesture_anywhere_position_right">Borde derecho</string>
@@ -573,7 +573,7 @@
     <string name="keyboard_rotation_toggle_title">Rotación automática de teclado</string>
     <string name="keyboard_rotation_toggle_summary">Forzar auto-rotación cuando el teclado está visible</string>
     <string name="keyboard_rotation_timeout_title">Tiempo fuera de auto-rotación</string>
-    <string name="keyboard_rotation_timeout_summary">Deshabilita el sensor de auto-rotación <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
+    <string name="keyboard_rotation_timeout_summary">Deshabilita el sensor de auto-rotación <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos despues que el teclado se oculte</string>
     <string name="keyboard_rotation_dialog">Nota: Esta característica fuerza temporalmente el encendido de la auto-rotación mientras el teclado no está. No tiene efecto cuando la auto-rotación ya está habilitada.</string>
     <string name="show_enter_key_title">Mostrar tecla Entrar</string>
     <string name="show_enter_key_summary">Forzar que el teclado muestre la tecla Entrar en lugar de la tecla de emoticones</string>
