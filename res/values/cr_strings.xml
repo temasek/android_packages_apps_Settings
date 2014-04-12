@@ -149,9 +149,6 @@
     <string name="theme_auto_mode_twilight">On daytime</string>
     <string name="theme_auto_switch_mode_error">Automatic light condition change mode is enabled. Manual switching is not possible.</string>
    
-    <!-- TRDS tile -->
-    <string name="title_tile_theme">Theme switcher</string>
-
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Clock and date</string>
     <string name="status_bar_clock_title">Clock and date style</string>
