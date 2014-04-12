@@ -18,11 +18,13 @@ package com.android.settings.crdroid.themes;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import android.database.ContentObserver;
+import android.os.Handler;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.widget.CompoundButton;
 import android.widget.Switch;
-
-import com.android.internal.util.crdroid.TRDSConstant;
-import com.android.internal.util.crdroid.TRDSActions;
+import android.widget.Toast;
 
 import com.android.settings.R;
 
@@ -30,19 +32,50 @@ public class ThemeEnabler implements CompoundButton.OnCheckedChangeListener {
     private final Context mContext;
     private Switch mSwitch;
     private boolean mStateMachineEvent;
+    private boolean mEnabled;
+
+    private boolean mAttached;
+    private SettingsObserver mSettingsObserver;
+
+    private final class SettingsObserver extends ContentObserver {
+        SettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            mContext.getContentResolver().registerContentObserver(
+                    Settings.Secure.getUriFor(
+                    Settings.Secure.UI_THEME_AUTO_MODE),
+                    false, this);
+        }
+
+        @Override
+        public void onChange(boolean selfChange) {
+            setSwitchState();
+        }
+    }
 
     public ThemeEnabler(Context context, Switch switch_) {
         mContext = context;
         mSwitch = switch_;
+        mSettingsObserver = new SettingsObserver(new Handler());
     }
 
     public void resume() {
         mSwitch.setOnCheckedChangeListener(this);
+        if (!mAttached) {
+            mAttached = true;
+            mSettingsObserver.observe();
+        }
         setSwitchState();
     }
 
     public void pause() {
         mSwitch.setOnCheckedChangeListener(null);
+        if (mAttached) {
+            mAttached = false;
+            mContext.getContentResolver().unregisterContentObserver(mSettingsObserver);
+        }
     }
 
     public void setSwitch(Switch switch_) {
@@ -54,6 +87,10 @@ public class ThemeEnabler implements CompoundButton.OnCheckedChangeListener {
     }
 
     public void setSwitchState() {
+        mEnabled = Settings.Secure.getIntForUser(mContext.getContentResolver(),
+                Settings.Secure.UI_THEME_AUTO_MODE, 0,
+                UserHandle.USER_CURRENT) != 1;
+
         boolean state = mContext.getResources().getConfiguration().uiThemeMode
                     == Configuration.UI_THEME_MODE_HOLO_DARK;
         mStateMachineEvent = true;
@@ -65,8 +102,21 @@ public class ThemeEnabler implements CompoundButton.OnCheckedChangeListener {
         if (mStateMachineEvent) {
             return;
         }
-        TRDSActions.processAction(mContext, TRDSConstant.ACTION_THEME_SWITCH, false);
-        setSwitchState();
+        if (!mEnabled) {
+            Toast.makeText(mContext, R.string.theme_auto_switch_mode_error,
+                    Toast.LENGTH_SHORT).show();
+            setSwitchState();
+            return;
+        }
+        // Handle a switch change
+        // we currently switch between holodark and hololight till either
+        // theme engine is ready or lightheme is ready. Currently due of
+        // missing light themeing hololight = system base theme
+        Settings.Secure.putIntForUser(mContext.getContentResolver(),
+                Settings.Secure.UI_THEME_MODE, isChecked
+                    ? Configuration.UI_THEME_MODE_HOLO_DARK
+                    : Configuration.UI_THEME_MODE_HOLO_LIGHT,
+                UserHandle.USER_CURRENT);
     }
 
 }
