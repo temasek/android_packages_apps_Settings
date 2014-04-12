@@ -105,13 +105,6 @@
             android:targetClass="com.tmobile.themechooser.ThemeChooser" />
     </header>
 
-    <!-- TRDS -->
-    <header
-        android:id="@+id/theme_settings"
-        android:fragment="com.android.settings.crdroid.themes.ThemeSettings"
-        android:icon="@drawable/ic_settings_trds"
-        android:title="@string/theme_settings_title" />
-
     <!-- temasek spare parts -->
     <header
         android:id="@+id/interface_settings"

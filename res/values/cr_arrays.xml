@@ -141,19 +141,6 @@
         <item>1</item>
     </string-array>
 
-    <!-- TRDS -->
-    <string-array name="theme_auto_mode_entries">
-        <item>@string/theme_auto_mode_off</item>
-        <item>@string/theme_auto_mode_lightsensor</item>
-        <item>@string/theme_auto_mode_twilight</item>
-    </string-array>
-
-    <string-array name="theme_auto_mode_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!-- Status bar clock and date -->
     <string-array name="clock_style_entries" translatable="false">
         <item>@string/right_clock</item>

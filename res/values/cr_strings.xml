@@ -140,14 +140,6 @@
     <string name="notif_wallpaper_alpha_title">Background transparency</string>
     <string name="notif_alpha_title">Notification transparency</string>
     <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
-
-    <!-- TRDS -->
-    <string name="theme_settings_title">Dark droid</string>
-    <string name="theme_auto_mode_title">Switch theme</string>
-    <string name="theme_auto_mode_off">Manual</string>
-    <string name="theme_auto_mode_lightsensor">On light condition change</string>
-    <string name="theme_auto_mode_twilight">On daytime</string>
-    <string name="theme_auto_switch_mode_error">Automatic light condition change mode is enabled. Manual switching is not possible.</string>
    
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Clock and date</string>
