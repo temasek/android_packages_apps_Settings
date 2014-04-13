@@ -151,43 +151,43 @@
     <string name="title_tile_theme">Selector de tema</string>
 
     <!-- Status bar | Clock -->
-    <string name="status_bar_clock">Clock and date</string>
-    <string name="status_bar_clock_title">Clock and date style</string>
-    <string name="clock_title_enable">Alignment</string>
-    <string name="clock_enabled">Enabled</string>
-    <string name="clock_disabled">Disabled</string>
+    <string name="status_bar_clock">Reloj y fecha</string>
+    <string name="status_bar_clock_title">Estilo de reloj y fecha</string>
+    <string name="clock_title_enable">Alineamiento</string>
+    <string name="clock_enabled">Activado</string>
+    <string name="clock_disabled">Desactivado</string>
     <string name="clock_color_title">Color</string>
-    <string name="status_bar_clock_style_reset">Reset color</string>
-    <string name="status_bar_show_clock_title">Show clock and date</string>
+    <string name="status_bar_clock_style_reset">Restaurar color</string>
+    <string name="status_bar_show_clock_title">Mostrar reloj y fecha</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="enable_clock_weekday">Day of the week</string>
-    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
-    <string name="right_clock">Right clock</string>
-    <string name="center_clock">Center clock</string>
-    <string name="dont_show">Don\'t show</string>
-    <string name="clock_date_display">Date</string>
-    <string name="clock_date_display_summary">Display custom date before the clock</string>
-    <string name="clock_date_style">Date style</string>
-    <string name="clock_date_format">Date format</string>
-    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
-    <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="am_pm_clock_normal">Normal font size</string>
-    <string name="am_pm_clock_small">Small font size</string>
-    <string name="am_pm_clock_none">Don\'t show</string>
-    <string name="clock_date_display_none">Don\'t show</string>
-    <string name="clock_date_display_small">Small font size</string>
-    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="status_bar_am_pm_info">El modo de reloj 24 horas está activado</string>
+    <string name="enable_clock_weekday">Día de la semana</string>
+    <string name="enable_clock_weekday_summary">Día de la semana abreviado antes de la hora</string>
+    <string name="right_clock">Reloj en el lado derecho</string>
+    <string name="center_clock">Reloj en el centro</string>
+    <string name="dont_show">No mostrar</string>
+    <string name="clock_date_display">Fecha</string>
+    <string name="clock_date_display_summary">Mostrar fecha personalizada antes del reloj</string>
+    <string name="clock_date_style">Estilo de fecha</string>
+    <string name="clock_date_format">Formato de fecha</string>
+    <string name="clock_date_string_edittext_title">Debe ser en formato de fecha ej. MM/dd/AA</string>
+    <string name="clock_date_string_edittext_summary">Introduzca cadena</string>
+    <string name="am_pm_clock_normal">Tamaño de la fuente normal</string>
+    <string name="am_pm_clock_small">Tamaño de la fuente pequeño</string>
+    <string name="am_pm_clock_none">No mostrar</string>
+    <string name="clock_date_display_none">No mostrar</string>
+    <string name="clock_date_display_small">Tamaño de la fuente pequeño</string>
+    <string name="clock_date_display_normal">Tamaño de la fuente normal</string>
     <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Lowercase</string>
-    <string name="clock_date_style_uppercase">Uppercase</string>
-    <string name="clock_date_format_custom">Custom java format</string>
-    <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
-    <string name="clock_font_style_title">Font</string>
-    <string name="clock_font_bold">Bold</string>
-    <string name="clock_font_condensed">Condensed</string>
-    <string name="clock_font_light">Light</string>
-    <string name="clock_font_light_italic">Light Italic</string>
+    <string name="clock_date_style_lowercase">Minúsculas</string>
+    <string name="clock_date_style_uppercase">Mayúsculas</string>
+    <string name="clock_date_format_custom">Formato java personalizado</string>
+    <string name="status_bar_clock_style_reset_message">Restaurar el color del reloj?</string>
+    <string name="clock_font_style_title">Fuente</string>
+    <string name="clock_font_bold">Fuerte</string>
+    <string name="clock_font_condensed">Condensada</string>
+    <string name="clock_font_light">Ligera</string>
+    <string name="clock_font_light_italic">Ligera itálica</string>
     <string name="clock_font_normal">Normal</string>
 
     <!-- Volume pane timeout -->
@@ -573,7 +573,7 @@
     <string name="keyboard_rotation_toggle_title">Rotación automática de teclado</string>
     <string name="keyboard_rotation_toggle_summary">Forzar auto-rotación cuando el teclado está visible</string>
     <string name="keyboard_rotation_timeout_title">Tiempo fuera de auto-rotación</string>
-    <string name="keyboard_rotation_timeout_summary">Deshabilita el sensor de auto-rotación <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
+    <string name="keyboard_rotation_timeout_summary">Deshabilita el sensor de auto-rotación <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos después de que el teclado esté oculto</string>
     <string name="keyboard_rotation_dialog">Nota: Esta característica fuerza temporalmente el encendido de la auto-rotación mientras el teclado no está. No tiene efecto cuando la auto-rotación ya está habilitada.</string>
     <string name="show_enter_key_title">Mostrar tecla Entrar</string>
     <string name="show_enter_key_summary">Forzar que el teclado muestre la tecla Entrar en lugar de la tecla de emoticones</string>
@@ -738,8 +738,8 @@
     <!-- Screen-On Notification Light -->
     <string name="screen_on_notification_led_title">Luz de notificacion con pantalla encendida</string>
     <string name="screen_on_notification_led_summary">Habilitar luz de notificación, incluso cuando la pantalla está encendida</string>
-	
-	<!-- Brightness Slider -->
+    
+    <!-- Brightness Slider -->
     <string name="notification_drawer_brightness_slider_title">Brillo Deslizante</string>
 
     <!-- Recent panel -->
@@ -757,5 +757,16 @@
     <!-- On-The-Go -->
     <string name="power_menu_onthego_title">Modo On-The-Go</string>
     <string name="title_tile_onthego">On-The-Go</string>
+    
+    <!-- long press back to kill configurable timeout -->
+    <string name="kill_app_longpress_timeout_title">Long press timeout</string>
+    <string name="timeout_2000">2 segundos (defecto)</string>
+    <string name="timeout_1500">1,5 segundos</string>
+    <string name="timeout_1000">1 segundos</string>
+    <string name="timeout_500">0,5 segundos</string>
+
+    <!-- Keyguard widget frame -->
+    <string name="lockscreen_widget_frame_title">Desactivar cuadros del widget</string>
+    <string name="lockscreen_widget_frame_summary">Desactivar los cuadros de fondo del widget</string>
 
 </resources>
