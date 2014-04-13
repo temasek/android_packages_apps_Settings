@@ -54,12 +54,6 @@
     <string name="battery_prefs_title">Options</string>
     <string name="battery_stats_title">Statistics</string>
 
-    <!--Lockscreen See Through-->
-    <string name="see_through_title">Lockscreen Blur</string>
-    <string name="see_through_summary">Blurs and display the content behind your lockscreen, your data may be visible to those around you</string>
-    <string name="blur_radius_title">Blur Intensity</string>
-    <string name="blur_radius_summary">Intensity for the blur effect</string>
-
     <!-- Lockscreen pin shuffle -->
     <string name="lock_numpad_random_title">Change the order of PIN pad numbers</string>
     <string name="lock_numpad_random_dialog_title">PIN pad random order</string>
