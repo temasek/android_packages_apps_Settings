@@ -28,6 +28,15 @@
     <PreferenceCategory
         android:title="@string/slim_recent_panel_category" />
 
+        <ListPreference
+            android:key="recent_panel_expanded_mode"
+            android:entries="@array/recent_panel_expanded_mode_entries"
+            android:entryValues="@array/recent_panel_expanded_mode_values"
+            android:title="@string/recent_panel_expanded_mode_title"
+            android:summary="@string/recent_panel_expanded_mode_summary"
+            android:persistent="false"
+            android:dependency="custom_recent_mode" />
+
         <CheckBoxPreference
             android:key="recent_panel_lefty_mode"
             android:title="@string/recent_panel_lefty_mode_title"
