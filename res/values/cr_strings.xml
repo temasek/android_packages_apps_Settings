@@ -7,6 +7,16 @@
     <!-- Do NOT translate this -->
     <string name="temasek_version_default">Build V66</string>
 
+    <!-- temasek spare parts -->
+    <string name="temasek_settings_title">Temasek spare parts</string>
+
+    <!-- General strings -->
+    <string name="default_string">Default</string>
+    <string name="recent_panel_settings_title" >Recent panel settings</string>
+    <string name="reset">Reset</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+
     <!-- QS and navring Power menu -->
     <string name="title_tile_power">Power Menu</string> 
     <string name="navring_action_power_menu">Power menu</string>       
