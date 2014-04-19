@@ -15,6 +15,12 @@
         android:fragment="com.android.settings.temasek.ScreenAndAnimations"
         android:title="@string/screen_and_animations_title" />
 
+    <!-- Wakelock Blocker -->
+    <PreferenceScreen
+        android:key="wakelock_blocker"
+        android:fragment="com.android.settings.crdroid.WakeLockBlocker"
+        android:title="@string/wakelock_blocker" />
+
     <PreferenceScreen
         android:key="general_settings"
         android:fragment="com.android.settings.temasek.GeneralSettings"
