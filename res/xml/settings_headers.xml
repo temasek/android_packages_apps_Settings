@@ -90,6 +90,13 @@
         android:fragment="com.android.settings.HomeSettings"
         android:title="@string/home_settings" />
 
+    <!-- System UI -->
+    <header
+        android:id="@+id/system_settings"
+        android:icon="@drawable/ic_settings_system"
+        android:fragment="com.android.settings.cyanogenmod.SystemUiSettings"
+        android:title="@string/system_settings_title" />
+
     <!-- Lock screen -->
     <header
         android:id="@+id/lock_screen_settings"
@@ -104,20 +111,6 @@
         android:breadCrumbTitle="@string/themes_settings_title"
         android:fragment="com.android.settings.ThemeSettings"
         android:icon="@drawable/prd_ic_themepacks" />
-
-    <!-- temasek spare parts -->
-    <header
-        android:id="@+id/interface_settings"
-        android:fragment="com.android.settings.temasek.TemasekSettings"
-        android:title="@string/temasek_settings_title" 
-	android:icon="@drawable/ic_settings_applications" />
-
-    <!-- System UI -->
-    <header
-        android:id="@+id/system_settings"
-        android:icon="@drawable/ic_settings_system"
-        android:fragment="com.android.settings.cyanogenmod.SystemUiSettings"
-        android:title="@string/system_settings_title" />
 
     <!-- temasek spare parts -->
     <header
