@@ -53,6 +53,12 @@
         android:fragment="com.android.settings.chameleonos.labs.gestureanywhere.GestureAnywhereSettings"
         android:title="@string/gesture_anywhere_title" />
 
+    <!-- App sidebar -->
+    <PreferenceScreen
+        android:key="app_sidebar"
+        android:fragment="com.android.settings.crdroid.AppSidebar"
+        android:title="@string/app_sidebar_title"/>
+
     <PreferenceCategory
             android:key="expanded_desktop_category"
             android:title="@string/power_menu_expanded_desktop" >
