@@ -230,13 +230,19 @@
     <!--Notification peek-->
     <string name="notification_peek_title">Уведомление при поднятии</string>
     <string name="notification_peek_summary">Показывать последнее уведомление после поднятия устройства</string>
+    <string name="peek_wake_timeout_title">Тайм-аут ожидания выхода из сна</string>
     <string name="peek_pickup_timeout_title">Тайм-аут отображения уведомления</string>
     <string name="peek_pickup_10seconds">10 секунд (по умолчанию)</string>
     <string name="peek_pickup_30seconds">30 секунд</string>
     <string name="peek_pickup_45seconds">45 секунд</string>
     <string name="peek_pickup_60seconds">1 минута</string>
     <string name="peek_pickup_120seconds">2 минуты</string>
-
+    <string name="peek_wake_3seconds">3 секунды</string>
+    <string name="peek_wake_5seconds">5 секунд (по умолчанию)</string>
+    <string name="peek_wake_10seconds">10 секунд</string>
+    <string name="peek_wake_20seconds">20 секунд</string>
+    <string name="peek_wake_30seconds">30 секунд</string>
+	
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker">Блокировка вейклоков</string>
     <string name="wakelock_blocker_title">Включить</string>
@@ -440,9 +446,10 @@
     <string name="smart_pulldown_title">Умное открытие</string>
     <string name="smart_pulldown_summary">Открывать панель быстрых настроек, если в настоящее время нет %1$s уведомлений</string>
     <string name="smart_pulldown_off">Выкл</string>
-    <string name="smart_pulldown_dismissable">удалямых</string>
+    <string name="smart_pulldown_dismissable">удаляемых</string>
     <string name="smart_pulldown_persistent">постоянных</string>
-
+    <string name="smart_pulldown_all">удаляемых или постоянных</string>
+  
     <!-- Display : Animation options -->
     <string name="screen_and_animations_title">Экран и анимация</string>
     <string name="display_category_animation_options_title">Параметры экрана и анимации</string>
