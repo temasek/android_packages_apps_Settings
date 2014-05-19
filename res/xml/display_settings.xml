@@ -140,6 +140,13 @@
                 android:key="smart_cover_wake"
                 android:title="@string/smart_cover_wake_title"
                 android:summary="@string/smart_cover_wake_summary" />
+           
+             <!-- Proximity wake workaround -->
+             <CheckBoxPreference
+                android:key="is_inaccurate_proximity"
+                android:title="@string/is_inaccurate_proximity_title"
+                android:summary="@string/is_inaccurate_proximity_summary" />
+ 
 
         </PreferenceCategory>
 

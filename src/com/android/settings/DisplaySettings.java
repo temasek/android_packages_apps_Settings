@@ -64,6 +64,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String KEY_FONT_SIZE = "font_size";
+    private static final String KEY_IS_INACCURATE_PROXIMITY = "is_inaccurate_proximity";
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
     private static final String KEY_ADAPTIVE_BACKLIGHT = "adaptive_backlight";
@@ -89,6 +90,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mWakeWhenPluggedOrUnplugged;
     private CheckBoxPreference mScreenOffAnimation;
     private ListPreference mScreenAnimationStylePreference;
+    private CheckBoxPreference mInaccurateProximityPref;
     private CheckBoxPreference mSmartCoverWake;
 
     private PreferenceScreen mNotificationPulse;
@@ -217,6 +219,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     getPreferenceScreen().findPreference(PREF_SMART_COVER_CATEGORY);
             getPreferenceScreen().removePreference(smartCoverOptions);
         }
+
+        // In-accurate proximity
+         mInaccurateProximityPref = (CheckBoxPreference) findPreference(KEY_IS_INACCURATE_PROXIMITY);
+         if (mInaccurateProximityPref != null) {
+             mInaccurateProximityPref.setChecked(Settings.System.getInt(resolver,
+                     Settings.System.INACCURATE_PROXIMITY_WORKAROUND, 0) == 1);
+             mInaccurateProximityPref.setOnPreferenceChangeListener(this);
+         }
+ 
 
         boolean hasNotificationLed = res.getBoolean(
                 com.android.internal.R.bool.config_intrusiveNotificationLed);
@@ -522,9 +533,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist screen timeout setting", e);
             }
-        }
-        if (KEY_FONT_SIZE.equals(key)) {
+        } else if (KEY_FONT_SIZE.equals(key)) {
             writeFontSizePreference(objValue);
+        } else if (KEY_IS_INACCURATE_PROXIMITY.equals(key)) {
+             Settings.System.putInt(getContentResolver(),
+                     Settings.System.INACCURATE_PROXIMITY_WORKAROUND,
+                     ((Boolean) objValue).booleanValue() ? 1 : 0);
         }
         if (KEY_SCREEN_ANIMATION_STYLE.equals(key)) {
             int value = Integer.parseInt((String) objValue);
