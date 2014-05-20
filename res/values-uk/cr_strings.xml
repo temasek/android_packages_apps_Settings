@@ -25,7 +25,7 @@
 
     <!-- Navigation bar -->
     <string name="navbar_enable_bar">Увімкнути рядок навігації</string>
-    <string name="navbar_enable_bar_summary">Включення відображення рядка навігації</string>
+    <string name="navbar_enable_bar_summary">Увімкнення відображення рядка навігації</string>
     <string name="navbar_style_dimen_title">Розміри</string>
     <string name="navbar_dimensions_reset_message">Скинути всі значення розмірів за замовчуванням?</string>
     <string name="navigation_bar_height_title">Висота рядка навігації</string>
@@ -146,7 +146,7 @@
     <string name="theme_auto_mode_off">Вручну</string>
     <string name="theme_auto_mode_lightsensor">При зміні освітленості</string>
     <string name="theme_auto_mode_twilight">У денний час</string>
-    <string name="theme_auto_switch_mode_error">Включений режим автоматичної зміни тем оформлення при зміні освітленості. Ручне перемикання неможливо</string>
+    <string name="theme_auto_switch_mode_error">Увімкнений режим автоматичної зміни тем оформлення при зміні освітленості. Ручне перемикання неможливо</string>
    
     <!-- TRDS tile -->
     <string name="title_tile_theme">Перемикач тим</string>
@@ -161,7 +161,7 @@
     <string name="status_bar_clock_style_reset">Скидання кольору</string>
     <string name="status_bar_show_clock_title">Показувати годинник і дату</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-годинний формат включений</string>
+    <string name="status_bar_am_pm_info">24-годинний формат увімкнений</string>
     <string name="enable_clock_weekday">День тижня</string>
     <string name="enable_clock_weekday_summary">Скорочений день тижня для відображення</string>
     <string name="right_clock">Годинник праворуч</string>
@@ -199,9 +199,9 @@
     <string name="lockscreen_notifications">Повідомлення на екрані блокування</string>
     <string name="lockscreen_notifications_summary">Показувати очікують повідомлення на екрані блокування</string>
     <string name="pocket_mode">Режим \"У кишені\"</string>
-    <string name="pocket_mode_summary">Включає екран і відображає усі сповіщення, коли пристрій дістали з кишені. Відключає екран, коли пристрій кладуть назад в кишеню.</string>
+    <string name="pocket_mode_summary">Вмикає екран і відображає усі сповіщення, коли пристрій дістали з кишені. Відключає екран, коли пристрій кладуть назад в кишеню.</string>
     <string name="show_always">Показувати завжди</string>
-    <string name="show_always_summary">Завжди включати екран, коли пристрій дістається з кишені, навіть за відсутності очікують повідомлень.</string>
+    <string name="show_always_summary">Завжди вмикати екран, коли пристрій дістається з кишені, навіть за відсутності очікують повідомлень.</string>
     <string name="hide_low_priority">Приховати низький пріоритет</string>
     <string name="hide_low_priority_summary">Приховати повідомлення з низьким пріоритетом, такі як повідомлення про погоду від Google Now.</string>
     <string name="hide_non_clearable">Приховати видаляються</string>
@@ -225,7 +225,7 @@
 
     <string name="notifications_on_lockscreen">Повідомлення на екрані блокування</string>
     <string name="notifications_on_lockscreen_summary">Вибір способу відображення повідомлень на екрані блокування</string>
-    <string name="notifications_on_lockscreen_warning_summary">Вибір одного із способів відображення повідомлень на екрані блокування автоматично відключить інший. Якщо ви хочете використовувати функції одного із способів, не забудьте перевірити включені вони чи ні.</string>
+    <string name="notifications_on_lockscreen_warning_summary">Вибір одного із способів відображення повідомлень на екрані блокування автоматично відключить інший. Якщо ви хочете використовувати функції одного із способів, не забудьте перевірити увімкнені вони чи ні.</string>
 
     <!--Notification peek-->
     <string name="notification_peek_title">Повідомлення при піднятті</string>
@@ -437,7 +437,7 @@
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">Розумне відкриття</string>
     <string name="smart_pulldown_summary">Відкривати панель швидких налаштувань, якщо в даний час немає %1$s повідомлень</string>
-    <string name="smart_pulldown_off">Викл</string>
+    <string name="smart_pulldown_off">Вимк</string>
     <string name="smart_pulldown_dismissable">видаляємих</string>
     <string name="smart_pulldown_persistent">постійних</string>
 
@@ -506,9 +506,9 @@
 
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Апаратні кнопки</string>
-    <string name="key_menu_enabled">Кнопка \"Меню\" включена</string>
-    <string name="key_back_enabled">Кнопка \"Назад\" включена</string>
-    <string name="key_home_enabled">Кнопка \"Додому\" включена</string>
+    <string name="key_menu_enabled">Кнопка \"Меню\" увімкнена</string>
+    <string name="key_back_enabled">Кнопка \"Назад\" увімкнена</string>
+    <string name="key_home_enabled">Кнопка \"Додому\" увімкнена</string>
 
     <!-- Telo Radio -->
     <string name="telo_radio_settings_title">Диспетчер з\'єднань</string>
@@ -627,7 +627,7 @@
     <string name="keyboard_rotation_toggle_summary">Задіяти автоповорот при відображенні клавіатури</string>
     <string name="keyboard_rotation_timeout_title">Затримка автоповороту</string>
     <string name="keyboard_rotation_timeout_summary"></string>
-    <string name="keyboard_rotation_dialog">Примітка: Ця функція тимчасово задіє автоповорот поки використовується клавіатура, і не діє, якщо автоповорот вже включений в налаштуваннях.</string>
+    <string name="keyboard_rotation_dialog">Примітка: Ця функція тимчасово задіє автоповорот поки використовується клавіатура, і не діє, якщо автоповорот вже увімкнений в налаштуваннях.</string>
     <string name="show_enter_key_title">Показувати клавішу \"Введення\"</string>
     <string name="show_enter_key_summary">Показувати клавішу \"Введення\" замість клавіші зі смайликом</string>
 
@@ -707,7 +707,7 @@
     <string name="shortcut_action_max">Досягнутий максимальний розмір запису</string>
     <string name="shortcut_action_warning">Попередження</string>
     <string name="shortcut_action_warning_message">Неможливо видалити останній запис</string>
-    <string name="shortcut_action_disable_message">Вимкнено \ nДобавьте запис, щоб включити цю функцію</string>
+    <string name="shortcut_action_disable_message">Вимкнено \ nДобавьте запис, щоб увімкнути цю функцію</string>
     <string name="shortcut_image_not_valid">Вибрана програма містить неприпустиму іконку або не підтримує цифрове кадрування. Використовуйте інший додаток</string>
     <string name="shortcut_duplicate_entry">Вибрана дія не може використовуватися двічі</string>
 
@@ -793,7 +793,7 @@
 
     <!-- Screen-On Notification Light -->
     <string name="screen_on_notification_led_title">Індикація повідомлень при увімкненому екрані</string>
-    <string name="screen_on_notification_led_summary">Увімкнути індикатор сповіщень навіть коли екран включений</string>
+    <string name="screen_on_notification_led_summary">Увімкнути індикатор сповіщень навіть коли екран увімкнений</string>
 
     <!-- Brightness Slider -->
     <string name="notification_drawer_brightness_slider_title">Повзунок яскравості</string>
@@ -841,5 +841,12 @@
     <!-- QuickSettings haptic feedback -->
     <string name="haptic_qs_tiles_title">Тактильна чутливість плиток</string>
     <string name="haptic_qs_tiles_summary">Вібрація при дотику до плиток</string>
-
+    
+    <!-- App Circle Sidebar -->
+    <string name="app_circle_bar_title">Бокова панель додатків</string>
+    <string name="app_circle_sidebar_summary_real">Швидкий запуск додатків з бокової панелі, і можливість відкрити декілька додатків на одному екрані в режимі багатозадачності</string>
+    <string name="app_circle_bar_summary">Відображати панель додатків після дотику до правої сторони екрану</string>
+    <string name="app_circle_bar_included_apps_title">Увімкнені додатки</string>
+    <string name="app_circle_bar_included_apps_summary">Додатки, які будуть відображатися на панелі додатків</string>
+    <string name="category_app_circle_bar_title">Лаунчер додатків</string>
 </resources>

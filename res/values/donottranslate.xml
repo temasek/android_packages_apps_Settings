@@ -33,4 +33,8 @@
         <item>@string/input_method_selector_always_show_value</item>
         <item>@string/input_method_selector_always_hide_value</item>
     </string-array>
+    <!-- DO NOT TRANSLATE. ICU date format for display. -->
+    <string name="tts_date_pattern" translatable="false">ddMMMMyyyy</string>
+    <!-- DO NOT TRANSLATE. ICU weekday format for display -->
+    <string name="tts_weekday_pattern" translatable="false">eeee</string>
 </resources>

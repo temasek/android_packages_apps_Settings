@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The OmniROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/voice_tts_title" >
+
+    <PreferenceScreen android:key="tts_settings_preference"
+        android:fragment="com.android.settings.tts.TextToSpeechSettings"
+        android:title="@string/tts_settings_title"/>
+
+    <SwitchPreference
+        android:key="voice_tts"
+        android:persistent="false"
+        android:title="@string/voice_tts_notification_title"
+        android:summaryOff="@string/voice_tts_notification_summary_off"
+        android:summaryOn="@string/voice_tts_notification_summary_on" />
+
+    <com.android.settings.crdroid.SeekBarPreferenceCHOS
+        android:key="voice_tts_volume"
+        android:dependency="voice_tts"
+        android:persistent="false"
+        android:title="@string/voice_tts_volume_title"
+        android:summary="@string/voice_tts_volume_summary"
+        android:max="100"
+        settings:min="0"
+        settings:interval="1"
+        settings:unitsLeft=""
+        settings:unitsRight=" %"
+        android:defaultValue="80" />
+
+    <CheckBoxPreference
+        android:key="voice_tts_call"
+        android:persistent="false"
+        android:title="@string/voice_tts_call_title"
+        android:summary="@string/voice_tts_call_summary"
+        android:dependency="voice_tts"/>
+
+    <CheckBoxPreference
+        android:key="voice_tts_sms"
+        android:persistent="false"
+        android:title="@string/voice_tts_sms_title"
+        android:summary="@string/voice_tts_sms_summary"
+        android:dependency="voice_tts"/>
+
+    <CheckBoxPreference
+        android:key="voice_tts_sms_read"
+        android:persistent="false"
+        android:title="@string/voice_tts_sms_read_title"
+        android:summary="@string/voice_tts_sms_read_summary"
+        android:dependency="voice_tts_sms"/>
+
+    <CheckBoxPreference
+        android:key="voice_tts_charge_full"
+        android:persistent="false"
+        android:title="@string/voice_tts_charge_full_title"
+        android:summary="@string/voice_tts_charge_full_summary"
+        android:dependency="voice_tts"/>
+
+    <CheckBoxPreference
+        android:key="voice_tts_charge_on"
+        android:persistent="false"
+        android:title="@string/voice_tts_charge_on_title"
+        android:summary="@string/voice_tts_charge_on_summary"
+        android:dependency="voice_tts"/>
+
+    <CheckBoxPreference
+        android:key="voice_tts_charge_off"
+        android:persistent="false"
+        android:title="@string/voice_tts_charge_off_title"
+        android:summary="@string/voice_tts_charge_off_summary"
+        android:dependency="voice_tts"/>
+
+    <CheckBoxPreference
+        android:key="voice_tts_clock"
+        android:persistent="false"
+        android:title="@string/voice_tts_clock_title"
+        android:summary="@string/voice_tts_clock_summary"
+        android:dependency="voice_tts"/>
+
+    <CheckBoxPreference
+        android:key="voice_tts_date"
+        android:persistent="false"
+        android:title="@string/voice_tts_date_title"
+        android:summary="@string/voice_tts_date_summary"
+        android:dependency="voice_tts"/>
+
+    <CheckBoxPreference
+        android:key="voice_tts_music"
+        android:persistent="false"
+        android:title="@string/voice_tts_music_title"
+        android:summary="@string/voice_tts_music_summary"
+        android:dependency="voice_tts"/>
+
+    <CheckBoxPreference
+        android:key="voice_tts_notif"
+        android:persistent="false"
+        android:title="@string/voice_tts_notif_title"
+        android:summary="@string/voice_tts_notif_summary"
+        android:dependency="voice_tts"/>
+
+    <CheckBoxPreference
+        android:key="voice_tts_notif_read"
+        android:persistent="false"
+        android:title="@string/voice_tts_notif_read_title"
+        android:summary="@string/voice_tts_notif_read_summary"
+        android:dependency="voice_tts_notif"/>
+
+    <com.android.settings.crdroid.AppMultiSelectListPreference
+        android:key="voice_tts_whitelist"
+        android:persistent="false"
+        android:dependency="voice_tts_notif"
+        android:title="@string/voice_tts_whitelist_title"
+        android:summary="@string/voice_tts_whitelist_summary" />
+
+    <ListPreference
+        android:key="voice_tts_annoy_notif"
+        android:dependency="voice_tts_notif"
+        android:title="@string/voice_tts_annoy_notif_title"
+        android:summary="@string/voice_tts_annoy_notif_summary"
+        android:entries="@array/voice_tts_annoy_notif_entries"
+        android:entryValues="@array/voice_tts_annoy_notif_values"
+        android:persistent="false"
+        android:defaultValue="0" />
+
+</PreferenceScreen>

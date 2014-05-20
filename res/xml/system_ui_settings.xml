@@ -59,6 +59,12 @@
         android:fragment="com.android.settings.crdroid.AppSidebar"
         android:title="@string/app_sidebar_title"/>
 
+    <PreferenceScreen
+        android:key="interface_voice_tts"
+        android:title="@string/voice_tts_title"
+        android:summary="@string/voice_tts_summary"
+        android:fragment="com.android.settings.crdroid.TtsNotification" />
+
     <PreferenceCategory
             android:key="expanded_desktop_category"
             android:title="@string/power_menu_expanded_desktop" >
