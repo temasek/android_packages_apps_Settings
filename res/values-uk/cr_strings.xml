@@ -841,5 +841,14 @@
     <!-- QuickSettings haptic feedback -->
     <string name="haptic_qs_tiles_title">Тактильна чутливість плиток</string>
     <string name="haptic_qs_tiles_summary">Вібрація при дотику до плиток</string>
+    
++    <!-- App Circle Sidebar -->
+ +     <string name="app_circle_bar_title">Бічна панель програм</string>
+ +     <string name="app_circle_sidebar_summary_real">Швидкий запуск додатків з бокової панелі, і можливість відкрити декілька додатків на одному екрані в режимі багатозадачності</string>
+ +     <string name="app_circle_bar_summary">Відображати панель додатків після дотику до правої сторони екрану</string>
+ +     <string name="app_circle_bar_included_apps_title">Увімкнені додатки</string>
+ +     <string name="app_circle_bar_included_apps_summary">Додатки, які будуть відображатися на панелі додатків</string>
+ +     <string name="category_app_circle_bar_title">Лаунчер додатків</string>
+ +
 
 </resources>
