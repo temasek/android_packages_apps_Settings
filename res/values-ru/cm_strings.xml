@@ -642,6 +642,7 @@
   <string name="hardware_keys_action_voice_search">Голосовой поиск</string>
   <string name="hardware_keys_action_in_app_search">Поиск в приложении</string>
   <string name="hardware_keys_action_launch_camera">Запуск камеры</string>
+  <string name="button_wake_title">Вывод из режима сна</string>
   <string name="home_wake_summary">Включать экран при нажатии кнопки «Домой»</string>
   <string name="camera_wake_summary">Включать экран при нажатии кнопки камеры</string>
   <string name="camera_sleep_on_release_title">Временное включение</string>

@@ -190,7 +190,9 @@
     <string name="clock_font_light">Тонкий</string>
     <string name="clock_font_light_italic">Тонкий курсив</string>
     <string name="clock_font_normal">Нормальный</string>
-	
+    <string name="clock_use_second">Часы с секундами</string>
+    <string name="clock_use_second_summary">Показывать секунды в часах</string>
+  
     <!-- Lockscreen Notifications -->
     <string name="general">Основные</string>
     <string name="layout">Расположение</string>
@@ -343,6 +345,11 @@
     <string name="screen_recorder_bitrate_title_20000000">20 МБ/с</string>
     <string name="screen_recorder_bitrate_title_50000000">50 МБ/с</string>
     <string name="screen_recorder_bitrate_title_100000000">100 МБ/с</string>
+	
+    <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_category_title">\"Умная\" обложка</string>
+    <string name="smart_cover_wake_title">\"Умная\" обложка</string>
+    <string name="smart_cover_wake_summary">Выводить устройство из сна при использовании \"умной\" обложки</string>
 
     <!-- Power menu screen recorder -->
     <string name="power_menu_screenrecord_title">Запись с экрана</string>
@@ -382,11 +389,6 @@
 
     <!-- Lockscreen battery ring -->
     <string name="battery_around_lockscreen_ring">Индикатор батареи вокруг слайдера разблокировки</string>
-
-    <!-- Lockscreen Lid Settings -->
-    <string name="smart_cover_category_title">\"Умная\" обложка</string>
-    <string name="smart_cover_wake_title">\"Умная\" обложка</string>
-    <string name="smart_cover_wake_summary">Выводить устройство из сна при использовании \"умной\" обложки</string>
 
     <!-- Breathing Notifications -->
     <string name="breathing_notifications_title">\"Живые\" уведомления</string>
@@ -859,4 +861,46 @@
      <string name="app_circle_bar_included_apps_summary">Приложения, которые будут отображаться на панели приложений</string>
      <string name="category_app_circle_bar_title">Лаунчер приложений</string>
 
+    <!-- Quicksettings panel floating window -->
+    <string name="title_floating_window">Плавающее окно</string>
+    <string name="summary_floating_window">Открывать плитки быстрых настроек в плавающем окне</string>
+
+    <!-- QuickSettings fliptiles -->
+    <string name="flip_qs_tiles_title">Переворот плиток</string>
+    <string name="flip_qs_tiles_summary">Переворот плиток при касании</string>
+    
+    <!-- App sidebar -->
+    <string name="app_sidebar_title">Бар приложений</string>
+    <string name="app_sidebar_enable_title">Включить бар приложений</string>
+    <string name="app_sidebar_enable_summaryOn">Бар приложений включен</string>
+    <string name="app_sidebar_enable_summaryOff">Бар приложений выключен</string>
+    <string name="app_sidebar_setup_items_title">Настройка содержания бара</string>
+    <string name="app_sidebar_setup_items_summary">Добавление, удаление и расположение элементов в баре приложений</string>
+    <string name="app_sidebar_transparency_title">Прозрачность бара</string>
+    <string name="app_sidebar_transparency_summary">Регулировка уровня прозрачности бара приложений</string>
+    <string name="app_sidebar_position_title">Расположение бара</string>
+    <string name="app_sidebar_position_summary">Расположение бара приложений на левой или правой стороне экрана</string>
+    <string name="app_sidebar_position_left">Слева</string>
+    <string name="app_sidebar_position_right">Справа</string>
+    <string name="app_sidebar_hide_labels_title">Скрыть названия иконок</string>
+    <string name="app_sidebar_hide_labels_summary">Скрывать названия иконок в баре приложений</string>
+    <string name="tab_category">Видимая вкладка</string>
+    <string name="use_tab_title">Отображение вкладки</string>
+    <string name="use_tab_summary">Показывать видимую вкладку на стороне экрана, в которой будет отображаться бар приложений при прикосновении</string>
+    <string name="tab_position_title">Расположение вкладки</string>
+    <string name="tab_position_summary">Отображение вкладки в верхней, средней или нижней части экрана</string>
+    <string name="tab_size_title">Размер вкладки</string>
+    <string name="tab_size_summary">Изменение размера видимой вкладки</string>
+    <string name="trigger_category">Область триггера</string>
+    <string name="trigger_width_title">Ширина триггера</string>
+    <string name="trigger_width_summary">Регулировка ширины области триггера</string>
+    <string name="trigger_top_title">Положение триггера</string>
+    <string name="trigger_top_summary">Регулировка вертикальной позиции области триггера</string>
+    <string name="trigger_bottom_title">Высота триггера</string>
+    <string name="trigger_bottom_summary">Регулировка высоты области триггера</string>
+
+     <!-- Proximity work-around -->
+     <string name="is_inaccurate_proximity_title">Неточный датчик приближения</string>
+     <string name="is_inaccurate_proximity_summary">Обход некорректной работы датчика приближения: это заставит включить экран телефона после завершения вызова</string>
+	 
 </resources>
