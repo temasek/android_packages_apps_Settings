@@ -680,6 +680,7 @@
   <string name="status_bar_signal_style_text">Текст</string>
   <string name="status_bar_toggle_brightness">Управление яркостью</string>
   <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
+  <string name="status_bar_toggle_info">Не доступно при включенной функции автоматической яркости</string>
   <string name="status_bar_notif_count_title">Счётчик уведомлений</string>
   <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
   <string name="status_bar_double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
