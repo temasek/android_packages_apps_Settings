@@ -55,10 +55,11 @@
          android:title="@string/noti_reminder_title"
          android:summary="@string/noti_reminder_summary" />
 
-    <PreferenceScreen
-            android:key="heads_up"
-            android:fragment="com.android.settings.headsup.HeadsUpDoNotDisturbSettings"
-            android:title="@string/category_heads_up" />
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="heads_up_enabled"
+            android:fragment="com.android.settings.headsup.HeadsUpSettings"
+            android:title="@string/category_heads_up"
+            android:summary="@string/summary_heads_up" />
 
     <PreferenceCategory
         android:title="@string/category_quick_access" >
