@@ -1029,4 +1029,8 @@
     <string name="hover_exclude_from_insecure_lock_screen_title">Exclude insecure lockscreen</string>
     <string name="hover_exclude_from_insecure_lock_screen_summary">Check to exclude hover notifications from insecure lockscreen</string>
 
+    <!-- Hover enable/disable -->
+    <string name="hover_state_title">Hover switch</string>
+    <string name="hover_state_summary">Check to enable or un-check to disable hover</string>
+
 </resources>
