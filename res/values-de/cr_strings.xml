@@ -1016,4 +1016,12 @@
     <string name="hover_exclude_topmost_title">\"Vordergrund\" ausschließen</string>
     <string name="hover_exclude_topmost_summary">Schließe die aktuell geöffnete Anwendung aus</string>
     
+    <!-- Hover no notif in insecure lockscreen -->
+    <string name="hover_exclude_from_insecure_lock_screen_title">Ungesicherten Sperrbildschirm ausschließen</string>
+    <string name="hover_exclude_from_insecure_lock_screen_summary">Zeige Benachrichtigungen nicht bei einem Sperrmechanismus wie z.B. \"Finger bewegen\"</string>
+
+    <!-- Hover enable/disable -->
+    <string name="hover_state_title">Hover ein-/ausschalten</string>
+    <string name="hover_state_summary">Wähle, ob die Hover-Funktion verwendet werden soll</string>
+    
 </resources>
