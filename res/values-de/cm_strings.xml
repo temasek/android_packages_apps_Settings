@@ -876,4 +876,13 @@ auf <xliff:g id="new" example="libart.so">%2$s</xliff:g> zu ändern?</string>
   <string name="menu_hidden_apps_delete">Zurücksetzen</string>
   <string name="menu_hidden_apps_reset_lock">Sperrmuster zurücksetzen</string>
   <string name="protected_apps">Geschützte Apps</string>
+  <string name="category_heads_up">Heads-Up Anzeige</string>
+  <string name="summary_heads_up">Pop-Up Benachrichtigungen</string>
+  <string name="title_heads_up_enabled">Heads-Up verwenden</string>
+  <string name="add_heads_up_package">App hinzufügen</string>
+  <string name="add_heads_up_dnd_summary">Heads-Up Anzeige in diesen Anwendungen nicht zeigen</string>
+  <string name="add_heads_up_blacklist_summary">Heads-Up Anzeige von diesen Apps nicht zeigen</string>
+  <string name="heads_up_dnd_title">Ausgeschlossene Apps</string>
+  <string name="heads_up_blacklist_title">Sperrliste</string>
+  
 </resources>
