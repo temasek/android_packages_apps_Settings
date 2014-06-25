@@ -5,41 +5,53 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/hover_settings_title">
 
+    <CheckBoxPreference
+        android:key="hover_state"
+        android:title="@string/hover_state_title"
+        android:summary="@string/hover_state_summary"
+        android:defaultValue="false" />
+
     <ListPreference
         android:key="hover_long_fade_out_delay"
         android:title="@string/hover_long_fadeout_title"
         android:persistent="false"
         android:entries="@array/hover_long_fadeout_entries"
-        android:entryValues="@array/hover_long_fadeout_values" />
+        android:entryValues="@array/hover_long_fadeout_values"
+        android:dependency="hover_state" />
 
     <CheckBoxPreference
         android:key="hover_require_fullscreen_mode"
         android:title="@string/hover_require_fullscreen_mode_title"
         android:summary="@string/hover_require_fullscreen_mode_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:dependency="hover_state" />
 
     <CheckBoxPreference
         android:key="hover_exclude_non_clearable"
         android:title="@string/hover_exclude_non_clearable_title"
         android:summary="@string/hover_exclude_non_clearable_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:dependency="hover_state" />
 
     <CheckBoxPreference
         android:key="hover_exclude_low_priority"
         android:title="@string/hover_exclude_low_priority_title"
         android:summary="@string/hover_exclude_low_priority_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:dependency="hover_state" />
 
     <CheckBoxPreference
         android:key="hover_exclude_topmost"
         android:title="@string/hover_exclude_topmost_title"
         android:summary="@string/hover_exclude_topmost_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:dependency="hover_state" />
 
     <CheckBoxPreference
         android:key="hover_exclude_from_insecure_lock_screen"
         android:title="@string/hover_exclude_from_insecure_lock_screen_title"
         android:summary="@string/hover_exclude_from_insecure_lock_screen_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        android:dependency="hover_state" />
 
 </PreferenceScreen>
