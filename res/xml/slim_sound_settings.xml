@@ -32,6 +32,13 @@
         android:summary="@string/screenshot_sound_summary"
         android:defaultValue="true" />
 
+    <SwitchPreference
+        android:key="safe_headset_volume"
+        android:title="@string/safe_headset_volume_title"
+        android:summary="@string/safe_headset_volume_summary"
+        android:persistent="false"
+        android:defaultValue="true" />
+
     <ListPreference
         android:key="less_notification_sounds"
         android:title="@string/less_notification_sounds_title"
