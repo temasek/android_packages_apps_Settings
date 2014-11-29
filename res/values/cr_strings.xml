@@ -208,7 +208,11 @@
     <string name="partition_info_sdext">/sd-ext (EXT)</string>
     <string name="partition_info_used_of">/</string>
 
-    <!-- Display desity -->
+    <!-- Hardware tunables - Vibrator intensity -->
+    <string name="vibrator_intensity_title">Vibrator intensity</string>
+    <string name="vibrator_warning">Values higher than %1$d are not recommended</string>
+    
+    <!-- Display density -->
     <string name="display_density">Display density</string>
     <string name="display_density_summary">Overrides the default display density (0 to disable, requires a reboot)</string>
 

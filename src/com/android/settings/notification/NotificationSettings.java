@@ -15,6 +15,7 @@
  */
 
 package com.android.settings.notification;
+import com.android.settings.hardware.VibratorIntensity;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -73,6 +74,8 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private static final String KEY_INCREASING_RING_VOLUME = "increasing_ring_volume";
     private static final String KEY_NOTIFICATION_LIGHT = "notification_light";
     private static final String KEY_BATTERY_LIGHT = "battery_light";
+    private static final String KEY_VIBRATION_INTENSITY = "vibration_intensity";
+
 
     private static final int SAMPLE_CUTOFF = 2000;  // manually cap sample playback at 2 seconds
 
@@ -143,6 +146,13 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
 
         mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
         refreshNotificationListeners();
+
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        if (vibrator == null || !vibrator.hasVibrator()) {
+            removePreference(KEY_VIBRATION_INTENSITY);
+        } else if (!VibratorIntensity.isSupported()) {
+            removePreference(KEY_VIBRATION_INTENSITY);
+        }
     }
 
     @Override
