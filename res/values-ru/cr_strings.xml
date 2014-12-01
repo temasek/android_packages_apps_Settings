@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, Temasek version -->
+    <string name="temasek_version_title">Неофициальная версия от Temasek</string>
+
+    <!-- General strings -->
+	<string name="attention">Внимание</string>
+	<string name="default_string">По умолчанию</string>
+	<string name="reset">Сброс</string>
+        <string name="enabled">Включено</string>
+        <string name="disabled">Выключено</string>
+
+    <!-- Display : Rotation -->
+	<string name="display_rotation_title">Поворот</string>
+	<string name="display_rotation_disabled">Выключено</string>
+	<string name="display_rotation_unit">градусов</string>
+	<string name="display_rotation_category_title">Режимы поворота</string>
+	<string name="display_rotation_0_title">0 градусов</string>
+	<string name="display_rotation_90_title">90 градусов</string>
+	<string name="display_rotation_180_title">180 градусов</string>
+	<string name="display_rotation_270_title">270 градусов</string>
+
+    <!-- Sound settings -->
+	<string name="sound_title">Звук</string>
+	<string name="advanced_sound_title">Расширенные функции</string>
+
+    <!-- Safe headset volume restore checkbox -->
+	<string name="safe_headset_volume_title">Безопасная громкость</string>
+	<string name="safe_headset_volume_summary">Предотвратить громкий звук, когда впервые подключена гарнитура</string>
+	<string name="safe_headset_volume_warning_dialog_text">Долгое прослушивание на большой громкости может повредить слух. Отключайте с осторожностью.</string>
+
+    <!-- Less Notification sounds -->	
+	<string name="notifications_category_title">Уведомления</string>
+	<string name="less_notification_sounds_title">Менее частые звуки уведомлений</string>
+	<string name="less_notification_sounds_summary">Ограничение звука уведомлений каждого приложения, играть только один раз за установленный период времени</string>
+	<string name="less_notification_sounds_default">Поведение по умолчанию</string>
+	<string name="less_notification_sounds_3s">3 секунды</string>
+	<string name="less_notification_sounds_5s">5 секунд</string>
+	<string name="less_notification_sounds_10s">10 секунд</string>
+	<string name="less_notification_sounds_15s">15 секунд</string>
+	<string name="less_notification_sounds_30s">30 секунд</string>
+	<string name="less_notification_sounds_45s">45 секунд</string>
+	<string name="less_notification_sounds_1m">1 минута</string>
+	<string name="less_notification_sounds_2m">2 минуты</string>
+	<string name="less_notification_sounds_5m">5 минут</string>
+
+    <!-- Volume Keys Media Control -->
+    <string name="volume_keys_control_media_stream">Управление мультимедиа</string>
+	<string name="volume_keys_control_media_stream_summary">Клавиши громкости управляют громкость мультимедиа вместо уведомлений</string>
+
+    <!-- Keyboard and Input ASS methods  -->
+	<string name="title_keyboard_input">Расширенные опции</string>
+	<string name="disable_fullscreen_keyboard_title">Отключить полноэкранный режим клавиатуры</string>
+	<string name="disable_fullscreen_keyboard_summary">В ландшафтном режиме клавиатура не будет разворачиваться в полный экран</string>
+	<string name="volume_key_cursor_control_title">Контроль курсором с помощью качельки громкости</string>
+	<string name="volume_key_cursor_control_on">Громкость вверх/вниз перемещает курсор влево/вправо</string>
+	<string name="volume_key_cursor_control_on_reverse">Громкость вверх/вниз перемещение курсора вправо/влево</string>
+	<string name="keyboard_rotation_toggle_title">Автоматическое вращение клавиатуры</string>
+	<string name="keyboard_rotation_toggle_summary">Принудительный автоповорот клавиатуры</string>
+	<string name="keyboard_rotation_timeout_title">Таймаут автоповорота</string>
+	<string name="keyboard_rotation_timeout_summary">Отключение датчика автоповорота <xliff:g id="rotate_timeout">%1$s</xliff:g> секунд после скрытия клавиатуры</string>
+	<string name="keyboard_rotation_dialog">Эта функция заставляет Автоповорот включиться временно когда отображается клавиатура. Не действует при включенном автоповороте.</string>
+	<string name="show_enter_key_title">Показывать кнопку ввода</string>
+	<string name="show_enter_key_summary">Принудительно показывать кнопку ввода вместо кнопки смайликов</string>
+	<string name="ime_switcher_notify">Уведомление выбора метода ввода</string>
+	<string name="ime_switcher_notify_summary">Отображать уведомление выбора метода ввода</string>
+  
+    <!-- long press back to kill configurable timeout -->
+    <string name="kill_app_longpress_timeout_title">Задержка долгого нажатия</string>
+    <string name="timeout_2000">2 секунды (по умолчанию)</string>
+    <string name="timeout_1500">1,5 секунды</string>
+    <string name="timeout_1000">1 секунда</string>
+    <string name="timeout_500">0,5 секунды</string>
+
+    <!-- Navigation Bar Height -->
+    <string name="navigation_bar_height">Высота панели навигации</string>
+    <string name="navigation_bar_height_48">48dp (по умолчанию)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">0dp (скрыть)</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Индикатор сетевого трафика</string>
+    <string name="network_traffic_summary">Отобразить скорость передачи данных в строке состояния</string>
+    <string name="show_network_traffic_state">Показывать скорость передачи данных</string>
+    <string name="show_network_traffic_unit">Единицы измерения</string>
+    <string name="show_network_traffic_frequency">Частота обновления</string>
+    <string name="show_network_traffic_disable">Отключен</string>
+    <string name="show_network_traffic_up">Исходящий</string>
+    <string name="show_network_traffic_down">Входящий</string>
+    <string name="show_network_traffic_all">Исходящий и входящий</string>
+    <string name="show_network_traffic_bit">Бит в секунду</string>
+    <string name="show_network_traffic_byte">Байт в секунду</string>
+    <string name="show_network_traffic_500">500 мс</string>
+    <string name="show_network_traffic_1000">1000 мс</string>
+    <string name="show_network_traffic_1500">1500 мс</string>
+    <string name="show_network_traffic_2000">2000 мс</string>
+    <string name="network_traffic_autohide">Автоматическое скрытие</string>
+    <string name="network_traffic_autohide_summary">Скрыть монитор при отсутствии активности</string>
+    <string name="network_traffic_autohide_threshold">Порог простоя</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Звук скриншота</string>
+    <string name="screenshot_sound_summary">Проиграть звук при захвате скриншота</string>
+
+    <!-- Toast animations -->
+    <string name="toast_animation_title">Анимация всплывающих уведомлений</string>
+    <string name="toast_none_animation">Нет</string>
+    <string name="toast_default_animation">По умолчанию</string>
+    <string name="toast_fade_animation">Затухание</string>
+    <string name="toast_SlideRight_animation">Сдвиг справа</string>
+    <string name="toast_SlideLeft_animation">Сдвиг слева</string>
+    <string name="toast_Xylon_animation">Анимация Xylon</string>
+    <string name="toast_Toko_animation">Анимация Toko</string>
+    <string name="toast_Tn_animation">Анимация Tn</string>
+    <string name="toast_Honami_animation">Анимация Honami</string>
+    <string name="toast_FastFade_animation">Быстрое затухание</string>
+    <string name="toast_GrowFade_animation">Растущее затухание</string>
+    <string name="toast_GrowFadeCenter_animation">Растущее затухание из центра</string>
+    <string name="toast_GrowFadeBottom_animation">Растущее затухание снизу</string>
+    <string name="toast_Translucent_animation">Полупрозрачная</string>
+    <string name="toast_SlideLeftRight_animation">Скольжение слева направо</string>
+    <string name="toast_SlideRightLeft_animation">Скольжение справа налево</string>
+
+    <!-- Text for disabling immersive mode messages -->
+    <string name="disable_immersive_message_title">Отключить сообщения Immersive Mode</string>
+    <string name="disable_immersive_message_summary">Это позволит скрыть все сообщения Immersive Mode</string>
+
+    <!-- Temasek Extra Info -->
+    <string name="temaextrainfo">Доп. информация</string>
+    <string name="temaextrainfo_summary">Информация о процессоре, экране и т.д.</string>
+
+    <!-- Per app controls for LP keyguard notifications -->
+    <string name="app_notification_show_on_keyguard_title">Показывать</string>
+    <string name="app_notification_show_on_keyguard_summary">Показывать уведомления от этого приложения на экране блокировки</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Не показывать</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Не показывать уведомления от этого приложения на экране блокировки</string>
+
+    <!-- Recents panel settings -->
+    <string name="recents_panel_settings">Панель недавних приложений</string>
+    <string name="show_clear_all_recents_button_title">Кнопка \"Очистить Все\"</string>
+    <string name="show_clear_all_recents_button_summary">Отображать кнопку \"Очистить Все\" в недавних приложениях</string>
+    <string name="recents_clear_all_location_title">Расположение кнопки \"Очистить Все\"</string>
+    <string name="recents_clear_all_location_right">Справа вверху</string>
+    <string name="recents_clear_all_location_left">Слева вверху</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Палитра цветов</string>
+    <string name="press_color_to_apply">Нажмите на выбранный цвет для применения</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Применить</string>
+    <string name="color_default">По умолчанию</string>
+
+    <!-- Status bar -->
+    <string name="status_bar_title">Строка состояния</string>
+    <string name="status_bar_style_title">Стиль</string>
+    <string name="status_bar_settings">Настройки строки состояния</string>
+
+    <!-- Status bar | Clock -->
+    <string name="status_bar_clock">Часы и дата</string>
+    <string name="status_bar_clock_title">Стиль часов и даты</string>
+    <string name="clock_title_enable">Расположение</string>
+    <string name="clock_enabled">Включено</string>
+    <string name="clock_disabled">Отключено</string>
+    <string name="clock_color_title">Цвет</string>
+    <string name="status_bar_clock_style_reset">Сброс цвета</string>
+    <string name="status_bar_show_clock_title">Показывать часы и дату</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-часовой формат включен</string>
+    <string name="enable_clock_weekday">День недели</string>
+    <string name="enable_clock_weekday_summary">Сокращённый день недели для отображения</string>
+    <string name="right_clock">Часы справа</string>
+    <string name="center_clock">Часы по центру</string>
+    <string name="dont_show">Не показывать</string>
+    <string name="clock_date_display">Дата</string>
+    <string name="clock_date_display_summary">Пользовательские настройки даты</string>
+    <string name="clock_date_style">Стиль даты</string>
+    <string name="clock_date_format">Формат даты</string>
+    <string name="clock_date_string_edittext_title">Должно быть в формате даты, например MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Ввести строку</string>
+    <string name="am_pm_clock_normal">Нормальный шрифт</string>
+    <string name="am_pm_clock_small">Маленький шрифт</string>
+    <string name="am_pm_clock_none">Не показывать</string>
+    <string name="clock_date_display_none">Не показывать</string>
+    <string name="clock_date_display_small">Маленький шрифт</string>
+    <string name="clock_date_display_normal">Нормальный шрифт</string>
+    <string name="clock_date_style_normal">Нормальный</string>
+    <string name="clock_date_style_lowercase">Строчные буквы</string>
+    <string name="clock_date_style_uppercase">Заглавные буквы</string>
+    <string name="clock_date_format_custom">Пользовательский java формат</string>
+    <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
+
+    <!-- Partition Info -->
+    <string name="partition_info_title">Информация о разделах</string>
+    <string name="partition_info_system">/system</string>
+    <string name="partition_info_data">/data</string>
+    <string name="partition_info_cache">/cache</string>
+    <string name="partition_info_sdcard">/sdcard (FAT)</string>
+    <string name="partition_info_sdext">/sd-ext (EXT)</string>
+    <string name="partition_info_used_of">/</string>
+
+    <!-- Hardware tunables - Vibrator intensity -->
+    <string name="vibrator_intensity_title">Мощность вибросигнала</string>
+    <string name="vibrator_warning">Установка значений от %1$d и выше не рекомендуется</string>
+    
+    <!-- Display density -->
+    <string name="display_density">Плотность экрана</string>
+    <string name="display_density_summary">Переопределить плотность пикселей экрана (0 для выключения, требует перезагрузки)</string>
+
+	<!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Показать информацию процессора</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Экран наложения показывает текущую информацию процессора</string>
+
+    <!-- Camera sound switch -->
+    <string name="camera_sounds_summary">Включение звука затвора камеры</string>
+    <string name="camera_sounds_title">Звук затвора камеры</string>
+    <string name="camera_sound_warning_dialog_text">ВНИМАНИЕ: отключение звуков камеры в некоторых местах может быть незаконным!</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">Поведение MediaScanner при загрузке</string>
+    <string name="media_scanner_on_boot_enabled">Сканировать медиа</string>
+    <string name="media_scanner_on_boot_ask">Спрашивать (уведомление)</string>
+    <string name="media_scanner_on_boot_disabled">Не сканировать медиа</string>
+
+    <!-- HOME button wake -->
+    <string name="button_wake_title">Выход из режима сна</string>
+    <string name="home_wake_summary">Включать экран при нажатии кнопки \"Домой\"</string>
+</resources>
