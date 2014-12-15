@@ -200,6 +200,8 @@
     <string name="clock_date_style_uppercase">Заглавные буквы</string>
     <string name="clock_date_format_custom">Пользовательский java формат</string>
     <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
+    <string name="status_bar_ticker_title">Прокрутка уведомлений</string>
+    <string name="status_bar_ticker_summary">Прокрутка текста уведомления в строке состояния</string>
 
     <!-- Partition Info -->
     <string name="partition_info_title">Информация о разделах</string>
@@ -234,13 +236,6 @@
     <string name="media_scanner_on_boot_enabled">Сканировать медиа</string>
     <string name="media_scanner_on_boot_ask">Спрашивать (уведомление)</string>
     <string name="media_scanner_on_boot_disabled">Не сканировать медиа</string>
-
-    <!-- HOME button wake -->
-    <string name="button_wake_title">Выход из режима сна</string>
-    <string name="home_wake_summary">Включать экран при нажатии кнопки \"Домой\"</string>
-
-    <string name="status_bar_ticker_title">Прокрутка уведомлений</string>
-    <string name="status_bar_ticker_summary">Прокрутка текста уведомления в строке состояния</string>
 
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Быстрый доступ</string>
