@@ -200,6 +200,8 @@
     <string name="clock_date_style_uppercase">Заглавные буквы</string>
     <string name="clock_date_format_custom">Пользовательский java формат</string>
     <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
+    <string name="status_bar_ticker_title">Прокрутка уведомлений</string>
+    <string name="status_bar_ticker_summary">Прокрутка текста уведомления в строке состояния</string>
 
     <!-- Partition Info -->
     <string name="partition_info_title">Информация о разделах</string>
@@ -235,13 +237,6 @@
     <string name="media_scanner_on_boot_ask">Спрашивать (уведомление)</string>
     <string name="media_scanner_on_boot_disabled">Не сканировать медиа</string>
 
-    <!-- HOME button wake -->
-    <string name="button_wake_title">Выход из режима сна</string>
-    <string name="home_wake_summary">Включать экран при нажатии кнопки \"Домой\"</string>
-
-    <string name="status_bar_ticker_title">Прокрутка уведомлений</string>
-    <string name="status_bar_ticker_summary">Прокрутка текста уведомления в строке состояния</string>
-
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Быстрый доступ</string>
     <string name="summary_quick_pulldown">%1$s край строки уведомлений при опускании вниз открывает панель быстрых настроек</string>
@@ -252,8 +247,9 @@
     <string name="block_on_secure_keyguard_summary">Отключить быстрые настройки на экране блокировки с паролем</string>
 
     <!-- Navigation bar -->
+    <string name="nav_bar_title">Панель навигации</string>
     <string name="navbar_enable_bar_title">Экранные кнопки</string>
-    <string name="navbar_enable_bar_summary">Включить панель навигации и отключить аппаратные сенсорные кнопки</string>
+    <string name="navbar_enable_bar_summary">Включить панель навигации</string>
     <string name="navbar_style_dimen_title">Размер панели навигации</string>
     <string name="navbar_dimensions_reset_message">Сбросить размер панели навигации по умолчанию?</string>
     <string name="navigation_bar_height_title">Высота панели навигации</string>
@@ -409,4 +405,43 @@
     <string name="lockscreen_shortcuts_summary">Просмотреть/изменить ярлыки экрана блокировки</string>
     <string name="lockscreen_shorcuts_longpress_title">Долгое нажатие на ярлык</string>
     <string name="lockscreen_shorcuts_longpress_summary">Открыть выбранные ярлыки экрана блокировки по долгому нажатию</string>
+
+    <!-- Unaccounted and overcounted battery stats -->
+    <string name="show_unac_and_overcounted_stats_title">Переучтенная статистика</string>
+    <string name="show_unac_and_overcounted_stats_summary">Показывать в статистике батареи переучтенную статистику.</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker">Блокировка wakelock-ов</string>
+    <string name="wakelock_blocker_title">Включить</string>
+    <string name="wakelock_blocker_summary">Активировать блокировку для выбранных wakelock-ов</string>
+    <string name="wakelock_blocker_save">Сохранить</string>
+    <string name="wakelock_list_header">Доступные wakelock-и</string>
+    <string name="wakelock_blocker_reload">Перезагрузить</string>
+    <string name="wakelock_blocker_warning_title">Действовать с осторожностью</string>
+    <string name="wakelock_blocker_warning">Блокирование wakelock-ов потенциально может привести к нестабильной работе устройства, сбою или потере данных</string>
+
+     <!-- About device screen, CPU and RAM info. -->
+    <string name="cpu_info">ЦПУ</string>
+    <string name="mem_info">ОЗУ</string>
+
+    <!-- Heads up -->
+    <string name="heads_up_title">Всплывающие уведомления</string>
+    <string name="app_notification_enable_heads_up_title">Всплывающие уведомления</string>
+    <string name="app_notification_enable_heads_up_summary">Разрешить приложению использовать всплывающие уведомления</string>
+    <string name="heads_up_snooze_title">Длительность \"Отложить\"</string>
+    <string name="heads_up_snooze_summary">При нажатии кнопки \"Отложить\" всплывающие уведомления будут приостановлены на <xliff:g id="number">%d</xliff:g> минут.</string>
+    <string name="heads_up_snooze_disabled_summary">Функция \"Отложить\" отключена.</string>
+    <string name="heads_up_snooze_3min">3 минуты</string>
+    <string name="heads_up_snooze_5min">5 минут</string>
+    <string name="heads_up_snooze_10min">10 минут</string>
+    <string name="heads_up_snooze_15min">15 минут</string>
+    <string name="heads_up_snooze_20min">20 минут</string>
+    <string name="heads_up_time_out_title">Длительность</string>
+    <string name="heads_up_time_out_summary">Всплывающее уведомление будет показываться в течение <xliff:g id="number">%d</xliff:g> секунд.</string>
+    <string name="heads_up_time_out_never_summary">Всплывающее уведомление будет показываться, пока не будет закрыто.</string>
+    <string name="heads_up_time_out_4sec">4 секунды</string>
+    <string name="heads_up_time_out_6sec">6 секунд</string>
+    <string name="heads_up_time_out_8sec">8 секунд</string>
+    <string name="heads_up_time_out_10sec">10 секунд</string>
+    <string name="heads_up_time_out_never">Никогда</string>
 </resources>
