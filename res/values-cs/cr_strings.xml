@@ -470,4 +470,15 @@
     <string name="select_custom_activity_title">Vybrat vlastní aktivitu</string>
     <string name="profile_applist_title">Aplikace</string>
     <string name="bluetooth_accept_all_files">Akceptovat všechny typy souborů</string>
+    <string name="category_app_circle_bar_title">Spouštěč aplikací</string>
+    <string name="app_circle_bar_title">Kruhová lišta aplikací</string>
+    <string name="app_circle_bar_summary">Zobrazit kruhový spouštěč aplikací po stisku pravé strany obrazovky</string>
+    <string name="app_circle_bar_included_apps_title">Zahrnuté aplikace</string>
+    <string name="app_circle_bar_included_apps_summary">Aplikace které se zobrazí na kruhové liště</string>
+    <string name="trigger_width_title">Šířka oblasti spuštění</string>
+    <string name="trigger_width_summary">Upravit šířku oblasti spuštění</string>
+    <string name="trigger_top_title">Pozice oblasti spuštění</string>
+    <string name="trigger_top_summary">Upravit vertikální polohu oblasti spuštění</string>
+    <string name="trigger_bottom_title">Výška oblasti spuštění</string>
+    <string name="trigger_bottom_summary">Upravit výšku oblasti spuštění</string>
 </resources>
