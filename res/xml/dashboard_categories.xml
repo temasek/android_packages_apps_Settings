@@ -125,6 +125,17 @@
                 android:icon="@drawable/ic_settings_notifications"
                 />
 
+        <!-- Viper4Android -->
+        <dashboard-tile
+            android:id="@+id/viper_settings"
+            android:icon="@drawable/ic_settings_viper"
+            android:title="@string/viper_title">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.vipercn.viper4android_v2"
+                android:targetClass="com.vipercn.viper4android_v2.activity.ViPER4Android" />
+        </dashboard-tile>
+
         <!-- Storage -->
         <dashboard-tile
                 android:id="@+id/storage_settings"

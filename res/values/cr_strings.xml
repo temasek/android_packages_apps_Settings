@@ -592,4 +592,7 @@ sword is entered</string>
     <string name="trigger_bottom_title">Trigger height</string>
     <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
 
+    <!-- Viper4Android -->
+    <string name="viper_title">Viper4Android</string>
+
 </resources>
