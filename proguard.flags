@@ -18,9 +18,6 @@
 -keep class com.android.settings.slim.**
 -keep class com.android.settings.temasek.**
 
--keep class com.koushikdutta.**
--keep class com.android.settings.cyanogenmod.superuser.**
-
 -keep class com.android.settings.cyanogenmod.*Settings
 -keep class com.android.settings.privacyguard.*
 
