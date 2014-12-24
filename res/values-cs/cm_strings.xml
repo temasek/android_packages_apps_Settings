@@ -287,6 +287,9 @@
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Vynucené ukončení aplikace</string>
     <string name="kill_app_longpress_back_summary">Dlouhým stiskem tlačítka zpět se provede ukončení aplikace na popředí</string>
+    <string name="navigation_bar_category">Navigační lišta</string>
+    <string name="navigation_bar_left_title">Režim pro leváky</string>
+    <string name="navigation_bar_left_summary">Umístit navigační lištu na levou stranu displeje v režimu na šířku</string>
     <string name="header_category_personalization">Přizpůsobení</string>
     <!-- Status bar -->
     <string name="status_bar_title">Stavová lišta</string>
@@ -489,6 +492,12 @@
     <string name="app_ops_permissions_ignored">Ignorováno</string>
     <string name="app_ops_permissions_always_ask">Ptát se</string>
     <string name="ok">OK</string>
+    <!-- Wifi connection notifications -->
+    <string name="wifi_notify_changed_networks">Upozornění připojení Wi\u2011Fi</string>
+    <string name="notify_changed_networks_default">Vypnuto (výchozí)</string>
+    <string name="notify_changed_networks_toast">Toast</string>
+    <string name="notify_changed_networks_notification">Notifikace</string>
+    <string name="notify_changed_networks_notification_sound">Notifikace se zvukem</string>
     <!-- Profiles -->
     <string name="profile_menu_delete_title">Smazat</string>
     <string name="profile_menu_triggers_title">Upravit triggery</string>
@@ -537,7 +546,22 @@
     <string name="gamma_tuning_control_set_header">Skupina <xliff:g id="index">%d</xliff:g></string>
     <string name="gamma_tuning_contrast">Kontrast</string>
     <string name="gamma_tuning_brightness">Jas</string>
-    <string name="gamma_tuning_saturation">Saturace</string>
+    <string name="gamma_tuning_saturation">Sytost</string>
+    <string name="screencolor">Barvy obrazovky</string>
+    <string name="screencolor_summary">Upravit odstín, sytost, kontrast a intenzitu obrazu</string>
+    <string name="custom_screencolor">Vlastní barvy obrazovky</string>
+    <string name="screencolor_save">Uložit</string>
+    <string name="screencolor_cancel">Zrušit</string>
+    <string name="previous_str">Předchozí</string>
+    <string name="new_str">Nový</string>
+    <string name="restore_preview">Zobrazit výchozí obrázek</string>
+    <string name="selectnewfile_menu">Zobrazit nový obrázek z Galerie</string>
+    <string name="selectfile_menu">Zobrazit obrázek z Galerie</string>
+    <string name="restore_default_str">Obnovit</string>
+    <string name="hue_str">Barva: <xliff:g id="hue_value">%1$s</xliff:g></string>
+    <string name="saturation_str">Sytost: <xliff:g id="saturation_value">%1$s</xliff:g></string>
+    <string name="contrast_str">Kontrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
+    <string name="intensity_str">Intenzita: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
     <string name="settings_reset_button">Obnovit</string>
     <string name="bluetooth_enter_pin_msg_hs">Zařízení vyžaduje 16 znakový passkey</string>
     <string name="bluetooth_profile_dun">Přístup k vytáčené síti</string>
@@ -639,5 +663,10 @@
     <string name="menu_hidden_apps_reset_lock">Obnovit zámek vzorem</string>
     <string name="protected_apps">Chráněné aplikace</string>
     <string name="saving_protected_components">Ukládání stavu kompoment</string>
-
+    <string name="power_notifications_category_title">Zvuk nabíječky</string>
+    <string name="power_notifications_enable_title">Povolit</string>
+    <string name="power_notifications_enable_summary">Přehrát zvuk při připojení nebo odpojení nabíječky</string>
+    <string name="power_notifications_vibrate_title">Vibrovat</string>
+    <string name="power_notifications_ringtone_title">Zvuk upozornění</string>
+    <string name="power_notifications_ringtone_silent">Tichý</string>
 </resources>

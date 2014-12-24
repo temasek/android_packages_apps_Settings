@@ -2,6 +2,15 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="temasek_version_title">Neoficiální Temasekova verze</string>
+    <!-- temasek spare parts -->
+    <string name="temasek_settings_title">Temasekovo další nastavení</string>
+    <string name="status_bar_title">Stavová lišta</string>
+    <string name="status_bar_style_title">Styl</string>
+    <string name="status_bar_settings">Nastavení stavové lišty</string>
+    <string name="recents_panel_title">Panel spuštěných aplikací</string>
+    <string name="recents_panel_settings">Nastavení panelu spuštěných aplikací</string>
+    <string name="screen_and_animations_title">Obraz a animace</string>
+    <string name="display_category_animation_options_title">Možnosti obrazu a animací</string>
     <!-- General strings -->
     <string name="attention">Attention</string>
     <string name="reset">Obnovit</string>
@@ -10,7 +19,6 @@
     <string name="enabled">Zapnuto</string>
     <string name="disabled">Vypnuto</string>
     <string name="reset_message">Obnovit všechny položky do výchozího stavu?</string>
-    <string name="extras_temasek_settings">Temasekovo extra</string>
     <!-- Sound settings -->
     <string name="advanced_sound_title">Pokročilá nastavení</string>
     <string name="sound_title">Zvuk</string>
@@ -76,6 +84,9 @@
     <string name="network_traffic_autohide">Automaticky skrývat</string>
     <string name="network_traffic_autohide_summary">Skrýt indikátor během neaktivity</string>
     <string name="network_traffic_autohide_threshold">Prahová hodnota aktivity</string>
+    <string name="network_traffic_color_style">Barva</string>
+    <string name="network_traffic_color_reset">Obnovit barvu</string>
+    <string name="network_traffic_color_reset_message">Obnovit barvu na výchozí hodnotu?</string>
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Zvuk snímku obrazovky</string>
     <string name="screenshot_sound_summary">Přehrát zvuk při pořízení snímku obrazovky</string>
@@ -96,6 +107,8 @@
     <string name="toast_GrowFadeCenter_animation">Rostoucí stmívání na střed</string>
     <string name="toast_GrowFadeBottom_animation">Rostoucí stmívání naspod</string>
     <string name="toast_Translucent_animation">Průhledná animace</string>
+    <string name="toast_SlideLeftRight_animation">Posunutí zleva doprava</string>
+    <string name="toast_SlideRightLeft_animation">Posunutí zprava doleva</string>
     <!-- Text for disabling immersive mode messages -->
     <string name="disable_immersive_message_title">Vypnout zprávy inverzního režimu</string>
     <string name="disable_immersive_message_summary">Skryje veškeré zprávy v inverzním režimu</string>
@@ -123,10 +136,6 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Nastavit</string>
     <string name="color_default">Výchozí</string>
-    <!-- Status bar -->
-    <string name="status_bar_title">Stavová lišta</string>
-    <string name="status_bar_style_title">Styl</string>
-    <string name="status_bar_settings">Nastavení stavové lišty</string>
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Datum a čas</string>
     <string name="status_bar_clock_title">Styl data a času</string>
@@ -481,4 +490,42 @@
     <string name="trigger_top_summary">Upravit vertikální polohu oblasti spuštění</string>
     <string name="trigger_bottom_title">Výška oblasti spuštění</string>
     <string name="trigger_bottom_summary">Upravit výšku oblasti spuštění</string>
+    <!-- ListView animation -->
+    <string name="interface_settings_animation_title">Možnosti animací</string>
+    <string name="listview_animation_title">Animace ListView</string>
+    <string name="listview_off">Výchozí</string>
+    <string name="listview_wave_left">Vlna (vlevo)</string>
+    <string name="listview_wave_right">Vlna (vpravo)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Scale</string>
+    <string name="listview_stack_top">Stack (top)</string>
+    <string name="listview_stack_bottom">Stack (bottom)</string>
+    <string name="listview_unfold">Unfold</string>
+    <string name="listview_fold">Fold</string>
+    <string name="listview_translate_left">Translate (left)</string>
+    <string name="listview_translate_right">Translate (right)</string>
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">Interpolace ListView</string>
+    <string name="listview_accelerate_interpolator">Zrychlit</string>
+    <string name="listview_decelerate_interpolator">Zpomalit</string>
+    <string name="listview_accelerate_decelerate_interpolator">Zrychlit a zpomalit</string>
+    <string name="listview_anticipate_interpolator">Předcházet</string>
+    <string name="listview_overshoot_interpolator">Přeletět</string>
+    <string name="listview_anticipate_overshoot_interpolator">Předcházet a přeletět</string>
+    <string name="listview_bounce_interpolator">Odskočit</string>
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Kroky hlasitosti</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <string name="volume_steps_alarm_title">Budík</string>
+    <string name="volume_steps_dtmf_title">DTMF</string>
+    <string name="volume_steps_music_title">Hudba</string>
+    <string name="volume_steps_notification_title">Upozornění</string>
+    <string name="volume_steps_ring_title">Vyzvánění</string>
+    <string name="volume_steps_system_title">Systém</string>
+    <string name="volume_steps_voice_call_title">Hlasový hovor</string>
 </resources>
