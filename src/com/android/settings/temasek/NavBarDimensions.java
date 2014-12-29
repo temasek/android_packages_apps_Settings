@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.crdroid;
+package com.android.settings.temasek;
 
 import android.app.Activity;
 import android.app.AlertDialog;

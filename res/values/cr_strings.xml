@@ -7,6 +7,16 @@
     <!-- Do NOT translate this -->
     <string name="temasek_version_default">Build V3.5</string>
 
+    <!-- temasek spare parts -->
+    <string name="temasek_settings_title">Temasek spare parts</string>
+    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_style_title">Style</string>
+    <string name="status_bar_settings">Status bar settings</string>
+    <string name="recents_panel_title">Recents panel</string>
+    <string name="recents_panel_settings">Recents panel settings</string>
+    <string name="screen_and_animations_title">Screen and animations</string>
+    <string name="display_category_animation_options_title">Screen and animation options</string>
+
     <!-- General strings -->
     <string name="attention">Attention</string>
     <string name="reset">Reset</string>
@@ -15,7 +25,6 @@
     <string name="enabled">Enabled</string>
     <string name="disabled">Disabled</string>
     <string name="reset_message">Reset all entries to default?</string>
-    <string name="extras_temasek_settings">Temasek Extras</string>
 
     <!-- Sound settings -->
     <string name="advanced_sound_title">Advanced options</string>
@@ -147,11 +156,6 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
-
-    <!-- Status bar -->
-    <string name="status_bar_title">Status bar &amp; extras</string>
-    <string name="status_bar_style_title">Style</string>
-    <string name="status_bar_settings">Status bar settings</string>
 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Clock and date</string>

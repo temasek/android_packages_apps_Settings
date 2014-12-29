@@ -86,10 +86,10 @@
 
         <!-- Status bar -->
         <dashboard-tile
-                android:id="@+id/status_bar_settings"
-                android:title="@string/status_bar_title"
-                android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
-                android:icon="@drawable/ic_settings_home"
+                android:id="@+id/temasek_settings"
+                android:title="@string/temasek_settings_title"
+                android:fragment="com.android.settings.cyanogenmod.TemasekSettings"
+                android:icon="@drawable/ic_settings_system"
                 />
 
 

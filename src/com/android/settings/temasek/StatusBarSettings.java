@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.android.settings.cyanogenmod;
+package com.android.settings.temasek;
 
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -49,14 +49,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_STATUS_BAR_CLOCK = "clock_style_pref";
     private static final String KEY_STATUS_BAR_TICKER = "status_bar_ticker_enabled";
-    private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
-    private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String PREF_QUICK_PULLDOWN = "quick_pulldown";
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
-    private static final String KEY_TOAST_ANIMATION = "toast_animation";
-    private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
-    private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
 
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
@@ -64,16 +59,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_BATTERY_STYLE_HIDDEN = "4";
     private static final String STATUS_BAR_BATTERY_STYLE_TEXT = "6";
 
-    private SwitchPreference mRecentsClearAll;
-    private ListPreference mRecentsClearAllLocation;
     private ListPreference mQuickPulldown;
     private ListPreference mSmartPulldown;
     private SwitchPreference mBlockOnSecureKeyguard;
     private PreferenceScreen mClockStyle;
     private SwitchPreference mTicker;
-    private ListPreference mToastAnimation;
-    private ListPreference mListViewAnimation;
-    private ListPreference mListViewInterpolator;
 
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
@@ -105,18 +95,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                 Settings.System.STATUS_BAR_TICKER_ENABLED, tickerEnabled ? 1 : 0) == 1);
         mTicker.setOnPreferenceChangeListener(this);
 
-        mRecentsClearAll = (SwitchPreference) prefSet.findPreference(SHOW_CLEAR_ALL_RECENTS);
-        mRecentsClearAll.setChecked(Settings.System.getIntForUser(resolver,
-            Settings.System.SHOW_CLEAR_ALL_RECENTS, 1, UserHandle.USER_CURRENT) == 1);
-        mRecentsClearAll.setOnPreferenceChangeListener(this);
-
-        mRecentsClearAllLocation = (ListPreference) prefSet.findPreference(RECENTS_CLEAR_ALL_LOCATION);
-        int location = Settings.System.getIntForUser(resolver,
-                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 0, UserHandle.USER_CURRENT);
-        mRecentsClearAllLocation.setValue(String.valueOf(location));
-        mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
-        updateRecentsLocation(location);
-
         mQuickPulldown = (ListPreference) findPreference(PREF_QUICK_PULLDOWN);
         mSmartPulldown = (ListPreference) findPreference(PREF_SMART_PULLDOWN);
 
@@ -133,13 +111,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                 Settings.System.QS_SMART_PULLDOWN, 0);
         mSmartPulldown.setValue(String.valueOf(smartPulldown));
         updateSmartPulldownSummary(smartPulldown);
-
-        mToastAnimation = (ListPreference) findPreference(KEY_TOAST_ANIMATION);
-        mToastAnimation.setSummary(mToastAnimation.getEntry());
-        int CurrentToastAnimation = Settings.System.getInt(
-                getContentResolver(),Settings.System.TOAST_ANIMATION, 1);
-        mToastAnimation.setValueIndex(CurrentToastAnimation);
-        mToastAnimation.setOnPreferenceChangeListener(this);
 
         final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
         mBlockOnSecureKeyguard = (SwitchPreference) findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);
@@ -166,22 +137,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mStatusBarBatteryShowPercent.setValue(String.valueOf(batteryShowPercent));
         mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
         mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
-
-        // List view animation
-        mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
-        int listviewanimation = Settings.System.getInt(getContentResolver(),
-                Settings.System.LISTVIEW_ANIMATION, 0);
-        mListViewAnimation.setValue(String.valueOf(listviewanimation));
-        mListViewAnimation.setSummary(mListViewAnimation.getEntry());
-        mListViewAnimation.setOnPreferenceChangeListener(this);
-
-        mListViewInterpolator = (ListPreference) findPreference(KEY_LISTVIEW_INTERPOLATOR);
-        int listviewinterpolator = Settings.System.getInt(getContentResolver(),
-                Settings.System.LISTVIEW_INTERPOLATOR, 0);
-        mListViewInterpolator.setValue(String.valueOf(listviewinterpolator));
-        mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
-        mListViewInterpolator.setOnPreferenceChangeListener(this);
-        mListViewInterpolator.setEnabled(listviewanimation > 0);
     }
 
     @Override
@@ -191,19 +146,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
-        if (preference == mRecentsClearAll) {
-            boolean show = (Boolean) objValue;
-            Settings.System.putIntForUser(getActivity().getContentResolver(),
-                    Settings.System.SHOW_CLEAR_ALL_RECENTS, show ? 1 : 0, UserHandle.USER_CURRENT);
-            return true;
-        } else if (preference == mRecentsClearAllLocation) {
-            int location = Integer.valueOf((String) objValue);
-            Settings.System.putIntForUser(getActivity().getContentResolver(),
-                    Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
-            updateRecentsLocation(location);
-            return true;
-        } else if (preference == mQuickPulldown) {
+        if (preference == mQuickPulldown) {
             int statusQuickPulldown = Integer.valueOf((String) objValue);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
@@ -244,50 +187,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             mStatusBarBatteryShowPercent.setSummary(
                     mStatusBarBatteryShowPercent.getEntries()[index]);
             return true;
-         } else if (preference == mToastAnimation) {
-            int index = mToastAnimation.findIndexOfValue((String) objValue);
-            Settings.System.putString(getContentResolver(),
-                    Settings.System.TOAST_ANIMATION, (String) objValue);
-            mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
-            Toast.makeText(getActivity(), "Toast animation test!!!",
-                    Toast.LENGTH_SHORT).show();
-            return true;
-        } else if (KEY_LISTVIEW_ANIMATION.equals(key)) {
-            int value = Integer.parseInt((String) objValue);
-            int index = mListViewAnimation.findIndexOfValue((String) objValue);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.LISTVIEW_ANIMATION,
-                    value);
-            mListViewAnimation.setSummary(mListViewAnimation.getEntries()[index]);
-            mListViewInterpolator.setEnabled(value > 0);
-        } else if (KEY_LISTVIEW_INTERPOLATOR.equals(key)) {
-            int value = Integer.parseInt((String) objValue);
-            int index = mListViewInterpolator.findIndexOfValue((String) objValue);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.LISTVIEW_INTERPOLATOR,
-                    value);
-            mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
         }
         return false;
-    }
-
-    private void updateRecentsLocation(int value) {
-        ContentResolver resolver = getContentResolver();
-        Resources res = getResources();
-        int summary = -1;
-
-        Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, value);
-
-        if (value == 0) {
-            Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 0);
-            summary = R.string.recents_clear_all_location_right;
-        } else if (value == 1) {
-            Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 1);
-            summary = R.string.recents_clear_all_location_left;
-        }
-        if (mRecentsClearAllLocation != null && summary != -1) {
-            mRecentsClearAllLocation.setSummary(res.getString(summary));
-        }
     }
 
     private void updateSmartPulldownSummary(int value) {
