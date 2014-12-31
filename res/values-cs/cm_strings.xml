@@ -669,4 +669,31 @@
     <string name="power_notifications_vibrate_title">Vibrovat</string>
     <string name="power_notifications_ringtone_title">Zvuk upozornění</string>
     <string name="power_notifications_ringtone_silent">Tichý</string>
+    <string name="voice_wakeup_settings_title">Hlasové probuzení</string>
+    <string name="voice_wakeup_retrain_title">Naučit se rozpoznání hlasu</string>
+    <string name="voice_wakeup_activity_title">Aktivita ke spuštění</string>
+    <string name="voice_wakeup_default_activity">Chytré karty Google</string>
+    <string name="picker_activities">Aktivity</string>
+    <string name="select_custom_app_title">Vybrat vlastní aplikaci</string>
+    <string name="select_custom_activity_title">Vybrat vlastní aktivitu</string>
+    <!-- Performance settings -->
+    <string name="title_tile_performance_profile">Profil výkonu</string>
+    <string name="performance_settings_title">Výkon</string>
+    <string name="io_scheds_title">I/O plánovač</string>
+    <string name="io_sched_title">I/O plánovač</string>
+    <string name="perf_profile_title">Profil</string>
+    <string name="pref_force_highend_gfx_title">Vynutit nejkvalitnější grafiku</string>
+    <string name="pref_force_highend_gfx_summary">Povolit nejkvalitnější vizuální efekty - například průhlednou stavovou/navigační lištu (vyžaduje pokročilý grafický čip a také restart)</string>
+    <string name="performance_settings_warning_title">Postupovat s opatrností!</string>
+    <string name="performance_settings_warning">Tato nastavení jsou experimentální a jakékoliv změny mohou vést k nestabilitě či pádům systému, ztrátě dat nebo selhání hardware.\nNeposílejte prosím hlášení o chybách, pokud jste je jakkoliv měnili.</string>
+    <string name="performance_set_on_boot">Nastavit při spuštění</string>
+    <string name="performance_set_on_boot_summary">Obnovit nastavení při restartu</string>
+    <string name="processor_title">Procesor</string>
+    <string name="cpu_cur_freq_title">Aktuální frekvence CPU</string>
+    <string name="cpu_governors_title">CPU regulátor</string>
+    <string name="cpu_min_freq_title">Min frekvence CPU</string>
+    <string name="cpu_max_freq_title">Max frekvence CPU</string>
+    <string name="autoperf_title">Povolit profily na aplikaci</string>
+    <string name="autoperf_summary">Automaticky vybrat odpovídající výkonnostní profil pro různé aplikace</string>
+    <string name="graphics_title">Grafika a vykreslování</string>
 </resources>
