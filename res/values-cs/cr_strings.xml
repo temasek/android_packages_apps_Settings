@@ -528,4 +528,13 @@
     <string name="volume_steps_ring_title">Vyzvánění</string>
     <string name="volume_steps_system_title">Systém</string>
     <string name="volume_steps_voice_call_title">Hlasový hovor</string>
+    <!-- Screen recorder -->
+    <string name="screen_recorder_title">Nahrávání obrazovky</string>
+    <string name="screen_recorder_summary">Upravit předvolby nahrávání obrazovky</string>
+    <string name="screen_recorder_video_dimensions_title">Velikost videa</string>
+    <string name="screen_recorder_video_bitrate_title">Datový tok</string>
+    <string name="power_menu_screenrecord_title">Nahrávat obraz</string>
+    <string name="screen_recorder_record_audio_title">Externí zvuk</string>
+    <string name="screen_recorder_record_audio_summary">Nahrávat zvuk z mikrofónu</string>
+    <string name="screen_recorder_power_menu_summary">Přidat nahrávání obrazu do nabídky tlačítka napájení</string>
 </resources>
