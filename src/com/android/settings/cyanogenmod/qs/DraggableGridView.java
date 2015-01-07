@@ -22,6 +22,8 @@ import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.MotionEvent;
@@ -51,6 +53,8 @@ public class DraggableGridView extends ViewGroup implements
     protected OnClickListener secondaryOnClickListener;
     private OnItemClickListener onItemClickListener;
 
+    private boolean mUseMainTiles = false;
+
     public DraggableGridView(Context context, AttributeSet attrs) {
         super(context, attrs);
         setListeners();
@@ -60,6 +64,9 @@ public class DraggableGridView extends ViewGroup implements
         DisplayMetrics metrics = new DisplayMetrics();
         ((Activity) context).getWindowManager().getDefaultDisplay().getMetrics(metrics);
         dpi = metrics.densityDpi;
+        mUseMainTiles = Settings.Secure.getIntForUser(
+                getContext().getContentResolver(), Settings.Secure.QS_USE_MAIN_TILES,
+                1, UserHandle.myUserId()) == 1;
     }
 
     protected void setListeners() {
@@ -97,7 +104,7 @@ public class DraggableGridView extends ViewGroup implements
     public void addView(View child, int index) {
         super.addView(child, index);
         newPositions.add(-1);
-        if(onRearrangeListener != null) {
+        if (onRearrangeListener != null) {
             onRearrangeListener.onChange();
         }
     }
@@ -106,7 +113,7 @@ public class DraggableGridView extends ViewGroup implements
     public void addView(View child) {
         super.addView(child);
         newPositions.add(-1);
-        if(onRearrangeListener != null) {
+        if (onRearrangeListener != null) {
             onRearrangeListener.onChange();
         }
     };
@@ -115,7 +122,7 @@ public class DraggableGridView extends ViewGroup implements
     public void removeViewAt(int index) {
         super.removeViewAt(index);
         newPositions.remove(index);
-        if(onRearrangeListener != null) {
+        if (onRearrangeListener != null) {
             onRearrangeListener.onChange();
         }
     };
@@ -136,7 +143,8 @@ public class DraggableGridView extends ViewGroup implements
         for (int i = 0; i < getChildCount(); i++) {
             if (i != dragged) {
                 Point xy = getCoorFromIndex(i);
-                if(i < 2) {
+                // If using main tiles and index == 0 or 1, we need to offset the tiles
+                if (mUseMainTiles && i < 2) {
                     getChildAt(i).layout(xy.x+childSize/2, xy.y, (int) (xy.x + childSize*1.5),
                             xy.y + childSize);
                 } else {
@@ -211,13 +219,22 @@ public class DraggableGridView extends ViewGroup implements
         if (col == -1 || row == -1) // touch is between columns or rows
             return -1;
         int index = 0;
-        if(row == 0 && col == 2) {
-            return -1;
-        }
+
         index = row * colCount + col;
-        if(row > 0) {
-            index--;
+
+        if (mUseMainTiles) {
+            // If we click on (0, 2) and are using main tiles, that
+            // position is empty
+            if (row == 0 && col == 2) {
+                return -1;
+            }
+
+            // There is one tile less from row > 0
+            if (row > 0) {
+                index--;
+            }
         }
+
         if (index > getChildCount())
             return -1;
         return index;
@@ -225,7 +242,8 @@ public class DraggableGridView extends ViewGroup implements
 
     protected int getColFromCoor(int row, int coor) {
         coor -= padding;
-        if(row == 0) {
+        // If we are using main tiles, we have offset the click position
+        if (mUseMainTiles && row == 0) {
             coor -= childSize/2;
         }
         for (int i = 0; coor > 0; i++) {
@@ -273,16 +291,22 @@ public class DraggableGridView extends ViewGroup implements
     protected Point getCoorFromIndex(int index) {
         int col = index % colCount;
         int row = index / colCount;
-        if(col == 2 && row == 0) {
-            col = 0;
-            row = 1;
-        }
-        if(index > 2) {
-            col++;
-            if(col == 3) {
+
+        if (mUseMainTiles) {
+            // If on (0,2) and main tiles, (0,2) -> (1,0)
+            if (row == 0 && col == 2) {
                 col = 0;
-                row++;
+                row = 1;
             }
+            // If on row > 0, we skipped a column
+            if (index > 2) {
+                col++;
+            }
+        }
+
+        if (col == 3) {
+            col = 0;
+            row++;
         }
 
         return new Point(padding / 2 + (childSize + padding / 2) * col, padding
@@ -390,7 +414,7 @@ public class DraggableGridView extends ViewGroup implements
                         reorderChildren(true);
                     else {
                         Point xy = getCoorFromIndex(dragged);
-                        if(dragged < 2) {
+                        if (mUseMainTiles && dragged < 2) {
                             xy.x += childSize/2;
                         }
                         v.layout(xy.x, xy.y, xy.x + childSize, xy.y + childSize);
@@ -419,10 +443,10 @@ public class DraggableGridView extends ViewGroup implements
     // EVENT HELPERS
     protected void animateDragged() {
         View v = getChildAt(dragged);
-        int x = getCoorFromIndex(dragged).x + childSize / 2, y = getCoorFromIndex(dragged).y
-                + childSize / 2;
+        int x = getCoorFromIndex(dragged).x + childSize/2, y = getCoorFromIndex(dragged).y
+                + childSize/2;
         int l = x - (3 * childSize / 4), t = y - (3 * childSize / 4);
-        if(dragged < 2) {
+        if (mUseMainTiles && dragged < 2) {
             l += childSize/2;
         }
         v.layout(l, t, l + (childSize * 3 / 2), t + (childSize * 3 / 2));
@@ -464,14 +488,14 @@ public class DraggableGridView extends ViewGroup implements
             Point newXY = getCoorFromIndex(newPos);
 
             int offsetOld = 0;
-            if(oldPos < 2) {
+            if (mUseMainTiles && oldPos < 2) {
                 offsetOld = childSize/2;
             }
             Point oldOffset = new Point(oldXY.x +offsetOld - v.getLeft(), oldXY.y
                     - v.getTop());
 
             int offsetNew = 0;
-            if(newPos < 2) {
+            if (mUseMainTiles && newPos < 2) {
                 offsetNew = childSize/2;
             }
             Point newOffset = new Point(newXY.x +offsetNew - v.getLeft(), newXY.y

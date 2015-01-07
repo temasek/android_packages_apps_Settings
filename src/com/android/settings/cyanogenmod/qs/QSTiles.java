@@ -114,7 +114,7 @@ public class QSTiles extends Fragment {
             tilesList.add(QSUtils.getAdapterItem(getActivity(), tile));
         }
 
-        if(!tilesList.isEmpty()) {
+        if (!tilesList.isEmpty()) {
             ListView listView = new ListView(getActivity());
             listView.setAdapter(new QSListAdapter(getActivity(), -1, tilesList));
 
@@ -130,7 +130,7 @@ public class QSTiles extends Fragment {
                     // Close dialog and add the new tile to the last available position
                     // before "Add / Delete" tile
                     int newPosition = draggableGridView.getChildCount()-1;
-                    if(newPosition < 0) newPosition = 0;
+                    if (newPosition < 0) newPosition = 0;
                     addTileDialog.dismiss();
                     draggableGridView.addView(QSUtils.parseQSTile(getActivity(),
                             ((QSTileHolder) adapterView.getItemAtPosition(i)).getValue()),
@@ -149,8 +149,8 @@ public class QSTiles extends Fragment {
         String order = "";
 
         // Add every tile except the last one (Add / Delete) to the list
-        for(int i = 0; i < draggableGridView.getChildCount()-1; i++) {
-            if(i > 0) {
+        for (int i = 0; i < draggableGridView.getChildCount()-1; i++) {
+            if (i > 0) {
                 order += ",";
             }
             order += draggableGridView.getChildAt(i).getTag();

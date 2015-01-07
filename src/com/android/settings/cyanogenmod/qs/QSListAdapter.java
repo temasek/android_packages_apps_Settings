@@ -47,7 +47,7 @@ public class QSListAdapter extends ArrayAdapter<QSTileHolder> {
 
         holder.entry.setText(getItem(position).getName());
         Drawable icon = null;
-        if(getItem(position).getDrawableId() != -1) {
+        if (getItem(position).getDrawableId() != -1) {
             icon = getContext().getResources().getDrawable(getItem(position).getDrawableId());
         }
         holder.icon.setImageDrawable(icon);
