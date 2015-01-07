@@ -626,4 +626,14 @@
     <!-- Superuser indicator on status bar -->
     <string name="su_indicator">Upozornění na Superusera</string>
     <string name="su_indicator_summary">Zobrazit upozornění na superusera ve stavové liště, pokud má aktivní přístup</string>
+    <!-- Battery Bar -->
+    <string name="status_bar_battery_cat_title">Baterie</string>
+    <string name="battery_bar_title">Pruh baterie</string>
+    <string name="battery_bar">Pozice pruhu baterie</string>
+    <string name="battery_bar_color">Barva pruhu baterie</string>
+    <string name="battery_bar_cat">Style pruhu baterie</string>
+    <string name="battery_bar_style_title">Zarovnání pruhu baterie</string>
+    <string name="battery_bar_thickness_title">Tloušťka pruhu baterie</string>
+    <string name="battery_bar_animate_title">Animace nabíjení</string>
+    <string name="battery_bar_animate_summary">Povolení animace způsobuje horší odezvy systému. Zapínat pouze na vlastní nebezpečí.</string>
 </resources>
