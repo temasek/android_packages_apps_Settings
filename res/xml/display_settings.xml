@@ -33,13 +33,6 @@
                 android:summary="@string/auto_brightness_summary"
                 android:persistent="false" />
 
-        <EditTextPreference
-                android:key="display_density"
-                android:title="@string/display_density"
-                android:summary="@string/display_density_summary"
-                android:persistent="false"
-                android:inputType="numberSigned" />
-
         <PreferenceScreen
                 android:key="wallpaper"
                 android:title="@string/wallpaper_settings_title"
@@ -93,6 +86,26 @@
                 android:title="@string/disable_immersive_message_title"
                 android:summary="@string/disable_immersive_message_summary"
                 android:persistent="false" />
+
+        <PreferenceCategory
+                android:key="display_density_prefs"
+                android:title="@string/display_density">
+
+            <EditTextPreference
+                    android:key="display_density"
+                    android:title="@string/display_density"
+                    android:summary="@string/display_density_summary"
+                    android:persistent="false"
+                    android:inputType="numberSigned" />
+
+            <EditTextPreference
+                    android:key="display_density_override"
+                    android:title="@string/display_density_override"
+                    android:summary="@string/display_density_override_summary"
+                    android:persistent="false"
+                    android:inputType="numberSigned" />
+
+        </PreferenceCategory>
 
         <PreferenceCategory
                 android:key="advanced_display_prefs"
