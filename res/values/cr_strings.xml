@@ -733,4 +733,8 @@ sword is entered</string>
     <string name="battery_bar_regular">Regular</string>
     <string name="battery_bar_center_mirrored">Center mirrored</string>
 
+    <!-- OmniSwitch -->
+    <string name="omniswitch_settings_title">OmniSwitch Settings</string>
+    <string name="omniswitch_settings_summary">Enable and configure omniSwitch recents</string>
+
 </resources>
