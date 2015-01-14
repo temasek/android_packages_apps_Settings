@@ -57,6 +57,7 @@
     <string name="profile_remove_dialog_message">Smazat profil %1$s?</string>
     <string name="profile_populate_profile_from_state">Nastvit profil s použitím aktuální konfigurace zařízení?</string>
     <string name="profile_menu_fill_from_state">Importovat aktuální konfiguraci zařízení</string>
+    <string name="profile_remove_current_profile">Aktuální profil není možné smazat!</string>
     <!-- Add Profile -->
     <string name="add_profile_dialog_title">Vytvořit nový profil</string>
     <string name="profile_name_title">Název</string>
@@ -185,9 +186,7 @@
     <string name="power_menu_users_title">Přepínání uživatelů</string>
     <string name="power_menu_settings_title">Settings shortcut</string>
     <string name="power_menu_lockdown_title">Zamknutí zařízení</string>
-    <string name="power_menu_bug_report_title">Odeslání chybového hlášení</string>
     <string name="power_menu_sound_title">Panel zvukových režimů</string>
-    <string name="power_menu_bug_report_disabled">Odesílání chybových hlášení je vypnuto v nastavení pro vývojáře</string>
     <string name="power_menu_profiles_disabled">Systémové profily jsou vypnuty</string>
     <!-- Backlight brightness settings screen -->
     <string name="adaptive_backlight_title">Přizpůsobivé podsvícení</string>
