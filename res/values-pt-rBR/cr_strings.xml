@@ -15,7 +15,7 @@
   <string name="recents_panel_title">Painel recentes</string>
   <string name="recents_panel_settings">Configurações do painel de Recentes</string>
   <string name="screen_and_animations_title">Tela e animações</string>
-  <string name="display_settings">Display</string>
+  <string name="display_settings">Tela</string>
   <string name="display_settings_title">Configurações de exibição</string>
   
   <!-- General strings -->
@@ -241,7 +241,7 @@
   <!-- QuickSettings: Quick Pulldown -->
   <string name="title_quick_pulldown">Pulldown rápida</string>
   <string name="summary_quick_pulldown">%1$s borda da barra de status vai baixando configurações rápidas</string>
-  <string name="quick_pulldown_off">Off</string>
+  <string name="quick_pulldown_off">Desligado</string>
   <string name="quick_pulldown_left">Esquerda</string>
   <string name="quick_pulldown_right">Direita</string>
   <string name="block_on_secure_keyguard_title">Desativar no lockscreen</string>
@@ -265,12 +265,12 @@
   <string name="navigation_bar_size_44_dp">44 dp</string>
   <string name="navigation_bar_size_40_dp">40 dp</string>
   <string name="navigation_bar_size_42_dp">42 dp</string>
-  <string name="navigation_bar_size_0_dp">0 dp (off)</string>
+  <string name="navigation_bar_size_0_dp">0 dp (Desligado)</string>
   
   <!-- QuickSettings: Smart Pulldown -->
   <string name="smart_pulldown_title">Pulldown inteligente</string>
   <string name="smart_pulldown_summary">Abra configurações rápida quando há notificações de %1$s presentes</string>
-  <string name="smart_pulldown_off">Off</string>
+  <string name="smart_pulldown_off">Desligado</string>
   <string name="smart_pulldown_dismissable">Não descartáveis</string>
   <string name="smart_pulldown_persistent">Não persistente</string>
   <string name="smart_pulldown_all">Não descartáveis ou persistente</string>
@@ -303,7 +303,7 @@
   
   <!-- Lockscreen pin shuffle -->
   <string name="lock_numpad_random_dialog_title">Ordem aleatória de PIN pad</string>
-  <string name="lock_numpad_random_off">Desativado</string>
+  <string name="lock_numpad_random_off">Desligado</string>
   <string name="lock_numpad_random_always">Sempre</string>
   <string name="lock_numpad_random_on_request">A pedido</string>
   <string name="shortcut_action_none">Nenhum</string>
@@ -777,4 +777,9 @@
 	<!-- Text for forcing expanded notifications -->
     <string name="disable_fc_notifications_title">Desativar FC notificações</string>
     <string name="disable_fc_notifications_summary">Isto irá força a esconder todas as notificações próximas</string>
+	
+	<!-- QuickSettings collapse panel -->
+   <string name="quick_settings_collapse_title">Painel Auto perto </string>
+   <string name="quick_settings_collapse_summary">Feche o painel sobre ativar o Quick Settings</string>
+   
 </resources>
