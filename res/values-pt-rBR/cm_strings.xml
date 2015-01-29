@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2015 The CyanogenMod Project
+	 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
+	 
           http://www.apache.org/licenses/LICENSE-2.0
+		  
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -909,17 +912,13 @@
   <string name="qs_tile_lockscreen">Lockscreen</string>
   <string name="qs_tile_lte">LTE</string>
   <string name="qs_tile_visualizer">AudioFX</string>
-  <string name="qs_screentimeout_tile">Tempo limite de tela</string>
-  <string name="qs_screentimeout_mode_title">Modos de tempo limite de tela</string>
   
-  <string name="qs_main_tiles_title">Ampliar a primeira linha</string>
-  <string name="qs_main_tiles_summary_on">Duas peças principais na primeira linha</string>
-  <string name="qs_main_tiles_summary_off">Três telhas em cada fileira</string>
+  <string name="qs_main_tiles_title">Ampliar primeira linha</string>
+  <string name="qs_main_tiles_summary_on">Dois atalhos principais na primeira linha</string>
+  <string name="qs_main_tiles_summary_off">Três atalhos em cada linha</string>
   
   <string name="qs_advanced_location_title">Configurações de localização avançada</string>
   <string name="qs_advanced_location_summary">Ativar as configurações avançadas para localização em configurações rápidas</string>
-  <string name="qs_wifi_detail_title">Vista detalhada de Wi\u2011Fi</string>
-  <string name="qs_wifi_detail_summary">Habilitar a exibição detalhada para Wi\u2011Fi em configurações rápidas</string>
   
   <!-- Gesture Settings -->
   <!-- Settings main menu entry -->
@@ -954,8 +953,8 @@
   <string name="expanded_desktop_state">Estado expandido</string>
   <string name="expanded_enabled_for_all">Habilitado para todos</string>
   <string name="expanded_user_configurable">Usuário configurável</string>
-  <string name="lockscreen_settings_title">Lock screen</string>
   
+  <string name="lockscreen_settings_title">Lock screen</string>
   <string name="lockscreen_targets_message">Atalhos de lockscreen</string>
   <string name="lockscreen_default_target">Padrão</string>
   <string name="lockscreen_message">Toque em um ícone da esquerda ou direita para reatribuir um atalho de tela de bloqueio.</string>
