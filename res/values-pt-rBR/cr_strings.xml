@@ -773,13 +773,5 @@
   <!-- Privacy guard notification -->
     <string name="privacy_guard_notification_title">Notificação</string>
     <string name="privacy_guard_notifiation_summary">Mostrar uma notificação se guarda a privacidade é ativa</string>
-	
-	<!-- Text for forcing expanded notifications -->
-    <string name="disable_fc_notifications_title">Desativar FC notificações</string>
-    <string name="disable_fc_notifications_summary">Isto irá força a esconder todas as notificações próximas</string>
-	
-	<!-- QuickSettings collapse panel -->
-   <string name="quick_settings_collapse_title">Painel Auto perto </string>
-   <string name="quick_settings_collapse_summary">Feche o painel sobre ativar o Quick Settings</string>
    
 </resources>
