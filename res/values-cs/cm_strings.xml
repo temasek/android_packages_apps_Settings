@@ -259,7 +259,6 @@
     <string name="app_security_title">Zabezpečení aplikací</string>
     <string name="sms_security_check_limit_title">Limit SMS zpráv</string>
     <string name="sms_security_check_limit_summary">Zobrazit upozornění pro zabránení aplikacím odesílat často SMS zprávy. Aktuální limit: %d zpráv za 15 minut</string>
-    <string name="sms_security_check_limit_default">30 (výchozí)</string>
     <string name="spam_added_title">Přidáno %1$s</string>
     <string name="spam_last_blocked_title">Poslední blokované %1$s</string>
     <string name="block_notifications_title">Filtrovat oznámení</string>
@@ -269,10 +268,7 @@
     <string name="mod_version">CyanogenMod verze</string>
     <string name="mod_version_default">Neznámá</string>
     <string name="build_date">Datum sestavení</string>
-    <string name="build_date_default">2014-01-01-0000</string>
     <!--- Advanced Settings -->
-    <string name="advanced_settings">Pokročilá nastavení</string>
-    <string name="advanced_settings_summary">Zapnout více možností nastavení</string>
     <string name="contributor_cloud_title">Autoři</string>
     <string name="double_tap_to_wake_title">Probuzení dvojím dotykem</string>
     <string name="proximity_wake_title">Zabránit nechtěnému probuzení</string>
@@ -347,7 +343,7 @@
     <string name="status_bar_battery_style_hidden">Skrytá</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Procenta baterie</string>
-    <string name="status_bar_battery_percentage_default">Skryté (výchozí)</string>
+    <string name="status_bar_battery_percentage_default">Skryté</string>
     <string name="status_bar_battery_percentage_text_inside">Uvnitř ikony</string>
     <string name="status_bar_battery_percentage_text_next">Vedle ikony</string>
     <!-- QuickSettings brightness slider -->
@@ -676,8 +672,8 @@
     <string name="sim_enabler_airplane_on">CHYBA, je zapnut režim v letadle!</string>
     <string name="sim_enabler_in_call">CHYBA, probíhá hovor!</string>
     <string name="sim_enabler_both_inactive">"Není možné vypnout všechny SIM"</string>
-    <string name="sim_enabler_enabling">Aktivování...</string>
-    <string name="sim_enabler_disabling">Deaktivování...</string>
+    <string name="sim_enabler_enabling">Aktivování\u2026</string>
+    <string name="sim_enabler_disabling">Deaktivování\u2026</string>
     <string name="sub_activate_success">Úspěšně aktivováno.</string>
     <string name="sub_activate_failed">Aktivace selhala.</string>
     <string name="sub_deactivate_success">Úspěšně deaktivováno.</string>
@@ -696,7 +692,7 @@
     <string name="menu_hidden_apps_delete">Obnovit</string>
     <string name="menu_hidden_apps_reset_lock">Obnovit zámek vzorem</string>
     <string name="protected_apps">Chráněné aplikace</string>
-    <string name="saving_protected_components">Ukládání stavu kompoment</string>
+    <string name="saving_protected_components">Ukládání stavu kompoment\u2026</string>
     <string name="power_notifications_category_title">Zvuk nabíječky</string>
     <string name="power_notifications_enable_title">Povolit</string>
     <string name="power_notifications_enable_summary">Přehrát zvuk při připojení nebo odpojení nabíječky</string>
@@ -793,7 +789,7 @@
     <string name="expanded_hide_status">Skrýt stavovou lištu</string>
     <string name="expanded_hide_navigation">Skrýt navigační lištu</string>
     <string name="expanded_hide_both">Skrýt obě lišty</string>
-    <string name="expanded_nothing_to_show">Pro přidání vlastní konfigurace pro jednotlivé aplikace je třeba přepnout stav na "Uživatelská konfigurace"</string>
+    <string name="expanded_nothing_to_show">Pro přidání vlastní konfigurace pro jednotlivé aplikace je třeba vypnout stav \'Celkově zapnuto\'</string>
     <string name="expanded_desktop_state">Stav rozšířené plochy</string>
     <string name="expanded_enabled_for_all">Celkově zapnuto</string>
     <string name="expanded_user_configurable">Uživatelská konfigurace</string>
