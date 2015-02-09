@@ -56,7 +56,7 @@
   
   <!-- Volume Keys Media Control -->
   <string name="volume_keys_control_media_stream">Controle de mídia</string>
-  <string name="volume_keys_control_media_stream_summary">Teclas de volume controlam de volume de mídia, ao invés de notificações</string>
+  <string name="volume_keys_control_media_stream_summary">Teclas de volume controlam o volume ao invés de notificações</string>
   
   <!-- Volume Keys Media Control -->
   <string name="title_keyboard_input">Opções avançadas</string>
@@ -290,7 +290,7 @@
   
   <!-- Volume rocker music seek options -->
   <string name="volbtn_music_controls_title">Controles de volume rocker em música</string>
-  <string name="volbtn_music_controls_summary">Quando a tela, long-pressionando os roqueiros volume procurará faixas de música</string>
+  <string name="volbtn_music_controls_summary">Quando a tela está boqueado, precionando longamente o botão de volume, procurará faixas de música</string>
   
   <!-- Ability to disable hardware keys via nav bar settings -->
   <string name="hw_keys_title">Chaves de hardware</string>
@@ -328,7 +328,7 @@
   <string name="shortcut_action_wake_device">Acorda o dispositivo</string>
   
   <string name="shortcut_action_longpress">LONGPRESS:</string>
-  <string name="shortcut_action_select_action_longpress">Escolha longpress ação:</string>
+  <string name="shortcut_action_select_action_longpress">Escolha pressionar longamente ação:</string>
   <string name="shortcut_action_select_action">Escolha a ação:</string>
   <string name="shortcut_action_select_action_newaction">Escolha Nova ação:</string>
   <string name="shortcut_action_reset">Redefinir</string>
@@ -367,7 +367,7 @@
   <string name="shortcuts_icon_picker_snapchat">Snapchat</string>
   <string name="shortcuts_icon_picker_cloud">Nuvem</string>
   <string name="shortcuts_icon_picker_contact">Contato</string>
-  <string name="shortcuts_icon_picker_directdial">Ligação directa</string>
+  <string name="shortcuts_icon_picker_directdial">Ligação direta</string>
   <string name="shortcuts_icon_picker_directmessage">Mensagem direta</string>
   <string name="shortcuts_icon_picker_drive">Dirigir</string>
   <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
@@ -424,13 +424,13 @@
   <string name="temasek_lockscreen_category">Configurações lockscreen</string>
   <string name="temasek_lockscreen_shortcuts_category">Atalhos</string>
   <!-- CM lockscreen shortcuts -->
-  <string name="cm_lockscreen_shortcuts_title">Atalhos cantos inferiores</string>
+  <string name="cm_lockscreen_shortcuts_title">Atalhos nos cantos inferiores</string>
   <string name="cm_lockscreen_shortcuts_summary">Ver ou alterar atalhos personalizados nos cantos inferiores no lockscreen</string>
   <!-- Slim lockscreen shortcuts -->
   <string name="lockscreen_shortcuts_title">Middle screen shortcuts</string>
   <string name="lockscreen_shortcuts_summary">Ver ou alterar atalhos personalizados na tela do meio do lockscreen</string>
-  <string name="lockscreen_shorcuts_longpress_title">Atalhos longpress</string>
-  <string name="lockscreen_shorcuts_longpress_summary">Abra atalhos personalizados do lockscreen sobre longpress</string>
+  <string name="lockscreen_shorcuts_longpress_title">Atalhos pressionar longamente</string>
+  <string name="lockscreen_shorcuts_longpress_summary">Abra atalhos personalizados do lockscreen quando pressionar longamente</string>
 	
   <!-- Unaccounted and overcounted battery stats -->
   <string name="show_unac_and_overcounted_stats_title">Mostrar estatísticas desaparecidos/overcounted</string>
