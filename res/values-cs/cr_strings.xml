@@ -702,4 +702,20 @@
     <!-- Captive Portal -->
     <string name="captive_portal_detection">Svobodné připojení</string>
     <string name="captive_portal_detection_summary">Pokud je vypnuto, připojení na google servery není vyžadováno pro kontrolu datového spojení.</string>
+    <!-- Navring targets (enable/disable) -->
+    <string name="navigation_ring_enable_title">Zapnout navigační kruhy</string>
+    <!-- Heads up touch outside -->
+    <string name="heads_up_touch_outside_title">Chování při dotyku vedle</string>
+    <string name="heads_up_touch_outside_summary_enabled">Skrýt upozornění při dotyku vedle a na tlačítko domů</string>
+    <string name="heads_up_touch_outside_summary_disabled">Neskrývat upozornění při dotyku vedle nebo na tlačítko domů</string>
+    <!-- Doze pulse (ambient display) notification timeout -->
+    <string name="doze_timeout_title">Prodleva ambientního displeje</string>
+
+    <!-- Doze options -->
+    <string name="display_category_doze_options_title">Možnosti ambientního displeje</string>
+    <string name="doze_timeout_title">Prodleva</string>
+    <string name="doze_timeout_summary">Čas, po který zůstává obrazovka zapnutá pro zobrazení upozornění</string>
+    <string name="doze_trigger_motion_title">Senzory ambientního displeje</string>
+    <string name="doze_trigger_motion_summary_on">Ambientní displej aktivuje zvednutí zařízení, rychlý pohyb nebo nové upozornění</string>
+    <string name="doze_trigger_motion_summary_off">Ambientní displej mohu aktivovat pouze upozornění</string>
 </resources>
