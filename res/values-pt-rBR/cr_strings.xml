@@ -709,6 +709,46 @@
   <string name="quick_settings_vibrate_title">Vibrar no toque</string>
   <string name="quick_settings_vibrate_summary">Vibrar ao tocar as telhas</string>
   
+  <!-- Screen recorder -->
+  <string name="screen_recorder_title">Gravação de tela</string>
+  <string name="screen_recorder_summary">Gravador de tela agora pode ser ativar pressionando (botão de desligar + vol. para cima)</string>
+  <string name="screen_recorder_video_dimensions_title">Tamanho do vídeo</string>
+  <string name="screen_recorder_video_bitrate_title">Bitrate</string>
+
+  <!-- video sizes -->
+  <string name="screen_recorder_size_240x400">240x400</string>
+  <string name="screen_recorder_size_360x640">360x640</string>
+  <string name="screen_recorder_size_480x800">480x800</string>
+  <string name="screen_recorder_size_480x854">480x854</string>
+  <string name="screen_recorder_size_540x960">540x960</string>
+  <string name="screen_recorder_size_600x1024">600x1024</string>
+  <string name="screen_recorder_size_720x1280">720x1280</string>
+
+  <!-- frame rates -->
+  <string name="screen_recorder_bitrate_title_100000">100 kB/s</string>
+  <string name="screen_recorder_bitrate_title_250000">250 kB/s</string>
+  <string name="screen_recorder_bitrate_title_500000">500 kB/s</string>
+  <string name="screen_recorder_bitrate_title_1000000">1 MB/s</string>
+  <string name="screen_recorder_bitrate_title_2000000">2 MB/s</string>
+  <string name="screen_recorder_bitrate_title_3000000">3 MB/s</string>
+  <string name="screen_recorder_bitrate_title_4000000">4 MB/s</string>
+  <string name="screen_recorder_bitrate_title_5000000">5 MB/s</string>
+  <string name="screen_recorder_bitrate_title_10000000">10 MB/s</string>
+  <string name="screen_recorder_bitrate_title_20000000">20 MB/s</string>
+  <string name="screen_recorder_bitrate_title_50000000">50 MB/s</string>
+  <string name="screen_recorder_bitrate_title_100000000">100 MB/s</string>
+  <string name="screen_recorder_bitrate_100000">100000</string>
+  <string name="screen_recorder_bitrate_250000">250000</string>
+  <string name="screen_recorder_bitrate_500000">500000</string>
+  <string name="screen_recorder_bitrate_1000000">1000000</string>
+  <string name="screen_recorder_bitrate_2000000">2000000</string>
+  <string name="screen_recorder_bitrate_3000000">3000000</string>
+  <string name="screen_recorder_bitrate_4000000">4000000</string>
+  <string name="screen_recorder_bitrate_5000000">5000000</string>
+  <string name="screen_recorder_bitrate_20000000">20000000</string>
+  <string name="screen_recorder_bitrate_50000000">50000000</string>
+  <string name="screen_recorder_bitrate_100000000">100000000</string>
+  
   <!-- Superuser indicator on status bar -->
   <string name="su_indicator">Indicador de superusuário</string>
   <string name="su_indicator_summary">Mostrar indicador de superusuário no status bar quando uma sessão for ativa</string>
@@ -744,7 +784,7 @@
   <string name="lockscreen_weather_summary">SystemUI será reiniciado!</string>
   
   <!-- Default alarm ringtone -->
-  <string name="alarm_ringtone_title">Ringtone de alarme padrão</string>
+  <string name="alarm_ringtone_title">Toque de alarme padrão</string>
   
   <!-- [CHAR LIMIT=40] Sound & display settings screen, title of dialog for picking LCD density -->
   <!-- temasek display settings screen, setting option name to change LCD density -->
@@ -780,8 +820,8 @@
    
   <!-- Heads Up -->
   <string name="category_heads_up">Heads up notificações</string>
-  <string name="summary_heads_up_enabled">Notificações pop-up estão habilitados</string>
-  <string name="summary_heads_up_disabled">Notificações pop-up estão desativados</string>
+  <string name="summary_heads_up_enabled">Notificações pop-up estão habilitadas</string>
+  <string name="summary_heads_up_disabled">Notificações pop-up estão desativadas</string>
   <string name="add_heads_up_package">Adicionar aplicações</string>
   <string name="add_heads_up_dnd_summary">Mostrar heads up nestas aplicações</string>
   <string name="add_heads_up_blacklist_summary">Mostrar heads-up a partir desses aplicativos</string>

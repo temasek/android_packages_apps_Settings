@@ -870,7 +870,7 @@
   <string name="settings_cmlicense_activity_title">CyanogenMod Legal</string>
   <string name="settings_cmlicense_activity_unreachable">Você não tem uma conexão de dados. Para exibir essas informações agora, vá para %s de qualquer computador conectado à Internet.</string>
   
-  <string name="link_volume_option_title">Link ringtone &amp; notificação volumes</string>
+  <string name="link_volume_option_title">Volume de toque/notificaçoes juntos</string>
   <string name="notification_volume_option_title">Volume de notificação</string>
   
   <!-- Notification drawer -->
@@ -880,11 +880,12 @@
   <string name="status_bar_quick_qs_pulldown_summary">Borda direita da barra de status vai baixando configurações rápidas</string>
   
   <!-- Weather in status bar header -->
-  <string name="status_bar_show_weather_title">Mostrar tempo</string>
+  <string name="status_bar_show_weather_title">Mostrar o tempo</string>
   <string name="status_bar_show_weather_summary">Mostrar o tempo no cabeçalho da barra de status</string>
   
   <string name="qs_category_title">Painel de configurações rápido</string>
   
+  <!-- Quick Settings -->
   <string name="qs_order_title">Selecione e ordene as Telhas</string>
   <string name="add_qs">Adicionar novo azulejo</string>
   
@@ -922,6 +923,13 @@
   <string name="qs_advanced_location_summary">Ativar as configurações avançadas para localização em configurações rápidas</string>
   <string name="qs_screenshot_tile">Screenshot</string>
   <string name="qs_sync_tile">Sincronização</string>
+  <string name="qs_tile_powermenu">Power Menu</string>
+  <string name="qs_battery_saver_tile">Economia de bateria</string>
+  <string name="qs_brightness_tile">Brilho</string>
+  <string name="qs_expanded_desktop_tile">Àrea de trabalho Expandido</string>
+  <string name="qs_notifications_tile">Notificações</string>
+  <string name="qs_screen_off_tile">Desligar tela</string>
+  <string name="qs_screenrecord_tile">Gravação de tela</string>
   
   <!-- Gesture Settings -->
   <!-- Settings main menu entry -->
