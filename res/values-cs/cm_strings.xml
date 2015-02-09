@@ -752,6 +752,7 @@
     <string name="status_bar_show_weather_title">Počasí</string>
     <string name="status_bar_show_weather_summary">Zobrazit počasí nad panelem rychlého nastavení</string>
     <string name="qs_category_title">Panel rychlého nastavení</string>
+    <!-- Quick Settings -->
     <string name="qs_order_title">Přidat nové dlaždice, nebo změnit jejich pořadí</string>
     <string name="add_qs">Přidat novou dlaždici</string>
     <string name="qs_action_delete">Smazat</string>
@@ -784,6 +785,13 @@
     <string name="qs_advanced_location_summary">Zapnout pokročilé nastavení pro dlaždici polohy</string>
     <string name="qs_screenshot_tile">Snímek obrazovky</string>
     <string name="qs_sync_tile">Synchronizace</string>
+    <string name="qs_tile_powermenu">Menu zapínacího tlačítka</string>
+    <string name="qs_battery_saver_tile">Spořič baterie</string>
+    <string name="qs_brightness_tile">Jas</string>
+    <string name="qs_expanded_desktop_tile">Rozšířená plocha</string>
+    <string name="qs_notifications_tile">Upozornění</string>
+    <string name="qs_screen_off_tile">Vypnutí obrazovky</string>
+    <string name="qs_screenrecord_tile">Videozáznam obrazovky</string>
     <string name="gesture_settings_title">Gesta</string>
     <string name="themes_settings_title">Témata vzhledu</string>
     <!-- WiFi Ad-Hoc mode -->

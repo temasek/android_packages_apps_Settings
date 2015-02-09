@@ -929,6 +929,7 @@
     <string name="qs_expanded_desktop_tile">Expanded desktop</string>
     <string name="qs_notifications_tile">Notifications</string>
     <string name="qs_screen_off_tile">Screen off</string>
+    <string name="qs_screenrecord_tile">Screenrecord</string>
 
     <!-- Gesture Settings -->
     <!-- Settings main menu entry -->
