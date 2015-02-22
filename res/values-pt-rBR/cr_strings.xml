@@ -180,6 +180,7 @@
   <string name="enable_clock_weekday">Dia da semana</string>
   <string name="enable_clock_weekday_summary">Abreviado dia da semana antes do tempo</string>
   <string name="right_clock">Relógio a direita</string>
+  <string name="left_clock">Relógio a esquerda</string>
   <string name="center_clock">Relógio no centro</string>
   <string name="dont_show">Não mostrar</string>
   <string name="clock_date_display">Data</string>
@@ -298,7 +299,8 @@
   
   <!--Quick unlock -->
   <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
-  <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando a senha correta é inserida</string>
+  <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando 
+  a senha correta é inserida</string>
   
   <!-- Lockscreen pin shuffle -->
   <string name="lock_numpad_random_title">Alterar a ordem dos números no teclado PIN</string>
@@ -817,17 +819,81 @@
   <string name="heads_up_touch_outside_title">Comportamento ao tocar fora</string>
   <string name="heads_up_touch_outside_summary_enabled">Esconder notificação em contato exterior e no botão home pressionado</string>
   <string name="heads_up_touch_outside_summary_disabled">Não esconder notificação após o toque fora ou no botão home</string>
-  
-  <!-- Doze options -->
-    <string name="display_category_doze_options_title">Exposição à temperatura ambiente (Doze) opções</string>
-    <string name="doze_timeout_title">Doze pulso tempo limite</string>
-    <string name="doze_timeout_summary">Tempo que a tela permanece acesa por pulso notificação</string>
-    <string name="doze_trigger_motion_title">Doze Sensores de disparo</string>
-    <string name="doze_trigger_motion_summary_on">Doze pulso vai ser desencadeada por pegar gesto / sensor de movimento significativo e notificações</string>
-    <string name="doze_trigger_motion_summary_off">Doze pulso só vai ser desencadeada por notificações</string>
-
+ 
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Atender com teclas de volume</string>
     <string name="volume_answer_call_summary">Atender com teclas de volume</string>
+	
+	<!-- Volume pane timeout -->
+    <string name="category_panel_time_out">Painel de tempo limite</string>
+    <string name="volume_panel_time_out_title">Painel de volume tempo limite</string>
+    <string name="volume_panel_time_out_summary">Esconder antes <xliff:g id="number">%d</xliff:g> segundos. Ocultar automaticamente ao tocar fora</string>
+    <string name="volume_panel_time_out_3sec">3 segundos (padrão)</string>
+    <string name="volume_panel_time_out_5sec">5 segundos</string>
+    <string name="volume_panel_time_out_8sec">8 segundos</string>
+    <string name="volume_panel_time_out_12sec">12 segundos</string>
+    <string name="volume_panel_time_out_15sec">15 segundos</string>
+
+        <!-- Doze pulse (ambient display) options -->
+    <string name="doze_overwrite_value_title">Valor Sobreposição</string>
+    <string name="doze_overwrite_value_summary">Permitir para substituir valor padrão com configuração de usuário</string>
+
+    <string name="doze_list_mode_title">Modo Doze</string>
+    <string name="doze_list_mode_summary">Opção para configurar o modo de doze</string>
+
+    <string name="doze_pulse_title">Configurações de hora</string>
+    <string name="doze_pulse_duration_in_title">Fade in</string>
+    <string name="doze_pulse_duration_in_summary"></string>
+
+    <string name="doze_pulse_duration_visible_title">Duração visível</string>
+    <string name="doze_pulse_duration_visible_summary"></string>
+
+    <string name="doze_pulse_duration_out_title">Fade out</string>
+    <string name="doze_pulse_duration_out_summary"></string>
+
+    <string name="doze_pulse_on_notifications_title">Pulsar em notificações</string>
+    <string name="doze_pulse_on_notifications_summary">Ativação do gatilho apenas em notificações pendentes</string>
+
+    <string name="doze_shake_title">configurações de Agite</string>
+    <string name="doze_shake_mode_title">Modo de Agitar</string>
+    <string name="doze_shake_mode_summary">Use a trepidação do sensor para desencadear a ativação</string>
+    <string name="doze_shake_mode_test_summary">Você quer testar o sensor de trepidação?</string>
+    <string name="doze_shake_mode_test_result">Aplicar o valor atual?</string>
+    <string name="doze_shake_test">Agite seu dispositivo agora</string>
+    <string name="doze_shake_it">Agite detectado!</string>
+
+    <string name="doze_shake_acc_threshold_title">Agite limiar</string>
+    <string name="doze_shake_acc_threshold_summary">Configurar sacudida necessária para desencadear a ativação</string>
+
+    <string name="doze_time_mode_title">Mostrar relógio e data</string>
+    <string name="doze_time_mode_summary">Força mostrar o tempo quando não há notificação</string>
+
+    <string name="twohundred_ms">200 ms</string>
+    <string name="fivehundred_ms">500 ms</string>
+    <string name="one_second">1 s</string>
+    <string name="one_second_default">1 s (padrão)</string>
+    <string name="onehalf_second">1.5 s</string>
+    <string name="two_second">2 s</string>
+    <string name="twohalf_second">2.5 s</string>
+    <string name="three_second">3 s</string>
+    <string name="three_second_default">3 s (padrão)</string>
+    <string name="threehalf_second">3.5 s</string>
+    <string name="four_second">4 s</string>
+    <string name="fourhalf_second">4.5 s</string>
+    <string name="five_second">5 s</string>
+
+    <string name="veryeasy_shake">Muito fácil</string>
+    <string name="easy_shake">fácil</string>
+    <string name="medium_shake">Padrão</string>
+    <string name="hard_shake">Difícil</string>
+    <string name="veryhard_shake">Muito difícil</string>
+    <string name="strong_shake">Forte</string>
+
+    <string name="fully_mode">Modo completo</string>
+    <string name="pocket_shake_mode">Bolso e agitar</string>
+    <string name="pocket_pulse_mode">Bolso e pulso</string>
+    <string name="pocket_only_mode">Bolso</string>
+    <string name="shake_pulse_mode">Agitar e pulsar</string>
+    <string name="pulse_only_mode">Pusar (Padrão)</string>
   
 </resources>
