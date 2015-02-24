@@ -319,7 +319,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
             }
             if (mAlarmRingtonePreference != null) {
                 final CharSequence summary = updateRingtoneName(
-                        mContext, RingtoneManager.TYPE_ALARM);
+                        mContext, RingtoneManager.TYPE_ALARM, -1);
                 if (summary != null) {
                     mHandler.obtainMessage(H.UPDATE_ALARM_RINGTONE, summary).sendToTarget();
                 }
