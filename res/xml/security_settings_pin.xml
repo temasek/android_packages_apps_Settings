@@ -41,7 +41,7 @@
             android:key="power_button_instantly_locks"
             android:title="@string/lockpattern_settings_enable_power_button_instantly_locks"/>
 
-        <SwitchPreference
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="quick_unlock_control"
             android:title="@string/unlock_quick_unlock_control_title"
             android:summary="@string/unlock_quick_unlock_control_summary"
