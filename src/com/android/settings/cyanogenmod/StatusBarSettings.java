@@ -29,6 +29,7 @@ import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
+import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
@@ -66,6 +67,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.status_bar_settings);
 
+        PreferenceCategory mCategory = (PreferenceCategory) findPreference("status_bar");
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
@@ -73,8 +75,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         updateClockStyleDescription();
 
         mCarrierLabel = (PreferenceScreen) prefSet.findPreference(KEY_CARRIERLABEL_PREFERENCE);
-        if (Utils.isWifiOnly(getActivity())) {
-            prefSet.removePreference(mCarrierLabel);
+        if (Utils.isWifiOnly(getActivity()) || 
+        TelephonyManager.getDefault().isMultiSimEnabled()) {
+            mCategory.removePreference(mCarrierLabel);
         }
 
         // Network arrows
