@@ -17,6 +17,12 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Smart cover -->
+    <PreferenceScreen
+        android:key="smart_cover"
+        android:title="@string/smart_cover_title"
+        android:fragment="com.android.settings.temasek.SmartCoverSettings" />
+
     <PreferenceCategory
         android:key="display"
         android:title="@string/display_label">

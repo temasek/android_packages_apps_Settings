@@ -142,7 +142,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements Indexab
         }
 
         mVibrator = (Vibrator) getActivity().getSystemService(Context.VIBRATOR_SERVICE);
-        if (mVibrator != null && !mVibrator.hasVibrator()) {
+        if (mVibrator == null || !mVibrator.hasVibrator()) {
             mVibrator = null;
             prefScreen.removePreference(vibrate);
         }
