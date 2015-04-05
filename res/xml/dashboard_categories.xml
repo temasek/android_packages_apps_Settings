@@ -221,6 +221,14 @@
                 android:icon="@drawable/ic_settings_extdesk_hidenavbar"
                 />
 
+        <!-- Temasek spare parts -->
+        <dashboard-tile
+                android:id="@+id/temasek_settings"
+                android:title="@string/temasek_settings_title"
+                android:fragment="com.android.settings.temasek.TemasekSettings"
+                android:icon="@drawable/ic_settings_system"
+                />
+
         <!-- Location -->
         <dashboard-tile
                 android:id="@+id/location_settings"

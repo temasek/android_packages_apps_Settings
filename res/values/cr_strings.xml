@@ -5,7 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
     <!-- Do NOT translate this -->
-   <string name="temasek_version_default">Build V0-PREVIEW 2</string>
+    <string name="temasek_version_default">Build V0-PREVIEW 2</string>
 
     <!-- Changelog -->
     <string name="changelog_temasek_title">Changelog</string>
