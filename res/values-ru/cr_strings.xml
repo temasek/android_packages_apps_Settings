@@ -888,7 +888,7 @@
     <string name="trigger_category">Область триггера</string>
     <string name="trigger_width_title">Ширина триггера</string>
     <string name="trigger_width_summary">Регулировка ширины области триггера</string>
-    <string name="trigger_top_title">Положение триггера</string>
+    <string name="trigger_top_title">Позиция области вызова</string>
     <string name="trigger_top_summary">Регулировка вертикальной позиции области триггера</string>
     <string name="trigger_bottom_title">Высота триггера</string>
     <string name="trigger_bottom_summary">Регулировка высоты области триггера</string>
