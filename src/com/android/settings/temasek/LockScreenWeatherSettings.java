@@ -23,11 +23,11 @@ import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.os.Bundle;
-import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -65,11 +65,11 @@ public class LockScreenWeatherSettings extends SettingsPreferenceFragment implem
     private static final int MENU_RESET = Menu.FIRST;
     private static final int DLG_RESET = 0;
 
-    private CheckBoxPreference mShowWeather;
-    private CheckBoxPreference mShowLocation;
-    private CheckBoxPreference mShowTimestamp;
+    private SwitchPreference mShowWeather;
+    private SwitchPreference mShowLocation;
+    private SwitchPreference mShowTimestamp;
     private ListPreference mConditionIcon;
-    private CheckBoxPreference mColorizeAllIcons;
+    private SwitchPreference mColorizeAllIcons;
     private ColorPickerPreference mTextColor;
     private ColorPickerPreference mIconColor;
 
@@ -101,7 +101,7 @@ public class LockScreenWeatherSettings extends SettingsPreferenceFragment implem
         String hexColor;
 
         mShowWeather =
-                (CheckBoxPreference) findPreference(PREF_SHOW_WEATHER);
+                (SwitchPreference) findPreference(PREF_SHOW_WEATHER);
         mShowWeather.setChecked(showWeather);
         mShowWeather.setOnPreferenceChangeListener(this);
 
@@ -114,13 +114,13 @@ public class LockScreenWeatherSettings extends SettingsPreferenceFragment implem
 
         if (showWeather) {
             mShowLocation =
-                    (CheckBoxPreference) findPreference(PREF_SHOW_LOCATION);
+                    (SwitchPreference) findPreference(PREF_SHOW_LOCATION);
             mShowLocation.setChecked(Settings.System.getInt(mResolver,
                     Settings.System.LOCK_SCREEN_SHOW_WEATHER_LOCATION, 1) == 1);
             mShowLocation.setOnPreferenceChangeListener(this);
 
             mShowTimestamp =
-                    (CheckBoxPreference) findPreference(PREF_SHOW_TIMESTAMP);
+                    (SwitchPreference) findPreference(PREF_SHOW_TIMESTAMP);
             mShowTimestamp.setChecked(Settings.System.getInt(mResolver,
                     Settings.System.LOCK_SCREEN_SHOW_WEATHER_TIMESTAMP, 1) == 1);
             mShowTimestamp.setOnPreferenceChangeListener(this);
@@ -132,7 +132,7 @@ public class LockScreenWeatherSettings extends SettingsPreferenceFragment implem
             mConditionIcon.setOnPreferenceChangeListener(this);
 
             mColorizeAllIcons =
-                    (CheckBoxPreference) findPreference(PREF_COLORIZE_ALL_ICONS);
+                    (SwitchPreference) findPreference(PREF_COLORIZE_ALL_ICONS);
             mColorizeAllIcons.setChecked(colorizeAllIcons);
             mColorizeAllIcons.setOnPreferenceChangeListener(this);
 
