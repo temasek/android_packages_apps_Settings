@@ -113,7 +113,13 @@ public class ManageFingerprints extends SettingsActivity {
         boolean setFallback = getIntent().getBooleanExtra(
                 LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, false);
         if (setFallback) {
-            Intent fallBackIntent = createFallbackIntent();
+            Intent fallBackIntent = new Intent().setClass(this,
+                    ChooseLockGeneric.InternalActivity.class);
+            fallBackIntent.putExtra(LockPatternUtils.LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK, true);
+            fallBackIntent.putExtra(CONFIRM_CREDENTIALS, false);
+            fallBackIntent.putExtra(EXTRA_SHOW_FRAGMENT_TITLE,
+                    R.string.backup_lock_settings_picker_title);
+            fallBackIntent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);
             startActivityForResult(fallBackIntent, SET_FALLBACK);
         }
     }
@@ -141,17 +147,6 @@ public class ManageFingerprints extends SettingsActivity {
             Log.d("TAG", "fallback password NOT set");
         }
         super.onActivityResult(requestCode, resultCode, data);
-    }
-
-    protected Intent createFallbackIntent() {
-        Intent fallBackIntent = new Intent().setClass(this,
-                ChooseLockGeneric.InternalActivity.class);
-        fallBackIntent.putExtra(LockPatternUtils.LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK, true);
-        fallBackIntent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);
-        fallBackIntent.putExtra(CONFIRM_CREDENTIALS, false);
-        fallBackIntent.putExtra(EXTRA_SHOW_FRAGMENT_TITLE,
-                R.string.backup_lock_settings_picker_title);
-        return fallBackIntent;
     }
 
     public static class FingerprintListFragment extends Fragment {
