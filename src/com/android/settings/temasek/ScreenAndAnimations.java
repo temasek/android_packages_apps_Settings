@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.os.SystemProperties;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -37,6 +38,7 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
     private ListPreference mListViewInterpolator;
     private SwitchPreference mTorchOff;
     private ListPreference mTorchOffDelay;
+    private ListPreference mScrollingCachePref;
 
     @Override
     public void onCreate(Bundle icicle) {
