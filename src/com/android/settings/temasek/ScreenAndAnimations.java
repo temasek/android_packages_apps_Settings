@@ -132,10 +132,12 @@ public class ScreenAndAnimations extends SettingsPreferenceFragment implements
                     Settings.System.DISABLE_TORCH_ON_SCREEN_OFF_DELAY, torchOffDelay);
             mTorchOffDelay.setSummary(mTorchOffDelay.getEntries()[index]);
             return true;
+        }
         if (preference == mScrollingCachePref) {
             if (objValue != null) {
                 SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String)objValue);
             return true;
+            }
         }
         return false;
     }
