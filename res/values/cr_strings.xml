@@ -45,4 +45,7 @@
     <string name="recents_show_membar_summary_on">Available RAM memory bar will be displayed on recents view</string>
     <string name="recents_show_membar_summary_off">Toggle to display available RAM memory bar on recents view</string>
 
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast icon</string>
+
 </resources>

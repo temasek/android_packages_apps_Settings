@@ -150,6 +150,12 @@
                     android:summaryOff="@string/recents_show_membar_summary_off"
                     android:defaultValue="false" />
 
+            <!-- Toast Icons -->
+            <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+                    android:key="toast_icon"
+                    android:title="@string/toast_icon_title"
+                    android:defaultValue="true" />
+
             <com.android.settings.FontDialogPreference
                     android:key="font_size"
                     android:title="@string/title_font_size"
