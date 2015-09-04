@@ -127,6 +127,7 @@ public class DisplayRotation extends SettingsPreferenceFragment {
 
     private void updateAccelerometerRotationSwitch() {
         mAccelerometer.setChecked(!RotationPolicy.isRotationLocked(getActivity()));
+        mAccelerometer.setEnabled(RotationPolicy.isRotationLockToggleVisible(getActivity()));
     }
 
     private int getRotationBitmask() {
@@ -149,6 +150,8 @@ public class DisplayRotation extends SettingsPreferenceFragment {
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
             Preference preference) {
+        boolean value;
+
         if (preference == mAccelerometer) {
             RotationPolicy.setRotationLockForAccessibility(getActivity(),
                     !mAccelerometer.isChecked());
@@ -163,6 +166,11 @@ public class DisplayRotation extends SettingsPreferenceFragment {
             }
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.ACCELEROMETER_ROTATION_ANGLES, mode);
+            return true;
+        } else if (preference == mLockScreenRotationPref) {
+            value = mLockScreenRotationPref.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.LOCKSCREEN_ROTATION, value ? 1 : 0);
             return true;
         }
 
