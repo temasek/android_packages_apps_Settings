@@ -441,7 +441,7 @@
     <string name="profile_applist_title">Applikationen</string>
 
     <!-- Gesture Anywhere floating mode-->
-    <string name="gesture_anywhere_floating">Gesture Anywhere</string>
+    <string name="gesture_anywhere_floating">Überall-Gesten</string>
     <string name="gesture_anywhere_floating_summary">Shortcuts im Float Modus starten</string>
 
     <!-- App Circle sidebar -->
@@ -911,27 +911,27 @@
     <string name="alarm_ringtone_title">Default alarm ringtone</string>
     
     <!-- App sidebar -->
-    <string name="app_sidebar_title">Appbar</string>
-    <string name="app_sidebar_enable_title">Enable Appbar</string>
-    <string name="app_sidebar_enable_summaryOn">Appbar is enabled</string>
-    <string name="app_sidebar_enable_summaryOff">Appbar is disabled</string>
-    <string name="app_sidebar_setup_items_title">Setup Appbar content</string>
-    <string name="app_sidebar_setup_items_summary">Add, remove, and position items in the appbar</string>
-    <string name="app_sidebar_transparency_title">Appbar transparency</string>
-    <string name="app_sidebar_transparency_summary">Adjust the Appbar transparency level</string>
-    <string name="app_sidebar_position_title">Appbar position</string>
-    <string name="app_sidebar_position_summary">Position the Appbar on the left or right side of the screen</string>
-    <string name="app_sidebar_position_left">Left</string>
+    <string name="app_sidebar_title">App-Balken</string>
+    <string name="app_sidebar_enable_title">App-Balken einschalten</string>
+    <string name="app_sidebar_enable_summaryOn">App-Balken ist eingeschaltet</string>
+    <string name="app_sidebar_enable_summaryOff">App-Balken ist ausgeschaltet</string>
+    <string name="app_sidebar_setup_items_title">App-Balken Inhalt konfigurieren</string>
+    <string name="app_sidebar_setup_items_summary">Einträge im App-Balken hinzufügen, entfernen und positionieren</string>
+    <string name="app_sidebar_transparency_title">App-Balken-Transparenz</string>
+    <string name="app_sidebar_transparency_summary">Transparenzgrad des App-Balkens einstellen</string>
+    <string name="app_sidebar_position_title">Position des App-Balkens</string>
+    <string name="app_sidebar_position_summary">Den App-Balken an der linken oder rechten Bildschirmkante positionieren</string>
+    <string name="app_sidebar_position_left">Links</string>
     <string name="app_sidebar_position_right">Rechts</string>
-    <string name="app_sidebar_hide_labels_title">Hide icon labels</string>
-    <string name="app_sidebar_hide_labels_summary">Hide Appbar icon labels</string>
-    <string name="tab_category">Visible Tab</string>
-    <string name="use_tab_title">Display tab</string>
-    <string name="use_tab_summary">Display a visible tab on the side which will display the appbar when touched.</string>
-    <string name="tab_position_title">Tab location</string>
-    <string name="tab_position_summary">Display the tab on the top, middle, or bottom on the side of the screen.</string>
-    <string name="tab_size_title">Tab size</string>
-    <string name="tab_size_summary">Change the size of the visible tab.</string>
+    <string name="app_sidebar_hide_labels_title">Symbolbeschriftungen verbergen</string>
+    <string name="app_sidebar_hide_labels_summary">App-Balken Symbolbeschriftungen verbergen</string>
+    <string name="tab_category">Sichtbarer Tab</string>
+    <string name="use_tab_title">Tab anzeigen</string>
+    <string name="use_tab_summary">Sichtbaren Tab an der Seite anzeigen, bei dessen Berührung der App-Balken geöffnet wird.</string>
+    <string name="tab_position_title">Position des Tabs</string>
+    <string name="tab_position_summary">Zeige den Tab im Kopf, Mitte oder Fußbereich der Bildschirmkante an.</string>
+    <string name="tab_size_title">Größe des Tabs</string>
+    <string name="tab_size_summary">Größe des sichtbaren Tabs ändern.</string>
 
     <!-- Breathing Notifications -->
     <string name="breathing_notifications_title">Breathing notifications</string>
@@ -954,96 +954,96 @@
     <string name="theme_reset_message">Reset theme state to default?</string>
 
     <!--Power menu -->
-    <string name="power_category">Power button</string>
-    <string name="lockscreen_enable_power_menu_title">Enable on lock screen</string>
-    <string name="actions_category">Actions</string>
+    <string name="power_category">Power-Knopf</string>
+    <string name="lockscreen_enable_power_menu_title">Auf dem Sperrbildschirm einschalten</string>
+    <string name="actions_category">Aktionen</string>
 
     <!-- Block QS on secure lock screen -->
-    <string name="block_on_secure_keyguard_title">Disable on lock screen</string>
-    <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lock screen.</string>
+    <string name="block_on_secure_keyguard_title">Auf dem Sperrbildschirm ausschalten</string>
+    <string name="block_on_secure_keyguard_summary">Schnelleinstellungen auf dem sicheren Sperrbildschirm ausschalten.</string>
 
     <!-- Instant reboot -->
-    <string name="advanced_reboot_oneclick">One click reboot</string>
-    <string name="advanced_reboot_oneclick_summary">Instantly trigger reboot action</string>
+    <string name="advanced_reboot_oneclick">One-click-Reboot</string>
+    <string name="advanced_reboot_oneclick_summary">Sofortige Ausführen des Reboots</string>
 
     <!-- Lock Gesture settings -->
     <!-- Security & location settings screen, setting option name -->
-    <string name="lockgesture_change_lock_pattern_label">Change unlock gesture</string>
+    <string name="lockgesture_change_lock_pattern_label">Entsperr-Geste ändern</string>
     <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
-    <string name="lockgesture_change_lock_pin_label">Change unlock PIN</string>
+    <string name="lockgesture_change_lock_pin_label">Entsperr-PIN ändern</string>
     <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
-    <string name="lockgesture_need_to_unlock">Confirm saved gesture</string>
+    <string name="lockgesture_need_to_unlock">Gespeicherte Geste bestätigen</string>
     <!-- Do not translate. -->
     <string name="lockgesture_need_to_unlock_footer" />
     <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
-    <string name="lockgesture_need_to_unlock_wrong">Try again:</string>
+    <string name="lockgesture_need_to_unlock_wrong">Nochmals versuchen:</string>
     <!-- Do not translate. -->
     <string name="lockgesture_need_to_unlock_wrong_footer" />
     <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
-    <string name="lockgesture_recording_intro_header">Draw an unlock gesture:</string>
+    <string name="lockgesture_recording_intro_header">Entsperr-Geste malen:</string>
     <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
-    <string name="lockgesture_recording_intro_footer">Press Menu for help.</string>
+    <string name="lockgesture_recording_intro_footer">Menü öffnen für Hilfe.</string>
     <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
-    <string name="lockgesture_recording_inprogress">Release finger when done.</string>
+    <string name="lockgesture_recording_inprogress">Wenn fertig, dann Finger loslassen.</string>
     <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
-    <string name="lockgesture_pattern_entered_header">Gesture recorded.</string>
+    <string name="lockgesture_pattern_entered_header">Geste aufgezeichnet.</string>
     <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
-    <string name="lockgesture_need_to_confirm">Draw gesture again to confirm:</string>
-    <string name="lockgesture_pattern_confirmed_header">Your new unlock gesture:</string>
+    <string name="lockgesture_need_to_confirm">Zur Bestätigung die Geste nochmals malen:</string>
+    <string name="lockgesture_pattern_confirmed_header">Ihre neue Entsperr-Geste:</string>
     <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
-    <string name="lockgesture_confirm_button_text">Confirm</string>
+    <string name="lockgesture_confirm_button_text">Bestätigen</string>
     <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
-    <string name="lockgesture_restart_button_text">Redraw</string>
+    <string name="lockgesture_restart_button_text">Neumalen</string>
     <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
-    <string name="lockgesture_retry_button_text">Retry</string>
+    <string name="lockgesture_retry_button_text">Wiederholen</string>
     <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
-    <string name="lockgesture_continue_button_text">Continue</string>
+    <string name="lockgesture_continue_button_text">Fortsetzen</string>
     <!-- Security & location settings screen, unlock screen activity title -->
-    <string name="lockgesture_settings_title">Unlock gesture</string>
+    <string name="lockgesture_settings_title">Entsperr-Geste</string>
     <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
-    <string name="lockgesture_settings_enable_title">Require gesture</string>
+    <string name="lockgesture_settings_enable_title">Verlange Geste</string>
     <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
-    <string name="lockgesture_settings_enable_summary">Must draw gesture to unlock screen</string>
+    <string name="lockgesture_settings_enable_summary">Zum Entsperren muss eine Geste gemalt werden</string>
    <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
-    <string name="lockgesture_settings_enable_visible_pattern_title">Make gesture visible</string>
+    <string name="lockgesture_settings_enable_visible_pattern_title">Geste sichtbar machen</string>
     <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
-    <string name="lockgesture_settings_enable_power_button_instantly_locks">Power button instantly locks</string>
+    <string name="lockgesture_settings_enable_power_button_instantly_locks">Power-Button sperrt sofort</string>
     <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
-    <string name="lockgesture_settings_choose_lock_pattern">Set unlock gesture</string>
+    <string name="lockgesture_settings_choose_lock_pattern">Entsperr-Geste setzen</string>
     <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
-    <string name="lockgesture_settings_change_lock_pattern">Change unlock gesture</string>
+    <string name="lockgesture_settings_change_lock_pattern">Entsperr-Geste ändern</string>
     <!-- Security & location settings screen, the help instructions (an animation) caption -->
-    <string name="lockgesture_settings_help_how_to_record">How to draw an unlock gesture</string>
+    <string name="lockgesture_settings_help_how_to_record">Wie man eine Entsperr-Geste malt</string>
     <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
-    <string name="lockgesture_too_many_failed_confirmation_attempts_header">Too many incorrect attempts!</string>
+    <string name="lockgesture_too_many_failed_confirmation_attempts_header">Zu viele Fehlversuche!</string>
     <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
-    <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Try again in <xliff:g id="number">%d</xliff:g> seconds.</string>
+    <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Nochmals versuchen in <xliff:g id="number">%d</xliff:g> Sekunden.</string>
     <!-- Toast shown if setting gesture was successful -->
-    <string name="lockpassword_gesture_set_toast">Gesture has been set</string>
+    <string name="lockpassword_gesture_set_toast">Geste wurde gesetzt</string>
     <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
-    <string name="lockpassword_confirm_your_gesture_header">Confirm your gesture</string>
+    <string name="lockpassword_confirm_your_gesture_header">Bestätigen Sie Ihre Geste</string>
     <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
-    <string name="lockpassword_choose_your_gesture_header">Draw your gesture</string>
+    <string name="lockpassword_choose_your_gesture_header">Malen Sie Ihre Geste</string>
 
     <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
-    <string name="unlock_set_unlock_gesture_title">Gesture</string>
+    <string name="unlock_set_unlock_gesture_title">Geste</string>
     <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
-    <string name="unlock_set_unlock_gesture_summary">Low security, experimental</string>
+    <string name="unlock_set_unlock_gesture_summary">Geringe Sicherheit, experimentell</string>
 
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
-    <string name="unlock_set_unlock_mode_gesture">Gesture</string>
+    <string name="unlock_set_unlock_mode_gesture">Geste</string>
 
     <!-- Nfc settings -->
     <string name="nfc_polling_mode_title">NFC polling mode</string>
-    <string name="nfc_polling_mode_screen_off">Screen off</string>
-    <string name="nfc_polling_mode_screen_locked">Screen on, locked</string>
-    <string name="nfc_polling_mode_screen_unlocked">Screen on, unlocked (default)</string>
+    <string name="nfc_polling_mode_screen_off">Bildschirm aus</string>
+    <string name="nfc_polling_mode_screen_locked">Bildschirm an, gesperrt</string>
+    <string name="nfc_polling_mode_screen_unlocked">Bildschirm an, entsperrt (default)</string>
 
     <!-- Notification drawer clear all icon -->
     <string name="notification_drawer_clear_all_icon_color_title">Clear all icon</string>
 
     <!-- Status bar expanded header: Custom background color -->
-    <string name="background_header_title">Header background color</string>
+    <string name="background_header_title">Kopf Hintergrundfarbe</string>
 
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Task Manager</string>
