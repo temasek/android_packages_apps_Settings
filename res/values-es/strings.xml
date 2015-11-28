@@ -25,8 +25,8 @@
     <string name="dlg_switch" msgid="6243971420240639064">"Cambiar"</string>
     <string name="device_info_default" msgid="7847265875578739287">"Desconocido"</string>
     <plurals name="show_dev_countdown" formatted="false" msgid="7201398282729229649">
-      <item quantity="other">Solo te quedan <xliff:g id="STEP_COUNT_1">%1$d</xliff:g> pasos de ser un desarrollador.</item>
-      <item quantity="one">Solo te queda <xliff:g id="STEP_COUNT_0">%1$d</xliff:g> paso de ser un desarrollador.</item>
+      <item quantity="other">Solo quedan <xliff:g id="STEP_COUNT_1">%1$d</xliff:g> pasos para ser un desarrollador.</item>
+      <item quantity="one">Solo queda <xliff:g id="STEP_COUNT_0">%1$d</xliff:g> paso para ser un desarrollador.</item>
     </plurals>
     <string name="show_dev_on" msgid="1110711554982716293">"¡Ahora están activadas las opciones de desarrollo!"</string>
     <string name="show_dev_already" msgid="2151632240145446227">"Las opciones de desarrollo ya están activadas."</string>
@@ -112,7 +112,7 @@
     <string name="bluetooth_broadcasting" msgid="16583128958125247">"Emisiones"</string>
     <string name="bluetooth_disable_profile_title" msgid="5916643979709342557">"¿Inhabilitar perfil?"</string>
     <string name="bluetooth_disable_profile_message" msgid="2895844842011809904">"Se inhabilitará&lt;br&gt;&lt;b&gt;<xliff:g id="PROFILE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;de&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%2$s</xliff:g>&lt;/b&gt;."</string>
-    <string name="bluetooth_unknown" msgid="644716244548801421"></string>
+    <string name="bluetooth_unknown" msgid="644716244548801421">Desconocido</string>
     <string name="bluetooth_device" msgid="5291950341750186887">"Dispositivo Bluetooth sin nombre"</string>
     <string name="progress_scanning" msgid="192587958424295789">"Buscando"</string>
     <string name="bluetooth_no_devices_found" msgid="1085232930277181436">"No hay dispositivos Bluetooth cercanos."</string>
@@ -404,7 +404,7 @@
     <string name="unlock_set_unlock_launch_picker_change_summary" msgid="2790960639554590668">"Cambia o inhabilit seguridad contraseña, PIN o patrón"</string>
     <string name="unlock_set_unlock_launch_picker_enable_summary" msgid="4791110798817242301">"Elige un método para bloquear la pantalla."</string>
     <string name="unlock_set_unlock_off_title" msgid="7117155352183088342">"Sin seguridad"</string>
-    <string name="unlock_set_unlock_off_summary" msgid="94361581669110415"></string>
+    <string name="unlock_set_unlock_off_summary" msgid="94361581669110415">Desbloquear</string>
     <string name="unlock_set_unlock_none_title" msgid="5679243878975864640">"Deslizar"</string>
     <string name="unlock_set_unlock_none_summary" msgid="8914673583104628191">"Sin seguridad"</string>
     <string name="unlock_set_unlock_pattern_title" msgid="2912067603917311700">"Patrón"</string>
@@ -509,7 +509,7 @@
     <string name="bluetooth_incoming_pairing_msg" msgid="1615930853859551491">"De:&lt;br&gt;&lt;b&gt;<xliff:g id="DEVICE_NAME">%1$s</xliff:g>&lt;/b&gt;&lt;br&gt;&lt;br&gt;¿Vincular con este dispositivo?"</string>
     <string name="bluetooth_display_passkey_pin_msg" msgid="2796550001376088433">"Para vincular con:<xliff:g id="BOLD1_0">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="DEVICE_NAME">%1$s</xliff:g><xliff:g id="END_BOLD1">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g>Escribe<xliff:g id="BOLD2_1">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="PASSKEY">%2$s</xliff:g><xliff:g id="END_BOLD2">&lt;/b&gt;</xliff:g> en el dispositivo y, a continuación, pulsa la tecla Intro o de retorno."</string>
     <string name="bluetooth_pairing_shares_phonebook" msgid="2277931851483023208">"Permitir que <xliff:g id="DEVICE_NAME">%1$s</xliff:g> acceda a tus contactos y al historial de llamadas"</string>
-    <string name="bluetooth_error_title" msgid="6850384073923533096"></string>
+    <string name="bluetooth_error_title" msgid="6850384073923533096">Error de Bluetooth</string>
     <string name="bluetooth_connecting_error_message" msgid="1397388344342081090">"No se ha podido establecer conexión con <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
     <string name="bluetooth_preference_scan_title" msgid="2277464653118896016">"Buscar dispositivos"</string>
     <string name="bluetooth_search_for_devices" msgid="2754007356491461674">"Actualizar"</string>
@@ -765,7 +765,7 @@
     <string name="home_settings" msgid="212375129455718176">"Inicio"</string>
     <string name="display_settings_title" msgid="1708697328627382561">"Pantalla"</string>
     <string name="sound_settings" msgid="5534671337768745343">"Sonido"</string>
-    <string name="ringtone_summary" msgid="2630023412632683493"></string>
+    <string name="ringtone_summary" msgid="2630023412632683493">Tono de llamada</string>
     <string name="all_volume_title" msgid="4296957391257836961">"Volumen"</string>
     <string name="musicfx_title" msgid="3415566786340790345">"Efectos de música"</string>
     <string name="ring_volume_title" msgid="7938706566797464165">"Volumen del timbre"</string>
@@ -893,7 +893,7 @@
     <string name="device_info_settings" product="tablet" msgid="1119755927536987178">"Estado del tablet"</string>
     <string name="device_info_settings" product="default" msgid="475872867864762157">"Estado del teléfono"</string>
     <string name="system_update_settings_list_item_title" msgid="3342887311059985961">"Actualizaciones del sistema"</string>
-    <string name="system_update_settings_list_item_summary" msgid="3853057315907710747"></string>
+    <string name="system_update_settings_list_item_summary" msgid="3853057315907710747">Actualizaciones del sistema</string>
     <string name="firmware_version" msgid="4801135784886859972">"Versión de Android"</string>
     <string name="security_patch" msgid="8438384045870296634">"Nivel de parche de seguridad de Android"</string>
     <string name="model_number" msgid="3765737700545384794">"Número de modelo"</string>
@@ -954,8 +954,8 @@
     <string name="sd_insert_summary" product="default" msgid="2048640010381803841">"Insertar una tarjeta SD para el montaje"</string>
     <string name="sd_mount" product="nosdcard" msgid="8966695015677343116">"Activar almacenamiento USB"</string>
     <string name="sd_mount" product="default" msgid="5940523765187704135">"Activar tarjeta SD"</string>
-    <string name="sd_mount_summary" product="nosdcard" msgid="4673411327373419641"></string>
-    <string name="sd_mount_summary" product="default" msgid="4673411327373419641"></string>
+    <string name="sd_mount_summary" product="nosdcard" msgid="4673411327373419641">Montar almacenamiento USB</string>
+    <string name="sd_mount_summary" product="default" msgid="4673411327373419641">Montar tarjeta SD</string>
     <string name="sd_format" product="nosdcard" msgid="2148179271623099054">"Borrar almacenamiento USB"</string>
     <string name="sd_format" product="default" msgid="2576054280507119870">"Borrar tarjeta SD"</string>
     <string name="sd_format_summary" product="nosdcard" msgid="6331905044907914603">"Borrar todos los datos del almacenamiento USB del teléfono, como la música y las fotos"</string>
@@ -967,8 +967,8 @@
     <string name="dlg_confirm_unmount_title" product="default" msgid="3634502237262534381">"¿Desactivar tarjeta SD?"</string>
     <string name="dlg_confirm_unmount_text" product="nosdcard" msgid="4322636662873269018">"Si desactivas el almacenamiento USB, se detendrán algunas aplicaciones que estás usando y no estarán disponibles hasta que vuelvas a activarlo."</string>
     <string name="dlg_confirm_unmount_text" product="default" msgid="6998379994779187692">"Si desactivas la tarjeta SD, se detendrán algunas aplicaciones en ejecución y no estarán disponibles hasta que la vuelvas a activar."</string>
-    <string name="dlg_error_unmount_title" product="nosdcard" msgid="4642742385125426529"></string>
-    <string name="dlg_error_unmount_title" product="default" msgid="4642742385125426529"></string>
+    <string name="dlg_error_unmount_title" product="nosdcard" msgid="4642742385125426529">Error al desmontar la tarjeta el almacenamiento USB</string>
+    <string name="dlg_error_unmount_title" product="default" msgid="4642742385125426529">Error al desmontar la tarjeta SD</string>
     <string name="dlg_error_unmount_text" product="nosdcard" msgid="9191518889746166147">"No se ha podido desactivar el almacenamiento USB. Inténtalo de nuevo más tarde."</string>
     <string name="dlg_error_unmount_text" product="default" msgid="3500976899159848422">"No se ha podido desactivar la tarjeta SD. Inténtalo de nuevo más tarde."</string>
     <string name="unmount_inform_text" product="nosdcard" msgid="7120241136790744265">"Se desactivará el almacenamiento USB."</string>
@@ -1091,7 +1091,7 @@
     <string name="menu_new" msgid="3014205883303921729">"Nuevo APN"</string>
     <string name="menu_save" msgid="8109345640668285399">"Guardar"</string>
     <string name="menu_cancel" msgid="2194502410474697474">"Descartar"</string>
-    <string name="error_title" msgid="7631322303341024692"></string>
+    <string name="error_title" msgid="7631322303341024692">Error</string>
     <string name="error_name_empty" msgid="5508155943840201232">"El campo Nombre no puede estar vacío."</string>
     <string name="error_apn_empty" msgid="4932211013600863642">"El campo APN no puede estar vacío."</string>
     <string name="error_mcc_not3" msgid="4560171714156251661">"El campo MCC debe contener 3 dígitos."</string>
@@ -1350,7 +1350,7 @@
     <string name="clear_data_dlg_text" msgid="3951297329833822490">"Todos los datos de esta aplicación se eliminarán de forma permanente. Esto incluye todos los archivos, ajustes, cuentas, bases de datos, etc."</string>
     <string name="dlg_ok" msgid="2402639055725653590">"Aceptar"</string>
     <string name="dlg_cancel" msgid="1674753358972975911">"Cancelar"</string>
-    <string name="app_not_found_dlg_title" msgid="3127123411738434964"></string>
+    <string name="app_not_found_dlg_title" msgid="3127123411738434964">Aplicación no encontrada</string>
     <string name="app_not_found_dlg_text" msgid="4893589904687340011">"No se ha encontrado la aplicación en la lista de aplicaciones instaladas."</string>
     <string name="clear_data_failed" msgid="7214074331627422248">"No se ha podido borrar los datos de aplicaciones."</string>
     <string name="app_factory_reset_dlg_title" msgid="7441012826373143593">"¿Desinstalar aplicaciones?"</string>
@@ -1384,7 +1384,7 @@
     <string name="system_package" msgid="1352722848400644991">"Las actualizaciones del sistema no se pueden instalar en ubicaciones externas."</string>
     <string name="force_stop_dlg_title" msgid="977530651470711366">"¿Forzar detención?"</string>
     <string name="force_stop_dlg_text" msgid="7208364204467835578">"Si se detiene una aplicación, es posible que no funcione correctamente."</string>
-    <string name="move_app_failed_dlg_title" msgid="1282561064082384192"></string>
+    <string name="move_app_failed_dlg_title" msgid="1282561064082384192">Movimiento de aplicación fallido</string>
     <string name="move_app_failed_dlg_text" msgid="187885379493011720">"No se ha podido mover la aplicación (<xliff:g id="REASON">%1$s</xliff:g>)."</string>
     <string name="app_install_location_title" msgid="2068975150026852168">"Ubicación de instalación preferida"</string>
     <string name="app_install_location_summary" msgid="5155453752692959098">"Modificar la ubicación de instalación preferida para nuevas aplicaciones"</string>
@@ -1449,7 +1449,7 @@
     <string name="language_settings_category" msgid="2288258489940617043">"Ajustes de idioma"</string>
     <string name="keyboard_settings_category" msgid="8275523930352487827">"Teclado y métodos de introducción"</string>
     <string name="phone_language" msgid="8870144109924299673">"Idioma"</string>
-    <string name="phone_language_summary" msgid="3871309445655554211"></string>
+    <string name="phone_language_summary" msgid="3871309445655554211">Resumen de idiomas</string>
     <string name="auto_replace" msgid="6199184757891937822">"Corrección automática"</string>
     <string name="auto_replace_summary" msgid="370288728200084466">"Corregir palabras con errores de escritura"</string>
     <string name="auto_caps" msgid="6379232078052591265">"Mayúsculas automáticas"</string>
@@ -1474,7 +1474,7 @@
     <string name="keyboard_layout_default_label" msgid="2952672513543482165">"Predeterminado"</string>
     <string name="keyboard_layout_picker_title" msgid="556081931972771610">"Diseños de teclado"</string>
     <string name="user_dict_settings_title" msgid="3427169369758733521">"Diccionario personal"</string>
-    <string name="user_dict_settings_summary" msgid="7965571192902870454"></string>
+    <string name="user_dict_settings_summary" msgid="7965571192902870454">Resumen</string>
     <string name="user_dict_settings_add_menu_title" msgid="4056762757149923551">"Añadir"</string>
     <string name="user_dict_settings_add_dialog_title" msgid="4702613990174126482">"Añadir al diccionario"</string>
     <string name="user_dict_settings_add_screen_title" msgid="742580720124344291">"Frase"</string>
@@ -1937,7 +1937,7 @@
     <string name="credential_storage_type_hardware" msgid="6077193544333904427">"Almacenado en hardware"</string>
     <string name="credential_storage_type_software" msgid="4403117271207715378">"Solo software"</string>
     <string name="credentials_settings_not_available" msgid="7968275634486624215">"Las credenciales no están disponibles para este usuario"</string>
-    <string name="credentials_unlock" msgid="385427939577366499"></string>
+    <string name="credentials_unlock" msgid="385427939577366499">Contraseña de almacenamiento de credenciales</string>
     <string name="credentials_unlock_hint" msgid="2301301378040499348">"Escribe la contraseña del almacenamiento de credenciales."</string>
     <string name="credentials_old_password" msgid="7553393815538684028">"Contraseña actual:"</string>
     <string name="credentials_reset_hint" msgid="6297256880896133631">"¿Seguro que quieres eliminar todos los certificados?"</string>
@@ -1970,7 +1970,7 @@
     <string name="local_backup_password_toast_success" msgid="582016086228434290">"Nueva contraseña de seguridad establecida"</string>
     <string name="local_backup_password_toast_confirmation_mismatch" msgid="7805892532752708288">"La nueva contraseña y la de confirmación no coinciden"</string>
     <string name="local_backup_password_toast_validation_failure" msgid="5646377234895626531">"Error al establecer la contraseña de seguridad"</string>
-    <string name="backup_erase_dialog_title" msgid="1027640829482174106"></string>
+    <string name="backup_erase_dialog_title" msgid="1027640829482174106">Borrar copias de seguridad</string>
     <string name="backup_erase_dialog_message" msgid="5221011285568343155">"¿Quieres dejar de crear copias de seguridad de las contraseñas Wi-Fi, de los marcadores y de otros ajustes y datos de aplicaciones, además de borrar todas las copias de los servidores de Google?"</string>
     <string name="fullbackup_erase_dialog_message" msgid="944399039066318647">"¿Quieres detener la copia de seguridad de los datos del dispositivo (como las contraseñas de redes Wi-Fi y el historial de llamadas) y de las aplicaciones (por ejemplo, los ajustes y los archivos guardados) y borrar todas las copias de Google Drive?"</string>
     <string name="fullbackup_data_summary" msgid="960850365007767734">"Realiza una copia de seguridad automática de los datos del dispositivo (como las contraseñas de redes Wi-Fi y el historial de llamadas) y de los datos de las aplicaciones (como sus ajustes y archivos guardados) de forma remota.\n\nAl activar la copia de seguridad automática, los datos del dispositivo y de las aplicaciones se guardan periódicamente de forma remota. Los datos de las aplicaciones pueden ser cualquier tipo de información que guarden (en función de la configuración de los desarrolladores), incluidos los datos que pueden ser confidenciales (como contactos, mensajes y fotos)."</string>
@@ -2430,7 +2430,7 @@
     <string name="user_image_take_photo" msgid="1280274310152803669">"Hacer foto"</string>
     <string name="user_image_choose_photo" msgid="7940990613897477057">"Seleccionar foto de la galería"</string>
     <string name="user_image_photo_selector" msgid="5492565707299454873">"Seleccionar foto"</string>
-    <string name="regulatory_info_text" msgid="5623087902354026557"></string>
+    <string name="regulatory_info_text" msgid="5623087902354026557">Información de regulación</string>
     <string name="sim_setup_wizard_title" msgid="1732682852692274928">"Tarjetas SIM"</string>
     <string name="sim_settings_title" msgid="6822745211458959756">"Tarjetas SIM"</string>
     <string name="sim_settings_summary" msgid="4050372057097516088">"<xliff:g id="SIM_NAME">%1$s</xliff:g> - <xliff:g id="SIM_NUMBER">%2$s</xliff:g>"</string>
