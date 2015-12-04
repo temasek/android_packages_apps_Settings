@@ -25,19 +25,19 @@
     <string name="dlg_switch" msgid="6243971420240639064">"Wechseln"</string>
     <string name="device_info_default" msgid="7847265875578739287">"Unbekannt"</string>
     <plurals name="show_dev_countdown" formatted="false" msgid="7201398282729229649">
-      <item quantity="other">In <xliff:g id="STEP_COUNT_1">%1$d</xliff:g> Schritten sind Sie ein Entwickler.</item>
+      <item quantity="other">In <xliff:g id="STEP_COUNT_1">%1$d</xliff:g> Schritten sind Sie Entwickler.</item>
       <item quantity="one">In <xliff:g id="STEP_COUNT_0">%1$d</xliff:g> Schritt sind Sie ein Entwickler.</item>
     </plurals>
-    <string name="show_dev_on" msgid="1110711554982716293">"Sie sind jetzt ein Entwickler!"</string>
-    <string name="show_dev_already" msgid="2151632240145446227">"Okay, Sie sind bereits ein Entwickler."</string>
-    <string name="header_category_wireless_networks" msgid="5110914332313954940">"Drahtlos &amp; Netzwerke"</string>
+    <string name="show_dev_on" msgid="1110711554982716293">"Der Entwicklermodus wurde aktiviert!"</string>
+    <string name="show_dev_already" msgid="2151632240145446227">"Nicht nötig, der Entwicklermodus wurde bereits aktiviert."</string>
+    <string name="header_category_wireless_networks" msgid="5110914332313954940">"Drahtlose &amp; Netzwerke"</string>
     <string name="header_category_connections" msgid="6471513040815680662">"Verbindungen"</string>
     <string name="header_category_device" msgid="4544026001618307754">"Gerät"</string>
     <string name="header_category_personal" msgid="3310195187905720823">"Nutzer"</string>
     <string name="header_category_access" msgid="7580499097416970962">"Zugriff"</string>
     <string name="header_category_system" msgid="2816866961183068977">"System"</string>
-    <string name="turn_on_radio" msgid="8706561489788373676">"Mobilfunkverbindung aktivieren"</string>
-    <string name="turn_off_radio" msgid="1820294552893884115">"Mobilfunkverbindung deaktivieren"</string>
+    <string name="turn_on_radio" msgid="8706561489788373676">"Mobile Daten aktivieren"</string>
+    <string name="turn_off_radio" msgid="1820294552893884115">"Mobile Daten deaktivieren"</string>
     <string name="sms_over_ims_on" msgid="5085290395865632925">"SMS über IMS aktivieren"</string>
     <string name="sms_over_ims_off" msgid="8354792045992793959">"SMS über IMS deaktivieren"</string>
     <string name="ims_reg_required_on" msgid="3885152087309614653">"Die IMS-Registrierung muss aktiviert werden."</string>
@@ -46,14 +46,14 @@
     <string name="volte_provisioned_flag_off" msgid="6168612015904744405">"VoLTE-Kennzeichnung deaktivieren"</string>
     <string name="lte_ram_dump_on" msgid="8568568019520172177">"LTE-RAM-Dump aktivieren"</string>
     <string name="lte_ram_dump_off" msgid="2514507918652378283">"LTE-RAM-Dump deaktivieren"</string>
-    <string name="radioInfo_menu_viewADN" msgid="8743377494429930831">"SIM-Adressbuch anzeigen"</string>
+    <string name="radioInfo_menu_viewADN" msgid="8743377494429930831">"SIM-Kontakte anzeigen"</string>
     <string name="radioInfo_menu_viewFDN" msgid="7934301566925610318">"Zugelassene Rufnummern anzeigen"</string>
     <string name="radioInfo_menu_viewSDN" msgid="7130280686244955669">"Servicerufnummern anzeigen"</string>
     <string name="radioInfo_menu_getPDP" msgid="560610293888406317">"PDP-Liste abrufen"</string>
     <string name="radioInfo_service_in" msgid="1915416319177520020">"In Betrieb"</string>
     <string name="radioInfo_service_out" msgid="5238736759641916278">"Außer Betrieb"</string>
-    <string name="radioInfo_service_emergency" msgid="2485604591272668370">"Nur Notrufe"</string>
-    <string name="radioInfo_service_off" msgid="1434084741785525415">"Mobilfunkverbindung aus"</string>
+    <string name="radioInfo_service_emergency" msgid="2485604591272668370">"Nur Notrufe möglich!"</string>
+    <string name="radioInfo_service_off" msgid="1434084741785525415">"Mobile Daten aus"</string>
     <string name="radioInfo_roaming_in" msgid="9045363884600341051">"Roaming"</string>
     <string name="radioInfo_roaming_not" msgid="2851853244069662307">"Kein Roaming"</string>
     <string name="radioInfo_phone_idle" msgid="7489244938838742820">"Ruhezustand"</string>
@@ -63,7 +63,7 @@
     <string name="radioInfo_data_connecting" msgid="8404571440697917823">"Verbindung wird hergestellt"</string>
     <string name="radioInfo_data_connected" msgid="7074301157399238697">"Verbunden"</string>
     <string name="radioInfo_data_suspended" msgid="5315325487890334196">"Angehalten"</string>
-    <string name="radioInfo_unknown" msgid="737385314432468266">"unbekannt"</string>
+    <string name="radioInfo_unknown" msgid="737385314432468266">"Unbekannt"</string>
     <string name="radioInfo_display_packets" msgid="8654359809877290639">"Pakete"</string>
     <string name="radioInfo_display_bytes" msgid="4018206969492931883">"Bytes"</string>
     <string name="radioInfo_display_dbm" msgid="3621221793699882781">"dBm"</string>
@@ -93,7 +93,7 @@
     <string name="bluetooth_is_discoverable_always" msgid="2849387702249327748">"Sichtbar für alle Bluetooth-Geräte in der Nähe"</string>
     <string name="bluetooth_not_visible_to_other_devices" msgid="9120274591523391910">"Nicht sichtbar für andere Bluetooth-Geräte"</string>
     <string name="bluetooth_only_visible_to_paired_devices" msgid="2049983392373296028">"Nur sichtbar für Partnergeräte"</string>
-    <string name="bluetooth_visibility_timeout" msgid="8002247464357005429">"Sichtbarkeit einstellen"</string>
+    <string name="bluetooth_visibility_timeout" msgid="8002247464357005429">"Sichtbarkeits-Timeout"</string>
     <string name="bluetooth_lock_voice_dialing" msgid="3139322992062086225">"Sprachwahl sperren"</string>
     <string name="bluetooth_lock_voice_dialing_summary" msgid="4741338867496787042">"Verwendung des Bluetooth-Dialers bei gesperrtem Bildschirm verhindern"</string>
     <string name="bluetooth_devices" msgid="1886018064039454227">"Bluetooth-Geräte"</string>
