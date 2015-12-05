@@ -4,8 +4,6 @@
 
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Inoffizielle Temasek Version</string>
-    <!-- Do NOT translate this -->
-    <string name="temasek_version_default">Build V1.4</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek Einstellungen</string>
