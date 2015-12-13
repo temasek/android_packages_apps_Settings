@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, Temasek version -->
+    <string name="temasek_version_title">Temasek非官方版本</string>
+
+	
+	
+	<!-- temasek spare parts -->
+    <string name="temasek_settings_title">Temasek扩展设置</string>
+
+    <!-- Changelog -->
+    <string name="changelog_temasek_title">更新日志</string>
+    <string name="changelog_temasek_error">加载更新日志</string>
+
+    <!-- General strings -->
+    <string name="attention">注意</string>
+    <string name="reset">重置</string>
+    <string name="help">帮助</string>
+    <string name="default_string">默认</string>
+    <string name="enabled">启用</string>
+    <string name="disabled">禁用</string>
+    <string name="ok">好的</string>
+    <string name="reset_message">重置全部选项为默认值?</string>
+    <string name="extras_temasek_settings">Temasek扩展</string>
+    <string name="reset_default_message">重置为默认</string>
+    <string name="additional_options_title">其他选项</string>
+    <string name="general_options_title">一般</string>
+    <string name="screen_and_animations_title">屏幕和动画</string>    
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">拾色器</string>
+    <string name="press_color_to_apply">点击颜色以应用该颜色</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">16进制:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">设置</string>
+    <string name="color_default">默认</string>
+
+    <!-- About device screen, CPU and RAM info. -->
+    <string name="cpu_info">CPU</string>
+    <string name="mem_info">内存</string>
+
+    <!-- SuperSU -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- Viper4Android -->
+    <string name="viper_title">Viper4Android</string>
+
+    <!-- OTA update -->
+    <string name="ota_title">OTA更新</string>
+
+    <!-- Superuser indicator on status bar -->
+    <string name="su_indicator">超级用户指示器</string>
+    <string name="su_indicator_summary_on">当一个会话是活动时超级用户指示器可见</string>
+    <string name="su_indicator_summary_off">当一个会话是活动时，切换显示超级用户指示器</string>
+
+    <!-- long press back to kill configurable timeout -->
+    <string name="kill_app_longpress_timeout_title">长按返回键超时</string>
+    <string name="timeout_2000">2 秒 (默认)</string>
+    <string name="timeout_1500">1.5 秒</string>
+    <string name="timeout_1000">1 秒</string>
+    <string name="timeout_500">0.5 秒</string>
+
+    <!-- Battery saver color -->
+    <string name="battery_saver_color_title">警告颜色</string>
+    <string name="battery_saver_color_summary">当电池省电模式激活时，启用橙色状态栏和导航栏</string>
+
+    <!-- RAM bar -->
+    <string name="recents_show_membar_title">内存使用条</string>
+    <string name="recents_show_membar_summary_on">在最近应用视图中显示可用的内存显示条</string>
+    <string name="recents_show_membar_summary_off">在最近应用视图中切换显示可用的内存显示条</string>
+
+     <!-- Recents panel settings -->
+    <string name="recents_panel_title">最近应用面板</string>
+    <string name="recents_panel_settings">最近应用面板设置</string>
+    <string name="show_clear_all_recents_button_title">清除所有最近应用按钮</string>
+    <string name="show_clear_all_recents_button_summary">在最近应用面板显示清除所有应用按钮</string>
+    <string name="recents_clear_all_location_title">清除所有最近应用按钮位置</string>
+    <string name="recents_clear_all_location_top_right">右上方</string>
+    <string name="recents_clear_all_location_top_left">左上方</string>
+    <string name="recents_clear_all_location_top_center">顶部居中</string>
+    <string name="recents_clear_all_location_bottom_right">右下方</string>
+    <string name="recents_clear_all_location_bottom_left">左下方</string>
+    <string name="recents_clear_all_location_bottom_center">底部居中</string>
+    <string name="recents_clear_all_dismiss_all_title">清除所有任务</string>
+    <string name="recents_clear_all_dismiss_all_summary">选择关闭所有任务或忽略前台任务</string>
+	
+	<!-- Recents Fullscreen -->
+    <string name="recents_show_fullscreen">全屏显示最近应用</string>
+    <string name="recents_fullscreen_summary_enabled">全屏显示最近应用已启用</string>
+    <string name="recents_fullscreen_summary_disabled">全屏显示最近应用已禁用</string>
+	
+	<!-- OmniSwitch -->
+    <string name="omniswitch_settings_title">OmniSwitch</string>
+    <string name="recents_use_omniswitch_title">用作最近应用</string>
+    <string name="recents_use_omniswitch_summary">使用OmniSwitch代替默认的最近应用面板视图</string>
+    <string name="omniswitch_start_settings_title">设置</string>
+    <string name="omniswitch_start_settings_summary">打开OmniSwitch设置</string>
+    <string name="omniswitch_first_time_title">信息</string>
+    <string name="omniswitch_first_time_message">请确保你已启用OmniSwitch. 你可以在下面的\"设置\"菜单里面启用</string>
+
+	<!-- Toast Icons -->
+    <string name="toast_icon_title">吐司图标</string>
+
+    <!--Status bar date -->
+    <string name="status_bar_date_title">日期</string>
+    <string name="status_bar_date_none">隐藏 (默认)</string>
+    <string name="status_bar_date_small">小</string>
+    <string name="status_bar_date_normal">标准</string>
+    <string name="status_bar_date_format_title">日期格式</string>
+    <string name="status_bar_date_style">日期样式</string>
+    <string name="status_bar_date_style_normal">标准</string>
+    <string name="status_bar_date_style_lowercase">小写</string>
+    <string name="status_bar_date_style_uppercase">大写</string>
+    <string name="status_bar_date_format_custom">自定义java格式</string>
+    <string name="status_bar_date_string_edittext_title">必须为日期格式，比如 MM/dd/yy</string>
+    <string name="status_bar_date_string_edittext_summary">输入字符串</string>
+
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_category">时钟</string>
+    <string name="clock_color_title">颜色</string>
+    <string name="status_bar_clock_style_reset">重置颜色</string>
+    <string name="status_bar_clock_style_reset_message">重置时钟颜色?</string>
+    <string name="clock_font_style_title">字体</string>
+    <string name="clock_font_normal">标准</string>
+    <string name="clock_font_italic">斜体</string>
+    <string name="clock_font_bold">粗体</string>
+    <string name="clock_font_bold_italic">粗斜体</string>
+    <string name="clock_font_light">细体</string>
+    <string name="clock_font_light_italic">细斜体</string>
+    <string name="clock_font_thin">瘦体</string>
+    <string name="clock_font_thin_italic">瘦斜体</string>
+    <string name="clock_font_condensed">简单体</string>
+    <string name="clock_font_condensed_italic">简斜体</string>
+    <string name="clock_font_condensed_bold">简粗体</string>
+    <string name="clock_font_condensed_bold_italic">简粗斜体</string>
+    <string name="clock_font_medium">中体</string>
+    <string name="clock_font_medium_italic">中斜体</string>
+    <string name="clock_font_size_title">字体大小</string>
+    <string name="status_bar_show_clock_second_title">时钟秒数</string>
+    <string name="clock_font_size_4">4</string>
+    <string name="clock_font_size_5">5</string>
+    <string name="clock_font_size_6">6</string>
+    <string name="clock_font_size_7">7</string>
+    <string name="clock_font_size_8">8</string>
+    <string name="clock_font_size_9">9</string>
+    <string name="clock_font_size_10">10</string>
+    <string name="clock_font_size_11">11</string>
+    <string name="clock_font_size_12">12</string>
+    <string name="clock_font_size_13">13</string>
+    <string name="clock_font_size_14">14</string>
+    <string name="clock_font_size_15">15</string>
+    <string name="clock_font_size_16">16</string>
+    <string name="clock_font_size_17">17</string>
+    <string name="clock_font_size_18">18</string>
+    <string name="clock_font_size_19">19</string>
+    <string name="clock_font_size_20">20</string>
+    <string name="clock_font_size_21">21</string>
+    <string name="clock_font_size_22">22</string>
+    <string name="clock_font_size_23">23</string>
+
+    <!-- Navigation bar -->
+    <string name="nav_bar_title">导航栏</string>
+    <string name="navbar_enable_bar_title">导航栏按钮</string>
+    <string name="navbar_enable_bar_summary">在屏幕上启用导航栏按钮</string>
+    <string name="navbar_style_dimen_title">导航栏尺寸</string>
+    <string name="navbar_dimensions_reset_message">重置所有选项为默认值?</string>
+    <string name="navigation_bar_height_title">导航栏高度</string>
+    <string name="navigation_bar_height_summary">当横屏时导航栏的高度</string>
+    <string name="navigation_bar_height_landscape_title">竖屏导航栏的高度</string>
+    <string name="navigation_bar_height_landscape_summary">当竖屏时导航栏高度</string>
+    <string name="navigation_bar_width_title">导航栏宽度</string>
+    <string name="navigation_bar_width_summary">当导航栏位于边缘时的高度</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (默认)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (默认)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (关闭)</string>
+
+    <!-- Navigation bar button color -->
+    <string name="navbar_button_tint_title">导航栏按钮颜色</string>
+
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">双击睡眠</string>
+    <string name="double_tap_sleep_nav_bar_summary">双击导航栏使设备睡眠</string>
+
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">硬件按键</string>
+    <string name="hw_keys_summary">启用硬件按键</string>
+
+    <!-- Unaccounted and overcounted battery stats -->
+    <string name="show_unac_and_overcounted_stats_title">显示未知/过度的统计</string>
+    <string name="show_unac_and_overcounted_stats_summary">在电池统计中显示未知使用和过度统计.</string>
+
+    <!-- SlimDim -->
+    <string name="dim_nav_buttons_category">SlimDim</string>
+    <string name="dim_nav_buttons_title">活动后降低按钮亮度</string>
+    <string name="dim_nav_buttons_summary">当导航栏按钮在指定时间过后没有进行交互操作将降低按钮亮度</string>
+    <string name="dim_nav_buttons_timeout_title">降低亮度超时</string>
+    <string name="dim_nav_buttons_timeout_summary">等待降低亮度时间（毫秒）</string>
+    <string name="dim_nav_buttons_alpha_title">Dim透明度</string>
+    <string name="dim_nav_buttons_alpha_summary">降低按钮亮度的透明度</string>
+    <string name="dim_nav_buttons_animate_title">Dim动画</string>
+    <string name="dim_nav_buttons_animate_summary">动画渐隐透明度</string>
+    <string name="dim_nav_buttons_animate_duration_title">动画时长</string>
+    <string name="dim_nav_buttons_animate_duration_summary">透明动画的持续时间（毫秒）</string>
+    <string name="dim_nav_buttons_touch_anywhere_title">监听整个触摸屏</string>
+    <string name="dim_nav_buttons_touch_anywhere_summary_on">监听屏幕的任意位置将导致取消降低按钮亮度</string>
+    <string name="dim_nav_buttons_touch_anywhere_summary_off">只有触摸导航栏才会取消降低按钮亮度</string>
+
+    <!-- Time-context headers in notification header -->
+    <string name="contextual_title">上下标头</string>
+    <string name="status_bar_custom_header_title">自定义标头图片</string>
+    <string name="status_bar_custom_header_summary">启用通知面板标题图片</string>
+    <string name="status_bar_custom_header_default_title">选择你的图片</string>
+    <string name="custom_header_image_0">默认</string>
+    <string name="custom_header_image_1">Modern</string>
+    <string name="custom_header_image_2">Poly HD</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">网络流量</string>
+    <string name="show_network_traffic_state">状态栏流量监测</string>
+    <string name="network_traffic_summary">启用在状态栏显示各种网络流量</string>
+    <string name="show_network_traffic_unit">显示单位</string>
+    <string name="show_network_traffic_frequency">更新间隔</string>
+    <string name="show_network_traffic_disable">已禁用</string>
+    <string name="show_network_traffic_up">上传</string>
+    <string name="show_network_traffic_down">下载</string>
+    <string name="show_network_traffic_all">上传和下载</string>
+    <string name="show_network_traffic_bit">位/秒</string>
+    <string name="show_network_traffic_byte">字节/秒</string>
+    <string name="show_network_traffic_500">500 毫秒</string>
+    <string name="show_network_traffic_1000">1000 毫秒</string>
+    <string name="show_network_traffic_1500">1500 毫秒</string>
+    <string name="show_network_traffic_2000">2000 毫秒</string>
+    <string name="network_traffic_autohide">自动隐藏</string>
+    <string name="network_traffic_autohide_summary">当没有网络活动时，自动隐藏流量监测</string>
+    <string name="network_traffic_autohide_threshold">活动阀值</string>
+    <string name="network_traffic_color_style">颜色样式</string>
+    <string name="network_traffic_color_reset">重置颜色</string>
+    <string name="network_traffic_color_reset_message">重置网络流量颜色为默认值?</string>
+
+    <!-- Battery Bar -->
+    <string name="battery_icon">电池图标样式</string>
+    <string name="battery_not_title">在通知中的电池图标</string>
+    <string name="battery_not_summary">在显示清除全部的界面显示电池图标</string>
+    <string name="battery_bar_location">电量条位置</string>
+    <string name="battery_bar_color">电量条颜色</string>
+    <string name="battery_bar">电量条选项</string>
+    <string name="battery_bar_style_title">电量条样式</string>
+    <string name="battery_bar_thickness_title">电量条厚度</string>
+    <string name="battery_bar_animate_title">充电动画</string>
+    <string name="battery_bar_animate_summary">充电动画可能导致用户体验变差，是否启用由你决定.</string>
+
+    <!-- Status bar temperature -->
+    <string name="status_bar_temperature_title">温度</string>
+    <string name="status_bar_temperature_hidden">隐藏</string>
+    <string name="status_bar_temperature_show_scale">以标准单位显示</string>
+    <string name="status_bar_temperature_hide_scale">不以标准单位显示</string>
+    <string name="status_bar_temperature_location_title">显示位置</string>
+    <string name="status_bar_temperature_location_summary">选择在状态栏何处显示天气温度</string>
+    <string name="status_bar_temperature_location_right">右侧显示</string>
+    <string name="status_bar_temperature_location_left">左侧显示</string>
+    <string name="status_bar_weather_color_title">温度颜色</string>
+    <string name="status_bar_weather_size_title">字体大小</string>
+    <string name="status_bar_weather_font_style_title">字体</string>
+    <string name="status_bar_weather_font_normal">标准</string>
+    <string name="status_bar_weather_font_italic">斜体</string>
+    <string name="status_bar_weather_font_bold">加粗</string>
+    <string name="status_bar_weather_font_bold_italic">粗斜体</string>
+    <string name="status_bar_weather_font_light">细体</string>
+    <string name="status_bar_weather_font_light_italic">细斜体</string>
+    <string name="status_bar_weather_font_thin">瘦体</string>
+    <string name="status_bar_weather_font_thin_italic">瘦斜体</string>
+    <string name="status_bar_weather_font_condensed">简单体</string>
+    <string name="status_bar_weather_font_condensed_italic">简斜体</string>
+    <string name="status_bar_weather_font_condensed_bold">间粗体</string>
+    <string name="status_bar_weather_font_condensed_bold_italic">简斜粗体</string>
+    <string name="status_bar_weather_font_medium">中等</string>
+    <string name="status_bar_weather_font_medium_italic">中等斜体</string>
+
+    <!-- Lockscreen weather -->
+    <string name="status_bar_show_weather_category">天气</string>
+    <string name="lock_screen_weather_settings_title">锁屏天气</string>
+    <string name="weather_cat_notifications_title">通知</string>
+    <string name="weather_show_weather_title">显示天气</string>
+    <string name="weather_show_weather_summary">启用显示天气信息</string>
+    <string name="weather_show_location_title">显示位置</string>
+    <string name="weather_show_location_summary">启用显示位置</string>
+    <string name="weather_show_timestamp_title">显示时间戳</string>
+    <string name="weather_show_timestamp_summary">启用以显示时间戳</string>
+    <string name="weather_condition_icon_title">状态图标</string>
+    <string name="weather_condition_icon_dlg_title">选择一个图标用于显示天气状况</string>
+    <string name="weather_condition_icon_monochrome_title">单色</string>
+    <string name="weather_condition_icon_colored_title">有色</string>
+    <string name="weather_condition_icon_vclouds_title">虚拟</string>
+    <string name="weather_colorize_all_icons_title">所有图标上色</string>
+    <string name="weather_colorize_all_icons_summary">启用所有图标上色，仅在单色图标下禁用上色</string>
+    <string name="weather_hide_panel_title">隐藏天气面板</string>
+    <string name="weather_hide_panel_dlg_title">选择何时天气面板该隐藏</string>
+    <string name="weather_hide_panel_auto_title">自动</string>
+    <string name="weather_hide_panel_custom_title">自定义</string>
+    <string name="weather_hide_panel_never_title">从不</string>
+    <string name="weather_hide_panel_auto_summary">当可见通知数量达到允许的最大值时，将隐藏天气面板</string>
+    <string name="weather_hide_panel_custom_summary">当可见通知数量达到设置的值(%s)时，将隐藏天气面板</string>
+    <string name="weather_hide_panel_never_summary">天气面板不会隐藏</string>
+    <string name="weather_number_of_notifications_title">通知数量</string>
+    <string name="weather_number_of_notifications_dlg_title">选择达到多少通知数量时隐藏天气面板</string>
+    <string name="weather_number_of_notifications_always_title">总是</string>
+    <string name="weather_number_of_notifications_two_title">2</string>
+    <string name="weather_number_of_notifications_three_title">3</string>
+    <string name="weather_number_of_notifications_four_title">4</string>
+    <string name="weather_number_of_notifications_five_title">5</string>
+    <string name="weather_number_of_notifications_six_title">6</string>
+    <string name="icons_title">图标</string>
+    <string name="position_right_title">右侧</string>
+    <string name="position_centered_title">居中</string>
+    <string name="hidden_title">隐藏</string>
+    <string name="dlg_reset_values_message">重置为默认值?</string>
+    <string name="dlg_reset_android">是</string>
+    <string name="colors_title">颜色</string>
+    <string name="text_title">文本</string>
+
+    <!-- Show carrier label and custom -->
+
+    <string name="carrier_options">运营商标签</string>
+    <string name="custom_carrier_label_title">自定义运营商标签</string>
+    <string name="custom_carrier_label_explain">请输入一个新的标签，保留空白将恢复默认的运营商标签.</string>
+    <string name="custom_carrier_label_notset">没有设置自定义运营商标签</string>
+    <string name="status_bar_carrier_color">运营商标签颜色</string>
+    <string name="status_bar_carrier_size">运营商标签文字大小</string>
+    <string name="show_carrier_title">运营商标签</string>
+    <string name="show_carrier_disabled">禁用</string>
+    <string name="show_carrier_keyguard">锁屏运营商</string>
+    <string name="show_carrier_statusbar">状态栏运营商</string>
+    <string name="show_carrier_enabled">启用</string>
+
+    <!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper_title">壁纸</string>
+    <string name="lockscreen_wallpaper_summary">设置锁屏壁纸</string>
+    <string name="lockscreen_wallpaper_set_title">设置锁屏壁纸</string>
+    <string name="lockscreen_wallpaper_clear_title">清除锁屏壁纸</string>
+    <string name="reset_lockscreen_wallpaper">重置为默认值</string>
+
+    <!-- Lockscreen see through -->
+    <string name="lockscreen_see_through_title">锁屏模糊</string>
+    <string name="lockscreen_see_through_summary">模糊显示锁屏后面的内容.</string>
+    <string name="lockscreen_blur_radius">模糊效果强度</string>
+
+    <!-- Media art -->
+    <string name="media_art_title">媒体封面</string>
+    <string name="media_art_summary">在锁屏界面显示媒体封面</string>
+
+    <!-- Sound settings -->
+    <string name="advanced_sound_title">高级选项</string>
+    <string name="sound_title">声音</string>
+
+    <!-- Camera sound switch -->
+    <string name="camera_sounds_title">照相机快门声</string>
+    <string name="camera_sounds_summary">启用照相机快门声</string>
+    <string name="camera_sound_warning_dialog_text">禁用相机快门声在某些地区是违法的！请查看你国家适用的法律</string>
+
+    <!-- Lock clock -->
+    <string name="lock_clock_title">时钟小工具</string>
+    <string name="lock_clock_summary">查看或更改时钟插件如何显示</string>
+    <string name="lock_clock_clock_section_title">时钟和闹钟</string>
+    <string name="lock_clock_clock_section_summary">查看或更改时钟插件如何显示</string>
+    <string name="lock_clock_weather_section_title">天气面板</string>
+    <string name="lock_clock_weather_section_summary">查看或更改时钟插件中的天气如何显示</string>
+    <string name="lock_clock_calendar_section_title">日历时间</string>
+    <string name="lock_clock_calendar_section_summary">查看或更改时钟插件中的日历如何显示</string>
+
+   <!-- Gesture Anywhere -->
+    <string name="gesture_anywhere_title">全局手势</string>
+    <string name="gesture_anywhere_enabled_title">全局手势</string>
+    <string name="gesture_anywhere_enabled_summary">启用全局手势功能</string>
+    <string name="gesture_anywhere_position_title">位置</string>
+    <string name="gesture_anywhere_position_left">左侧边缘</string>
+    <string name="gesture_anywhere_position_right">右侧边缘</string>
+    <string name="gesture_anywhere_gestures_title">手势</string>
+    <string name="gesture_anywhere_gestures_summary">添加、移除、修改手势</string>
+    <!-- Label, button used to add a gesture -->
+    <string name="ga_button_add">添加手势</string>
+    <!-- Label, button used to reload all gestures -->
+    <string name="ga_button_reload">重新载入</string>
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <string name="ga_button_discard">放弃</string>
+    <!-- Label, button used to save a gesture newly created -->
+    <string name="ga_button_done">完成</string>
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <string name="ga_prompt_gesture_name">名称</string>
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <string name="ga_error_missing_name">你必须输入一个名称</string>
+    <!-- success message, tells the user where the gesture was saved -->
+    <string name="ga_save_success">%s 手势已保存</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_rename_action">确定</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_cancel_action">取消</string>
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <string name="ga_gestures_loading">正在载入手势...</string>
+    <!-- Message displayed when the user has no gestures -->
+    <string name="ga_gestures_empty">没有手势</string>
+    <!-- Title of the screen used to view/manage gestures -->
+    <string name="ga_gestures_activity">手势</string>
+    <!-- Noun, menu item used to edit a gesture -->
+    <string name="ga_gestures_edit">编辑</string>
+    <!-- Noun, menu item used to remove a gesture -->
+    <string name="ga_gestures_delete">删除</string>
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <string name="ga_gestures_delete_success">手势已删除</string>
+    <!-- Title of dialog box -->
+    <string name="ga_gestures_rename_title">重命名手势</string>
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <string name="ga_gestures_rename_label">手势名称</string>
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+    <string name="ga_gestures_error_loading">不能载入 %s. 请确保有可用的存储空间.</string>
+    <string name="trigger_category">触发区域</string>
+    <string name="trigger_width_title">触发宽度</string>
+    <string name="trigger_width_summary">调整触发区域的宽度</string>
+    <string name="trigger_top_title">触发位置</string>
+    <string name="trigger_top_summary">调整触发区域的垂直位置</string>
+    <string name="trigger_bottom_title">触发高度</string>
+    <string name="trigger_bottom_summary">调整触发区域的高度</string>
+    <string name="picker_activities">活动</string>
+    <string name="select_custom_app_title">选择自定义应用</string>
+    <string name="select_custom_activity_title">选择自定义活动</string>
+    <string name="profile_applist_title">应用</string>
+
+    <!-- Text for forcing expanded notifications -->
+    <string name="disable_fc_notifications_title">禁用强制关闭通知</string>
+    <string name="disable_fc_notifications_summary">这将隐藏所有的强制关闭通知</string>
+
+    <!-- Headphones icon switch -->
+    <string name="show_headset_icon_title">耳机图标</string>
+    <string name="show_headset_icon_summary">当耳机连接上时显示耳机图标.</string>
+
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">快速解锁</string>
+    <string name="unlock_quick_unlock_control_summary">当输入正确的PIN/密码时自动解锁</string>
+
+    <!-- Sound & Notification Settings -->
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">链接铃声和通知音量</string>
+    <string name="notification_volume_option_title">通知音量</string>
+    <string name="ring_notification_volume_option_title">铃声和通知音量</string>
+
+    <!--Power menu -->
+    <string name="power_category">电源按钮</string>
+    <string name="lockscreen_enable_power_menu_title">锁屏下显示电源菜单</string>
+    <string name="lockscreen_enable_power_menu_summary">这个选项将仅在安全锁屏下禁用电源菜单</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">开机时进行媒体扫描</string>
+    <string name="media_scanner_on_boot_enabled">扫描媒体</string>
+    <string name="media_scanner_on_boot_ask">询问扫描(通知)</string>
+    <string name="media_scanner_on_boot_disabled">不扫描媒体</string>
+
+    <!-- Slim DSLV -->
+    <string name="shortcut_action_none">无</string>
+    <string name="shortcut_action_longpress">长按:</string>
+    <string name="shortcut_action_select_action_longpress">选择长按操作:</string>
+    <string name="shortcut_action_select_action">选择操作:</string>
+    <string name="shortcut_action_select_action_newaction">选择新的操作:</string>
+    <string name="shortcut_action_reset">重置</string>
+    <string name="shortcut_action_add">添加</string>
+    <string name="shortcut_action_reset_message">重置所有条目为默认值?</string>
+    <string name="shortcut_action_max">已达到最大输入条目</string>
+    <string name="shortcut_action_warning">警告</string>
+    <string name="shortcut_action_warning_message">不能删除最后一个条目</string>
+    <string name="shortcut_action_disable_message">已禁用\添加一个条目以启用这个功能</string>
+    <string name="shortcut_image_not_valid">选择的应用程序不能得到一个有效的图标或者不支持图片裁剪，请使用其他的应用程序.</string>
+    <string name="shortcut_duplicate_entry">所选择的操作不能重复添加两次</string>
+    <string name="shortcut_action_help_shortcut">快捷方式</string>
+    <string name="shortcut_action_help_button">按钮</string>
+    <string name="shortcut_action_help_app">应用</string>
+    <string name="shortcut_action_help_icon">在选择图标时，会带来定制选项</string>
+    <string name="shortcut_action_help_main">要添加一个 %1$s, 可选择添加图标. 如果 %1$s 是已添加过的, 选择行将会改变目标%2$s\n\n要移除一个 %1$s, 可水平向左或者向右滑动. 想重新排列列表中的 %1$s,可按住左侧图标垂直拖拽更改顺序.\n\n想清除或重置为默认，可选择重置选项.</string>
+    <string name="shortcut_action_help_delete_last_entry">移除列表中的全部%1$s 将会完全禁用该功能.</string>
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">移除列表中的全部 %1$s 将会完全禁用第二层pie.</string>
+
+    <string name="shortcuts_applications">应用程序</string>
+    <string name="shortcuts_select_custom_app_title">选择自定义应用程序</string>
+    <string name="shortcuts_icon_picker_type">选择图标类型:</string>
+    <string name="shortcuts_icon_default">默认</string>
+    <string name="shortcuts_icon_presets">系统图标</string>
+    <string name="shortcuts_icon_custom">图库</string>
+    <string name="shortcuts_icon_picker_choose_icon_title">选择图标</string>
+
+    <string name="shortcuts_icon_picker_alarm">警告</string>
+    <string name="shortcuts_icon_picker_andy">Andy</string>
+    <string name="shortcuts_icon_picker_battery">电池</string>
+    <string name="shortcuts_icon_picker_browser">浏览器</string>
+    <string name="shortcuts_icon_picker_calendar">日历</string>
+    <string name="shortcuts_icon_picker_camera">照相机</string>
+    <string name="shortcuts_icon_picker_cloud">Cloud</string>
+    <string name="shortcuts_icon_picker_contact">通讯录</string>
+    <string name="shortcuts_icon_picker_directdial">直接拨号</string>
+    <string name="shortcuts_icon_picker_directmessage">直接发送短信</string>
+    <string name="shortcuts_icon_picker_drive">Drive</string>
+    <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
+    <string name="shortcuts_icon_picker_email">邮件</string>
+    <string name="shortcuts_icon_picker_email2">邮件代替</string>
+    <string name="shortcuts_icon_picker_evernote">Evernote</string>
+    <string name="shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="shortcuts_icon_picker_favorite">Favorite</string>
+    <string name="shortcuts_icon_picker_file_browser">文件管理器</string>
+    <string name="shortcuts_icon_picker_file_browser2">文件管理器代替</string>
+    <string name="shortcuts_icon_picker_fitness">Fitness</string>
+    <string name="shortcuts_icon_picker_gallery">图库</string>
+    <string name="shortcuts_icon_picker_gears">Gears</string>
+    <string name="shortcuts_icon_picker_google_small">Google</string>
+    <string name="shortcuts_icon_picker_gplus">Google Plus</string>
+    <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
+    <string name="shortcuts_icon_picker_help">帮助</string>
+    <string name="shortcuts_icon_picker_joystick">Joystick</string>
+    <string name="shortcuts_icon_picker_key">Keys/Accounts</string>
+    <string name="shortcuts_icon_picker_laptop">Laptop</string>
+    <string name="shortcuts_icon_picker_notes">笔记</string>
+    <string name="shortcuts_icon_picker_luggage">Travel</string>
+    <string name="shortcuts_icon_picker_maps">地图</string>
+    <string name="shortcuts_icon_picker_market">市场</string>
+    <string name="shortcuts_icon_picker_movie">电影</string>
+    <string name="shortcuts_icon_picker_music">音乐</string>
+    <string name="shortcuts_icon_picker_nav">导航</string>
+    <string name="shortcuts_icon_picker_phone">电话</string>
+    <string name="shortcuts_icon_picker_package">Package</string>
+    <string name="shortcuts_icon_picker_pinterest">Pinterest</string>
+    <string name="shortcuts_icon_picker_play">Play</string>
+    <string name="shortcuts_icon_picker_pocket">Pocket</string>
+    <string name="shortcuts_icon_picker_quicksettings">快速设置</string>
+    <string name="shortcuts_icon_picker_rss">RSS订阅</string>
+    <string name="shortcuts_icon_picker_sdcard">SDCard</string>
+    <string name="shortcuts_icon_picker_search">搜索</string>
+    <string name="shortcuts_icon_picker_sms">Messaging</string>
+    <string name="shortcuts_icon_picker_tasks">Tasks</string>
+    <string name="shortcuts_icon_picker_terminal">终端模拟器</string>
+    <string name="shortcuts_icon_picker_transit">Transit</string>
+    <string name="shortcuts_icon_picker_tv">TV</string>
+    <string name="shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="shortcuts_icon_picker_unlock">解锁</string>
+    <string name="airplay">Airplay</string>
+    <string name="android">Android</string>
+    <string name="badoo">Badoo</string>
+    <string name="battery">电池</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="bookmarks">书签</string>
+    <string name="browser">浏览器</string>
+    <string name="browser2">浏览器2</string>
+    <string name="calculator">计算器</string>
+    <string name="calendar">日历</string>
+    <string name="calls">呼叫</string>
+    <string name="camera">照相机</string>
+    <string name="chrome">Chrome</string>
+    <string name="clock">时钟</string>
+    <string name="cnn">Cnn</string>
+    <string name="deezer2">Deezer2</string>
+    <string name="deezer">Deezer</string>
+    <string name="dolphin2">Dolphin</string>
+    <string name="downloads">Downloads</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="ebay">Ebay</string>
+    <string name="email">Email</string>
+    <string name="evernote">Evernote</string>
+    <string name="explorer">Explorer</string>
+    <string name="falcon">Falcon</string>
+    <string name="fb">Facebook</string>
+    <string name="flipboard">Flipboard</string>
+    <string name="foursquare">Foursquare</string>
+    <string name="firefox">Firefox</string>
+    <string name="googlebuzz">Google buzz</string>
+    <string name="googledocs">Google docs</string>
+    <string name="googlewallet">Google wallet</string>
+    <string name="line">Line</string>
+    <string name="mic">Mic</string>
+    <string name="newyorktimes">Newyork times</string>
+    <string name="rootexplorer">Root explorer</string>
+    <string name="sim">Sim</string>
+    <string name="teamviewer">Teamviewer</string>
+    <string name="totalcommander">Total commander</string>
+    <string name="weather">天气</string>
+    <string name="golocker">Go locker</string>   
+    <string name="googlecurrents">Google currents</string>
+    <string name="googletalk">Google talk</string>
+    <string name="gosms">Go sms</string>
+    <string name="meebo">Meebo</string>
+    <string name="maps2">Maps2</string>
+    <string name="memorycleaner">Memory cleaner</string>
+    <string name="navigation">Navigation</string>
+    <string name="pulse">Pulse</string>
+    <string name="shazam">Shazam</string>
+    <string name="swiftkey">Swiftkey</string>
+    <string name="tmobile">Tmobile</string>
+    <string name="trash">Trash</string>
+    <string name="games">Games</string>
+    <string name="gmail">Gmail</string>
+    <string name="docs">Docs</string>
+    <string name="googledrive">Google Drive</string>
+    <string name="googleearth">Google earth</string>
+    <string name="googlehangouts">Google hangouts</string>
+    <string name="googlekeep">Google keep</string>
+    <string name="googleplay">Google play</string>
+    <string name="googletranslate">Google translate</string>
+    <string name="google">Google</string>
+    <string name="googleplus">Google plus</string>
+    <string name="imdb">imdb</string>
+    <string name="instagram">instagram</string>
+    <string name="lastfm">Lastfm</string>   
+    <string name="maps">Maps</string>
+    <string name="messages">Messages</string>
+    <string name="music">Music</string>
+    <string name="mxplayer">Mxplayer</string>
+    <string name="notepad">Direct Message</string>
+    <string name="opera">Opera</string>
+    <string name="paint">Paint</string>
+    <string name="paypal">Paypal</string>
+    <string name="phone">Phone</string>
+    <string name="picasa">Picasa</string>
+    <string name="pictures2">Pictures2</string>
+    <string name="player_pro">Player pro</string>
+    <string name="playstation">Play station</string>
+    <string name="reddit">Reddit</string>
+    <string name="settings">设置</string>
+    <string name="skype">Skype</string>
+    <string name="soundscloud">Sounds cloud</string>
+    <string name="spotifiy">Spotifiy</string>
+    <string name="tapatalk">Tapatalk</string>
+    <string name="tunein">Tunein</string>
+    <string name="twitter">Twitter</string>
+    <string name="viber">Viber</string>
+    <string name="videocamera">Video camera</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="wifi">Wifi</string>
+    <string name="xda">Xda</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zedge">Zedge</string>
+
+    <!-- Temasek lockscreen -->
+    <string name="temasek_lockscreen_title">锁屏</string>
+    <string name="temasek_lockscreen_category">锁屏设置</string>
+    <string name="temasek_lockscreen_shortcuts_category">快捷方式</string>
+    <!-- CM lockscreen shortcuts -->
+    <string name="cm_lockscreen_shortcuts_title">底部角落方式</string>
+    <string name="cm_lockscreen_shortcuts_summary">查看或更改自定义底部角落快捷方式</string>
+    <!-- Slim lockscreen shortcuts -->
+    <string name="lockscreen_shortcuts_title">屏幕中间快捷方式</string>
+    <string name="lockscreen_shortcuts_summary">查看或更改自定义屏幕中间快捷方式</string>
+    <string name="lockscreen_shorcuts_longpress_title">快捷方式长按</string>
+    <string name="lockscreen_shorcuts_longpress_summary">打开锁屏快捷方式长按时自定义操作</string>
+
+    <string name="shortcut_action_app">自定义应用</string>
+    <string name="shortcut_action_home">主页键</string>
+    <string name="shortcut_action_back">返回键</string>
+    <string name="shortcut_action_menu">菜单键</string>
+    <string name="shortcut_action_ime">打开输入法选择器</string>
+    <string name="shortcut_action_power_menu">电源菜单</string>
+    <string name="shortcut_action_recent">最近应用</string>
+    <string name="shortcut_action_power">关闭屏幕</string>
+    <string name="shortcut_action_search">应用内搜索</string>
+    <string name="shortcut_action_ring_vib">铃声/震动</string>
+    <string name="shortcut_action_ring_silent">铃声/静音</string>
+    <string name="shortcut_action_ring_vib_silent">铃声/震动/静音</string>
+    <string name="shortcut_action_camera">照相机</string>
+    <string name="shortcut_action_media_next">音乐-下一首</string>
+    <string name="shortcut_action_media_play_pause">音乐-播放/暂停</string>
+    <string name="shortcut_action_media_previous">音乐-上一首</string>
+    <string name="shortcut_action_wake_device">唤醒设备</string>
+
+
+    <!-- App sidebar -->
+    <string name="app_sidebar_title">应用程序栏</string>
+    <string name="app_sidebar_enable_title">启用应用程序栏</string>
+    <string name="app_sidebar_enable_summaryOn">应用程序栏已启用</string>
+    <string name="app_sidebar_enable_summaryOff">应用程序栏已禁用</string>
+    <string name="app_sidebar_setup_items_title">设置应用程序栏内容</string>
+    <string name="app_sidebar_setup_items_summary">添加、删除、排列应用程序栏中的列表</string>
+    <string name="app_sidebar_transparency_title">应用程序栏透明度</string>
+    <string name="app_sidebar_transparency_summary">调整应用程序栏透明度水平</string>
+    <string name="app_sidebar_position_title">应用程序栏定位</string>
+    <string name="app_sidebar_position_summary">应用程序栏可以设置在屏幕左侧或右侧</string>
+    <string name="app_sidebar_position_left">左侧</string>
+    <string name="app_sidebar_position_right">右侧</string>
+    <string name="app_sidebar_hide_labels_title">隐藏图标标签</string>
+    <string name="app_sidebar_hide_labels_summary">隐藏图标的标签</string>
+    <string name="tab_category">可见标签</string>
+    <string name="use_tab_title">不可见标签</string>
+    <string name="use_tab_summary">当应用程序栏被触摸时，侧边可见标签的将会显示.</string>
+    <string name="tab_position_title">标签位置</string>
+    <string name="tab_position_summary">在屏幕顶部、中间或底部显示标签.</string>
+    <string name="tab_size_title">标签尺寸</string>
+    <string name="tab_size_summary">更改可见标签的尺寸.</string>
+    <string name="trigger_category">触发区域</string>
+    <string name="trigger_width_title">触发宽度</string>
+    <string name="trigger_width_summary">调整触发区域宽度</string>
+    <string name="trigger_top_title">触发位置</string>
+    <string name="trigger_top_summary">调整触发区域的垂直位置</string>
+    <string name="trigger_bottom_title">出发高度</string>
+    <string name="trigger_bottom_summary">调整触发区域的高度</string>
+
+    <!-- Restart SystemUI -->
+    <string name="restart_systemui">重启系统UI</string>
+
+    <!-- App Circle sidebar -->
+    <string name="category_app_circle_bar_title">应用启动</string>
+    <string name="app_circle_bar_title">应用环状侧边栏</string>
+    <string name="app_circle_bar_summary">触摸屏幕边缘后开启应用环状侧边栏</string>
+    <string name="app_circle_bar_included_apps_title">包含应用</string>
+    <string name="app_circle_bar_included_apps_summary">应用程序将显示在环状侧边栏</string>
+    <string name="trigger_width_title">触发宽度</string>
+    <string name="trigger_width_summary">调整触发区域的宽度</string>
+    <string name="trigger_top_title">触发位置</string>
+    <string name="trigger_top_summary">调整触发区域垂直位置</string>
+    <string name="trigger_bottom_title">触发高度</string>
+    <string name="trigger_bottom_summary">调整触发区域的高度</string>
+
+    <!-- Toast animations -->
+     <string name="toast_animation_title">吐司动画</string>
+    <string name="toast_animation_summary">选择及预览系统吐司动画</string>
+    <string name="toast_none_animation">无</string>
+    <string name="toast_default_animation">默认</string>
+    <string name="toast_fade_animation">淡出动画</string>
+    <string name="toast_SlideRight_animation">向右滑动</string>
+    <string name="toast_SlideLeft_animation">向左滑动</string>
+    <string name="toast_Xylon_animation">Xylon动画</string>
+    <string name="toast_Toko_animation">Toko动画</string>
+    <string name="toast_Tn_animation">Tn动画</string>
+    <string name="toast_Honami_animation">Honami动画</string>
+    <string name="toast_FastFade_animation">快速淡出</string>
+    <string name="toast_GrowFade_animation">发展淡出</string>
+    <string name="toast_GrowFadeCenter_animation">发展中心淡出</string>
+    <string name="toast_GrowFadeBottom_animation">发展底部淡出</string>
+    <string name="toast_Translucent_animation">半透明动画</string>
+    <string name="toast_SlideLeftRight_animation">从左向右滑动</string>
+    <string name="toast_SlideRightLeft_animation">从右向左滑动</string>
+
+    <!-- ListView animation -->
+     <string name="interface_settings_animation_title">动画选项</string>
+    <string name="listview_animation_title">列表显示动画</string>
+    <string name="listview_off">默认</string>
+    <string name="listview_wave_left">波浪 (左)</string>
+    <string name="listview_wave_right">波浪 (右)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">鱼鳞</string>
+    <string name="listview_stack_top">堆 (顶部)</string>
+    <string name="listview_stack_bottom">堆 (底部)</string>
+    <string name="listview_unfold">展开</string>
+    <string name="listview_fold">折叠</string>
+    <string name="listview_translate_left">翻开 (左)</string>
+    <string name="listview_translate_right">翻开 (右)</string>
+
+    <!-- ListView interpolator -->
+   <string name="listview_interpolator_title">列表视图插值器</string>
+    <string name="listview_accelerate_interpolator">加速</string>
+    <string name="listview_decelerate_interpolator">减速</string>
+    <string name="listview_accelerate_decelerate_interpolator">开始与结束时减速，中间加速</string>
+    <string name="listview_anticipate_interpolator">向后甩然后回到原来位置</string>
+    <string name="listview_overshoot_interpolator">向前甩然后回到原来位置</string>
+    <string name="listview_anticipate_overshoot_interpolator">先向后然后向前最后回到原来位置</string>
+    <string name="listview_bounce_interpolator">结束时弹起</string>
+
+    <!-- Scrolling Cache -->
+    <string name="pref_scrollingcache_title">滚动缓存</string>
+    <string name="pref_scrollingcache_summary">消耗内存启用滚动缓存能提高滚动性能</string>
+    <string name="pref_scrollingcache_force_enable">强制启用</string>
+    <string name="pref_scrollingcache_default_enable">默认启用</string>
+    <string name="pref_scrollingcache_default_disable">默认禁用</string>
+    <string name="pref_scrollingcache_force_disable">强制关闭</string>
+
+    <!-- AOKP custom system animations -->  
+    <string name="aokp_animation_title">系统动画</string>
+    <string name="aokp_animation_summary">AOKP自定义动画</string>
+    <string name="animation_exit_only_title">仅开始动画</string>
+    <string name="animation_reverse_exit_title">反向退出动画</string>
+    <string name="activity_open_title">活动打开动画</string>
+    <string name="activity_close_title">活动关闭动画</string>
+    <string name="task_open_title">任务打开动画</string>
+    <string name="task_close_title">任务关闭动画</string>
+    <string name="task_move_to_front_title">移至前台动画</string>
+    <string name="task_move_to_back_title">移至后台动画</string>
+    <string name="wallpaper_open_title">壁纸打开动画</string>
+    <string name="wallpaper_close_title">壁纸关闭动画</string>
+    <string name="wallpaper_intra_open_title">壁纸内部打开动画</string>
+    <string name="wallpaper_intra_close_title">壁纸内部关闭动画</string>
+    <string name="task_open_behind_title">任务打开后动画</string>
+    <string name="animation_duration_title">动画时长</string>
+    <string name="animation_duration_default">默认</string>
+
+    <!-- Keyboard and Input ASS methods  -->
+    <string name="title_keyboard_input">高级选项</string>
+    <string name="disable_fullscreen_keyboard_title">禁用全屏键盘</string>
+    <string name="disable_fullscreen_keyboard_summary">横屏键盘将不会占用整个屏幕</string>
+    <string name="keyboard_rotation_toggle_title">键盘自动旋转</string>
+    <string name="keyboard_rotation_toggle_summary">当键盘显示时将强制自动旋转</string>
+    <string name="keyboard_rotation_timeout_title">自动旋转超时</string>
+    <string name="keyboard_rotation_timeout_summary">键盘隐藏<xliff:g id="rotate_timeout">%1$s</xliff:g> 秒后禁用自动旋转传感器</string>
+    <string name="keyboard_rotation_dialog">仅在键盘显示时临时开启自动旋转功能，当自动旋转已启用时将不会生效</string>
+    <string name="show_enter_key_title">显示回车键</string>
+    <string name="show_enter_key_summary">强制键盘显示回车键，而不是表情键</string>
+
+    <!-- Double tap to sleep on lockscreen -->
+    <string name="double_tap_sleep_anywhere_title">锁屏双击睡眠</string>
+    <string name="double_tap_sleep_anywhere_summary">在锁屏界面双击使设备睡眠</string>
+
+    <!-- On-The-Go -->
+    <string name="power_menu_onthego_title">On-The-Go模式</string>
+    <string name="onthego_alpha_title">On-The-Go透明度</string>
+    <string name="onthego_alpha_summary">On-The-Go模式遮挡的透明度.</string>
+
+
+</resources>
