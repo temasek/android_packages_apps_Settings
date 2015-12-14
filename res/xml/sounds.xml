@@ -85,12 +85,25 @@
                 android:icon="@drawable/ring_notif_increasing"
                 android:dependency="increasing_ring"/>
 
+        <!-- Volume Steps -->
+        <PreferenceScreen
+                android:key="volume_steps"
+                android:title="@string/volume_steps_title"
+                android:fragment="com.android.settings.temasek.VolumeSteps" />
+
         <!-- Other sounds -->
         <Preference
                 android:key="other_sounds"
                 android:title="@string/other_sound_settings"
                 android:persistent="false"
                 android:fragment="com.android.settings.notification.OtherSoundSettings" />
+
+        <!-- Advanced options -->
+        <PreferenceScreen
+                android:key="advanced_sound_settings"
+                android:title="@string/advanced_sound_title"
+                android:persistent="false"
+                android:fragment="com.android.settings.slim.SoundSettings" />
     </PreferenceCategory>
 
     <PreferenceCategory
