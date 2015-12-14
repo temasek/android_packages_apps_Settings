@@ -823,4 +823,37 @@
     <string name="show_enter_key_title">Eingabe Taste zeigen</string>
     <string name="show_enter_key_summary">Tastatur zwingen die Eingabe-Taste anstatt der Emoticon-Taste zu zeigen</string>
 
+    <!-- Double tap to sleep on lockscreen -->
+    <string name="double_tap_sleep_anywhere_title">Standby durch Doppelklick</string>
+    <string name="double_tap_sleep_anywhere_summary">Doppelklick auf dem Sperrbildschirm versetzt das Gerät in Standby</string>
+
+    <!-- On-The-Go -->
+    <string name="power_menu_onthego_title">Laufmodus</string>
+    <string name="onthego_alpha_title">Laufmodus Alpha</string>
+    <string name="onthego_alpha_summary">Alpha value of the On-The-Go overlay.</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Drei Finger Geste</string>
+    <string name="three_finger_gesture_summary">Wische mit drei Fingern, um einen Screenshot zu machen</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Lautstärke Stufen</string>
+    <string name="volume_steps_alarm_title">Alarm</string>
+    <string name="volume_steps_dtmf_title">DTMF</string>
+    <string name="volume_steps_music_title">Musik</string>
+    <string name="volume_steps_notification_title">Benachrichtigungen</string>
+    <string name="volume_steps_ring_title">Klingelton</string>
+    <string name="volume_steps_system_title">System</string>
+    <string name="volume_steps_voice_call_title">Sprachanruf</string>
+    <string name="volume_steps_reset">Zurücksetzen</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+
+    <!-- System UI tuner -->
+    <string name="system_ui_tuner">System UI Einstellungen</string>
+
 </resources>
