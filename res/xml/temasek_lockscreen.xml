@@ -57,9 +57,15 @@
 
     </PreferenceCategory>
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="double_tap_sleep_anywhere"
-        android:title="@string/double_tap_sleep_anywhere_title"
-        android:summary="@string/double_tap_sleep_anywhere_summary" />
+    <PreferenceCategory
+        android:key="general_category"
+        android:title="@string/title_general">
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_anywhere"
+            android:title="@string/double_tap_sleep_anywhere_title"
+            android:summary="@string/double_tap_sleep_anywhere_summary" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
