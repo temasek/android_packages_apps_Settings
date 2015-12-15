@@ -835,4 +835,73 @@
 
     <!-- System UI tuner -->
     <string name="system_ui_tuner">系统UI界面调谐器</string>
+	
+	    <!-- PA Pie control -->
+    <string name="pa_piecontrol_settings_summary">定制PA手势2.0对象,样式,尺寸和颜色</string>
+    <string name="pa_pie_control_title">PA手势控制</string>
+    <string name="pa_pie_control_enable_title">启用手势控制</string>
+    <string name="pa_pie_targets_title">手势对象</string>
+    <string name="pa_pie_style_title">手势样式</string>
+    <string name="pa_pie_menu_title">总是显示菜单按钮</string>
+    <string name="pa_pie_menu_summary">即便不需要菜单键也始终显示菜单按钮</string>
+    <string name="pa_pie_size_title">手势尺寸</string>
+    <string name="pa_pie_size_summary">定制手势控制尺寸</string>
+    <string name="pa_pie_size_small">小</string>
+    <string name="pa_pie_size_default">@string/pa_pie_mode_default</string>
+    <string name="pa_pie_size_large">大</string>
+    <string name="pa_pie_size_gigantic">巨大</string>
+    <string name="pa_pie_size_monster">庞大</string>
+    <string name="pa_pie_size_enormous">硕大</string>
+    <string name="pa_pie_mode_default">默认</string>
+    <string name="pa_pie_gravity_title">手势位置</string>
+    <string name="pa_pie_gravity_summary">选择手势显示的位置</string>
+    <string name="pa_pie_gravity_bottom">底部</string>
+    <string name="pa_pie_gravity_right">右侧</string>
+    <string name="pa_pie_gravity_left">左侧</string>
+    <string name="pa_pie_gap_title">按钮间隔</string>
+    <string name="pa_pie_gap_summary">调整手势按钮间的分隔间隙</string>
+    <string name="pa_pie_angle_title">手势角度</string>
+    <string name="pa_pie_angle_summary">调整手势从依附屏幕到手势边缘的角度</string>
+    <string name="pa_pie_angle_none">无(旧)</string>
+    <string name="pa_pie_angle_small">小</string>
+    <string name="pa_pie_angle_big">标准(默认)</string>
+    <string name="pa_pie_angle_huge">大</string>
+    <string name="pa_pie_angle_super">巨大</string>
+    <string name="pa_pie_gap_none">无</string>
+    <string name="pa_pie_gap_small">小</string>
+    <string name="pa_pie_gap_big">大(默认)</string>
+    <string name="pa_pie_gap_huge">巨大</string>
+    <string name="pa_pie_mode_title">手势样式</string>
+    <string name="pa_pie_mode_summary">管理如何处理动画及状态增加</string>
+    <string name="pa_pie_mode_bare">无</string>
+    <string name="pa_pie_mode_quick">快速</string>
+    <string name="pa_pie_mode_default">默认</string>
+    <string name="pa_pie_mode_slow">满速</string>
+    <string name="pa_pie_lastapp_title">上次应用</string>
+    <string name="pa_pie_lastapp_summary">启用上次应用按钮</string>
+    <string name="pa_pie_killtask_title">清理任务</string>
+    <string name="pa_pie_killtask_summary">启用一键清理任务按钮</string>
+    <string name="pa_pie_notifications_title">通知</string>
+    <string name="pa_pie_notifications_summary">启用通知按钮</string>
+    <string name="pa_pie_settings_panel_title">快速设置面板</string>
+    <string name="pa_pie_settings_panel_summary">启用快速设置扩展面板按钮</string>
+    <string name="pa_pie_screenshot_title">截屏</string>
+    <string name="pa_pie_screenshot_summary">启用截屏按钮</string>
+    <string name="pa_pie_color_title">手势颜色设置</string>
+    <string name="pa_pie_color_style_title">手势颜色样式</string>
+    <string name="pa_pie_background_title">背景颜色</string>
+    <string name="pa_pie_select_title">选中状态颜色</string>
+    <string name="pa_pie_outlines_title">按键边缘轮廓颜色</string>
+    <string name="pa_pie_status_clock_title">时钟颜色</string>
+    <string name="pa_pie_status_title">状态颜色</string>
+    <string name="pa_pie_chevron_title">轮廓颜色</string>
+    <string name="pa_pie_juice_title">电池颜色</string>
+    <string name="pa_pie_button_color">按钮按色</string>
+    <string name="pa_pie_button_color_title">按钮颜色</string>
+    <string name="pa_pie_always_right_title">右侧手势</string>
+    <string name="pa_pie_always_right_summary">当为横屏状态时手势总是显示在右侧</string>
+
+    <string name="reset_temasek">temasek</string>
+    <string name="reset_android">Android</string>
+
 </resources>
