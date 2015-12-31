@@ -25,8 +25,8 @@
     <string name="dlg_switch" msgid="6243971420240639064">"Cambiar"</string>
     <string name="device_info_default" msgid="7847265875578739287">"Desconocido"</string>
     <plurals name="show_dev_countdown" formatted="false" msgid="7201398282729229649">
-      <item quantity="other">Solo te quedan <xliff:g id="STEP_COUNT_1">%1$d</xliff:g> pasos de ser un desarrollador.</item>
-      <item quantity="one">Solo te queda <xliff:g id="STEP_COUNT_0">%1$d</xliff:g> paso de ser un desarrollador.</item>
+      <item quantity="other">Solo te quedan <xliff:g id="STEP_COUNT_1">%1$d</xliff:g> pasos para ser un desarrollador.</item>
+      <item quantity="one">Solo te queda <xliff:g id="STEP_COUNT_0">%1$d</xliff:g> paso para ser un desarrollador.</item>
     </plurals>
     <string name="show_dev_on" msgid="1110711554982716293">"¡Ahora están activadas las opciones de desarrollo!"</string>
     <string name="show_dev_already" msgid="2151632240145446227">"Las opciones de desarrollo ya están activadas."</string>
