@@ -187,7 +187,7 @@
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Schlafzustand bei doppeltem tippen der Navigationsleiste</string>
-    <string name="double_tap_sleep_nav_bar_summary">Navigationsleiste doppeltippen, um das Gerät in den Schlafzustand zu versetzen.</string>
+    <string name="double_tap_sleep_nav_bar_summary">Navigationsleiste doppeltippen, um das Gerät in den Schlafzustand zu versetzen</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Hardware Tasten</string>
@@ -292,10 +292,10 @@
     <string name="weather_show_weather_summary">Aktivieren um Informationen zum Wetter anzuzeigen</string>
     <string name="weather_show_location_title">Standort anzeigen</string>
     <string name="weather_show_location_summary">Aktivieren um den Standort anzuzeigen</string>
-    <string name="weather_show_timestamp_title">Zeit zeigen</string>
-    <string name="weather_show_timestamp_summary">Zeit der letzten Wetteraktualisierung zeigen</string>
+    <string name="weather_show_timestamp_title">Zeit anzeigen</string>
+    <string name="weather_show_timestamp_summary">Zeit der letzten Wetteraktualisierung anzeigen</string>
     <string name="weather_condition_icon_title">Witterungsbedingung Symbol</string>
-    <string name="weather_condition_icon_dlg_title">Icon zur Anzeige der Witterungsbedingung wählen</string>
+    <string name="weather_condition_icon_dlg_title">Symbol zur Anzeige der Witterungsbedingung wählen</string>
     <string name="weather_condition_icon_monochrome_title">Schwarz-Weiß</string>
     <string name="weather_condition_icon_colored_title">Bunt</string>
     <string name="weather_condition_icon_vclouds_title">VClouds</string>
@@ -306,18 +306,18 @@
     <string name="weather_hide_panel_auto_title">Automatisch</string>
     <string name="weather_hide_panel_custom_title">Angepasst</string>
     <string name="weather_hide_panel_never_title">Nie</string>
-    <string name="weather_hide_panel_auto_summary">Die Wetter Anzeige wird ausgeblendet wenn die maximale Anzahl auf dem Sperrbildschirm erlaubter Benachrichtigungen erreicht ist</string>
-    <string name="weather_hide_panel_custom_summary">Die Wetter Anzeige wird ausgeblendet wenn die gewählte Anzahl auf dem Sperrbildschirm erlaubter Benachrichtigungen erreicht ist (%s)</string>
+    <string name="weather_hide_panel_auto_summary">Die Wetter Anzeige wird ausgeblendet wenn die maximale Anzahl auf dem Sperrbildschirm zugelassene Benachrichtigungen erreicht ist</string>
+    <string name="weather_hide_panel_custom_summary">Die Wetter Anzeige wird ausgeblendet wenn die gewählte Anzahl auf dem Sperrbildschirm zugelassene Benachrichtigungen erreicht ist (%s)</string>
     <string name="weather_hide_panel_never_summary">Die Wetter Anzeige ist immer sichtbar</string>
-    <string name="weather_number_of_notifications_title">Anzahl Benachrichtigungen</string>
-    <string name="weather_number_of_notifications_dlg_title">Anzahl Benachrichtigungen ab der die Wetter Anzeige ausgeblendet wird wählen</string>
+    <string name="weather_number_of_notifications_title">Anzahl der Benachrichtigungen</string>
+    <string name="weather_number_of_notifications_dlg_title">Anzahl der Benachrichtigungen ab der die Wetter Anzeige ausgeblendet wird wählen</string>
     <string name="weather_number_of_notifications_always_title">Immer</string>
     <string name="weather_number_of_notifications_two_title">2</string>
     <string name="weather_number_of_notifications_three_title">3</string>
     <string name="weather_number_of_notifications_four_title">4</string>
     <string name="weather_number_of_notifications_five_title">5</string>
     <string name="weather_number_of_notifications_six_title">6</string>
-    <string name="icons_title">Icons</string>
+    <string name="icons_title">Symbole</string>
     <string name="position_right_title">Rechts</string>
     <string name="position_centered_title">Mittig</string>
     <string name="hidden_title">Ausgeblendet</string>
@@ -329,8 +329,8 @@
     <!-- Show carrier label and custom -->
 
     <string name="carrier_options">Netzbetreiber Name</string>
-    <string name="custom_carrier_label_title">Eigenen Netzbetreiber Name angeben</string>
-    <string name="custom_carrier_label_explain">Bitte eignene Name für angezeigten Netzbetreiber angeben. Leer lassen um Standard anzuzeigen.</string>
+    <string name="custom_carrier_label_title">Eigenen Netzbetreiber Namen angeben</string>
+    <string name="custom_carrier_label_explain">Bitte eignenen Netzbetreiber Namen angeben. Leer lassen um Standard anzuzeigen.</string>
     <string name="custom_carrier_label_notset">Aktuell ist kein eigener Netzbetreiber Name angegeben.</string>
     <string name="status_bar_carrier_color">Schriftfarbe des Netzbetreiber Namens</string>
     <string name="status_bar_carrier_size">Schriftgröße Netzbetreiber Name</string>
@@ -342,13 +342,13 @@
 
     <!-- Lockscreen wallpaper -->
     <string name="lockscreen_wallpaper_title">Hintergrundbild</string>
-    <string name="lockscreen_wallpaper_summary">Wähle Sperrbildschirm Hintergrundfarbe</string>
-    <string name="lockscreen_wallpaper_set_title">Setze Sperrbildschirm Hintergrundfarbe</string>
-    <string name="lockscreen_wallpaper_clear_title">Lösche Sperrbildschirm Hintergrundfarbe</string>
-    <string name="reset_lockscreen_wallpaper">Setze auf Standart zurück</string>
+    <string name="lockscreen_wallpaper_summary">Sperrbildschirm Hintergrundfarbe wählen</string>
+    <string name="lockscreen_wallpaper_set_title">Sperrbildschirm Hintergrundfarbe setzen</string>
+    <string name="lockscreen_wallpaper_clear_title">Sperrbildschirm Hintergrundfarbe löschen</string>
+    <string name="reset_lockscreen_wallpaper">Auf Standard zurücksetzen</string>
 
     <!-- Lockscreen see through -->
-    <string name="lockscreen_see_through_title">Sperrbildschirm unscharf</string>
+    <string name="lockscreen_see_through_title">Transparenter Sperrbildchirm</string>
     <string name="lockscreen_see_through_summary">Stellt den Inhalt hinter dem Sperrbildschirm unscharf dar.</string>
     <string name="lockscreen_blur_radius">Stärke des Unschärfe-Effektes</string>
 
@@ -368,7 +368,7 @@
     <!-- Lock clock -->
     <string name="lock_clock_title">Uhr Widget</string>
     <string name="lock_clock_summary">Darstellung des \'cLock\' Widgets anpassen</string>
-    <string name="lock_clock_clock_section_title">Uhr and Wecker</string>
+    <string name="lock_clock_clock_section_title">Uhr und Wecker</string>
     <string name="lock_clock_clock_section_summary">Darstellung der Uhr im \'cLock\' Widget anpassen</string>
     <string name="lock_clock_weather_section_title">Wetter</string>
     <string name="lock_clock_weather_section_summary">Darstellung des Wetters im \'cLock\' Widget anpassen</string>
@@ -403,7 +403,7 @@
     <!-- Buttons in Rename gesture dialog box -->
     <string name="ga_cancel_action">Abbruch</string>
     <!-- Message displayed when the user opens the gestures settings screen -->
-    <string name="ga_gestures_loading">Lade gesten...</string>
+    <string name="ga_gestures_loading">Lade Gesten...</string>
     <!-- Message displayed when the user has no gestures -->
     <string name="ga_gestures_empty">Keine Gesten</string>
     <!-- Title of the screen used to view/manage gestures -->
@@ -445,7 +445,7 @@
     <string name="unlock_quick_unlock_control_summary">Sofort entsperren wenn PIN/password korrekt eingegeben wurde</string>
 
     <!--Power menu -->
-    <string name="power_category">Power-Knopf</string>
+    <string name="power_category">Power Menü</string>
     <string name="lockscreen_enable_power_menu_title">Auf dem Sperrbildschirm einschalten</string>
     <string name="lockscreen_enable_power_menu_summary">Betrifft nur Sperrbildschirme mit Authentifizierung</string>
 
@@ -457,14 +457,14 @@
 
     <!-- Slim DSLV -->
     <string name="shortcut_action_none">Keine</string>
-    <string name="shortcut_action_longpress">Lange drücken:</string>
-    <string name="shortcut_action_select_action_longpress">Lange drücken Aktion wählen:</string>
+    <string name="shortcut_action_longpress">Langes drücken:</string>
+    <string name="shortcut_action_select_action_longpress">Langes drücken Aktion wählen:</string>
     <string name="shortcut_action_select_action">Aktion wählen:</string>
     <string name="shortcut_action_select_action_newaction">Neue Aktion wählen:</string>
     <string name="shortcut_action_reset">Zurücksetzen</string>
     <string name="shortcut_action_add">Hinzufügen</string>
     <string name="shortcut_action_reset_message">Alle Einträge auf Standard zurücksetzen?</string>
-    <string name="shortcut_action_max">Maximale Anzahl Einträge erreicht</string>
+    <string name="shortcut_action_max">Maximale Anzahl der Einträge erreicht</string>
     <string name="shortcut_action_warning">Warnung</string>
     <string name="shortcut_action_warning_message">Letzter Eintrag kann nicht gelöscht werden</string>
     <string name="shortcut_action_disable_message">Deaktiviert\nZum aktivieren neuen Eintrag hinzufügen</string>
@@ -506,7 +506,7 @@
     <string name="shortcuts_icon_picker_file_browser">Dateimanager</string>
     <string name="shortcuts_icon_picker_file_browser2">Dateimanager Alternate</string>
     <string name="shortcuts_icon_picker_fitness">Fitness</string>
-    <string name="shortcuts_icon_picker_gallery">Gallerie</string>
+    <string name="shortcuts_icon_picker_gallery">Galerie</string>
     <string name="shortcuts_icon_picker_gears">Gears</string>
     <string name="shortcuts_icon_picker_google_small">Google</string>
     <string name="shortcuts_icon_picker_gplus">Google Plus</string>
@@ -518,7 +518,7 @@
     <string name="shortcuts_icon_picker_notes">Notizen</string>
     <string name="shortcuts_icon_picker_luggage">Reise</string>
     <string name="shortcuts_icon_picker_maps">Maps</string>
-    <string name="shortcuts_icon_picker_market">Market</string>
+    <string name="shortcuts_icon_picker_market">Store</string>
     <string name="shortcuts_icon_picker_movie">Filme</string>
     <string name="shortcuts_icon_picker_music">Musik</string>
     <string name="shortcuts_icon_picker_nav">Navigation</string>
@@ -661,21 +661,21 @@
     <string name="shortcut_action_search">In app suchen</string>
     <string name="shortcut_action_ring_vib">Klingeln/Vib</string>
     <string name="shortcut_action_ring_silent">Klingeln/Still</string>
-    <string name="shortcut_action_ring_vib_silent">Klingeln/Vib/Still</string>
+    <string name="shortcut_action_ring_vib_silent">Klingeln/Vib/Lautlos</string>
     <string name="shortcut_action_camera">Kamera</string>
     <string name="shortcut_action_media_next">Musik - nächstes Lied</string>
     <string name="shortcut_action_media_play_pause">Musik - Start/Pause</string>
     <string name="shortcut_action_media_previous">Musik - vorheriges Lied</string>
     <string name="shortcut_action_wake_device">Gerät aufwecken</string>
 
-    <string name="shortcut_action_longpress">Lange drücken:</string>
-    <string name="shortcut_action_select_action_longpress">Lange drücken Aktion wählen:</string>
+    <string name="shortcut_action_longpress">Langes drücken:</string>
+    <string name="shortcut_action_select_action_longpress">Langes drücken Aktion wählen:</string>
     <string name="shortcut_action_select_action">Aktion wählen:</string>
     <string name="shortcut_action_select_action_newaction">Neue Aktion wählen:</string>
     <string name="shortcut_action_reset">Zurücksetzen</string>
     <string name="shortcut_action_add">Hinzufügen</string>
     <string name="shortcut_action_reset_message">Alle Einträge auf Standard zurücksetzen?</string>
-    <string name="shortcut_action_max">Maximale Anzahl Einträge erreicht</string>
+    <string name="shortcut_action_max">Maximale Anzahl der Einträge erreicht</string>
     <string name="shortcut_action_warning">Warnung</string>
     <string name="shortcut_action_warning_message">Letzter Eintrag kann nicht gelöscht werden</string>
     <string name="shortcut_action_disable_message">Deaktiviert\nZum aktivieren neuen Eintrag hinzufügen</string>
@@ -725,7 +725,7 @@
     <!-- App Circle sidebar -->
     <string name="category_app_circle_bar_title">App Launcher</string>
     <string name="app_circle_bar_title">App Circle Bar</string>
-    <string name="app_circle_bar_summary">Circle app launcher zeigen wenn die rechte Bildschirmseite berührt wird</string>
+    <string name="app_circle_bar_summary">App Circle Launcher zeigen wenn die rechte Bildschirmseite berührt wird</string>
     <string name="app_circle_bar_included_apps_title">Apps</string>
     <string name="app_circle_bar_included_apps_summary">Apps werden im app circle bar gezeigt</string>
     <string name="trigger_width_title">Trigger Breite</string>
@@ -740,18 +740,18 @@
     <string name="toast_animation_summary">System Toast Animation auswählen und testen</string>
     <string name="toast_none_animation">Keine</string>
     <string name="toast_default_animation">Standard</string>
-    <string name="toast_fade_animation">Ausblende Animation</string>
+    <string name="toast_fade_animation">Ausblenden</string>
     <string name="toast_SlideRight_animation">Von Rechts einblenden</string>
     <string name="toast_SlideLeft_animation">Von Links einblenden</string>
-    <string name="toast_Xylon_animation">Xylon Animation</string>
-    <string name="toast_Toko_animation">Toko Animation</string>
-    <string name="toast_Tn_animation">Tn Animation</string>
-    <string name="toast_Honami_animation">Honami Animation</string>
+    <string name="toast_Xylon_animation">Xylon</string>
+    <string name="toast_Toko_animation">Toko</string>
+    <string name="toast_Tn_animation">Tn</string>
+    <string name="toast_Honami_animation">Honami</string>
     <string name="toast_FastFade_animation">Schnell ausblenden</string>
     <string name="toast_GrowFade_animation">Anschwellendes ausblenden</string>
     <string name="toast_GrowFadeCenter_animation">Anschwellendes ausblenden mittig</string>
     <string name="toast_GrowFadeBottom_animation">Anschwellendes ausblenden unten</string>
-    <string name="toast_Translucent_animation">Translucent Animation</string>
+    <string name="toast_Translucent_animation">Translucent</string>
     <string name="toast_SlideLeftRight_animation">Von links nach rechts gleiten</string>
     <string name="toast_SlideRightLeft_animation">Von rechts nach links gleiten</string>
 
@@ -784,8 +784,8 @@
     <string name="pref_scrollingcache_title">Scroll Cache</string>
     <string name="pref_scrollingcache_summary">Der Scroll Cache kann die Performance auf Kosten vom Speicher verbessern</string>
     <string name="pref_scrollingcache_force_enable">Immer aktiviert</string>
-    <string name="pref_scrollingcache_default_enable">Standart aktiviert</string>
-    <string name="pref_scrollingcache_default_disable">Standart deaktiviert</string>
+    <string name="pref_scrollingcache_default_enable">Standard aktiviert</string>
+    <string name="pref_scrollingcache_default_disable">Standard deaktiviert</string>
     <string name="pref_scrollingcache_force_disable">Immer Deaktiviert</string>
 
     <!-- AOKP custom system animations -->  
@@ -793,8 +793,8 @@
     <string name="aokp_animation_summary">AOKP Animationen</string>
     <string name="animation_exit_only_title">Enter only Animation</string>
     <string name="animation_reverse_exit_title">Reverse exit Animation</string>
-    <string name="activity_open_title">Activity öffnen Animation</string>
-    <string name="activity_close_title">Activity schließen Animation</string>
+    <string name="activity_open_title">Aktivität öffnen Animation</string>
+    <string name="activity_close_title">Aktivität schließen Animation</string>
     <string name="task_open_title">Task öffnen Animation</string>
     <string name="task_close_title">Task schließen Animation</string>
     <string name="task_move_to_front_title">In Vordergrund Animation</string>
@@ -814,13 +814,13 @@
     <string name="keyboard_rotation_toggle_title">Tastatur automatisch rotieren</string>
     <string name="keyboard_rotation_toggle_summary">Automatisch rotieren erzwingen wenn die Tastatur eingeblendet ist</string>
     <string name="keyboard_rotation_timeout_title">Zeitlimit für automatisches rotieren</string>
-    <string name="keyboard_rotation_timeout_summary">Disables auto-rotate sensor <xliff:g id="rotate_timeout">%1$s</xliff:g> seconds after keyboard is hidden</string>
+    <string name="keyboard_rotation_timeout_summary">Deaktiviert automatisches rotieren in <xliff:g id="rotate_timeout">%1$s</xliff:g> Sekunden wenn Tastatur nicht verwendet wird</string>
     <string name="keyboard_rotation_dialog">Diese Funktion erzwingt automatisches Drehen wenn die Tastatur eingeblendet ist. Wenn automatisch drehen bereits aktiv ist hat sie keine Funktion.</string>
     <string name="show_enter_key_title">Eingabe Taste zeigen</string>
     <string name="show_enter_key_summary">Tastatur zwingen die Eingabe-Taste anstatt der Emoticon-Taste zu zeigen</string>
 
     <!-- Double tap to sleep on lockscreen -->
-    <string name="double_tap_sleep_anywhere_title">Standby durch Doppelklick</string>
+    <string name="double_tap_sleep_anywhere_title">Standby durch Doppelklicken auf Sperrbildschirm</string>
     <string name="double_tap_sleep_anywhere_summary">Doppelklick auf dem Sperrbildschirm versetzt das Gerät in Standby</string>
 
     <!-- On-The-Go -->
@@ -855,11 +855,11 @@
     <!-- PA Pie control -->
     <string name="pa_piecontrol_settings_summary">PA Pie 2.0 anpassen</string>
     <string name="pa_pie_control_title">PA Pie Steuerung</string>
-    <string name="pa_pie_control_enable_title">Pie aktivieren</string>
+    <string name="pa_pie_control_enable_title">PA Pie aktivieren</string>
     <string name="pa_pie_targets_title">Pie Ziele</string>
     <string name="pa_pie_style_title">Pie Stil</string>
     <string name="pa_pie_menu_title">Menü Schaltfläche immer anzeigen</string>
-    <string name="pa_pie_menu_summary">Soll die Menü-Schaltfläche immer angezeigt werden, auch wenn sie gerade nicht benötogt wird</string>
+    <string name="pa_pie_menu_summary">Soll die Menü-Schaltfläche immer angezeigt werden, auch wenn sie gerade nicht benötogt wird?</string>
     <string name="pa_pie_size_title">Pie Größe</string>
     <string name="pa_pie_size_summary">Pie Größe einstellen</string>
     <string name="pa_pie_size_small">Klein</string>
@@ -869,7 +869,7 @@
     <string name="pa_pie_size_monster">Monstermäßig</string>
     <string name="pa_pie_size_enormous">Enorm</string>
     <string name="pa_pie_mode_default">Standard</string>
-    <string name="pa_pie_gravity_title">Pie Schwerkraft</string>
+    <string name="pa_pie_gravity_title">Pie Position</string>
     <string name="pa_pie_gravity_summary">Pie Position auswählen</string>
     <string name="pa_pie_gravity_bottom">Unten</string>
     <string name="pa_pie_gravity_right">Rechts</string>
@@ -915,9 +915,9 @@
     <string name="pa_pie_button_color">Schaltflächen Farbe</string>
     <string name="pa_pie_button_color_title">Schaltflächen Farbe</string>
     <string name="pa_pie_always_right_title">Pie immer rechts</string>
-    <string name="pa_pie_always_right_summary">Pi im querformat immer rechts anzeigen</string>
+    <string name="pa_pie_always_right_summary">Pie im querformat immer rechts anzeigen</string>
 
-    <string name="reset_temasek">temasek</string>
+    <string name="reset_temasek">Temasek</string>
     <string name="reset_android">Android</string>
 
     <!-- Temasek Extra Info -->
@@ -926,9 +926,9 @@
 
     <!-- Doze options -->
     <string name="display_category_doze_options_title">Ambient Bildschirm</string>
-    <string name="doze_settings_title">Advanced doze options</string>
-    <string name="doze_timeout_title">Doze pulse timeout</string>
-    <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
+    <string name="doze_settings_title">Erweiterte doze Einstellungen</string>
+    <string name="doze_timeout_title">Doze pulsieren timeout</string>
+    <string name="doze_timeout_summary">Bildschirm an Timeout für das pulsieren der Benachrichtigungen</string>
     <string name="doze_trigger_pickup_title">Pick up gesture trigger</string>
     <string name="doze_trigger_pickup_summary_on">Doze pulse will be triggered by pick up gesture sensor events</string>
     <string name="doze_trigger_pickup_summary_off">Pick up gesture sensor will not be utilized as a triggering mechanism</string>
