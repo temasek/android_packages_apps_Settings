@@ -91,7 +91,7 @@
 
     <!-- Recents Fullscreen -->
     <string name="recents_show_fullscreen">Recientes en pantalla completa</string>
-    <string name="recents_fullscreen_summary_enabled">Recientes en pantalla completa esta habilitado</string>
+    <string name="recents_fullscreen_summary_enabled">Recientes en pantalla completa está habilitado</string>
     <string name="recents_fullscreen_summary_disabled">Recientes en pantalla completa está deshabilitado</string>
 
     <!-- OmniSwitch -->
@@ -116,9 +116,9 @@
     <string name="status_bar_date_style_normal">Normal</string>
     <string name="status_bar_date_style_lowercase">Minúsculas</string>
     <string name="status_bar_date_style_uppercase">Mayúsculas</string>
-    <string name="status_bar_date_format_custom">Formato personalzado de java</string>
+    <string name="status_bar_date_format_custom">Formato personalizado de java</string>
     <string name="status_bar_date_string_edittext_title">Debe de ser en el formato ej. MM/dd/aa</string>
-    <string name="status_bar_date_string_edittext_summary">Enter string</string>
+    <string name="status_bar_date_string_edittext_summary">Introducir cadena</string>
 
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_category">Reloj</string>
@@ -189,7 +189,7 @@
     <string name="navbar_button_tint_title">Tinte del botón de navegación</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Pulse dos veces a dormir</string>
+    <string name="double_tap_sleep_nav_bar_title">Pulse dos veces para dormir</string>
     <string name="double_tap_sleep_nav_bar_summary">Doble pulsación en la barra de navegación para poner el dispositivo a dormir</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
@@ -370,7 +370,7 @@
 
     <!-- Lock clock -->
     <string name="lock_clock_title">Widget de reloj</string>
-    <string name="lock_clock_summary">Ver o cambiar cómo mostrará el \'cLock'\ en el widget de inicio</string>
+    <string name="lock_clock_summary">Ver o cambiar cómo mostrará el \'cLock\' en el widget de inicio</string>
     <string name="lock_clock_clock_section_title">Reloj y alarma</string>
     <string name="lock_clock_clock_section_summary">Ver o cambiar como el widget del reloj de \'cLock\' será mostrado</string>
     <string name="lock_clock_weather_section_title">Panel del tiempo</string>
@@ -497,7 +497,7 @@
     <string name="shortcuts_icon_picker_camera">Cámara</string>
     <string name="shortcuts_icon_picker_cloud">Nube</string>
     <string name="shortcuts_icon_picker_contact">Contacto</string>
-    <string name="shortcuts_icon_picker_directdial">Llmada directa</string>
+    <string name="shortcuts_icon_picker_directdial">Llamada directa</string>
     <string name="shortcuts_icon_picker_directmessage">Mensaje directo</string>
     <string name="shortcuts_icon_picker_drive">Drive</string>
     <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
@@ -509,7 +509,7 @@
     <string name="shortcuts_icon_picker_file_browser">Explorador de archivos</string>
     <string name="shortcuts_icon_picker_file_browser2">Explorador de archivos alternativo</string>
     <string name="shortcuts_icon_picker_fitness">Fitness</string>
-    <string name="shortcuts_icon_picker_gallery">Galeríay</string>
+    <string name="shortcuts_icon_picker_gallery">Galería</string>
     <string name="shortcuts_icon_picker_gears">Gears</string>
     <string name="shortcuts_icon_picker_google_small">Google</string>
     <string name="shortcuts_icon_picker_gplus">Google Plus</string>
@@ -531,7 +531,7 @@
     <string name="shortcuts_icon_picker_play">Jugar</string>
     <string name="shortcuts_icon_picker_pocket">Bolsillo</string>
     <string name="shortcuts_icon_picker_quicksettings">Ajustes rápidos</string>
-    <string name="shortcuts_icon_picker_rss">Alimentación RSS</string>
+    <string name="shortcuts_icon_picker_rss">Retroalimentación RSS</string>
     <string name="shortcuts_icon_picker_sdcard">Tarjeta SD</string>
     <string name="shortcuts_icon_picker_search">Buscar</string>
     <string name="shortcuts_icon_picker_sms">Mensajería</string>
@@ -753,7 +753,7 @@
     <string name="toast_FastFade_animation">Desvanecimiento rápido</string>
     <string name="toast_GrowFade_animation">Desvanecimiento de crecimiento</string>
     <string name="toast_GrowFadeCenter_animation">Desvanecimiento de crecimiento central</string>
-    <string name="toast_GrowFadeBottom_animation"Desvanecimiento de crecimiento inferior</string>
+    <string name="toast_GrowFadeBottom_animation">Desvanecimiento de crecimiento inferior</string>
     <string name="toast_Translucent_animation">Animación transparente</string>
     <string name="toast_SlideLeftRight_animation">Deslizar de izquierda a derecha</string>
     <string name="toast_SlideRightLeft_animation">Deslizar de derecha a izquierda</string>
@@ -853,7 +853,7 @@
     <string name="volume_steps_5">5</string>
 
     <!-- System UI tuner -->
-    <string name="system_ui_tuner">Sistema de IU Tuner</string>
+    <string name="system_ui_tuner">Tuneado de interfaz de usuario</string>
 
     <!-- PA Pie control -->
     <string name="pa_piecontrol_settings_summary">Customizar objetivos de PA Pie 2.0, estilo, tamaño y color</string>
@@ -925,7 +925,7 @@
 
     <!-- Temasek Extra Info -->
     <string name="temaextrainfo">Información adicional</string>
-    <string name="temaextrainfo_summary">Mostrar información adicional para cpu, pantalla, etc./string>
+    <string name="temaextrainfo_summary">Mostrar información adicional para cpu, pantalla, etc.</string>
 
     <!-- Doze options -->
     <string name="display_category_doze_options_title">Pantalla ambiental</string>
