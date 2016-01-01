@@ -753,7 +753,7 @@
     <string name="toast_FastFade_animation">Desvanecimiento rápido</string>
     <string name="toast_GrowFade_animation">Desvanecimiento de crecimiento</string>
     <string name="toast_GrowFadeCenter_animation">Desvanecimiento de crecimiento central</string>
-    <string name="toast_GrowFadeBottom_animation"Desvanecimiento de crecimiento inferior</string>
+    <string name="toast_GrowFadeBottom_animation"></string>Desvanecimiento de crecimiento inferior</string>
     <string name="toast_Translucent_animation">Animación transparente</string>
     <string name="toast_SlideLeftRight_animation">Deslizar de izquierda a derecha</string>
     <string name="toast_SlideRightLeft_animation">Deslizar de derecha a izquierda</string>
@@ -925,7 +925,7 @@
 
     <!-- Temasek Extra Info -->
     <string name="temaextrainfo">Información adicional</string>
-    <string name="temaextrainfo_summary">Mostrar información adicional para cpu, pantalla, etc./string>
+    <string name="temaextrainfo_summary">Mostrar información adicional para cpu, pantalla, etc.</string>
 
     <!-- Doze options -->
     <string name="display_category_doze_options_title">Pantalla ambiental</string>
