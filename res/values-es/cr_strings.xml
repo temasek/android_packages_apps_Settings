@@ -497,7 +497,7 @@
     <string name="shortcuts_icon_picker_camera">Cámara</string>
     <string name="shortcuts_icon_picker_cloud">Nube</string>
     <string name="shortcuts_icon_picker_contact">Contacto</string>
-    <string name="shortcuts_icon_picker_directdial">Llmada directa</string>
+    <string name="shortcuts_icon_picker_directdial">Llamada directa</string>
     <string name="shortcuts_icon_picker_directmessage">Mensaje directo</string>
     <string name="shortcuts_icon_picker_drive">Drive</string>
     <string name="shortcuts_icon_picker_dropbox">Dropbox</string>
@@ -509,7 +509,7 @@
     <string name="shortcuts_icon_picker_file_browser">Explorador de archivos</string>
     <string name="shortcuts_icon_picker_file_browser2">Explorador de archivos alternativo</string>
     <string name="shortcuts_icon_picker_fitness">Fitness</string>
-    <string name="shortcuts_icon_picker_gallery">Galeríay</string>
+    <string name="shortcuts_icon_picker_gallery">Galería</string>
     <string name="shortcuts_icon_picker_gears">Gears</string>
     <string name="shortcuts_icon_picker_google_small">Google</string>
     <string name="shortcuts_icon_picker_gplus">Google Plus</string>
@@ -531,7 +531,7 @@
     <string name="shortcuts_icon_picker_play">Jugar</string>
     <string name="shortcuts_icon_picker_pocket">Bolsillo</string>
     <string name="shortcuts_icon_picker_quicksettings">Ajustes rápidos</string>
-    <string name="shortcuts_icon_picker_rss">Alimentación RSS</string>
+    <string name="shortcuts_icon_picker_rss">Retroalimentación RSS</string>
     <string name="shortcuts_icon_picker_sdcard">Tarjeta SD</string>
     <string name="shortcuts_icon_picker_search">Buscar</string>
     <string name="shortcuts_icon_picker_sms">Mensajería</string>
