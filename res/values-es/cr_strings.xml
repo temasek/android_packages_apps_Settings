@@ -91,7 +91,7 @@
 
     <!-- Recents Fullscreen -->
     <string name="recents_show_fullscreen">Recientes en pantalla completa</string>
-    <string name="recents_fullscreen_summary_enabled">Recientes en pantalla completa esta habilitado</string>
+    <string name="recents_fullscreen_summary_enabled">Recientes en pantalla completa está habilitado</string>
     <string name="recents_fullscreen_summary_disabled">Recientes en pantalla completa está deshabilitado</string>
 
     <!-- OmniSwitch -->
@@ -116,9 +116,9 @@
     <string name="status_bar_date_style_normal">Normal</string>
     <string name="status_bar_date_style_lowercase">Minúsculas</string>
     <string name="status_bar_date_style_uppercase">Mayúsculas</string>
-    <string name="status_bar_date_format_custom">Formato personalzado de java</string>
+    <string name="status_bar_date_format_custom">Formato personalizado de java</string>
     <string name="status_bar_date_string_edittext_title">Debe de ser en el formato ej. MM/dd/aa</string>
-    <string name="status_bar_date_string_edittext_summary">Enter string</string>
+    <string name="status_bar_date_string_edittext_summary">Introducir cadena</string>
 
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_category">Reloj</string>
@@ -189,7 +189,7 @@
     <string name="navbar_button_tint_title">Tinte del botón de navegación</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Pulse dos veces a dormir</string>
+    <string name="double_tap_sleep_nav_bar_title">Pulse dos veces para dormir</string>
     <string name="double_tap_sleep_nav_bar_summary">Doble pulsación en la barra de navegación para poner el dispositivo a dormir</string>
 
     <!-- Ability to disable hardware keys via nav bar settings -->
@@ -853,7 +853,7 @@
     <string name="volume_steps_5">5</string>
 
     <!-- System UI tuner -->
-    <string name="system_ui_tuner">Sistema de IU Tuner</string>
+    <string name="system_ui_tuner">Tuneado de interfaz de usuario</string>
 
     <!-- PA Pie control -->
     <string name="pa_piecontrol_settings_summary">Customizar objetivos de PA Pie 2.0, estilo, tamaño y color</string>
