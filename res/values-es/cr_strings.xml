@@ -370,7 +370,7 @@
 
     <!-- Lock clock -->
     <string name="lock_clock_title">Widget de reloj</string>
-    <string name="lock_clock_summary">Ver o cambiar cómo mostrará el \'cLock'\ en el widget de inicio</string>
+    <string name="lock_clock_summary">Ver o cambiar cómo mostrará el \'cLock\' en el widget de inicio</string>
     <string name="lock_clock_clock_section_title">Reloj y alarma</string>
     <string name="lock_clock_clock_section_summary">Ver o cambiar como el widget del reloj de \'cLock\' será mostrado</string>
     <string name="lock_clock_weather_section_title">Panel del tiempo</string>
