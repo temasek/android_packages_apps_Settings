@@ -121,10 +121,14 @@
     <string name="clock_font_thin_italic">瘦斜体</string>
     <string name="clock_font_condensed">简单体</string>
     <string name="clock_font_condensed_italic">简斜体</string>
+    <string name="clock_font_condensed_light">简细体</string>
+    <string name="clock_font_condensed_light_italic">简细斜体</string>
     <string name="clock_font_condensed_bold">简粗体</string>
     <string name="clock_font_condensed_bold_italic">简粗斜体</string>
     <string name="clock_font_medium">中等</string>
     <string name="clock_font_medium_italic">中斜体</string>
+    <string name="clock_font_black">黑体</string>
+    <string name="clock_font_black_italic">黑斜体</string>
     <string name="clock_font_size_title">字体大小</string>
     <string name="status_bar_show_clock_second_title">时钟秒数</string>
     <string name="clock_font_size_4">4</string>
@@ -257,6 +261,8 @@
     <string name="status_bar_weather_font_thin_italic">瘦斜体</string>
     <string name="status_bar_weather_font_condensed">简单体</string>
     <string name="status_bar_weather_font_condensed_italic">简斜体</string>
+    <string name="status_bar_weather_font_condensed_light">简细体</string>
+    <string name="status_bar_weather_font_condensed_light_italic">简细斜体</string>
     <string name="status_bar_weather_font_condensed_bold">简粗体</string>
     <string name="status_bar_weather_font_condensed_bold_italic">简斜粗体</string>
     <string name="status_bar_weather_font_medium">中等</string>
@@ -830,22 +836,22 @@
     <!-- Doze options -->
     <string name="display_category_doze_options_title">主动显示</string>
     <string name="doze_settings_title">Doze高级选项</string>
-    <string name="doze_timeout_title">Doze脉冲超时</string>
-    <string name="doze_timeout_summary">通知脉冲在屏幕上停留显示的时间</string>
+    <string name="doze_timeout_title">Doze显示超时</string>
+    <string name="doze_timeout_summary">通知显示在屏幕上停留显示的时间</string>
     <string name="doze_trigger_pickup_title">拿起手机触发</string>
-    <string name="doze_trigger_pickup_summary_on">Doze脉冲将在拿起手机被触发</string>
-    <string name="doze_trigger_pickup_summary_off">Doze脉冲在拿起手机时不会被触发</string>
+    <string name="doze_trigger_pickup_summary_on">Doze显示将在拿起手机被触发</string>
+    <string name="doze_trigger_pickup_summary_off">Doze显示在拿起手机时不会被触发</string>
     <string name="doze_trigger_sigmotion_title">特殊动作触发</string>
-    <string name="doze_trigger_sigmotion_summary_on">Doze脉冲将由特殊动作传感器事件触发</string>
-    <string name="doze_trigger_sigmotion_summary_off">Doze脉冲不会由特殊动作传感器事件触发</string>
+    <string name="doze_trigger_sigmotion_summary_on">Doze显示将由特殊动作传感器事件触发</string>
+    <string name="doze_trigger_sigmotion_summary_off">Doze显示不会由特殊动作传感器事件触发</string>
     <string name="doze_trigger_notification_title">通知触发</string>
-    <string name="doze_trigger_notification_summary_on">Doze脉冲将由通知消息触发</string>
-    <string name="doze_trigger_notification_summary_off">Doze脉冲不会由通知消息触发</string>
+    <string name="doze_trigger_notification_summary_on">Doze显示将由通知消息触发</string>
+    <string name="doze_trigger_notification_summary_off">Doze显示不会由通知消息触发</string>
     <string name="doze_schedule_title">Doze时间间隔</string>
-    <string name="doze_schedule_summary_on">预定义Doze重复间隔(通常为[1s,10s,30,60,120s])将会应用(默认)</string>
-    <string name="doze_schedule_summary_off">Doze将仅脉冲每个通知一次</string>
+    <string name="doze_schedule_summary_on">预定义Doze重复间隔(通常为[1s,10s,30,60,120s])将会被应用(默认)</string>
+    <string name="doze_schedule_summary_off">Doze将对每个通知仅显示一次</string>
     <string name="doze_brightness_title">Doze亮度水平</string>
-    <string name="doze_brightness_summary">Doze脉冲屏幕的亮度水平(最大允许亮度为%)</string>
+    <string name="doze_brightness_summary">Doze显示屏幕的亮度水平(最大允许亮度为%)</string>
     <!-- Doze notification color invert -->
     <string name="doze_notification_color_invert_title">颜色反转</string>
     <string name="doze_notification_color_invert_summary_off">主动显示通知不会反转颜色，将使用深色主题.</string>
@@ -948,4 +954,7 @@
     <!-- Option to Disable Brightness Icon In Brightness Slider -->
     <string name="brightness_icon_title">亮度图标</string>
     <string name="brightness_icon_summary">亮度控制滑块上启用图标</string>
+    <!--Persist add tiles button-->
+    <string name="persist_add_title">始终显示添加磁贴图标</string>
+    <string name="persist_add_summary">即使亮度控制滑块禁用也启用使添加磁贴图标可见</string>
 </resources>
