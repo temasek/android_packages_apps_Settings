@@ -1091,6 +1091,7 @@
     <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
 
     <!-- Notification color settings -->
+    <string name="notif_color_switch">Notification Colors</string>
     <string name="notification_color_settings_title">Notification colors</string>
     <string name="notification_media_bg_mode_title">Colorize the media background</string>
     <string name="notification_app_icon_bg_mode_title">Colorize the app icon background</string>
