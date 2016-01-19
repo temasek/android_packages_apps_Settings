@@ -61,9 +61,9 @@
   </string-array>
   <string-array name="entries_font_size">
     <item msgid="8166647333858618801">"Μικρό μέγεθος"</item>
-    <item msgid="1932071435506638315">"Κανονικό"</item>
+    <item msgid="1932071435506638315">"Κανονικό μέγεθος"</item>
     <item msgid="38373998008112077">"Μεγάλο μέγεθος"</item>
-    <item msgid="7786168277516233536">"Τεράστια"</item>
+    <item msgid="7786168277516233536">"Τεράστιο μέγεθος"</item>
   </string-array>
   <string-array name="tts_rate_entries">
     <item msgid="6041212618892492920">"Πολύ αργός"</item>
@@ -561,7 +561,7 @@
   <string-array name="color_picker">
     <item msgid="7631642672260600032">"Γαλαζοπράσινο"</item>
     <item msgid="8332294763632946560">"Μπλε"</item>
-    <item msgid="2023216417616991392">"Indigo"</item>
+    <item msgid="2023216417616991392">"Λουλακί"</item>
     <item msgid="3170497246594232819">"Μοβ"</item>
     <item msgid="4608643045752965568">"Ροζ"</item>
     <item msgid="6131821495505931173">"Κόκκινο"</item>
