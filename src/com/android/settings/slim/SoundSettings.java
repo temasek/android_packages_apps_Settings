@@ -140,6 +140,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             int id = getArguments().getInt("id");
+                switch (id) {
                 case DLG_SAFE_HEADSET_VOLUME:
                     return new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.attention)
@@ -159,7 +160,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                         }
                     })
                     .create();
-            switch (id) {
                 case DLG_CAMERA_SOUND:
                     return new AlertDialog.Builder(getActivity())
                     .setTitle(R.string.attention)
