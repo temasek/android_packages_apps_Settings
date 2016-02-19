@@ -1761,8 +1761,8 @@
     <string name="usage_type_video" msgid="4295357792078579944">"Βίντεο"</string>
     <string name="usage_type_camera" msgid="8299433109956769757">"Κάμερα"</string>
     <string name="usage_type_flashlight" msgid="1516392356962208230">"Φακός"</string>
-    <string name="usage_type_on_time" msgid="3351200096173733159">"Η ώρα είναι ενεργοποιημένη"</string>
-    <string name="usage_type_no_coverage" msgid="3797004252954385053">"Ώρα κατά τη μη κάλυψη σήματος"</string>
+    <string name="usage_type_on_time" msgid="3351200096173733159">"Η οθόνη είναι ενεργοποιημένη"</string>
+    <string name="usage_type_no_coverage" msgid="3797004252954385053">"Ώρα χωρίς κάλυψη σήματος"</string>
     <string name="usage_type_total_battery_capacity" msgid="3798285287848675346">"Συνολική χωρητικότητα μπαταρίας"</string>
     <string name="usage_type_computed_power" msgid="5862792259009981479">"Υπολογιζόμενη χρήση ενέργειας"</string>
     <string name="usage_type_actual_power" msgid="7047814738685578335">"Παρατηρούμενη χρήση ενέργειας"</string>
