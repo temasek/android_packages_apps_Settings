@@ -1195,4 +1195,9 @@
     <string name="battery_light_full_color_title">Charged (90%)</string>
     <string name="battery_light_really_full_color_title">Charged (100%)</string>
 
+    <!-- DoubleTap2Wake Doze -->
+    <string name="doze_wakeup_doubletap_title">Double-tap to wake on doze</string>
+    <string name="doze_wakeup_doubletap_summary_on">Require a double-tap to wake the device on a doze pulse screen</string>
+    <string name="doze_wakeup_doubletap_summary_off">Require a simple-tap to wake the device on a doze pulse screen (default)</string>
+
 </resources>
